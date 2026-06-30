@@ -42,6 +42,7 @@
     vertical-align:middle;letter-spacing:.3px}
   .fit-trap{background:#5c1a1a;color:#ff9d9d;border:1px solid #7a2424}
   .fit-pitch{background:#16432a;color:#7ee2a0;border:1px solid #1f5c39}
+  .fit-value{background:#4a3a0e;color:#ffd866;border:1px solid #6b551a}
   .tier{font-size:11px;padding:2px 8px;border-radius:20px;display:inline-block;
     margin-top:4px;font-weight:600}
   .t-elite{background:#7a3b00;color:#ffcf99}
@@ -108,6 +109,7 @@
       <option value="all">All candidates</option>
       <option value="locked">Locked Core only</option>
       <option value="actionable">Actionable roles</option>
+      <option value="value">★ Value longshots</option>
       <option value="core">Core+ (78+)</option>
       <option value="sat">Satellite+ (70+)</option>
       <option value="confirmed">Confirmed lineups only</option>
@@ -213,6 +215,7 @@ function renderCandidates(){
   const f=$("#filter").value, g=$("#game").value;
   let list=DATA.candidates.filter(c=>{
     if(g!=="all" && String(c.gamePk)!==g) return false;
+    if(f==="value") return c.value_play;
     if(f==="locked") return c.role==="Locked Core";
     if(f==="actionable") return ACTIONABLE.has(c.role);
     if(f==="core") return c.total>=78;
@@ -232,11 +235,13 @@ function renderCandidates(){
       ? '<span class="fit fit-trap" title="Strong surface shape but poor pitch-type fit vs this arsenal">⚠ TRAP</span>'
       : c.fit_tag==="PITCH-FIT"
       ? '<span class="fit fit-pitch" title="Shape specifically punishes this arsenal">PITCH-FIT</span>' : "";
+    const valTag = c.value_play
+      ? '<span class="fit fit-value" title="Off-chalk live dog: real shape + cause below the core line">★ VALUE</span>' : "";
     return `<div class="card">
       <div class="top">
         <div>
           <div class="nm">${c.name} <span style="color:var(--dim);font-weight:400">${c.bats}</span>
-            ${c.shape_source==="statcast"?'<span class="sc">SC</span>':'<span class="sc" style="color:var(--dim)">proxy</span>'}${fitTag}</div>
+            ${c.shape_source==="statcast"?'<span class="sc">SC</span>':'<span class="sc" style="color:var(--dim)">proxy</span>'}${fitTag}${valTag}</div>
           <div class="meta">${c.team} ${c.slot?("· bats "+c.slot):""} ${c.confirmed?"✓":"<span style='color:var(--yellow)'>unconfirmed</span>"} · vs ${c.opp_pitcher||"TBD"} (${c.pitcher_grade}) · ${c.venue}</div>
         </div>
         <div><div class="score">${c.total}</div><span class="role ${roleClass(c.role)}">${c.role}</span></div>
@@ -392,8 +397,8 @@ function buildCauses(games,ctx,pcards,weather,candidates){
       playable_bats:bats.slice(0,4).map(b=>({name:b.name,total:b.total,role:b.role,fit_tag:b.fit_tag}))});
   }
   causes.sort((a,b)=>b.cause_score-a.cause_score);
-  // public heat = the 2 chalkiest strong, multi-bat spots only (not every game)
-  let heat=0; for(const c of causes){ if(heat<2&&["A+","A"].includes(c.grade)&&c.n_playable>=3){c.public_heat=true;heat++;} }
+  // public heat = ONLY the single chalkiest spot (top A+ cause stacked with bats)
+  for(const c of causes){ if(c.grade==="A+"&&c.n_playable>=4){c.public_heat=true;break;} }
   return causes;
 }
 
@@ -477,7 +482,7 @@ async function buildLive(){
     cands.push({id:h.id,name:h.name,team:c.team,bats:bat||"?",opp:c.opp,
       opp_pitcher:op?op.name:null,venue:c.venue,gamePk:c.gamePk,slot,confirmed,
       season_hr:h.hr,iso:Math.round((h.slg-h.avg)*1000)/1000,total,tier:tierLabel(total),role,
-      shape_source:H.shape,pull_fit:H.pull_fit,statcast:null,mix_fit:null,fit_tag:null,
+      shape_source:H.shape,pull_fit:H.pull_fit,statcast:null,mix_fit:null,fit_tag:null,value_play:false,
       pitcher_grade:pg,breakdown:{pitcher:pPts,hitter:H.score,environment:E.score,lineup:L.score,confidence:C.score},
       reasons,warnings:[...E.warn,...L.warn],role_notes:notes});
   });

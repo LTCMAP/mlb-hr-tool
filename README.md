@@ -1,4 +1,4 @@
-# ⚾ Daily MLB Home Run Picks — odds-free (v2.3)
+# ⚾ Daily MLB Home Run Picks — odds-free (v2.4)
 
 A **free**, no-API-key tool that grades today's MLB hitters for home-run upside
 and refreshes daily via a JSON file. Implements the **HR Pairing System** workflow:
@@ -32,6 +32,21 @@ cause using real **Statcast** shape, and suggests **card structures**. Every sco
 
 > Per direction, **unconfirmed lineups are not hard-gated** out of core — confirmed status is
 > shown and batting slot still scores, but an unconfirmed bat can still surface.
+
+## What's new in v2.4 — fit logic (right hitter inside the right game)
+The cause scan was already finding the right *games*; v2.4 sharpens *which hitter* inside them.
+- **Pitch-mix fit** — does this bat actually damage what *this* pitcher throws? Computed as
+  `Σ pitcher_usage[family] × hitter_barrel_index[family]`, **relative to the hitter's own
+  baseline** (so it measures matchup, not raw power — raw power is already in the barrel/
+  air-pull slots). 1.0 = neutral, >1 punishes this arsenal, <1 poor fit. Folds into the shape
+  score's matchup slot, so the within-game ranking actually reshuffles. Pitch families
+  (fastball / breaking / offspeed) keep the 21-day samples usable.
+- **TRAP tag** — a strong surface-shape bat whose fit vs *this* arsenal is poor (the famous-name,
+  wrong-matchup trap). **PITCH-FIT tag** — shape that specifically punishes this pitcher.
+- **★ VALUE tag** — off-chalk live dogs: real HR shape + cause *below* the core line (because the
+  chalk bats don't all go on a given night). Filterable in the dashboard.
+- **Barrel→HR park fit** — pull-air power × carry park surfaces as a tiebreaker reason.
+- **Public-heat toned down** — flags only the single chalkiest A+/multi-bat spot, not every game.
 
 ---
 
@@ -106,7 +121,7 @@ No servers, no keys, no cost.
 | Component | Max | What it measures |
 |---|---:|---|
 | Pitcher Cause | 25 | HR/9 + Statcast HR/PA allowed, barrel-allowed, fly-ball-allowed, K rate |
-| Hitter HR **Shape** | 40 | **air-pull 12 · barrel 9 · hard-hit 6 · matchup/synergy 6 · platoon ISO 4 · recent form 3** (Statcast). Proxy mode caps at 30. |
+| Hitter HR **Shape** | 40 | **air-pull 12 · barrel 9 · hard-hit 6 · matchup 6 (platoon + pitch-mix fit) · platoon ISO 4 · recent form 3** (Statcast). Proxy mode caps at 30. |
 | Environment | 15 | Park HR factor (by handedness), temp, roof, rain/wind warnings |
 | Lineup / Opportunity | 12 | Batting slot (unconfirmed = neutral default, not gated) |
 | Source / Structure fit | 8 | Model agreement |
@@ -117,6 +132,10 @@ No servers, no keys, no cost.
 `Locked Core` (shape ≥32, slot 1-5, A/A+ cause or elite override, clean park) ·
 `Core` · `Mini-Stack Bat` · `Cause Satellite` (strong cause, decent bat) ·
 `Power Satellite` (elite bat, weak cause — the override lane) · `Longshot` · `Watchlist` · `Pass`.
+
+**Fit tags (v2.4, shown alongside the role):**
+`PITCH-FIT` (shape punishes this arsenal) · `⚠ TRAP` (good surface shape, poor fit vs this arsenal) ·
+`★ VALUE` (off-chalk live dog — real shape + cause below the core line).
 
 **Hard caps:** shape <22 → max Longshot · suppressive park (≤92) + no pull/barrel fit → Watchlist ·
 Pass-grade cause + non-elite bat → Pass.
@@ -130,9 +149,10 @@ Pass-grade cause + non-elite bat → Pass.
   proxy** (season ISO/HR-rate) and cannot produce a Locked Core. Run `build.py` for full shape.
 - **Statcast sample sizes.** The window defaults to 21 days; hitters with <5 batted balls are
   skipped, but short windows are still noisy early. Tune with `--window N`.
-- **Matchup fit is partial.** True pitch-type-vs-arsenal fit needs per-pitch joins; v2.3
-  approximates it with platoon hand + an air-pull/fly-ball *synergy* bonus. Pull-side porch
-  geometry isn't modeled per park.
+- **Matchup fit (v2.4) uses pitch *families*, not exact pitch types.** Fit is barrel damage by
+  fastball/breaking/offspeed vs the pitcher's family usage — enough sample over 21 days, but it
+  doesn't model exact pitch types, zones, or pull-side porch geometry. It's a real fit signal,
+  not a full plate-discipline model. The in-browser proxy build has **no** pitch-mix fit.
 - **Wind direction is not modeled.** Without per-park orientation, wind only raises a *warning*
   at high speeds; it never inflates a score.
 - **No manual notes yet.** Source-confidence is model-only; pasting Kasper/Outlaw reads to boost
@@ -143,7 +163,7 @@ Pass-grade cause + non-elite bat → Pass.
 ```
 mlb-hr-tool/
   index.html              # the dashboard (open this)
-  build.py                # daily JSON generator, v2.3 scoring (stdlib only)
+  build.py                # daily JSON generator, v2.4 scoring (stdlib only)
   statcast.py             # Baseball Savant Statcast adapter (stdlib, cached)
   serve.py                # tiny local static server
   data/

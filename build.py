@@ -619,6 +619,14 @@ def build(date, window=21, use_statcast=True):
             elif mix_fit >= 1.25 and role in actionable:
                 fit_tag = "PITCH-FIT"
 
+        # Value longshot: an off-chalk live dog — a non-core role, but with genuine
+        # HR shape, a real cause, and a fit that isn't a trap. ("The chalk guys
+        # don't all go" — these are the lower-profile upside bats worth a dart.)
+        value_play = (role in ("Cause Satellite", "Power Satellite", "Longshot")
+                      and 62 <= total < 76 and h40 >= 25 and pull_fit
+                      and pgrade in ("A+", "A", "B")
+                      and (mix_fit is None or mix_fit >= 1.05) and fit_tag != "TRAP")
+
         # barrel→HR park-fit tiebreaker (separates GABP/Coors/short-porch carry)
         bhr_reason = None
         if scb_h and hf is not None and scb_h["barrel_rate"] >= 0.10 \
@@ -630,6 +638,8 @@ def build(date, window=21, use_statcast=True):
             reasons.append(f"vs {op['name']} — cause {pgrade} ({pcause}/25)")
             reasons += [f"Pitcher: {f}" for f in (pc["flags"][:2] if pc else [])]
         reasons += h_reasons[:4] + e_reasons[:2] + l_reasons + role_notes + c_reasons[:1]
+        if value_play:
+            reasons.append("VALUE longshot: real shape + cause off the chalk")
         if bhr_reason:
             reasons.append(bhr_reason)
 
@@ -641,7 +651,7 @@ def build(date, window=21, use_statcast=True):
             "iso": round(h["slg"] - h["avg"], 3),
             "total": total, "tier": tier_label(total), "role": role,
             "shape_source": shape_src, "pull_fit": pull_fit,
-            "mix_fit": mix_fit, "fit_tag": fit_tag,
+            "mix_fit": mix_fit, "fit_tag": fit_tag, "value_play": value_play,
             "pitcher_grade": pgrade,
             "breakdown": {"pitcher": pcause, "hitter": h40, "environment": e_pts,
                           "lineup": l_pts, "confidence": c_pts},
@@ -725,13 +735,13 @@ def build_causes(games, team_ctx, pcards, weather, parks, candidates):
                               for b in playable[:4]],
         })
     causes.sort(key=lambda x: (x["cause_score"], x["pitcher_cause"]), reverse=True)
-    # Public heat = the genuinely chalkiest spots only (top 2 strong, multi-bat
-    # causes) — not every good game, so the flag actually means something.
-    heat = 0
+    # Public heat = ONLY the single chalkiest spot (top A+ cause stacked with bats).
+    # Toned down so the flag means "this is THE obvious one, don't over-load it",
+    # not a label on every good game.
     for c in causes:
-        if heat < 2 and c["grade"] in ("A+", "A") and c["n_playable"] >= 3:
+        if c["grade"] == "A+" and c["n_playable"] >= 4:
             c["public_heat"] = True
-            heat += 1
+            break
     return causes
 
 

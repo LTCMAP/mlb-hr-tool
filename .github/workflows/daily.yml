@@ -4,13 +4,20 @@ name: Build daily HR slate
 # site (GitHub Pages) reads. Runs are in UTC.
 on:
   schedule:
-    # ~10:30am ET and ~3:30pm ET — catches morning + afternoon lineup posts.
-    - cron: "30 14 * * *"
-    - cron: "30 19 * * *"
+    # Multiple runs (UTC) so the slate rolls to the new day and re-pulls as
+    # probable pitchers + lineups firm up. ET = UTC-4 (summer).
+    - cron: "30 13 * * *"   # ~9:30am ET — new day, early probables
+    - cron: "30 16 * * *"   # ~12:30pm ET
+    - cron: "30 19 * * *"   # ~3:30pm ET
+    - cron: "30 22 * * *"   # ~6:30pm ET — lineups for night games
   workflow_dispatch: {}        # lets you trigger a build manually
 
 permissions:
   contents: write              # to commit the regenerated JSON
+
+concurrency:                   # don't let overlapping runs fight over a push
+  group: daily-hr-slate
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -40,8 +47,10 @@ jobs:
           git config user.email "hr-bot@users.noreply.github.com"
           git add data/latest.json
           if git diff --cached --quiet; then
-            echo "No changes to commit."
+            echo "No changes to commit (slate unchanged)."
           else
-            git commit -m "Daily HR slate $(date -u +%F)"
-            git push
+            git commit -m "Daily HR slate $(date -u +%F\ %H:%MZ)"
+            # rebase in case the repo advanced since checkout, then push
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
