@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily MLB Home Run Picks — odds-free</title>
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --panel2:#1c2330; --line:#283041;
+    --txt:#e6edf3; --dim:#8b949e; --accent:#f0883e; --green:#3fb950;
+    --blue:#58a6ff; --yellow:#d29922; --red:#f85149; --chip:#21262d;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);
+    font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  header{padding:20px 22px;border-bottom:1px solid var(--line);
+    background:linear-gradient(180deg,#161b22,#0d1117)}
+  h1{margin:0;font-size:22px;letter-spacing:.2px}
+  h1 .ball{color:var(--accent)}
+  .sub{color:var(--dim);font-size:13px;margin-top:4px}
+  .wrap{max-width:1180px;margin:0 auto;padding:18px 22px 60px}
+  .bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:16px 0}
+  button{background:var(--chip);color:var(--txt);border:1px solid var(--line);
+    border-radius:8px;padding:8px 13px;font-size:13px;cursor:pointer}
+  button:hover{border-color:var(--accent)}
+  button.on{background:var(--accent);color:#111;border-color:var(--accent);font-weight:600}
+  .stats{display:flex;gap:18px;flex-wrap:wrap;color:var(--dim);font-size:13px}
+  .stats b{color:var(--txt)}
+  .grid{display:grid;grid-template-columns:2fr 1fr;gap:18px;align-items:start}
+  @media(max-width:900px){.grid{grid-template-columns:1fr}}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:16px;margin-bottom:18px}
+  .panel h2{margin:0 0 12px;font-size:15px;color:var(--dim);font-weight:600;
+    text-transform:uppercase;letter-spacing:.6px}
+  .card{background:var(--panel2);border:1px solid var(--line);border-radius:10px;
+    padding:13px 14px;margin-bottom:11px}
+  .card .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+  .nm{font-weight:600;font-size:16px}
+  .meta{color:var(--dim);font-size:12.5px;margin-top:2px}
+  .score{font-size:26px;font-weight:700;line-height:1;text-align:right}
+  .fit{font-size:10px;font-weight:700;padding:1px 6px;border-radius:5px;margin-left:6px;
+    vertical-align:middle;letter-spacing:.3px}
+  .fit-trap{background:#5c1a1a;color:#ff9d9d;border:1px solid #7a2424}
+  .fit-pitch{background:#16432a;color:#7ee2a0;border:1px solid #1f5c39}
+  .tier{font-size:11px;padding:2px 8px;border-radius:20px;display:inline-block;
+    margin-top:4px;font-weight:600}
+  .t-elite{background:#7a3b00;color:#ffcf99}
+  .t-core{background:#1f4d2b;color:#7ee2a0}
+  .t-sat{background:#1f3b5c;color:#9cc8ff}
+  .t-long{background:#4d4416;color:#e8d27a}
+  .t-pass{background:#30363d;color:#8b949e}
+  /* role pills */
+  .role{font-size:11px;padding:2px 8px;border-radius:6px;display:inline-block;margin-top:4px;font-weight:600;border:1px solid var(--line)}
+  .r-locked{background:#7a3b00;color:#ffcf99}
+  .r-core{background:#1f4d2b;color:#7ee2a0}
+  .r-mini{background:#0f4d4d;color:#7fe3e3}
+  .r-cause{background:#1f3b5c;color:#9cc8ff}
+  .r-power{background:#3b1f5c;color:#cdaaff}
+  .r-long{background:#4d4416;color:#e8d27a}
+  .r-watch{background:#30363d;color:#c9d1d9}
+  .r-pass{background:#21262d;color:#6e7681}
+  .sc{font-size:11px;color:var(--green);margin-left:6px}
+  .chips{display:flex;gap:5px;flex-wrap:wrap;margin:7px 0 2px;font-size:11px}
+  .chips span{background:#0d2818;border:1px solid #1f4d2b;border-radius:6px;padding:2px 7px;color:#7ee2a0}
+  .banner{background:#3a2e12;border:1px solid #6b5318;border-radius:8px;padding:9px 13px;font-size:12.5px;color:#e8d27a;margin:12px 0}
+  .cause-card{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:11px 13px;margin-bottom:9px}
+  .cause-card .ch{display:flex;justify-content:space-between;align-items:center}
+  .cause-card .cap{color:var(--accent);font-size:12.5px;margin:4px 0}
+  .cause-card .bats{color:var(--dim);font-size:12px}
+  .heat{background:#5c1f1f;color:#ffb4b4;font-size:10px;padding:1px 6px;border-radius:5px;margin-left:6px}
+  .bd{display:flex;gap:5px;margin:9px 0 7px;font-size:11px}
+  .bd span{background:#0d1117;border:1px solid var(--line);border-radius:6px;
+    padding:3px 6px;color:var(--dim)}
+  .bd b{color:var(--txt)}
+  .reasons{font-size:12.5px;color:#c9d1d9;margin:6px 0 0;padding-left:17px}
+  .reasons li{margin:1px 0}
+  .warn{color:var(--yellow);font-size:12px;margin-top:6px}
+  .pitch-row{display:flex;justify-content:space-between;padding:8px 0;
+    border-bottom:1px solid var(--line);font-size:13.5px}
+  .pitch-row:last-child{border:0}
+  .grade{font-weight:700;padding:1px 7px;border-radius:6px;font-size:12px}
+  .g-Aplus,.g-A{background:#7a1d1d;color:#ffb4b4}
+  .g-B{background:#5c4a16;color:#ffe08a}
+  .g-C,.g-Pass{background:#30363d;color:#8b949e}
+  .struct .legs{margin:4px 0 6px;padding-left:18px;font-size:13.5px}
+  .struct .why{color:var(--dim);font-size:12.5px}
+  .struct h3{margin:14px 0 4px;font-size:13px;color:var(--accent)}
+  .struct h3:first-child{margin-top:0}
+  .note{background:#1c2330;border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:6px;padding:10px 13px;font-size:12.5px;color:var(--dim);margin:12px 0}
+  .err{color:var(--red)}
+  select{background:var(--chip);color:var(--txt);border:1px solid var(--line);
+    border-radius:8px;padding:7px 10px;font-size:13px}
+  a{color:var(--blue)}
+  #status{font-size:13px;color:var(--dim)}
+</style>
+</head>
+<body>
+<header>
+  <h1><span class="ball">⚾</span> Daily MLB Home Run Picks <span style="color:var(--dim);font-size:13px;font-weight:400">· odds-free</span></h1>
+  <div class="sub">v2.4 · rank CAUSES → choose CAPTURE → lock SHAPE that captures the cause + pitch-mix fit (does this bat damage THIS arsenal?) · free data (MLB Stats API + Baseball Savant + Open-Meteo)</div>
+</header>
+
+<div class="wrap">
+  <div class="bar">
+    <button id="liveBtn">↻ Build live (today)</button>
+    <select id="filter">
+      <option value="all">All candidates</option>
+      <option value="locked">Locked Core only</option>
+      <option value="actionable">Actionable roles</option>
+      <option value="core">Core+ (78+)</option>
+      <option value="sat">Satellite+ (70+)</option>
+      <option value="confirmed">Confirmed lineups only</option>
+      <option value="nowarn">Hide weather/lineup warnings</option>
+    </select>
+    <select id="game"><option value="all">All games</option></select>
+    <button id="exportBtn">⤓ Export JSON</button>
+    <span id="status">Loading…</span>
+  </div>
+
+  <div class="stats" id="summary"></div>
+
+  <div id="banner"></div>
+  <div class="note" id="method"></div>
+
+  <div class="panel">
+    <h2>Cause Board — rank causes first, then capture</h2>
+    <div id="causes"></div>
+  </div>
+
+  <div class="grid">
+    <div>
+      <div class="panel">
+        <h2>Hitter Candidate Board</h2>
+        <div id="candidates"></div>
+      </div>
+    </div>
+    <div>
+      <div class="panel struct">
+        <h2>Suggested Structures</h2>
+        <div id="structures"></div>
+      </div>
+      <div class="panel">
+        <h2>Pitcher Fade Board</h2>
+        <div id="pitchers"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="note">
+    <b>Not betting advice.</b> Decision-support only, <b>no odds</b>, no guaranteed picks.
+    v2.4 ranks causes first, then capture method, then locks hitters whose air-pull/barrel
+    shape can capture the cause — and adds <b>pitch-mix fit</b> (does this bat damage what
+    this pitcher actually throws?), flagging <b>TRAP</b> bats (great surface shape, wrong
+    arsenal fit) and <b>PITCH-FIT</b> bats. When built via <code>build.py</code>, shape +
+    pitch-mix use real Statcast (Baseball Savant); the in-browser live build falls back to a
+    capped season-power proxy (no pitch-mix). Always confirm lineups near lock.
+  </div>
+</div>
+
+<script>
+const API="https://statsapi.mlb.com/api/v1";
+let DATA=null, PARKS=null;
+
+const $=s=>document.querySelector(s);
+const tierClass=t=>({"Elite Core":"t-elite","Core":"t-core","Satellite":"t-sat","Longshot":"t-long","Pass":"t-pass"}[t]||"t-pass");
+const roleClass=r=>({"Locked Core":"r-locked","Core":"r-core","Mini-Stack Bat":"r-mini","Cause Satellite":"r-cause","Power Satellite":"r-power","Longshot":"r-long","Watchlist":"r-watch","Pass":"r-pass"}[r]||"r-watch");
+const ACTIONABLE=new Set(["Locked Core","Core","Mini-Stack Bat","Cause Satellite","Power Satellite"]);
+const gradeClass=g=>"g-"+(g==="A+"?"Aplus":g);
+const pct=x=>x==null?"–":(x*100).toFixed(0)+"%";
+
+// ---------- render ----------
+function render(){
+  if(!DATA) return;
+  $("#status").textContent="slate "+DATA.slate_date;
+  $("#method").textContent=DATA.method;
+  $("#summary").innerHTML=
+    `<span>Games: <b>${DATA.games}</b></span>`+
+    `<span>Confirmed lineups: <b>${DATA.confirmed_lineups}</b></span>`+
+    `<span>Candidates: <b>${DATA.candidates.length}</b></span>`+
+    `<span>Shape data: <b>${DATA.statcast?"Statcast ✓":"proxy only"}</b></span>`+
+    `<span>Generated: <b>${new Date(DATA.generated_utc).toLocaleString()}</b></span>`;
+  $("#banner").innerHTML = DATA.statcast ? "" :
+    `<div class="banner">⚠ <b>Proxy shape mode</b> — built live in-browser without Statcast (Baseball Savant has no browser access). Hitter scores use season ISO/HR-rate and are <b>capped</b>, so no player can reach <b>Locked Core</b>. For full air-pull/barrel shape, run <code>build.py</code> (locally or via the daily GitHub Action) and reload.</div>`;
+
+  // game filter options
+  const gsel=$("#game");
+  if(gsel.options.length<=1){
+    [...new Map(DATA.candidates.map(c=>[c.gamePk,`${c.team} vs ${c.opp}`])).entries()]
+      .forEach(([pk,label])=>{const o=document.createElement("option");o.value=pk;o.textContent=label;gsel.appendChild(o);});
+  }
+  renderCauses();
+  renderCandidates();
+  renderStructures();
+  renderPitchers();
+}
+
+function renderCauses(){
+  const c=DATA.causes||[];
+  $("#causes").innerHTML = c.length ? c.slice(0,10).map(x=>`
+    <div class="cause-card">
+      <div class="ch">
+        <div><b>${x.team}</b> vs ${x.pitcher} <span class="meta">(${x.opp} · ${x.venue})</span>
+          ${x.public_heat?'<span class="heat">PUBLIC HEAT — cap exposure</span>':""}</div>
+        <span class="grade ${gradeClass(x.grade)}">${x.grade} ${x.cause_score}</span>
+      </div>
+      <div class="cap">→ ${x.capture_method}</div>
+      <div class="bats">${x.playable_bats.length?("Bats: "+x.playable_bats.map(b=>`${b.name} (${b.total}, ${b.role})${b.fit_tag==="TRAP"?" ⚠TRAP":b.fit_tag==="PITCH-FIT"?" ✦FIT":""}`).join(" · ")):"no qualifying bats"}</div>
+    </div>`).join("") : "<div class='meta'>No causes.</div>";
+}
+
+function renderCandidates(){
+  const f=$("#filter").value, g=$("#game").value;
+  let list=DATA.candidates.filter(c=>{
+    if(g!=="all" && String(c.gamePk)!==g) return false;
+    if(f==="locked") return c.role==="Locked Core";
+    if(f==="actionable") return ACTIONABLE.has(c.role);
+    if(f==="core") return c.total>=78;
+    if(f==="sat") return c.total>=70;
+    if(f==="confirmed") return c.confirmed;
+    if(f==="nowarn") return (c.warnings||[]).length===0;
+    return true;
+  }).slice(0,80);
+  $("#candidates").innerHTML = list.length? list.map(c=>{
+    const b=c.breakdown, s=c.statcast;
+    const mfChip = (c.mix_fit!=null)
+      ? `<span title="Does this bat damage what this pitcher throws? 1.0=neutral">mix-fit ${c.mix_fit}×</span>` : "";
+    const chips = s ? `<div class="chips">
+        <span>air-pull ${pct(s.air_pull_rate)}</span><span>barrel ${pct(s.barrel_rate)}</span>
+        <span>hard-hit ${pct(s.hard_hit_rate)}</span><span>FB ${pct(s.fb_rate)}</span>${mfChip}</div>` : "";
+    const fitTag = c.fit_tag==="TRAP"
+      ? '<span class="fit fit-trap" title="Strong surface shape but poor pitch-type fit vs this arsenal">⚠ TRAP</span>'
+      : c.fit_tag==="PITCH-FIT"
+      ? '<span class="fit fit-pitch" title="Shape specifically punishes this arsenal">PITCH-FIT</span>' : "";
+    return `<div class="card">
+      <div class="top">
+        <div>
+          <div class="nm">${c.name} <span style="color:var(--dim);font-weight:400">${c.bats}</span>
+            ${c.shape_source==="statcast"?'<span class="sc">SC</span>':'<span class="sc" style="color:var(--dim)">proxy</span>'}${fitTag}</div>
+          <div class="meta">${c.team} ${c.slot?("· bats "+c.slot):""} ${c.confirmed?"✓":"<span style='color:var(--yellow)'>unconfirmed</span>"} · vs ${c.opp_pitcher||"TBD"} (${c.pitcher_grade}) · ${c.venue}</div>
+        </div>
+        <div><div class="score">${c.total}</div><span class="role ${roleClass(c.role)}">${c.role}</span></div>
+      </div>
+      ${chips}
+      <div class="bd">
+        <span>Pit <b>${b.pitcher}</b>/25</span><span>Shape <b>${b.hitter}</b>/40</span>
+        <span>Env <b>${b.environment}</b>/15</span><span>Lnp <b>${b.lineup}</b>/12</span>
+        <span>Cnf <b>${b.confidence}</b>/8</span>
+      </div>
+      <ul class="reasons">${c.reasons.slice(0,6).map(r=>`<li>${r}</li>`).join("")}</ul>
+      ${(c.warnings||[]).length?`<div class="warn">⚠ ${c.warnings.join(" · ")}</div>`:""}
+    </div>`;
+  }).join("") : "<div class='meta'>No candidates match this filter.</div>";
+}
+
+function renderStructures(){
+  const s=DATA.structures||{}, el=$("#structures"); let h="";
+  const blk=(title,obj,extra="")=>{
+    if(!obj) return "";
+    return `<h3>${title}</h3>${extra}<ul class="legs">${obj.legs.map(l=>`<li>${l}</li>`).join("")}</ul><div class="why">${obj.why}</div>`;
+  };
+  h+=blk("4-Leg RR Core (by 2s)",s.rr_core_4leg);
+  h+=blk("Same-Game Correlated Pair",s.same_game_pair,s.same_game_pair?`<div class="meta">${s.same_game_pair.game}</div>`:"");
+  h+=blk("Longshot Convergence Group",s.longshot_group);
+  el.innerHTML=h||"<div class='meta'>No structures available yet.</div>";
+}
+
+function renderPitchers(){
+  $("#pitchers").innerHTML = DATA.pitcher_board.filter(p=>p.score>=12).slice(0,16).map(p=>
+    `<div class="pitch-row"><div>${p.name}<div class="meta">HR/9 ${p.hr9??"–"} · ${(p.flags||[])[0]||""}</div></div>
+     <span class="grade ${gradeClass(p.grade)}">${p.grade} ${p.score}</span></div>`
+  ).join("") || "<div class='meta'>No pitcher data.</div>";
+}
+
+// ---------- load cached JSON ----------
+async function loadCached(){
+  try{
+    // cache-bust so Netlify/GitHub CDN can't serve a stale copy
+    const r=await fetch("data/latest.json?t="+Date.now(),{cache:"no-store"});
+    if(!r.ok) throw 0;
+    DATA=await r.json(); render();
+    return true;
+  }catch(e){ return false; }
+}
+
+// ---------- live in-browser build (zero-setup fallback) ----------
+const num=(x,d=0)=>{const n=parseFloat(x);return isNaN(n)?d:n;};
+async function getJSON(u){const r=await fetch(u);if(!r.ok)throw new Error(u);return r.json();}
+
+function parkFor(name){
+  if(!PARKS||!name) return null;
+  return PARKS[name.toLowerCase().trim()]||null;
+}
+// ----- v2.3 scorers (browser = proxy mode; no Statcast available cross-origin) -----
+function scorePitcher(p){            // 0-25
+  if(!p||p.ip<1) return {score:0,grade:"?",flags:["No pitcher stats"],hr9:null};
+  let pts=0,flags=[]; const hr9=p.ip?p.hr*9/p.ip:0;
+  const krate=p.bf?p.k/p.bf:0, fb=(p.airOuts+p.groundOuts)?p.airOuts/(p.airOuts+p.groundOuts):.5;
+  if(hr9>=1.7){pts+=9;flags.push(`Elevated HR/9 (${hr9.toFixed(2)})`);}
+  else if(hr9>=1.4){pts+=7;flags.push(`High HR/9 (${hr9.toFixed(2)})`);}
+  else if(hr9>=1.1){pts+=5;flags.push(`Avg+ HR/9 (${hr9.toFixed(2)})`);}
+  else if(hr9>=0.9)pts+=2.5; else flags.push(`Suppresses HR (${hr9.toFixed(2)})`);
+  const slg=p.slg_allowed;
+  if(slg>=.47){pts+=5;flags.push(`Hard contact (.${String(Math.round(slg*1000)).padStart(3,"0")} SLG)`);}
+  else if(slg>=.43){pts+=3.5;flags.push(`Above-avg SLG allowed`);} else if(slg>=.39)pts+=2; else pts+=1;
+  if(fb>=.55){pts+=5;flags.push(`Fly-ball lean (${Math.round(fb*100)}% air)`);}
+  else if(fb>=.50)pts+=3.5; else if(fb>=.45)pts+=2; else pts+=1;
+  if(krate<.16&&krate>0){pts+=4;flags.push(`Low K (${Math.round(krate*100)}%)`);}
+  else if(krate<.20&&krate>0)pts+=2.5; else if(krate>=.27){flags.push(`High K (${Math.round(krate*100)}%)`);} else pts+=1.5;
+  pts=Math.max(0,Math.min(25,pts));
+  const grade=pts>=20?"A+":pts>=17?"A":pts>=13.5?"B":pts>=10?"C":"Pass";
+  return {score:Math.round(pts*10)/10,grade,flags,hr9:Math.round(hr9*100)/100};
+}
+function scoreHitter(h){             // proxy: 0-40 but CAPPED at 30 (no Statcast shape)
+  let pts=0,reasons=[]; const iso=Math.max(0,h.slg-h.avg), hr=h.pa?h.hr/h.pa:0, slg=h.slg;
+  if(hr>=.06){pts+=14;reasons.push(`Proxy: elite HR rate (1/${Math.round(1/hr)} PA)`);}
+  else if(hr>=.045){pts+=11;reasons.push(`Proxy: strong HR rate`);}
+  else if(hr>=.032)pts+=7; else if(hr>=.022)pts+=4;
+  if(iso>=.25){pts+=10;reasons.push(`Proxy: elite ISO (${iso.toFixed(3)})`);}
+  else if(iso>=.20)pts+=7; else if(iso>=.16)pts+=5; else if(iso>=.13)pts+=2;
+  pts+= slg>=.52?6: slg>=.46?4: slg>=.41?2:0;
+  reasons.push("No Statcast shape — score capped (season-power proxy)");
+  return {score:Math.round(Math.min(30,pts)*10)/10,reasons,shape:"proxy",pull_fit:false};
+}
+function scoreEnv(park,wx,bat){      // 0-15, returns hf for gating
+  let pts=0,reasons=[],warn=[],hf=null;
+  if(park){hf=park.hr; if(bat==="L")hf=park.hr_l??hf; else if(bat==="R")hf=park.hr_r??hf;
+    if(hf>=110){pts+=9;reasons.push(`Elite HR park (${hf})`);}
+    else if(hf>=105){pts+=7;reasons.push(`Hitter-friendly park (${hf})`);}
+    else if(hf>=100){pts+=5;reasons.push(`Slightly + park (${hf})`);}
+    else if(hf>=95)pts+=4; else if(hf>=90){pts+=2;warn.push(`Pitcher park (${hf})`);}
+    else{pts+=1;warn.push(`Strong pitcher park (${hf})`);}
+    if(park.note)reasons.push(park.note);
+  } else {pts+=4;warn.push("Park factor unknown");}
+  const roof=park?park.roof:"unknown";
+  if(roof==="dome"||roof==="retractable"){pts+=3;reasons.push(`${roof[0].toUpperCase()+roof.slice(1)} roof (weather neutralized)`);}
+  else if(wx){const t=wx.temp_f;
+    if(t>=85){pts+=5;reasons.push(`Hot (${Math.round(t)}°F)`);}
+    else if(t>=75){pts+=4;reasons.push(`Warm (${Math.round(t)}°F)`);}
+    else if(t>=65)pts+=3; else if(t>=50)pts+=2; else warn.push(`Cold (${Math.round(t)}°F)`);
+    if(wx.wind_mph>=15)warn.push(`High wind ${Math.round(wx.wind_mph)} mph (dir not modeled)`);
+    if(wx.precip_pct>=60)warn.push(`Rain risk ${Math.round(wx.precip_pct)}%`);
+  } else {pts+=3;warn.push("Weather unavailable");}
+  return {score:Math.round(Math.max(0,Math.min(15,pts))*10)/10,reasons,warn,hf};
+}
+function scoreLineup(slot,confirmed){ // 0-12 (unconfirmed NOT hard-gated)
+  if(!slot) return {score:6,reasons:[],warn:confirmed?[]:["Lineup not confirmed"]};
+  if(slot<=2) return {score:12,reasons:[`Top of order (#${slot})`],warn:[]};
+  if(slot<=4) return {score:11,reasons:[`Heart of order (#${slot})`],warn:[]};
+  if(slot<=6) return {score:8,reasons:[`Mid order (#${slot})`],warn:[]};
+  return {score:5,reasons:[],warn:[`Bottom of order (#${slot})`]};
+}
+function scoreConf(h,p){             // 0-8
+  if(h>=30&&p>=14) return {score:5,reasons:["Model: elite shape + clear cause"]};
+  if(h>=26||p>=17) return {score:4,reasons:["Model: one strong signal"]};
+  if(h>=20) return {score:3,reasons:[]};
+  return {score:2,reasons:[]};
+}
+function tierLabel(t){return t>=85?"Elite Core":t>=78?"Core":t>=70?"Satellite":t>=62?"Longshot":"Pass";}
+function assignRole(total,h40,pg,pc,hf,pull,slot,confirmed,env,warn){
+  const notes=[];
+  const majorPark=hf!=null&&hf<=92, weatherPen=warn.some(w=>w.startsWith("Cold")||w.startsWith("Rain"));
+  const neutralEnv=env>=6, elite=h40>=32&&neutralEnv&&(slot==null||slot<=4);
+  const top5=slot!=null&&slot<=5, cleanEnv=(hf==null||hf>=95)&&!weatherPen;
+  if(h40<22){notes.push("Hitter shape <22 → capped at Longshot");return{role:total>=62?"Longshot":"Watchlist",notes};}
+  if(majorPark&&!pull){notes.push("Suppressive park + no pull/barrel fit → Watchlist");return{role:"Watchlist",notes};}
+  if(pg==="Pass"&&!elite)return{role:"Pass",notes};
+  if(h40>=32&&top5&&(["A+","A"].includes(pg)||elite)&&cleanEnv)return{role:"Locked Core",notes};
+  if(["A+","A"].includes(pg)&&h40>=22&&h40<32)return{role:"Cause Satellite",notes};
+  if(elite&&["B","C","Pass"].includes(pg)){notes.push("Elite-hitter override (beats a neutral spot)");return{role:"Power Satellite",notes};}
+  if(h40>=30&&["A+","A","B"].includes(pg))return{role:"Core",notes};
+  if(["A+","A","B"].includes(pg)&&total>=62)return{role:"Longshot",notes};
+  if(total>=70)return{role:"Watchlist",notes};
+  return{role:"Pass",notes};
+}
+function buildCauses(games,ctx,pcards,weather,candidates){
+  const byTeam={}; candidates.forEach(c=>{if(c.total>=62)(byTeam[c.team]=byTeam[c.team]||[]).push(c);});
+  const causes=[];
+  for(const tid in ctx){const x=ctx[tid], op=x.opp_pitcher; if(!op)continue;
+    const pc=pcards[op.id]; if(!pc)continue;
+    const park=parkFor(x.venue), hf=park?park.hr:100;
+    const bats=(byTeam[x.team]||[]).filter(b=>b.breakdown.hitter>=22).sort((a,b)=>b.total-a.total);
+    const n=bats.length, g=pc.grade;
+    let cap = (g==="A+"&&n>=2)?"2-bat mini-stack or team-HR (strong cause, multiple bats)":
+      (g==="A"&&n>=2)?"2-bat mini-stack (cause supports coverage)":
+      (["A+","A","B"].includes(g)&&n>=1)?"Single best bat":
+      (["A+","A","B"].includes(g))?"Team-HR placeholder (cause strong, bat capture thin)":
+      "Watchlist / pass (no clear cause)";
+    causes.push({team:x.team,opp:x.opp,pitcher:op.name,venue:x.venue,grade:g,
+      pitcher_cause:pc.score,park_hr:hf,cause_score:Math.round((pc.score+(hf-100)*0.25)*10)/10,
+      capture_method:cap,public_heat:false,n_playable:n,
+      playable_bats:bats.slice(0,4).map(b=>({name:b.name,total:b.total,role:b.role,fit_tag:b.fit_tag}))});
+  }
+  causes.sort((a,b)=>b.cause_score-a.cause_score);
+  // public heat = the 2 chalkiest strong, multi-bat spots only (not every game)
+  let heat=0; for(const c of causes){ if(heat<2&&["A+","A"].includes(c.grade)&&c.n_playable>=3){c.public_heat=true;heat++;} }
+  return causes;
+}
+
+async function buildLive(){
+  $("#status").textContent="Building live… fetching slate";
+  const today=new Date().toISOString().slice(0,10), season=today.slice(0,4);
+  if(!PARKS){const pj=await getJSON("data/parks.json");PARKS={};pj.parks.forEach(p=>p.names.forEach(n=>PARKS[n.toLowerCase().trim()]=p));}
+  const sched=await getJSON(`${API}/schedule?sportId=1&date=${today}&hydrate=probablePitcher,team,venue`);
+  const games=[]; (sched.dates[0]?.games||[]).forEach(g=>{
+    const t=g.teams, pp=s=>t[s].probablePitcher?{id:t[s].probablePitcher.id,name:t[s].probablePitcher.fullName}:null;
+    games.push({gamePk:g.gamePk,gameDate:g.gameDate,venue:g.venue?.name,
+      home:{id:t.home.team.id,name:t.home.team.name,pitcher:pp("home")},
+      away:{id:t.away.team.id,name:t.away.team.name,pitcher:pp("away")}});
+  });
+  if(!games.length){$("#status").innerHTML="<span class='err'>No games scheduled today.</span>";return;}
+
+  $("#status").textContent="Building live… power leaders";
+  const lead=await getJSON(`${API}/stats?stats=season&group=hitting&season=${season}&sportId=1&limit=250&sortStat=homeRuns`);
+  const pool=(lead.stats[0]?.splits||[]).map(s=>({id:s.player.id,name:s.player.fullName,
+    teamId:s.team?.id,hr:+num(s.stat.homeRuns),pa:+num(s.stat.plateAppearances),
+    avg:num(s.stat.avg),slg:num(s.stat.slg)}));
+
+  // team -> context
+  const ctx={}, pids=new Set();
+  games.forEach(g=>[["home","away"],["away","home"]].forEach(([s,o])=>{
+    if(g[o].pitcher)pids.add(g[o].pitcher.id);
+    ctx[g[s].id]={gamePk:g.gamePk,gameDate:g.gameDate,venue:g.venue,team:g[s].name,opp:g[o].name,opp_pitcher:g[o].pitcher};
+  }));
+
+  $("#status").textContent="Building live… pitchers, lineups, weather";
+  const pstats={};
+  await Promise.all([...pids].map(async pid=>{
+    try{const d=await getJSON(`${API}/people/${pid}/stats?stats=season&season=${season}&group=pitching`);
+      const sp=d.stats[0]?.splits; if(!sp||!sp.length)return; const st=sp[sp.length-1].stat;
+      pstats[pid]={ip:num(st.inningsPitched),hr:+num(st.homeRuns),k:+num(st.strikeOuts),
+        bf:num(st.atBats)+num(st.baseOnBalls)+num(st.hitByPitch)+num(st.sacFlies),
+        slg_allowed:num(st.slg),airOuts:num(st.airOuts),groundOuts:num(st.groundOuts)};
+    }catch(e){}
+  }));
+  const lineups={};
+  await Promise.all(games.map(async g=>{
+    try{const d=await getJSON(`${API}/game/${g.gamePk}/boxscore?fields=teams,away,home,team,id,battingOrder`);
+      ["away","home"].forEach(s=>{const t=d.teams[s];lineups[t.team.id]={};(t.battingOrder||[]).slice(0,9).forEach((pid,i)=>lineups[t.team.id][pid]=i+1);});
+    }catch(e){}
+  }));
+  const weather={};
+  await Promise.all(games.map(async g=>{
+    const park=parkFor(g.venue); if(!park)return;
+    try{const when=new Date(g.gameDate), ds=when.toISOString().slice(0,10);
+      const q=new URLSearchParams({latitude:park.lat,longitude:park.lon,
+        hourly:"temperature_2m,wind_speed_10m,precipitation_probability",
+        temperature_unit:"fahrenheit",wind_speed_unit:"mph",start_date:ds,end_date:ds,timezone:"UTC"});
+      const d=await getJSON(`https://api.open-meteo.com/v1/forecast?${q}`);
+      const tgt=when.toISOString().slice(0,13)+":00", i=d.hourly.time.indexOf(tgt);
+      const j=i>=0?i:Math.floor(d.hourly.time.length/2);
+      weather[g.gamePk]={temp_f:d.hourly.temperature_2m[j],wind_mph:d.hourly.wind_speed_10m[j],
+        precip_pct:d.hourly.precipitation_probability?.[j]};
+    }catch(e){}
+  }));
+  // bat sides
+  const candIds=pool.filter(h=>ctx[h.teamId]).map(h=>h.id), bats={};
+  try{const d=await getJSON(`${API}/people?personIds=${candIds.join(",")}&fields=people,id,batSide,code`);
+    (d.people||[]).forEach(p=>bats[p.id]=p.batSide?.code||"");}catch(e){}
+
+  const pcards={};
+  for(const pid in pstats) pcards[pid]=scorePitcher(pstats[pid]);
+
+  const cands=[];
+  pool.forEach(h=>{
+    const c=ctx[h.teamId]; if(!c||h.pa<20)return;
+    const slot=lineups[h.teamId]?.[h.id], confirmed=slot!=null, bat=bats[h.id]||"";
+    const op=c.opp_pitcher, pc=op?pcards[op.id]:null;
+    const pPts=pc?pc.score:0, pg=pc?pc.grade:"?";
+    const H=scoreHitter(h), park=parkFor(c.venue), E=scoreEnv(park,weather[c.gamePk],bat),
+      L=scoreLineup(slot,confirmed), C=scoreConf(H.score,pPts);
+    const total=Math.round((pPts+H.score+E.score+L.score+C.score)*10)/10;
+    const {role,notes}=assignRole(total,H.score,pg,pPts,E.hf,H.pull_fit,slot,confirmed,E.score,[...E.warn,...L.warn]);
+    const reasons=[];
+    if(op){reasons.push(`vs ${op.name} — cause ${pg} (${pPts}/25)`);(pc?pc.flags.slice(0,2):[]).forEach(f=>reasons.push("Pitcher: "+f));}
+    reasons.push(...H.reasons.slice(0,3),...E.reasons.slice(0,2),...L.reasons,...notes,...C.reasons.slice(0,1));
+    cands.push({id:h.id,name:h.name,team:c.team,bats:bat||"?",opp:c.opp,
+      opp_pitcher:op?op.name:null,venue:c.venue,gamePk:c.gamePk,slot,confirmed,
+      season_hr:h.hr,iso:Math.round((h.slg-h.avg)*1000)/1000,total,tier:tierLabel(total),role,
+      shape_source:H.shape,pull_fit:H.pull_fit,statcast:null,mix_fit:null,fit_tag:null,
+      pitcher_grade:pg,breakdown:{pitcher:pPts,hitter:H.score,environment:E.score,lineup:L.score,confidence:C.score},
+      reasons,warnings:[...E.warn,...L.warn],role_notes:notes});
+  });
+  cands.sort((a,b)=>b.total-a.total);
+
+  DATA={version:"2.4",generated_utc:new Date().toISOString(),slate_date:today,games:games.length,
+    confirmed_lineups:Object.values(lineups).filter(o=>Object.keys(o).length).length,
+    statcast:false,
+    method:"Built live in-browser (PROXY shape mode — no Statcast cross-origin, no pitch-mix fit). v2.4 weights P25/Shape40/Env15/Lineup12/Src8; hitter shape capped at 30, so no Locked Core or TRAP/PITCH-FIT tags. Run build.py for full Statcast + pitch-mix.",
+    causes:buildCauses(games,ctx,pcards,weather,cands),
+    candidates:cands,structures:buildStructures(cands),
+    pitcher_board:Object.entries(pcards).map(([id,c])=>{
+      const nm=games.flatMap(g=>["home","away"].map(s=>g[s].pitcher)).find(p=>p&&p.id==id);
+      return {id,name:nm?nm.name:id,...c};}).sort((a,b)=>b.score-a.score)};
+  render();
+}
+
+function buildStructures(c){
+  const s={}, seen=new Set(), rr=[];
+  for(const x of c){if(!ACTIONABLE.has(x.role)||x.total<70)continue;if(seen.has(x.gamePk))continue;
+    rr.push(`${x.name} (${x.team}, ${x.total}, ${x.role})`);seen.add(x.gamePk);if(rr.length===4)break;}
+  if(rr.length>=3)s.rr_core_4leg={legs:rr,why:"Four different games/causes (survival layer) — RR scores on cause diversity."};
+  const byTeam={}; c.forEach(x=>{(byTeam[x.team]=byTeam[x.team]||[]).push(x);});
+  let best=null;
+  for(const t in byTeam){const st=byTeam[t].filter(m=>m.breakdown.hitter>=27&&["A+","A"].includes(m.pitcher_grade));
+    if(st.length>=2&&(!best||st[0].total>best[0].total))best=[st[0],st[1]];}
+  if(best)s.same_game_pair={legs:[`${best[0].name} (${best[0].total})`,`${best[1].name} (${best[1].total})`],
+    game:`${best[0].team} vs ${best[0].opp}`,
+    why:`Shared cause: ${best[0].opp_pitcher} grades ${best[0].pitcher_grade}. Both ${best[0].team} bats have the shape to capture the same environment.`};
+  const ls=c.filter(x=>x.role==="Longshot").slice(0,4);
+  if(ls.length)s.longshot_group={legs:ls.map(x=>`${x.name} (${x.team}, ${x.total})`),
+    why:"Deeper bats with a real pitcher/park cause — bonus-only convergence."};
+  return s;
+}
+
+// ---------- events ----------
+$("#filter").onchange=renderCandidates;
+$("#game").onchange=renderCandidates;
+$("#liveBtn").onclick=()=>buildLive().catch(e=>$("#status").innerHTML=`<span class="err">Live build failed: ${e.message}</span>`);
+$("#exportBtn").onclick=()=>{
+  if(!DATA)return; const blob=new Blob([JSON.stringify(DATA,null,2)],{type:"application/json"});
+  const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=`hr-picks-${DATA.slate_date}.json`;a.click();
+};
+
+// On load: ALWAYS show the committed Statcast JSON (the high-quality build).
+// We never silently downgrade to the in-browser proxy — that only happens when
+// you explicitly click "Build live". (Date comparison removed: the old UTC-vs-UTC
+// check flipped to proxy during US evenings before the next Action run existed.)
+// "Today" is the US baseball day (ET), used only for a soft "as of" note.
+const TODAY=new Date().toLocaleDateString("en-CA",{timeZone:"America/New_York"});
+loadCached().then(ok=>{
+  if(!ok){
+    $("#status").innerHTML="No committed data found — click <b>↻ Build live</b> for a quick proxy slate, or run build.py / the GitHub Action.";
+    return;
+  }
+  if(DATA.slate_date !== TODAY){
+    // Show it anyway, just label it. Do NOT auto-switch to proxy.
+    $("#status").innerHTML=`<span style="color:var(--yellow)">Showing ${DATA.slate_date} slate</span> — today's (${TODAY}) build may not be committed yet.`;
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+name: Build daily HR slate
+
+# Free daily updates via GitHub Actions. Commits a fresh data/latest.json the
+# site (GitHub Pages) reads. Runs are in UTC.
+on:
+  schedule:
+    # ~10:30am ET and ~3:30pm ET — catches morning + afternoon lineup posts.
+    - cron: "30 14 * * *"
+    - cron: "30 19 * * *"
+  workflow_dispatch: {}        # lets you trigger a build manually
+
+permissions:
+  contents: write              # to commit the regenerated JSON
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Persist the Statcast daily cache between runs so we only pull the new day
+      # (first run fetches ~21 days, ~2 min; later runs are fast). No pip needed.
+      - name: Cache Statcast pulls
+        uses: actions/cache@v4
+        with:
+          path: data/cache/statcast
+          key: statcast-${{ github.run_id }}
+          restore-keys: statcast-
+
+      - name: Build today's slate JSON
+        run: python3 build.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name  "hr-bot"
+          git config user.email "hr-bot@users.noreply.github.com"
+          git add data/latest.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Daily HR slate $(date -u +%F)"
+            git push
+          fi
