@@ -1,6 +1,6 @@
 {
   "version": "2.5",
-  "generated_utc": "2026-07-02T17:21:59.847388+00:00",
+  "generated_utc": "2026-07-02T18:13:19.376163+00:00",
   "slate_date": "2026-07-02",
   "games": 9,
   "confirmed_lineups": 6,
@@ -220,9 +220,42 @@
       "playable_bats": [
         {
           "name": "Junior Caminero",
-          "total": 73.3,
+          "total": 74.8,
           "role": "Power Satellite",
           "fit_tag": "PITCH-FIT"
+        }
+      ]
+    },
+    {
+      "team": "Pittsburgh Pirates",
+      "opp": "Philadelphia Phillies",
+      "pitcher": "Alan Rangel",
+      "venue": "Citizens Bank Park",
+      "grade": "C",
+      "pitcher_cause": 13.0,
+      "park_hr": 107,
+      "cause_score": 14.8,
+      "capture_method": "Watchlist / pass (no clear cause)",
+      "public_heat": false,
+      "n_playable": 3,
+      "playable_bats": [
+        {
+          "name": "Brandon Lowe",
+          "total": 74.0,
+          "role": "Locked Core",
+          "fit_tag": "PITCH-FIT"
+        },
+        {
+          "name": "Esmerlyn Valdez",
+          "total": 74.0,
+          "role": "Locked Core",
+          "fit_tag": "PITCH-FIT"
+        },
+        {
+          "name": "Bryan Reynolds",
+          "total": 63.3,
+          "role": "Pass",
+          "fit_tag": null
         }
       ]
     },
@@ -274,33 +307,6 @@
       ]
     },
     {
-      "team": "Pittsburgh Pirates",
-      "opp": "Philadelphia Phillies",
-      "pitcher": "Alan Rangel",
-      "venue": "Citizens Bank Park",
-      "grade": "C",
-      "pitcher_cause": 11.5,
-      "park_hr": 107,
-      "cause_score": 13.2,
-      "capture_method": "Watchlist / pass (no clear cause)",
-      "public_heat": false,
-      "n_playable": 2,
-      "playable_bats": [
-        {
-          "name": "Brandon Lowe",
-          "total": 72.5,
-          "role": "Locked Core",
-          "fit_tag": "PITCH-FIT"
-        },
-        {
-          "name": "Esmerlyn Valdez",
-          "total": 72.5,
-          "role": "Locked Core",
-          "fit_tag": "PITCH-FIT"
-        }
-      ]
-    },
-    {
       "team": "Kansas City Royals",
       "opp": "Tampa Bay Rays",
       "pitcher": "Ian Seymour",
@@ -315,7 +321,7 @@
       "playable_bats": [
         {
           "name": "Jac Caglianone",
-          "total": 63.0,
+          "total": 64.5,
           "role": "Pass",
           "fit_tag": null
         }
@@ -465,13 +471,13 @@
       },
       "reasons": [
         "vs Jared Jones \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.67)",
+        "Pitcher: High HR allowed (HR/9 1.55)",
         "Platoon shape: spikes vs RHP (barrel 13%, air-pull 37%)",
         "Elite air-pull (37%)",
         "Strong barrels (13%)",
         "Hard-hit 52%",
         "Hitter-friendly park (108)",
-        "Hot (98\u00b0F)",
+        "Hot (95\u00b0F)",
         "Top of order (#2)",
         "Model: one strong signal"
       ],
@@ -530,6 +536,62 @@
       "role_notes": []
     },
     {
+      "id": 691406,
+      "name": "Junior Caminero",
+      "team": "Tampa Bay Rays",
+      "bats": "R",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Stephen Kolek",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824093,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 24,
+      "iso": 0.268,
+      "total": 74.8,
+      "tier": "Satellite",
+      "role": "Power Satellite",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.25,
+      "fit_tag": "PITCH-FIT",
+      "value_play": true,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 16.0,
+        "hitter": 35.8,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 5.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2455,
+        "barrel_rate": 0.1095,
+        "hard_hit_rate": 0.5259,
+        "fb_rate": 0.5274
+      },
+      "reasons": [
+        "vs Stephen Kolek \u2014 cause B (16.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.38)",
+        "Pitcher: Low K rate (16%)",
+        "Platoon shape: spikes vs RHP (barrel 15%, air-pull 29%)",
+        "Elite air-pull (29%)",
+        "Strong barrels (15%)",
+        "Hard-hit 53%",
+        "Hot (95\u00b0F)",
+        "Wind blowing OUT ~12 mph toward CF (approx bearing)",
+        "Elite-hitter override (beats a neutral spot)",
+        "Model: elite shape + clear cause",
+        "VALUE longshot: real shape + cause off the chalk"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Elite-hitter override (beats a neutral spot)"
+      ]
+    },
+    {
       "id": 669065,
       "name": "Kyle Stowers",
       "team": "Miami Marlins",
@@ -582,6 +644,58 @@
       "role_notes": []
     },
     {
+      "id": 664040,
+      "name": "Brandon Lowe",
+      "team": "Pittsburgh Pirates",
+      "bats": "L",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Alan Rangel",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823442,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 20,
+      "iso": 0.256,
+      "total": 74.0,
+      "tier": "Satellite",
+      "role": "Locked Core",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.6,
+      "fit_tag": "PITCH-FIT",
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 33.0,
+        "environment": 12.0,
+        "lineup": 12.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2479,
+        "barrel_rate": 0.1064,
+        "hard_hit_rate": 0.4617,
+        "fb_rate": 0.6142
+      },
+      "reasons": [
+        "vs Alan Rangel \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.56)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "Strong air-pull (27%)",
+        "Above-avg barrels (11%)",
+        "Hard-hit 46%",
+        "Platoon edge (L vs RHP)",
+        "Hitter-friendly park (108)",
+        "Hot (95\u00b0F)",
+        "Top of order (#2)",
+        "Model: one strong signal",
+        "Barrel\u2192HR park fit: pull-air power in a carry park (108)"
+      ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
       "id": 669016,
       "name": "Brandon Marsh",
       "team": "Philadelphia Phillies",
@@ -593,7 +707,7 @@
       "slot": 4,
       "confirmed": true,
       "season_hr": 15,
-      "iso": 0.21,
+      "iso": 0.209,
       "total": 74.0,
       "tier": "Satellite",
       "role": "Locked Core",
@@ -618,16 +732,67 @@
       },
       "reasons": [
         "vs Jared Jones \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.67)",
+        "Pitcher: High HR allowed (HR/9 1.55)",
         "Platoon shape: spikes vs RHP (barrel 13%, air-pull 28%)",
         "Strong air-pull (28%)",
         "Strong barrels (13%)",
         "Platoon edge (L vs RHP)",
         "Hitter-friendly park (108)",
-        "Hot (98\u00b0F)",
+        "Hot (95\u00b0F)",
         "Heart of order (#4)",
         "Model: one strong signal",
         "Barrel\u2192HR park fit: pull-air power in a carry park (108)"
+      ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
+      "id": 699013,
+      "name": "Esmerlyn Valdez",
+      "team": "Pittsburgh Pirates",
+      "bats": "R",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Alan Rangel",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823442,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 6,
+      "iso": 0.392,
+      "total": 74.0,
+      "tier": "Satellite",
+      "role": "Locked Core",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.76,
+      "fit_tag": "PITCH-FIT",
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 34.0,
+        "environment": 12.0,
+        "lineup": 11.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1887,
+        "barrel_rate": 0.1479,
+        "hard_hit_rate": 0.4767,
+        "fb_rate": 0.5459
+      },
+      "reasons": [
+        "vs Alan Rangel \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.56)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "Platoon shape: spikes vs RHP (barrel 21%, air-pull 21%)",
+        "Good air-pull (21%)",
+        "Elite barrel rate (21%)",
+        "Hard-hit 48%",
+        "Hitter-friendly park (106)",
+        "Hot (95\u00b0F)",
+        "Heart of order (#4)",
+        "Model: one strong signal"
       ],
       "warnings": [],
       "role_notes": []
@@ -644,7 +809,7 @@
       "slot": 3,
       "confirmed": true,
       "season_hr": 20,
-      "iso": 0.257,
+      "iso": 0.26,
       "total": 73.4,
       "tier": "Satellite",
       "role": "Locked Core",
@@ -669,173 +834,14 @@
       },
       "reasons": [
         "vs Jared Jones \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.67)",
+        "Pitcher: High HR allowed (HR/9 1.55)",
         "Platoon shape: spikes vs RHP (barrel 13%, air-pull 20%)",
         "Good air-pull (20%)",
         "Strong barrels (13%)",
         "Hard-hit 45%",
         "Hitter-friendly park (108)",
-        "Hot (98\u00b0F)",
-        "Heart of order (#3)",
-        "Model: one strong signal"
-      ],
-      "warnings": [],
-      "role_notes": []
-    },
-    {
-      "id": 691406,
-      "name": "Junior Caminero",
-      "team": "Tampa Bay Rays",
-      "bats": "R",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Stephen Kolek",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824093,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 24,
-      "iso": 0.268,
-      "total": 73.3,
-      "tier": "Satellite",
-      "role": "Power Satellite",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.25,
-      "fit_tag": "PITCH-FIT",
-      "value_play": true,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.0,
-        "hitter": 35.8,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 5.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2455,
-        "barrel_rate": 0.1095,
-        "hard_hit_rate": 0.5259,
-        "fb_rate": 0.5274
-      },
-      "reasons": [
-        "vs Stephen Kolek \u2014 cause B (16.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.38)",
-        "Pitcher: Low K rate (16%)",
-        "Platoon shape: spikes vs RHP (barrel 15%, air-pull 29%)",
-        "Elite air-pull (29%)",
-        "Strong barrels (15%)",
-        "Hard-hit 53%",
         "Hot (95\u00b0F)",
-        "Wind out ~11 mph",
-        "Elite-hitter override (beats a neutral spot)",
-        "Model: elite shape + clear cause",
-        "VALUE longshot: real shape + cause off the chalk"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Elite-hitter override (beats a neutral spot)"
-      ]
-    },
-    {
-      "id": 664040,
-      "name": "Brandon Lowe",
-      "team": "Pittsburgh Pirates",
-      "bats": "L",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": "Alan Rangel",
-      "venue": "Citizens Bank Park",
-      "gamePk": 823442,
-      "slot": 2,
-      "confirmed": true,
-      "season_hr": 20,
-      "iso": 0.257,
-      "total": 72.5,
-      "tier": "Satellite",
-      "role": "Locked Core",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.6,
-      "fit_tag": "PITCH-FIT",
-      "value_play": false,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.5,
-        "hitter": 33.0,
-        "environment": 12.0,
-        "lineup": 12.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2479,
-        "barrel_rate": 0.1064,
-        "hard_hit_rate": 0.4617,
-        "fb_rate": 0.6142
-      },
-      "reasons": [
-        "vs Alan Rangel \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.64)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Strong air-pull (27%)",
-        "Above-avg barrels (11%)",
-        "Hard-hit 46%",
-        "Platoon edge (L vs RHP)",
-        "Hitter-friendly park (108)",
-        "Hot (98\u00b0F)",
-        "Top of order (#2)",
-        "Model: one strong signal",
-        "Barrel\u2192HR park fit: pull-air power in a carry park (108)"
-      ],
-      "warnings": [],
-      "role_notes": []
-    },
-    {
-      "id": 699013,
-      "name": "Esmerlyn Valdez",
-      "team": "Pittsburgh Pirates",
-      "bats": "R",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": "Alan Rangel",
-      "venue": "Citizens Bank Park",
-      "gamePk": 823442,
-      "slot": 4,
-      "confirmed": true,
-      "season_hr": 6,
-      "iso": 0.408,
-      "total": 72.5,
-      "tier": "Satellite",
-      "role": "Locked Core",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.76,
-      "fit_tag": "PITCH-FIT",
-      "value_play": false,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.5,
-        "hitter": 34.0,
-        "environment": 12.0,
-        "lineup": 11.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1887,
-        "barrel_rate": 0.1479,
-        "hard_hit_rate": 0.4767,
-        "fb_rate": 0.5459
-      },
-      "reasons": [
-        "vs Alan Rangel \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.64)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Platoon shape: spikes vs RHP (barrel 21%, air-pull 21%)",
-        "Good air-pull (21%)",
-        "Elite barrel rate (21%)",
-        "Hard-hit 48%",
-        "Hitter-friendly park (106)",
-        "Hot (98\u00b0F)",
-        "Heart of order (#4)",
+        "Heart of order (#3)",
         "Model: one strong signal"
       ],
       "warnings": [],
@@ -1044,7 +1050,7 @@
         "Strong barrels (13%)",
         "Pitch-mix fit: damages this arsenal (62% fastballs, rel 1.21 \u2192 mix-fit 1.47x)",
         "Hot (2 HR / 2 barrels last 7d)",
-        "Hot (94\u00b0F)",
+        "Hot (93\u00b0F)",
         "Elite-hitter override (beats a neutral spot)",
         "Model: elite shape + clear cause",
         "VALUE longshot: real shape + cause off the chalk"
@@ -1264,6 +1270,58 @@
       ]
     },
     {
+      "id": 695506,
+      "name": "Jac Caglianone",
+      "team": "Kansas City Royals",
+      "bats": "L",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Ian Seymour",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824093,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 14,
+      "iso": 0.211,
+      "total": 64.5,
+      "tier": "Longshot",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.7,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 29.5,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2117,
+        "barrel_rate": 0.1277,
+        "hard_hit_rate": 0.4957,
+        "fb_rate": 0.5124
+      },
+      "reasons": [
+        "vs Ian Seymour \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.26)",
+        "Pitcher: Fly-ball prone (31% FB allowed)",
+        "Good air-pull (22%)",
+        "Strong barrels (14%)",
+        "Hard-hit 50%",
+        "Pitch-mix fit: damages this arsenal (35% fastballs, rel 2.20 \u2192 mix-fit 1.70x)",
+        "Hot (95\u00b0F)",
+        "Wind blowing OUT ~12 mph toward CF (approx bearing)",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
       "id": 808959,
       "name": "Munetaka Murakami",
       "team": "Chicago White Sox",
@@ -1299,7 +1357,7 @@
         "Proxy: elite HR rate (1/12 PA)",
         "Proxy: elite ISO (0.320)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hot (94\u00b0F)",
+        "Hot (93\u00b0F)",
         "Model: elite shape + clear cause"
       ],
       "warnings": [
@@ -1318,8 +1376,8 @@
       "gamePk": 823765,
       "slot": 2,
       "confirmed": true,
-      "season_hr": 16,
-      "iso": 0.207,
+      "season_hr": 17,
+      "iso": 0.216,
       "total": 63.7,
       "tier": "Longshot",
       "role": "Pass",
@@ -1412,55 +1470,52 @@
       "role_notes": []
     },
     {
-      "id": 695506,
-      "name": "Jac Caglianone",
-      "team": "Kansas City Royals",
-      "bats": "L",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Ian Seymour",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824093,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.211,
-      "total": 63.0,
+      "id": 668804,
+      "name": "Bryan Reynolds",
+      "team": "Pittsburgh Pirates",
+      "bats": "S",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Alan Rangel",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823442,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 11,
+      "iso": 0.18,
+      "total": 63.3,
       "tier": "Longshot",
       "role": "Pass",
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 1.7,
+      "mix_fit": 1.06,
       "fit_tag": null,
       "value_play": false,
       "pitcher_grade": "C",
       "breakdown": {
         "pitcher": 13.0,
-        "hitter": 29.5,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 4.0
+        "hitter": 24.3,
+        "environment": 12.0,
+        "lineup": 11.0,
+        "confidence": 3.0
       },
       "statcast": {
-        "air_pull_rate": 0.2117,
-        "barrel_rate": 0.1277,
-        "hard_hit_rate": 0.4957,
-        "fb_rate": 0.5124
+        "air_pull_rate": 0.1559,
+        "barrel_rate": 0.1074,
+        "hard_hit_rate": 0.502,
+        "fb_rate": 0.5477
       },
       "reasons": [
-        "vs Ian Seymour \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.26)",
-        "Pitcher: Fly-ball prone (31% FB allowed)",
-        "Good air-pull (22%)",
+        "vs Alan Rangel \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.56)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "Platoon shape: spikes vs RHP (barrel 14%, air-pull 16%)",
         "Strong barrels (14%)",
         "Hard-hit 50%",
-        "Pitch-mix fit: damages this arsenal (35% fastballs, rel 2.20 \u2192 mix-fit 1.70x)",
+        "Hitter-friendly park (107)",
         "Hot (95\u00b0F)",
-        "Wind out ~11 mph",
-        "Model: one strong signal"
+        "Heart of order (#3)"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": []
     },
     {
@@ -1505,7 +1560,7 @@
         "Above-avg barrels (12%)",
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (62% fastballs, rel 1.19 \u2192 mix-fit 1.55x)",
-        "Hot (94\u00b0F)",
+        "Hot (93\u00b0F)",
         "Model: one strong signal",
         "VALUE longshot: real shape + cause off the chalk"
       ],
@@ -1556,7 +1611,7 @@
         "Good air-pull (22%)",
         "Strong barrels (14%)",
         "Hard-hit 45%",
-        "Hot (94\u00b0F)",
+        "Hot (93\u00b0F)",
         "Model: one strong signal"
       ],
       "warnings": [
@@ -1565,52 +1620,55 @@
       "role_notes": []
     },
     {
-      "id": 668804,
-      "name": "Bryan Reynolds",
+      "id": 687462,
+      "name": "Spencer Horwitz",
       "team": "Pittsburgh Pirates",
-      "bats": "S",
+      "bats": "L",
       "opp": "Philadelphia Phillies",
       "opp_pitcher": "Alan Rangel",
       "venue": "Citizens Bank Park",
       "gamePk": 823442,
-      "slot": 3,
-      "confirmed": true,
-      "season_hr": 11,
-      "iso": 0.181,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 10,
+      "iso": 0.175,
       "total": 61.8,
       "tier": "Pass",
       "role": "Pass",
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 1.06,
+      "mix_fit": 1.05,
       "fit_tag": null,
       "value_play": false,
       "pitcher_grade": "C",
       "breakdown": {
-        "pitcher": 11.5,
-        "hitter": 24.3,
+        "pitcher": 13.0,
+        "hitter": 26.8,
         "environment": 12.0,
-        "lineup": 11.0,
-        "confidence": 3.0
+        "lineup": 6.0,
+        "confidence": 4.0
       },
       "statcast": {
-        "air_pull_rate": 0.1559,
-        "barrel_rate": 0.1074,
-        "hard_hit_rate": 0.502,
-        "fb_rate": 0.5477
+        "air_pull_rate": 0.1906,
+        "barrel_rate": 0.0912,
+        "hard_hit_rate": 0.3635,
+        "fb_rate": 0.5436
       },
       "reasons": [
-        "vs Alan Rangel \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.64)",
+        "vs Alan Rangel \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.56)",
         "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Platoon shape: spikes vs RHP (barrel 14%, air-pull 16%)",
-        "Strong barrels (14%)",
-        "Hard-hit 50%",
-        "Hitter-friendly park (107)",
-        "Hot (98\u00b0F)",
-        "Heart of order (#3)"
+        "Platoon shape: spikes vs RHP (barrel 12%, air-pull 24%)",
+        "Strong air-pull (24%)",
+        "Strong barrels (12%)",
+        "Platoon edge (L vs RHP)",
+        "Hitter-friendly park (108)",
+        "Hot (95\u00b0F)",
+        "Model: one strong signal"
       ],
-      "warnings": [],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
       "role_notes": []
     },
     {
@@ -1918,58 +1976,6 @@
       ]
     },
     {
-      "id": 687462,
-      "name": "Spencer Horwitz",
-      "team": "Pittsburgh Pirates",
-      "bats": "L",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": "Alan Rangel",
-      "venue": "Citizens Bank Park",
-      "gamePk": 823442,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.175,
-      "total": 60.3,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.05,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.5,
-        "hitter": 26.8,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1906,
-        "barrel_rate": 0.0912,
-        "hard_hit_rate": 0.3635,
-        "fb_rate": 0.5436
-      },
-      "reasons": [
-        "vs Alan Rangel \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.64)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Platoon shape: spikes vs RHP (barrel 12%, air-pull 24%)",
-        "Strong air-pull (24%)",
-        "Strong barrels (12%)",
-        "Platoon edge (L vs RHP)",
-        "Hitter-friendly park (108)",
-        "Hot (98\u00b0F)",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 664034,
       "name": "Ty France",
       "team": "San Diego Padres",
@@ -2117,6 +2123,107 @@
         "Slightly + park (103)",
         "Hot (98\u00b0F)",
         "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 656811,
+      "name": "Ryan O'Hearn",
+      "team": "Pittsburgh Pirates",
+      "bats": "L",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Alan Rangel",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823442,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 13,
+      "iso": 0.187,
+      "total": 58.6,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.71,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 22.6,
+        "environment": 12.0,
+        "lineup": 8.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1889,
+        "barrel_rate": 0.0648,
+        "hard_hit_rate": 0.3954,
+        "fb_rate": 0.5728
+      },
+      "reasons": [
+        "vs Alan Rangel \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.56)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "Good air-pull (21%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (37% offspeed, rel 0.30 \u2192 mix-fit 0.71x)",
+        "Hot (2 HR / 2 barrels last 7d)",
+        "Hitter-friendly park (108)",
+        "Hot (95\u00b0F)",
+        "Mid order (#5)"
+      ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
+      "id": 521692,
+      "name": "Salvador Perez",
+      "team": "Kansas City Royals",
+      "bats": "R",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Ian Seymour",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824093,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 10,
+      "iso": 0.126,
+      "total": 58.5,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.43,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 24.5,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.221,
+        "barrel_rate": 0.1026,
+        "hard_hit_rate": 0.4195,
+        "fb_rate": 0.5106
+      },
+      "reasons": [
+        "vs Ian Seymour \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.26)",
+        "Pitcher: Fly-ball prone (31% FB allowed)",
+        "Good air-pull (22%)",
+        "Above-avg barrels (11%)",
+        "Platoon edge (R vs LHP)",
+        "Pitch-mix fit: damages this arsenal (35% fastballs, rel 1.03 \u2192 mix-fit 1.43x)",
+        "Hot (95\u00b0F)",
+        "Wind blowing OUT ~12 mph toward CF (approx bearing)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -2418,61 +2525,11 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.20)",
         "Strong air-pull (24%)",
         "Platoon edge (L vs RHP)",
-        "Hot (94\u00b0F)"
+        "Hot (93\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
       ],
-      "role_notes": []
-    },
-    {
-      "id": 656811,
-      "name": "Ryan O'Hearn",
-      "team": "Pittsburgh Pirates",
-      "bats": "L",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": "Alan Rangel",
-      "venue": "Citizens Bank Park",
-      "gamePk": 823442,
-      "slot": 5,
-      "confirmed": true,
-      "season_hr": 13,
-      "iso": 0.189,
-      "total": 57.1,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.71,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.5,
-        "hitter": 22.6,
-        "environment": 12.0,
-        "lineup": 8.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1889,
-        "barrel_rate": 0.0648,
-        "hard_hit_rate": 0.3954,
-        "fb_rate": 0.5728
-      },
-      "reasons": [
-        "vs Alan Rangel \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.64)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Good air-pull (21%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (37% offspeed, rel 0.30 \u2192 mix-fit 0.71x)",
-        "Hot (2 HR / 2 barrels last 7d)",
-        "Hitter-friendly park (108)",
-        "Hot (98\u00b0F)",
-        "Mid order (#5)"
-      ],
-      "warnings": [],
       "role_notes": []
     },
     {
@@ -2527,8 +2584,102 @@
       "role_notes": []
     },
     {
-      "id": 521692,
-      "name": "Salvador Perez",
+      "id": 680779,
+      "name": "Henry Davis",
+      "team": "Pittsburgh Pirates",
+      "bats": "R",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Alan Rangel",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823442,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.177,
+      "total": 56.8,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.15,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 22.8,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1828,
+        "barrel_rate": 0.0863,
+        "hard_hit_rate": 0.4106,
+        "fb_rate": 0.4934
+      },
+      "reasons": [
+        "vs Alan Rangel \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.56)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 21%)",
+        "Good air-pull (21%)",
+        "Above-avg barrels (11%)",
+        "Hitter-friendly park (106)",
+        "Hot (95\u00b0F)"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 665833,
+      "name": "Oneil Cruz",
+      "team": "Pittsburgh Pirates",
+      "bats": "L",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Alan Rangel",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823442,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 14,
+      "iso": 0.208,
+      "total": 56.0,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 22.0,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Alan Rangel \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.56)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "Proxy: strong HR rate",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Hitter-friendly park (108)",
+        "Hot (95\u00b0F)"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 677951,
+      "name": "Bobby Witt Jr.",
       "team": "Kansas City Royals",
       "bats": "R",
       "opp": "Tampa Bay Rays",
@@ -2537,45 +2688,100 @@
       "gamePk": 824093,
       "slot": null,
       "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.126,
-      "total": 57.0,
+      "season_hr": 12,
+      "iso": 0.183,
+      "total": 55.6,
       "tier": "Pass",
-      "role": "Pass",
+      "role": "Watchlist",
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 1.43,
+      "mix_fit": 0.83,
       "fit_tag": null,
       "value_play": false,
       "pitcher_grade": "C",
       "breakdown": {
         "pitcher": 13.0,
-        "hitter": 24.5,
-        "environment": 10.5,
+        "hitter": 21.6,
+        "environment": 12.0,
         "lineup": 6.0,
         "confidence": 3.0
       },
       "statcast": {
-        "air_pull_rate": 0.221,
-        "barrel_rate": 0.1026,
-        "hard_hit_rate": 0.4195,
-        "fb_rate": 0.5106
+        "air_pull_rate": 0.167,
+        "barrel_rate": 0.0794,
+        "hard_hit_rate": 0.4681,
+        "fb_rate": 0.525
       },
       "reasons": [
         "vs Ian Seymour \u2014 cause C (13.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.26)",
         "Pitcher: Fly-ball prone (31% FB allowed)",
-        "Good air-pull (22%)",
-        "Above-avg barrels (11%)",
+        "Platoon shape: spikes vs LHP (barrel 10%, air-pull 14%)",
+        "Above-avg barrels (10%)",
+        "Hard-hit 47%",
         "Platoon edge (R vs LHP)",
-        "Pitch-mix fit: damages this arsenal (35% fastballs, rel 1.03 \u2192 mix-fit 1.43x)",
         "Hot (95\u00b0F)",
-        "Wind out ~11 mph"
+        "Wind blowing OUT ~12 mph toward CF (approx bearing)",
+        "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Lineup not confirmed"
       ],
-      "role_notes": []
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 656775,
+      "name": "Cedric Mullins",
+      "team": "Tampa Bay Rays",
+      "bats": "L",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Stephen Kolek",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824093,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 9,
+      "iso": 0.135,
+      "total": 55.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.92,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 16.0,
+        "hitter": 19.6,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1777,
+        "barrel_rate": 0.0687,
+        "hard_hit_rate": 0.3585,
+        "fb_rate": 0.513
+      },
+      "reasons": [
+        "vs Stephen Kolek \u2014 cause B (16.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.38)",
+        "Pitcher: Low K rate (16%)",
+        "Platoon edge (L vs RHP)",
+        "Hot (2 HR / 2 barrels last 7d)",
+        "Hot (95\u00b0F)",
+        "Wind blowing OUT ~12 mph toward CF (approx bearing)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 545361,
@@ -2678,6 +2884,57 @@
         "Lineup not confirmed"
       ],
       "role_notes": []
+    },
+    {
+      "id": 668723,
+      "name": "Ryan Vilade",
+      "team": "Tampa Bay Rays",
+      "bats": "R",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Stephen Kolek",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824093,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 6,
+      "iso": 0.206,
+      "total": 55.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.6,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 16.0,
+        "hitter": 19.5,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1537,
+        "barrel_rate": 0.0851,
+        "hard_hit_rate": 0.3849,
+        "fb_rate": 0.5012
+      },
+      "reasons": [
+        "vs Stephen Kolek \u2014 cause B (16.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.38)",
+        "Pitcher: Low K rate (16%)",
+        "Pitch-mix fit: damages this arsenal (54% fastballs, rel 1.47 \u2192 mix-fit 1.60x)",
+        "Hot (95\u00b0F)",
+        "Wind blowing OUT ~12 mph toward CF (approx bearing)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 624585,
@@ -2783,56 +3040,6 @@
       ]
     },
     {
-      "id": 680779,
-      "name": "Henry Davis",
-      "team": "Pittsburgh Pirates",
-      "bats": "R",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": "Alan Rangel",
-      "venue": "Citizens Bank Park",
-      "gamePk": 823442,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.177,
-      "total": 55.3,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.15,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.5,
-        "hitter": 22.8,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1828,
-        "barrel_rate": 0.0863,
-        "hard_hit_rate": 0.4106,
-        "fb_rate": 0.4934
-      },
-      "reasons": [
-        "vs Alan Rangel \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.64)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 21%)",
-        "Good air-pull (21%)",
-        "Above-avg barrels (11%)",
-        "Hitter-friendly park (106)",
-        "Hot (98\u00b0F)"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 609280,
       "name": "Miguel Andujar",
       "team": "San Diego Padres",
@@ -2921,11 +3128,11 @@
       },
       "reasons": [
         "vs Jared Jones \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.67)",
+        "Pitcher: High HR allowed (HR/9 1.55)",
         "Above-avg barrels (9%)",
         "Pitch-mix fit: damages this arsenal (38% breaking balls, rel 2.14 \u2192 mix-fit 1.68x)",
         "Hitter-friendly park (106)",
-        "Hot (98\u00b0F)",
+        "Hot (95\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2977,7 +3184,7 @@
         "Strong air-pull (24%)",
         "Above-avg barrels (9%)",
         "Platoon edge (L vs RHP)",
-        "Hot (94\u00b0F)"
+        "Hot (93\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -3191,6 +3398,58 @@
       ]
     },
     {
+      "id": 542303,
+      "name": "Marcell Ozuna",
+      "team": "Pittsburgh Pirates",
+      "bats": "R",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Alan Rangel",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823442,
+      "slot": 7,
+      "confirmed": true,
+      "season_hr": 7,
+      "iso": 0.124,
+      "total": 54.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.41,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 21.6,
+        "environment": 12.0,
+        "lineup": 5.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1906,
+        "barrel_rate": 0.0899,
+        "hard_hit_rate": 0.4151,
+        "fb_rate": 0.5504
+      },
+      "reasons": [
+        "vs Alan Rangel \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.56)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "Good air-pull (19%)",
+        "Pitch-mix fit: damages this arsenal (37% offspeed, rel 1.00 \u2192 mix-fit 1.41x)",
+        "Hitter-friendly park (106)",
+        "Hot (95\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Bottom of order (#7)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 621566,
       "name": "Matt Olson",
       "team": "Atlanta Braves",
@@ -3231,50 +3490,6 @@
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (73% fastballs, rel 1.93 \u2192 mix-fit 1.49x)",
         "Slightly + park (103)",
-        "Hot (98\u00b0F)"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 665833,
-      "name": "Oneil Cruz",
-      "team": "Pittsburgh Pirates",
-      "bats": "L",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": "Alan Rangel",
-      "venue": "Citizens Bank Park",
-      "gamePk": 823442,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.208,
-      "total": 54.5,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.5,
-        "hitter": 22.0,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Alan Rangel \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.64)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Proxy: strong HR rate",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hitter-friendly park (108)",
         "Hot (98\u00b0F)"
       ],
       "warnings": [
@@ -3333,163 +3548,6 @@
       "role_notes": []
     },
     {
-      "id": 677951,
-      "name": "Bobby Witt Jr.",
-      "team": "Kansas City Royals",
-      "bats": "R",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Ian Seymour",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824093,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.183,
-      "total": 54.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.83,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 21.6,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.167,
-        "barrel_rate": 0.0794,
-        "hard_hit_rate": 0.4681,
-        "fb_rate": 0.525
-      },
-      "reasons": [
-        "vs Ian Seymour \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.26)",
-        "Pitcher: Fly-ball prone (31% FB allowed)",
-        "Platoon shape: spikes vs LHP (barrel 10%, air-pull 14%)",
-        "Above-avg barrels (10%)",
-        "Hard-hit 47%",
-        "Platoon edge (R vs LHP)",
-        "Hot (95\u00b0F)",
-        "Wind out ~11 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 656775,
-      "name": "Cedric Mullins",
-      "team": "Tampa Bay Rays",
-      "bats": "L",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Stephen Kolek",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824093,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.135,
-      "total": 54.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.92,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.0,
-        "hitter": 19.6,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1777,
-        "barrel_rate": 0.0687,
-        "hard_hit_rate": 0.3585,
-        "fb_rate": 0.513
-      },
-      "reasons": [
-        "vs Stephen Kolek \u2014 cause B (16.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.38)",
-        "Pitcher: Low K rate (16%)",
-        "Platoon edge (L vs RHP)",
-        "Hot (2 HR / 2 barrels last 7d)",
-        "Hot (95\u00b0F)",
-        "Wind out ~11 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 668723,
-      "name": "Ryan Vilade",
-      "team": "Tampa Bay Rays",
-      "bats": "R",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Stephen Kolek",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824093,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 6,
-      "iso": 0.206,
-      "total": 54.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.6,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.0,
-        "hitter": 19.5,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1537,
-        "barrel_rate": 0.0851,
-        "hard_hit_rate": 0.3849,
-        "fb_rate": 0.5012
-      },
-      "reasons": [
-        "vs Stephen Kolek \u2014 cause B (16.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.38)",
-        "Pitcher: Low K rate (16%)",
-        "Pitch-mix fit: damages this arsenal (54% fastballs, rel 1.47 \u2192 mix-fit 1.60x)",
-        "Hot (95\u00b0F)",
-        "Wind out ~11 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 803011,
       "name": "Sam Antonacci",
       "team": "Chicago White Sox",
@@ -3530,7 +3588,7 @@
         "Good air-pull (19%)",
         "Above-avg barrels (9%)",
         "Platoon edge (L vs RHP)",
-        "Hot (94\u00b0F)",
+        "Hot (93\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3587,58 +3645,6 @@
         "Park factor unknown",
         "Weather unavailable",
         "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 542303,
-      "name": "Marcell Ozuna",
-      "team": "Pittsburgh Pirates",
-      "bats": "R",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": "Alan Rangel",
-      "venue": "Citizens Bank Park",
-      "gamePk": 823442,
-      "slot": 7,
-      "confirmed": true,
-      "season_hr": 7,
-      "iso": 0.124,
-      "total": 53.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.41,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.5,
-        "hitter": 21.6,
-        "environment": 12.0,
-        "lineup": 5.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1906,
-        "barrel_rate": 0.0899,
-        "hard_hit_rate": 0.4151,
-        "fb_rate": 0.5504
-      },
-      "reasons": [
-        "vs Alan Rangel \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.64)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Good air-pull (19%)",
-        "Pitch-mix fit: damages this arsenal (37% offspeed, rel 1.00 \u2192 mix-fit 1.41x)",
-        "Hitter-friendly park (106)",
-        "Hot (98\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Bottom of order (#7)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -3737,7 +3743,7 @@
         "Strong barrels (13%)",
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (61% fastballs, rel 2.20 \u2192 mix-fit 1.76x)",
-        "Hot (94\u00b0F)"
+        "Hot (93\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -3786,7 +3792,7 @@
         "Good air-pull (20%)",
         "Above-avg barrels (10%)",
         "Platoon edge (L vs RHP)",
-        "Hot (94\u00b0F)"
+        "Hot (93\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -3830,10 +3836,10 @@
       },
       "reasons": [
         "vs Jared Jones \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.67)",
+        "Pitcher: High HR allowed (HR/9 1.55)",
         "Pitch-mix fit: damages this arsenal (38% breaking balls, rel 2.20 \u2192 mix-fit 1.25x)",
         "Hitter-friendly park (106)",
-        "Hot (98\u00b0F)",
+        "Hot (95\u00b0F)",
         "Top of order (#1)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -3991,6 +3997,58 @@
       "warnings": [
         "Park factor unknown",
         "Weather unavailable",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 676356,
+      "name": "Jonny DeLuca",
+      "team": "Tampa Bay Rays",
+      "bats": "R",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Stephen Kolek",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824093,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 4,
+      "iso": 0.174,
+      "total": 52.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.06,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 16.0,
+        "hitter": 16.3,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1839,
+        "barrel_rate": 0.0808,
+        "hard_hit_rate": 0.3419,
+        "fb_rate": 0.5156
+      },
+      "reasons": [
+        "vs Stephen Kolek \u2014 cause B (16.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.38)",
+        "Pitcher: Low K rate (16%)",
+        "Platoon shape: spikes vs RHP (barrel 10%, air-pull 19%)",
+        "Above-avg barrels (10%)",
+        "Hot (95\u00b0F)",
+        "Wind blowing OUT ~12 mph toward CF (approx bearing)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -4313,7 +4371,7 @@
       "slot": 6,
       "confirmed": true,
       "season_hr": 7,
-      "iso": 0.148,
+      "iso": 0.147,
       "total": 51.2,
       "tier": "Pass",
       "role": "Watchlist",
@@ -4338,67 +4396,15 @@
       },
       "reasons": [
         "vs Jared Jones \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.67)",
+        "Pitcher: High HR allowed (HR/9 1.55)",
         "Platoon shape: spikes vs RHP (barrel 8%, air-pull 16%)",
         "Platoon edge (L vs RHP)",
         "Hitter-friendly park (108)",
-        "Hot (98\u00b0F)",
+        "Hot (95\u00b0F)",
         "Mid order (#6)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 676356,
-      "name": "Jonny DeLuca",
-      "team": "Tampa Bay Rays",
-      "bats": "R",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Stephen Kolek",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824093,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 4,
-      "iso": 0.174,
-      "total": 50.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.06,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.0,
-        "hitter": 16.3,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1839,
-        "barrel_rate": 0.0808,
-        "hard_hit_rate": 0.3419,
-        "fb_rate": 0.5156
-      },
-      "reasons": [
-        "vs Stephen Kolek \u2014 cause B (16.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.38)",
-        "Pitcher: Low K rate (16%)",
-        "Platoon shape: spikes vs RHP (barrel 10%, air-pull 19%)",
-        "Above-avg barrels (10%)",
-        "Hot (95\u00b0F)",
-        "Wind out ~11 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -4495,7 +4501,7 @@
         "vs Slade Cecconi \u2014 cause B (14.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.20)",
         "Pitch-mix fit: damages this arsenal (62% fastballs, rel 2.20 \u2192 mix-fit 1.73x)",
-        "Hot (94\u00b0F)",
+        "Hot (93\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4542,11 +4548,11 @@
       },
       "reasons": [
         "vs Jared Jones \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.67)",
+        "Pitcher: High HR allowed (HR/9 1.55)",
         "Platoon shape: spikes vs RHP (barrel 9%, air-pull 17%)",
         "Above-avg barrels (9%)",
         "Hitter-friendly park (106)",
-        "Hot (98\u00b0F)",
+        "Hot (95\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4709,6 +4715,58 @@
       "role_notes": []
     },
     {
+      "id": 666018,
+      "name": "Jonathan Aranda",
+      "team": "Tampa Bay Rays",
+      "bats": "L",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Stephen Kolek",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824093,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 13,
+      "iso": 0.176,
+      "total": 50.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.61,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 16.0,
+        "hitter": 14.1,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1489,
+        "barrel_rate": 0.0575,
+        "hard_hit_rate": 0.3865,
+        "fb_rate": 0.5106
+      },
+      "reasons": [
+        "vs Stephen Kolek \u2014 cause B (16.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.38)",
+        "Pitcher: Low K rate (16%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (54% fastballs, rel 0.54 \u2192 mix-fit 0.61x)",
+        "Hot (95\u00b0F)",
+        "Wind blowing OUT ~12 mph toward CF (approx bearing)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 668715,
       "name": "Spencer Steer",
       "team": "Cincinnati Reds",
@@ -4793,7 +4851,110 @@
         "Pitcher: Avg+ HR allowed (HR/9 0.58)",
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hot (94\u00b0F)",
+        "Hot (93\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 804606,
+      "name": "Konnor Griffin",
+      "team": "Pittsburgh Pirates",
+      "bats": "R",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Alan Rangel",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823442,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 5,
+      "iso": 0.137,
+      "total": 49.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.2,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 16.5,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1601,
+        "barrel_rate": 0.0748,
+        "hard_hit_rate": 0.3879,
+        "fb_rate": 0.4932
+      },
+      "reasons": [
+        "vs Alan Rangel \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.56)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "Pitch-mix fit: damages this arsenal (37% offspeed, rel 1.00 \u2192 mix-fit 1.20x)",
+        "Hitter-friendly park (106)",
+        "Hot (95\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 695600,
+      "name": "Carter Jensen",
+      "team": "Kansas City Royals",
+      "bats": "L",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Ian Seymour",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824093,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 12,
+      "iso": 0.193,
+      "total": 49.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.65,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 16.2,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1922,
+        "barrel_rate": 0.057,
+        "hard_hit_rate": 0.4367,
+        "fb_rate": 0.5253
+      },
+      "reasons": [
+        "vs Ian Seymour \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.26)",
+        "Pitcher: Fly-ball prone (31% FB allowed)",
+        "Good air-pull (22%)",
+        "Poor pitch-mix fit (35% fastballs, rel 0.80 \u2192 mix-fit 0.65x)",
+        "Hot (95\u00b0F)",
+        "Wind blowing OUT ~12 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4844,58 +5005,6 @@
       "warnings": [
         "Park factor unknown",
         "Weather unavailable",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 666018,
-      "name": "Jonathan Aranda",
-      "team": "Tampa Bay Rays",
-      "bats": "L",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Stephen Kolek",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824093,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.176,
-      "total": 48.6,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.61,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.0,
-        "hitter": 14.1,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1489,
-        "barrel_rate": 0.0575,
-        "hard_hit_rate": 0.3865,
-        "fb_rate": 0.5106
-      },
-      "reasons": [
-        "vs Stephen Kolek \u2014 cause B (16.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.38)",
-        "Pitcher: Low K rate (16%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (54% fastballs, rel 0.54 \u2192 mix-fit 0.61x)",
-        "Hot (95\u00b0F)",
-        "Wind out ~11 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -4989,63 +5098,12 @@
       },
       "reasons": [
         "vs Jared Jones \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.67)",
+        "Pitcher: High HR allowed (HR/9 1.55)",
         "Platoon shape: spikes vs RHP (barrel 9%, air-pull 9%)",
         "Low air-pull (9%)",
         "Above-avg barrels (9%)",
         "Hitter-friendly park (106)",
-        "Hot (98\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 804606,
-      "name": "Konnor Griffin",
-      "team": "Pittsburgh Pirates",
-      "bats": "R",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": "Alan Rangel",
-      "venue": "Citizens Bank Park",
-      "gamePk": 823442,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 5,
-      "iso": 0.137,
-      "total": 48.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.2,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.5,
-        "hitter": 16.5,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1601,
-        "barrel_rate": 0.0748,
-        "hard_hit_rate": 0.3879,
-        "fb_rate": 0.4932
-      },
-      "reasons": [
-        "vs Alan Rangel \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.64)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Pitch-mix fit: damages this arsenal (37% offspeed, rel 1.00 \u2192 mix-fit 1.20x)",
-        "Hitter-friendly park (106)",
-        "Hot (98\u00b0F)",
+        "Hot (95\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5096,59 +5154,7 @@
         "Good air-pull (19%)",
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (61% fastballs, rel 0.30 \u2192 mix-fit 0.58x)",
-        "Hot (94\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 695600,
-      "name": "Carter Jensen",
-      "team": "Kansas City Royals",
-      "bats": "L",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Ian Seymour",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824093,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.193,
-      "total": 47.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.65,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 16.2,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1922,
-        "barrel_rate": 0.057,
-        "hard_hit_rate": 0.4367,
-        "fb_rate": 0.5253
-      },
-      "reasons": [
-        "vs Ian Seymour \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.26)",
-        "Pitcher: Fly-ball prone (31% FB allowed)",
-        "Good air-pull (22%)",
-        "Poor pitch-mix fit (35% fastballs, rel 0.80 \u2192 mix-fit 0.65x)",
-        "Hot (95\u00b0F)",
-        "Wind out ~11 mph",
+        "Hot (93\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5212,6 +5218,57 @@
       ]
     },
     {
+      "id": 686681,
+      "name": "Michael Massey",
+      "team": "Kansas City Royals",
+      "bats": "L",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Ian Seymour",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824093,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.176,
+      "total": 47.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.85,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 14.2,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.207,
+        "barrel_rate": 0.0614,
+        "hard_hit_rate": 0.3354,
+        "fb_rate": 0.5167
+      },
+      "reasons": [
+        "vs Ian Seymour \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.26)",
+        "Pitcher: Fly-ball prone (31% FB allowed)",
+        "Good air-pull (20%)",
+        "Hot (95\u00b0F)",
+        "Wind blowing OUT ~12 mph toward CF (approx bearing)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 669364,
       "name": "Xavier Edwards",
       "team": "Miami Marlins",
@@ -5259,6 +5316,57 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 657041,
+      "name": "Lane Thomas",
+      "team": "Kansas City Royals",
+      "bats": "R",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Ian Seymour",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824093,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 5,
+      "iso": 0.12,
+      "total": 46.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.85,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 13.8,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1686,
+        "barrel_rate": 0.071,
+        "hard_hit_rate": 0.3949,
+        "fb_rate": 0.4529
+      },
+      "reasons": [
+        "vs Ian Seymour \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.26)",
+        "Pitcher: Fly-ball prone (31% FB allowed)",
+        "Platoon edge (R vs LHP)",
+        "Hot (95\u00b0F)",
+        "Wind blowing OUT ~12 mph toward CF (approx bearing)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -5360,6 +5468,59 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 650490,
+      "name": "Yandy D\u00edaz",
+      "team": "Tampa Bay Rays",
+      "bats": "R",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Stephen Kolek",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824093,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 12,
+      "iso": 0.174,
+      "total": 46.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.63,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 16.0,
+        "hitter": 10.2,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1289,
+        "barrel_rate": 0.0513,
+        "hard_hit_rate": 0.4608,
+        "fb_rate": 0.4797
+      },
+      "reasons": [
+        "vs Stephen Kolek \u2014 cause B (16.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.38)",
+        "Pitcher: Low K rate (16%)",
+        "Low air-pull (8%)",
+        "Hard-hit 46%",
+        "Poor pitch-mix fit (54% fastballs, rel 0.30 \u2192 mix-fit 0.63x)",
+        "Hot (95\u00b0F)",
+        "Wind blowing OUT ~12 mph toward CF (approx bearing)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -5567,57 +5728,6 @@
       ]
     },
     {
-      "id": 686681,
-      "name": "Michael Massey",
-      "team": "Kansas City Royals",
-      "bats": "L",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Ian Seymour",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824093,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.176,
-      "total": 45.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.85,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 14.2,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.207,
-        "barrel_rate": 0.0614,
-        "hard_hit_rate": 0.3354,
-        "fb_rate": 0.5167
-      },
-      "reasons": [
-        "vs Ian Seymour \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.26)",
-        "Pitcher: Fly-ball prone (31% FB allowed)",
-        "Good air-pull (20%)",
-        "Hot (95\u00b0F)",
-        "Wind out ~11 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 686948,
       "name": "Drake Baldwin",
       "team": "Atlanta Braves",
@@ -5756,7 +5866,7 @@
       "reasons": [
         "vs Davis Martin \u2014 cause C (11.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 0.58)",
-        "Hot (94\u00b0F)",
+        "Hot (93\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5865,6 +5975,56 @@
       ]
     },
     {
+      "id": 686469,
+      "name": "Vinnie Pasquantino",
+      "team": "Kansas City Royals",
+      "bats": "L",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Ian Seymour",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824093,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 6,
+      "iso": 0.126,
+      "total": 45.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 12.5,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1747,
+        "barrel_rate": 0.0665,
+        "hard_hit_rate": 0.3298,
+        "fb_rate": 0.5103
+      },
+      "reasons": [
+        "vs Ian Seymour \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.26)",
+        "Pitcher: Fly-ball prone (31% FB allowed)",
+        "Hot (95\u00b0F)",
+        "Wind blowing OUT ~12 mph toward CF (approx bearing)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 663586,
       "name": "Austin Riley",
       "team": "Atlanta Braves",
@@ -5916,57 +6076,6 @@
       ]
     },
     {
-      "id": 657041,
-      "name": "Lane Thomas",
-      "team": "Kansas City Royals",
-      "bats": "R",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Ian Seymour",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824093,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 5,
-      "iso": 0.12,
-      "total": 45.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.85,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 13.8,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1686,
-        "barrel_rate": 0.071,
-        "hard_hit_rate": 0.3949,
-        "fb_rate": 0.4529
-      },
-      "reasons": [
-        "vs Ian Seymour \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.26)",
-        "Pitcher: Fly-ball prone (31% FB allowed)",
-        "Platoon edge (R vs LHP)",
-        "Hot (95\u00b0F)",
-        "Wind out ~11 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 642086,
       "name": "Dominic Smith",
       "team": "Atlanta Braves",
@@ -6008,59 +6117,6 @@
         "Poor pitch-mix fit (73% fastballs, rel 0.97 \u2192 mix-fit 0.79x)",
         "Slightly + park (103)",
         "Hot (98\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 650490,
-      "name": "Yandy D\u00edaz",
-      "team": "Tampa Bay Rays",
-      "bats": "R",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Stephen Kolek",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824093,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.174,
-      "total": 44.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.63,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.0,
-        "hitter": 10.2,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1289,
-        "barrel_rate": 0.0513,
-        "hard_hit_rate": 0.4608,
-        "fb_rate": 0.4797
-      },
-      "reasons": [
-        "vs Stephen Kolek \u2014 cause B (16.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.38)",
-        "Pitcher: Low K rate (16%)",
-        "Low air-pull (8%)",
-        "Hard-hit 46%",
-        "Poor pitch-mix fit (54% fastballs, rel 0.30 \u2192 mix-fit 0.63x)",
-        "Hot (95\u00b0F)",
-        "Wind out ~11 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6160,7 +6216,7 @@
         "vs Davis Martin \u2014 cause C (11.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 0.58)",
         "Good air-pull (20%)",
-        "Hot (94\u00b0F)",
+        "Hot (93\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6325,56 +6381,6 @@
       ]
     },
     {
-      "id": 686469,
-      "name": "Vinnie Pasquantino",
-      "team": "Kansas City Royals",
-      "bats": "L",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Ian Seymour",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824093,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 6,
-      "iso": 0.126,
-      "total": 44.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 12.5,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1747,
-        "barrel_rate": 0.0665,
-        "hard_hit_rate": 0.3298,
-        "fb_rate": 0.5103
-      },
-      "reasons": [
-        "vs Ian Seymour \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.26)",
-        "Pitcher: Fly-ball prone (31% FB allowed)",
-        "Hot (95\u00b0F)",
-        "Wind out ~11 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 681807,
       "name": "David Fry",
       "team": "Cleveland Guardians",
@@ -6412,7 +6418,7 @@
       "reasons": [
         "vs Davis Martin \u2014 cause C (11.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 0.58)",
-        "Hot (94\u00b0F)",
+        "Hot (93\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6867,11 +6873,11 @@
       },
       "reasons": [
         "vs Jared Jones \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.67)",
+        "Pitcher: High HR allowed (HR/9 1.55)",
         "Platoon shape fades vs RHP",
         "Low air-pull (6%)",
         "Hitter-friendly park (106)",
-        "Hot (98\u00b0F)",
+        "Hot (95\u00b0F)",
         "Mid order (#5)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -6965,7 +6971,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 0.58)",
         "Strong air-pull (25%)",
         "Poor pitch-mix fit (61% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Hot (94\u00b0F)",
+        "Hot (93\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7204,10 +7210,10 @@
       "statcast": null,
       "reasons": [
         "vs Jared Jones \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.67)",
+        "Pitcher: High HR allowed (HR/9 1.55)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Hitter-friendly park (106)",
-        "Hot (98\u00b0F)",
+        "Hot (95\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7605,7 +7611,7 @@
         "Platoon shape fades vs RHP",
         "Low air-pull (11%)",
         "Poor pitch-mix fit (62% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Hot (94\u00b0F)",
+        "Hot (93\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7815,7 +7821,7 @@
       "legs": [
         "Kyle Schwarber (Philadelphia Phillies, 77.1, Locked Core)",
         "Owen Caissie (Miami Marlins, 76.0, Core)",
-        "Junior Caminero (Tampa Bay Rays, 73.3, Power Satellite)"
+        "Junior Caminero (Tampa Bay Rays, 74.8, Power Satellite)"
       ],
       "why": "Four different games/causes (survival layer) \u2014 RR scores on cause diversity."
     },
@@ -7930,9 +7936,9 @@
       "score": 13.5,
       "grade": "B",
       "flags": [
-        "High HR allowed (HR/9 1.67)"
+        "High HR allowed (HR/9 1.55)"
       ],
-      "hr9": 1.67,
+      "hr9": 1.55,
       "barrel_allowed": 0.0759
     },
     {
@@ -7945,6 +7951,18 @@
       ],
       "hr9": 0.76,
       "barrel_allowed": 0.0828
+    },
+    {
+      "id": 660604,
+      "name": "Alan Rangel",
+      "score": 13.0,
+      "grade": "C",
+      "flags": [
+        "Avg+ HR allowed (HR/9 0.56)",
+        "Fly-ball prone (30% FB allowed)"
+      ],
+      "hr9": 0.56,
+      "barrel_allowed": 0.0624
     },
     {
       "id": 693855,
@@ -7968,19 +7986,6 @@
       ],
       "hr9": 0.58,
       "barrel_allowed": 0.0608
-    },
-    {
-      "id": 660604,
-      "name": "Alan Rangel",
-      "score": 11.5,
-      "grade": "C",
-      "flags": [
-        "Avg+ HR allowed (HR/9 0.64)",
-        "Fly-ball prone (30% FB allowed)",
-        "High K rate (27%)"
-      ],
-      "hr9": 0.64,
-      "barrel_allowed": 0.0624
     },
     {
       "id": 543135,
@@ -8083,6 +8088,30 @@
         "outcome": null
       },
       {
+        "player": "Junior Caminero",
+        "team": "Tampa Bay Rays",
+        "opp_pitcher": "Stephen Kolek",
+        "role": "Power Satellite",
+        "total": 74.8,
+        "cause_grade": "B",
+        "result_hr": null,
+        "cause_fired": null,
+        "teammate_hr": null,
+        "outcome": null
+      },
+      {
+        "player": "Brandon Lowe",
+        "team": "Pittsburgh Pirates",
+        "opp_pitcher": "Alan Rangel",
+        "role": "Locked Core",
+        "total": 74.0,
+        "cause_grade": "C",
+        "result_hr": null,
+        "cause_fired": null,
+        "teammate_hr": null,
+        "outcome": null
+      },
+      {
         "player": "Brandon Marsh",
         "team": "Philadelphia Phillies",
         "opp_pitcher": "Jared Jones",
@@ -8095,48 +8124,24 @@
         "outcome": null
       },
       {
+        "player": "Esmerlyn Valdez",
+        "team": "Pittsburgh Pirates",
+        "opp_pitcher": "Alan Rangel",
+        "role": "Locked Core",
+        "total": 74.0,
+        "cause_grade": "C",
+        "result_hr": null,
+        "cause_fired": null,
+        "teammate_hr": null,
+        "outcome": null
+      },
+      {
         "player": "Bryce Harper",
         "team": "Philadelphia Phillies",
         "opp_pitcher": "Jared Jones",
         "role": "Locked Core",
         "total": 73.4,
         "cause_grade": "B",
-        "result_hr": null,
-        "cause_fired": null,
-        "teammate_hr": null,
-        "outcome": null
-      },
-      {
-        "player": "Junior Caminero",
-        "team": "Tampa Bay Rays",
-        "opp_pitcher": "Stephen Kolek",
-        "role": "Power Satellite",
-        "total": 73.3,
-        "cause_grade": "B",
-        "result_hr": null,
-        "cause_fired": null,
-        "teammate_hr": null,
-        "outcome": null
-      },
-      {
-        "player": "Brandon Lowe",
-        "team": "Pittsburgh Pirates",
-        "opp_pitcher": "Alan Rangel",
-        "role": "Locked Core",
-        "total": 72.5,
-        "cause_grade": "C",
-        "result_hr": null,
-        "cause_fired": null,
-        "teammate_hr": null,
-        "outcome": null
-      },
-      {
-        "player": "Esmerlyn Valdez",
-        "team": "Pittsburgh Pirates",
-        "opp_pitcher": "Alan Rangel",
-        "role": "Locked Core",
-        "total": 72.5,
-        "cause_grade": "C",
         "result_hr": null,
         "cause_fired": null,
         "teammate_hr": null,
