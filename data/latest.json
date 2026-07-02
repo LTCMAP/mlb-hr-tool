@@ -1,9 +1,9 @@
 {
   "version": "2.5",
-  "generated_utc": "2026-07-02T16:24:00.406884+00:00",
+  "generated_utc": "2026-07-02T16:42:44.262638+00:00",
   "slate_date": "2026-07-02",
   "games": 9,
-  "confirmed_lineups": 5,
+  "confirmed_lineups": 6,
   "statcast": true,
   "statcast_meta": {
     "window_days": 21,
@@ -75,23 +75,17 @@
       "cause_score": 20.0,
       "capture_method": "Single best bat",
       "public_heat": false,
-      "n_playable": 3,
+      "n_playable": 2,
       "playable_bats": [
         {
           "name": "Owen Caissie",
-          "total": 74.0,
-          "role": "Power Satellite",
+          "total": 76.0,
+          "role": "Core",
           "fit_tag": "PITCH-FIT"
         },
         {
           "name": "Kyle Stowers",
-          "total": 69.5,
-          "role": "Longshot",
-          "fit_tag": null
-        },
-        {
-          "name": "Joe Mack",
-          "total": 62.2,
+          "total": 74.5,
           "role": "Longshot",
           "fit_tag": null
         }
@@ -592,6 +586,109 @@
       "role_notes": []
     },
     {
+      "id": 683357,
+      "name": "Owen Caissie",
+      "team": "Miami Marlins",
+      "bats": "L",
+      "opp": "Colorado Rockies",
+      "opp_pitcher": "Michael Lorenzen",
+      "venue": "Coors Field",
+      "gamePk": 824335,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 10,
+      "iso": 0.202,
+      "total": 76.0,
+      "tier": "Satellite",
+      "role": "Core",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.49,
+      "fit_tag": "PITCH-FIT",
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 16.0,
+        "hitter": 33.0,
+        "environment": 14.0,
+        "lineup": 8.0,
+        "confidence": 5.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2038,
+        "barrel_rate": 0.1208,
+        "hard_hit_rate": 0.442,
+        "fb_rate": 0.547
+      },
+      "reasons": [
+        "vs Michael Lorenzen \u2014 cause B (16.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.44)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "Platoon shape: spikes vs RHP (barrel 18%, air-pull 24%)",
+        "Strong air-pull (24%)",
+        "Elite barrel rate (18%)",
+        "Platoon edge (L vs RHP)",
+        "Elite HR park (115)",
+        "Altitude; elite carry",
+        "Mid order (#6)",
+        "Model: elite shape + clear cause"
+      ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
+      "id": 669065,
+      "name": "Kyle Stowers",
+      "team": "Miami Marlins",
+      "bats": "L",
+      "opp": "Colorado Rockies",
+      "opp_pitcher": "Michael Lorenzen",
+      "venue": "Coors Field",
+      "gamePk": 824335,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 8,
+      "iso": 0.196,
+      "total": 74.5,
+      "tier": "Satellite",
+      "role": "Longshot",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.75,
+      "fit_tag": null,
+      "value_play": true,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 16.0,
+        "hitter": 29.5,
+        "environment": 14.0,
+        "lineup": 11.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2014,
+        "barrel_rate": 0.1129,
+        "hard_hit_rate": 0.4885,
+        "fb_rate": 0.5314
+      },
+      "reasons": [
+        "vs Michael Lorenzen \u2014 cause B (16.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.44)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "Platoon shape: spikes vs RHP (barrel 14%, air-pull 21%)",
+        "Good air-pull (21%)",
+        "Strong barrels (14%)",
+        "Hard-hit 49%",
+        "Elite HR park (115)",
+        "Altitude; elite carry",
+        "Heart of order (#3)",
+        "Model: one strong signal",
+        "VALUE longshot: real shape + cause off the chalk"
+      ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
       "id": 664040,
       "name": "Brandon Lowe",
       "team": "Pittsburgh Pirates",
@@ -628,7 +725,7 @@
       },
       "reasons": [
         "vs Alan Rangel \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.75)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.69)",
         "Pitcher: Fly-ball prone (30% FB allowed)",
         "Strong air-pull (27%)",
         "Above-avg barrels (11%)",
@@ -642,62 +739,6 @@
       ],
       "warnings": [],
       "role_notes": []
-    },
-    {
-      "id": 683357,
-      "name": "Owen Caissie",
-      "team": "Miami Marlins",
-      "bats": "L",
-      "opp": "Colorado Rockies",
-      "opp_pitcher": "Michael Lorenzen",
-      "venue": "Coors Field",
-      "gamePk": 824335,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.202,
-      "total": 74.0,
-      "tier": "Satellite",
-      "role": "Power Satellite",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.49,
-      "fit_tag": "PITCH-FIT",
-      "value_play": true,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.0,
-        "hitter": 33.0,
-        "environment": 14.0,
-        "lineup": 6.0,
-        "confidence": 5.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2038,
-        "barrel_rate": 0.1208,
-        "hard_hit_rate": 0.442,
-        "fb_rate": 0.547
-      },
-      "reasons": [
-        "vs Michael Lorenzen \u2014 cause B (16.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.44)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Platoon shape: spikes vs RHP (barrel 18%, air-pull 24%)",
-        "Strong air-pull (24%)",
-        "Elite barrel rate (18%)",
-        "Platoon edge (L vs RHP)",
-        "Elite HR park (115)",
-        "Altitude; elite carry",
-        "Elite-hitter override (beats a neutral spot)",
-        "Model: elite shape + clear cause",
-        "VALUE longshot: real shape + cause off the chalk"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Elite-hitter override (beats a neutral spot)"
-      ]
     },
     {
       "id": 699013,
@@ -736,7 +777,7 @@
       },
       "reasons": [
         "vs Alan Rangel \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.75)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.69)",
         "Pitcher: Fly-ball prone (30% FB allowed)",
         "Platoon shape: spikes vs RHP (barrel 21%, air-pull 21%)",
         "Good air-pull (21%)",
@@ -861,59 +902,6 @@
       "role_notes": [
         "Elite-hitter override (beats a neutral spot)"
       ]
-    },
-    {
-      "id": 669065,
-      "name": "Kyle Stowers",
-      "team": "Miami Marlins",
-      "bats": "L",
-      "opp": "Colorado Rockies",
-      "opp_pitcher": "Michael Lorenzen",
-      "venue": "Coors Field",
-      "gamePk": 824335,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.196,
-      "total": 69.5,
-      "tier": "Longshot",
-      "role": "Longshot",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.75,
-      "fit_tag": null,
-      "value_play": true,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.0,
-        "hitter": 29.5,
-        "environment": 14.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2014,
-        "barrel_rate": 0.1129,
-        "hard_hit_rate": 0.4885,
-        "fb_rate": 0.5314
-      },
-      "reasons": [
-        "vs Michael Lorenzen \u2014 cause B (16.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.44)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Platoon shape: spikes vs RHP (barrel 14%, air-pull 21%)",
-        "Good air-pull (21%)",
-        "Strong barrels (14%)",
-        "Hard-hit 49%",
-        "Elite HR park (115)",
-        "Altitude; elite carry",
-        "Model: one strong signal",
-        "VALUE longshot: real shape + cause off the chalk"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
     },
     {
       "id": 592518,
@@ -1230,6 +1218,58 @@
       "role_notes": []
     },
     {
+      "id": 689414,
+      "name": "Liam Hicks",
+      "team": "Miami Marlins",
+      "bats": "L",
+      "opp": "Colorado Rockies",
+      "opp_pitcher": "Michael Lorenzen",
+      "venue": "Coors Field",
+      "gamePk": 824335,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 13,
+      "iso": 0.186,
+      "total": 65.6,
+      "tier": "Longshot",
+      "role": "Longshot",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.82,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 16.0,
+        "hitter": 20.6,
+        "environment": 14.0,
+        "lineup": 12.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.218,
+        "barrel_rate": 0.0634,
+        "hard_hit_rate": 0.3257,
+        "fb_rate": 0.4743
+      },
+      "reasons": [
+        "vs Michael Lorenzen \u2014 cause B (16.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.44)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "Strong air-pull (26%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (57% fastballs, rel 1.21 \u2192 mix-fit 0.82x)",
+        "Elite HR park (115)",
+        "Altitude; elite carry",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 808959,
       "name": "Munetaka Murakami",
       "team": "Chicago White Sox",
@@ -1389,7 +1429,7 @@
       "slot": 3,
       "confirmed": true,
       "season_hr": 11,
-      "iso": 0.182,
+      "iso": 0.181,
       "total": 63.3,
       "tier": "Longshot",
       "role": "Pass",
@@ -1414,7 +1454,7 @@
       },
       "reasons": [
         "vs Alan Rangel \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.75)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.69)",
         "Pitcher: Fly-ball prone (30% FB allowed)",
         "Platoon shape: spikes vs RHP (barrel 14%, air-pull 16%)",
         "Strong barrels (14%)",
@@ -1472,56 +1512,6 @@
         "Hot (96\u00b0F)",
         "Wind out ~11 mph",
         "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 691788,
-      "name": "Joe Mack",
-      "team": "Miami Marlins",
-      "bats": "L",
-      "opp": "Colorado Rockies",
-      "opp_pitcher": "Michael Lorenzen",
-      "venue": "Coors Field",
-      "gamePk": 824335,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 6,
-      "iso": 0.173,
-      "total": 62.2,
-      "tier": "Longshot",
-      "role": "Longshot",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.04,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.0,
-        "hitter": 23.2,
-        "environment": 14.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1885,
-        "barrel_rate": 0.0902,
-        "hard_hit_rate": 0.3722,
-        "fb_rate": 0.513
-      },
-      "reasons": [
-        "vs Michael Lorenzen \u2014 cause B (16.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.44)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Good air-pull (20%)",
-        "Above-avg barrels (10%)",
-        "Platoon edge (L vs RHP)",
-        "Elite HR park (115)",
-        "Altitude; elite carry"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -1666,7 +1656,7 @@
       },
       "reasons": [
         "vs Alan Rangel \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.75)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.69)",
         "Pitcher: Fly-ball prone (30% FB allowed)",
         "Platoon shape: spikes vs RHP (barrel 12%, air-pull 24%)",
         "Strong air-pull (24%)",
@@ -1778,6 +1768,56 @@
       ],
       "warnings": [
         "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 691788,
+      "name": "Joe Mack",
+      "team": "Miami Marlins",
+      "bats": "L",
+      "opp": "Colorado Rockies",
+      "opp_pitcher": "Michael Lorenzen",
+      "venue": "Coors Field",
+      "gamePk": 824335,
+      "slot": 9,
+      "confirmed": true,
+      "season_hr": 6,
+      "iso": 0.173,
+      "total": 61.2,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.04,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 16.0,
+        "hitter": 23.2,
+        "environment": 14.0,
+        "lineup": 5.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1885,
+        "barrel_rate": 0.0902,
+        "hard_hit_rate": 0.3722,
+        "fb_rate": 0.513
+      },
+      "reasons": [
+        "vs Michael Lorenzen \u2014 cause B (16.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.44)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "Good air-pull (20%)",
+        "Above-avg barrels (10%)",
+        "Platoon edge (L vs RHP)",
+        "Elite HR park (115)",
+        "Altitude; elite carry"
+      ],
+      "warnings": [
+        "Bottom of order (#9)"
       ],
       "role_notes": []
     },
@@ -1986,59 +2026,6 @@
       "role_notes": []
     },
     {
-      "id": 689414,
-      "name": "Liam Hicks",
-      "team": "Miami Marlins",
-      "bats": "L",
-      "opp": "Colorado Rockies",
-      "opp_pitcher": "Michael Lorenzen",
-      "venue": "Coors Field",
-      "gamePk": 824335,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.186,
-      "total": 59.6,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.82,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.0,
-        "hitter": 20.6,
-        "environment": 14.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.218,
-        "barrel_rate": 0.0634,
-        "hard_hit_rate": 0.3257,
-        "fb_rate": 0.4743
-      },
-      "reasons": [
-        "vs Michael Lorenzen \u2014 cause B (16.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.44)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Strong air-pull (26%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (57% fastballs, rel 1.21 \u2192 mix-fit 0.82x)",
-        "Elite HR park (115)",
-        "Altitude; elite carry",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 666139,
       "name": "Josh Lowe",
       "team": "Los Angeles Angels",
@@ -2179,7 +2166,7 @@
       },
       "reasons": [
         "vs Alan Rangel \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.75)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.69)",
         "Pitcher: Fly-ball prone (30% FB allowed)",
         "Good air-pull (21%)",
         "Platoon edge (L vs RHP)",
@@ -2684,7 +2671,7 @@
       },
       "reasons": [
         "vs Alan Rangel \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.75)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.69)",
         "Pitcher: Fly-ball prone (30% FB allowed)",
         "Platoon shape: spikes vs RHP (barrel 11%, air-pull 21%)",
         "Good air-pull (21%)",
@@ -2729,7 +2716,7 @@
       "statcast": null,
       "reasons": [
         "vs Alan Rangel \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.75)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.69)",
         "Pitcher: Fly-ball prone (30% FB allowed)",
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
@@ -3252,6 +3239,57 @@
       ]
     },
     {
+      "id": 672640,
+      "name": "Otto Lopez",
+      "team": "Miami Marlins",
+      "bats": "R",
+      "opp": "Colorado Rockies",
+      "opp_pitcher": "Michael Lorenzen",
+      "venue": "Coors Field",
+      "gamePk": 824335,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 7,
+      "iso": 0.152,
+      "total": 54.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.83,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 16.0,
+        "hitter": 10.7,
+        "environment": 14.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1473,
+        "barrel_rate": 0.062,
+        "hard_hit_rate": 0.3553,
+        "fb_rate": 0.4823
+      },
+      "reasons": [
+        "vs Michael Lorenzen \u2014 cause B (16.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.44)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "Platoon shape fades vs RHP",
+        "Poor pitch-mix fit (57% fastballs, rel 1.01 \u2192 mix-fit 0.83x)",
+        "Elite HR park (117)",
+        "Altitude; elite carry",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 542303,
       "name": "Marcell Ozuna",
       "team": "Pittsburgh Pirates",
@@ -3288,7 +3326,7 @@
       },
       "reasons": [
         "vs Alan Rangel \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.75)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.69)",
         "Pitcher: Fly-ball prone (30% FB allowed)",
         "Good air-pull (19%)",
         "Pitch-mix fit: damages this arsenal (37% offspeed, rel 1.00 \u2192 mix-fit 1.41x)",
@@ -4860,7 +4898,7 @@
       },
       "reasons": [
         "vs Alan Rangel \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.75)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.69)",
         "Pitcher: Fly-ball prone (30% FB allowed)",
         "Pitch-mix fit: damages this arsenal (37% offspeed, rel 1.00 \u2192 mix-fit 1.20x)",
         "Hitter-friendly park (106)",
@@ -4915,58 +4953,6 @@
       "warnings": [
         "Park factor unknown",
         "Weather unavailable",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 672640,
-      "name": "Otto Lopez",
-      "team": "Miami Marlins",
-      "bats": "R",
-      "opp": "Colorado Rockies",
-      "opp_pitcher": "Michael Lorenzen",
-      "venue": "Coors Field",
-      "gamePk": 824335,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.152,
-      "total": 48.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.83,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.0,
-        "hitter": 10.7,
-        "environment": 14.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1473,
-        "barrel_rate": 0.062,
-        "hard_hit_rate": 0.3553,
-        "fb_rate": 0.4823
-      },
-      "reasons": [
-        "vs Michael Lorenzen \u2014 cause B (16.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.44)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Platoon shape fades vs RHP",
-        "Poor pitch-mix fit (57% fastballs, rel 1.01 \u2192 mix-fit 0.83x)",
-        "Elite HR park (117)",
-        "Altitude; elite carry",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -5227,6 +5213,58 @@
         "Pitcher park (93)",
         "Lineup not confirmed"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 669364,
+      "name": "Xavier Edwards",
+      "team": "Miami Marlins",
+      "bats": "S",
+      "opp": "Colorado Rockies",
+      "opp_pitcher": "Michael Lorenzen",
+      "venue": "Coors Field",
+      "gamePk": 824335,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 6,
+      "iso": 0.129,
+      "total": 47.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.3,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 16.0,
+        "hitter": 4.0,
+        "environment": 14.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1149,
+        "barrel_rate": 0.0402,
+        "hard_hit_rate": 0.2941,
+        "fb_rate": 0.4401
+      },
+      "reasons": [
+        "vs Michael Lorenzen \u2014 cause B (16.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.44)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "Platoon shape fades vs RHP",
+        "Low air-pull (8%)",
+        "Poor pitch-mix fit (57% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
+        "Elite HR park (116)",
+        "Altitude; elite carry",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -6894,59 +6932,6 @@
       ]
     },
     {
-      "id": 669364,
-      "name": "Xavier Edwards",
-      "team": "Miami Marlins",
-      "bats": "S",
-      "opp": "Colorado Rockies",
-      "opp_pitcher": "Michael Lorenzen",
-      "venue": "Coors Field",
-      "gamePk": 824335,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 6,
-      "iso": 0.129,
-      "total": 42.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.3,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.0,
-        "hitter": 4.0,
-        "environment": 14.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1149,
-        "barrel_rate": 0.0402,
-        "hard_hit_rate": 0.2941,
-        "fb_rate": 0.4401
-      },
-      "reasons": [
-        "vs Michael Lorenzen \u2014 cause B (16.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.44)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Platoon shape fades vs RHP",
-        "Low air-pull (8%)",
-        "Poor pitch-mix fit (57% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Elite HR park (116)",
-        "Altitude; elite carry",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 666969,
       "name": "Adolis Garc\u00eda",
       "team": "Philadelphia Phillies",
@@ -7835,7 +7820,7 @@
     "rr_core_4leg": {
       "legs": [
         "Kyle Schwarber (Philadelphia Phillies, 80.1, Locked Core)",
-        "Owen Caissie (Miami Marlins, 74.0, Power Satellite)",
+        "Owen Caissie (Miami Marlins, 76.0, Core)",
         "Junior Caminero (Tampa Bay Rays, 73.3, Power Satellite)"
       ],
       "why": "Four different games/causes (survival layer) \u2014 RR scores on cause diversity."
@@ -7850,10 +7835,10 @@
     },
     "longshot_group": {
       "legs": [
-        "Kyle Stowers (Miami Marlins, 69.5)",
+        "Kyle Stowers (Miami Marlins, 74.5)",
         "Willi Castro (Colorado Rockies, 67.2)",
-        "Kyle Karros (Colorado Rockies, 63.6)",
-        "Joe Mack (Miami Marlins, 62.2)"
+        "Liam Hicks (Miami Marlins, 65.6)",
+        "Kyle Karros (Colorado Rockies, 63.6)"
       ],
       "why": "Deeper bats with a real pitcher/park cause \u2014 bonus-only convergence."
     }
@@ -7973,10 +7958,10 @@
       "score": 13.0,
       "grade": "C",
       "flags": [
-        "Avg+ HR allowed (HR/9 0.75)",
+        "Avg+ HR allowed (HR/9 0.69)",
         "Fly-ball prone (30% FB allowed)"
       ],
-      "hr9": 0.75,
+      "hr9": 0.69,
       "barrel_allowed": 0.0624
     },
     {
@@ -8115,24 +8100,24 @@
         "outcome": null
       },
       {
-        "player": "Brandon Lowe",
-        "team": "Pittsburgh Pirates",
-        "opp_pitcher": "Alan Rangel",
-        "role": "Locked Core",
-        "total": 74.0,
-        "cause_grade": "C",
+        "player": "Owen Caissie",
+        "team": "Miami Marlins",
+        "opp_pitcher": "Michael Lorenzen",
+        "role": "Core",
+        "total": 76.0,
+        "cause_grade": "B",
         "result_hr": null,
         "cause_fired": null,
         "teammate_hr": null,
         "outcome": null
       },
       {
-        "player": "Owen Caissie",
-        "team": "Miami Marlins",
-        "opp_pitcher": "Michael Lorenzen",
-        "role": "Power Satellite",
+        "player": "Brandon Lowe",
+        "team": "Pittsburgh Pirates",
+        "opp_pitcher": "Alan Rangel",
+        "role": "Locked Core",
         "total": 74.0,
-        "cause_grade": "B",
+        "cause_grade": "C",
         "result_hr": null,
         "cause_fired": null,
         "teammate_hr": null,
