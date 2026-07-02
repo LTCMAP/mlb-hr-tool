@@ -1,9 +1,9 @@
 {
   "version": "2.4",
-  "generated_utc": "2026-07-02T15:25:24.343175+00:00",
+  "generated_utc": "2026-07-02T15:42:13.945254+00:00",
   "slate_date": "2026-07-02",
   "games": 9,
-  "confirmed_lineups": 3,
+  "confirmed_lineups": 4,
   "statcast": true,
   "statcast_meta": {
     "window_days": 21,
@@ -11,7 +11,7 @@
     "start": "2026-06-12",
     "end": "2026-07-02",
     "days_fetched": 0,
-    "days_cached": 20,
+    "days_cached": 21,
     "batters": 413,
     "pitchers": 461
   },
@@ -492,8 +492,21 @@
       "cause_score": 10.0,
       "capture_method": "Watchlist / pass (no clear cause)",
       "public_heat": false,
-      "n_playable": 0,
-      "playable_bats": []
+      "n_playable": 2,
+      "playable_bats": [
+        {
+          "name": "Christian Yelich",
+          "total": 65.9,
+          "role": "Pass",
+          "fit_tag": null
+        },
+        {
+          "name": "Jackson Chourio",
+          "total": 63.0,
+          "role": "Pass",
+          "fit_tag": null
+        }
+      ]
     },
     {
       "team": "Pittsburgh Pirates",
@@ -2508,6 +2521,57 @@
       "role_notes": []
     },
     {
+      "id": 592885,
+      "name": "Christian Yelich",
+      "team": "Milwaukee Brewers",
+      "bats": "L",
+      "opp": "Cincinnati Reds",
+      "opp_pitcher": "Chase Burns",
+      "venue": "American Family Field",
+      "gamePk": 823765,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 5,
+      "iso": 0.136,
+      "total": 65.9,
+      "tier": "Longshot",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.18,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 31.4,
+        "environment": 10.0,
+        "lineup": 12.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2727,
+        "barrel_rate": 0.0909,
+        "hard_hit_rate": 0.5152,
+        "fb_rate": 0.5152
+      },
+      "reasons": [
+        "vs Chase Burns \u2014 cause Pass (8.5/25)",
+        "Pitcher: Fly-ball prone (57% air allowed)",
+        "Pitcher: High K rate (31%)",
+        "Elite air-pull (27%)",
+        "Above-avg barrels (9%)",
+        "Hard-hit 52%",
+        "Platoon edge (L vs RHP)",
+        "Hitter-friendly park (107)",
+        "Retractable roof (weather neutralized)",
+        "Top of order (#1)",
+        "Model: one strong signal"
+      ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
       "id": 681715,
       "name": "Heriberto Hern\u00e1ndez",
       "team": "Miami Marlins",
@@ -3163,6 +3227,57 @@
         "Lineup not confirmed",
         "TRAP: strong surface shape but poor pitch-type fit (0.84x) vs this arsenal"
       ],
+      "role_notes": []
+    },
+    {
+      "id": 694192,
+      "name": "Jackson Chourio",
+      "team": "Milwaukee Brewers",
+      "bats": "R",
+      "opp": "Cincinnati Reds",
+      "opp_pitcher": "Chase Burns",
+      "venue": "American Family Field",
+      "gamePk": 823765,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 12,
+      "iso": 0.235,
+      "total": 63.0,
+      "tier": "Longshot",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.1,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 28.5,
+        "environment": 10.0,
+        "lineup": 12.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1887,
+        "barrel_rate": 0.1132,
+        "hard_hit_rate": 0.4717,
+        "fb_rate": 0.434
+      },
+      "reasons": [
+        "vs Chase Burns \u2014 cause Pass (8.5/25)",
+        "Pitcher: Fly-ball prone (57% air allowed)",
+        "Pitcher: High K rate (31%)",
+        "Strong air-pull (19%)",
+        "Above-avg barrels (11%)",
+        "Hard-hit 47%",
+        "Hitter-friendly park (105)",
+        "Retractable roof (weather neutralized)",
+        "Top of order (#2)",
+        "Model: one strong signal",
+        "Barrel\u2192HR park fit: pull-air power in a carry park (105)"
+      ],
+      "warnings": [],
       "role_notes": []
     },
     {
@@ -3834,6 +3949,57 @@
       "role_notes": []
     },
     {
+      "id": 661388,
+      "name": "William Contreras",
+      "team": "Milwaukee Brewers",
+      "bats": "R",
+      "opp": "Cincinnati Reds",
+      "opp_pitcher": "Chase Burns",
+      "venue": "American Family Field",
+      "gamePk": 823765,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 9,
+      "iso": 0.127,
+      "total": 61.4,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.09,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 27.9,
+        "environment": 10.0,
+        "lineup": 11.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.3333,
+        "barrel_rate": 0.1111,
+        "hard_hit_rate": 0.5778,
+        "fb_rate": 0.6444
+      },
+      "reasons": [
+        "vs Chase Burns \u2014 cause Pass (8.5/25)",
+        "Pitcher: Fly-ball prone (57% air allowed)",
+        "Pitcher: High K rate (31%)",
+        "Elite air-pull (33%)",
+        "Above-avg barrels (11%)",
+        "Hard-hit 58%",
+        "Hitter-friendly park (105)",
+        "Retractable roof (weather neutralized)",
+        "Heart of order (#4)",
+        "Model: one strong signal",
+        "Barrel\u2192HR park fit: pull-air power in a carry park (105)"
+      ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
       "id": 679822,
       "name": "Justin Foscue",
       "team": "Texas Rangers",
@@ -3988,6 +4154,56 @@
       ]
     },
     {
+      "id": 641343,
+      "name": "Jake Bauers",
+      "team": "Milwaukee Brewers",
+      "bats": "L",
+      "opp": "Cincinnati Reds",
+      "opp_pitcher": "Chase Burns",
+      "venue": "American Family Field",
+      "gamePk": 823765,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 15,
+      "iso": 0.232,
+      "total": 60.7,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.14,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 30.2,
+        "environment": 10.0,
+        "lineup": 8.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2308,
+        "barrel_rate": 0.0769,
+        "hard_hit_rate": 0.5,
+        "fb_rate": 0.6538
+      },
+      "reasons": [
+        "vs Chase Burns \u2014 cause Pass (8.5/25)",
+        "Pitcher: Fly-ball prone (57% air allowed)",
+        "Pitcher: High K rate (31%)",
+        "Elite air-pull (23%)",
+        "Hard-hit 50%",
+        "Platoon edge (L vs RHP)",
+        "Hitter-friendly park (107)",
+        "Retractable roof (weather neutralized)",
+        "Mid order (#5)",
+        "Model: one strong signal"
+      ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
       "id": 681198,
       "name": "TJ Rumfield",
       "team": "Colorado Rockies",
@@ -4040,6 +4256,56 @@
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
+    },
+    {
+      "id": 669003,
+      "name": "Garrett Mitchell",
+      "team": "Milwaukee Brewers",
+      "bats": "L",
+      "opp": "Cincinnati Reds",
+      "opp_pitcher": "Chase Burns",
+      "venue": "American Family Field",
+      "gamePk": 823765,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 6,
+      "iso": 0.177,
+      "total": 60.6,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.12,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 30.1,
+        "environment": 10.0,
+        "lineup": 8.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.25,
+        "barrel_rate": 0.0938,
+        "hard_hit_rate": 0.4375,
+        "fb_rate": 0.4375
+      },
+      "reasons": [
+        "vs Chase Burns \u2014 cause Pass (8.5/25)",
+        "Pitcher: Fly-ball prone (57% air allowed)",
+        "Pitcher: High K rate (31%)",
+        "Elite air-pull (25%)",
+        "Above-avg barrels (9%)",
+        "Platoon edge (L vs RHP)",
+        "Hitter-friendly park (107)",
+        "Retractable roof (weather neutralized)",
+        "Mid order (#6)",
+        "Model: one strong signal"
+      ],
+      "warnings": [],
+      "role_notes": []
     },
     {
       "id": 607043,
@@ -4248,58 +4514,6 @@
       "role_notes": []
     },
     {
-      "id": 592885,
-      "name": "Christian Yelich",
-      "team": "Milwaukee Brewers",
-      "bats": "L",
-      "opp": "Cincinnati Reds",
-      "opp_pitcher": "Chase Burns",
-      "venue": "American Family Field",
-      "gamePk": 823765,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 5,
-      "iso": 0.136,
-      "total": 59.9,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.18,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 31.4,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2727,
-        "barrel_rate": 0.0909,
-        "hard_hit_rate": 0.5152,
-        "fb_rate": 0.5152
-      },
-      "reasons": [
-        "vs Chase Burns \u2014 cause Pass (8.5/25)",
-        "Pitcher: Fly-ball prone (57% air allowed)",
-        "Pitcher: High K rate (31%)",
-        "Elite air-pull (27%)",
-        "Above-avg barrels (9%)",
-        "Hard-hit 52%",
-        "Platoon edge (L vs RHP)",
-        "Hitter-friendly park (107)",
-        "Retractable roof (weather neutralized)",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 664761,
       "name": "Alec Bohm",
       "team": "Philadelphia Phillies",
@@ -4501,108 +4715,6 @@
         "Hot (99\u00b0F)",
         "Model: one strong signal",
         "Barrel\u2192HR park fit: pull-air power in a carry park (106)"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 641343,
-      "name": "Jake Bauers",
-      "team": "Milwaukee Brewers",
-      "bats": "L",
-      "opp": "Cincinnati Reds",
-      "opp_pitcher": "Chase Burns",
-      "venue": "American Family Field",
-      "gamePk": 823765,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 15,
-      "iso": 0.232,
-      "total": 58.7,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.14,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 30.2,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2308,
-        "barrel_rate": 0.0769,
-        "hard_hit_rate": 0.5,
-        "fb_rate": 0.6538
-      },
-      "reasons": [
-        "vs Chase Burns \u2014 cause Pass (8.5/25)",
-        "Pitcher: Fly-ball prone (57% air allowed)",
-        "Pitcher: High K rate (31%)",
-        "Elite air-pull (23%)",
-        "Hard-hit 50%",
-        "Platoon edge (L vs RHP)",
-        "Hitter-friendly park (107)",
-        "Retractable roof (weather neutralized)",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 669003,
-      "name": "Garrett Mitchell",
-      "team": "Milwaukee Brewers",
-      "bats": "L",
-      "opp": "Cincinnati Reds",
-      "opp_pitcher": "Chase Burns",
-      "venue": "American Family Field",
-      "gamePk": 823765,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 6,
-      "iso": 0.177,
-      "total": 58.6,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.12,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 30.1,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.25,
-        "barrel_rate": 0.0938,
-        "hard_hit_rate": 0.4375,
-        "fb_rate": 0.4375
-      },
-      "reasons": [
-        "vs Chase Burns \u2014 cause Pass (8.5/25)",
-        "Pitcher: Fly-ball prone (57% air allowed)",
-        "Pitcher: High K rate (31%)",
-        "Elite air-pull (25%)",
-        "Above-avg barrels (9%)",
-        "Platoon edge (L vs RHP)",
-        "Hitter-friendly park (107)",
-        "Retractable roof (weather neutralized)",
-        "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -4968,58 +5080,6 @@
       "role_notes": []
     },
     {
-      "id": 694192,
-      "name": "Jackson Chourio",
-      "team": "Milwaukee Brewers",
-      "bats": "R",
-      "opp": "Cincinnati Reds",
-      "opp_pitcher": "Chase Burns",
-      "venue": "American Family Field",
-      "gamePk": 823765,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.235,
-      "total": 57.0,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.1,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 28.5,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1887,
-        "barrel_rate": 0.1132,
-        "hard_hit_rate": 0.4717,
-        "fb_rate": 0.434
-      },
-      "reasons": [
-        "vs Chase Burns \u2014 cause Pass (8.5/25)",
-        "Pitcher: Fly-ball prone (57% air allowed)",
-        "Pitcher: High K rate (31%)",
-        "Strong air-pull (19%)",
-        "Above-avg barrels (11%)",
-        "Hard-hit 47%",
-        "Hitter-friendly park (105)",
-        "Retractable roof (weather neutralized)",
-        "Model: one strong signal",
-        "Barrel\u2192HR park fit: pull-air power in a carry park (105)"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 669394,
       "name": "Jake Burger",
       "team": "Texas Rangers",
@@ -5111,58 +5171,6 @@
         "Slightly + park (100)",
         "Retractable roof (weather neutralized)",
         "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 661388,
-      "name": "William Contreras",
-      "team": "Milwaukee Brewers",
-      "bats": "R",
-      "opp": "Cincinnati Reds",
-      "opp_pitcher": "Chase Burns",
-      "venue": "American Family Field",
-      "gamePk": 823765,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.127,
-      "total": 56.4,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.09,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 27.9,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.3333,
-        "barrel_rate": 0.1111,
-        "hard_hit_rate": 0.5778,
-        "fb_rate": 0.6444
-      },
-      "reasons": [
-        "vs Chase Burns \u2014 cause Pass (8.5/25)",
-        "Pitcher: Fly-ball prone (57% air allowed)",
-        "Pitcher: High K rate (31%)",
-        "Elite air-pull (33%)",
-        "Above-avg barrels (11%)",
-        "Hard-hit 58%",
-        "Hitter-friendly park (105)",
-        "Retractable roof (weather neutralized)",
-        "Model: one strong signal",
-        "Barrel\u2192HR park fit: pull-air power in a carry park (105)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -5973,6 +5981,57 @@
       "warnings": [
         "Lineup not confirmed"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 668930,
+      "name": "Brice Turang",
+      "team": "Milwaukee Brewers",
+      "bats": "L",
+      "opp": "Cincinnati Reds",
+      "opp_pitcher": "Chase Burns",
+      "venue": "American Family Field",
+      "gamePk": 823765,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 12,
+      "iso": 0.191,
+      "total": 53.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.94,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 20.7,
+        "environment": 10.0,
+        "lineup": 11.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.0976,
+        "barrel_rate": 0.122,
+        "hard_hit_rate": 0.3415,
+        "fb_rate": 0.439
+      },
+      "reasons": [
+        "vs Chase Burns \u2014 cause Pass (8.5/25)",
+        "Pitcher: Fly-ball prone (57% air allowed)",
+        "Pitcher: High K rate (31%)",
+        "Strong barrels (12%)",
+        "Platoon edge (L vs RHP)",
+        "Hitter-friendly park (107)",
+        "Retractable roof (weather neutralized)",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -6907,58 +6966,6 @@
       "warnings": [
         "Park factor unknown",
         "Weather unavailable",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 668930,
-      "name": "Brice Turang",
-      "team": "Milwaukee Brewers",
-      "bats": "L",
-      "opp": "Cincinnati Reds",
-      "opp_pitcher": "Chase Burns",
-      "venue": "American Family Field",
-      "gamePk": 823765,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.191,
-      "total": 48.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.94,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 20.7,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.0976,
-        "barrel_rate": 0.122,
-        "hard_hit_rate": 0.3415,
-        "fb_rate": 0.439
-      },
-      "reasons": [
-        "vs Chase Burns \u2014 cause Pass (8.5/25)",
-        "Pitcher: Fly-ball prone (57% air allowed)",
-        "Pitcher: High K rate (31%)",
-        "Strong barrels (12%)",
-        "Platoon edge (L vs RHP)",
-        "Hitter-friendly park (107)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
