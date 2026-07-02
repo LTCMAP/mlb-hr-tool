@@ -1,0 +1,63 @@
+﻿2026-07-02T15:44:02.6971411Z ##[group]Run actions/upload-pages-artifact@v3
+2026-07-02T15:44:02.6971858Z with:
+2026-07-02T15:44:02.6972250Z   path: ./_site
+2026-07-02T15:44:02.6972571Z   name: github-pages
+2026-07-02T15:44:02.6972887Z   retention-days: 1
+2026-07-02T15:44:02.6973287Z ##[endgroup]
+2026-07-02T15:44:02.7091879Z ##[group]Run echo ::group::Archive artifact
+2026-07-02T15:44:02.7092428Z [36;1mecho ::group::Archive artifact[0m
+2026-07-02T15:44:02.7092769Z [36;1mtar \[0m
+2026-07-02T15:44:02.7093374Z [36;1m  --dereference --hard-dereference \[0m
+2026-07-02T15:44:02.7093810Z [36;1m  --directory "$INPUT_PATH" \[0m
+2026-07-02T15:44:02.7094252Z [36;1m  -cvf "$RUNNER_TEMP/artifact.tar" \[0m
+2026-07-02T15:44:02.7094626Z [36;1m  --exclude=.git \[0m
+2026-07-02T15:44:02.7094943Z [36;1m  --exclude=.github \[0m
+2026-07-02T15:44:02.7095298Z [36;1m  .[0m
+2026-07-02T15:44:02.7095670Z [36;1mecho ::endgroup::[0m
+2026-07-02T15:44:02.7203402Z shell: /usr/bin/sh -e {0}
+2026-07-02T15:44:02.7203772Z env:
+2026-07-02T15:44:02.7204182Z   INPUT_PATH: ./_site
+2026-07-02T15:44:02.7204592Z ##[endgroup]
+2026-07-02T15:44:02.7284474Z ##[group]Archive artifact
+2026-07-02T15:44:02.7295658Z ./
+2026-07-02T15:44:02.7296098Z ./README.md
+2026-07-02T15:44:02.7296537Z ./docs/
+2026-07-02T15:44:02.7302123Z ./docs/HR_Slate_Builder_Codex_Monster_Prompt.md
+2026-07-02T15:44:02.7303052Z ./docs/HR_Pairing_System_Master_Guide_v2.2_Amended.pdf
+2026-07-02T15:44:02.7303736Z ./docs/HR_Slate_Builder_Codex_Monster_Prompt.html
+2026-07-02T15:44:02.7304411Z ./assets/
+2026-07-02T15:44:02.7304766Z ./assets/css/
+2026-07-02T15:44:02.7305147Z ./assets/css/style.css
+2026-07-02T15:44:02.7305571Z ./build.py
+2026-07-02T15:44:02.7305846Z ./statcast.py
+2026-07-02T15:44:02.7306167Z ./index.html
+2026-07-02T15:44:02.7306444Z ./data/
+2026-07-02T15:44:02.7306701Z ./data/parks.json
+2026-07-02T15:44:02.7307022Z ./data/latest.json
+2026-07-02T15:44:02.7307308Z ./serve.py
+2026-07-02T15:44:02.7308076Z ##[endgroup]
+2026-07-02T15:44:02.7386262Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-07-02T15:44:02.7388190Z ##[group]Run actions/upload-artifact@v4
+2026-07-02T15:44:02.7388572Z with:
+2026-07-02T15:44:02.7388865Z   name: github-pages
+2026-07-02T15:44:02.7389405Z   path: /home/runner/work/_temp/artifact.tar
+2026-07-02T15:44:02.7389953Z   retention-days: 1
+2026-07-02T15:44:02.7390253Z   if-no-files-found: error
+2026-07-02T15:44:02.7390579Z   compression-level: 6
+2026-07-02T15:44:02.7391011Z   overwrite: false
+2026-07-02T15:44:02.7391340Z   include-hidden-files: false
+2026-07-02T15:44:02.7391670Z ##[endgroup]
+2026-07-02T15:44:02.8996583Z (node:2682) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-07-02T15:44:02.8997423Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-07-02T15:44:02.9040078Z With the provided path, there will be 1 file uploaded
+2026-07-02T15:44:02.9046525Z Artifact name is valid!
+2026-07-02T15:44:02.9047254Z Root directory input is valid!
+2026-07-02T15:44:03.3152793Z Beginning upload of artifact content to blob storage
+2026-07-02T15:44:03.3432733Z (node:2682) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-07-02T15:44:03.7215161Z Uploaded bytes 119448
+2026-07-02T15:44:03.7861695Z Finished uploading artifact content to blob storage!
+2026-07-02T15:44:03.7862692Z SHA256 digest of uploaded artifact zip is dc7a850d5bcd48cf7e6f5868ed018b18e8ef7b1f445dad9dc736dc03d1fa38c8
+2026-07-02T15:44:03.7863945Z Finalizing artifact upload
+2026-07-02T15:44:03.9909014Z Artifact github-pages.zip successfully finalized. Artifact ID 8044028667
+2026-07-02T15:44:03.9913186Z Artifact github-pages has been successfully uploaded! Final size is 119448 bytes. Artifact ID is 8044028667
+2026-07-02T15:44:03.9916684Z Artifact download URL: https://github.com/LTCMAP/mlb-hr-tool/actions/runs/28602819838/artifacts/8044028667

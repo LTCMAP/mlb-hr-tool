@@ -1,0 +1,56 @@
+﻿2026-07-02T15:43:59.8061864Z ##[group]Run actions/jekyll-build-pages@v1
+2026-07-02T15:43:59.8062281Z with:
+2026-07-02T15:43:59.8062572Z   source: .
+2026-07-02T15:43:59.8062889Z   destination: ./_site
+2026-07-02T15:43:59.8063229Z   future: false
+2026-07-02T15:43:59.8063583Z   build_revision: b3cbbd9c5b03e9dcdc9de648fce405b406c2c773
+2026-07-02T15:43:59.8064071Z   verbose: true
+2026-07-02T15:43:59.8066701Z   token: ***
+2026-07-02T15:43:59.8067009Z ##[endgroup]
+2026-07-02T15:43:59.8163614Z ##[command]/usr/bin/docker run --name ghcrioactionsjekyllbuildpagesv1013_1e3c88 --label 093029 --workdir /github/workspace --rm -e "INPUT_SOURCE" -e "INPUT_DESTINATION" -e "INPUT_FUTURE" -e "INPUT_BUILD_REVISION" -e "INPUT_VERBOSE" -e "INPUT_TOKEN" -e "HOME" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" -e "ACTIONS_ID_TOKEN_REQUEST_URL" -e "ACTIONS_ID_TOKEN_REQUEST_TOKEN" -e "ACTIONS_RESULTS_URL" -e "ACTIONS_ORCHESTRATION_ID" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work/_temp":"/github/runner_temp" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" -v "/home/runner/work/_temp/_runner_file_commands":"/github/file_commands" -v "/home/runner/work/mlb-hr-tool/mlb-hr-tool":"/github/workspace" ghcr.io/actions/jekyll-build-pages:v1.0.13
+2026-07-02T15:44:00.4800382Z [33mConfiguration file: none[0m
+2026-07-02T15:44:00.5792216Z To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
+2026-07-02T15:44:02.6001569Z   Logging at level: debug
+2026-07-02T15:44:02.6002385Z       GitHub Pages: github-pages v232
+2026-07-02T15:44:02.6002853Z       GitHub Pages: jekyll v3.10.0
+2026-07-02T15:44:02.6003306Z              Theme: jekyll-theme-primer
+2026-07-02T15:44:02.6003951Z       Theme source: /usr/local/bundle/gems/jekyll-theme-primer-0.6.0
+2026-07-02T15:44:02.6004491Z          Requiring: jekyll-github-metadata
+2026-07-02T15:44:02.6004963Z          Requiring: jekyll-seo-tag
+2026-07-02T15:44:02.6005361Z          Requiring: jekyll-coffeescript
+2026-07-02T15:44:02.6005909Z          Requiring: jekyll-commonmark-ghpages
+2026-07-02T15:44:02.6006508Z          Requiring: jekyll-gist
+2026-07-02T15:44:02.6006979Z          Requiring: jekyll-github-metadata
+2026-07-02T15:44:02.6007509Z          Requiring: jekyll-paginate
+2026-07-02T15:44:02.6008019Z          Requiring: jekyll-relative-links
+2026-07-02T15:44:02.6008446Z          Requiring: jekyll-optional-front-matter
+2026-07-02T15:44:02.6009038Z          Requiring: jekyll-readme-index
+2026-07-02T15:44:02.6009765Z          Requiring: jekyll-default-layout
+2026-07-02T15:44:02.6010342Z          Requiring: jekyll-titles-from-headings
+2026-07-02T15:44:02.6010805Z    GitHub Metadata: Initializing...
+2026-07-02T15:44:02.6011221Z             Source: /github/workspace/.
+2026-07-02T15:44:02.6011762Z        Destination: /github/workspace/./_site
+2026-07-02T15:44:02.6012301Z  Incremental build: disabled. Enable with --incremental
+2026-07-02T15:44:02.6012998Z       Generating... 
+2026-07-02T15:44:02.6018979Z         Generating: JekyllOptionalFrontMatter::Generator finished in 0.000194441 seconds.
+2026-07-02T15:44:02.6027141Z         Generating: JekyllReadmeIndex::Generator finished in 0.001397914 seconds.
+2026-07-02T15:44:02.6028042Z         Generating: Jekyll::Paginate::Pagination finished in 5.451e-06 seconds.
+2026-07-02T15:44:02.6028868Z         Generating: JekyllRelativeLinks::Generator finished in 0.000693916 seconds.
+2026-07-02T15:44:02.6030084Z         Generating: JekyllDefaultLayout::Generator finished in 5.9457e-05 seconds.
+2026-07-02T15:44:02.6030924Z          Requiring: kramdown-parser-gfm
+2026-07-02T15:44:02.6031623Z         Generating: JekyllTitlesFromHeadings::Generator finished in 0.006242737 seconds.
+2026-07-02T15:44:02.6032294Z          Rendering: assets/css/style.scss
+2026-07-02T15:44:02.6032810Z   Pre-Render Hooks: assets/css/style.scss
+2026-07-02T15:44:02.6033310Z   Rendering Markup: assets/css/style.scss
+2026-07-02T15:44:02.6034006Z          Rendering: docs/HR_Slate_Builder_Codex_Monster_Prompt.md
+2026-07-02T15:44:02.6034835Z   Pre-Render Hooks: docs/HR_Slate_Builder_Codex_Monster_Prompt.md
+2026-07-02T15:44:02.6035602Z   Rendering Markup: docs/HR_Slate_Builder_Codex_Monster_Prompt.md
+2026-07-02T15:44:02.6036290Z   Rendering Layout: docs/HR_Slate_Builder_Codex_Monster_Prompt.md
+2026-07-02T15:44:02.6036866Z      Layout source: theme
+2026-07-02T15:44:02.6037440Z    GitHub Metadata: Generating for LTCMAP/mlb-hr-tool
+2026-07-02T15:44:02.6038418Z    GitHub Metadata: Calling @client.repository("LTCMAP/mlb-hr-tool", {:accept=>"application/vnd.github.drax-preview+json"})
+2026-07-02T15:44:02.6039692Z    GitHub Metadata: Calling @client.pages("LTCMAP/mlb-hr-tool", {})
+2026-07-02T15:44:02.6040384Z            Writing: /github/workspace/_site/assets/css/style.css
+2026-07-02T15:44:02.6041159Z            Writing: /github/workspace/_site/docs/HR_Slate_Builder_Codex_Monster_Prompt.html
+2026-07-02T15:44:02.6041925Z                     done in 1.781 seconds.
+2026-07-02T15:44:02.6042491Z  Auto-regeneration: disabled. Use --watch to enable.
