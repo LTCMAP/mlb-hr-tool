@@ -19,6 +19,7 @@ import os
 import csv
 import io
 import gzip
+import math
 import datetime as dt
 from urllib.request import urlopen, Request
 
@@ -29,8 +30,14 @@ SAVANT = ("https://baseballsavant.mlb.com/statcast_search/csv?all=true"
           "&type=details&player_type=batter&min_pitches=0"
           "&game_date_gt={d}&game_date_lt={d}")
 
-# Savant coordinate of home plate / dead-center for spray-angle pull detection.
+# Savant hit-coordinate origin (home plate ≈ (125.42, 198.27), y grows toward
+# home). Spray angle = atan((hc_x-125.42)/(198.27-hc_y)); pull = the outer
+# third (|angle| > 15°) on the batter's pull side — matching Savant's own
+# pulled-air definition. (v2.5 fix: the old check used the pull HALF of the
+# field, which made league air-pull ~27% and everything look 'elite'.)
 CENTER_X = 125.42
+HOME_Y = 198.27
+PULL_DEG = 15.0
 AIR_TYPES = {"fly_ball", "line_drive"}        # HR-relevant air contact
 ALL_AIR = {"fly_ball", "line_drive", "popup"}
 
@@ -75,11 +82,16 @@ def _fetch_day(date_str):
     return rows
 
 
-def _is_pulled(stand, hc_x):
-    if hc_x is None or stand not in ("L", "R"):
+def _is_pulled(stand, hc_x, hc_y):
+    """True spray-angle pull: outer third of the field on the batter's pull side."""
+    if hc_x is None or hc_y is None or stand not in ("L", "R"):
         return False
-    # Right field = high hc_x, left field = low hc_x.
-    return (stand == "R" and hc_x < CENTER_X) or (stand == "L" and hc_x > CENTER_X)
+    dy = HOME_Y - hc_y
+    if dy <= 0:
+        return False
+    spray = math.degrees(math.atan((hc_x - CENTER_X) / dy))
+    # LF (RHB pull side) = negative spray; RF (LHB pull side) = positive.
+    return (stand == "R" and spray < -PULL_DEG) or (stand == "L" and spray > PULL_DEG)
 
 
 def load_window(end_date, days=21, recent_days=7):
@@ -120,17 +132,20 @@ def load_window(end_date, days=21, recent_days=7):
             bb = (r.get("bb_type") or "").strip()
             stand = r.get("stand")
             hc_x = _f(r.get("hc_x"))
+            hc_y = _f(r.get("hc_y"))
             is_hr = events == "home_run"
             is_barrel = (lsa == "6")
             is_hard = (ls is not None and ls >= 95)
             is_air = bb in AIR_TYPES
-            is_pulled_air = is_air and _is_pulled(stand, hc_x)
+            is_fly = bb == "fly_ball"
+            is_pulled_air = is_air and _is_pulled(stand, hc_x, hc_y)
             fam = PITCH_FAM.get((r.get("pitch_type") or "").strip())
+            p_throws = (r.get("p_throws") or "").strip()
 
             if bid:
                 b = B.setdefault(bid, dict(bbe=0, pa=0, barrels=0, hard=0, air=0,
                                            pulled_air=0, r_pa=0, r_barrels=0, r_hr=0,
-                                           fam={}))
+                                           fam={}, hand={}))
                 if is_pa:
                     b["pa"] += 1
                 if is_bbe:
@@ -144,13 +159,19 @@ def load_window(end_date, days=21, recent_days=7):
                         bf[0] += 1
                         if is_barrel: bf[1] += 1
                         if is_hr:     bf[2] += 1
+                    if p_throws in ("L", "R"):    # v2.5 platoon-split shape
+                        bh = b["hand"].setdefault(p_throws, [0, 0, 0, 0])  # bbe, barrels, pulled_air, hr
+                        bh[0] += 1
+                        if is_barrel:     bh[1] += 1
+                        if is_pulled_air: bh[2] += 1
+                        if is_hr:         bh[3] += 1
                 if d >= recent_cut:
                     if is_pa: b["r_pa"] += 1
                     if is_barrel: b["r_barrels"] += 1
                     if is_hr: b["r_hr"] += 1
             if pid:
-                p = P.setdefault(pid, dict(bbe=0, pa=0, barrels=0, hard=0, air=0, hr=0,
-                                           pitches=0, mix={}))
+                p = P.setdefault(pid, dict(bbe=0, pa=0, barrels=0, hard=0, air=0,
+                                           fly=0, hr=0, pitches=0, mix={}))
                 if fam:                           # pitcher usage by family (every pitch)
                     p["pitches"] += 1
                     p["mix"][fam] = p["mix"].get(fam, 0) + 1
@@ -162,6 +183,7 @@ def load_window(end_date, days=21, recent_days=7):
                     if is_barrel: p["barrels"] += 1
                     if is_hard:   p["hard"] += 1
                     if is_air:    p["air"] += 1
+                    if is_fly:    p["fly"] += 1
 
     def rate(n, d):
         return round(n / d, 4) if d else 0.0
@@ -182,6 +204,9 @@ def load_window(end_date, days=21, recent_days=7):
             # barrels+HR per BBE within each pitch family (consumer guards on bbe)
             "by_fam": {fam: {"bbe": v[0], "barrel": v[1], "hr": v[2]}
                        for fam, v in b["fam"].items()},
+            # v2.5 — raw shape counts vs LHP/RHP (consumer blends with overall)
+            "vs_hand": {h: {"bbe": v[0], "barrels": v[1], "pulled_air": v[2], "hr": v[3]}
+                        for h, v in b["hand"].items()},
         }
     pitchers = {}
     for pid, p in P.items():
@@ -191,7 +216,10 @@ def load_window(end_date, days=21, recent_days=7):
             "bbe": p["bbe"], "pa": p["pa"],
             "barrel_allowed_rate": rate(p["barrels"], p["bbe"]),
             "hard_hit_allowed_rate": rate(p["hard"], p["bbe"]),
-            "fb_allowed_rate": rate(p["air"], p["bbe"]),
+            # v2.5 fix: true fly-ball rate (FB only). The old value counted
+            # line drives too (league ~52%), so every arm maxed the FB slot.
+            "fb_allowed_rate": rate(p["fly"], p["bbe"]),
+            "air_allowed_rate": rate(p["air"], p["bbe"]),
             "hr_allowed": p["hr"],
             "hr_per_pa_allowed": rate(p["hr"], p["pa"]),
             "pitches": p["pitches"],
@@ -199,10 +227,27 @@ def load_window(end_date, days=21, recent_days=7):
             "mix": ({fam: rate(n, p["pitches"]) for fam, n in p["mix"].items()}
                     if p["pitches"] >= 50 else {}),
         }
+    # v2.5 — league-average rates over this window (empirical-Bayes shrinkage priors)
+    tb = [sum(b[k] for b in B.values()) for k in ("bbe", "barrels", "hard", "air",
+                                                  "pulled_air", "pa")]
+    tot_hr = sum(p["hr"] for p in P.values())
+    tot_ppa = sum(p["pa"] for p in P.values())
+    tot_fly = sum(p["fly"] for p in P.values())
+    tot_pbbe = sum(p["bbe"] for p in P.values())
+    league = {
+        "barrel_rate": rate(tb[1], tb[0]),
+        "hard_hit_rate": rate(tb[2], tb[0]),
+        "fb_rate": rate(tb[3], tb[0]),
+        "air_pull_rate": rate(tb[4], tb[0]),
+        "fly_rate": rate(tot_fly, tot_pbbe),
+        "hr_per_pa": rate(tot_hr, tot_ppa),
+        "bbe_total": tb[0],
+    }
     meta = {"window_days": days, "recent_days": recent_days,
             "start": dates[-1], "end": end_date,
             "days_fetched": fetched, "days_cached": cached,
-            "batters": len(batters), "pitchers": len(pitchers)}
+            "batters": len(batters), "pitchers": len(pitchers),
+            "league": league}
     return batters, pitchers, meta
 
 

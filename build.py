@@ -1,8 +1,20 @@
 #!/usr/bin/env python3
 """
-Daily MLB Home Run pick builder — v2.3 (odds-free, free data only).
+Daily MLB Home Run pick builder — v2.5 (odds-free, free data only).
 
-v2.3 fine-tune (not a rebuild). The clean rule:
+v2.5 model upgrades (on top of the v2.3/v2.4 cause-capture system):
+  - Directional wind: each park carries an approximate home-plate→CF bearing;
+    Open-Meteo wind direction is resolved into an out/in component (cosine),
+    worth up to ±3 env points at open-air parks. Wind can now RAISE a score,
+    not just warn.
+  - Empirical-Bayes shrinkage: all 21-day Statcast rates (hitter barrel /
+    air-pull / hard-hit / FB; pitcher barrel-allowed / FB-allowed / HR-PA)
+    regress toward the league window average by sample size, so a hot 10-BBE
+    week can no longer masquerade as elite shape.
+  - Platoon-split shape: hitter barrel/air-pull vs the *opposing pitcher's
+    hand* (blended with overall shape) replaces shape-blind platoon handling.
+
+The clean rule (v2.3):
   rank CAUSES first -> choose a CAPTURE method -> lock hitters whose
   batted-ball SHAPE (air-pull / barrel) can actually capture the cause.
 
@@ -32,6 +44,7 @@ Stdlib only. Run:  python3 build.py [--date YYYY-MM-DD] [--window 21] [--no-stat
 """
 
 import json
+import math
 import sys
 import os
 import datetime as dt
@@ -178,7 +191,8 @@ def fetch_weather(park, game_iso):
         when = dt.datetime.fromisoformat(game_iso.replace("Z", "+00:00"))
         ds = when.strftime("%Y-%m-%d")
         q = urlencode({"latitude": park["lat"], "longitude": park["lon"],
-                       "hourly": "temperature_2m,wind_speed_10m,precipitation_probability",
+                       "hourly": "temperature_2m,wind_speed_10m,wind_direction_10m,"
+                                 "precipitation_probability",
                        "temperature_unit": "fahrenheit", "wind_speed_unit": "mph",
                        "start_date": ds, "end_date": ds, "timezone": "UTC"})
         h = get(f"https://api.open-meteo.com/v1/forecast?{q}").get("hourly", {})
@@ -187,7 +201,9 @@ def fetch_weather(park, game_iso):
         i = times.index(tgt) if tgt in times else (len(times) // 2 if times else None)
         if i is None:
             return None
+        wd = h.get("wind_direction_10m", [])
         return {"temp_f": h["temperature_2m"][i], "wind_mph": h["wind_speed_10m"][i],
+                "wind_dir_deg": wd[i] if i < len(wd) else None,
                 "precip_pct": h.get("precipitation_probability", [None] * (i + 1))[i]}
     except Exception:
         return None
@@ -238,11 +254,11 @@ def score_pitcher(p, scp):
         if slg >= 0.43:
             flags.append(f"Hard contact allowed (.{int(slg*1000):03d} SLG)")
 
-    # Fly-ball allowed (5) — Statcast, else air/ground lean
+    # Fly-ball allowed (5) — Statcast true FB rate (league ~26%), else air/ground lean
     if fb_a is not None:
-        pts += 5 if fb_a >= 0.42 else 4 if fb_a >= 0.38 else 2.5 if fb_a >= 0.34 else 1
-        if fb_a >= 0.38:
-            flags.append(f"Fly-ball prone ({fb_a*100:.0f}% air allowed)")
+        pts += 5 if fb_a >= 0.33 else 4 if fb_a >= 0.29 else 2.5 if fb_a >= 0.25 else 1
+        if fb_a >= 0.29:
+            flags.append(f"Fly-ball prone ({fb_a*100:.0f}% FB allowed)")
     else:
         pts += 5 if fb_lean >= 0.55 else 3.5 if fb_lean >= 0.50 else 2 if fb_lean >= 0.45 else 1
 
@@ -260,6 +276,42 @@ def score_pitcher(p, scp):
     grade = ("A+" if pts >= 20 else "A" if pts >= 17 else "B" if pts >= 13.5
              else "C" if pts >= 10 else "Pass")
     return round(pts, 1), grade, flags
+
+
+# v2.5 — empirical-Bayes shrinkage. Small 21-day samples regress toward the
+# league rate over the same window; prior weights (in BBE) follow published
+# stabilization research (batted-ball quality rates settle around 40–80 BBE;
+# HR/PA is far noisier, so pitcher HR/PA gets a heavy ~350-PA prior).
+SHRINK_B = {"barrel_rate": 60, "hard_hit_rate": 40, "fb_rate": 50, "air_pull_rate": 60}
+SHRINK_P = {"barrel_allowed_rate": ("barrel_rate", 70),
+            "hard_hit_allowed_rate": ("hard_hit_rate", 50),
+            "fb_allowed_rate": ("fly_rate", 60)}
+HR_PA_PRIOR = 350  # PA weight for pitcher HR/PA shrinkage
+LEAGUE_DEFAULT = {"barrel_rate": 0.085, "hard_hit_rate": 0.40, "fb_rate": 0.47,
+                  "air_pull_rate": 0.18, "fly_rate": 0.27, "hr_per_pa": 0.031}
+
+
+def apply_shrinkage(scb, scp_map, league):
+    """Regress windowed Statcast rates toward league means by sample size.
+
+    A 8-BBE hitter showing a 25% barrel rate is mostly noise; after shrinkage
+    he reads ~10-11%, so a hot week can no longer buy 'elite shape'. Full-time
+    hitters (80+ BBE over 21d) keep most of their observed rate. Raw values
+    are preserved under ['raw'] for the dashboard/debugging.
+    """
+    lg = {**LEAGUE_DEFAULT, **(league or {})}
+    for b in scb.values():
+        n = b["bbe"]
+        b["raw"] = {k: b[k] for k in SHRINK_B}
+        for k, kw in SHRINK_B.items():
+            b[k] = round((b[k] * n + lg[k] * kw) / (n + kw), 4)
+    for p in scp_map.values():
+        n = p["bbe"]
+        for k, (lk, kw) in SHRINK_P.items():
+            p[k] = round((p[k] * n + lg[lk] * kw) / (n + kw), 4)
+        p["hr_per_pa_allowed"] = round(
+            (p["hr_per_pa_allowed"] * p["pa"] + lg["hr_per_pa"] * HR_PA_PRIOR)
+            / (p["pa"] + HR_PA_PRIOR), 4)
 
 
 FAM_NAME = {"FB": "fastballs", "BRK": "breaking balls", "OFF": "offspeed"}
@@ -310,16 +362,32 @@ def score_hitter(h, scb, scp, bats, throws):
     if scb:                                   # Statcast shape (preferred)
         pts = 0.0
         ap, br, hh = scb["air_pull_rate"], scb["barrel_rate"], scb["hard_hit_rate"]
-        # Air-pull (12) — top HR signal
-        if ap >= 0.20:
+        # v2.5 — platoon-split shape: if we know the opposing hand, blend the
+        # hitter's shape vs THAT hand into his overall (shrunk) rate. Raw
+        # hand-split counts + a 30-BBE overall prior, so a thin split can't
+        # dominate but a real one (e.g. barrels only vs LHP) reshapes the score.
+        vh = scb.get("vs_hand", {}).get(throws) if throws in ("L", "R") else None
+        if vh and vh["bbe"] >= 10:
+            m = 30.0
+            ap_h = (vh["pulled_air"] + ap * m) / (vh["bbe"] + m)
+            br_h = (vh["barrels"] + br * m) / (vh["bbe"] + m)
+            if br_h >= br * 1.2 or ap_h >= ap * 1.25:
+                reasons.append(f"Platoon shape: spikes vs {throws}HP "
+                               f"(barrel {br_h*100:.0f}%, air-pull {ap_h*100:.0f}%)")
+            elif br_h <= br * 0.8 and ap_h <= ap * 0.85:
+                reasons.append(f"Platoon shape fades vs {throws}HP")
+            ap, br = ap_h, br_h
+        # Air-pull (12) — top HR signal. v2.5: true spray-angle pull (outer
+        # third); league ~18% of BBE, elite pullers ~28%+.
+        if ap >= 0.28:
             pts += 12; reasons.append(f"Elite air-pull ({ap*100:.0f}%)")
-        elif ap >= 0.15:
+        elif ap >= 0.23:
             pts += 10; reasons.append(f"Strong air-pull ({ap*100:.0f}%)")
-        elif ap >= 0.12:
+        elif ap >= 0.19:
             pts += 8; reasons.append(f"Good air-pull ({ap*100:.0f}%)")
-        elif ap >= 0.09:
+        elif ap >= 0.15:
             pts += 5
-        elif ap >= 0.06:
+        elif ap >= 0.11:
             pts += 3
         else:
             pts += 1; reasons.append(f"Low air-pull ({ap*100:.0f}%)")
@@ -357,7 +425,7 @@ def score_hitter(h, scb, scp, bats, throws):
                 reasons.append(f"Pitch-mix fit: damages this arsenal ({mix_detail})")
             elif mix_fit < 0.85:
                 reasons.append(f"Poor pitch-mix fit ({mix_detail})")
-        elif scp and ap >= 0.12 and (scp["fb_allowed_rate"] >= 0.40 or scp["barrel_allowed_rate"] >= 0.09):
+        elif scp and ap >= 0.18 and (scp["fb_allowed_rate"] >= 0.30 or scp["barrel_allowed_rate"] >= 0.09):
             fit += 2.0; reasons.append("Cause-capture synergy (air-pull bat vs fly-ball/barrel-prone arm)")
         pts += max(0.0, min(6.0, fit))
         # Platoon/season ISO (4)
@@ -372,7 +440,7 @@ def score_hitter(h, scb, scp, bats, throws):
         elif rb >= 1:
             pts += 1
         return (round(max(0.0, min(40.0, pts)), 1), reasons, "statcast",
-                (ap >= 0.12 or br >= 0.10), mix_fit)
+                (ap >= 0.19 or br >= 0.10), mix_fit)
 
     # ----- proxy fallback (no Statcast): season power only, CAPPED at 30/40 -----
     hr_rate = h["hr"] / h["pa"] if h["pa"] else 0
@@ -396,6 +464,37 @@ def score_hitter(h, scb, scp, bats, throws):
     pts += 6 if h["slg"] >= 0.52 else 4 if h["slg"] >= 0.46 else 2 if h["slg"] >= 0.41 else 0
     reasons.append("No Statcast shape — score capped (season-power proxy)")
     return round(min(30.0, pts), 1), reasons, "proxy", False, None
+
+
+def wind_hr_effect(park, weather):
+    """v2.5 — directional wind for open-air parks. Returns (pts_adj, reasons, warnings).
+
+    Uses the park's approximate home-plate→CF bearing and Open-Meteo wind
+    direction (meteorological: direction wind blows FROM). The out-to-CF
+    component is  -speed·cos(wind_from − bearing):  +ve = blowing out (carry),
+    −ve = blowing in (knockdown). Cosine component means a ±20° bearing error
+    barely moves the number. Capped at ±3 env points; never fires under 7 mph.
+    """
+    if not park or park.get("roof") != "open" or not weather:
+        return 0.0, [], []
+    spd = weather.get("wind_mph") or 0
+    wdir = weather.get("wind_dir_deg")
+    bearing = park.get("cf_bearing_deg")
+    if wdir is None or bearing is None:
+        return (0.0, [], [f"High wind {spd:.0f} mph (direction unknown)"]
+                ) if spd >= 15 else (0.0, [], [])
+    out = -spd * math.cos(math.radians(wdir - bearing))
+    if out >= 12:
+        return 3.0, [f"Wind blowing OUT ~{out:.0f} mph toward CF (approx bearing)"], []
+    if out >= 7:
+        return 1.5, [f"Wind out ~{out:.0f} mph"], []
+    if out <= -12:
+        return -3.0, [], [f"Wind blowing IN ~{-out:.0f} mph (HR knockdown)"]
+    if out <= -7:
+        return -1.5, [], [f"Wind in ~{-out:.0f} mph"]
+    if spd >= 15:
+        return 0.0, [], [f"Crosswind {spd:.0f} mph (neutral-ish)"]
+    return 0.0, [], []
 
 
 def score_environment(park, weather, bat):
@@ -440,8 +539,11 @@ def score_environment(park, weather, bat):
                 pts += 2
             else:
                 warnings.append(f"Cold ({t:.0f}°F)")
-        if (weather.get("wind_mph") or 0) >= 15:
-            warnings.append(f"High wind {weather['wind_mph']:.0f} mph (dir not modeled)")
+        # v2.5 — directional wind (out = boost, in = penalty), open parks only
+        w_pts, w_reasons, w_warn = wind_hr_effect(park, weather)
+        pts += w_pts
+        reasons += w_reasons
+        warnings += w_warn
         if (weather.get("precip_pct") or 0) >= 60:
             warnings.append(f"Rain risk {weather['precip_pct']:.0f}%")
     else:
@@ -537,8 +639,10 @@ def build(date, window=21, use_statcast=True):
     if use_statcast and sc is not None:
         try:
             scb, scp_map, scmeta = sc.load_window(date, days=window)
+            apply_shrinkage(scb, scp_map, scmeta.get("league"))
             print(f"  statcast: {scmeta['batters']} batters, {scmeta['pitchers']} pitchers "
-                  f"({scmeta['start']}..{scmeta['end']})")
+                  f"({scmeta['start']}..{scmeta['end']}), shrinkage applied "
+                  f"(lg barrel {scmeta.get('league', {}).get('barrel_rate', '?')})")
         except Exception as e:
             print(f"  statcast unavailable ({e}); using proxy shape")
 
@@ -630,7 +734,7 @@ def build(date, window=21, use_statcast=True):
         # barrel→HR park-fit tiebreaker (separates GABP/Coors/short-porch carry)
         bhr_reason = None
         if scb_h and hf is not None and scb_h["barrel_rate"] >= 0.10 \
-                and scb_h["air_pull_rate"] >= 0.15 and hf >= 105:
+                and scb_h["air_pull_rate"] >= 0.22 and hf >= 105:
             bhr_reason = f"Barrel→HR park fit: pull-air power in a carry park ({hf})"
 
         reasons = []
@@ -667,15 +771,17 @@ def build(date, window=21, use_statcast=True):
     audit = build_audit_template(candidates, causes)
 
     return {
-        "version": "2.4",
+        "version": "2.5",
         "generated_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
         "slate_date": date, "games": len(games),
         "confirmed_lineups": sum(1 for tid in lineups if lineups[tid]),
         "statcast": bool(scb),
         "statcast_meta": scmeta,
-        "method": "v2.4: rank causes → choose capture → lock confirmed shape that "
-                  "captures the cause, with pitch-mix fit (does this bat damage THIS "
-                  "arsenal?) + TRAP flags. Weights P25/Hitter-shape40/Env15/Lineup12/Src8. "
+        "method": "v2.5: rank causes → choose capture → lock confirmed shape that "
+                  "captures the cause. Adds directional wind (park bearing × wind dir, "
+                  "±3 env), empirical-Bayes shrinkage (small samples regress to league), "
+                  "and platoon-split shape (barrel/air-pull vs THIS hand), on top of "
+                  "v2.4 pitch-mix fit + TRAP flags. Weights P25/Shape40/Env15/Lineup12/Src8. "
                   + ("Statcast (Savant) air-pull/barrel/pitch-mix active."
                      if scb else "PROXY shape mode (no Statcast) — scores capped, no pitch-mix fit."),
         "tiers": {"Elite Core": "85+", "Core": "78-84", "Satellite": "70-77",
@@ -819,7 +925,7 @@ def main():
         window = int(sys.argv[sys.argv.index("--window") + 1])
     if "--no-statcast" in sys.argv:
         use_sc = False
-    print(f"Building HR slate v2.4 for {date} ...")
+    print(f"Building HR slate v2.5 for {date} ...")
     out = build(date, window=window, use_statcast=use_sc)
     os.makedirs(DATA, exist_ok=True)
     for name in ("latest.json", f"picks-{date}.json"):

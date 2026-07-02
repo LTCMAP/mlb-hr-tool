@@ -1,4 +1,4 @@
-# ⚾ Daily MLB Home Run Picks — odds-free (v2.4)
+# ⚾ Daily MLB Home Run Picks — odds-free (v2.5)
 
 A **free**, no-API-key tool that grades today's MLB hitters for home-run upside
 and refreshes daily via a JSON file. Implements the **HR Pairing System** workflow:
@@ -47,6 +47,30 @@ The cause scan was already finding the right *games*; v2.4 sharpens *which hitte
   chalk bats don't all go on a given night). Filterable in the dashboard.
 - **Barrel→HR park fit** — pull-air power × carry park surfaces as a tiebreaker reason.
 - **Public-heat toned down** — flags only the single chalkiest A+/multi-bat spot, not every game.
+
+## What's new in v2.5 — statistical hardening + wind
+
+- **Directional wind is now modeled.** Each park carries an approximate home-plate→CF
+  compass bearing (`cf_bearing_deg` in `parks.json`); Open-Meteo wind *direction* is
+  resolved into an out/in component via cosine. Blowing out ≥12 mph = **+3 env**,
+  blowing in ≥12 mph = **−3 env** (halved at 7–11 mph), open-air parks only. Wind can
+  now *raise* a score, not just warn. Bearings are ±15–20° estimates, but the cosine
+  component makes small errors negligible.
+- **Empirical-Bayes shrinkage.** All 21-day Statcast rates (hitter barrel / air-pull /
+  hard-hit / FB; pitcher barrel-allowed / FB-allowed / HR-per-PA) regress toward the
+  league average *of the same window*, weighted by sample size (priors follow published
+  stabilization research: ~40–70 BBE for contact-quality rates, ~350 PA for HR/PA).
+  A hot 10-BBE week can no longer masquerade as elite shape — verified: a 29% raw
+  barrel rate on <15 BBE reads ~11% after shrinkage.
+- **Platoon-split shape.** Hitter barrel/air-pull is tracked separately **vs LHP and
+  vs RHP** and blended (raw hand-split counts + 30-BBE overall prior) when the opposing
+  hand is known. A bat whose barrels only come vs lefties now scores like it.
+- **Air-pull fixed to true spray angle.** The old pull detector counted the entire pull
+  *half* of the field (league "air-pull" read ~27%, so nearly everyone graded elite).
+  Now uses the outer third by spray angle — league lands ~18%, matching Savant's
+  published pulled-air rate — and thresholds are recalibrated (elite ≥28%).
+- **Pitcher fly-ball rate fixed.** Previously counted line drives (league ~52%; every
+  arm maxed the slot). Now true FB per BBE (league ~27%), thresholds recalibrated.
 
 ---
 
@@ -116,13 +140,13 @@ No servers, no keys, no cost.
 
 ---
 
-## The 100-point leg score (v2.3)
+## The 100-point leg score (v2.5)
 
 | Component | Max | What it measures |
 |---|---:|---|
 | Pitcher Cause | 25 | HR/9 + Statcast HR/PA allowed, barrel-allowed, fly-ball-allowed, K rate |
 | Hitter HR **Shape** | 40 | **air-pull 12 · barrel 9 · hard-hit 6 · matchup 6 (platoon + pitch-mix fit) · platoon ISO 4 · recent form 3** (Statcast). Proxy mode caps at 30. |
-| Environment | 15 | Park HR factor (by handedness), temp, roof, rain/wind warnings |
+| Environment | 15 | Park HR factor (by handedness), temp, roof, **directional wind ±3**, rain warnings |
 | Lineup / Opportunity | 12 | Batting slot (unconfirmed = neutral default, not gated) |
 | Source / Structure fit | 8 | Model agreement |
 
@@ -153,8 +177,9 @@ Pass-grade cause + non-elite bat → Pass.
   fastball/breaking/offspeed vs the pitcher's family usage — enough sample over 21 days, but it
   doesn't model exact pitch types, zones, or pull-side porch geometry. It's a real fit signal,
   not a full plate-discipline model. The in-browser proxy build has **no** pitch-mix fit.
-- **Wind direction is not modeled.** Without per-park orientation, wind only raises a *warning*
-  at high speeds; it never inflates a score.
+- **Wind bearings are approximate.** v2.5 models wind direction against each park's
+  approximate CF bearing (±15–20°); the cosine component tolerates that error, but treat
+  wind boosts as directional signal, not gospel. Capped at ±3 env points, ≥7 mph only.
 - **No manual notes yet.** Source-confidence is model-only; pasting Kasper/Outlaw reads to boost
   convergence is the natural next feature.
 - **Not betting advice.** Decision-support only. No guaranteed picks, no odds.
