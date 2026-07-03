@@ -1,9 +1,9 @@
 {
   "version": "2.5",
-  "generated_utc": "2026-07-03T15:34:23.342475+00:00",
+  "generated_utc": "2026-07-03T17:56:33.014101+00:00",
   "slate_date": "2026-07-03",
   "games": 13,
-  "confirmed_lineups": 0,
+  "confirmed_lineups": 1,
   "statcast": true,
   "statcast_meta": {
     "window_days": 21,
@@ -11,7 +11,7 @@
     "start": "2026-06-13",
     "end": "2026-07-03",
     "days_fetched": 0,
-    "days_cached": 20,
+    "days_cached": 21,
     "batters": 407,
     "pitchers": 453,
     "league": {
@@ -58,13 +58,13 @@
       "playable_bats": [
         {
           "name": "Aaron Judge",
-          "total": 71.5,
+          "total": 70.0,
           "role": "Cause Satellite",
           "fit_tag": null
         },
         {
           "name": "Ben Rice",
-          "total": 68.4,
+          "total": 67.4,
           "role": "Cause Satellite",
           "fit_tag": null
         }
@@ -143,23 +143,11 @@
       "cause_score": 18.5,
       "capture_method": "Single best bat",
       "public_heat": false,
-      "n_playable": 3,
+      "n_playable": 1,
       "playable_bats": [
         {
           "name": "Trevor Larnach",
-          "total": 65.0,
-          "role": "Longshot",
-          "fit_tag": null
-        },
-        {
-          "name": "Byron Buxton",
-          "total": 62.6,
-          "role": "Longshot",
-          "fit_tag": null
-        },
-        {
-          "name": "Victor Caratini",
-          "total": 62.1,
+          "total": 64.0,
           "role": "Longshot",
           "fit_tag": null
         }
@@ -454,8 +442,15 @@
       "cause_score": 7.0,
       "capture_method": "Watchlist / pass (no clear cause)",
       "public_heat": false,
-      "n_playable": 0,
-      "playable_bats": []
+      "n_playable": 1,
+      "playable_bats": [
+        {
+          "name": "Pete Crow-Armstrong",
+          "total": 63.2,
+          "role": "Pass",
+          "fit_tag": null
+        }
+      ]
     },
     {
       "team": "San Diego Padres",
@@ -601,7 +596,7 @@
         "Strong barrels (13%)",
         "Pitch-mix fit: damages this arsenal (60% fastballs, rel 1.55 \u2192 mix-fit 1.81x)",
         "Elite HR park (111)",
-        "Hot (99\u00b0F)",
+        "Hot (98\u00b0F)",
         "Model: one strong signal",
         "VALUE longshot: real shape + cause off the chalk"
       ],
@@ -623,7 +618,7 @@
       "confirmed": false,
       "season_hr": 17,
       "iso": 0.285,
-      "total": 71.5,
+      "total": 70.0,
       "tier": "Satellite",
       "role": "Cause Satellite",
       "shape_source": "proxy",
@@ -635,7 +630,7 @@
       "breakdown": {
         "pitcher": 19.0,
         "hitter": 30.0,
-        "environment": 11.5,
+        "environment": 10.0,
         "lineup": 6.0,
         "confidence": 5.0
       },
@@ -781,7 +776,7 @@
       "confirmed": false,
       "season_hr": 23,
       "iso": 0.292,
-      "total": 68.4,
+      "total": 67.4,
       "tier": "Longshot",
       "role": "Cause Satellite",
       "shape_source": "statcast",
@@ -793,7 +788,7 @@
       "breakdown": {
         "pitcher": 19.0,
         "hitter": 24.4,
-        "environment": 15.0,
+        "environment": 14.0,
         "lineup": 6.0,
         "confidence": 4.0
       },
@@ -992,7 +987,7 @@
       "confirmed": false,
       "season_hr": 12,
       "iso": 0.176,
-      "total": 65.4,
+      "total": 64.4,
       "tier": "Longshot",
       "role": "Longshot",
       "shape_source": "statcast",
@@ -1004,7 +999,7 @@
       "breakdown": {
         "pitcher": 19.0,
         "hitter": 21.4,
-        "environment": 15.0,
+        "environment": 14.0,
         "lineup": 6.0,
         "confidence": 4.0
       },
@@ -1046,7 +1041,7 @@
       "confirmed": false,
       "season_hr": 5,
       "iso": 0.145,
-      "total": 65.0,
+      "total": 64.0,
       "tier": "Longshot",
       "role": "Longshot",
       "shape_source": "statcast",
@@ -1058,7 +1053,7 @@
       "breakdown": {
         "pitcher": 16.5,
         "hitter": 24.5,
-        "environment": 15.0,
+        "environment": 14.0,
         "lineup": 6.0,
         "confidence": 3.0
       },
@@ -1189,6 +1184,55 @@
       "role_notes": []
     },
     {
+      "id": 691718,
+      "name": "Pete Crow-Armstrong",
+      "team": "Chicago Cubs",
+      "bats": "L",
+      "opp": "St. Louis Cardinals",
+      "opp_pitcher": "Andre Pallante",
+      "venue": "Wrigley Field",
+      "gamePk": 824659,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 19,
+      "iso": 0.237,
+      "total": 63.2,
+      "tier": "Longshot",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.15,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.0,
+        "hitter": 31.2,
+        "environment": 9.0,
+        "lineup": 12.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2699,
+        "barrel_rate": 0.0854,
+        "hard_hit_rate": 0.4759,
+        "fb_rate": 0.5621
+      },
+      "reasons": [
+        "vs Andre Pallante \u2014 cause Pass (7.0/25)",
+        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 36%)",
+        "Elite air-pull (36%)",
+        "Above-avg barrels (11%)",
+        "Hard-hit 48%",
+        "Slightly + park (100)",
+        "Highly wind-dependent",
+        "Top of order (#1)",
+        "Model: one strong signal"
+      ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
       "id": 687263,
       "name": "Zach Neto",
       "team": "Los Angeles Angels",
@@ -1230,7 +1274,7 @@
         "Strong barrels (12%)",
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (64% fastballs, rel 1.09 \u2192 mix-fit 1.35x)",
-        "Warm (76\u00b0F)",
+        "Warm (78\u00b0F)",
         "Wind out ~8 mph",
         "Elite-hitter override (beats a neutral spot)",
         "Model: one strong signal"
@@ -1241,57 +1285,6 @@
       "role_notes": [
         "Elite-hitter override (beats a neutral spot)"
       ]
-    },
-    {
-      "id": 621439,
-      "name": "Byron Buxton",
-      "team": "Minnesota Twins",
-      "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "gamePk": 823527,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 25,
-      "iso": 0.305,
-      "total": 62.6,
-      "tier": "Longshot",
-      "role": "Longshot",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.33,
-      "fit_tag": null,
-      "value_play": true,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.5,
-        "hitter": 25.6,
-        "environment": 11.5,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1986,
-        "barrel_rate": 0.1145,
-        "hard_hit_rate": 0.4218,
-        "fb_rate": 0.5251
-      },
-      "reasons": [
-        "vs Gerrit Cole \u2014 cause B (16.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.69)",
-        "Pitcher: Fly-ball prone (31% FB allowed)",
-        "Good air-pull (21%)",
-        "Above-avg barrels (11%)",
-        "Pitch-mix fit: damages this arsenal (47% fastballs, rel 1.59 \u2192 mix-fit 1.33x)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "VALUE longshot: real shape + cause off the chalk"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
     },
     {
       "id": 699013,
@@ -1345,110 +1338,6 @@
       "role_notes": []
     },
     {
-      "id": 665019,
-      "name": "Kody Clemens",
-      "team": "Minnesota Twins",
-      "bats": "L",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "gamePk": 823527,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.233,
-      "total": 62.1,
-      "tier": "Longshot",
-      "role": "Longshot",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.83,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.5,
-        "hitter": 21.6,
-        "environment": 15.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1537,
-        "barrel_rate": 0.0782,
-        "hard_hit_rate": 0.4726,
-        "fb_rate": 0.4893
-      },
-      "reasons": [
-        "vs Gerrit Cole \u2014 cause B (16.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.69)",
-        "Pitcher: Fly-ball prone (31% FB allowed)",
-        "Above-avg barrels (9%)",
-        "Hard-hit 47%",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (47% fastballs, rel 0.95 \u2192 mix-fit 0.83x)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 605170,
-      "name": "Victor Caratini",
-      "team": "Minnesota Twins",
-      "bats": "S",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "gamePk": 823527,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.134,
-      "total": 62.1,
-      "tier": "Longshot",
-      "role": "Longshot",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.22,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.5,
-        "hitter": 23.1,
-        "environment": 13.5,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2027,
-        "barrel_rate": 0.1029,
-        "hard_hit_rate": 0.3961,
-        "fb_rate": 0.5489
-      },
-      "reasons": [
-        "vs Gerrit Cole \u2014 cause B (16.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.69)",
-        "Pitcher: Fly-ball prone (31% FB allowed)",
-        "Good air-pull (21%)",
-        "Above-avg barrels (11%)",
-        "Pitch-mix fit: damages this arsenal (47% fastballs, rel 1.69 \u2192 mix-fit 1.22x)",
-        "Hitter-friendly park (108)",
-        "Short RF porch boosts LHB HR"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 681297,
       "name": "Colton Cowser",
       "team": "Baltimore Orioles",
@@ -1488,7 +1377,7 @@
         "Pitcher: Elevated HR allowed (HR/9 2.22)",
         "Platoon edge (L vs RHP)",
         "Elite HR park (113)",
-        "Hot (99\u00b0F)",
+        "Hot (98\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -1550,116 +1439,8 @@
       "role_notes": []
     },
     {
-      "id": 502671,
-      "name": "Paul Goldschmidt",
-      "team": "New York Yankees",
-      "bats": "R",
-      "opp": "Minnesota Twins",
-      "opp_pitcher": "Mike Paredes",
-      "venue": "Yankee Stadium",
-      "gamePk": 823527,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.25,
-      "total": 61.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.22,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 19.0,
-        "hitter": 20.6,
-        "environment": 11.5,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1757,
-        "barrel_rate": 0.0987,
-        "hard_hit_rate": 0.3543,
-        "fb_rate": 0.4785
-      },
-      "reasons": [
-        "vs Mike Paredes \u2014 cause A (19.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.43)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "Above-avg barrels (11%)",
-        "Pitch-mix fit: damages this arsenal (59% fastballs, rel 1.32 \u2192 mix-fit 1.22x)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 641857,
-      "name": "Ryan McMahon",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Minnesota Twins",
-      "opp_pitcher": "Mike Paredes",
-      "venue": "Yankee Stadium",
-      "gamePk": 823527,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.15,
-      "total": 61.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.7,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 19.0,
-        "hitter": 17.0,
-        "environment": 15.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1568,
-        "barrel_rate": 0.0872,
-        "hard_hit_rate": 0.3419,
-        "fb_rate": 0.5311
-      },
-      "reasons": [
-        "vs Mike Paredes \u2014 cause A (19.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.43)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 11%)",
-        "Above-avg barrels (11%)",
-        "Platoon edge (L vs RHP)",
-        "Pitch-mix fit: damages this arsenal (59% fastballs, rel 2.20 \u2192 mix-fit 1.70x)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 680777,
-      "name": "Ryan Jeffers",
+      "id": 621439,
+      "name": "Byron Buxton",
       "team": "Minnesota Twins",
       "bats": "R",
       "opp": "New York Yankees",
@@ -1668,31 +1449,37 @@
       "gamePk": 823527,
       "slot": null,
       "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.246,
-      "total": 61.0,
+      "season_hr": 25,
+      "iso": 0.305,
+      "total": 61.1,
       "tier": "Pass",
       "role": "Pass",
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.33,
       "fit_tag": null,
       "value_play": false,
       "pitcher_grade": "B",
       "breakdown": {
         "pitcher": 16.5,
-        "hitter": 24.0,
-        "environment": 11.5,
+        "hitter": 25.6,
+        "environment": 10.0,
         "lineup": 6.0,
         "confidence": 3.0
       },
-      "statcast": null,
+      "statcast": {
+        "air_pull_rate": 0.1986,
+        "barrel_rate": 0.1145,
+        "hard_hit_rate": 0.4218,
+        "fb_rate": 0.5251
+      },
       "reasons": [
         "vs Gerrit Cole \u2014 cause B (16.5/25)",
         "Pitcher: High HR allowed (HR/9 1.69)",
         "Pitcher: Fly-ball prone (31% FB allowed)",
-        "Proxy: strong HR rate",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Good air-pull (21%)",
+        "Above-avg barrels (11%)",
+        "Pitch-mix fit: damages this arsenal (47% fastballs, rel 1.59 \u2192 mix-fit 1.33x)",
         "Slightly + park (103)",
         "Short RF porch boosts LHB HR"
       ],
@@ -1700,6 +1487,60 @@
         "Lineup not confirmed"
       ],
       "role_notes": []
+    },
+    {
+      "id": 665019,
+      "name": "Kody Clemens",
+      "team": "Minnesota Twins",
+      "bats": "L",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Gerrit Cole",
+      "venue": "Yankee Stadium",
+      "gamePk": 823527,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 14,
+      "iso": 0.233,
+      "total": 61.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.83,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 16.5,
+        "hitter": 21.6,
+        "environment": 14.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1537,
+        "barrel_rate": 0.0782,
+        "hard_hit_rate": 0.4726,
+        "fb_rate": 0.4893
+      },
+      "reasons": [
+        "vs Gerrit Cole \u2014 cause B (16.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.69)",
+        "Pitcher: Fly-ball prone (31% FB allowed)",
+        "Above-avg barrels (9%)",
+        "Hard-hit 47%",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (47% fastballs, rel 0.95 \u2192 mix-fit 0.83x)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 663886,
@@ -1743,8 +1584,58 @@
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (65% fastballs, rel 1.21 \u2192 mix-fit 1.25x)",
         "Elite HR park (111)",
-        "Hot (99\u00b0F)",
+        "Hot (98\u00b0F)",
         "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 605170,
+      "name": "Victor Caratini",
+      "team": "Minnesota Twins",
+      "bats": "S",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Gerrit Cole",
+      "venue": "Yankee Stadium",
+      "gamePk": 823527,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.134,
+      "total": 60.6,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.22,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 16.5,
+        "hitter": 23.1,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2027,
+        "barrel_rate": 0.1029,
+        "hard_hit_rate": 0.3961,
+        "fb_rate": 0.5489
+      },
+      "reasons": [
+        "vs Gerrit Cole \u2014 cause B (16.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.69)",
+        "Pitcher: Fly-ball prone (31% FB allowed)",
+        "Good air-pull (21%)",
+        "Above-avg barrels (11%)",
+        "Pitch-mix fit: damages this arsenal (47% fastballs, rel 1.69 \u2192 mix-fit 1.22x)",
+        "Hitter-friendly park (108)",
+        "Short RF porch boosts LHB HR"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -1792,107 +1683,7 @@
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (60% fastballs, rel 1.13 \u2192 mix-fit 1.50x)",
         "Elite HR park (113)",
-        "Hot (99\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 668904,
-      "name": "Royce Lewis",
-      "team": "Minnesota Twins",
-      "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "gamePk": 823527,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.165,
-      "total": 60.3,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.26,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.5,
-        "hitter": 23.3,
-        "environment": 11.5,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2255,
-        "barrel_rate": 0.0901,
-        "hard_hit_rate": 0.4062,
-        "fb_rate": 0.5687
-      },
-      "reasons": [
-        "vs Gerrit Cole \u2014 cause B (16.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.69)",
-        "Pitcher: Fly-ball prone (31% FB allowed)",
-        "Strong air-pull (26%)",
-        "Pitch-mix fit: damages this arsenal (47% fastballs, rel 1.45 \u2192 mix-fit 1.26x)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 642708,
-      "name": "Amed Rosario",
-      "team": "New York Yankees",
-      "bats": "R",
-      "opp": "Minnesota Twins",
-      "opp_pitcher": "Mike Paredes",
-      "venue": "Yankee Stadium",
-      "gamePk": 823527,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.236,
-      "total": 60.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.14,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 19.0,
-        "hitter": 19.7,
-        "environment": 11.5,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.17,
-        "barrel_rate": 0.0867,
-        "hard_hit_rate": 0.4172,
-        "fb_rate": 0.5261
-      },
-      "reasons": [
-        "vs Mike Paredes \u2014 cause A (19.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.43)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
+        "Hot (98\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -1949,6 +1740,158 @@
         "Slightly + park (102)",
         "Hot (104\u00b0F)",
         "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 641857,
+      "name": "Ryan McMahon",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Minnesota Twins",
+      "opp_pitcher": "Mike Paredes",
+      "venue": "Yankee Stadium",
+      "gamePk": 823527,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 8,
+      "iso": 0.15,
+      "total": 60.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.7,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.0,
+        "hitter": 17.0,
+        "environment": 14.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1568,
+        "barrel_rate": 0.0872,
+        "hard_hit_rate": 0.3419,
+        "fb_rate": 0.5311
+      },
+      "reasons": [
+        "vs Mike Paredes \u2014 cause A (19.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.43)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 11%)",
+        "Above-avg barrels (11%)",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (59% fastballs, rel 2.20 \u2192 mix-fit 1.70x)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 502671,
+      "name": "Paul Goldschmidt",
+      "team": "New York Yankees",
+      "bats": "R",
+      "opp": "Minnesota Twins",
+      "opp_pitcher": "Mike Paredes",
+      "venue": "Yankee Stadium",
+      "gamePk": 823527,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 14,
+      "iso": 0.25,
+      "total": 59.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.22,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.0,
+        "hitter": 20.6,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1757,
+        "barrel_rate": 0.0987,
+        "hard_hit_rate": 0.3543,
+        "fb_rate": 0.4785
+      },
+      "reasons": [
+        "vs Mike Paredes \u2014 cause A (19.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.43)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Above-avg barrels (11%)",
+        "Pitch-mix fit: damages this arsenal (59% fastballs, rel 1.32 \u2192 mix-fit 1.22x)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 680777,
+      "name": "Ryan Jeffers",
+      "team": "Minnesota Twins",
+      "bats": "R",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Gerrit Cole",
+      "venue": "Yankee Stadium",
+      "gamePk": 823527,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.246,
+      "total": 59.5,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 16.5,
+        "hitter": 24.0,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Gerrit Cole \u2014 cause B (16.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.69)",
+        "Pitcher: Fly-ball prone (31% FB allowed)",
+        "Proxy: strong HR rate",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -2095,7 +2038,7 @@
         "Proxy: elite HR rate (1/12 PA)",
         "Proxy: elite ISO (0.320)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hot (92\u00b0F)",
+        "Hot (91\u00b0F)",
         "Model: one strong signal"
       ],
       "warnings": [
@@ -2145,7 +2088,7 @@
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (60% fastballs, rel 0.77 \u2192 mix-fit 0.58x)",
         "Elite HR park (113)",
-        "Hot (99\u00b0F)",
+        "Hot (98\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -2210,6 +2153,106 @@
       ]
     },
     {
+      "id": 668904,
+      "name": "Royce Lewis",
+      "team": "Minnesota Twins",
+      "bats": "R",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Gerrit Cole",
+      "venue": "Yankee Stadium",
+      "gamePk": 823527,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 8,
+      "iso": 0.165,
+      "total": 58.8,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.26,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 16.5,
+        "hitter": 23.3,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2255,
+        "barrel_rate": 0.0901,
+        "hard_hit_rate": 0.4062,
+        "fb_rate": 0.5687
+      },
+      "reasons": [
+        "vs Gerrit Cole \u2014 cause B (16.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.69)",
+        "Pitcher: Fly-ball prone (31% FB allowed)",
+        "Strong air-pull (26%)",
+        "Pitch-mix fit: damages this arsenal (47% fastballs, rel 1.45 \u2192 mix-fit 1.26x)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 642708,
+      "name": "Amed Rosario",
+      "team": "New York Yankees",
+      "bats": "R",
+      "opp": "Minnesota Twins",
+      "opp_pitcher": "Mike Paredes",
+      "venue": "Yankee Stadium",
+      "gamePk": 823527,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 9,
+      "iso": 0.236,
+      "total": 58.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.14,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.0,
+        "hitter": 19.7,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.17,
+        "barrel_rate": 0.0867,
+        "hard_hit_rate": 0.4172,
+        "fb_rate": 0.5261
+      },
+      "reasons": [
+        "vs Mike Paredes \u2014 cause A (19.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.43)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 669003,
       "name": "Garrett Mitchell",
       "team": "Milwaukee Brewers",
@@ -2259,59 +2302,6 @@
         "Lineup not confirmed"
       ],
       "role_notes": []
-    },
-    {
-      "id": 668952,
-      "name": "Ryan Kreidler",
-      "team": "Minnesota Twins",
-      "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "gamePk": 823527,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 5,
-      "iso": 0.211,
-      "total": 58.6,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.53,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.5,
-        "hitter": 21.6,
-        "environment": 11.5,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.157,
-        "barrel_rate": 0.1018,
-        "hard_hit_rate": 0.3905,
-        "fb_rate": 0.5056
-      },
-      "reasons": [
-        "vs Gerrit Cole \u2014 cause B (16.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.69)",
-        "Pitcher: Fly-ball prone (31% FB allowed)",
-        "Platoon shape: spikes vs RHP (barrel 14%, air-pull 15%)",
-        "Strong barrels (14%)",
-        "Pitch-mix fit: damages this arsenal (47% fastballs, rel 1.96 \u2192 mix-fit 1.53x)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
     },
     {
       "id": 671732,
@@ -2461,7 +2451,7 @@
         "Strong air-pull (27%)",
         "Above-avg barrels (12%)",
         "Pitch-mix fit: damages this arsenal (54% fastballs, rel 1.32 \u2192 mix-fit 1.42x)",
-        "Hot (92\u00b0F)",
+        "Hot (91\u00b0F)",
         "Model: one strong signal"
       ],
       "warnings": [
@@ -2512,7 +2502,7 @@
         "Good air-pull (21%)",
         "Strong barrels (14%)",
         "Hard-hit 45%",
-        "Hot (92\u00b0F)",
+        "Hot (91\u00b0F)",
         "Model: one strong signal"
       ],
       "warnings": [
@@ -2563,7 +2553,7 @@
         "Strong barrels (13%)",
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (54% fastballs, rel 1.33 \u2192 mix-fit 1.73x)",
-        "Hot (92\u00b0F)",
+        "Hot (91\u00b0F)",
         "Model: one strong signal"
       ],
       "warnings": [
@@ -2665,7 +2655,7 @@
         "Good air-pull (20%)",
         "Poor pitch-mix fit (60% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
         "Elite HR park (111)",
-        "Hot (99\u00b0F)",
+        "Hot (98\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -2715,7 +2705,7 @@
         "vs Brady Singer \u2014 cause A (18.0/25)",
         "Pitcher: Elevated HR allowed (HR/9 2.22)",
         "Elite HR park (111)",
-        "Hot (99\u00b0F)",
+        "Hot (98\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -2727,58 +2717,101 @@
       ]
     },
     {
-      "id": 641355,
-      "name": "Cody Bellinger",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Minnesota Twins",
-      "opp_pitcher": "Mike Paredes",
-      "venue": "Yankee Stadium",
-      "gamePk": 823527,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.179,
+      "id": 664023,
+      "name": "Ian Happ",
+      "team": "Chicago Cubs",
+      "bats": "S",
+      "opp": "St. Louis Cardinals",
+      "opp_pitcher": "Andre Pallante",
+      "venue": "Wrigley Field",
+      "gamePk": 824659,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 17,
+      "iso": 0.229,
       "total": 57.5,
       "tier": "Pass",
-      "role": "Watchlist",
+      "role": "Pass",
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 0.49,
+      "mix_fit": 1.62,
       "fit_tag": null,
       "value_play": false,
-      "pitcher_grade": "A",
+      "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 19.0,
-        "hitter": 13.5,
-        "environment": 15.0,
-        "lineup": 6.0,
+        "pitcher": 7.0,
+        "hitter": 29.5,
+        "environment": 9.0,
+        "lineup": 8.0,
         "confidence": 4.0
       },
       "statcast": {
-        "air_pull_rate": 0.1852,
-        "barrel_rate": 0.0511,
-        "hard_hit_rate": 0.3308,
-        "fb_rate": 0.4996
+        "air_pull_rate": 0.2026,
+        "barrel_rate": 0.0872,
+        "hard_hit_rate": 0.3568,
+        "fb_rate": 0.5402
       },
       "reasons": [
-        "vs Mike Paredes \u2014 cause A (19.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.43)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "Good air-pull (20%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (59% fastballs, rel 0.63 \u2192 mix-fit 0.49x)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot",
+        "vs Andre Pallante \u2014 cause Pass (7.0/25)",
+        "Strong air-pull (25%)",
+        "Above-avg barrels (10%)",
+        "Pitch-mix fit: damages this arsenal (51% breaking balls, rel 1.64 \u2192 mix-fit 1.62x)",
+        "Slightly + park (100)",
+        "Highly wind-dependent",
+        "Mid order (#5)",
         "Model: one strong signal"
+      ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
+      "id": 682626,
+      "name": "Francisco Alvarez",
+      "team": "New York Mets",
+      "bats": "R",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Grant Holmes",
+      "venue": "Truist Park",
+      "gamePk": 824904,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 9,
+      "iso": 0.184,
+      "total": 57.5,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.8,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 25.0,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1505,
+        "barrel_rate": 0.1184,
+        "hard_hit_rate": 0.4358,
+        "fb_rate": 0.4937
+      },
+      "reasons": [
+        "vs Grant Holmes \u2014 cause B (13.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.63)",
+        "Platoon shape: spikes vs RHP (barrel 16%, air-pull 14%)",
+        "Elite barrel rate (16%)",
+        "Pitch-mix fit: damages this arsenal (52% fastballs, rel 1.84 \u2192 mix-fit 1.80x)",
+        "Slightly + park (103)",
+        "Hot (89\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
       ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
+      "role_notes": []
     },
     {
       "id": 641680,
@@ -2834,56 +2867,6 @@
       ]
     },
     {
-      "id": 691718,
-      "name": "Pete Crow-Armstrong",
-      "team": "Chicago Cubs",
-      "bats": "L",
-      "opp": "St. Louis Cardinals",
-      "opp_pitcher": "Andre Pallante",
-      "venue": "Wrigley Field",
-      "gamePk": 824659,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 19,
-      "iso": 0.237,
-      "total": 57.2,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.15,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.0,
-        "hitter": 31.2,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2699,
-        "barrel_rate": 0.0854,
-        "hard_hit_rate": 0.4759,
-        "fb_rate": 0.5621
-      },
-      "reasons": [
-        "vs Andre Pallante \u2014 cause Pass (7.0/25)",
-        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 36%)",
-        "Elite air-pull (36%)",
-        "Above-avg barrels (11%)",
-        "Hard-hit 48%",
-        "Slightly + park (100)",
-        "Highly wind-dependent",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 694212,
       "name": "Samuel Basallo",
       "team": "Baltimore Orioles",
@@ -2924,7 +2907,7 @@
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (60% fastballs, rel 1.03 \u2192 mix-fit 0.74x)",
         "Elite HR park (113)",
-        "Hot (99\u00b0F)",
+        "Hot (98\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -2936,45 +2919,48 @@
       ]
     },
     {
-      "id": 605137,
-      "name": "Josh Bell",
+      "id": 668952,
+      "name": "Ryan Kreidler",
       "team": "Minnesota Twins",
-      "bats": "S",
+      "bats": "R",
       "opp": "New York Yankees",
       "opp_pitcher": "Gerrit Cole",
       "venue": "Yankee Stadium",
       "gamePk": 823527,
       "slot": null,
       "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.168,
+      "season_hr": 5,
+      "iso": 0.211,
       "total": 57.1,
       "tier": "Pass",
       "role": "Watchlist",
       "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.11,
+      "pull_fit": true,
+      "mix_fit": 1.53,
       "fit_tag": null,
       "value_play": false,
       "pitcher_grade": "B",
       "breakdown": {
         "pitcher": 16.5,
-        "hitter": 19.1,
-        "environment": 13.5,
+        "hitter": 21.6,
+        "environment": 10.0,
         "lineup": 6.0,
-        "confidence": 2.0
+        "confidence": 3.0
       },
       "statcast": {
-        "air_pull_rate": 0.1566,
-        "barrel_rate": 0.0797,
-        "hard_hit_rate": 0.425,
-        "fb_rate": 0.5206
+        "air_pull_rate": 0.157,
+        "barrel_rate": 0.1018,
+        "hard_hit_rate": 0.3905,
+        "fb_rate": 0.5056
       },
       "reasons": [
         "vs Gerrit Cole \u2014 cause B (16.5/25)",
         "Pitcher: High HR allowed (HR/9 1.69)",
         "Pitcher: Fly-ball prone (31% FB allowed)",
-        "Hitter-friendly park (108)",
+        "Platoon shape: spikes vs RHP (barrel 14%, air-pull 15%)",
+        "Strong barrels (14%)",
+        "Pitch-mix fit: damages this arsenal (47% fastballs, rel 1.96 \u2192 mix-fit 1.53x)",
+        "Slightly + park (103)",
         "Short RF porch boosts LHB HR",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -3089,6 +3075,60 @@
       ]
     },
     {
+      "id": 641355,
+      "name": "Cody Bellinger",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Minnesota Twins",
+      "opp_pitcher": "Mike Paredes",
+      "venue": "Yankee Stadium",
+      "gamePk": 823527,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 11,
+      "iso": 0.179,
+      "total": 56.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.49,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.0,
+        "hitter": 13.5,
+        "environment": 14.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1852,
+        "barrel_rate": 0.0511,
+        "hard_hit_rate": 0.3308,
+        "fb_rate": 0.4996
+      },
+      "reasons": [
+        "vs Mike Paredes \u2014 cause A (19.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.43)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Good air-pull (20%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (59% fastballs, rel 0.63 \u2192 mix-fit 0.49x)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 667670,
       "name": "Brent Rooker",
       "team": "Athletics",
@@ -3135,55 +3175,6 @@
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
-    },
-    {
-      "id": 682626,
-      "name": "Francisco Alvarez",
-      "team": "New York Mets",
-      "bats": "R",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Grant Holmes",
-      "venue": "Truist Park",
-      "gamePk": 824904,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.184,
-      "total": 56.5,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.8,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 13.5,
-        "hitter": 25.0,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1505,
-        "barrel_rate": 0.1184,
-        "hard_hit_rate": 0.4358,
-        "fb_rate": 0.4937
-      },
-      "reasons": [
-        "vs Grant Holmes \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.63)",
-        "Platoon shape: spikes vs RHP (barrel 16%, air-pull 14%)",
-        "Elite barrel rate (16%)",
-        "Pitch-mix fit: damages this arsenal (52% fastballs, rel 1.84 \u2192 mix-fit 1.80x)",
-        "Slightly + park (103)",
-        "Warm (81\u00b0F)"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
     },
     {
       "id": 805811,
@@ -3235,59 +3226,6 @@
         "Lineup not confirmed"
       ],
       "role_notes": []
-    },
-    {
-      "id": 686797,
-      "name": "Brooks Lee",
-      "team": "Minnesota Twins",
-      "bats": "S",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "gamePk": 823527,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.189,
-      "total": 56.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.42,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.5,
-        "hitter": 18.0,
-        "environment": 13.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2112,
-        "barrel_rate": 0.0484,
-        "hard_hit_rate": 0.3639,
-        "fb_rate": 0.5194
-      },
-      "reasons": [
-        "vs Gerrit Cole \u2014 cause B (16.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.69)",
-        "Pitcher: Fly-ball prone (31% FB allowed)",
-        "Platoon shape: spikes vs RHP (barrel 4%, air-pull 28%)",
-        "Elite air-pull (28%)",
-        "Poor pitch-mix fit (47% fastballs, rel 0.30 \u2192 mix-fit 0.42x)",
-        "Hitter-friendly park (108)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
     },
     {
       "id": 691788,
@@ -3393,53 +3331,54 @@
       ]
     },
     {
-      "id": 664023,
-      "name": "Ian Happ",
-      "team": "Chicago Cubs",
+      "id": 605137,
+      "name": "Josh Bell",
+      "team": "Minnesota Twins",
       "bats": "S",
-      "opp": "St. Louis Cardinals",
-      "opp_pitcher": "Andre Pallante",
-      "venue": "Wrigley Field",
-      "gamePk": 824659,
+      "opp": "New York Yankees",
+      "opp_pitcher": "Gerrit Cole",
+      "venue": "Yankee Stadium",
+      "gamePk": 823527,
       "slot": null,
       "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.229,
-      "total": 55.5,
+      "season_hr": 11,
+      "iso": 0.168,
+      "total": 55.6,
       "tier": "Pass",
-      "role": "Pass",
+      "role": "Watchlist",
       "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.62,
+      "pull_fit": false,
+      "mix_fit": 1.11,
       "fit_tag": null,
       "value_play": false,
-      "pitcher_grade": "Pass",
+      "pitcher_grade": "B",
       "breakdown": {
-        "pitcher": 7.0,
-        "hitter": 29.5,
-        "environment": 9.0,
+        "pitcher": 16.5,
+        "hitter": 19.1,
+        "environment": 12.0,
         "lineup": 6.0,
-        "confidence": 4.0
+        "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.2026,
-        "barrel_rate": 0.0872,
-        "hard_hit_rate": 0.3568,
-        "fb_rate": 0.5402
+        "air_pull_rate": 0.1566,
+        "barrel_rate": 0.0797,
+        "hard_hit_rate": 0.425,
+        "fb_rate": 0.5206
       },
       "reasons": [
-        "vs Andre Pallante \u2014 cause Pass (7.0/25)",
-        "Strong air-pull (25%)",
-        "Above-avg barrels (10%)",
-        "Pitch-mix fit: damages this arsenal (51% breaking balls, rel 1.64 \u2192 mix-fit 1.62x)",
-        "Slightly + park (100)",
-        "Highly wind-dependent",
-        "Model: one strong signal"
+        "vs Gerrit Cole \u2014 cause B (16.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.69)",
+        "Pitcher: Fly-ball prone (31% FB allowed)",
+        "Hitter-friendly park (108)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Lineup not confirmed"
       ],
-      "role_notes": []
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 701398,
@@ -3481,7 +3420,7 @@
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (65% fastballs, rel 1.81 \u2192 mix-fit 1.50x)",
         "Elite HR park (111)",
-        "Hot (99\u00b0F)"
+        "Hot (98\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -3647,6 +3586,59 @@
       ]
     },
     {
+      "id": 686797,
+      "name": "Brooks Lee",
+      "team": "Minnesota Twins",
+      "bats": "S",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Gerrit Cole",
+      "venue": "Yankee Stadium",
+      "gamePk": 823527,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 14,
+      "iso": 0.189,
+      "total": 54.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.42,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 16.5,
+        "hitter": 18.0,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2112,
+        "barrel_rate": 0.0484,
+        "hard_hit_rate": 0.3639,
+        "fb_rate": 0.5194
+      },
+      "reasons": [
+        "vs Gerrit Cole \u2014 cause B (16.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.69)",
+        "Pitcher: Fly-ball prone (31% FB allowed)",
+        "Platoon shape: spikes vs RHP (barrel 4%, air-pull 28%)",
+        "Elite air-pull (28%)",
+        "Poor pitch-mix fit (47% fastballs, rel 0.30 \u2192 mix-fit 0.42x)",
+        "Hitter-friendly park (108)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 668715,
       "name": "Spencer Steer",
       "team": "Cincinnati Reds",
@@ -3687,7 +3679,7 @@
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (65% fastballs, rel 1.87 \u2192 mix-fit 1.49x)",
         "Elite HR park (111)",
-        "Hot (99\u00b0F)",
+        "Hot (98\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3793,7 +3785,7 @@
         "Platoon edge (R vs LHP)",
         "Poor pitch-mix fit (65% fastballs, rel 0.48 \u2192 mix-fit 0.80x)",
         "Elite HR park (111)",
-        "Hot (99\u00b0F)",
+        "Hot (98\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4263,6 +4255,57 @@
       ]
     },
     {
+      "id": 665742,
+      "name": "Juan Soto",
+      "team": "New York Mets",
+      "bats": "L",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Grant Holmes",
+      "venue": "Truist Park",
+      "gamePk": 824904,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 17,
+      "iso": 0.261,
+      "total": 53.4,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.89,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 20.9,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1545,
+        "barrel_rate": 0.0637,
+        "hard_hit_rate": 0.4515,
+        "fb_rate": 0.5162
+      },
+      "reasons": [
+        "vs Grant Holmes \u2014 cause B (13.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.63)",
+        "Hard-hit 45%",
+        "Platoon edge (L vs RHP)",
+        "Slightly + park (103)",
+        "Hot (89\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 680574,
       "name": "Matt McLain",
       "team": "Cincinnati Reds",
@@ -4302,7 +4345,59 @@
         "Good air-pull (21%)",
         "Platoon edge (R vs LHP)",
         "Elite HR park (111)",
-        "Hot (99\u00b0F)",
+        "Hot (98\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 676724,
+      "name": "Jared Young",
+      "team": "New York Mets",
+      "bats": "L",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Grant Holmes",
+      "venue": "Truist Park",
+      "gamePk": 824904,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 6,
+      "iso": 0.193,
+      "total": 53.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.24,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 20.7,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1545,
+        "barrel_rate": 0.0847,
+        "hard_hit_rate": 0.4048,
+        "fb_rate": 0.4865
+      },
+      "reasons": [
+        "vs Grant Holmes \u2014 cause B (13.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.63)",
+        "Above-avg barrels (10%)",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (52% fastballs, rel 0.69 \u2192 mix-fit 1.24x)",
+        "Slightly + park (103)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4353,7 +4448,7 @@
         "Good air-pull (20%)",
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (64% fastballs, rel 1.34 \u2192 mix-fit 1.22x)",
-        "Warm (76\u00b0F)",
+        "Warm (78\u00b0F)",
         "Wind out ~8 mph"
       ],
       "warnings": [
@@ -4403,53 +4498,6 @@
         "Lineup not confirmed"
       ],
       "role_notes": []
-    },
-    {
-      "id": 663757,
-      "name": "Trent Grisham",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Minnesota Twins",
-      "opp_pitcher": "Mike Paredes",
-      "venue": "Yankee Stadium",
-      "gamePk": 823527,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.174,
-      "total": 53.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 19.0,
-        "hitter": 9.0,
-        "environment": 15.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Mike Paredes \u2014 cause A (19.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.43)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
     },
     {
       "id": 687462,
@@ -4607,109 +4655,6 @@
       "role_notes": []
     },
     {
-      "id": 665742,
-      "name": "Juan Soto",
-      "team": "New York Mets",
-      "bats": "L",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Grant Holmes",
-      "venue": "Truist Park",
-      "gamePk": 824904,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.261,
-      "total": 52.4,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.89,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 13.5,
-        "hitter": 20.9,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1545,
-        "barrel_rate": 0.0637,
-        "hard_hit_rate": 0.4515,
-        "fb_rate": 0.5162
-      },
-      "reasons": [
-        "vs Grant Holmes \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.63)",
-        "Hard-hit 45%",
-        "Platoon edge (L vs RHP)",
-        "Slightly + park (103)",
-        "Warm (81\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 676724,
-      "name": "Jared Young",
-      "team": "New York Mets",
-      "bats": "L",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Grant Holmes",
-      "venue": "Truist Park",
-      "gamePk": 824904,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 6,
-      "iso": 0.193,
-      "total": 52.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.24,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 13.5,
-        "hitter": 20.7,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1545,
-        "barrel_rate": 0.0847,
-        "hard_hit_rate": 0.4048,
-        "fb_rate": 0.4865
-      },
-      "reasons": [
-        "vs Grant Holmes \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.63)",
-        "Above-avg barrels (10%)",
-        "Platoon edge (L vs RHP)",
-        "Pitch-mix fit: damages this arsenal (52% fastballs, rel 0.69 \u2192 mix-fit 1.24x)",
-        "Slightly + park (103)",
-        "Warm (81\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 545361,
       "name": "Mike Trout",
       "team": "Los Angeles Angels",
@@ -4750,13 +4695,60 @@
         "Above-avg barrels (10%)",
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (64% fastballs, rel 2.20 \u2192 mix-fit 1.77x)",
-        "Warm (76\u00b0F)",
+        "Warm (78\u00b0F)",
         "Wind out ~8 mph"
       ],
       "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": []
+    },
+    {
+      "id": 663757,
+      "name": "Trent Grisham",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Minnesota Twins",
+      "opp_pitcher": "Mike Paredes",
+      "venue": "Yankee Stadium",
+      "gamePk": 823527,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 8,
+      "iso": 0.174,
+      "total": 52.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.0,
+        "hitter": 9.0,
+        "environment": 14.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Mike Paredes \u2014 cause A (19.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.43)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 682928,
@@ -4862,49 +4854,49 @@
       ]
     },
     {
-      "id": 656484,
-      "name": "Tristan Gray",
-      "team": "Minnesota Twins",
+      "id": 671739,
+      "name": "Michael Harris II",
+      "team": "Atlanta Braves",
       "bats": "L",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "gamePk": 823527,
+      "opp": "New York Mets",
+      "opp_pitcher": "Christian Scott",
+      "venue": "Truist Park",
+      "gamePk": 824904,
       "slot": null,
       "confirmed": false,
-      "season_hr": 4,
-      "iso": 0.11,
-      "total": 51.8,
+      "season_hr": 14,
+      "iso": 0.191,
+      "total": 51.6,
       "tier": "Pass",
       "role": "Watchlist",
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 0.57,
+      "mix_fit": 0.91,
       "fit_tag": null,
       "value_play": false,
-      "pitcher_grade": "B",
+      "pitcher_grade": "C",
       "breakdown": {
-        "pitcher": 16.5,
-        "hitter": 12.3,
-        "environment": 15.0,
+        "pitcher": 11.5,
+        "hitter": 21.1,
+        "environment": 10.0,
         "lineup": 6.0,
-        "confidence": 2.0
+        "confidence": 3.0
       },
       "statcast": {
-        "air_pull_rate": 0.1955,
-        "barrel_rate": 0.0553,
-        "hard_hit_rate": 0.3241,
-        "fb_rate": 0.5284
+        "air_pull_rate": 0.1917,
+        "barrel_rate": 0.0919,
+        "hard_hit_rate": 0.3961,
+        "fb_rate": 0.4995
       },
       "reasons": [
-        "vs Gerrit Cole \u2014 cause B (16.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.69)",
-        "Pitcher: Fly-ball prone (31% FB allowed)",
-        "Good air-pull (22%)",
+        "vs Christian Scott \u2014 cause C (11.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
+        "Pitcher: High K rate (27%)",
+        "Platoon shape: spikes vs RHP (barrel 12%, air-pull 19%)",
+        "Strong barrels (12%)",
         "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (47% fastballs, rel 0.30 \u2192 mix-fit 0.57x)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
+        "Slightly + park (103)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4958,6 +4950,57 @@
         "Pitch-mix fit: damages this arsenal (45% fastballs, rel 0.30 \u2192 mix-fit 1.22x)",
         "Hitter-friendly park (106)",
         "Retractable roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 621566,
+      "name": "Matt Olson",
+      "team": "Atlanta Braves",
+      "bats": "L",
+      "opp": "New York Mets",
+      "opp_pitcher": "Christian Scott",
+      "venue": "Truist Park",
+      "gamePk": 824904,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 20,
+      "iso": 0.248,
+      "total": 51.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.14,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.5,
+        "hitter": 20.7,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1489,
+        "barrel_rate": 0.0657,
+        "hard_hit_rate": 0.3912,
+        "fb_rate": 0.4651
+      },
+      "reasons": [
+        "vs Christian Scott \u2014 cause C (11.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
+        "Pitcher: High K rate (27%)",
+        "Platoon edge (L vs RHP)",
+        "Slightly + park (103)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5061,7 +5104,7 @@
         "Good air-pull (21%)",
         "Above-avg barrels (10%)",
         "Platoon edge (L vs RHP)",
-        "Hot (92\u00b0F)"
+        "Hot (91\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -5069,148 +5112,49 @@
       "role_notes": []
     },
     {
-      "id": 676609,
-      "name": "Jos\u00e9 Caballero",
-      "team": "New York Yankees",
-      "bats": "R",
-      "opp": "Minnesota Twins",
-      "opp_pitcher": "Mike Paredes",
+      "id": 656484,
+      "name": "Tristan Gray",
+      "team": "Minnesota Twins",
+      "bats": "L",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Gerrit Cole",
       "venue": "Yankee Stadium",
       "gamePk": 823527,
       "slot": null,
       "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.139,
-      "total": 50.9,
+      "season_hr": 4,
+      "iso": 0.11,
+      "total": 50.8,
       "tier": "Pass",
       "role": "Watchlist",
       "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.88,
+      "pull_fit": true,
+      "mix_fit": 0.57,
       "fit_tag": null,
       "value_play": false,
-      "pitcher_grade": "A",
+      "pitcher_grade": "B",
       "breakdown": {
-        "pitcher": 19.0,
-        "hitter": 10.4,
-        "environment": 11.5,
+        "pitcher": 16.5,
+        "hitter": 12.3,
+        "environment": 14.0,
         "lineup": 6.0,
-        "confidence": 4.0
+        "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1643,
-        "barrel_rate": 0.0677,
-        "hard_hit_rate": 0.3124,
-        "fb_rate": 0.4936
+        "air_pull_rate": 0.1955,
+        "barrel_rate": 0.0553,
+        "hard_hit_rate": 0.3241,
+        "fb_rate": 0.5284
       },
       "reasons": [
-        "vs Mike Paredes \u2014 cause A (19.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.43)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "Slightly + park (103)",
+        "vs Gerrit Cole \u2014 cause B (16.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.69)",
+        "Pitcher: Fly-ball prone (31% FB allowed)",
+        "Good air-pull (22%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (47% fastballs, rel 0.30 \u2192 mix-fit 0.57x)",
+        "Elite HR park (113)",
         "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 624424,
-      "name": "Michael Conforto",
-      "team": "Chicago Cubs",
-      "bats": "L",
-      "opp": "St. Louis Cardinals",
-      "opp_pitcher": "Andre Pallante",
-      "venue": "Wrigley Field",
-      "gamePk": 824659,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.256,
-      "total": 50.9,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.28,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.0,
-        "hitter": 25.9,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2006,
-        "barrel_rate": 0.0697,
-        "hard_hit_rate": 0.3354,
-        "fb_rate": 0.5591
-      },
-      "reasons": [
-        "vs Andre Pallante \u2014 cause Pass (7.0/25)",
-        "Strong air-pull (23%)",
-        "Platoon edge (L vs RHP)",
-        "Pitch-mix fit: damages this arsenal (51% breaking balls, rel 1.00 \u2192 mix-fit 1.28x)",
-        "Slightly + park (100)",
-        "Highly wind-dependent"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 671739,
-      "name": "Michael Harris II",
-      "team": "Atlanta Braves",
-      "bats": "L",
-      "opp": "New York Mets",
-      "opp_pitcher": "Christian Scott",
-      "venue": "Truist Park",
-      "gamePk": 824904,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.191,
-      "total": 50.6,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.91,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.5,
-        "hitter": 21.1,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1917,
-        "barrel_rate": 0.0919,
-        "hard_hit_rate": 0.3961,
-        "fb_rate": 0.4995
-      },
-      "reasons": [
-        "vs Christian Scott \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
-        "Pitcher: High K rate (27%)",
-        "Platoon shape: spikes vs RHP (barrel 12%, air-pull 19%)",
-        "Strong barrels (12%)",
-        "Platoon edge (L vs RHP)",
-        "Slightly + park (103)",
-        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5376,57 +5320,6 @@
       ]
     },
     {
-      "id": 621566,
-      "name": "Matt Olson",
-      "team": "Atlanta Braves",
-      "bats": "L",
-      "opp": "New York Mets",
-      "opp_pitcher": "Christian Scott",
-      "venue": "Truist Park",
-      "gamePk": 824904,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 20,
-      "iso": 0.248,
-      "total": 50.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.14,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.5,
-        "hitter": 20.7,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1489,
-        "barrel_rate": 0.0657,
-        "hard_hit_rate": 0.3912,
-        "fb_rate": 0.4651
-      },
-      "reasons": [
-        "vs Christian Scott \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
-        "Pitcher: High K rate (27%)",
-        "Platoon edge (L vs RHP)",
-        "Slightly + park (103)",
-        "Warm (81\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 666139,
       "name": "Josh Lowe",
       "team": "Los Angeles Angels",
@@ -5465,7 +5358,7 @@
         "vs Jake Bennett \u2014 cause C (11.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 0.55)",
         "Good air-pull (20%)",
-        "Warm (76\u00b0F)",
+        "Warm (78\u00b0F)",
         "Wind out ~8 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -5475,6 +5368,54 @@
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
+    },
+    {
+      "id": 624424,
+      "name": "Michael Conforto",
+      "team": "Chicago Cubs",
+      "bats": "L",
+      "opp": "St. Louis Cardinals",
+      "opp_pitcher": "Andre Pallante",
+      "venue": "Wrigley Field",
+      "gamePk": 824659,
+      "slot": 7,
+      "confirmed": true,
+      "season_hr": 7,
+      "iso": 0.256,
+      "total": 49.9,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.28,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.0,
+        "hitter": 25.9,
+        "environment": 9.0,
+        "lineup": 5.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2006,
+        "barrel_rate": 0.0697,
+        "hard_hit_rate": 0.3354,
+        "fb_rate": 0.5591
+      },
+      "reasons": [
+        "vs Andre Pallante \u2014 cause Pass (7.0/25)",
+        "Strong air-pull (23%)",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (51% breaking balls, rel 1.00 \u2192 mix-fit 1.28x)",
+        "Slightly + park (100)",
+        "Highly wind-dependent"
+      ],
+      "warnings": [
+        "Bottom of order (#7)"
+      ],
+      "role_notes": []
     },
     {
       "id": 643217,
@@ -5518,7 +5459,7 @@
         "Good air-pull (23%)",
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (54% fastballs, rel 0.90 \u2192 mix-fit 0.63x)",
-        "Hot (92\u00b0F)",
+        "Hot (91\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5580,6 +5521,57 @@
       ]
     },
     {
+      "id": 676609,
+      "name": "Jos\u00e9 Caballero",
+      "team": "New York Yankees",
+      "bats": "R",
+      "opp": "Minnesota Twins",
+      "opp_pitcher": "Mike Paredes",
+      "venue": "Yankee Stadium",
+      "gamePk": 823527,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 8,
+      "iso": 0.139,
+      "total": 49.4,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.88,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.0,
+        "hitter": 10.4,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1643,
+        "barrel_rate": 0.0677,
+        "hard_hit_rate": 0.3124,
+        "fb_rate": 0.4936
+      },
+      "reasons": [
+        "vs Mike Paredes \u2014 cause A (19.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.43)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 553993,
       "name": "Eugenio Su\u00e1rez",
       "team": "Cincinnati Reds",
@@ -5618,7 +5610,7 @@
         "vs Trevor Rogers \u2014 cause C (10.0/25)",
         "Platoon edge (R vs LHP)",
         "Elite HR park (111)",
-        "Hot (99\u00b0F)",
+        "Hot (98\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5666,7 +5658,7 @@
       "reasons": [
         "vs Trevor Rogers \u2014 cause C (10.0/25)",
         "Elite HR park (112)",
-        "Hot (99\u00b0F)",
+        "Hot (98\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5759,7 +5751,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.24)",
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hot (92\u00b0F)",
+        "Hot (91\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5809,7 +5801,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.24)",
         "Above-avg barrels (10%)",
         "Pitch-mix fit: damages this arsenal (46% fastballs, rel 2.20 \u2192 mix-fit 1.60x)",
-        "Hot (92\u00b0F)",
+        "Hot (91\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5861,6 +5853,57 @@
       ],
       "warnings": [
         "Wind in ~9 mph",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 805999,
+      "name": "A.J. Ewing",
+      "team": "New York Mets",
+      "bats": "L",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Grant Holmes",
+      "venue": "Truist Park",
+      "gamePk": 824904,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 4,
+      "iso": 0.133,
+      "total": 49.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.31,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 17.5,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1485,
+        "barrel_rate": 0.0709,
+        "hard_hit_rate": 0.3943,
+        "fb_rate": 0.5049
+      },
+      "reasons": [
+        "vs Grant Holmes \u2014 cause B (13.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.63)",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (52% fastballs, rel 1.23 \u2192 mix-fit 1.31x)",
+        "Slightly + park (103)",
+        "Hot (89\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -6176,52 +6219,49 @@
       ]
     },
     {
-      "id": 805999,
-      "name": "A.J. Ewing",
-      "team": "New York Mets",
-      "bats": "L",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Grant Holmes",
-      "venue": "Truist Park",
-      "gamePk": 824904,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 4,
-      "iso": 0.133,
-      "total": 48.0,
+      "id": 673548,
+      "name": "Seiya Suzuki",
+      "team": "Chicago Cubs",
+      "bats": "R",
+      "opp": "St. Louis Cardinals",
+      "opp_pitcher": "Andre Pallante",
+      "venue": "Wrigley Field",
+      "gamePk": 824659,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 13,
+      "iso": 0.192,
+      "total": 48.2,
       "tier": "Pass",
       "role": "Watchlist",
       "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.31,
+      "pull_fit": true,
+      "mix_fit": 1.15,
       "fit_tag": null,
       "value_play": false,
-      "pitcher_grade": "B",
+      "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 13.5,
-        "hitter": 17.5,
+        "pitcher": 7.0,
+        "hitter": 19.2,
         "environment": 9.0,
-        "lineup": 6.0,
+        "lineup": 11.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1485,
-        "barrel_rate": 0.0709,
-        "hard_hit_rate": 0.3943,
-        "fb_rate": 0.5049
+        "air_pull_rate": 0.2152,
+        "barrel_rate": 0.0565,
+        "hard_hit_rate": 0.3749,
+        "fb_rate": 0.5466
       },
       "reasons": [
-        "vs Grant Holmes \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.63)",
-        "Platoon edge (L vs RHP)",
-        "Pitch-mix fit: damages this arsenal (52% fastballs, rel 1.23 \u2192 mix-fit 1.31x)",
-        "Slightly + park (103)",
-        "Warm (81\u00b0F)",
+        "vs Andre Pallante \u2014 cause Pass (7.0/25)",
+        "Strong air-pull (24%)",
+        "Slightly + park (100)",
+        "Highly wind-dependent",
+        "Heart of order (#4)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -6469,7 +6509,7 @@
         "Low air-pull (9%)",
         "Poor pitch-mix fit (60% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
         "Elite HR park (112)",
-        "Hot (99\u00b0F)",
+        "Hot (98\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -6631,6 +6671,59 @@
       "role_notes": []
     },
     {
+      "id": 701807,
+      "name": "Carson Benge",
+      "team": "New York Mets",
+      "bats": "L",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Grant Holmes",
+      "venue": "Truist Park",
+      "gamePk": 824904,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 10,
+      "iso": 0.143,
+      "total": 47.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.5,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 15.5,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1721,
+        "barrel_rate": 0.0563,
+        "hard_hit_rate": 0.3561,
+        "fb_rate": 0.5676
+      },
+      "reasons": [
+        "vs Grant Holmes \u2014 cause B (13.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.63)",
+        "Platoon shape: spikes vs RHP (barrel 6%, air-pull 23%)",
+        "Good air-pull (23%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (52% fastballs, rel 0.46 \u2192 mix-fit 0.50x)",
+        "Slightly + park (103)",
+        "Hot (89\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 656555,
       "name": "Rhys Hoskins",
       "team": "Cleveland Guardians",
@@ -6669,7 +6762,7 @@
         "vs Anthony Kay \u2014 cause C (11.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.24)",
         "Platoon edge (R vs LHP)",
-        "Hot (92\u00b0F)",
+        "Hot (91\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6771,7 +6864,7 @@
         "Pitcher: High K rate (28%)",
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (50% breaking balls, rel 2.15 \u2192 mix-fit 1.58x)",
-        "Warm (76\u00b0F)",
+        "Warm (78\u00b0F)",
         "Wind out ~8 mph"
       ],
       "warnings": [
@@ -6873,59 +6966,6 @@
         "Hot (2 HR / 2 barrels last 7d)",
         "Slightly + park (102)",
         "Hot (104\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 701807,
-      "name": "Carson Benge",
-      "team": "New York Mets",
-      "bats": "L",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Grant Holmes",
-      "venue": "Truist Park",
-      "gamePk": 824904,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.143,
-      "total": 46.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.5,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 13.5,
-        "hitter": 15.5,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1721,
-        "barrel_rate": 0.0563,
-        "hard_hit_rate": 0.3561,
-        "fb_rate": 0.5676
-      },
-      "reasons": [
-        "vs Grant Holmes \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.63)",
-        "Platoon shape: spikes vs RHP (barrel 6%, air-pull 23%)",
-        "Good air-pull (23%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (52% fastballs, rel 0.46 \u2192 mix-fit 0.50x)",
-        "Slightly + park (103)",
-        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7126,7 +7166,7 @@
         "Low air-pull (10%)",
         "Poor pitch-mix fit (60% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
         "Elite HR park (111)",
-        "Hot (99\u00b0F)",
+        "Hot (98\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -7231,7 +7271,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.24)",
         "Good air-pull (20%)",
         "Poor pitch-mix fit (46% fastballs, rel 0.30 \u2192 mix-fit 0.68x)",
-        "Hot (92\u00b0F)",
+        "Hot (91\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7386,7 +7426,7 @@
         "vs Anthony Kay \u2014 cause C (11.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.24)",
         "Platoon edge (R vs LHP)",
-        "Hot (92\u00b0F)",
+        "Hot (91\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7435,7 +7475,7 @@
         "vs Trevor Rogers \u2014 cause C (10.0/25)",
         "Poor pitch-mix fit (65% fastballs, rel 0.30 \u2192 mix-fit 0.38x)",
         "Elite HR park (113)",
-        "Hot (99\u00b0F)",
+        "Hot (98\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7484,7 +7524,7 @@
         "vs Trevor Rogers \u2014 cause C (10.0/25)",
         "Poor pitch-mix fit (65% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
         "Elite HR park (113)",
-        "Hot (99\u00b0F)",
+        "Hot (98\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7579,7 +7619,7 @@
         "vs Gavin Williams \u2014 cause C (10.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.33)",
         "Pitcher: High K rate (28%)",
-        "Hot (92\u00b0F)",
+        "Hot (91\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7627,7 +7667,7 @@
       "reasons": [
         "vs Anthony Kay \u2014 cause C (11.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.24)",
-        "Hot (92\u00b0F)",
+        "Hot (91\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7689,6 +7729,157 @@
       ]
     },
     {
+      "id": 683737,
+      "name": "Michael Busch",
+      "team": "Chicago Cubs",
+      "bats": "L",
+      "opp": "St. Louis Cardinals",
+      "opp_pitcher": "Andre Pallante",
+      "venue": "Wrigley Field",
+      "gamePk": 824659,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 11,
+      "iso": 0.162,
+      "total": 43.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.71,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.0,
+        "hitter": 14.6,
+        "environment": 9.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1545,
+        "barrel_rate": 0.0737,
+        "hard_hit_rate": 0.364,
+        "fb_rate": 0.5384
+      },
+      "reasons": [
+        "vs Andre Pallante \u2014 cause Pass (7.0/25)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (51% breaking balls, rel 0.30 \u2192 mix-fit 0.71x)",
+        "Slightly + park (100)",
+        "Highly wind-dependent",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 642086,
+      "name": "Dominic Smith",
+      "team": "Atlanta Braves",
+      "bats": "L",
+      "opp": "New York Mets",
+      "opp_pitcher": "Christian Scott",
+      "venue": "Truist Park",
+      "gamePk": 824904,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 6,
+      "iso": 0.139,
+      "total": 43.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.8,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.5,
+        "hitter": 14.0,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1796,
+        "barrel_rate": 0.0624,
+        "hard_hit_rate": 0.3503,
+        "fb_rate": 0.4534
+      },
+      "reasons": [
+        "vs Christian Scott \u2014 cause C (11.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
+        "Pitcher: High K rate (27%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (65% fastballs, rel 1.07 \u2192 mix-fit 0.80x)",
+        "Slightly + park (103)",
+        "Hot (89\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 668901,
+      "name": "Mark Vientos",
+      "team": "New York Mets",
+      "bats": "R",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Grant Holmes",
+      "venue": "Truist Park",
+      "gamePk": 824904,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 10,
+      "iso": 0.169,
+      "total": 43.4,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.09,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 11.9,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.172,
+        "barrel_rate": 0.0758,
+        "hard_hit_rate": 0.3769,
+        "fb_rate": 0.5062
+      },
+      "reasons": [
+        "vs Grant Holmes \u2014 cause B (13.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.63)",
+        "Platoon shape fades vs RHP",
+        "Slightly + park (103)",
+        "Hot (89\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 571448,
       "name": "Nolan Arenado",
       "team": "Arizona Diamondbacks",
@@ -7730,55 +7921,6 @@
         "Platoon edge (R vs LHP)",
         "Slightly + park (103)",
         "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 673548,
-      "name": "Seiya Suzuki",
-      "team": "Chicago Cubs",
-      "bats": "R",
-      "opp": "St. Louis Cardinals",
-      "opp_pitcher": "Andre Pallante",
-      "venue": "Wrigley Field",
-      "gamePk": 824659,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.192,
-      "total": 43.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.15,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.0,
-        "hitter": 19.2,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2152,
-        "barrel_rate": 0.0565,
-        "hard_hit_rate": 0.3749,
-        "fb_rate": 0.5466
-      },
-      "reasons": [
-        "vs Andre Pallante \u2014 cause Pass (7.0/25)",
-        "Strong air-pull (24%)",
-        "Slightly + park (100)",
-        "Highly wind-dependent",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7878,7 +8020,7 @@
         "vs Jake Bennett \u2014 cause C (11.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 0.55)",
         "Platoon edge (R vs LHP)",
-        "Warm (76\u00b0F)",
+        "Warm (78\u00b0F)",
         "Wind out ~8 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -7937,6 +8079,58 @@
         "Lineup not confirmed"
       ],
       "role_notes": []
+    },
+    {
+      "id": 686948,
+      "name": "Drake Baldwin",
+      "team": "Atlanta Braves",
+      "bats": "L",
+      "opp": "New York Mets",
+      "opp_pitcher": "Christian Scott",
+      "venue": "Truist Park",
+      "gamePk": 824904,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 14,
+      "iso": 0.198,
+      "total": 42.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.85,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.5,
+        "hitter": 13.2,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1259,
+        "barrel_rate": 0.0647,
+        "hard_hit_rate": 0.3511,
+        "fb_rate": 0.4173
+      },
+      "reasons": [
+        "vs Christian Scott \u2014 cause C (11.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
+        "Pitcher: High K rate (27%)",
+        "Low air-pull (9%)",
+        "Platoon edge (L vs RHP)",
+        "Slightly + park (103)",
+        "Hot (89\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 665926,
@@ -8141,58 +8335,6 @@
       ]
     },
     {
-      "id": 642086,
-      "name": "Dominic Smith",
-      "team": "Atlanta Braves",
-      "bats": "L",
-      "opp": "New York Mets",
-      "opp_pitcher": "Christian Scott",
-      "venue": "Truist Park",
-      "gamePk": 824904,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 6,
-      "iso": 0.139,
-      "total": 42.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.8,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.5,
-        "hitter": 14.0,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1796,
-        "barrel_rate": 0.0624,
-        "hard_hit_rate": 0.3503,
-        "fb_rate": 0.4534
-      },
-      "reasons": [
-        "vs Christian Scott \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
-        "Pitcher: High K rate (27%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (65% fastballs, rel 1.07 \u2192 mix-fit 0.80x)",
-        "Slightly + park (103)",
-        "Warm (81\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 802139,
       "name": "JJ Wetherholt",
       "team": "St. Louis Cardinals",
@@ -8230,104 +8372,6 @@
       "reasons": [
         "vs David Peterson \u2014 cause C (12.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 0.79)",
-        "Slightly + park (100)",
-        "Highly wind-dependent",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 668901,
-      "name": "Mark Vientos",
-      "team": "New York Mets",
-      "bats": "R",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Grant Holmes",
-      "venue": "Truist Park",
-      "gamePk": 824904,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.169,
-      "total": 42.4,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.09,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 13.5,
-        "hitter": 11.9,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.172,
-        "barrel_rate": 0.0758,
-        "hard_hit_rate": 0.3769,
-        "fb_rate": 0.5062
-      },
-      "reasons": [
-        "vs Grant Holmes \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.63)",
-        "Platoon shape fades vs RHP",
-        "Slightly + park (103)",
-        "Warm (81\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 621020,
-      "name": "Dansby Swanson",
-      "team": "Chicago Cubs",
-      "bats": "R",
-      "opp": "St. Louis Cardinals",
-      "opp_pitcher": "Andre Pallante",
-      "venue": "Wrigley Field",
-      "gamePk": 824659,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.221,
-      "total": 42.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.06,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.0,
-        "hitter": 18.3,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1826,
-        "barrel_rate": 0.073,
-        "hard_hit_rate": 0.4089,
-        "fb_rate": 0.5325
-      },
-      "reasons": [
-        "vs Andre Pallante \u2014 cause Pass (7.0/25)",
         "Slightly + park (100)",
         "Highly wind-dependent",
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -8390,6 +8434,55 @@
       "role_notes": []
     },
     {
+      "id": 666182,
+      "name": "Bo Bichette",
+      "team": "New York Mets",
+      "bats": "R",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Grant Holmes",
+      "venue": "Truist Park",
+      "gamePk": 824904,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 10,
+      "iso": 0.129,
+      "total": 42.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.02,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 10.6,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.195,
+        "barrel_rate": 0.0579,
+        "hard_hit_rate": 0.3458,
+        "fb_rate": 0.5546
+      },
+      "reasons": [
+        "vs Grant Holmes \u2014 cause B (13.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.63)",
+        "Slightly + park (103)",
+        "Hot (89\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 683953,
       "name": "Travis Bazzana",
       "team": "Cleveland Guardians",
@@ -8428,59 +8521,7 @@
         "vs Anthony Kay \u2014 cause C (11.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.24)",
         "Platoon shape fades vs LHP",
-        "Hot (92\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 686948,
-      "name": "Drake Baldwin",
-      "team": "Atlanta Braves",
-      "bats": "L",
-      "opp": "New York Mets",
-      "opp_pitcher": "Christian Scott",
-      "venue": "Truist Park",
-      "gamePk": 824904,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.198,
-      "total": 41.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.85,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.5,
-        "hitter": 13.2,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1259,
-        "barrel_rate": 0.0647,
-        "hard_hit_rate": 0.3511,
-        "fb_rate": 0.4173
-      },
-      "reasons": [
-        "vs Christian Scott \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
-        "Pitcher: High K rate (27%)",
-        "Low air-pull (9%)",
-        "Platoon edge (L vs RHP)",
-        "Slightly + park (103)",
-        "Warm (81\u00b0F)",
+        "Hot (91\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8643,45 +8684,97 @@
       ]
     },
     {
-      "id": 666182,
-      "name": "Bo Bichette",
-      "team": "New York Mets",
+      "id": 621020,
+      "name": "Dansby Swanson",
+      "team": "Chicago Cubs",
       "bats": "R",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Grant Holmes",
-      "venue": "Truist Park",
-      "gamePk": 824904,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.129,
-      "total": 41.1,
+      "opp": "St. Louis Cardinals",
+      "opp_pitcher": "Andre Pallante",
+      "venue": "Wrigley Field",
+      "gamePk": 824659,
+      "slot": 9,
+      "confirmed": true,
+      "season_hr": 16,
+      "iso": 0.221,
+      "total": 41.3,
       "tier": "Pass",
       "role": "Watchlist",
       "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": 1.02,
+      "mix_fit": 1.06,
       "fit_tag": null,
       "value_play": false,
-      "pitcher_grade": "B",
+      "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 13.5,
-        "hitter": 10.6,
+        "pitcher": 7.0,
+        "hitter": 18.3,
         "environment": 9.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1826,
+        "barrel_rate": 0.073,
+        "hard_hit_rate": 0.4089,
+        "fb_rate": 0.5325
+      },
+      "reasons": [
+        "vs Andre Pallante \u2014 cause Pass (7.0/25)",
+        "Slightly + park (100)",
+        "Highly wind-dependent",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Bottom of order (#9)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 663586,
+      "name": "Austin Riley",
+      "team": "Atlanta Braves",
+      "bats": "R",
+      "opp": "New York Mets",
+      "opp_pitcher": "Christian Scott",
+      "venue": "Truist Park",
+      "gamePk": 824904,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 8,
+      "iso": 0.123,
+      "total": 41.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.44,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.5,
+        "hitter": 11.7,
+        "environment": 10.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.195,
-        "barrel_rate": 0.0579,
-        "hard_hit_rate": 0.3458,
-        "fb_rate": 0.5546
+        "air_pull_rate": 0.1462,
+        "barrel_rate": 0.0692,
+        "hard_hit_rate": 0.4044,
+        "fb_rate": 0.5178
       },
       "reasons": [
-        "vs Grant Holmes \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.63)",
+        "vs Christian Scott \u2014 cause C (11.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
+        "Pitcher: High K rate (27%)",
+        "Platoon shape fades vs RHP",
+        "Low air-pull (11%)",
+        "Pitch-mix fit: damages this arsenal (65% fastballs, rel 2.06 \u2192 mix-fit 1.44x)",
         "Slightly + park (103)",
-        "Warm (81\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8792,8 +8885,8 @@
       ]
     },
     {
-      "id": 663586,
-      "name": "Austin Riley",
+      "id": 660670,
+      "name": "Ronald Acu\u00f1a Jr.",
       "team": "Atlanta Braves",
       "bats": "R",
       "opp": "New York Mets",
@@ -8802,39 +8895,32 @@
       "gamePk": 824904,
       "slot": null,
       "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.123,
-      "total": 40.2,
+      "season_hr": 7,
+      "iso": 0.17,
+      "total": 40.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "shape_source": "statcast",
+      "shape_source": "proxy",
       "pull_fit": false,
-      "mix_fit": 1.44,
+      "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
       "pitcher_grade": "C",
       "breakdown": {
         "pitcher": 11.5,
-        "hitter": 11.7,
-        "environment": 9.0,
+        "hitter": 11.0,
+        "environment": 10.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
-      "statcast": {
-        "air_pull_rate": 0.1462,
-        "barrel_rate": 0.0692,
-        "hard_hit_rate": 0.4044,
-        "fb_rate": 0.5178
-      },
+      "statcast": null,
       "reasons": [
         "vs Christian Scott \u2014 cause C (11.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.00)",
         "Pitcher: High K rate (27%)",
-        "Platoon shape fades vs RHP",
-        "Low air-pull (11%)",
-        "Pitch-mix fit: damages this arsenal (65% fastballs, rel 2.06 \u2192 mix-fit 1.44x)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (103)",
-        "Warm (81\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8895,6 +8981,55 @@
       ]
     },
     {
+      "id": 608324,
+      "name": "Alex Bregman",
+      "team": "Chicago Cubs",
+      "bats": "R",
+      "opp": "St. Louis Cardinals",
+      "opp_pitcher": "Andre Pallante",
+      "venue": "Wrigley Field",
+      "gamePk": 824659,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 7,
+      "iso": 0.101,
+      "total": 40.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.3,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.0,
+        "hitter": 10.0,
+        "environment": 9.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.187,
+        "barrel_rate": 0.042,
+        "hard_hit_rate": 0.3467,
+        "fb_rate": 0.4623
+      },
+      "reasons": [
+        "vs Andre Pallante \u2014 cause Pass (7.0/25)",
+        "Good air-pull (20%)",
+        "Poor pitch-mix fit (51% breaking balls, rel 0.30 \u2192 mix-fit 0.30x)",
+        "Slightly + park (100)",
+        "Highly wind-dependent",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 677800,
       "name": "Wilyer Abreu",
       "team": "Boston Red Sox",
@@ -8936,7 +9071,7 @@
         "Platoon shape: spikes vs LHP (barrel 11%, air-pull 17%)",
         "Above-avg barrels (11%)",
         "Pitch-mix fit: damages this arsenal (50% breaking balls, rel 0.96 \u2192 mix-fit 1.29x)",
-        "Warm (76\u00b0F)",
+        "Warm (78\u00b0F)",
         "Wind out ~8 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -9093,54 +9228,8 @@
         "Platoon shape fades vs LHP",
         "Low air-pull (9%)",
         "Platoon edge (R vs LHP)",
-        "Warm (76\u00b0F)",
+        "Warm (78\u00b0F)",
         "Wind out ~8 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 660670,
-      "name": "Ronald Acu\u00f1a Jr.",
-      "team": "Atlanta Braves",
-      "bats": "R",
-      "opp": "New York Mets",
-      "opp_pitcher": "Christian Scott",
-      "venue": "Truist Park",
-      "gamePk": 824904,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.17,
-      "total": 39.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.5,
-        "hitter": 11.0,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Christian Scott \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
-        "Pitcher: High K rate (27%)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Slightly + park (103)",
-        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9236,7 +9325,7 @@
         "vs Anthony Kay \u2014 cause C (11.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.24)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hot (92\u00b0F)",
+        "Hot (91\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9286,7 +9375,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.24)",
         "Good air-pull (22%)",
         "Poor pitch-mix fit (46% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Hot (92\u00b0F)",
+        "Hot (91\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9396,56 +9485,6 @@
       ]
     },
     {
-      "id": 683737,
-      "name": "Michael Busch",
-      "team": "Chicago Cubs",
-      "bats": "L",
-      "opp": "St. Louis Cardinals",
-      "opp_pitcher": "Andre Pallante",
-      "venue": "Wrigley Field",
-      "gamePk": 824659,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.162,
-      "total": 38.6,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.71,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.0,
-        "hitter": 14.6,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1545,
-        "barrel_rate": 0.0737,
-        "hard_hit_rate": 0.364,
-        "fb_rate": 0.5384
-      },
-      "reasons": [
-        "vs Andre Pallante \u2014 cause Pass (7.0/25)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (51% breaking balls, rel 0.30 \u2192 mix-fit 0.71x)",
-        "Slightly + park (100)",
-        "Highly wind-dependent",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 666160,
       "name": "Mickey Moniak",
       "team": "Colorado Rockies",
@@ -9536,6 +9575,56 @@
         "Platoon shape fades vs LHP",
         "Slightly + park (103)",
         "Retractable roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 543760,
+      "name": "Marcus Semien",
+      "team": "New York Mets",
+      "bats": "R",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Grant Holmes",
+      "venue": "Truist Park",
+      "gamePk": 824904,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 9,
+      "iso": 0.127,
+      "total": 38.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.67,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 6.8,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1716,
+        "barrel_rate": 0.0596,
+        "hard_hit_rate": 0.3303,
+        "fb_rate": 0.5058
+      },
+      "reasons": [
+        "vs Grant Holmes \u2014 cause B (13.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.63)",
+        "Poor pitch-mix fit (52% fastballs, rel 0.93 \u2192 mix-fit 0.67x)",
+        "Slightly + park (103)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9646,6 +9735,58 @@
       "role_notes": []
     },
     {
+      "id": 645277,
+      "name": "Ozzie Albies",
+      "team": "Atlanta Braves",
+      "bats": "S",
+      "opp": "New York Mets",
+      "opp_pitcher": "Christian Scott",
+      "venue": "Truist Park",
+      "gamePk": 824904,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 13,
+      "iso": 0.166,
+      "total": 37.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.63,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.5,
+        "hitter": 8.2,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1801,
+        "barrel_rate": 0.0497,
+        "hard_hit_rate": 0.3309,
+        "fb_rate": 0.5965
+      },
+      "reasons": [
+        "vs Christian Scott \u2014 cause C (11.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
+        "Pitcher: High K rate (27%)",
+        "Platoon shape fades vs RHP",
+        "Poor pitch-mix fit (65% fastballs, rel 0.80 \u2192 mix-fit 0.63x)",
+        "Slightly + park (103)",
+        "Hot (89\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 681198,
       "name": "TJ Rumfield",
       "team": "Colorado Rockies",
@@ -9734,58 +9875,8 @@
         "Pitcher: Avg+ HR allowed (HR/9 0.55)",
         "Platoon edge (R vs LHP)",
         "Poor pitch-mix fit (64% fastballs, rel 0.30 \u2192 mix-fit 0.47x)",
-        "Warm (76\u00b0F)",
+        "Warm (78\u00b0F)",
         "Wind out ~8 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 543760,
-      "name": "Marcus Semien",
-      "team": "New York Mets",
-      "bats": "R",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Grant Holmes",
-      "venue": "Truist Park",
-      "gamePk": 824904,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.127,
-      "total": 37.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.67,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 13.5,
-        "hitter": 6.8,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1716,
-        "barrel_rate": 0.0596,
-        "hard_hit_rate": 0.3303,
-        "fb_rate": 0.5058
-      },
-      "reasons": [
-        "vs Grant Holmes \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.63)",
-        "Poor pitch-mix fit (52% fastballs, rel 0.93 \u2192 mix-fit 0.67x)",
-        "Slightly + park (103)",
-        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9834,60 +9925,8 @@
         "vs Jake Bennett \u2014 cause C (11.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 0.55)",
         "Poor pitch-mix fit (64% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Warm (76\u00b0F)",
+        "Warm (78\u00b0F)",
         "Wind out ~8 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 645277,
-      "name": "Ozzie Albies",
-      "team": "Atlanta Braves",
-      "bats": "S",
-      "opp": "New York Mets",
-      "opp_pitcher": "Christian Scott",
-      "venue": "Truist Park",
-      "gamePk": 824904,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.166,
-      "total": 36.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.63,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.5,
-        "hitter": 8.2,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1801,
-        "barrel_rate": 0.0497,
-        "hard_hit_rate": 0.3309,
-        "fb_rate": 0.5965
-      },
-      "reasons": [
-        "vs Christian Scott \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
-        "Pitcher: High K rate (27%)",
-        "Platoon shape fades vs RHP",
-        "Poor pitch-mix fit (65% fastballs, rel 0.80 \u2192 mix-fit 0.63x)",
-        "Slightly + park (103)",
-        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9997,6 +10036,59 @@
       ],
       "warnings": [
         "Pitcher park (93)",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 643289,
+      "name": "Mauricio Dub\u00f3n",
+      "team": "Atlanta Braves",
+      "bats": "R",
+      "opp": "New York Mets",
+      "opp_pitcher": "Christian Scott",
+      "venue": "Truist Park",
+      "gamePk": 824904,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 8,
+      "iso": 0.15,
+      "total": 35.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.83,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.5,
+        "hitter": 6.2,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1509,
+        "barrel_rate": 0.0492,
+        "hard_hit_rate": 0.3834,
+        "fb_rate": 0.4794
+      },
+      "reasons": [
+        "vs Christian Scott \u2014 cause C (11.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
+        "Pitcher: High K rate (27%)",
+        "Platoon shape fades vs RHP",
+        "Low air-pull (10%)",
+        "Poor pitch-mix fit (65% fastballs, rel 0.30 \u2192 mix-fit 0.83x)",
+        "Slightly + park (103)",
+        "Hot (89\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -10159,59 +10251,6 @@
       ]
     },
     {
-      "id": 643289,
-      "name": "Mauricio Dub\u00f3n",
-      "team": "Atlanta Braves",
-      "bats": "R",
-      "opp": "New York Mets",
-      "opp_pitcher": "Christian Scott",
-      "venue": "Truist Park",
-      "gamePk": 824904,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.15,
-      "total": 34.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.83,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.5,
-        "hitter": 6.2,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1509,
-        "barrel_rate": 0.0492,
-        "hard_hit_rate": 0.3834,
-        "fb_rate": 0.4794
-      },
-      "reasons": [
-        "vs Christian Scott \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
-        "Pitcher: High K rate (27%)",
-        "Platoon shape fades vs RHP",
-        "Low air-pull (10%)",
-        "Poor pitch-mix fit (65% fastballs, rel 0.30 \u2192 mix-fit 0.83x)",
-        "Slightly + park (103)",
-        "Warm (81\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 663728,
       "name": "Cal Raleigh",
       "team": "Seattle Mariners",
@@ -10257,56 +10296,6 @@
       ],
       "warnings": [
         "Pitcher park (93)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 608324,
-      "name": "Alex Bregman",
-      "team": "Chicago Cubs",
-      "bats": "R",
-      "opp": "St. Louis Cardinals",
-      "opp_pitcher": "Andre Pallante",
-      "venue": "Wrigley Field",
-      "gamePk": 824659,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.101,
-      "total": 34.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.3,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.0,
-        "hitter": 10.0,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.187,
-        "barrel_rate": 0.042,
-        "hard_hit_rate": 0.3467,
-        "fb_rate": 0.4623
-      },
-      "reasons": [
-        "vs Andre Pallante \u2014 cause Pass (7.0/25)",
-        "Good air-pull (20%)",
-        "Poor pitch-mix fit (51% breaking balls, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Slightly + park (100)",
-        "Highly wind-dependent",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -10648,7 +10637,7 @@
         "Pitcher: High K rate (28%)",
         "Platoon edge (R vs LHP)",
         "Poor pitch-mix fit (50% breaking balls, rel 0.30 \u2192 mix-fit 0.54x)",
-        "Warm (76\u00b0F)",
+        "Warm (78\u00b0F)",
         "Wind out ~8 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -10699,7 +10688,7 @@
         "Pitcher: Suppresses HR (HR/9 0.73)",
         "Pitcher: High K rate (28%)",
         "Poor pitch-mix fit (50% breaking balls, rel 0.30 \u2192 mix-fit 0.60x)",
-        "Warm (76\u00b0F)",
+        "Warm (78\u00b0F)",
         "Wind out ~8 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -10751,7 +10740,7 @@
         "Pitcher: High K rate (28%)",
         "Platoon shape fades vs RHP",
         "Poor pitch-mix fit (54% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Hot (92\u00b0F)",
+        "Hot (91\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -10990,7 +10979,7 @@
         "Pitcher: High K rate (28%)",
         "Platoon edge (R vs LHP)",
         "Poor pitch-mix fit (50% breaking balls, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Warm (76\u00b0F)",
+        "Warm (78\u00b0F)",
         "Wind out ~8 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -11305,16 +11294,14 @@
       "legs": [
         "Junior Caminero (Tampa Bay Rays, 73.3, Power Satellite)",
         "Pete Alonso (Baltimore Orioles, 71.5, Cause Satellite)",
-        "Aaron Judge (New York Yankees, 71.5, Cause Satellite)"
+        "Aaron Judge (New York Yankees, 70.0, Cause Satellite)"
       ],
       "why": "Four different games/causes (survival layer) \u2014 RR scores on cause diversity."
     },
     "longshot_group": {
       "legs": [
-        "Jazz Chisholm Jr. (New York Yankees, 65.4)",
-        "Trevor Larnach (Minnesota Twins, 65.0)",
-        "Byron Buxton (Minnesota Twins, 62.6)",
-        "Kody Clemens (Minnesota Twins, 62.1)"
+        "Jazz Chisholm Jr. (New York Yankees, 64.4)",
+        "Trevor Larnach (Minnesota Twins, 64.0)"
       ],
       "why": "Deeper bats with a real pitcher/park cause \u2014 bonus-only convergence."
     }
@@ -11645,7 +11632,7 @@
         "team": "New York Yankees",
         "opp_pitcher": "Mike Paredes",
         "role": "Cause Satellite",
-        "total": 71.5,
+        "total": 70.0,
         "cause_grade": "A",
         "result_hr": null,
         "cause_fired": null,
@@ -11681,7 +11668,7 @@
         "team": "New York Yankees",
         "opp_pitcher": "Mike Paredes",
         "role": "Cause Satellite",
-        "total": 68.4,
+        "total": 67.4,
         "cause_grade": "A",
         "result_hr": null,
         "cause_fired": null,
