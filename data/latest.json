@@ -1,9 +1,9 @@
 {
   "version": "2.5",
-  "generated_utc": "2026-07-06T15:10:11.093040+00:00",
+  "generated_utc": "2026-07-06T16:39:16.896241+00:00",
   "slate_date": "2026-07-06",
   "games": 8,
-  "confirmed_lineups": 1,
+  "confirmed_lineups": 2,
   "statcast": true,
   "statcast_meta": {
     "window_days": 21,
@@ -11,7 +11,7 @@
     "start": "2026-06-16",
     "end": "2026-07-06",
     "days_fetched": 0,
-    "days_cached": 20,
+    "days_cached": 21,
     "batters": 398,
     "pitchers": 435,
     "league": {
@@ -106,7 +106,7 @@
       "playable_bats": [
         {
           "name": "Luis Garc\u00eda Jr.",
-          "total": 70.0,
+          "total": 69.0,
           "role": "Cause Satellite",
           "fit_tag": "PITCH-FIT"
         }
@@ -121,17 +121,10 @@
       "pitcher_cause": 18.0,
       "park_hr": 101,
       "cause_score": 18.2,
-      "capture_method": "Single best bat",
+      "capture_method": "Team-HR placeholder (cause strong, bat capture thin)",
       "public_heat": false,
-      "n_playable": 1,
-      "playable_bats": [
-        {
-          "name": "Yordan Alvarez",
-          "total": 62.0,
-          "role": "Cause Satellite",
-          "fit_tag": "PITCH-FIT"
-        }
-      ]
+      "n_playable": 0,
+      "playable_bats": []
     },
     {
       "team": "New York Yankees",
@@ -319,8 +312,15 @@
       "cause_score": 6.2,
       "capture_method": "Watchlist / pass (no clear cause)",
       "public_heat": false,
-      "n_playable": 0,
-      "playable_bats": []
+      "n_playable": 1,
+      "playable_bats": [
+        {
+          "name": "Kyle Schwarber",
+          "total": 64.9,
+          "role": "Locked Core",
+          "fit_tag": "PITCH-FIT"
+        }
+      ]
     }
   ],
   "candidates": [
@@ -337,8 +337,8 @@
       "confirmed": false,
       "season_hr": 19,
       "iso": 0.279,
-      "total": 70.0,
-      "tier": "Satellite",
+      "total": 69.0,
+      "tier": "Longshot",
       "role": "Cause Satellite",
       "shape_source": "statcast",
       "pull_fit": true,
@@ -349,7 +349,7 @@
       "breakdown": {
         "pitcher": 18.0,
         "hitter": 31.0,
-        "environment": 10.0,
+        "environment": 9.0,
         "lineup": 6.0,
         "confidence": 5.0
       },
@@ -368,7 +368,7 @@
         "Elite barrel rate (19%)",
         "Platoon edge (L vs RHP)",
         "Slightly + park (102)",
-        "Hot (92\u00b0F)",
+        "Warm (76\u00b0F)",
         "Model: elite shape + clear cause",
         "VALUE longshot: real shape + cause off the chalk"
       ],
@@ -421,13 +421,61 @@
         "Elite barrel rate (17%)",
         "Hard-hit 49%",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
         "Model: elite shape + clear cause"
       ],
       "warnings": [
         "Pitcher park (92)",
         "Lineup not confirmed"
       ],
+      "role_notes": []
+    },
+    {
+      "id": 656941,
+      "name": "Kyle Schwarber",
+      "team": "Philadelphia Phillies",
+      "bats": "L",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Noah Cameron",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824089,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 30,
+      "iso": 0.313,
+      "total": 64.9,
+      "tier": "Longshot",
+      "role": "Locked Core",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.47,
+      "fit_tag": "PITCH-FIT",
+      "value_play": false,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.5,
+        "hitter": 32.4,
+        "environment": 9.0,
+        "lineup": 12.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2608,
+        "barrel_rate": 0.0975,
+        "hard_hit_rate": 0.5171,
+        "fb_rate": 0.5874
+      },
+      "reasons": [
+        "vs Noah Cameron \u2014 cause Pass (7.5/25)",
+        "Elite air-pull (32%)",
+        "Above-avg barrels (11%)",
+        "Hard-hit 52%",
+        "Pitch-mix fit: damages this arsenal (55% fastballs, rel 2.20 \u2192 mix-fit 1.47x)",
+        "Hot (89\u00b0F)",
+        "Top of order (#2)",
+        "Model: one strong signal"
+      ],
+      "warnings": [],
       "role_notes": []
     },
     {
@@ -695,8 +743,8 @@
       "confirmed": false,
       "season_hr": 29,
       "iso": 0.317,
-      "total": 62.0,
-      "tier": "Longshot",
+      "total": 61.0,
+      "tier": "Pass",
       "role": "Cause Satellite",
       "shape_source": "statcast",
       "pull_fit": true,
@@ -707,7 +755,7 @@
       "breakdown": {
         "pitcher": 18.0,
         "hitter": 24.0,
-        "environment": 10.0,
+        "environment": 9.0,
         "lineup": 6.0,
         "confidence": 4.0
       },
@@ -726,59 +774,7 @@
         "Elite barrel rate (17%)",
         "Platoon edge (L vs RHP)",
         "Slightly + park (102)",
-        "Hot (92\u00b0F)",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 695578,
-      "name": "James Wood",
-      "team": "Washington Nationals",
-      "bats": "L",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Mike Burrows",
-      "venue": "Nationals Park",
-      "gamePk": 822712,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 23,
-      "iso": 0.267,
-      "total": 61.0,
-      "tier": "Pass",
-      "role": "Cause Satellite",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.47,
-      "fit_tag": "PITCH-FIT",
-      "value_play": false,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 18.0,
-        "hitter": 23.0,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1366,
-        "barrel_rate": 0.0921,
-        "hard_hit_rate": 0.5088,
-        "fb_rate": 0.5018
-      },
-      "reasons": [
-        "vs Mike Burrows \u2014 cause A (18.0/25)",
-        "Pitcher: Elevated HR allowed (HR/9 1.90)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Low air-pull (9%)",
-        "Above-avg barrels (11%)",
-        "Hard-hit 51%",
-        "Platoon edge (L vs RHP)",
-        "Slightly + park (102)",
-        "Hot (92\u00b0F)",
+        "Warm (76\u00b0F)",
         "Model: one strong signal"
       ],
       "warnings": [
@@ -939,6 +935,58 @@
       "role_notes": []
     },
     {
+      "id": 695578,
+      "name": "James Wood",
+      "team": "Washington Nationals",
+      "bats": "L",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Mike Burrows",
+      "venue": "Nationals Park",
+      "gamePk": 822712,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 23,
+      "iso": 0.267,
+      "total": 60.0,
+      "tier": "Pass",
+      "role": "Cause Satellite",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.47,
+      "fit_tag": "PITCH-FIT",
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.0,
+        "hitter": 23.0,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1366,
+        "barrel_rate": 0.0921,
+        "hard_hit_rate": 0.5088,
+        "fb_rate": 0.5018
+      },
+      "reasons": [
+        "vs Mike Burrows \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.90)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "Low air-pull (9%)",
+        "Above-avg barrels (11%)",
+        "Hard-hit 51%",
+        "Platoon edge (L vs RHP)",
+        "Slightly + park (102)",
+        "Warm (76\u00b0F)",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
       "id": 691720,
       "name": "Kyle Karros",
       "team": "Colorado Rockies",
@@ -988,112 +1036,6 @@
         "Lineup not confirmed"
       ],
       "role_notes": []
-    },
-    {
-      "id": 701358,
-      "name": "Cam Smith",
-      "team": "Houston Astros",
-      "bats": "R",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Miles Mikolas",
-      "venue": "Nationals Park",
-      "gamePk": 822712,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.159,
-      "total": 59.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.15,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 18.0,
-        "hitter": 21.8,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2024,
-        "barrel_rate": 0.0873,
-        "hard_hit_rate": 0.4096,
-        "fb_rate": 0.4959
-      },
-      "reasons": [
-        "vs Miles Mikolas \u2014 cause A (18.0/25)",
-        "Pitcher: Elevated HR allowed (HR/9 1.93)",
-        "Pitcher: Low K rate (13%)",
-        "Good air-pull (23%)",
-        "Above-avg barrels (10%)",
-        "Slightly + park (100)",
-        "Hot (92\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 682928,
-      "name": "CJ Abrams",
-      "team": "Washington Nationals",
-      "bats": "L",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Mike Burrows",
-      "venue": "Nationals Park",
-      "gamePk": 822712,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.229,
-      "total": 59.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.86,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 18.0,
-        "hitter": 21.3,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1959,
-        "barrel_rate": 0.0718,
-        "hard_hit_rate": 0.3787,
-        "fb_rate": 0.5145
-      },
-      "reasons": [
-        "vs Mike Burrows \u2014 cause A (18.0/25)",
-        "Pitcher: Elevated HR allowed (HR/9 1.90)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Good air-pull (22%)",
-        "Platoon edge (L vs RHP)",
-        "Slightly + park (102)",
-        "Hot (92\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
     },
     {
       "id": 661388,
@@ -1146,55 +1088,56 @@
       "role_notes": []
     },
     {
-      "id": 656941,
-      "name": "Kyle Schwarber",
-      "team": "Philadelphia Phillies",
-      "bats": "L",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Noah Cameron",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824089,
+      "id": 701358,
+      "name": "Cam Smith",
+      "team": "Houston Astros",
+      "bats": "R",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Miles Mikolas",
+      "venue": "Nationals Park",
+      "gamePk": 822712,
       "slot": null,
       "confirmed": false,
-      "season_hr": 30,
-      "iso": 0.313,
-      "total": 58.9,
+      "season_hr": 11,
+      "iso": 0.159,
+      "total": 58.8,
       "tier": "Pass",
-      "role": "Power Satellite",
+      "role": "Watchlist",
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 1.47,
-      "fit_tag": "PITCH-FIT",
+      "mix_fit": 1.15,
+      "fit_tag": null,
       "value_play": false,
-      "pitcher_grade": "Pass",
+      "pitcher_grade": "A",
       "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 32.4,
+        "pitcher": 18.0,
+        "hitter": 21.8,
         "environment": 9.0,
         "lineup": 6.0,
         "confidence": 4.0
       },
       "statcast": {
-        "air_pull_rate": 0.2608,
-        "barrel_rate": 0.0975,
-        "hard_hit_rate": 0.5171,
-        "fb_rate": 0.5874
+        "air_pull_rate": 0.2024,
+        "barrel_rate": 0.0873,
+        "hard_hit_rate": 0.4096,
+        "fb_rate": 0.4959
       },
       "reasons": [
-        "vs Noah Cameron \u2014 cause Pass (7.5/25)",
-        "Elite air-pull (32%)",
-        "Above-avg barrels (11%)",
-        "Hard-hit 52%",
-        "Pitch-mix fit: damages this arsenal (55% fastballs, rel 2.20 \u2192 mix-fit 1.47x)",
-        "Hot (89\u00b0F)",
-        "Elite-hitter override (beats a neutral spot)",
+        "vs Miles Mikolas \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.93)",
+        "Pitcher: Low K rate (13%)",
+        "Good air-pull (23%)",
+        "Above-avg barrels (10%)",
+        "Slightly + park (100)",
+        "Warm (76\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
-        "Elite-hitter override (beats a neutral spot)"
+        "Hitter shape <22 \u2192 capped at Longshot"
       ]
     },
     {
@@ -1248,6 +1191,107 @@
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
+    },
+    {
+      "id": 682928,
+      "name": "CJ Abrams",
+      "team": "Washington Nationals",
+      "bats": "L",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Mike Burrows",
+      "venue": "Nationals Park",
+      "gamePk": 822712,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 18,
+      "iso": 0.229,
+      "total": 58.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.86,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.0,
+        "hitter": 21.3,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1959,
+        "barrel_rate": 0.0718,
+        "hard_hit_rate": 0.3787,
+        "fb_rate": 0.5145
+      },
+      "reasons": [
+        "vs Mike Burrows \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.90)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "Good air-pull (22%)",
+        "Platoon edge (L vs RHP)",
+        "Slightly + park (102)",
+        "Warm (76\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 669016,
+      "name": "Brandon Marsh",
+      "team": "Philadelphia Phillies",
+      "bats": "L",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Noah Cameron",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824089,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 15,
+      "iso": 0.202,
+      "total": 58.3,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.35,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.5,
+        "hitter": 29.8,
+        "environment": 9.0,
+        "lineup": 8.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2386,
+        "barrel_rate": 0.1211,
+        "hard_hit_rate": 0.4071,
+        "fb_rate": 0.5315
+      },
+      "reasons": [
+        "vs Noah Cameron \u2014 cause Pass (7.5/25)",
+        "Platoon shape: spikes vs LHP (barrel 15%, air-pull 25%)",
+        "Strong air-pull (25%)",
+        "Elite barrel rate (15%)",
+        "Pitch-mix fit: damages this arsenal (55% fastballs, rel 0.83 \u2192 mix-fit 1.35x)",
+        "Hot (89\u00b0F)",
+        "Mid order (#5)",
+        "Model: one strong signal"
+      ],
+      "warnings": [],
+      "role_notes": []
     },
     {
       "id": 650489,
@@ -1352,59 +1396,6 @@
       "role_notes": []
     },
     {
-      "id": 678554,
-      "name": "Curtis Mead",
-      "team": "Washington Nationals",
-      "bats": "R",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Mike Burrows",
-      "venue": "Nationals Park",
-      "gamePk": 822712,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.232,
-      "total": 57.6,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.21,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 18.0,
-        "hitter": 19.6,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.166,
-        "barrel_rate": 0.0902,
-        "hard_hit_rate": 0.3853,
-        "fb_rate": 0.5017
-      },
-      "reasons": [
-        "vs Mike Burrows \u2014 cause A (18.0/25)",
-        "Pitcher: Elevated HR allowed (HR/9 1.90)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Above-avg barrels (10%)",
-        "Pitch-mix fit: damages this arsenal (41% breaking balls, rel 2.20 \u2192 mix-fit 1.21x)",
-        "Slightly + park (100)",
-        "Hot (92\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 605141,
       "name": "Mookie Betts",
       "team": "Los Angeles Dodgers",
@@ -1450,59 +1441,6 @@
       "warnings": [
         "Park factor unknown",
         "Weather unavailable",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 665161,
-      "name": "Jeremy Pe\u00f1a",
-      "team": "Houston Astros",
-      "bats": "R",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Miles Mikolas",
-      "venue": "Nationals Park",
-      "gamePk": 822712,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 6,
-      "iso": 0.148,
-      "total": 57.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.02,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 18.0,
-        "hitter": 19.1,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2112,
-        "barrel_rate": 0.0585,
-        "hard_hit_rate": 0.4323,
-        "fb_rate": 0.5445
-      },
-      "reasons": [
-        "vs Miles Mikolas \u2014 cause A (18.0/25)",
-        "Pitcher: Elevated HR allowed (HR/9 1.93)",
-        "Pitcher: Low K rate (13%)",
-        "Platoon shape: spikes vs RHP (barrel 5%, air-pull 27%)",
-        "Strong air-pull (27%)",
-        "Slightly + park (100)",
-        "Hot (92\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -1558,53 +1496,57 @@
       "role_notes": []
     },
     {
-      "id": 669016,
-      "name": "Brandon Marsh",
-      "team": "Philadelphia Phillies",
-      "bats": "L",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Noah Cameron",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824089,
+      "id": 678554,
+      "name": "Curtis Mead",
+      "team": "Washington Nationals",
+      "bats": "R",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Mike Burrows",
+      "venue": "Nationals Park",
+      "gamePk": 822712,
       "slot": null,
       "confirmed": false,
-      "season_hr": 15,
-      "iso": 0.202,
-      "total": 56.3,
+      "season_hr": 14,
+      "iso": 0.232,
+      "total": 56.6,
       "tier": "Pass",
-      "role": "Pass",
+      "role": "Watchlist",
       "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.35,
+      "pull_fit": false,
+      "mix_fit": 1.21,
       "fit_tag": null,
       "value_play": false,
-      "pitcher_grade": "Pass",
+      "pitcher_grade": "A",
       "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 29.8,
+        "pitcher": 18.0,
+        "hitter": 19.6,
         "environment": 9.0,
         "lineup": 6.0,
         "confidence": 4.0
       },
       "statcast": {
-        "air_pull_rate": 0.2386,
-        "barrel_rate": 0.1211,
-        "hard_hit_rate": 0.4071,
-        "fb_rate": 0.5315
+        "air_pull_rate": 0.166,
+        "barrel_rate": 0.0902,
+        "hard_hit_rate": 0.3853,
+        "fb_rate": 0.5017
       },
       "reasons": [
-        "vs Noah Cameron \u2014 cause Pass (7.5/25)",
-        "Platoon shape: spikes vs LHP (barrel 15%, air-pull 25%)",
-        "Strong air-pull (25%)",
-        "Elite barrel rate (15%)",
-        "Pitch-mix fit: damages this arsenal (55% fastballs, rel 0.83 \u2192 mix-fit 1.35x)",
-        "Hot (89\u00b0F)",
+        "vs Mike Burrows \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.90)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "Above-avg barrels (10%)",
+        "Pitch-mix fit: damages this arsenal (41% breaking balls, rel 2.20 \u2192 mix-fit 1.21x)",
+        "Slightly + park (100)",
+        "Warm (76\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
       ],
-      "role_notes": []
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 669477,
@@ -1650,13 +1592,66 @@
         "Hard-hit 46%",
         "Pitch-mix fit: damages this arsenal (46% fastballs, rel 1.80 \u2192 mix-fit 1.43x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)"
+        "Wind blowing OUT ~14 mph toward CF (approx bearing)"
       ],
       "warnings": [
         "Strong pitcher park (89)",
         "Lineup not confirmed"
       ],
       "role_notes": []
+    },
+    {
+      "id": 665161,
+      "name": "Jeremy Pe\u00f1a",
+      "team": "Houston Astros",
+      "bats": "R",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Miles Mikolas",
+      "venue": "Nationals Park",
+      "gamePk": 822712,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 6,
+      "iso": 0.148,
+      "total": 56.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.02,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.0,
+        "hitter": 19.1,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2112,
+        "barrel_rate": 0.0585,
+        "hard_hit_rate": 0.4323,
+        "fb_rate": 0.5445
+      },
+      "reasons": [
+        "vs Miles Mikolas \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.93)",
+        "Pitcher: Low K rate (13%)",
+        "Platoon shape: spikes vs RHP (barrel 5%, air-pull 27%)",
+        "Strong air-pull (27%)",
+        "Slightly + park (100)",
+        "Warm (76\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 521692,
@@ -1706,58 +1701,6 @@
       ],
       "warnings": [],
       "role_notes": []
-    },
-    {
-      "id": 686611,
-      "name": "Dylan Crews",
-      "team": "Washington Nationals",
-      "bats": "R",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Mike Burrows",
-      "venue": "Nationals Park",
-      "gamePk": 822712,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 6,
-      "iso": 0.149,
-      "total": 55.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.35,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 18.0,
-        "hitter": 17.8,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1503,
-        "barrel_rate": 0.0769,
-        "hard_hit_rate": 0.4096,
-        "fb_rate": 0.5308
-      },
-      "reasons": [
-        "vs Mike Burrows \u2014 cause A (18.0/25)",
-        "Pitcher: Elevated HR allowed (HR/9 1.90)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Pitch-mix fit: damages this arsenal (41% breaking balls, rel 2.20 \u2192 mix-fit 1.35x)",
-        "Slightly + park (100)",
-        "Hot (92\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
     },
     {
       "id": 571970,
@@ -1899,7 +1842,7 @@
         "Above-avg barrels (11%)",
         "Pitch-mix fit: damages this arsenal (55% fastballs, rel 2.20 \u2192 mix-fit 1.51x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
         "Model: one strong signal"
       ],
       "warnings": [
@@ -1953,6 +1896,58 @@
       "warnings": [
         "Park factor unknown",
         "Weather unavailable",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 686611,
+      "name": "Dylan Crews",
+      "team": "Washington Nationals",
+      "bats": "R",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Mike Burrows",
+      "venue": "Nationals Park",
+      "gamePk": 822712,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 6,
+      "iso": 0.149,
+      "total": 54.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.35,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.0,
+        "hitter": 17.8,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1503,
+        "barrel_rate": 0.0769,
+        "hard_hit_rate": 0.4096,
+        "fb_rate": 0.5308
+      },
+      "reasons": [
+        "vs Mike Burrows \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.90)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "Pitch-mix fit: damages this arsenal (41% breaking balls, rel 2.20 \u2192 mix-fit 1.35x)",
+        "Slightly + park (100)",
+        "Warm (76\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -2115,59 +2110,6 @@
       ]
     },
     {
-      "id": 572233,
-      "name": "Christian Walker",
-      "team": "Houston Astros",
-      "bats": "R",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Miles Mikolas",
-      "venue": "Nationals Park",
-      "gamePk": 822712,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 20,
-      "iso": 0.232,
-      "total": 54.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.3,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 18.0,
-        "hitter": 16.0,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2067,
-        "barrel_rate": 0.0467,
-        "hard_hit_rate": 0.3801,
-        "fb_rate": 0.5077
-      },
-      "reasons": [
-        "vs Miles Mikolas \u2014 cause A (18.0/25)",
-        "Pitcher: Elevated HR allowed (HR/9 1.93)",
-        "Pitcher: Low K rate (13%)",
-        "Strong air-pull (25%)",
-        "Poor pitch-mix fit (51% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Slightly + park (100)",
-        "Hot (92\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 664034,
       "name": "Ty France",
       "team": "San Diego Padres",
@@ -2209,60 +2151,6 @@
         "Good air-pull (21%)",
         "Above-avg barrels (10%)",
         "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 660688,
-      "name": "Keibert Ruiz",
-      "team": "Washington Nationals",
-      "bats": "S",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Mike Burrows",
-      "venue": "Nationals Park",
-      "gamePk": 822712,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 6,
-      "iso": 0.188,
-      "total": 54.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.3,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 18.0,
-        "hitter": 16.0,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1956,
-        "barrel_rate": 0.0522,
-        "hard_hit_rate": 0.3614,
-        "fb_rate": 0.4952
-      },
-      "reasons": [
-        "vs Mike Burrows \u2014 cause A (18.0/25)",
-        "Pitcher: Elevated HR allowed (HR/9 1.90)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Platoon shape: spikes vs RHP (barrel 4%, air-pull 25%)",
-        "Strong air-pull (25%)",
-        "Poor pitch-mix fit (41% breaking balls, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Slightly + park (101)",
-        "Hot (92\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -2317,6 +2205,59 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 572233,
+      "name": "Christian Walker",
+      "team": "Houston Astros",
+      "bats": "R",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Miles Mikolas",
+      "venue": "Nationals Park",
+      "gamePk": 822712,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 20,
+      "iso": 0.232,
+      "total": 53.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.3,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.0,
+        "hitter": 16.0,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2067,
+        "barrel_rate": 0.0467,
+        "hard_hit_rate": 0.3801,
+        "fb_rate": 0.5077
+      },
+      "reasons": [
+        "vs Miles Mikolas \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.93)",
+        "Pitcher: Low K rate (13%)",
+        "Strong air-pull (25%)",
+        "Poor pitch-mix fit (51% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
+        "Slightly + park (100)",
+        "Warm (76\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -2426,6 +2367,106 @@
       ]
     },
     {
+      "id": 660688,
+      "name": "Keibert Ruiz",
+      "team": "Washington Nationals",
+      "bats": "S",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Mike Burrows",
+      "venue": "Nationals Park",
+      "gamePk": 822712,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 6,
+      "iso": 0.188,
+      "total": 53.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.3,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.0,
+        "hitter": 16.0,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1956,
+        "barrel_rate": 0.0522,
+        "hard_hit_rate": 0.3614,
+        "fb_rate": 0.4952
+      },
+      "reasons": [
+        "vs Mike Burrows \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.90)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "Platoon shape: spikes vs RHP (barrel 4%, air-pull 25%)",
+        "Strong air-pull (25%)",
+        "Poor pitch-mix fit (41% breaking balls, rel 0.30 \u2192 mix-fit 0.30x)",
+        "Slightly + park (101)",
+        "Warm (76\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 547180,
+      "name": "Bryce Harper",
+      "team": "Philadelphia Phillies",
+      "bats": "L",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Noah Cameron",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824089,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 20,
+      "iso": 0.252,
+      "total": 52.9,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.27,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.5,
+        "hitter": 22.4,
+        "environment": 9.0,
+        "lineup": 11.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1983,
+        "barrel_rate": 0.0856,
+        "hard_hit_rate": 0.4504,
+        "fb_rate": 0.5528
+      },
+      "reasons": [
+        "vs Noah Cameron \u2014 cause Pass (7.5/25)",
+        "Good air-pull (19%)",
+        "Hard-hit 45%",
+        "Pitch-mix fit: damages this arsenal (55% fastballs, rel 1.23 \u2192 mix-fit 1.27x)",
+        "Hot (89\u00b0F)",
+        "Heart of order (#3)"
+      ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
       "id": 662139,
       "name": "Daulton Varsho",
       "team": "Toronto Blue Jays",
@@ -2468,7 +2509,7 @@
         "Strong barrels (13%)",
         "Platoon edge (L vs RHP)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)"
+        "Wind blowing OUT ~14 mph toward CF (approx bearing)"
       ],
       "warnings": [
         "Pitcher park (92)",
@@ -2527,54 +2568,50 @@
       ]
     },
     {
-      "id": 670623,
-      "name": "Isaac Paredes",
-      "team": "Houston Astros",
+      "id": 607208,
+      "name": "Trea Turner",
+      "team": "Philadelphia Phillies",
       "bats": "R",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Miles Mikolas",
-      "venue": "Nationals Park",
-      "gamePk": 822712,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.169,
-      "total": 51.8,
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Noah Cameron",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824089,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 10,
+      "iso": 0.124,
+      "total": 51.9,
       "tier": "Pass",
       "role": "Watchlist",
       "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.77,
+      "pull_fit": false,
+      "mix_fit": 1.08,
       "fit_tag": null,
       "value_play": false,
-      "pitcher_grade": "A",
+      "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 18.0,
-        "hitter": 13.8,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 4.0
+        "pitcher": 7.5,
+        "hitter": 20.4,
+        "environment": 9.0,
+        "lineup": 12.0,
+        "confidence": 3.0
       },
       "statcast": {
-        "air_pull_rate": 0.2041,
-        "barrel_rate": 0.0608,
-        "hard_hit_rate": 0.3192,
-        "fb_rate": 0.5436
+        "air_pull_rate": 0.1575,
+        "barrel_rate": 0.0753,
+        "hard_hit_rate": 0.4247,
+        "fb_rate": 0.4846
       },
       "reasons": [
-        "vs Miles Mikolas \u2014 cause A (18.0/25)",
-        "Pitcher: Elevated HR allowed (HR/9 1.93)",
-        "Pitcher: Low K rate (13%)",
-        "Good air-pull (20%)",
-        "Poor pitch-mix fit (51% fastballs, rel 1.22 \u2192 mix-fit 0.77x)",
-        "Slightly + park (100)",
-        "Hot (92\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
+        "vs Noah Cameron \u2014 cause Pass (7.5/25)",
+        "Platoon shape: spikes vs LHP (barrel 10%, air-pull 15%)",
+        "Above-avg barrels (10%)",
+        "Platoon edge (R vs LHP)",
+        "Hot (89\u00b0F)",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -2733,8 +2770,8 @@
       ]
     },
     {
-      "id": 514888,
-      "name": "Jose Altuve",
+      "id": 670623,
+      "name": "Isaac Paredes",
       "team": "Houston Astros",
       "bats": "R",
       "opp": "Washington Nationals",
@@ -2743,36 +2780,38 @@
       "gamePk": 822712,
       "slot": null,
       "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.15,
+      "season_hr": 12,
+      "iso": 0.169,
       "total": 50.8,
       "tier": "Pass",
       "role": "Watchlist",
       "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.97,
+      "pull_fit": true,
+      "mix_fit": 0.77,
       "fit_tag": null,
       "value_play": false,
       "pitcher_grade": "A",
       "breakdown": {
         "pitcher": 18.0,
-        "hitter": 12.8,
-        "environment": 10.0,
+        "hitter": 13.8,
+        "environment": 9.0,
         "lineup": 6.0,
         "confidence": 4.0
       },
       "statcast": {
-        "air_pull_rate": 0.1677,
-        "barrel_rate": 0.0652,
-        "hard_hit_rate": 0.2581,
-        "fb_rate": 0.4733
+        "air_pull_rate": 0.2041,
+        "barrel_rate": 0.0608,
+        "hard_hit_rate": 0.3192,
+        "fb_rate": 0.5436
       },
       "reasons": [
         "vs Miles Mikolas \u2014 cause A (18.0/25)",
         "Pitcher: Elevated HR allowed (HR/9 1.93)",
         "Pitcher: Low K rate (13%)",
+        "Good air-pull (20%)",
+        "Poor pitch-mix fit (51% fastballs, rel 1.22 \u2192 mix-fit 0.77x)",
         "Slightly + park (100)",
-        "Hot (92\u00b0F)",
+        "Warm (76\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -2827,7 +2866,7 @@
         "Above-avg barrels (11%)",
         "Platoon edge (L vs RHP)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3081,7 +3120,7 @@
         "Elite air-pull (28%)",
         "Platoon edge (L vs RHP)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)"
+        "Wind blowing OUT ~14 mph toward CF (approx bearing)"
       ],
       "warnings": [
         "Pitcher park (92)",
@@ -3191,42 +3230,46 @@
       ]
     },
     {
-      "id": 691781,
-      "name": "Brady House",
-      "team": "Washington Nationals",
+      "id": 514888,
+      "name": "Jose Altuve",
+      "team": "Houston Astros",
       "bats": "R",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Mike Burrows",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Miles Mikolas",
       "venue": "Nationals Park",
       "gamePk": 822712,
       "slot": null,
       "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.172,
-      "total": 50.0,
+      "season_hr": 8,
+      "iso": 0.15,
+      "total": 49.8,
       "tier": "Pass",
       "role": "Watchlist",
-      "shape_source": "proxy",
+      "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": null,
+      "mix_fit": 0.97,
       "fit_tag": null,
       "value_play": false,
       "pitcher_grade": "A",
       "breakdown": {
         "pitcher": 18.0,
-        "hitter": 12.0,
-        "environment": 10.0,
+        "hitter": 12.8,
+        "environment": 9.0,
         "lineup": 6.0,
         "confidence": 4.0
       },
-      "statcast": null,
+      "statcast": {
+        "air_pull_rate": 0.1677,
+        "barrel_rate": 0.0652,
+        "hard_hit_rate": 0.2581,
+        "fb_rate": 0.4733
+      },
       "reasons": [
-        "vs Mike Burrows \u2014 cause A (18.0/25)",
-        "Pitcher: Elevated HR allowed (HR/9 1.90)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "vs Miles Mikolas \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.93)",
+        "Pitcher: Low K rate (13%)",
         "Slightly + park (100)",
-        "Hot (92\u00b0F)",
+        "Warm (76\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -3279,7 +3322,7 @@
         "Above-avg barrels (10%)",
         "Pitch-mix fit: damages this arsenal (46% fastballs, rel 1.43 \u2192 mix-fit 1.30x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3437,6 +3480,53 @@
       "role_notes": []
     },
     {
+      "id": 691781,
+      "name": "Brady House",
+      "team": "Washington Nationals",
+      "bats": "R",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Mike Burrows",
+      "venue": "Nationals Park",
+      "gamePk": 822712,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.172,
+      "total": 49.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.0,
+        "hitter": 12.0,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Mike Burrows \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.90)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Slightly + park (100)",
+        "Warm (76\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 609280,
       "name": "Miguel Andujar",
       "team": "San Diego Padres",
@@ -3580,7 +3670,7 @@
         "Good air-pull (19%)",
         "Platoon edge (L vs RHP)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3644,54 +3734,49 @@
       ]
     },
     {
-      "id": 695734,
-      "name": "Daylen Lile",
-      "team": "Washington Nationals",
-      "bats": "L",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Mike Burrows",
-      "venue": "Nationals Park",
-      "gamePk": 822712,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.161,
+      "id": 624641,
+      "name": "Edmundo Sosa",
+      "team": "Philadelphia Phillies",
+      "bats": "R",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Noah Cameron",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824089,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 5,
+      "iso": 0.163,
       "total": 48.5,
       "tier": "Pass",
       "role": "Watchlist",
       "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": 0.3,
+      "mix_fit": 1.33,
       "fit_tag": null,
       "value_play": false,
-      "pitcher_grade": "A",
+      "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 18.0,
-        "hitter": 10.5,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 4.0
+        "pitcher": 7.5,
+        "hitter": 21.0,
+        "environment": 9.0,
+        "lineup": 8.0,
+        "confidence": 3.0
       },
       "statcast": {
-        "air_pull_rate": 0.1519,
-        "barrel_rate": 0.0462,
-        "hard_hit_rate": 0.255,
-        "fb_rate": 0.5017
+        "air_pull_rate": 0.1535,
+        "barrel_rate": 0.0788,
+        "hard_hit_rate": 0.4119,
+        "fb_rate": 0.5161
       },
       "reasons": [
-        "vs Mike Burrows \u2014 cause A (18.0/25)",
-        "Pitcher: Elevated HR allowed (HR/9 1.90)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (41% breaking balls, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Slightly + park (102)",
-        "Hot (92\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
+        "vs Noah Cameron \u2014 cause Pass (7.5/25)",
+        "Platoon edge (R vs LHP)",
+        "Pitch-mix fit: damages this arsenal (55% fastballs, rel 1.95 \u2192 mix-fit 1.33x)",
+        "Hot (89\u00b0F)",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -3742,58 +3827,6 @@
       "warnings": [
         "Park factor unknown",
         "Weather unavailable",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 694728,
-      "name": "Brice Matthews",
-      "team": "Houston Astros",
-      "bats": "R",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Miles Mikolas",
-      "venue": "Nationals Park",
-      "gamePk": 822712,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 6,
-      "iso": 0.129,
-      "total": 48.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.64,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 18.0,
-        "hitter": 10.2,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1545,
-        "barrel_rate": 0.0593,
-        "hard_hit_rate": 0.3542,
-        "fb_rate": 0.4476
-      },
-      "reasons": [
-        "vs Miles Mikolas \u2014 cause A (18.0/25)",
-        "Pitcher: Elevated HR allowed (HR/9 1.93)",
-        "Pitcher: Low K rate (13%)",
-        "Poor pitch-mix fit (51% fastballs, rel 0.30 \u2192 mix-fit 0.64x)",
-        "Slightly + park (100)",
-        "Hot (92\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -4002,51 +4035,57 @@
       ]
     },
     {
-      "id": 547180,
-      "name": "Bryce Harper",
-      "team": "Philadelphia Phillies",
+      "id": 695734,
+      "name": "Daylen Lile",
+      "team": "Washington Nationals",
       "bats": "L",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Noah Cameron",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824089,
+      "opp": "Houston Astros",
+      "opp_pitcher": "Mike Burrows",
+      "venue": "Nationals Park",
+      "gamePk": 822712,
       "slot": null,
       "confirmed": false,
-      "season_hr": 20,
-      "iso": 0.252,
-      "total": 47.9,
+      "season_hr": 10,
+      "iso": 0.161,
+      "total": 47.5,
       "tier": "Pass",
-      "role": "Pass",
+      "role": "Watchlist",
       "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.27,
+      "pull_fit": false,
+      "mix_fit": 0.3,
       "fit_tag": null,
       "value_play": false,
-      "pitcher_grade": "Pass",
+      "pitcher_grade": "A",
       "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 22.4,
+        "pitcher": 18.0,
+        "hitter": 10.5,
         "environment": 9.0,
         "lineup": 6.0,
-        "confidence": 3.0
+        "confidence": 4.0
       },
       "statcast": {
-        "air_pull_rate": 0.1983,
-        "barrel_rate": 0.0856,
-        "hard_hit_rate": 0.4504,
-        "fb_rate": 0.5528
+        "air_pull_rate": 0.1519,
+        "barrel_rate": 0.0462,
+        "hard_hit_rate": 0.255,
+        "fb_rate": 0.5017
       },
       "reasons": [
-        "vs Noah Cameron \u2014 cause Pass (7.5/25)",
-        "Good air-pull (19%)",
-        "Hard-hit 45%",
-        "Pitch-mix fit: damages this arsenal (55% fastballs, rel 1.23 \u2192 mix-fit 1.27x)",
-        "Hot (89\u00b0F)"
+        "vs Mike Burrows \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.90)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (41% breaking balls, rel 0.30 \u2192 mix-fit 0.30x)",
+        "Slightly + park (102)",
+        "Warm (76\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
       ],
-      "role_notes": []
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 671218,
@@ -4088,7 +4127,7 @@
         "Pitcher: High HR allowed (HR/9 1.34)",
         "Pitcher: Above-avg barrels allowed (10%)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4139,11 +4178,63 @@
         "Pitcher: Avg+ HR allowed (HR/9 0.61)",
         "Elite air-pull (29%)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Strong pitcher park (89)",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 694728,
+      "name": "Brice Matthews",
+      "team": "Houston Astros",
+      "bats": "R",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Miles Mikolas",
+      "venue": "Nationals Park",
+      "gamePk": 822712,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 6,
+      "iso": 0.129,
+      "total": 47.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.64,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.0,
+        "hitter": 10.2,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1545,
+        "barrel_rate": 0.0593,
+        "hard_hit_rate": 0.3542,
+        "fb_rate": 0.4476
+      },
+      "reasons": [
+        "vs Miles Mikolas \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.93)",
+        "Pitcher: Low K rate (13%)",
+        "Poor pitch-mix fit (51% fastballs, rel 0.30 \u2192 mix-fit 0.64x)",
+        "Slightly + park (100)",
+        "Warm (76\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -4301,56 +4392,6 @@
       ]
     },
     {
-      "id": 656537,
-      "name": "Derek Hill",
-      "team": "Philadelphia Phillies",
-      "bats": "R",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Noah Cameron",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824089,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 6,
-      "iso": 0.177,
-      "total": 47.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.39,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 21.5,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1899,
-        "barrel_rate": 0.0972,
-        "hard_hit_rate": 0.3773,
-        "fb_rate": 0.4946
-      },
-      "reasons": [
-        "vs Noah Cameron \u2014 cause Pass (7.5/25)",
-        "Above-avg barrels (10%)",
-        "Platoon edge (R vs LHP)",
-        "Pitch-mix fit: damages this arsenal (55% fastballs, rel 1.71 \u2192 mix-fit 1.39x)",
-        "Hot (89\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 664056,
       "name": "Harrison Bader",
       "team": "San Francisco Giants",
@@ -4387,60 +4428,11 @@
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Strong pitcher park (89)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 624641,
-      "name": "Edmundo Sosa",
-      "team": "Philadelphia Phillies",
-      "bats": "R",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Noah Cameron",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824089,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 5,
-      "iso": 0.163,
-      "total": 46.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.33,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 21.0,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1535,
-        "barrel_rate": 0.0788,
-        "hard_hit_rate": 0.4119,
-        "fb_rate": 0.5161
-      },
-      "reasons": [
-        "vs Noah Cameron \u2014 cause Pass (7.5/25)",
-        "Platoon edge (R vs LHP)",
-        "Pitch-mix fit: damages this arsenal (55% fastballs, rel 1.95 \u2192 mix-fit 1.33x)",
-        "Hot (89\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -4488,12 +4480,62 @@
         "Pitcher: Above-avg barrels allowed (10%)",
         "Above-avg barrels (9%)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Strong pitcher park (89)",
         "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 656537,
+      "name": "Derek Hill",
+      "team": "Philadelphia Phillies",
+      "bats": "R",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Noah Cameron",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824089,
+      "slot": 9,
+      "confirmed": true,
+      "season_hr": 6,
+      "iso": 0.177,
+      "total": 46.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.39,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.5,
+        "hitter": 21.5,
+        "environment": 9.0,
+        "lineup": 5.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1899,
+        "barrel_rate": 0.0972,
+        "hard_hit_rate": 0.3773,
+        "fb_rate": 0.4946
+      },
+      "reasons": [
+        "vs Noah Cameron \u2014 cause Pass (7.5/25)",
+        "Above-avg barrels (10%)",
+        "Platoon edge (R vs LHP)",
+        "Pitch-mix fit: damages this arsenal (55% fastballs, rel 1.71 \u2192 mix-fit 1.39x)",
+        "Hot (89\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Bottom of order (#9)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -4542,56 +4584,6 @@
         "Low air-pull (9%)",
         "Above-avg barrels (12%)",
         "Hard-hit 48%",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 607208,
-      "name": "Trea Turner",
-      "team": "Philadelphia Phillies",
-      "bats": "R",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Noah Cameron",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824089,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.124,
-      "total": 45.9,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.08,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 20.4,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1575,
-        "barrel_rate": 0.0753,
-        "hard_hit_rate": 0.4247,
-        "fb_rate": 0.4846
-      },
-      "reasons": [
-        "vs Noah Cameron \u2014 cause Pass (7.5/25)",
-        "Platoon shape: spikes vs LHP (barrel 10%, air-pull 15%)",
-        "Above-avg barrels (10%)",
-        "Platoon edge (R vs LHP)",
-        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4845,59 +4837,6 @@
       ]
     },
     {
-      "id": 696285,
-      "name": "Jacob Young",
-      "team": "Washington Nationals",
-      "bats": "R",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Mike Burrows",
-      "venue": "Nationals Park",
-      "gamePk": 822712,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.151,
-      "total": 45.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.66,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 18.0,
-        "hitter": 7.3,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1599,
-        "barrel_rate": 0.0641,
-        "hard_hit_rate": 0.3458,
-        "fb_rate": 0.4817
-      },
-      "reasons": [
-        "vs Mike Burrows \u2014 cause A (18.0/25)",
-        "Pitcher: Elevated HR allowed (HR/9 1.90)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Platoon shape fades vs RHP",
-        "Poor pitch-mix fit (41% breaking balls, rel 0.30 \u2192 mix-fit 0.66x)",
-        "Slightly + park (100)",
-        "Hot (92\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 678218,
       "name": "Brandon Valenzuela",
       "team": "Toronto Blue Jays",
@@ -4938,7 +4877,7 @@
         "Good air-pull (20%)",
         "Poor pitch-mix fit (55% fastballs, rel 0.30 \u2192 mix-fit 0.62x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4992,11 +4931,111 @@
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (46% fastballs, rel 0.30 \u2192 mix-fit 0.58x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (92)",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 664761,
+      "name": "Alec Bohm",
+      "team": "Philadelphia Phillies",
+      "bats": "R",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Noah Cameron",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824089,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 11,
+      "iso": 0.148,
+      "total": 44.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.95,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.5,
+        "hitter": 14.8,
+        "environment": 9.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1256,
+        "barrel_rate": 0.0645,
+        "hard_hit_rate": 0.3687,
+        "fb_rate": 0.4567
+      },
+      "reasons": [
+        "vs Noah Cameron \u2014 cause Pass (7.5/25)",
+        "Platoon edge (R vs LHP)",
+        "Hot (89\u00b0F)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 696285,
+      "name": "Jacob Young",
+      "team": "Washington Nationals",
+      "bats": "R",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Mike Burrows",
+      "venue": "Nationals Park",
+      "gamePk": 822712,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 8,
+      "iso": 0.151,
+      "total": 44.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.66,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.0,
+        "hitter": 7.3,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1599,
+        "barrel_rate": 0.0641,
+        "hard_hit_rate": 0.3458,
+        "fb_rate": 0.4817
+      },
+      "reasons": [
+        "vs Mike Burrows \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.90)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "Platoon shape fades vs RHP",
+        "Poor pitch-mix fit (41% breaking balls, rel 0.30 \u2192 mix-fit 0.66x)",
+        "Slightly + park (100)",
+        "Warm (76\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -5188,7 +5227,7 @@
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (55% fastballs, rel 0.30 \u2192 mix-fit 0.62x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5538,7 +5577,7 @@
         "Pitcher: Above-avg barrels allowed (10%)",
         "Poor pitch-mix fit (46% fastballs, rel 1.14 \u2192 mix-fit 0.68x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5937,54 +5976,6 @@
       ]
     },
     {
-      "id": 664761,
-      "name": "Alec Bohm",
-      "team": "Philadelphia Phillies",
-      "bats": "R",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Noah Cameron",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824089,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.148,
-      "total": 39.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.95,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 14.8,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1256,
-        "barrel_rate": 0.0645,
-        "hard_hit_rate": 0.3687,
-        "fb_rate": 0.4567
-      },
-      "reasons": [
-        "vs Noah Cameron \u2014 cause Pass (7.5/25)",
-        "Platoon edge (R vs LHP)",
-        "Hot (89\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 676356,
       "name": "Jonny DeLuca",
       "team": "Tampa Bay Rays",
@@ -6228,60 +6219,11 @@
         "Strong air-pull (24%)",
         "Poor pitch-mix fit (55% fastballs, rel 0.30 \u2192 mix-fit 0.47x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Strong pitcher park (89)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 592663,
-      "name": "J.T. Realmuto",
-      "team": "Philadelphia Phillies",
-      "bats": "R",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Noah Cameron",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824089,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 6,
-      "iso": 0.13,
-      "total": 38.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.7,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 13.5,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1397,
-        "barrel_rate": 0.0605,
-        "hard_hit_rate": 0.3642,
-        "fb_rate": 0.5904
-      },
-      "reasons": [
-        "vs Noah Cameron \u2014 cause Pass (7.5/25)",
-        "Platoon edge (R vs LHP)",
-        "Poor pitch-mix fit (55% fastballs, rel 0.79 \u2192 mix-fit 0.70x)",
-        "Hot (89\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -6424,7 +6366,7 @@
         "Low air-pull (11%)",
         "Platoon edge (L vs RHP)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6481,6 +6423,55 @@
       ],
       "warnings": [
         "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 592663,
+      "name": "J.T. Realmuto",
+      "team": "Philadelphia Phillies",
+      "bats": "R",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Noah Cameron",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824089,
+      "slot": 8,
+      "confirmed": true,
+      "season_hr": 6,
+      "iso": 0.13,
+      "total": 37.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.7,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.5,
+        "hitter": 13.5,
+        "environment": 9.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1397,
+        "barrel_rate": 0.0605,
+        "hard_hit_rate": 0.3642,
+        "fb_rate": 0.5904
+      },
+      "reasons": [
+        "vs Noah Cameron \u2014 cause Pass (7.5/25)",
+        "Platoon edge (R vs LHP)",
+        "Poor pitch-mix fit (55% fastballs, rel 0.79 \u2192 mix-fit 0.70x)",
+        "Hot (89\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Bottom of order (#8)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -6683,56 +6674,6 @@
       ]
     },
     {
-      "id": 681082,
-      "name": "Bryson Stott",
-      "team": "Philadelphia Phillies",
-      "bats": "L",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Noah Cameron",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824089,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.15,
-      "total": 30.6,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.81,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 6.1,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1256,
-        "barrel_rate": 0.0746,
-        "hard_hit_rate": 0.3308,
-        "fb_rate": 0.5016
-      },
-      "reasons": [
-        "vs Noah Cameron \u2014 cause Pass (7.5/25)",
-        "Platoon shape fades vs LHP",
-        "Low air-pull (9%)",
-        "Poor pitch-mix fit (55% fastballs, rel 0.30 \u2192 mix-fit 0.81x)",
-        "Hot (89\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 666969,
       "name": "Adolis Garc\u00eda",
       "team": "Philadelphia Phillies",
@@ -6770,6 +6711,56 @@
       ],
       "warnings": [
         "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 681082,
+      "name": "Bryson Stott",
+      "team": "Philadelphia Phillies",
+      "bats": "L",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Noah Cameron",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824089,
+      "slot": 7,
+      "confirmed": true,
+      "season_hr": 7,
+      "iso": 0.15,
+      "total": 29.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.81,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.5,
+        "hitter": 6.1,
+        "environment": 9.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1256,
+        "barrel_rate": 0.0746,
+        "hard_hit_rate": 0.3308,
+        "fb_rate": 0.5016
+      },
+      "reasons": [
+        "vs Noah Cameron \u2014 cause Pass (7.5/25)",
+        "Platoon shape fades vs LHP",
+        "Low air-pull (9%)",
+        "Poor pitch-mix fit (55% fastballs, rel 0.30 \u2192 mix-fit 0.81x)",
+        "Hot (89\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Bottom of order (#7)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -7024,7 +7015,7 @@
         "team": "Washington Nationals",
         "opp_pitcher": "Mike Burrows",
         "role": "Cause Satellite",
-        "total": 70.0,
+        "total": 69.0,
         "cause_grade": "A",
         "result_hr": null,
         "cause_fired": null,
@@ -7038,6 +7029,18 @@
         "role": "Core",
         "total": 65.5,
         "cause_grade": "B",
+        "result_hr": null,
+        "cause_fired": null,
+        "teammate_hr": null,
+        "outcome": null
+      },
+      {
+        "player": "Kyle Schwarber",
+        "team": "Philadelphia Phillies",
+        "opp_pitcher": "Noah Cameron",
+        "role": "Locked Core",
+        "total": 64.9,
+        "cause_grade": "Pass",
         "result_hr": null,
         "cause_fired": null,
         "teammate_hr": null,
@@ -7108,7 +7111,7 @@
         "team": "Houston Astros",
         "opp_pitcher": "Miles Mikolas",
         "role": "Cause Satellite",
-        "total": 62.0,
+        "total": 61.0,
         "cause_grade": "A",
         "result_hr": null,
         "cause_fired": null,
@@ -7120,7 +7123,7 @@
         "team": "Washington Nationals",
         "opp_pitcher": "Mike Burrows",
         "role": "Cause Satellite",
-        "total": 61.0,
+        "total": 60.0,
         "cause_grade": "A",
         "result_hr": null,
         "cause_fired": null,
@@ -7134,18 +7137,6 @@
         "role": "Cause Satellite",
         "total": 60.0,
         "cause_grade": "A+",
-        "result_hr": null,
-        "cause_fired": null,
-        "teammate_hr": null,
-        "outcome": null
-      },
-      {
-        "player": "Kyle Schwarber",
-        "team": "Philadelphia Phillies",
-        "opp_pitcher": "Noah Cameron",
-        "role": "Power Satellite",
-        "total": 58.9,
-        "cause_grade": "Pass",
         "result_hr": null,
         "cause_fired": null,
         "teammate_hr": null,
