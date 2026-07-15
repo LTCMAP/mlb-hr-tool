@@ -1,27 +1,27 @@
 {
   "version": "2.5",
-  "generated_utc": "2026-07-14T23:22:40.947063+00:00",
-  "slate_date": "2026-07-14",
-  "games": 1,
-  "confirmed_lineups": 2,
+  "generated_utc": "2026-07-15T15:08:36.187195+00:00",
+  "slate_date": "2026-07-15",
+  "games": 0,
+  "confirmed_lineups": 0,
   "statcast": true,
   "statcast_meta": {
     "window_days": 21,
     "recent_days": 7,
-    "start": "2026-06-24",
-    "end": "2026-07-14",
+    "start": "2026-06-25",
+    "end": "2026-07-15",
     "days_fetched": 0,
-    "days_cached": 21,
-    "batters": 338,
-    "pitchers": 331,
+    "days_cached": 20,
+    "batters": 304,
+    "pitchers": 266,
     "league": {
-      "barrel_rate": 0.0754,
-      "hard_hit_rate": 0.3794,
-      "fb_rate": 0.5113,
-      "air_pull_rate": 0.1741,
-      "fly_rate": 0.2721,
-      "hr_per_pa": 0.0307,
-      "bbe_total": 4215
+      "barrel_rate": 0.0723,
+      "hard_hit_rate": 0.3773,
+      "fb_rate": 0.5087,
+      "air_pull_rate": 0.1746,
+      "fly_rate": 0.2753,
+      "hr_per_pa": 0.0303,
+      "bbe_total": 3403
     }
   },
   "method": "v2.5: rank causes \u2192 choose capture \u2192 lock confirmed shape that captures the cause. Adds directional wind (park bearing \u00d7 wind dir, \u00b13 env), empirical-Bayes shrinkage (small samples regress to league), and platoon-split shape (barrel/air-pull vs THIS hand), on top of v2.4 pitch-mix fit + TRAP flags. Weights P25/Shape40/Env15/Lineup12/Src8. Statcast (Savant) air-pull/barrel/pitch-mix active.",
@@ -42,64 +42,10 @@
     "Watchlist",
     "Pass"
   ],
-  "causes": [
-    {
-      "team": "American League All-Stars",
-      "opp": "National League All-Stars",
-      "pitcher": "Cristopher S\u00e1nchez",
-      "venue": "Citizens Bank Park",
-      "grade": "C",
-      "pitcher_cause": 11.5,
-      "park_hr": 107,
-      "cause_score": 13.2,
-      "capture_method": "Watchlist / pass (no clear cause)",
-      "public_heat": false,
-      "n_playable": 0,
-      "playable_bats": []
-    },
-    {
-      "team": "National League All-Stars",
-      "opp": "American League All-Stars",
-      "pitcher": "Dylan Cease",
-      "venue": "Citizens Bank Park",
-      "grade": "Pass",
-      "pitcher_cause": 5.0,
-      "park_hr": 107,
-      "cause_score": 6.8,
-      "capture_method": "Watchlist / pass (no clear cause)",
-      "public_heat": false,
-      "n_playable": 0,
-      "playable_bats": []
-    }
-  ],
+  "causes": [],
   "candidates": [],
   "structures": {},
-  "pitcher_board": [
-    {
-      "id": 650911,
-      "name": "Cristopher S\u00e1nchez",
-      "score": 11.5,
-      "grade": "C",
-      "flags": [
-        "Avg+ HR allowed (HR/9 0.85)",
-        "High K rate (27%)"
-      ],
-      "hr9": 0.85,
-      "barrel_allowed": 0.0836
-    },
-    {
-      "id": 656302,
-      "name": "Dylan Cease",
-      "score": 5.0,
-      "grade": "Pass",
-      "flags": [
-        "Suppresses HR (HR/9 0.46)",
-        "High K rate (37%)"
-      ],
-      "hr9": 0.46,
-      "barrel_allowed": 0.0677
-    }
-  ],
+  "pitcher_board": [],
   "audit_template": {
     "legend": {
       "A": "cause fired + our bat hit (perfect)",
