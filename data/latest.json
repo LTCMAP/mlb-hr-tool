@@ -1,27 +1,27 @@
 {
   "version": "2.5",
-  "generated_utc": "2026-07-15T23:25:52.498900+00:00",
-  "slate_date": "2026-07-15",
-  "games": 0,
+  "generated_utc": "2026-07-16T15:17:46.963926+00:00",
+  "slate_date": "2026-07-16",
+  "games": 1,
   "confirmed_lineups": 0,
   "statcast": true,
   "statcast_meta": {
     "window_days": 21,
     "recent_days": 7,
-    "start": "2026-06-25",
-    "end": "2026-07-15",
+    "start": "2026-06-26",
+    "end": "2026-07-16",
     "days_fetched": 0,
-    "days_cached": 21,
-    "batters": 304,
-    "pitchers": 266,
+    "days_cached": 20,
+    "batters": 287,
+    "pitchers": 233,
     "league": {
-      "barrel_rate": 0.0723,
-      "hard_hit_rate": 0.3773,
-      "fb_rate": 0.5087,
-      "air_pull_rate": 0.1746,
-      "fly_rate": 0.2753,
-      "hr_per_pa": 0.0303,
-      "bbe_total": 3403
+      "barrel_rate": 0.0713,
+      "hard_hit_rate": 0.3782,
+      "fb_rate": 0.5108,
+      "air_pull_rate": 0.1753,
+      "fly_rate": 0.2766,
+      "hr_per_pa": 0.0292,
+      "bbe_total": 3001
     }
   },
   "method": "v2.5: rank causes \u2192 choose capture \u2192 lock confirmed shape that captures the cause. Adds directional wind (park bearing \u00d7 wind dir, \u00b13 env), empirical-Bayes shrinkage (small samples regress to league), and platoon-split shape (barrel/air-pull vs THIS hand), on top of v2.4 pitch-mix fit + TRAP flags. Weights P25/Shape40/Env15/Lineup12/Src8. Statcast (Savant) air-pull/barrel/pitch-mix active.",
@@ -42,10 +42,1047 @@
     "Watchlist",
     "Pass"
   ],
-  "causes": [],
-  "candidates": [],
-  "structures": {},
-  "pitcher_board": [],
+  "causes": [
+    {
+      "team": "New York Mets",
+      "opp": "Philadelphia Phillies",
+      "pitcher": "Aaron Nola",
+      "venue": "Citizens Bank Park",
+      "grade": "A",
+      "pitcher_cause": 18.5,
+      "park_hr": 107,
+      "cause_score": 20.2,
+      "capture_method": "2-bat mini-stack (cause supports coverage)",
+      "public_heat": false,
+      "n_playable": 2,
+      "playable_bats": [
+        {
+          "name": "Juan Soto",
+          "total": 66.5,
+          "role": "Cause Satellite",
+          "fit_tag": "PITCH-FIT"
+        },
+        {
+          "name": "Francisco Lindor",
+          "total": 63.4,
+          "role": "Cause Satellite",
+          "fit_tag": "PITCH-FIT"
+        }
+      ]
+    },
+    {
+      "team": "Philadelphia Phillies",
+      "opp": "New York Mets",
+      "pitcher": "Christian Scott",
+      "venue": "Citizens Bank Park",
+      "grade": "C",
+      "pitcher_cause": 13.0,
+      "park_hr": 107,
+      "cause_score": 14.8,
+      "capture_method": "Watchlist / pass (no clear cause)",
+      "public_heat": false,
+      "n_playable": 0,
+      "playable_bats": []
+    }
+  ],
+  "candidates": [
+    {
+      "id": 665742,
+      "name": "Juan Soto",
+      "team": "New York Mets",
+      "bats": "L",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Aaron Nola",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823440,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 21,
+      "iso": 0.272,
+      "total": 66.5,
+      "tier": "Longshot",
+      "role": "Cause Satellite",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.5,
+      "fit_tag": "PITCH-FIT",
+      "value_play": true,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.5,
+        "hitter": 26.0,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1904,
+        "barrel_rate": 0.0884,
+        "hard_hit_rate": 0.4143,
+        "fb_rate": 0.5334
+      },
+      "reasons": [
+        "vs Aaron Nola \u2014 cause A (18.5/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.86)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Good air-pull (19%)",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (42% breaking balls, rel 1.00 \u2192 mix-fit 1.50x)",
+        "Hitter-friendly park (108)",
+        "Hot (97\u00b0F)",
+        "Model: one strong signal",
+        "VALUE longshot: real shape + cause off the chalk"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 596019,
+      "name": "Francisco Lindor",
+      "team": "New York Mets",
+      "bats": "S",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Aaron Nola",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823440,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 5,
+      "iso": 0.157,
+      "total": 63.4,
+      "tier": "Longshot",
+      "role": "Cause Satellite",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.29,
+      "fit_tag": "PITCH-FIT",
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.5,
+        "hitter": 22.9,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1904,
+        "barrel_rate": 0.0743,
+        "hard_hit_rate": 0.4535,
+        "fb_rate": 0.5334
+      },
+      "reasons": [
+        "vs Aaron Nola \u2014 cause A (18.5/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.86)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Good air-pull (22%)",
+        "Hard-hit 45%",
+        "Pitch-mix fit: damages this arsenal (42% breaking balls, rel 1.00 \u2192 mix-fit 1.29x)",
+        "Hitter-friendly park (107)",
+        "Hot (97\u00b0F)",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 682626,
+      "name": "Francisco Alvarez",
+      "team": "New York Mets",
+      "bats": "R",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Aaron Nola",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823440,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 9,
+      "iso": 0.162,
+      "total": 62.0,
+      "tier": "Longshot",
+      "role": "Longshot",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.5,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.5,
+        "hitter": 21.5,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.157,
+        "barrel_rate": 0.0937,
+        "hard_hit_rate": 0.407,
+        "fb_rate": 0.5358
+      },
+      "reasons": [
+        "vs Aaron Nola \u2014 cause A (18.5/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.86)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Above-avg barrels (9%)",
+        "Pitch-mix fit: damages this arsenal (42% breaking balls, rel 1.00 \u2192 mix-fit 1.50x)",
+        "Hitter-friendly park (106)",
+        "Hot (97\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 656941,
+      "name": "Kyle Schwarber",
+      "team": "Philadelphia Phillies",
+      "bats": "L",
+      "opp": "New York Mets",
+      "opp_pitcher": "Christian Scott",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823440,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 32,
+      "iso": 0.306,
+      "total": 61.0,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.78,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 26.0,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2074,
+        "barrel_rate": 0.0754,
+        "hard_hit_rate": 0.4426,
+        "fb_rate": 0.5423
+      },
+      "reasons": [
+        "vs Christian Scott \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.17)",
+        "Pitcher: Fly-ball prone (29% FB allowed)",
+        "Good air-pull (21%)",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (65% fastballs, rel 2.20 \u2192 mix-fit 1.78x)",
+        "Hitter-friendly park (108)",
+        "Hot (97\u00b0F)",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 621438,
+      "name": "Tyrone Taylor",
+      "team": "New York Mets",
+      "bats": "R",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Aaron Nola",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823440,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 6,
+      "iso": 0.2,
+      "total": 58.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.5,
+        "hitter": 18.0,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Aaron Nola \u2014 cause A (18.5/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.86)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Proxy: strong HR rate",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Hitter-friendly park (106)",
+        "Hot (97\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 805999,
+      "name": "A.J. Ewing",
+      "team": "New York Mets",
+      "bats": "L",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Aaron Nola",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823440,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.163,
+      "total": 57.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.71,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.5,
+        "hitter": 16.6,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1645,
+        "barrel_rate": 0.0754,
+        "hard_hit_rate": 0.3626,
+        "fb_rate": 0.4757
+      },
+      "reasons": [
+        "vs Aaron Nola \u2014 cause A (18.5/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.86)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (42% breaking balls, rel 1.00 \u2192 mix-fit 0.71x)",
+        "Hitter-friendly park (108)",
+        "Hot (97\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 669016,
+      "name": "Brandon Marsh",
+      "team": "Philadelphia Phillies",
+      "bats": "L",
+      "opp": "New York Mets",
+      "opp_pitcher": "Christian Scott",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823440,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 15,
+      "iso": 0.189,
+      "total": 57.0,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 23.0,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1959,
+        "barrel_rate": 0.091,
+        "hard_hit_rate": 0.3904,
+        "fb_rate": 0.5176
+      },
+      "reasons": [
+        "vs Christian Scott \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.17)",
+        "Pitcher: Fly-ball prone (29% FB allowed)",
+        "Good air-pull (20%)",
+        "Above-avg barrels (9%)",
+        "Platoon edge (L vs RHP)",
+        "Hitter-friendly park (108)",
+        "Hot (97\u00b0F)"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 547180,
+      "name": "Bryce Harper",
+      "team": "Philadelphia Phillies",
+      "bats": "L",
+      "opp": "New York Mets",
+      "opp_pitcher": "Christian Scott",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823440,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 20,
+      "iso": 0.237,
+      "total": 56.0,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.78,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 22.0,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1878,
+        "barrel_rate": 0.0872,
+        "hard_hit_rate": 0.4448,
+        "fb_rate": 0.541
+      },
+      "reasons": [
+        "vs Christian Scott \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.17)",
+        "Pitcher: Fly-ball prone (29% FB allowed)",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (65% fastballs, rel 2.20 \u2192 mix-fit 1.78x)",
+        "Hitter-friendly park (108)",
+        "Hot (97\u00b0F)"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 676724,
+      "name": "Jared Young",
+      "team": "New York Mets",
+      "bats": "L",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Aaron Nola",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823440,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 6,
+      "iso": 0.178,
+      "total": 55.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.71,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.5,
+        "hitter": 15.1,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1669,
+        "barrel_rate": 0.062,
+        "hard_hit_rate": 0.3291,
+        "fb_rate": 0.5176
+      },
+      "reasons": [
+        "vs Aaron Nola \u2014 cause A (18.5/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.86)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (42% breaking balls, rel 1.00 \u2192 mix-fit 0.71x)",
+        "Hitter-friendly park (108)",
+        "Hot (97\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 607208,
+      "name": "Trea Turner",
+      "team": "Philadelphia Phillies",
+      "bats": "R",
+      "opp": "New York Mets",
+      "opp_pitcher": "Christian Scott",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823440,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 10,
+      "iso": 0.119,
+      "total": 55.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.16,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 21.3,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1989,
+        "barrel_rate": 0.0997,
+        "hard_hit_rate": 0.4175,
+        "fb_rate": 0.5324
+      },
+      "reasons": [
+        "vs Christian Scott \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.17)",
+        "Pitcher: Fly-ball prone (29% FB allowed)",
+        "Good air-pull (20%)",
+        "Above-avg barrels (10%)",
+        "Hitter-friendly park (106)",
+        "Hot (97\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 701807,
+      "name": "Carson Benge",
+      "team": "New York Mets",
+      "bats": "L",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Aaron Nola",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823440,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 11,
+      "iso": 0.139,
+      "total": 54.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.71,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.5,
+        "hitter": 13.6,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1827,
+        "barrel_rate": 0.0578,
+        "hard_hit_rate": 0.3542,
+        "fb_rate": 0.5397
+      },
+      "reasons": [
+        "vs Aaron Nola \u2014 cause A (18.5/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.86)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (42% breaking balls, rel 1.00 \u2192 mix-fit 0.71x)",
+        "Hitter-friendly park (108)",
+        "Hot (97\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 668901,
+      "name": "Mark Vientos",
+      "team": "New York Mets",
+      "bats": "R",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Aaron Nola",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823440,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 11,
+      "iso": 0.177,
+      "total": 52.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.5,
+        "hitter": 12.0,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Aaron Nola \u2014 cause A (18.5/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.86)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Hitter-friendly park (106)",
+        "Hot (97\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 666182,
+      "name": "Bo Bichette",
+      "team": "New York Mets",
+      "bats": "R",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Aaron Nola",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823440,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 10,
+      "iso": 0.121,
+      "total": 51.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.71,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.5,
+        "hitter": 10.6,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.16,
+        "barrel_rate": 0.0594,
+        "hard_hit_rate": 0.3678,
+        "fb_rate": 0.5087
+      },
+      "reasons": [
+        "vs Aaron Nola \u2014 cause A (18.5/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.86)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Poor pitch-mix fit (42% breaking balls, rel 0.30 \u2192 mix-fit 0.71x)",
+        "Hitter-friendly park (106)",
+        "Hot (97\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 656537,
+      "name": "Derek Hill",
+      "team": "Philadelphia Phillies",
+      "bats": "R",
+      "opp": "New York Mets",
+      "opp_pitcher": "Christian Scott",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823440,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.181,
+      "total": 47.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 14.0,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1618,
+        "barrel_rate": 0.0658,
+        "hard_hit_rate": 0.3362,
+        "fb_rate": 0.4644
+      },
+      "reasons": [
+        "vs Christian Scott \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.17)",
+        "Pitcher: Fly-ball prone (29% FB allowed)",
+        "Hitter-friendly park (106)",
+        "Hot (97\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 681082,
+      "name": "Bryson Stott",
+      "team": "Philadelphia Phillies",
+      "bats": "L",
+      "opp": "New York Mets",
+      "opp_pitcher": "Christian Scott",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823440,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.144,
+      "total": 46.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.55,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 13.2,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1645,
+        "barrel_rate": 0.0611,
+        "hard_hit_rate": 0.3226,
+        "fb_rate": 0.509
+      },
+      "reasons": [
+        "vs Christian Scott \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.17)",
+        "Pitcher: Fly-ball prone (29% FB allowed)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (65% fastballs, rel 0.30 \u2192 mix-fit 0.55x)",
+        "Hitter-friendly park (108)",
+        "Hot (97\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 664761,
+      "name": "Alec Bohm",
+      "team": "Philadelphia Phillies",
+      "bats": "R",
+      "opp": "New York Mets",
+      "opp_pitcher": "Christian Scott",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823440,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 11,
+      "iso": 0.139,
+      "total": 45.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.55,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 12.5,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1524,
+        "barrel_rate": 0.062,
+        "hard_hit_rate": 0.3904,
+        "fb_rate": 0.4668
+      },
+      "reasons": [
+        "vs Christian Scott \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.17)",
+        "Pitcher: Fly-ball prone (29% FB allowed)",
+        "Poor pitch-mix fit (65% fastballs, rel 0.30 \u2192 mix-fit 0.55x)",
+        "Hitter-friendly park (106)",
+        "Hot (97\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 592663,
+      "name": "J.T. Realmuto",
+      "team": "Philadelphia Phillies",
+      "bats": "R",
+      "opp": "New York Mets",
+      "opp_pitcher": "Christian Scott",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823440,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.14,
+      "total": 45.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.55,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 12.5,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1524,
+        "barrel_rate": 0.062,
+        "hard_hit_rate": 0.37,
+        "fb_rate": 0.5346
+      },
+      "reasons": [
+        "vs Christian Scott \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.17)",
+        "Pitcher: Fly-ball prone (29% FB allowed)",
+        "Poor pitch-mix fit (65% fastballs, rel 0.30 \u2192 mix-fit 0.55x)",
+        "Hitter-friendly park (106)",
+        "Hot (97\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 543760,
+      "name": "Marcus Semien",
+      "team": "New York Mets",
+      "bats": "R",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Aaron Nola",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823440,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 9,
+      "iso": 0.127,
+      "total": 44.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.5,
+        "hitter": 4.0,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Aaron Nola \u2014 cause A (18.5/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.86)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Hitter-friendly park (106)",
+        "Hot (97\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 666969,
+      "name": "Adolis Garc\u00eda",
+      "team": "Philadelphia Phillies",
+      "bats": "R",
+      "opp": "New York Mets",
+      "opp_pitcher": "Christian Scott",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823440,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.134,
+      "total": 39.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 6.0,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Christian Scott \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.17)",
+        "Pitcher: Fly-ball prone (29% FB allowed)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Hitter-friendly park (106)",
+        "Hot (97\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    }
+  ],
+  "structures": {
+    "longshot_group": {
+      "legs": [
+        "Francisco Alvarez (New York Mets, 62.0)"
+      ],
+      "why": "Deeper bats with a real pitcher/park cause \u2014 bonus-only convergence."
+    }
+  },
+  "pitcher_board": [
+    {
+      "id": 605400,
+      "name": "Aaron Nola",
+      "score": 18.5,
+      "grade": "A",
+      "flags": [
+        "Elevated HR allowed (HR/9 1.86)",
+        "Above-avg barrels allowed (9%)"
+      ],
+      "hr9": 1.86,
+      "barrel_allowed": 0.0929
+    },
+    {
+      "id": 681035,
+      "name": "Christian Scott",
+      "score": 13.0,
+      "grade": "C",
+      "flags": [
+        "Avg+ HR allowed (HR/9 1.17)",
+        "Fly-ball prone (29% FB allowed)",
+        "High K rate (28%)"
+      ],
+      "hr9": 1.17,
+      "barrel_allowed": 0.0749
+    }
+  ],
   "audit_template": {
     "legend": {
       "A": "cause fired + our bat hit (perfect)",
@@ -54,6 +1091,31 @@
       "D": "cause did not fire + bat hit (override/lucky)"
     },
     "instructions": "After games, set result_hr / cause_fired (did target pitcher or team produce HRs/barrels) / teammate_hr, then classify outcome A-D.",
-    "rows": []
+    "rows": [
+      {
+        "player": "Juan Soto",
+        "team": "New York Mets",
+        "opp_pitcher": "Aaron Nola",
+        "role": "Cause Satellite",
+        "total": 66.5,
+        "cause_grade": "A",
+        "result_hr": null,
+        "cause_fired": null,
+        "teammate_hr": null,
+        "outcome": null
+      },
+      {
+        "player": "Francisco Lindor",
+        "team": "New York Mets",
+        "opp_pitcher": "Aaron Nola",
+        "role": "Cause Satellite",
+        "total": 63.4,
+        "cause_grade": "A",
+        "result_hr": null,
+        "cause_fired": null,
+        "teammate_hr": null,
+        "outcome": null
+      }
+    ]
   }
 }
