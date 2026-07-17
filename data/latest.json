@@ -1,6 +1,6 @@
 {
   "version": "2.5",
-  "generated_utc": "2026-07-17T14:41:03.278452+00:00",
+  "generated_utc": "2026-07-17T14:58:14.181223+00:00",
   "slate_date": "2026-07-17",
   "games": 15,
   "confirmed_lineups": 0,
@@ -11,7 +11,7 @@
     "start": "2026-06-27",
     "end": "2026-07-17",
     "days_fetched": 0,
-    "days_cached": 20,
+    "days_cached": 21,
     "batters": 251,
     "pitchers": 159,
     "league": {
@@ -876,7 +876,7 @@
         "Above-avg barrels (10%)",
         "Pitch-mix fit: damages this arsenal (49% fastballs, rel 2.20 \u2192 mix-fit 1.59x)",
         "Slightly + park (102)",
-        "Hot (88\u00b0F)",
+        "Hot (89\u00b0F)",
         "Model: one strong signal"
       ],
       "warnings": [
@@ -1351,6 +1351,50 @@
       ]
     },
     {
+      "id": 664034,
+      "name": "Ty France",
+      "team": "San Diego Padres",
+      "bats": "R",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Seth Lugo",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824090,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 11,
+      "iso": 0.223,
+      "total": 59.0,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 16.0,
+        "hitter": 22.0,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Seth Lugo \u2014 cause B (16.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.30)",
+        "Pitcher: Hard contact allowed (.475 SLG)",
+        "Proxy: strong HR rate",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Hot (88\u00b0F)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
       "id": 663656,
       "name": "Kyle Tucker",
       "team": "Los Angeles Dodgers",
@@ -1560,50 +1604,6 @@
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
-    },
-    {
-      "id": 664034,
-      "name": "Ty France",
-      "team": "San Diego Padres",
-      "bats": "R",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Seth Lugo",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824090,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.223,
-      "total": 57.5,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.0,
-        "hitter": 22.0,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Seth Lugo \u2014 cause B (16.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.30)",
-        "Pitcher: Hard contact allowed (.475 SLG)",
-        "Proxy: strong HR rate",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hot (87\u00b0F)",
-        "Wind out ~11 mph"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
     },
     {
       "id": 624413,
@@ -1905,7 +1905,7 @@
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (76% fastballs, rel 2.20 \u2192 mix-fit 1.92x)",
         "Slightly + park (103)",
-        "Hot (87\u00b0F)"
+        "Hot (89\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -2058,7 +2058,7 @@
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (55% breaking balls, rel 1.00 \u2192 mix-fit 1.48x)",
         "Warm (78\u00b0F)",
-        "Wind out ~7 mph"
+        "Wind out ~8 mph"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -2109,6 +2109,108 @@
         "Highly wind-dependent",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 609280,
+      "name": "Miguel Andujar",
+      "team": "San Diego Padres",
+      "bats": "R",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Seth Lugo",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824090,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 5,
+      "iso": 0.159,
+      "total": 55.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 16.0,
+        "hitter": 19.0,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2228,
+        "barrel_rate": 0.076,
+        "hard_hit_rate": 0.4018,
+        "fb_rate": 0.5451
+      },
+      "reasons": [
+        "vs Seth Lugo \u2014 cause B (16.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.30)",
+        "Pitcher: Hard contact allowed (.475 SLG)",
+        "Good air-pull (22%)",
+        "Hot (88\u00b0F)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 592518,
+      "name": "Manny Machado",
+      "team": "San Diego Padres",
+      "bats": "R",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Seth Lugo",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824090,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 19,
+      "iso": 0.215,
+      "total": 54.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 16.0,
+        "hitter": 18.5,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1825,
+        "barrel_rate": 0.0916,
+        "hard_hit_rate": 0.3692,
+        "fb_rate": 0.5204
+      },
+      "reasons": [
+        "vs Seth Lugo \u2014 cause B (16.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.30)",
+        "Pitcher: Hard contact allowed (.475 SLG)",
+        "Above-avg barrels (9%)",
+        "Hot (88\u00b0F)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
+        "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -2464,12 +2566,63 @@
         "Good air-pull (20%)",
         "Platoon edge (R vs LHP)",
         "Warm (78\u00b0F)",
-        "Wind out ~7 mph"
+        "Wind out ~8 mph"
       ],
       "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": []
+    },
+    {
+      "id": 657757,
+      "name": "Gavin Sheets",
+      "team": "San Diego Padres",
+      "bats": "L",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Seth Lugo",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824090,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 14,
+      "iso": 0.204,
+      "total": 53.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 16.0,
+        "hitter": 17.5,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1757,
+        "barrel_rate": 0.0806,
+        "hard_hit_rate": 0.3498,
+        "fb_rate": 0.5126
+      },
+      "reasons": [
+        "vs Seth Lugo \u2014 cause B (16.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.30)",
+        "Pitcher: Hard contact allowed (.475 SLG)",
+        "Platoon edge (L vs RHP)",
+        "Hot (88\u00b0F)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 680777,
@@ -2508,57 +2661,6 @@
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (100)",
         "Highly wind-dependent",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 609280,
-      "name": "Miguel Andujar",
-      "team": "San Diego Padres",
-      "bats": "R",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Seth Lugo",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824090,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 5,
-      "iso": 0.159,
-      "total": 53.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.0,
-        "hitter": 19.0,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2228,
-        "barrel_rate": 0.076,
-        "hard_hit_rate": 0.4018,
-        "fb_rate": 0.5451
-      },
-      "reasons": [
-        "vs Seth Lugo \u2014 cause B (16.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.30)",
-        "Pitcher: Hard contact allowed (.475 SLG)",
-        "Good air-pull (22%)",
-        "Hot (87\u00b0F)",
-        "Wind out ~11 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2610,7 +2712,7 @@
         "Above-avg barrels (9%)",
         "Pitch-mix fit: damages this arsenal (55% breaking balls, rel 1.00 \u2192 mix-fit 1.33x)",
         "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
+        "Wind out ~8 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2621,18 +2723,18 @@
       ]
     },
     {
-      "id": 592518,
-      "name": "Manny Machado",
+      "id": 701538,
+      "name": "Jackson Merrill",
       "team": "San Diego Padres",
-      "bats": "R",
+      "bats": "L",
       "opp": "Kansas City Royals",
       "opp_pitcher": "Seth Lugo",
       "venue": "Kauffman Stadium",
       "gamePk": 824090,
       "slot": null,
       "confirmed": false,
-      "season_hr": 19,
-      "iso": 0.215,
+      "season_hr": 10,
+      "iso": 0.131,
       "total": 53.0,
       "tier": "Pass",
       "role": "Watchlist",
@@ -2644,24 +2746,75 @@
       "pitcher_grade": "B",
       "breakdown": {
         "pitcher": 16.0,
-        "hitter": 18.5,
-        "environment": 10.5,
+        "hitter": 17.0,
+        "environment": 12.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1825,
-        "barrel_rate": 0.0916,
-        "hard_hit_rate": 0.3692,
-        "fb_rate": 0.5204
+        "air_pull_rate": 0.1558,
+        "barrel_rate": 0.0635,
+        "hard_hit_rate": 0.3769,
+        "fb_rate": 0.5122
       },
       "reasons": [
         "vs Seth Lugo \u2014 cause B (16.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.30)",
         "Pitcher: Hard contact allowed (.475 SLG)",
-        "Above-avg barrels (9%)",
-        "Hot (87\u00b0F)",
-        "Wind out ~11 mph",
+        "Platoon edge (L vs RHP)",
+        "Hot (88\u00b0F)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 593428,
+      "name": "Xander Bogaerts",
+      "team": "San Diego Padres",
+      "bats": "R",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Seth Lugo",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824090,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 9,
+      "iso": 0.107,
+      "total": 53.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 16.0,
+        "hitter": 17.0,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.197,
+        "barrel_rate": 0.0626,
+        "hard_hit_rate": 0.3896,
+        "fb_rate": 0.4865
+      },
+      "reasons": [
+        "vs Seth Lugo \u2014 cause B (16.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.30)",
+        "Pitcher: Hard contact allowed (.475 SLG)",
+        "Good air-pull (20%)",
+        "Hot (88\u00b0F)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2814,7 +2967,7 @@
         "Good air-pull (20%)",
         "Above-avg barrels (9%)",
         "Warm (78\u00b0F)",
-        "Wind out ~7 mph"
+        "Wind out ~8 mph"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -2909,7 +3062,7 @@
         "Pitcher: High K rate (29%)",
         "Good air-pull (20%)",
         "Strong barrels (12%)",
-        "Warm (85\u00b0F)"
+        "Warm (84\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -3059,7 +3212,7 @@
         "Strong air-pull (25%)",
         "Above-avg barrels (11%)",
         "Platoon edge (L vs RHP)",
-        "Warm (85\u00b0F)"
+        "Warm (84\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -3170,57 +3323,6 @@
       ]
     },
     {
-      "id": 657757,
-      "name": "Gavin Sheets",
-      "team": "San Diego Padres",
-      "bats": "L",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Seth Lugo",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824090,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.204,
-      "total": 52.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.0,
-        "hitter": 17.5,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1757,
-        "barrel_rate": 0.0806,
-        "hard_hit_rate": 0.3498,
-        "fb_rate": 0.5126
-      },
-      "reasons": [
-        "vs Seth Lugo \u2014 cause B (16.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.30)",
-        "Pitcher: Hard contact allowed (.475 SLG)",
-        "Platoon edge (L vs RHP)",
-        "Hot (87\u00b0F)",
-        "Wind out ~11 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 679822,
       "name": "Justin Foscue",
       "team": "Texas Rangers",
@@ -3258,7 +3360,7 @@
         "Proxy: elite ISO (0.266)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (103)",
-        "Hot (87\u00b0F)",
+        "Hot (89\u00b0F)",
         "Model: one strong signal"
       ],
       "warnings": [
@@ -3356,7 +3458,7 @@
         "vs Gage Jump \u2014 cause C (13.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 0.75)",
         "Slightly + park (102)",
-        "Hot (88\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3447,7 +3549,7 @@
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Warm (78\u00b0F)",
-        "Wind out ~7 mph"
+        "Wind out ~8 mph"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -3608,108 +3710,6 @@
       ]
     },
     {
-      "id": 701538,
-      "name": "Jackson Merrill",
-      "team": "San Diego Padres",
-      "bats": "L",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Seth Lugo",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824090,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.131,
-      "total": 51.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.0,
-        "hitter": 17.0,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1558,
-        "barrel_rate": 0.0635,
-        "hard_hit_rate": 0.3769,
-        "fb_rate": 0.5122
-      },
-      "reasons": [
-        "vs Seth Lugo \u2014 cause B (16.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.30)",
-        "Pitcher: Hard contact allowed (.475 SLG)",
-        "Platoon edge (L vs RHP)",
-        "Hot (87\u00b0F)",
-        "Wind out ~11 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 593428,
-      "name": "Xander Bogaerts",
-      "team": "San Diego Padres",
-      "bats": "R",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Seth Lugo",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824090,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.107,
-      "total": 51.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.0,
-        "hitter": 17.0,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.197,
-        "barrel_rate": 0.0626,
-        "hard_hit_rate": 0.3896,
-        "fb_rate": 0.4865
-      },
-      "reasons": [
-        "vs Seth Lugo \u2014 cause B (16.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.30)",
-        "Pitcher: Hard contact allowed (.475 SLG)",
-        "Good air-pull (20%)",
-        "Hot (87\u00b0F)",
-        "Wind out ~11 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 702616,
       "name": "Jackson Holliday",
       "team": "Baltimore Orioles",
@@ -3853,7 +3853,7 @@
         "Above-avg barrels (11%)",
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (52% breaking balls, rel 1.00 \u2192 mix-fit 1.39x)",
-        "Warm (85\u00b0F)"
+        "Warm (84\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -4054,7 +4054,7 @@
         "Platoon edge (R vs LHP)",
         "Poor pitch-mix fit (49% fastballs, rel 0.30 \u2192 mix-fit 0.65x)",
         "Slightly + park (102)",
-        "Hot (88\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4105,7 +4105,7 @@
         "Good air-pull (19%)",
         "Poor pitch-mix fit (49% fastballs, rel 0.30 \u2192 mix-fit 0.65x)",
         "Slightly + park (102)",
-        "Hot (88\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4304,7 +4304,7 @@
         "Pitcher: Low K rate (15%)",
         "Platoon edge (L vs RHP)",
         "Slightly + park (103)",
-        "Hot (87\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4355,7 +4355,7 @@
         "Pitcher: Low K rate (15%)",
         "Platoon edge (L vs RHP)",
         "Slightly + park (103)",
-        "Hot (87\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4459,7 +4459,7 @@
         "Good air-pull (20%)",
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (46% breaking balls, rel 1.00 \u2192 mix-fit 0.76x)",
-        "Warm (85\u00b0F)",
+        "Warm (84\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4510,7 +4510,7 @@
         "Above-avg barrels (9%)",
         "Platoon edge (L vs RHP)",
         "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
+        "Wind out ~8 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4561,7 +4561,7 @@
         "Platoon edge (R vs LHP)",
         "Poor pitch-mix fit (49% fastballs, rel 0.30 \u2192 mix-fit 0.65x)",
         "Slightly + park (102)",
-        "Hot (88\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4612,7 +4612,7 @@
         "Pitcher: Fly-ball prone (29% FB allowed)",
         "Pitch-mix fit: damages this arsenal (55% breaking balls, rel 1.00 \u2192 mix-fit 1.33x)",
         "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
+        "Wind out ~8 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4712,7 +4712,7 @@
         "vs Gage Jump \u2014 cause C (13.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 0.75)",
         "Slightly + park (102)",
-        "Hot (88\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4758,7 +4758,7 @@
         "Pitcher: High K rate (29%)",
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (85\u00b0F)"
+        "Warm (84\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -5052,7 +5052,7 @@
         "Pitcher: High K rate (27%)",
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (85\u00b0F)",
+        "Warm (84\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5103,6 +5103,57 @@
         "Pitcher: Hard contact allowed (.441 SLG)",
         "Slightly + park (100)",
         "Highly wind-dependent",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 686681,
+      "name": "Michael Massey",
+      "team": "Kansas City Royals",
+      "bats": "L",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Michael King",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824090,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.163,
+      "total": 48.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.5,
+        "hitter": 21.0,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1938,
+        "barrel_rate": 0.0665,
+        "hard_hit_rate": 0.3576,
+        "fb_rate": 0.5037
+      },
+      "reasons": [
+        "vs Michael King \u2014 cause Pass (6.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.83)",
+        "Good air-pull (19%)",
+        "Platoon edge (L vs RHP)",
+        "Hot (88\u00b0F)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5248,7 +5299,53 @@
         "Pitcher: Avg+ HR allowed (HR/9 0.75)",
         "Platoon edge (R vs LHP)",
         "Slightly + park (102)",
+        "Hot (89\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 657656,
+      "name": "Ram\u00f3n Laureano",
+      "team": "San Diego Padres",
+      "bats": "R",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Seth Lugo",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824090,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.171,
+      "total": 48.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 16.0,
+        "hitter": 12.0,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Seth Lugo \u2014 cause B (16.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.30)",
+        "Pitcher: Hard contact allowed (.475 SLG)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
         "Hot (88\u00b0F)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5496,7 +5593,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.17)",
         "Pitcher: Low K rate (15%)",
         "Slightly + park (103)",
-        "Hot (87\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5552,57 +5649,6 @@
       ]
     },
     {
-      "id": 686681,
-      "name": "Michael Massey",
-      "team": "Kansas City Royals",
-      "bats": "L",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Michael King",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824090,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.163,
-      "total": 47.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 21.0,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1938,
-        "barrel_rate": 0.0665,
-        "hard_hit_rate": 0.3576,
-        "fb_rate": 0.5037
-      },
-      "reasons": [
-        "vs Michael King \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.83)",
-        "Good air-pull (19%)",
-        "Platoon edge (L vs RHP)",
-        "Hot (87\u00b0F)",
-        "Wind out ~11 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 596142,
       "name": "Gary S\u00e1nchez",
       "team": "Milwaukee Brewers",
@@ -5644,52 +5690,6 @@
         "Pitch-mix fit: damages this arsenal (69% fastballs, rel 2.10 \u2192 mix-fit 1.76x)",
         "Hitter-friendly park (105)",
         "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 657656,
-      "name": "Ram\u00f3n Laureano",
-      "team": "San Diego Padres",
-      "bats": "R",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Seth Lugo",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824090,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.171,
-      "total": 46.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 16.0,
-        "hitter": 12.0,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Seth Lugo \u2014 cause B (16.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.30)",
-        "Pitcher: Hard contact allowed (.475 SLG)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hot (87\u00b0F)",
-        "Wind out ~11 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5790,7 +5790,7 @@
         "Good air-pull (20%)",
         "Platoon edge (L vs RHP)",
         "Slightly + park (102)",
-        "Hot (88\u00b0F)"
+        "Hot (89\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -5885,7 +5885,7 @@
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (103)",
-        "Hot (87\u00b0F)"
+        "Hot (89\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -5933,7 +5933,7 @@
         "Pitcher: Low K rate (15%)",
         "Poor pitch-mix fit (76% fastballs, rel 0.30 \u2192 mix-fit 0.47x)",
         "Slightly + park (103)",
-        "Hot (87\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5980,7 +5980,7 @@
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (103)",
-        "Hot (87\u00b0F)"
+        "Hot (89\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -6038,6 +6038,56 @@
       ]
     },
     {
+      "id": 677951,
+      "name": "Bobby Witt Jr.",
+      "team": "Kansas City Royals",
+      "bats": "R",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Michael King",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824090,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 13,
+      "iso": 0.175,
+      "total": 45.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.5,
+        "hitter": 19.0,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1757,
+        "barrel_rate": 0.0958,
+        "hard_hit_rate": 0.415,
+        "fb_rate": 0.5126
+      },
+      "reasons": [
+        "vs Michael King \u2014 cause Pass (6.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.83)",
+        "Above-avg barrels (10%)",
+        "Hot (88\u00b0F)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 695734,
       "name": "Daylen Lile",
       "team": "Washington Nationals",
@@ -6076,7 +6126,7 @@
         "vs Gage Jump \u2014 cause C (13.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 0.75)",
         "Slightly + park (102)",
-        "Hot (88\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6274,7 +6324,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.00)",
         "Pitcher: Fly-ball prone (29% FB allowed)",
         "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
+        "Wind out ~8 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6324,7 +6374,52 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.28)",
         "Platoon edge (L vs RHP)",
         "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
+        "Wind out ~8 mph",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 695506,
+      "name": "Jac Caglianone",
+      "team": "Kansas City Royals",
+      "bats": "L",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Michael King",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824090,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 15,
+      "iso": 0.201,
+      "total": 44.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.5,
+        "hitter": 18.0,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Michael King \u2014 cause Pass (6.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.83)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Hot (88\u00b0F)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6373,7 +6468,57 @@
         "vs Troy Melton \u2014 cause C (11.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.28)",
         "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
+        "Wind out ~8 mph",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 695600,
+      "name": "Carter Jensen",
+      "team": "Kansas City Royals",
+      "bats": "L",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Michael King",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824090,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 13,
+      "iso": 0.185,
+      "total": 44.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.5,
+        "hitter": 18.0,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.188,
+        "barrel_rate": 0.0645,
+        "hard_hit_rate": 0.3849,
+        "fb_rate": 0.5387
+      },
+      "reasons": [
+        "vs Michael King \u2014 cause Pass (6.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.83)",
+        "Platoon edge (L vs RHP)",
+        "Hot (88\u00b0F)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6423,7 +6568,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.29)",
         "Pitcher: High K rate (27%)",
         "Platoon edge (L vs RHP)",
-        "Warm (85\u00b0F)",
+        "Warm (84\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6473,7 +6618,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.17)",
         "Pitcher: Low K rate (15%)",
         "Slightly + park (103)",
-        "Hot (87\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6518,7 +6663,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 0.75)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (102)",
-        "Hot (88\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6567,7 +6712,7 @@
         "vs Jared Jones \u2014 cause C (11.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.29)",
         "Pitcher: High K rate (27%)",
-        "Warm (85\u00b0F)",
+        "Warm (84\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6678,8 +6823,8 @@
       ]
     },
     {
-      "id": 677951,
-      "name": "Bobby Witt Jr.",
+      "id": 521692,
+      "name": "Salvador Perez",
       "team": "Kansas City Royals",
       "bats": "R",
       "opp": "San Diego Padres",
@@ -6688,36 +6833,36 @@
       "gamePk": 824090,
       "slot": null,
       "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.175,
+      "season_hr": 11,
+      "iso": 0.135,
       "total": 44.0,
       "tier": "Pass",
       "role": "Watchlist",
       "shape_source": "statcast",
-      "pull_fit": false,
+      "pull_fit": true,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
       "pitcher_grade": "Pass",
       "breakdown": {
         "pitcher": 6.5,
-        "hitter": 19.0,
-        "environment": 10.5,
+        "hitter": 17.5,
+        "environment": 12.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1757,
-        "barrel_rate": 0.0958,
-        "hard_hit_rate": 0.415,
-        "fb_rate": 0.5126
+        "air_pull_rate": 0.1908,
+        "barrel_rate": 0.0655,
+        "hard_hit_rate": 0.3933,
+        "fb_rate": 0.5304
       },
       "reasons": [
         "vs Michael King \u2014 cause Pass (6.5/25)",
         "Pitcher: Suppresses HR (HR/9 0.83)",
-        "Above-avg barrels (10%)",
-        "Hot (87\u00b0F)",
-        "Wind out ~11 mph",
+        "Good air-pull (19%)",
+        "Hot (88\u00b0F)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6766,7 +6911,7 @@
         "vs Troy Melton \u2014 cause C (11.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.28)",
         "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
+        "Wind out ~8 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6817,7 +6962,7 @@
         "Pitcher: High K rate (27%)",
         "Good air-pull (22%)",
         "Poor pitch-mix fit (46% breaking balls, rel 1.00 \u2192 mix-fit 0.76x)",
-        "Warm (85\u00b0F)",
+        "Warm (84\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6868,7 +7013,7 @@
         "Pitcher: Fly-ball prone (29% FB allowed)",
         "Poor pitch-mix fit (55% breaking balls, rel 1.00 \u2192 mix-fit 0.72x)",
         "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
+        "Wind out ~8 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7026,22 +7171,22 @@
       ]
     },
     {
-      "id": 695506,
-      "name": "Jac Caglianone",
+      "id": 686555,
+      "name": "Isaac Collins",
       "team": "Kansas City Royals",
-      "bats": "L",
+      "bats": "S",
       "opp": "San Diego Padres",
       "opp_pitcher": "Michael King",
       "venue": "Kauffman Stadium",
       "gamePk": 824090,
       "slot": null,
       "confirmed": false,
-      "season_hr": 15,
-      "iso": 0.201,
-      "total": 43.0,
+      "season_hr": 5,
+      "iso": 0.123,
+      "total": 43.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "shape_source": "proxy",
+      "shape_source": "statcast",
       "pull_fit": false,
       "mix_fit": null,
       "fit_tag": null,
@@ -7049,18 +7194,22 @@
       "pitcher_grade": "Pass",
       "breakdown": {
         "pitcher": 6.5,
-        "hitter": 18.0,
-        "environment": 10.5,
+        "hitter": 17.0,
+        "environment": 12.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
-      "statcast": null,
+      "statcast": {
+        "air_pull_rate": 0.163,
+        "barrel_rate": 0.0665,
+        "hard_hit_rate": 0.402,
+        "fb_rate": 0.4855
+      },
       "reasons": [
         "vs Michael King \u2014 cause Pass (6.5/25)",
         "Pitcher: Suppresses HR (HR/9 0.83)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hot (87\u00b0F)",
-        "Wind out ~11 mph",
+        "Hot (88\u00b0F)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7109,57 +7258,7 @@
         "vs Gavin Williams \u2014 cause C (10.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.35)",
         "Pitcher: High K rate (29%)",
-        "Warm (85\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 695600,
-      "name": "Carter Jensen",
-      "team": "Kansas City Royals",
-      "bats": "L",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Michael King",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824090,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.185,
-      "total": 43.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 18.0,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.188,
-        "barrel_rate": 0.0645,
-        "hard_hit_rate": 0.3849,
-        "fb_rate": 0.5387
-      },
-      "reasons": [
-        "vs Michael King \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.83)",
-        "Platoon edge (L vs RHP)",
-        "Hot (87\u00b0F)",
-        "Wind out ~11 mph",
+        "Warm (84\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7205,7 +7304,7 @@
         "Pitcher: Low K rate (15%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (103)",
-        "Hot (87\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7254,7 +7353,7 @@
         "vs Troy Melton \u2014 cause C (11.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.28)",
         "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
+        "Wind out ~8 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7407,57 +7506,7 @@
         "Pitcher: Suppresses HR (HR/9 0.73)",
         "Good air-pull (19%)",
         "Slightly + park (102)",
-        "Hot (88\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 521692,
-      "name": "Salvador Perez",
-      "team": "Kansas City Royals",
-      "bats": "R",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Michael King",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824090,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.135,
-      "total": 42.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 17.5,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1908,
-        "barrel_rate": 0.0655,
-        "hard_hit_rate": 0.3933,
-        "fb_rate": 0.5304
-      },
-      "reasons": [
-        "vs Michael King \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.83)",
-        "Good air-pull (19%)",
-        "Hot (87\u00b0F)",
-        "Wind out ~11 mph",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7507,7 +7556,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.29)",
         "Pitcher: High K rate (27%)",
         "Platoon edge (L vs RHP)",
-        "Warm (85\u00b0F)",
+        "Warm (84\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7553,7 +7602,56 @@
         "Pitcher: Fly-ball prone (29% FB allowed)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
+        "Wind out ~8 mph",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 657041,
+      "name": "Lane Thomas",
+      "team": "Kansas City Royals",
+      "bats": "R",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Michael King",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824090,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.156,
+      "total": 42.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.5,
+        "hitter": 16.0,
+        "environment": 12.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1605,
+        "barrel_rate": 0.0655,
+        "hard_hit_rate": 0.4368,
+        "fb_rate": 0.4769
+      },
+      "reasons": [
+        "vs Michael King \u2014 cause Pass (6.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.83)",
+        "Hot (88\u00b0F)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7666,55 +7764,6 @@
       ]
     },
     {
-      "id": 686555,
-      "name": "Isaac Collins",
-      "team": "Kansas City Royals",
-      "bats": "S",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Michael King",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824090,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 5,
-      "iso": 0.123,
-      "total": 42.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 17.0,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.163,
-        "barrel_rate": 0.0665,
-        "hard_hit_rate": 0.402,
-        "fb_rate": 0.4855
-      },
-      "reasons": [
-        "vs Michael King \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.83)",
-        "Hot (87\u00b0F)",
-        "Wind out ~11 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 553993,
       "name": "Eugenio Su\u00e1rez",
       "team": "Cincinnati Reds",
@@ -7800,7 +7849,7 @@
         "Pitcher: High K rate (29%)",
         "Platoon edge (R vs LHP)",
         "Slightly + park (103)",
-        "Hot (87\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7943,7 +7992,7 @@
         "Pitcher: High K rate (29%)",
         "Platoon edge (R vs LHP)",
         "Slightly + park (103)",
-        "Hot (87\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7988,7 +8037,7 @@
         "Pitcher: Suppresses HR (HR/9 0.73)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (102)",
-        "Hot (88\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8033,7 +8082,7 @@
         "Pitcher: Suppresses HR (HR/9 0.73)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (102)",
-        "Hot (88\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8084,7 +8133,7 @@
         "Pitcher: High K rate (29%)",
         "Platoon edge (R vs LHP)",
         "Slightly + park (103)",
-        "Hot (87\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8133,7 +8182,7 @@
         "vs Cade Cavalli \u2014 cause Pass (3.5/25)",
         "Pitcher: Suppresses HR (HR/9 0.73)",
         "Slightly + park (102)",
-        "Hot (88\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8187,55 +8236,6 @@
       ],
       "warnings": [
         "Pitcher park (93)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 657041,
-      "name": "Lane Thomas",
-      "team": "Kansas City Royals",
-      "bats": "R",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Michael King",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824090,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.156,
-      "total": 41.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 16.0,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1605,
-        "barrel_rate": 0.0655,
-        "hard_hit_rate": 0.4368,
-        "fb_rate": 0.4769
-      },
-      "reasons": [
-        "vs Michael King \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.83)",
-        "Hot (87\u00b0F)",
-        "Wind out ~11 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -8466,7 +8466,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.35)",
         "Pitcher: High K rate (29%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (85\u00b0F)",
+        "Warm (84\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8516,7 +8516,7 @@
         "Pitcher: Suppresses HR (HR/9 0.73)",
         "Pitcher: High K rate (29%)",
         "Slightly + park (103)",
-        "Hot (87\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8659,7 +8659,7 @@
         "vs Gavin Williams \u2014 cause C (10.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.35)",
         "Pitcher: High K rate (29%)",
-        "Warm (85\u00b0F)",
+        "Warm (84\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8851,7 +8851,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.29)",
         "Pitcher: High K rate (27%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (85\u00b0F)",
+        "Warm (84\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8987,7 +8987,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.29)",
         "Pitcher: High K rate (27%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (85\u00b0F)",
+        "Warm (84\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9083,7 +9083,7 @@
         "Pitcher: Suppresses HR (HR/9 0.73)",
         "Platoon edge (L vs RHP)",
         "Slightly + park (102)",
-        "Hot (88\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9229,7 +9229,7 @@
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (102)",
-        "Hot (88\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9276,7 +9276,7 @@
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (103)",
-        "Hot (87\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9372,7 +9372,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.29)",
         "Pitcher: High K rate (27%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (85\u00b0F)",
+        "Warm (84\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9652,7 +9652,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.35)",
         "Pitcher: High K rate (29%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (85\u00b0F)",
+        "Warm (84\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9794,7 +9794,7 @@
         "Pitcher: Low K rate (15%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (103)",
-        "Hot (87\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -10085,7 +10085,7 @@
         "Pitcher: Low K rate (15%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (103)",
-        "Hot (87\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -10368,7 +10368,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.35)",
         "Pitcher: High K rate (29%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (85\u00b0F)",
+        "Warm (84\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -10644,7 +10644,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.28)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
+        "Wind out ~8 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -11125,7 +11125,7 @@
         "Pitcher: High K rate (29%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (103)",
-        "Hot (87\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -11264,7 +11264,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.29)",
         "Pitcher: High K rate (27%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (85\u00b0F)",
+        "Warm (84\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -11309,7 +11309,7 @@
         "Pitcher: Suppresses HR (HR/9 0.73)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (102)",
-        "Hot (88\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -11499,7 +11499,7 @@
         "Pitcher: High K rate (29%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (103)",
-        "Hot (87\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -11611,7 +11611,7 @@
       "confirmed": false,
       "season_hr": 6,
       "iso": 0.123,
-      "total": 25.0,
+      "total": 26.5,
       "tier": "Pass",
       "role": "Watchlist",
       "shape_source": "proxy",
@@ -11623,7 +11623,7 @@
       "breakdown": {
         "pitcher": 6.5,
         "hitter": 0.0,
-        "environment": 10.5,
+        "environment": 12.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
@@ -11632,8 +11632,8 @@
         "vs Michael King \u2014 cause Pass (6.5/25)",
         "Pitcher: Suppresses HR (HR/9 0.83)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hot (87\u00b0F)",
-        "Wind out ~11 mph",
+        "Hot (88\u00b0F)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
