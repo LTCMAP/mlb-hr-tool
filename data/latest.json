@@ -1,6 +1,6 @@
 {
   "version": "2.6",
-  "generated_utc": "2026-07-20T16:46:13.096921+00:00",
+  "generated_utc": "2026-07-20T18:28:47.232426+00:00",
   "slate_date": "2026-07-20",
   "games": 15,
   "confirmed_lineups": 0,
@@ -10,8 +10,8 @@
     "recent_days": 7,
     "start": "2026-06-30",
     "end": "2026-07-20",
-    "days_fetched": 21,
-    "days_cached": 0,
+    "days_fetched": 0,
+    "days_cached": 21,
     "days_failed": 0,
     "batters": 403,
     "pitchers": 478,
@@ -103,19 +103,19 @@
       "playable_bats": [
         {
           "name": "Riley Greene",
-          "total": 76.0,
+          "total": 73.5,
           "role": "Cause Satellite",
           "fit_tag": null
         },
         {
           "name": "Spencer Torkelson",
-          "total": 69.7,
+          "total": 67.2,
           "role": "Cause Satellite",
           "fit_tag": null
         },
         {
           "name": "Colt Keith",
-          "total": 66.3,
+          "total": 63.8,
           "role": "Cause Satellite",
           "fit_tag": null
         }
@@ -199,32 +199,26 @@
       "park_hr": 95,
       "cause_score": 19.2,
       "capture_method": "2-bat mini-stack or team-HR (strong cause, multiple bats)",
-      "public_heat": true,
-      "n_playable": 4,
+      "public_heat": false,
+      "n_playable": 3,
       "playable_bats": [
         {
           "name": "Bryce Eldridge",
-          "total": 72.2,
+          "total": 70.7,
           "role": "Cause Satellite",
           "fit_tag": "PITCH-FIT"
         },
         {
           "name": "Rafael Devers",
-          "total": 65.8,
+          "total": 64.3,
           "role": "Cause Satellite",
           "fit_tag": "PITCH-FIT"
         },
         {
           "name": "Willy Adames",
-          "total": 64.9,
+          "total": 63.4,
           "role": "Cause Satellite",
           "fit_tag": null
-        },
-        {
-          "name": "Heliot Ramos",
-          "total": 63.1,
-          "role": "Cause Satellite",
-          "fit_tag": "PITCH-FIT"
         }
       ]
     },
@@ -441,10 +435,17 @@
       "pitcher_cause": 14.5,
       "park_hr": 99,
       "cause_score": 14.2,
-      "capture_method": "Team-HR placeholder (cause strong, bat capture thin)",
+      "capture_method": "Single best bat",
       "public_heat": false,
-      "n_playable": 0,
-      "playable_bats": []
+      "n_playable": 1,
+      "playable_bats": [
+        {
+          "name": "Tyler O'Neill",
+          "total": 62.0,
+          "role": "Longshot",
+          "fit_tag": null
+        }
+      ]
     },
     {
       "team": "Pittsburgh Pirates",
@@ -601,7 +602,7 @@
       "playable_bats": [
         {
           "name": "Lane Thomas",
-          "total": 64.9,
+          "total": 63.4,
           "role": "Power Satellite",
           "fit_tag": "PITCH-FIT"
         }
@@ -618,8 +619,15 @@
       "cause_score": 9.8,
       "capture_method": "Watchlist / pass (no clear cause)",
       "public_heat": false,
-      "n_playable": 0,
-      "playable_bats": []
+      "n_playable": 1,
+      "playable_bats": [
+        {
+          "name": "Willson Contreras",
+          "total": 63.1,
+          "role": "Power Satellite",
+          "fit_tag": "PITCH-FIT"
+        }
+      ]
     },
     {
       "team": "St. Louis Cardinals",
@@ -650,20 +658,20 @@
       "confirmed": false,
       "season_hr": 14,
       "iso": 0.181,
-      "total": 76.0,
+      "total": 73.5,
       "tier": "Satellite",
       "role": "Cause Satellite",
       "shape_source": "statcast",
       "pull_fit": true,
       "mix_fit": null,
       "fit_tag": null,
-      "value_play": false,
+      "value_play": true,
       "due_hr": 0.4,
       "pitcher_grade": "A+",
       "breakdown": {
         "pitcher": 20.5,
         "hitter": 31.5,
-        "environment": 13.0,
+        "environment": 10.5,
         "lineup": 6.0,
         "confidence": 5.0
       },
@@ -687,63 +695,6 @@
         "Platoon edge (L vs RHP)",
         "Slightly + park (100)",
         "Highly wind-dependent",
-        "Model: elite shape + clear cause"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 805811,
-      "name": "Bryce Eldridge",
-      "team": "San Francisco Giants",
-      "bats": "L",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Michael Wacha",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824087,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.215,
-      "total": 72.2,
-      "tier": "Satellite",
-      "role": "Cause Satellite",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.47,
-      "fit_tag": "PITCH-FIT",
-      "value_play": true,
-      "due_hr": 0.1,
-      "pitcher_grade": "A+",
-      "breakdown": {
-        "pitcher": 20.5,
-        "hitter": 30.2,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 5.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2044,
-        "barrel_rate": 0.1105,
-        "hard_hit_rate": 0.4511,
-        "fb_rate": 0.535,
-        "z_contact_rate": 0.842,
-        "sweet_spot_rate": 0.3882,
-        "xwobacon": 0.4148,
-        "ev90": 107.4
-      },
-      "reasons": [
-        "vs Michael Wacha \u2014 cause A+ (20.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.06)",
-        "Pitcher: Barrels up (10% allowed)",
-        "Platoon shape: spikes vs RHP (barrel 13%, air-pull 20%)",
-        "Good air-pull (20%)",
-        "Strong barrels (13%)",
-        "Zone-damage: hard-hit 45% + Z-contact 84%",
-        "Hot (102\u00b0F)",
-        "Wind out ~7 mph",
         "Model: elite shape + clear cause",
         "VALUE longshot: real shape + cause off the chalk"
       ],
@@ -811,6 +762,63 @@
       "role_notes": []
     },
     {
+      "id": 805811,
+      "name": "Bryce Eldridge",
+      "team": "San Francisco Giants",
+      "bats": "L",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Michael Wacha",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824087,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 10,
+      "iso": 0.215,
+      "total": 70.7,
+      "tier": "Satellite",
+      "role": "Cause Satellite",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.47,
+      "fit_tag": "PITCH-FIT",
+      "value_play": true,
+      "due_hr": 0.1,
+      "pitcher_grade": "A+",
+      "breakdown": {
+        "pitcher": 20.5,
+        "hitter": 30.2,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 5.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2044,
+        "barrel_rate": 0.1105,
+        "hard_hit_rate": 0.4511,
+        "fb_rate": 0.535,
+        "z_contact_rate": 0.842,
+        "sweet_spot_rate": 0.3882,
+        "xwobacon": 0.4148,
+        "ev90": 107.4
+      },
+      "reasons": [
+        "vs Michael Wacha \u2014 cause A+ (20.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.06)",
+        "Pitcher: Barrels up (10% allowed)",
+        "Platoon shape: spikes vs RHP (barrel 13%, air-pull 20%)",
+        "Good air-pull (20%)",
+        "Strong barrels (13%)",
+        "Zone-damage: hard-hit 45% + Z-contact 84%",
+        "Hot (101\u00b0F)",
+        "Model: elite shape + clear cause",
+        "VALUE longshot: real shape + cause off the chalk"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
       "id": 669127,
       "name": "Shea Langeliers",
       "team": "Athletics",
@@ -861,64 +869,6 @@
         "Slightly + park (103)",
         "Retractable roof (weather neutralized)",
         "Model: elite shape + clear cause"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 679529,
-      "name": "Spencer Torkelson",
-      "team": "Detroit Tigers",
-      "bats": "R",
-      "opp": "Chicago Cubs",
-      "opp_pitcher": "Jameson Taillon",
-      "venue": "Wrigley Field",
-      "gamePk": 824654,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.215,
-      "total": 69.7,
-      "tier": "Longshot",
-      "role": "Cause Satellite",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": true,
-      "due_hr": -0.2,
-      "pitcher_grade": "A+",
-      "breakdown": {
-        "pitcher": 20.5,
-        "hitter": 26.2,
-        "environment": 13.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.211,
-        "barrel_rate": 0.1247,
-        "hard_hit_rate": 0.3737,
-        "fb_rate": 0.5303,
-        "z_contact_rate": 0.8493,
-        "sweet_spot_rate": 0.3902,
-        "xwobacon": 0.3949,
-        "ev90": 104.0
-      },
-      "reasons": [
-        "vs Jameson Taillon \u2014 cause A+ (20.5/25)",
-        "Pitcher: Elevated HR allowed (HR/9 2.68)",
-        "Pitcher: Hard contact allowed (.508 SLG)",
-        "Platoon shape: spikes vs RHP (barrel 17%, air-pull 26%)",
-        "Strong air-pull (26%)",
-        "Elite barrel rate (17%)",
-        "Hot (2 HR / 2 barrels last 7d)",
-        "Slightly + park (100)",
-        "Highly wind-dependent",
-        "Model: one strong signal",
-        "VALUE longshot: real shape + cause off the chalk"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -1098,6 +1048,64 @@
       ]
     },
     {
+      "id": 679529,
+      "name": "Spencer Torkelson",
+      "team": "Detroit Tigers",
+      "bats": "R",
+      "opp": "Chicago Cubs",
+      "opp_pitcher": "Jameson Taillon",
+      "venue": "Wrigley Field",
+      "gamePk": 824654,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 18,
+      "iso": 0.215,
+      "total": 67.2,
+      "tier": "Longshot",
+      "role": "Cause Satellite",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": true,
+      "due_hr": -0.2,
+      "pitcher_grade": "A+",
+      "breakdown": {
+        "pitcher": 20.5,
+        "hitter": 26.2,
+        "environment": 10.5,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.211,
+        "barrel_rate": 0.1247,
+        "hard_hit_rate": 0.3737,
+        "fb_rate": 0.5303,
+        "z_contact_rate": 0.8493,
+        "sweet_spot_rate": 0.3902,
+        "xwobacon": 0.3949,
+        "ev90": 104.0
+      },
+      "reasons": [
+        "vs Jameson Taillon \u2014 cause A+ (20.5/25)",
+        "Pitcher: Elevated HR allowed (HR/9 2.68)",
+        "Pitcher: Hard contact allowed (.508 SLG)",
+        "Platoon shape: spikes vs RHP (barrel 17%, air-pull 26%)",
+        "Strong air-pull (26%)",
+        "Elite barrel rate (17%)",
+        "Hot (2 HR / 2 barrels last 7d)",
+        "Slightly + park (100)",
+        "Highly wind-dependent",
+        "Model: one strong signal",
+        "VALUE longshot: real shape + cause off the chalk"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
       "id": 671277,
       "name": "Luis Garc\u00eda Jr.",
       "team": "Washington Nationals",
@@ -1258,63 +1266,6 @@
         "Strong air-pull (24%)",
         "Elite HR park (115)",
         "Altitude; elite carry",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 690993,
-      "name": "Colt Keith",
-      "team": "Detroit Tigers",
-      "bats": "L",
-      "opp": "Chicago Cubs",
-      "opp_pitcher": "Jameson Taillon",
-      "venue": "Wrigley Field",
-      "gamePk": 824654,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.142,
-      "total": 66.3,
-      "tier": "Longshot",
-      "role": "Cause Satellite",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.0,
-      "pitcher_grade": "A+",
-      "breakdown": {
-        "pitcher": 20.5,
-        "hitter": 22.8,
-        "environment": 13.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1955,
-        "barrel_rate": 0.0894,
-        "hard_hit_rate": 0.4198,
-        "fb_rate": 0.5602,
-        "z_contact_rate": 0.8865,
-        "sweet_spot_rate": 0.3918,
-        "xwobacon": 0.4028,
-        "ev90": 103.0
-      },
-      "reasons": [
-        "vs Jameson Taillon \u2014 cause A+ (20.5/25)",
-        "Pitcher: Elevated HR allowed (HR/9 2.68)",
-        "Pitcher: Hard contact allowed (.508 SLG)",
-        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 21%)",
-        "Good air-pull (21%)",
-        "Above-avg barrels (11%)",
-        "Platoon edge (L vs RHP)",
-        "Slightly + park (100)",
-        "Highly wind-dependent",
         "Model: one strong signal"
       ],
       "warnings": [
@@ -1495,63 +1446,6 @@
       "role_notes": []
     },
     {
-      "id": 646240,
-      "name": "Rafael Devers",
-      "team": "San Francisco Giants",
-      "bats": "L",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Michael Wacha",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824087,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 20,
-      "iso": 0.229,
-      "total": 65.8,
-      "tier": "Longshot",
-      "role": "Cause Satellite",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.4,
-      "fit_tag": "PITCH-FIT",
-      "value_play": false,
-      "due_hr": -2.6,
-      "pitcher_grade": "A+",
-      "breakdown": {
-        "pitcher": 20.5,
-        "hitter": 24.8,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1962,
-        "barrel_rate": 0.096,
-        "hard_hit_rate": 0.4035,
-        "fb_rate": 0.5446,
-        "z_contact_rate": 0.8179,
-        "sweet_spot_rate": 0.3265,
-        "xwobacon": 0.3942,
-        "ev90": 109.3
-      },
-      "reasons": [
-        "vs Michael Wacha \u2014 cause A+ (20.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.06)",
-        "Pitcher: Barrels up (10% allowed)",
-        "Platoon shape: spikes vs RHP (barrel 12%, air-pull 22%)",
-        "Good air-pull (22%)",
-        "Strong barrels (12%)",
-        "Platoon edge (L vs RHP)",
-        "Hot (102\u00b0F)",
-        "Wind out ~7 mph",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 701538,
       "name": "Jackson Merrill",
       "team": "San Diego Padres",
@@ -1711,121 +1605,6 @@
       "role_notes": []
     },
     {
-      "id": 642715,
-      "name": "Willy Adames",
-      "team": "San Francisco Giants",
-      "bats": "R",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Michael Wacha",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824087,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.2,
-      "total": 64.9,
-      "tier": "Longshot",
-      "role": "Cause Satellite",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.02,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.0,
-      "pitcher_grade": "A+",
-      "breakdown": {
-        "pitcher": 20.5,
-        "hitter": 23.9,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2266,
-        "barrel_rate": 0.0835,
-        "hard_hit_rate": 0.3843,
-        "fb_rate": 0.4817,
-        "z_contact_rate": 0.8493,
-        "sweet_spot_rate": 0.3381,
-        "xwobacon": 0.3922,
-        "ev90": 101.3
-      },
-      "reasons": [
-        "vs Michael Wacha \u2014 cause A+ (20.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.06)",
-        "Pitcher: Barrels up (10% allowed)",
-        "Strong air-pull (25%)",
-        "Above-avg barrels (10%)",
-        "Hot (2 HR / 2 barrels last 7d)",
-        "Hot (102\u00b0F)",
-        "Wind out ~7 mph",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 657041,
-      "name": "Lane Thomas",
-      "team": "Kansas City Royals",
-      "bats": "R",
-      "opp": "San Francisco Giants",
-      "opp_pitcher": "Trevor McDonald",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824087,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.177,
-      "total": 64.9,
-      "tier": "Longshot",
-      "role": "Power Satellite",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.48,
-      "fit_tag": "PITCH-FIT",
-      "value_play": false,
-      "due_hr": 0.8,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.0,
-        "hitter": 33.4,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2584,
-        "barrel_rate": 0.1126,
-        "hard_hit_rate": 0.4974,
-        "fb_rate": 0.527,
-        "z_contact_rate": 0.8588,
-        "sweet_spot_rate": 0.402,
-        "xwobacon": 0.4206,
-        "ev90": 107.4
-      },
-      "reasons": [
-        "vs Trevor McDonald \u2014 cause C (11.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.82)",
-        "Platoon shape: spikes vs RHP (barrel 14%, air-pull 32%)",
-        "Elite air-pull (32%)",
-        "Strong barrels (14%)",
-        "Zone-damage: hard-hit 50% + Z-contact 86%",
-        "Hot (102\u00b0F)",
-        "Wind out ~7 mph",
-        "Elite-hitter override (beats a neutral spot)",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Elite-hitter override (beats a neutral spot)"
-      ]
-    },
-    {
       "id": 686611,
       "name": "Dylan Crews",
       "team": "Washington Nationals",
@@ -1882,6 +1661,62 @@
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
+    },
+    {
+      "id": 646240,
+      "name": "Rafael Devers",
+      "team": "San Francisco Giants",
+      "bats": "L",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Michael Wacha",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824087,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 20,
+      "iso": 0.229,
+      "total": 64.3,
+      "tier": "Longshot",
+      "role": "Cause Satellite",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.4,
+      "fit_tag": "PITCH-FIT",
+      "value_play": false,
+      "due_hr": -2.6,
+      "pitcher_grade": "A+",
+      "breakdown": {
+        "pitcher": 20.5,
+        "hitter": 24.8,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1962,
+        "barrel_rate": 0.096,
+        "hard_hit_rate": 0.4035,
+        "fb_rate": 0.5446,
+        "z_contact_rate": 0.8179,
+        "sweet_spot_rate": 0.3265,
+        "xwobacon": 0.3942,
+        "ev90": 109.3
+      },
+      "reasons": [
+        "vs Michael Wacha \u2014 cause A+ (20.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.06)",
+        "Pitcher: Barrels up (10% allowed)",
+        "Platoon shape: spikes vs RHP (barrel 12%, air-pull 22%)",
+        "Good air-pull (22%)",
+        "Strong barrels (12%)",
+        "Platoon edge (L vs RHP)",
+        "Hot (101\u00b0F)",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
     },
     {
       "id": 573262,
@@ -1989,6 +1824,63 @@
         "Zone-damage: hard-hit 47% + Z-contact 88%",
         "Elite HR park (113)",
         "Short RF porch boosts LHB HR",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 690993,
+      "name": "Colt Keith",
+      "team": "Detroit Tigers",
+      "bats": "L",
+      "opp": "Chicago Cubs",
+      "opp_pitcher": "Jameson Taillon",
+      "venue": "Wrigley Field",
+      "gamePk": 824654,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 8,
+      "iso": 0.142,
+      "total": 63.8,
+      "tier": "Longshot",
+      "role": "Cause Satellite",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.0,
+      "pitcher_grade": "A+",
+      "breakdown": {
+        "pitcher": 20.5,
+        "hitter": 22.8,
+        "environment": 10.5,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1955,
+        "barrel_rate": 0.0894,
+        "hard_hit_rate": 0.4198,
+        "fb_rate": 0.5602,
+        "z_contact_rate": 0.8865,
+        "sweet_spot_rate": 0.3918,
+        "xwobacon": 0.4028,
+        "ev90": 103.0
+      },
+      "reasons": [
+        "vs Jameson Taillon \u2014 cause A+ (20.5/25)",
+        "Pitcher: Elevated HR allowed (HR/9 2.68)",
+        "Pitcher: Hard contact allowed (.508 SLG)",
+        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 21%)",
+        "Good air-pull (21%)",
+        "Above-avg barrels (11%)",
+        "Platoon edge (L vs RHP)",
+        "Slightly + park (100)",
+        "Highly wind-dependent",
         "Model: one strong signal"
       ],
       "warnings": [
@@ -2168,8 +2060,8 @@
       "role_notes": []
     },
     {
-      "id": 671218,
-      "name": "Heliot Ramos",
+      "id": 642715,
+      "name": "Willy Adames",
       "team": "San Francisco Giants",
       "bats": "R",
       "opp": "Kansas City Royals",
@@ -2178,51 +2070,166 @@
       "gamePk": 824087,
       "slot": null,
       "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.183,
-      "total": 63.1,
+      "season_hr": 17,
+      "iso": 0.2,
+      "total": 63.4,
       "tier": "Longshot",
       "role": "Cause Satellite",
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 1.26,
-      "fit_tag": "PITCH-FIT",
+      "mix_fit": 1.02,
+      "fit_tag": null,
       "value_play": false,
-      "due_hr": 3.1,
+      "due_hr": -1.0,
       "pitcher_grade": "A+",
       "breakdown": {
         "pitcher": 20.5,
-        "hitter": 22.1,
-        "environment": 10.5,
+        "hitter": 23.9,
+        "environment": 9.0,
         "lineup": 6.0,
         "confidence": 4.0
       },
       "statcast": {
-        "air_pull_rate": 0.1488,
-        "barrel_rate": 0.1295,
-        "hard_hit_rate": 0.4504,
-        "fb_rate": 0.4949,
-        "z_contact_rate": 0.8577,
-        "sweet_spot_rate": 0.3514,
-        "xwobacon": 0.4134,
-        "ev90": 107.2
+        "air_pull_rate": 0.2266,
+        "barrel_rate": 0.0835,
+        "hard_hit_rate": 0.3843,
+        "fb_rate": 0.4817,
+        "z_contact_rate": 0.8493,
+        "sweet_spot_rate": 0.3381,
+        "xwobacon": 0.3922,
+        "ev90": 101.3
       },
       "reasons": [
         "vs Michael Wacha \u2014 cause A+ (20.5/25)",
         "Pitcher: High HR allowed (HR/9 1.06)",
         "Pitcher: Barrels up (10% allowed)",
-        "Platoon shape: spikes vs RHP (barrel 16%, air-pull 10%)",
-        "Low air-pull (10%)",
-        "Elite barrel rate (16%)",
-        "Zone-damage: hard-hit 45% + Z-contact 86%",
-        "Hot (102\u00b0F)",
-        "Wind out ~7 mph",
+        "Strong air-pull (25%)",
+        "Above-avg barrels (10%)",
+        "Hot (2 HR / 2 barrels last 7d)",
+        "Hot (101\u00b0F)",
         "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": []
+    },
+    {
+      "id": 657041,
+      "name": "Lane Thomas",
+      "team": "Kansas City Royals",
+      "bats": "R",
+      "opp": "San Francisco Giants",
+      "opp_pitcher": "Trevor McDonald",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824087,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 9,
+      "iso": 0.177,
+      "total": 63.4,
+      "tier": "Longshot",
+      "role": "Power Satellite",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.48,
+      "fit_tag": "PITCH-FIT",
+      "value_play": false,
+      "due_hr": 0.8,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 33.4,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2584,
+        "barrel_rate": 0.1126,
+        "hard_hit_rate": 0.4974,
+        "fb_rate": 0.527,
+        "z_contact_rate": 0.8588,
+        "sweet_spot_rate": 0.402,
+        "xwobacon": 0.4206,
+        "ev90": 107.4
+      },
+      "reasons": [
+        "vs Trevor McDonald \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.82)",
+        "Platoon shape: spikes vs RHP (barrel 14%, air-pull 32%)",
+        "Elite air-pull (32%)",
+        "Strong barrels (14%)",
+        "Zone-damage: hard-hit 50% + Z-contact 86%",
+        "Hot (101\u00b0F)",
+        "Elite-hitter override (beats a neutral spot)",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Elite-hitter override (beats a neutral spot)"
+      ]
+    },
+    {
+      "id": 575929,
+      "name": "Willson Contreras",
+      "team": "Boston Red Sox",
+      "bats": "R",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Shane Baz",
+      "venue": "Fenway Park",
+      "gamePk": 824736,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 22,
+      "iso": 0.268,
+      "total": 63.1,
+      "tier": "Longshot",
+      "role": "Power Satellite",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.42,
+      "fit_tag": "PITCH-FIT",
+      "value_play": false,
+      "due_hr": 0.1,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.0,
+        "hitter": 32.6,
+        "environment": 10.5,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2204,
+        "barrel_rate": 0.1191,
+        "hard_hit_rate": 0.4534,
+        "fb_rate": 0.5445,
+        "z_contact_rate": 0.8822,
+        "sweet_spot_rate": 0.3593,
+        "xwobacon": 0.4284,
+        "ev90": 109.4
+      },
+      "reasons": [
+        "vs Shane Baz \u2014 cause C (10.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.73)",
+        "Platoon shape: spikes vs RHP (barrel 16%, air-pull 25%)",
+        "Strong air-pull (25%)",
+        "Elite barrel rate (16%)",
+        "Zone-damage: hard-hit 45% + Z-contact 88%",
+        "Slightly + park (103)",
+        "Green Monster cuts LHB HR, aids doubles",
+        "Elite-hitter override (beats a neutral spot)",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Elite-hitter override (beats a neutral spot)"
+      ]
     },
     {
       "id": 665862,
@@ -2388,63 +2395,118 @@
       "role_notes": []
     },
     {
-      "id": 575929,
-      "name": "Willson Contreras",
-      "team": "Boston Red Sox",
+      "id": 641933,
+      "name": "Tyler O'Neill",
+      "team": "Baltimore Orioles",
       "bats": "R",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Shane Baz",
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
       "venue": "Fenway Park",
       "gamePk": 824736,
       "slot": null,
       "confirmed": false,
-      "season_hr": 22,
-      "iso": 0.268,
-      "total": 61.6,
-      "tier": "Pass",
-      "role": "Power Satellite",
+      "season_hr": 6,
+      "iso": 0.154,
+      "total": 62.0,
+      "tier": "Longshot",
+      "role": "Longshot",
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 1.42,
+      "mix_fit": 2.05,
+      "fit_tag": null,
+      "value_play": true,
+      "due_hr": -1.3,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 14.5,
+        "hitter": 27.0,
+        "environment": 10.5,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1918,
+        "barrel_rate": 0.1211,
+        "hard_hit_rate": 0.4369,
+        "fb_rate": 0.5412,
+        "z_contact_rate": 0.8565,
+        "sweet_spot_rate": 0.3506,
+        "xwobacon": 0.4228,
+        "ev90": 108.7
+      },
+      "reasons": [
+        "vs Payton Tolle \u2014 cause B (14.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.86)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Platoon shape: spikes vs LHP (barrel 19%, air-pull 22%)",
+        "Good air-pull (22%)",
+        "Elite barrel rate (19%)",
+        "Platoon edge (R vs LHP)",
+        "Slightly + park (103)",
+        "Green Monster cuts LHB HR, aids doubles",
+        "Model: one strong signal",
+        "VALUE longshot: real shape + cause off the chalk"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 671218,
+      "name": "Heliot Ramos",
+      "team": "San Francisco Giants",
+      "bats": "R",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Michael Wacha",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824087,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 8,
+      "iso": 0.183,
+      "total": 61.6,
+      "tier": "Pass",
+      "role": "Cause Satellite",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.26,
       "fit_tag": "PITCH-FIT",
       "value_play": false,
-      "due_hr": 0.1,
-      "pitcher_grade": "C",
+      "due_hr": 3.1,
+      "pitcher_grade": "A+",
       "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 32.6,
+        "pitcher": 20.5,
+        "hitter": 22.1,
         "environment": 9.0,
         "lineup": 6.0,
         "confidence": 4.0
       },
       "statcast": {
-        "air_pull_rate": 0.2204,
-        "barrel_rate": 0.1191,
-        "hard_hit_rate": 0.4534,
-        "fb_rate": 0.5445,
-        "z_contact_rate": 0.8822,
-        "sweet_spot_rate": 0.3593,
-        "xwobacon": 0.4284,
-        "ev90": 109.4
+        "air_pull_rate": 0.1488,
+        "barrel_rate": 0.1295,
+        "hard_hit_rate": 0.4504,
+        "fb_rate": 0.4949,
+        "z_contact_rate": 0.8577,
+        "sweet_spot_rate": 0.3514,
+        "xwobacon": 0.4134,
+        "ev90": 107.2
       },
       "reasons": [
-        "vs Shane Baz \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.73)",
-        "Platoon shape: spikes vs RHP (barrel 16%, air-pull 25%)",
-        "Strong air-pull (25%)",
+        "vs Michael Wacha \u2014 cause A+ (20.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.06)",
+        "Pitcher: Barrels up (10% allowed)",
+        "Platoon shape: spikes vs RHP (barrel 16%, air-pull 10%)",
+        "Low air-pull (10%)",
         "Elite barrel rate (16%)",
-        "Zone-damage: hard-hit 45% + Z-contact 88%",
-        "Slightly + park (103)",
-        "Green Monster cuts LHB HR, aids doubles",
-        "Elite-hitter override (beats a neutral spot)",
+        "Zone-damage: hard-hit 45% + Z-contact 86%",
+        "Hot (101\u00b0F)",
         "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
       ],
-      "role_notes": [
-        "Elite-hitter override (beats a neutral spot)"
-      ]
+      "role_notes": []
     },
     {
       "id": 665742,
@@ -2617,54 +2679,55 @@
       "role_notes": []
     },
     {
-      "id": 673548,
-      "name": "Seiya Suzuki",
-      "team": "Chicago Cubs",
-      "bats": "R",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Jack Flaherty",
-      "venue": "Wrigley Field",
-      "gamePk": 824654,
+      "id": 677800,
+      "name": "Wilyer Abreu",
+      "team": "Boston Red Sox",
+      "bats": "L",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Shane Baz",
+      "venue": "Fenway Park",
+      "gamePk": 824736,
       "slot": null,
       "confirmed": false,
       "season_hr": 15,
-      "iso": 0.196,
-      "total": 60.6,
+      "iso": 0.194,
+      "total": 60.5,
       "tier": "Pass",
       "role": "Pass",
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 1.21,
+      "mix_fit": 1.51,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 1.1,
+      "due_hr": 1.8,
       "pitcher_grade": "C",
       "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 25.6,
-        "environment": 13.0,
+        "pitcher": 10.0,
+        "hitter": 31.0,
+        "environment": 9.5,
         "lineup": 6.0,
-        "confidence": 3.0
+        "confidence": 4.0
       },
       "statcast": {
-        "air_pull_rate": 0.2196,
-        "barrel_rate": 0.1029,
-        "hard_hit_rate": 0.401,
-        "fb_rate": 0.5486,
-        "z_contact_rate": 0.8733,
-        "sweet_spot_rate": 0.359,
-        "xwobacon": 0.3749,
-        "ev90": 104.8
+        "air_pull_rate": 0.2162,
+        "barrel_rate": 0.146,
+        "hard_hit_rate": 0.4285,
+        "fb_rate": 0.5779,
+        "z_contact_rate": 0.8369,
+        "sweet_spot_rate": 0.4154,
+        "xwobacon": 0.432,
+        "ev90": 106.7
       },
       "reasons": [
-        "vs Jack Flaherty \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "Platoon shape: spikes vs RHP (barrel 13%, air-pull 26%)",
-        "Strong air-pull (26%)",
-        "Strong barrels (13%)",
-        "Pitch-mix fit: damages this arsenal (57% fastballs, rel 0.46 \u2192 mix-fit 1.21x)",
-        "Slightly + park (100)",
-        "Highly wind-dependent"
+        "vs Shane Baz \u2014 cause C (10.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.73)",
+        "Platoon shape: spikes vs RHP (barrel 19%, air-pull 21%)",
+        "Good air-pull (21%)",
+        "Elite barrel rate (19%)",
+        "Platoon edge (L vs RHP)",
+        "Green Monster cuts LHB HR, aids doubles",
+        "Warm (82\u00b0F)",
+        "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -2720,63 +2783,6 @@
         "Hot (3 HR / 3 barrels last 7d)",
         "Slightly + park (103)",
         "Hot (92\u00b0F)",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 641933,
-      "name": "Tyler O'Neill",
-      "team": "Baltimore Orioles",
-      "bats": "R",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
-      "venue": "Fenway Park",
-      "gamePk": 824736,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 6,
-      "iso": 0.154,
-      "total": 60.5,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 2.05,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.3,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 14.5,
-        "hitter": 27.0,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1918,
-        "barrel_rate": 0.1211,
-        "hard_hit_rate": 0.4369,
-        "fb_rate": 0.5412,
-        "z_contact_rate": 0.8565,
-        "sweet_spot_rate": 0.3506,
-        "xwobacon": 0.4228,
-        "ev90": 108.7
-      },
-      "reasons": [
-        "vs Payton Tolle \u2014 cause B (14.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.86)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "Platoon shape: spikes vs LHP (barrel 19%, air-pull 22%)",
-        "Good air-pull (22%)",
-        "Elite barrel rate (19%)",
-        "Platoon edge (R vs LHP)",
-        "Slightly + park (103)",
-        "Green Monster cuts LHB HR, aids doubles",
         "Model: one strong signal"
       ],
       "warnings": [
@@ -2901,61 +2907,6 @@
       "role_notes": []
     },
     {
-      "id": 691718,
-      "name": "Pete Crow-Armstrong",
-      "team": "Chicago Cubs",
-      "bats": "L",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Jack Flaherty",
-      "venue": "Wrigley Field",
-      "gamePk": 824654,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 21,
-      "iso": 0.235,
-      "total": 59.6,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.86,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -2.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 24.6,
-        "environment": 13.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2647,
-        "barrel_rate": 0.0817,
-        "hard_hit_rate": 0.3463,
-        "fb_rate": 0.5424,
-        "z_contact_rate": 0.8505,
-        "sweet_spot_rate": 0.3781,
-        "xwobacon": 0.3586,
-        "ev90": 103.9
-      },
-      "reasons": [
-        "vs Jack Flaherty \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 37%)",
-        "Elite air-pull (37%)",
-        "Above-avg barrels (11%)",
-        "Platoon edge (L vs RHP)",
-        "Slightly + park (100)",
-        "Highly wind-dependent"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 670541,
       "name": "Yordan Alvarez",
       "team": "Houston Astros",
@@ -3003,119 +2954,6 @@
         "Elite barrel rate (18%)",
         "Platoon edge (L vs RHP)",
         "Retractable roof (weather neutralized)",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 669477,
-      "name": "Casey Schmitt",
-      "team": "San Francisco Giants",
-      "bats": "R",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Michael Wacha",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824087,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 19,
-      "iso": 0.21,
-      "total": 59.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.87,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.4,
-      "pitcher_grade": "A+",
-      "breakdown": {
-        "pitcher": 20.5,
-        "hitter": 18.1,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1858,
-        "barrel_rate": 0.0865,
-        "hard_hit_rate": 0.4317,
-        "fb_rate": 0.5645,
-        "z_contact_rate": 0.8954,
-        "sweet_spot_rate": 0.3702,
-        "xwobacon": 0.3833,
-        "ev90": 103.6
-      },
-      "reasons": [
-        "vs Michael Wacha \u2014 cause A+ (20.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.06)",
-        "Pitcher: Barrels up (10% allowed)",
-        "Above-avg barrels (9%)",
-        "Hot (102\u00b0F)",
-        "Wind out ~7 mph",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 677800,
-      "name": "Wilyer Abreu",
-      "team": "Boston Red Sox",
-      "bats": "L",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Shane Baz",
-      "venue": "Fenway Park",
-      "gamePk": 824736,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 15,
-      "iso": 0.194,
-      "total": 59.0,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.51,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 1.8,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 31.0,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2162,
-        "barrel_rate": 0.146,
-        "hard_hit_rate": 0.4285,
-        "fb_rate": 0.5779,
-        "z_contact_rate": 0.8369,
-        "sweet_spot_rate": 0.4154,
-        "xwobacon": 0.432,
-        "ev90": 106.7
-      },
-      "reasons": [
-        "vs Shane Baz \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.73)",
-        "Platoon shape: spikes vs RHP (barrel 19%, air-pull 21%)",
-        "Good air-pull (21%)",
-        "Elite barrel rate (19%)",
-        "Platoon edge (L vs RHP)",
-        "Green Monster cuts LHB HR, aids doubles",
-        "Warm (83\u00b0F)",
         "Model: one strong signal"
       ],
       "warnings": [
@@ -3180,6 +3018,62 @@
       "role_notes": []
     },
     {
+      "id": 691723,
+      "name": "Coby Mayo",
+      "team": "Baltimore Orioles",
+      "bats": "R",
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
+      "venue": "Fenway Park",
+      "gamePk": 824736,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 13,
+      "iso": 0.207,
+      "total": 58.8,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 2.05,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 14.5,
+        "hitter": 24.8,
+        "environment": 10.5,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1816,
+        "barrel_rate": 0.1147,
+        "hard_hit_rate": 0.4052,
+        "fb_rate": 0.5079,
+        "z_contact_rate": 0.8467,
+        "sweet_spot_rate": 0.3598,
+        "xwobacon": 0.4139,
+        "ev90": 111.8
+      },
+      "reasons": [
+        "vs Payton Tolle \u2014 cause B (14.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.86)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Platoon shape: spikes vs LHP (barrel 19%, air-pull 19%)",
+        "Elite barrel rate (19%)",
+        "Platoon edge (R vs LHP)",
+        "Pitch-mix fit: damages this arsenal (88% fastballs, rel 2.20 \u2192 mix-fit 2.05x)",
+        "Slightly + park (103)",
+        "Green Monster cuts LHB HR, aids doubles"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
       "id": 660688,
       "name": "Keibert Ruiz",
       "team": "Washington Nationals",
@@ -3236,64 +3130,59 @@
       ]
     },
     {
-      "id": 805808,
-      "name": "Kevin McGonigle",
-      "team": "Detroit Tigers",
-      "bats": "L",
-      "opp": "Chicago Cubs",
-      "opp_pitcher": "Jameson Taillon",
+      "id": 673548,
+      "name": "Seiya Suzuki",
+      "team": "Chicago Cubs",
+      "bats": "R",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Jack Flaherty",
       "venue": "Wrigley Field",
       "gamePk": 824654,
       "slot": null,
       "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.143,
-      "total": 58.3,
+      "season_hr": 15,
+      "iso": 0.196,
+      "total": 58.1,
       "tier": "Pass",
-      "role": "Watchlist",
+      "role": "Pass",
       "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
+      "pull_fit": true,
+      "mix_fit": 1.21,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "A+",
+      "due_hr": 1.1,
+      "pitcher_grade": "C",
       "breakdown": {
-        "pitcher": 20.5,
-        "hitter": 14.8,
-        "environment": 13.0,
+        "pitcher": 13.0,
+        "hitter": 25.6,
+        "environment": 10.5,
         "lineup": 6.0,
-        "confidence": 4.0
+        "confidence": 3.0
       },
       "statcast": {
-        "air_pull_rate": 0.1446,
-        "barrel_rate": 0.0796,
-        "hard_hit_rate": 0.3896,
-        "fb_rate": 0.541,
-        "z_contact_rate": 0.8834,
-        "sweet_spot_rate": 0.3305,
-        "xwobacon": 0.3458,
-        "ev90": 101.3
+        "air_pull_rate": 0.2196,
+        "barrel_rate": 0.1029,
+        "hard_hit_rate": 0.401,
+        "fb_rate": 0.5486,
+        "z_contact_rate": 0.8733,
+        "sweet_spot_rate": 0.359,
+        "xwobacon": 0.3749,
+        "ev90": 104.8
       },
       "reasons": [
-        "vs Jameson Taillon \u2014 cause A+ (20.5/25)",
-        "Pitcher: Elevated HR allowed (HR/9 2.68)",
-        "Pitcher: Hard contact allowed (.508 SLG)",
-        "Platoon shape: spikes vs RHP (barrel 10%, air-pull 10%)",
-        "Low air-pull (10%)",
-        "Above-avg barrels (10%)",
-        "Platoon edge (L vs RHP)",
+        "vs Jack Flaherty \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
+        "Platoon shape: spikes vs RHP (barrel 13%, air-pull 26%)",
+        "Strong air-pull (26%)",
+        "Strong barrels (13%)",
+        "Pitch-mix fit: damages this arsenal (57% fastballs, rel 0.46 \u2192 mix-fit 1.21x)",
         "Slightly + park (100)",
-        "Highly wind-dependent",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
+        "Highly wind-dependent"
       ],
       "warnings": [
         "Lineup not confirmed"
       ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
+      "role_notes": []
     },
     {
       "id": 571448,
@@ -3402,6 +3291,62 @@
         "Hot (3 HR / 3 barrels last 7d)",
         "Slightly + park (103)",
         "Hot (92\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 669477,
+      "name": "Casey Schmitt",
+      "team": "San Francisco Giants",
+      "bats": "R",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Michael Wacha",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824087,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 19,
+      "iso": 0.21,
+      "total": 57.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.87,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.4,
+      "pitcher_grade": "A+",
+      "breakdown": {
+        "pitcher": 20.5,
+        "hitter": 18.1,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1858,
+        "barrel_rate": 0.0865,
+        "hard_hit_rate": 0.4317,
+        "fb_rate": 0.5645,
+        "z_contact_rate": 0.8954,
+        "sweet_spot_rate": 0.3702,
+        "xwobacon": 0.3833,
+        "ev90": 103.6
+      },
+      "reasons": [
+        "vs Michael Wacha \u2014 cause A+ (20.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.06)",
+        "Pitcher: Barrels up (10% allowed)",
+        "Above-avg barrels (9%)",
+        "Hot (101\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -3694,112 +3639,54 @@
       "role_notes": []
     },
     {
-      "id": 681481,
-      "name": "Kerry Carpenter",
-      "team": "Detroit Tigers",
+      "id": 691718,
+      "name": "Pete Crow-Armstrong",
+      "team": "Chicago Cubs",
       "bats": "L",
-      "opp": "Chicago Cubs",
-      "opp_pitcher": "Jameson Taillon",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Jack Flaherty",
       "venue": "Wrigley Field",
       "gamePk": 824654,
       "slot": null,
       "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.226,
-      "total": 57.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.4,
-      "pitcher_grade": "A+",
-      "breakdown": {
-        "pitcher": 20.5,
-        "hitter": 13.8,
-        "environment": 13.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1565,
-        "barrel_rate": 0.0759,
-        "hard_hit_rate": 0.3475,
-        "fb_rate": 0.5197,
-        "z_contact_rate": 0.8452,
-        "sweet_spot_rate": 0.3427,
-        "xwobacon": 0.3313,
-        "ev90": 101.2
-      },
-      "reasons": [
-        "vs Jameson Taillon \u2014 cause A+ (20.5/25)",
-        "Pitcher: Elevated HR allowed (HR/9 2.68)",
-        "Pitcher: Hard contact allowed (.508 SLG)",
-        "Platoon edge (L vs RHP)",
-        "Slightly + park (100)",
-        "Highly wind-dependent",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 691723,
-      "name": "Coby Mayo",
-      "team": "Baltimore Orioles",
-      "bats": "R",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
-      "venue": "Fenway Park",
-      "gamePk": 824736,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.207,
-      "total": 57.3,
+      "season_hr": 21,
+      "iso": 0.235,
+      "total": 57.1,
       "tier": "Pass",
       "role": "Pass",
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 2.05,
+      "mix_fit": 0.86,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "B",
+      "due_hr": -2.0,
+      "pitcher_grade": "C",
       "breakdown": {
-        "pitcher": 14.5,
-        "hitter": 24.8,
-        "environment": 9.0,
+        "pitcher": 13.0,
+        "hitter": 24.6,
+        "environment": 10.5,
         "lineup": 6.0,
         "confidence": 3.0
       },
       "statcast": {
-        "air_pull_rate": 0.1816,
-        "barrel_rate": 0.1147,
-        "hard_hit_rate": 0.4052,
-        "fb_rate": 0.5079,
-        "z_contact_rate": 0.8467,
-        "sweet_spot_rate": 0.3598,
-        "xwobacon": 0.4139,
-        "ev90": 111.8
+        "air_pull_rate": 0.2647,
+        "barrel_rate": 0.0817,
+        "hard_hit_rate": 0.3463,
+        "fb_rate": 0.5424,
+        "z_contact_rate": 0.8505,
+        "sweet_spot_rate": 0.3781,
+        "xwobacon": 0.3586,
+        "ev90": 103.9
       },
       "reasons": [
-        "vs Payton Tolle \u2014 cause B (14.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.86)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "Platoon shape: spikes vs LHP (barrel 19%, air-pull 19%)",
-        "Elite barrel rate (19%)",
-        "Platoon edge (R vs LHP)",
-        "Pitch-mix fit: damages this arsenal (88% fastballs, rel 2.20 \u2192 mix-fit 2.05x)",
-        "Slightly + park (103)",
-        "Green Monster cuts LHB HR, aids doubles"
+        "vs Jack Flaherty \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
+        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 37%)",
+        "Elite air-pull (37%)",
+        "Above-avg barrels (11%)",
+        "Platoon edge (L vs RHP)",
+        "Slightly + park (100)",
+        "Highly wind-dependent"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -3860,55 +3747,6 @@
       "role_notes": []
     },
     {
-      "id": 664056,
-      "name": "Harrison Bader",
-      "team": "San Francisco Giants",
-      "bats": "R",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Michael Wacha",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824087,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 5,
-      "iso": 0.188,
-      "total": 57.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "A+",
-      "breakdown": {
-        "pitcher": 20.5,
-        "hitter": 16.0,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Michael Wacha \u2014 cause A+ (20.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.06)",
-        "Pitcher: Barrels up (10% allowed)",
-        "Proxy: strong HR rate",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hot (102\u00b0F)",
-        "Wind out ~7 mph",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 656811,
       "name": "Ryan O'Hearn",
       "team": "Pittsburgh Pirates",
@@ -3956,6 +3794,118 @@
         "Pitch-mix fit: damages this arsenal (46% breaking balls, rel 2.18 \u2192 mix-fit 1.59x)",
         "Elite HR park (113)",
         "Short RF porch boosts LHB HR"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 621493,
+      "name": "Taylor Ward",
+      "team": "Baltimore Orioles",
+      "bats": "R",
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
+      "venue": "Fenway Park",
+      "gamePk": 824736,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.11,
+      "total": 56.8,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.1,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 14.5,
+        "hitter": 22.8,
+        "environment": 10.5,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1835,
+        "barrel_rate": 0.0792,
+        "hard_hit_rate": 0.3195,
+        "fb_rate": 0.5467,
+        "z_contact_rate": 0.8334,
+        "sweet_spot_rate": 0.3882,
+        "xwobacon": 0.3431,
+        "ev90": 102.1
+      },
+      "reasons": [
+        "vs Payton Tolle \u2014 cause B (14.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.86)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Platoon shape: spikes vs LHP (barrel 13%, air-pull 24%)",
+        "Strong air-pull (24%)",
+        "Strong barrels (13%)",
+        "Platoon edge (R vs LHP)",
+        "Slightly + park (103)",
+        "Green Monster cuts LHB HR, aids doubles"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 624413,
+      "name": "Pete Alonso",
+      "team": "Baltimore Orioles",
+      "bats": "R",
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
+      "venue": "Fenway Park",
+      "gamePk": 824736,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 21,
+      "iso": 0.216,
+      "total": 56.7,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.79,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 14.5,
+        "hitter": 22.7,
+        "environment": 10.5,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1624,
+        "barrel_rate": 0.0845,
+        "hard_hit_rate": 0.4612,
+        "fb_rate": 0.5377,
+        "z_contact_rate": 0.8159,
+        "sweet_spot_rate": 0.3798,
+        "xwobacon": 0.3868,
+        "ev90": 106.6
+      },
+      "reasons": [
+        "vs Payton Tolle \u2014 cause B (14.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.86)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Platoon shape: spikes vs LHP (barrel 11%, air-pull 19%)",
+        "Good air-pull (19%)",
+        "Above-avg barrels (11%)",
+        "Hard-hit 46%",
+        "Slightly + park (103)",
+        "Green Monster cuts LHB HR, aids doubles"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -4178,62 +4128,6 @@
         "Pitch-mix fit: damages this arsenal (67% fastballs, rel 2.08 \u2192 mix-fit 1.52x)",
         "Slightly + park (103)",
         "Hot (92\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 693307,
-      "name": "Dillon Dingler",
-      "team": "Detroit Tigers",
-      "bats": "R",
-      "opp": "Chicago Cubs",
-      "opp_pitcher": "Jameson Taillon",
-      "venue": "Wrigley Field",
-      "gamePk": 824654,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 19,
-      "iso": 0.241,
-      "total": 56.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "A+",
-      "breakdown": {
-        "pitcher": 20.5,
-        "hitter": 12.8,
-        "environment": 13.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1644,
-        "barrel_rate": 0.059,
-        "hard_hit_rate": 0.3505,
-        "fb_rate": 0.4943,
-        "z_contact_rate": 0.8914,
-        "sweet_spot_rate": 0.3457,
-        "xwobacon": 0.3377,
-        "ev90": 100.5
-      },
-      "reasons": [
-        "vs Jameson Taillon \u2014 cause A+ (20.5/25)",
-        "Pitcher: Elevated HR allowed (HR/9 2.68)",
-        "Pitcher: Hard contact allowed (.508 SLG)",
-        "Slightly + park (100)",
-        "Highly wind-dependent",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -4512,6 +4406,66 @@
       "role_notes": []
     },
     {
+      "id": 805808,
+      "name": "Kevin McGonigle",
+      "team": "Detroit Tigers",
+      "bats": "L",
+      "opp": "Chicago Cubs",
+      "opp_pitcher": "Jameson Taillon",
+      "venue": "Wrigley Field",
+      "gamePk": 824654,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 9,
+      "iso": 0.143,
+      "total": 55.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "A+",
+      "breakdown": {
+        "pitcher": 20.5,
+        "hitter": 14.8,
+        "environment": 10.5,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1446,
+        "barrel_rate": 0.0796,
+        "hard_hit_rate": 0.3896,
+        "fb_rate": 0.541,
+        "z_contact_rate": 0.8834,
+        "sweet_spot_rate": 0.3305,
+        "xwobacon": 0.3458,
+        "ev90": 101.3
+      },
+      "reasons": [
+        "vs Jameson Taillon \u2014 cause A+ (20.5/25)",
+        "Pitcher: Elevated HR allowed (HR/9 2.68)",
+        "Pitcher: Hard contact allowed (.508 SLG)",
+        "Platoon shape: spikes vs RHP (barrel 10%, air-pull 10%)",
+        "Low air-pull (10%)",
+        "Above-avg barrels (10%)",
+        "Platoon edge (L vs RHP)",
+        "Slightly + park (100)",
+        "Highly wind-dependent",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 691781,
       "name": "Brady House",
       "team": "Washington Nationals",
@@ -4560,18 +4514,18 @@
       ]
     },
     {
-      "id": 672761,
-      "name": "Wenceel P\u00e9rez",
-      "team": "Detroit Tigers",
-      "bats": "S",
-      "opp": "Chicago Cubs",
-      "opp_pitcher": "Jameson Taillon",
-      "venue": "Wrigley Field",
-      "gamePk": 824654,
+      "id": 664056,
+      "name": "Harrison Bader",
+      "team": "San Francisco Giants",
+      "bats": "R",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Michael Wacha",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824087,
       "slot": null,
       "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.168,
+      "season_hr": 5,
+      "iso": 0.188,
       "total": 55.5,
       "tier": "Pass",
       "role": "Watchlist",
@@ -4584,19 +4538,19 @@
       "pitcher_grade": "A+",
       "breakdown": {
         "pitcher": 20.5,
-        "hitter": 12.0,
-        "environment": 13.0,
+        "hitter": 16.0,
+        "environment": 9.0,
         "lineup": 6.0,
         "confidence": 4.0
       },
       "statcast": null,
       "reasons": [
-        "vs Jameson Taillon \u2014 cause A+ (20.5/25)",
-        "Pitcher: Elevated HR allowed (HR/9 2.68)",
-        "Pitcher: Hard contact allowed (.508 SLG)",
+        "vs Michael Wacha \u2014 cause A+ (20.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.06)",
+        "Pitcher: Barrels up (10% allowed)",
+        "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Slightly + park (100)",
-        "Highly wind-dependent",
+        "Hot (101\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -4719,118 +4673,6 @@
       "role_notes": []
     },
     {
-      "id": 621493,
-      "name": "Taylor Ward",
-      "team": "Baltimore Orioles",
-      "bats": "R",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
-      "venue": "Fenway Park",
-      "gamePk": 824736,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.11,
-      "total": 55.3,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.1,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 14.5,
-        "hitter": 22.8,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1835,
-        "barrel_rate": 0.0792,
-        "hard_hit_rate": 0.3195,
-        "fb_rate": 0.5467,
-        "z_contact_rate": 0.8334,
-        "sweet_spot_rate": 0.3882,
-        "xwobacon": 0.3431,
-        "ev90": 102.1
-      },
-      "reasons": [
-        "vs Payton Tolle \u2014 cause B (14.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.86)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "Platoon shape: spikes vs LHP (barrel 13%, air-pull 24%)",
-        "Strong air-pull (24%)",
-        "Strong barrels (13%)",
-        "Platoon edge (R vs LHP)",
-        "Slightly + park (103)",
-        "Green Monster cuts LHB HR, aids doubles"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 624413,
-      "name": "Pete Alonso",
-      "team": "Baltimore Orioles",
-      "bats": "R",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
-      "venue": "Fenway Park",
-      "gamePk": 824736,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 21,
-      "iso": 0.216,
-      "total": 55.2,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.79,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 14.5,
-        "hitter": 22.7,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1624,
-        "barrel_rate": 0.0845,
-        "hard_hit_rate": 0.4612,
-        "fb_rate": 0.5377,
-        "z_contact_rate": 0.8159,
-        "sweet_spot_rate": 0.3798,
-        "xwobacon": 0.3868,
-        "ev90": 106.6
-      },
-      "reasons": [
-        "vs Payton Tolle \u2014 cause B (14.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.86)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "Platoon shape: spikes vs LHP (barrel 11%, air-pull 19%)",
-        "Good air-pull (19%)",
-        "Above-avg barrels (11%)",
-        "Hard-hit 46%",
-        "Slightly + park (103)",
-        "Green Monster cuts LHB HR, aids doubles"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 683146,
       "name": "Brett Baty",
       "team": "New York Mets",
@@ -4879,6 +4721,63 @@
         "Hitter-friendly park (107)",
         "Retractable roof (weather neutralized)",
         "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 681481,
+      "name": "Kerry Carpenter",
+      "team": "Detroit Tigers",
+      "bats": "L",
+      "opp": "Chicago Cubs",
+      "opp_pitcher": "Jameson Taillon",
+      "venue": "Wrigley Field",
+      "gamePk": 824654,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 13,
+      "iso": 0.226,
+      "total": 54.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.4,
+      "pitcher_grade": "A+",
+      "breakdown": {
+        "pitcher": 20.5,
+        "hitter": 13.8,
+        "environment": 10.5,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1565,
+        "barrel_rate": 0.0759,
+        "hard_hit_rate": 0.3475,
+        "fb_rate": 0.5197,
+        "z_contact_rate": 0.8452,
+        "sweet_spot_rate": 0.3427,
+        "xwobacon": 0.3313,
+        "ev90": 101.2
+      },
+      "reasons": [
+        "vs Jameson Taillon \u2014 cause A+ (20.5/25)",
+        "Pitcher: Elevated HR allowed (HR/9 2.68)",
+        "Pitcher: Hard contact allowed (.508 SLG)",
+        "Platoon edge (L vs RHP)",
+        "Slightly + park (100)",
+        "Highly wind-dependent",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -5113,6 +5012,62 @@
       ]
     },
     {
+      "id": 693307,
+      "name": "Dillon Dingler",
+      "team": "Detroit Tigers",
+      "bats": "R",
+      "opp": "Chicago Cubs",
+      "opp_pitcher": "Jameson Taillon",
+      "venue": "Wrigley Field",
+      "gamePk": 824654,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 19,
+      "iso": 0.241,
+      "total": 53.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.7,
+      "pitcher_grade": "A+",
+      "breakdown": {
+        "pitcher": 20.5,
+        "hitter": 12.8,
+        "environment": 10.5,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1644,
+        "barrel_rate": 0.059,
+        "hard_hit_rate": 0.3505,
+        "fb_rate": 0.4943,
+        "z_contact_rate": 0.8914,
+        "sweet_spot_rate": 0.3457,
+        "xwobacon": 0.3377,
+        "ev90": 100.5
+      },
+      "reasons": [
+        "vs Jameson Taillon \u2014 cause A+ (20.5/25)",
+        "Pitcher: Elevated HR allowed (HR/9 2.68)",
+        "Pitcher: Hard contact allowed (.508 SLG)",
+        "Slightly + park (100)",
+        "Highly wind-dependent",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 701762,
       "name": "Nick Kurtz",
       "team": "Athletics",
@@ -5170,57 +5125,61 @@
       ]
     },
     {
-      "id": 521692,
-      "name": "Salvador Perez",
-      "team": "Kansas City Royals",
-      "bats": "R",
-      "opp": "San Francisco Giants",
-      "opp_pitcher": "Trevor McDonald",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824087,
+      "id": 694212,
+      "name": "Samuel Basallo",
+      "team": "Baltimore Orioles",
+      "bats": "L",
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
+      "venue": "Fenway Park",
+      "gamePk": 824736,
       "slot": null,
       "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.139,
-      "total": 53.4,
+      "season_hr": 16,
+      "iso": 0.209,
+      "total": 53.6,
       "tier": "Pass",
-      "role": "Pass",
+      "role": "Watchlist",
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 1.33,
+      "mix_fit": 1.46,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "C",
+      "due_hr": 0.1,
+      "pitcher_grade": "B",
       "breakdown": {
-        "pitcher": 11.0,
-        "hitter": 22.9,
-        "environment": 10.5,
+        "pitcher": 14.5,
+        "hitter": 20.6,
+        "environment": 9.5,
         "lineup": 6.0,
         "confidence": 3.0
       },
       "statcast": {
-        "air_pull_rate": 0.2229,
-        "barrel_rate": 0.0887,
-        "hard_hit_rate": 0.4452,
-        "fb_rate": 0.5174,
-        "z_contact_rate": 0.8751,
-        "sweet_spot_rate": 0.3952,
-        "xwobacon": 0.3844,
-        "ev90": 105.5
+        "air_pull_rate": 0.153,
+        "barrel_rate": 0.1191,
+        "hard_hit_rate": 0.4389,
+        "fb_rate": 0.4685,
+        "z_contact_rate": 0.7802,
+        "sweet_spot_rate": 0.334,
+        "xwobacon": 0.3936,
+        "ev90": 105.0
       },
       "reasons": [
-        "vs Trevor McDonald \u2014 cause C (11.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.82)",
-        "Strong air-pull (23%)",
-        "Pitch-mix fit: damages this arsenal (57% fastballs, rel 1.47 \u2192 mix-fit 1.33x)",
-        "Hot (102\u00b0F)",
-        "Wind out ~7 mph"
+        "vs Payton Tolle \u2014 cause B (14.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.86)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Strong barrels (14%)",
+        "Pitch-mix fit: damages this arsenal (88% fastballs, rel 1.40 \u2192 mix-fit 1.46x)",
+        "Green Monster cuts LHB HR, aids doubles",
+        "Warm (82\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Lineup not confirmed"
       ],
-      "role_notes": []
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 663886,
@@ -5279,60 +5238,6 @@
       "role_notes": []
     },
     {
-      "id": 695506,
-      "name": "Jac Caglianone",
-      "team": "Kansas City Royals",
-      "bats": "L",
-      "opp": "San Francisco Giants",
-      "opp_pitcher": "Trevor McDonald",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824087,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.208,
-      "total": 53.1,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.97,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 1.4,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.0,
-        "hitter": 22.6,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1678,
-        "barrel_rate": 0.0865,
-        "hard_hit_rate": 0.4317,
-        "fb_rate": 0.4358,
-        "z_contact_rate": 0.8347,
-        "sweet_spot_rate": 0.281,
-        "xwobacon": 0.3585,
-        "ev90": 109.8
-      },
-      "reasons": [
-        "vs Trevor McDonald \u2014 cause C (11.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.82)",
-        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 18%)",
-        "Above-avg barrels (11%)",
-        "Platoon edge (L vs RHP)",
-        "Hot (102\u00b0F)",
-        "Wind out ~7 mph"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 667670,
       "name": "Brent Rooker",
       "team": "Athletics",
@@ -5382,53 +5287,45 @@
       ]
     },
     {
-      "id": 621020,
-      "name": "Dansby Swanson",
-      "team": "Chicago Cubs",
-      "bats": "R",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Jack Flaherty",
+      "id": 672761,
+      "name": "Wenceel P\u00e9rez",
+      "team": "Detroit Tigers",
+      "bats": "S",
+      "opp": "Chicago Cubs",
+      "opp_pitcher": "Jameson Taillon",
       "venue": "Wrigley Field",
       "gamePk": 824654,
       "slot": null,
       "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.2,
-      "total": 52.8,
+      "season_hr": 7,
+      "iso": 0.168,
+      "total": 53.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.8,
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -2.3,
-      "pitcher_grade": "C",
+      "due_hr": null,
+      "pitcher_grade": "A+",
       "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 18.8,
-        "environment": 13.0,
+        "pitcher": 20.5,
+        "hitter": 12.0,
+        "environment": 10.5,
         "lineup": 6.0,
-        "confidence": 2.0
+        "confidence": 4.0
       },
-      "statcast": {
-        "air_pull_rate": 0.2316,
-        "barrel_rate": 0.0843,
-        "hard_hit_rate": 0.4181,
-        "fb_rate": 0.5219,
-        "z_contact_rate": 0.823,
-        "sweet_spot_rate": 0.3303,
-        "xwobacon": 0.3991,
-        "ev90": 103.8
-      },
+      "statcast": null,
       "reasons": [
-        "vs Jack Flaherty \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "Strong air-pull (27%)",
-        "Poor pitch-mix fit (57% fastballs, rel 0.54 \u2192 mix-fit 0.80x)",
+        "vs Jameson Taillon \u2014 cause A+ (20.5/25)",
+        "Pitcher: Elevated HR allowed (HR/9 2.68)",
+        "Pitcher: Hard contact allowed (.508 SLG)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (100)",
         "Highly wind-dependent",
-        "Hitter shape <22 \u2192 capped at Longshot"
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -5488,63 +5385,6 @@
         "Hot (92\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 683737,
-      "name": "Michael Busch",
-      "team": "Chicago Cubs",
-      "bats": "L",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Jack Flaherty",
-      "venue": "Wrigley Field",
-      "gamePk": 824654,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.159,
-      "total": 52.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.84,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 18.7,
-        "environment": 13.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2022,
-        "barrel_rate": 0.0745,
-        "hard_hit_rate": 0.3571,
-        "fb_rate": 0.5328,
-        "z_contact_rate": 0.8701,
-        "sweet_spot_rate": 0.3846,
-        "xwobacon": 0.3695,
-        "ev90": 98.4
-      },
-      "reasons": [
-        "vs Jack Flaherty \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "Good air-pull (20%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (57% fastballs, rel 0.61 \u2192 mix-fit 0.84x)",
-        "Slightly + park (100)",
-        "Highly wind-dependent",
-        "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -5780,63 +5620,6 @@
       ]
     },
     {
-      "id": 694212,
-      "name": "Samuel Basallo",
-      "team": "Baltimore Orioles",
-      "bats": "L",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
-      "venue": "Fenway Park",
-      "gamePk": 824736,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.209,
-      "total": 52.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.46,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.1,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 14.5,
-        "hitter": 20.6,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.153,
-        "barrel_rate": 0.1191,
-        "hard_hit_rate": 0.4389,
-        "fb_rate": 0.4685,
-        "z_contact_rate": 0.7802,
-        "sweet_spot_rate": 0.334,
-        "xwobacon": 0.3936,
-        "ev90": 105.0
-      },
-      "reasons": [
-        "vs Payton Tolle \u2014 cause B (14.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.86)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "Strong barrels (14%)",
-        "Pitch-mix fit: damages this arsenal (88% fastballs, rel 1.40 \u2192 mix-fit 1.46x)",
-        "Green Monster cuts LHB HR, aids doubles",
-        "Warm (83\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 800050,
       "name": "Chase DeLauter",
       "team": "Cleveland Guardians",
@@ -5885,6 +5668,115 @@
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (56% fastballs, rel 2.20 \u2192 mix-fit 1.36x)",
         "Warm (80\u00b0F)"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 669236,
+      "name": "Jeremiah Jackson",
+      "team": "Baltimore Orioles",
+      "bats": "R",
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
+      "venue": "Fenway Park",
+      "gamePk": 824736,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.151,
+      "total": 52.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 1.4,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 14.5,
+        "hitter": 19.0,
+        "environment": 10.5,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1788,
+        "barrel_rate": 0.1016,
+        "hard_hit_rate": 0.3841,
+        "fb_rate": 0.5094,
+        "z_contact_rate": 0.8601,
+        "sweet_spot_rate": 0.3706,
+        "xwobacon": 0.3658,
+        "ev90": 103.9
+      },
+      "reasons": [
+        "vs Payton Tolle \u2014 cause B (14.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.86)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Above-avg barrels (10%)",
+        "Platoon edge (R vs LHP)",
+        "Slightly + park (103)",
+        "Green Monster cuts LHB HR, aids doubles",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 521692,
+      "name": "Salvador Perez",
+      "team": "Kansas City Royals",
+      "bats": "R",
+      "opp": "San Francisco Giants",
+      "opp_pitcher": "Trevor McDonald",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824087,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 12,
+      "iso": 0.139,
+      "total": 51.9,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.33,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.7,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 22.9,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2229,
+        "barrel_rate": 0.0887,
+        "hard_hit_rate": 0.4452,
+        "fb_rate": 0.5174,
+        "z_contact_rate": 0.8751,
+        "sweet_spot_rate": 0.3952,
+        "xwobacon": 0.3844,
+        "ev90": 105.5
+      },
+      "reasons": [
+        "vs Trevor McDonald \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.82)",
+        "Strong air-pull (23%)",
+        "Pitch-mix fit: damages this arsenal (57% fastballs, rel 1.47 \u2192 mix-fit 1.33x)",
+        "Hot (101\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -5946,61 +5838,6 @@
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
-    },
-    {
-      "id": 691023,
-      "name": "Jordan Walker",
-      "team": "St. Louis Cardinals",
-      "bats": "R",
-      "opp": "Los Angeles Angels",
-      "opp_pitcher": "Jos\u00e9 Soriano",
-      "venue": "Angel Stadium",
-      "gamePk": 824006,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 22,
-      "iso": 0.232,
-      "total": 51.8,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.41,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 1.4,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.0,
-        "hitter": 26.3,
-        "environment": 9.5,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1927,
-        "barrel_rate": 0.1178,
-        "hard_hit_rate": 0.4401,
-        "fb_rate": 0.495,
-        "z_contact_rate": 0.8518,
-        "sweet_spot_rate": 0.3442,
-        "xwobacon": 0.4117,
-        "ev90": 111.0
-      },
-      "reasons": [
-        "vs Jos\u00e9 Soriano \u2014 cause Pass (6.0/25)",
-        "Platoon shape: spikes vs RHP (barrel 15%, air-pull 20%)",
-        "Good air-pull (20%)",
-        "Elite barrel rate (15%)",
-        "Pitch-mix fit: damages this arsenal (48% fastballs, rel 1.63 \u2192 mix-fit 1.41x)",
-        "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
     },
     {
       "id": 656555,
@@ -6172,6 +6009,59 @@
       ]
     },
     {
+      "id": 695506,
+      "name": "Jac Caglianone",
+      "team": "Kansas City Royals",
+      "bats": "L",
+      "opp": "San Francisco Giants",
+      "opp_pitcher": "Trevor McDonald",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824087,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 16,
+      "iso": 0.208,
+      "total": 51.6,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.97,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 1.4,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 22.6,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1678,
+        "barrel_rate": 0.0865,
+        "hard_hit_rate": 0.4317,
+        "fb_rate": 0.4358,
+        "z_contact_rate": 0.8347,
+        "sweet_spot_rate": 0.281,
+        "xwobacon": 0.3585,
+        "ev90": 109.8
+      },
+      "reasons": [
+        "vs Trevor McDonald \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.82)",
+        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 18%)",
+        "Above-avg barrels (11%)",
+        "Platoon edge (L vs RHP)",
+        "Hot (101\u00b0F)"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
       "id": 680869,
       "name": "Zack Gelof",
       "team": "Athletics",
@@ -6221,62 +6111,6 @@
         "Retractable roof (weather neutralized)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 624424,
-      "name": "Michael Conforto",
-      "team": "Chicago Cubs",
-      "bats": "L",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Jack Flaherty",
-      "venue": "Wrigley Field",
-      "gamePk": 824654,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.235,
-      "total": 51.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.95,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.6,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 17.5,
-        "environment": 13.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1851,
-        "barrel_rate": 0.0836,
-        "hard_hit_rate": 0.3947,
-        "fb_rate": 0.5075,
-        "z_contact_rate": 0.9057,
-        "sweet_spot_rate": 0.3389,
-        "xwobacon": 0.3618,
-        "ev90": 103.6
-      },
-      "reasons": [
-        "vs Jack Flaherty \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "Good air-pull (20%)",
-        "Platoon edge (L vs RHP)",
-        "Slightly + park (100)",
-        "Highly wind-dependent",
-        "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -6344,120 +6178,6 @@
       ]
     },
     {
-      "id": 624585,
-      "name": "Jorge Soler",
-      "team": "Los Angeles Angels",
-      "bats": "R",
-      "opp": "St. Louis Cardinals",
-      "opp_pitcher": "Kyle Leahy",
-      "venue": "Angel Stadium",
-      "gamePk": 824006,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.171,
-      "total": 51.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.05,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 2.7,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 12.5,
-        "hitter": 20.2,
-        "environment": 9.5,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.198,
-        "barrel_rate": 0.0966,
-        "hard_hit_rate": 0.3809,
-        "fb_rate": 0.5192,
-        "z_contact_rate": 0.7751,
-        "sweet_spot_rate": 0.334,
-        "xwobacon": 0.3418,
-        "ev90": 110.4
-      },
-      "reasons": [
-        "vs Kyle Leahy \u2014 cause C (12.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.91)",
-        "Good air-pull (23%)",
-        "Above-avg barrels (11%)",
-        "DUE: 4 barrels, only 0 HR in window (+2.7 xHR) \u2014 positive regression",
-        "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 664023,
-      "name": "Ian Happ",
-      "team": "Chicago Cubs",
-      "bats": "S",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Jack Flaherty",
-      "venue": "Wrigley Field",
-      "gamePk": 824654,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.206,
-      "total": 51.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.57,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 17.1,
-        "environment": 13.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2132,
-        "barrel_rate": 0.05,
-        "hard_hit_rate": 0.3789,
-        "fb_rate": 0.5246,
-        "z_contact_rate": 0.8091,
-        "sweet_spot_rate": 0.3584,
-        "xwobacon": 0.3365,
-        "ev90": 102.7
-      },
-      "reasons": [
-        "vs Jack Flaherty \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "Platoon shape: spikes vs RHP (barrel 3%, air-pull 29%)",
-        "Elite air-pull (29%)",
-        "Poor pitch-mix fit (57% fastballs, rel 0.30 \u2192 mix-fit 0.57x)",
-        "Slightly + park (100)",
-        "Highly wind-dependent",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 682626,
       "name": "Francisco Alvarez",
       "team": "New York Mets",
@@ -6506,63 +6226,6 @@
         "Hot (2 HR / 2 barrels last 7d)",
         "Hitter-friendly park (105)",
         "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 695600,
-      "name": "Carter Jensen",
-      "team": "Kansas City Royals",
-      "bats": "L",
-      "opp": "San Francisco Giants",
-      "opp_pitcher": "Trevor McDonald",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824087,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.19,
-      "total": 51.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.44,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.0,
-        "hitter": 20.5,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1755,
-        "barrel_rate": 0.0966,
-        "hard_hit_rate": 0.4099,
-        "fb_rate": 0.5192,
-        "z_contact_rate": 0.8597,
-        "sweet_spot_rate": 0.334,
-        "xwobacon": 0.3681,
-        "ev90": 104.3
-      },
-      "reasons": [
-        "vs Trevor McDonald \u2014 cause C (11.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.82)",
-        "Above-avg barrels (10%)",
-        "Platoon edge (L vs RHP)",
-        "Pitch-mix fit: damages this arsenal (57% fastballs, rel 1.88 \u2192 mix-fit 1.44x)",
-        "Hot (102\u00b0F)",
-        "Wind out ~7 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6901,53 +6564,106 @@
       "role_notes": []
     },
     {
-      "id": 669236,
-      "name": "Jeremiah Jackson",
-      "team": "Baltimore Orioles",
+      "id": 691023,
+      "name": "Jordan Walker",
+      "team": "St. Louis Cardinals",
       "bats": "R",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
-      "venue": "Fenway Park",
-      "gamePk": 824736,
+      "opp": "Los Angeles Angels",
+      "opp_pitcher": "Jos\u00e9 Soriano",
+      "venue": "Angel Stadium",
+      "gamePk": 824006,
       "slot": null,
       "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.151,
-      "total": 50.5,
+      "season_hr": 22,
+      "iso": 0.232,
+      "total": 50.3,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.41,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 1.4,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.0,
+        "hitter": 26.3,
+        "environment": 8.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1927,
+        "barrel_rate": 0.1178,
+        "hard_hit_rate": 0.4401,
+        "fb_rate": 0.495,
+        "z_contact_rate": 0.8518,
+        "sweet_spot_rate": 0.3442,
+        "xwobacon": 0.4117,
+        "ev90": 111.0
+      },
+      "reasons": [
+        "vs Jos\u00e9 Soriano \u2014 cause Pass (6.0/25)",
+        "Platoon shape: spikes vs RHP (barrel 15%, air-pull 20%)",
+        "Good air-pull (20%)",
+        "Elite barrel rate (15%)",
+        "Pitch-mix fit: damages this arsenal (48% fastballs, rel 1.63 \u2192 mix-fit 1.41x)",
+        "Warm (80\u00b0F)",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 621020,
+      "name": "Dansby Swanson",
+      "team": "Chicago Cubs",
+      "bats": "R",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Jack Flaherty",
+      "venue": "Wrigley Field",
+      "gamePk": 824654,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 16,
+      "iso": 0.2,
+      "total": 50.3,
       "tier": "Pass",
       "role": "Watchlist",
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": null,
+      "mix_fit": 0.8,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 1.4,
-      "pitcher_grade": "B",
+      "due_hr": -2.3,
+      "pitcher_grade": "C",
       "breakdown": {
-        "pitcher": 14.5,
-        "hitter": 19.0,
-        "environment": 9.0,
+        "pitcher": 13.0,
+        "hitter": 18.8,
+        "environment": 10.5,
         "lineup": 6.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1788,
-        "barrel_rate": 0.1016,
-        "hard_hit_rate": 0.3841,
-        "fb_rate": 0.5094,
-        "z_contact_rate": 0.8601,
-        "sweet_spot_rate": 0.3706,
-        "xwobacon": 0.3658,
-        "ev90": 103.9
+        "air_pull_rate": 0.2316,
+        "barrel_rate": 0.0843,
+        "hard_hit_rate": 0.4181,
+        "fb_rate": 0.5219,
+        "z_contact_rate": 0.823,
+        "sweet_spot_rate": 0.3303,
+        "xwobacon": 0.3991,
+        "ev90": 103.8
       },
       "reasons": [
-        "vs Payton Tolle \u2014 cause B (14.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.86)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "Above-avg barrels (10%)",
-        "Platoon edge (R vs LHP)",
-        "Slightly + park (103)",
-        "Green Monster cuts LHB HR, aids doubles",
+        "vs Jack Flaherty \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
+        "Strong air-pull (27%)",
+        "Poor pitch-mix fit (57% fastballs, rel 0.54 \u2192 mix-fit 0.80x)",
+        "Slightly + park (100)",
+        "Highly wind-dependent",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7004,6 +6720,63 @@
         "Hot (2 HR / 1 barrels last 7d)",
         "Hitter-friendly park (106)",
         "Warm (83\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 683737,
+      "name": "Michael Busch",
+      "team": "Chicago Cubs",
+      "bats": "L",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Jack Flaherty",
+      "venue": "Wrigley Field",
+      "gamePk": 824654,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 12,
+      "iso": 0.159,
+      "total": 50.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.84,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.0,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 18.7,
+        "environment": 10.5,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2022,
+        "barrel_rate": 0.0745,
+        "hard_hit_rate": 0.3571,
+        "fb_rate": 0.5328,
+        "z_contact_rate": 0.8701,
+        "sweet_spot_rate": 0.3846,
+        "xwobacon": 0.3695,
+        "ev90": 98.4
+      },
+      "reasons": [
+        "vs Jack Flaherty \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
+        "Good air-pull (20%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (57% fastballs, rel 0.61 \u2192 mix-fit 0.84x)",
+        "Slightly + park (100)",
+        "Highly wind-dependent",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7185,6 +6958,64 @@
       ]
     },
     {
+      "id": 680776,
+      "name": "Jarren Duran",
+      "team": "Boston Red Sox",
+      "bats": "L",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Shane Baz",
+      "venue": "Fenway Park",
+      "gamePk": 824736,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 13,
+      "iso": 0.15,
+      "total": 50.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.66,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 2.4,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.0,
+        "hitter": 21.5,
+        "environment": 9.5,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1372,
+        "barrel_rate": 0.1044,
+        "hard_hit_rate": 0.3789,
+        "fb_rate": 0.4636,
+        "z_contact_rate": 0.8612,
+        "sweet_spot_rate": 0.3217,
+        "xwobacon": 0.3769,
+        "ev90": 104.7
+      },
+      "reasons": [
+        "vs Shane Baz \u2014 cause C (10.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.73)",
+        "Platoon shape: spikes vs RHP (barrel 14%, air-pull 12%)",
+        "Strong barrels (14%)",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (56% fastballs, rel 1.82 \u2192 mix-fit 1.66x)",
+        "Green Monster cuts LHB HR, aids doubles",
+        "Warm (82\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 682657,
       "name": "Angel Mart\u00ednez",
       "team": "Cleveland Guardians",
@@ -7345,60 +7176,6 @@
       ]
     },
     {
-      "id": 676475,
-      "name": "Alec Burleson",
-      "team": "St. Louis Cardinals",
-      "bats": "L",
-      "opp": "Los Angeles Angels",
-      "opp_pitcher": "Jos\u00e9 Soriano",
-      "venue": "Angel Stadium",
-      "gamePk": 824006,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 15,
-      "iso": 0.188,
-      "total": 49.9,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.22,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 2.1,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.0,
-        "hitter": 25.4,
-        "environment": 9.5,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2056,
-        "barrel_rate": 0.0964,
-        "hard_hit_rate": 0.4254,
-        "fb_rate": 0.4802,
-        "z_contact_rate": 0.837,
-        "sweet_spot_rate": 0.3539,
-        "xwobacon": 0.3834,
-        "ev90": 107.8
-      },
-      "reasons": [
-        "vs Jos\u00e9 Soriano \u2014 cause Pass (6.0/25)",
-        "Good air-pull (22%)",
-        "Above-avg barrels (11%)",
-        "Platoon edge (L vs RHP)",
-        "Pitch-mix fit: damages this arsenal (48% fastballs, rel 1.20 \u2192 mix-fit 1.22x)",
-        "Warm (78\u00b0F)",
-        "Wind out ~7 mph"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 571970,
       "name": "Max Muncy",
       "team": "Los Angeles Dodgers",
@@ -7512,6 +7289,62 @@
       ]
     },
     {
+      "id": 624585,
+      "name": "Jorge Soler",
+      "team": "Los Angeles Angels",
+      "bats": "R",
+      "opp": "St. Louis Cardinals",
+      "opp_pitcher": "Kyle Leahy",
+      "venue": "Angel Stadium",
+      "gamePk": 824006,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 11,
+      "iso": 0.171,
+      "total": 49.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.05,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 2.7,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 12.5,
+        "hitter": 20.2,
+        "environment": 8.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.198,
+        "barrel_rate": 0.0966,
+        "hard_hit_rate": 0.3809,
+        "fb_rate": 0.5192,
+        "z_contact_rate": 0.7751,
+        "sweet_spot_rate": 0.334,
+        "xwobacon": 0.3418,
+        "ev90": 110.4
+      },
+      "reasons": [
+        "vs Kyle Leahy \u2014 cause C (12.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.91)",
+        "Good air-pull (23%)",
+        "Above-avg barrels (11%)",
+        "DUE: 4 barrels, only 0 HR in window (+2.7 xHR) \u2014 positive regression",
+        "Warm (80\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 664983,
       "name": "Jake McCarthy",
       "team": "Colorado Rockies",
@@ -7613,6 +7446,62 @@
         "Platoon edge (L vs RHP)",
         "Hitter-friendly park (108)",
         "Warm (83\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 695600,
+      "name": "Carter Jensen",
+      "team": "Kansas City Royals",
+      "bats": "L",
+      "opp": "San Francisco Giants",
+      "opp_pitcher": "Trevor McDonald",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824087,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 13,
+      "iso": 0.19,
+      "total": 49.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.44,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.7,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 20.5,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1755,
+        "barrel_rate": 0.0966,
+        "hard_hit_rate": 0.4099,
+        "fb_rate": 0.5192,
+        "z_contact_rate": 0.8597,
+        "sweet_spot_rate": 0.334,
+        "xwobacon": 0.3681,
+        "ev90": 104.3
+      },
+      "reasons": [
+        "vs Trevor McDonald \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.82)",
+        "Above-avg barrels (10%)",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (57% fastballs, rel 1.88 \u2192 mix-fit 1.44x)",
+        "Hot (101\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7964,6 +7853,62 @@
       ]
     },
     {
+      "id": 624424,
+      "name": "Michael Conforto",
+      "team": "Chicago Cubs",
+      "bats": "L",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Jack Flaherty",
+      "venue": "Wrigley Field",
+      "gamePk": 824654,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 8,
+      "iso": 0.235,
+      "total": 49.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.95,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.6,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 17.5,
+        "environment": 10.5,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1851,
+        "barrel_rate": 0.0836,
+        "hard_hit_rate": 0.3947,
+        "fb_rate": 0.5075,
+        "z_contact_rate": 0.9057,
+        "sweet_spot_rate": 0.3389,
+        "xwobacon": 0.3618,
+        "ev90": 103.6
+      },
+      "reasons": [
+        "vs Jack Flaherty \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
+        "Good air-pull (20%)",
+        "Platoon edge (L vs RHP)",
+        "Slightly + park (100)",
+        "Highly wind-dependent",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 660670,
       "name": "Ronald Acu\u00f1a Jr.",
       "team": "Atlanta Braves",
@@ -8058,6 +8003,63 @@
         "Pitch-mix fit: damages this arsenal (63% fastballs, rel 1.53 \u2192 mix-fit 1.40x)",
         "Hitter-friendly park (106)",
         "Retractable roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 664023,
+      "name": "Ian Happ",
+      "team": "Chicago Cubs",
+      "bats": "S",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Jack Flaherty",
+      "venue": "Wrigley Field",
+      "gamePk": 824654,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 17,
+      "iso": 0.206,
+      "total": 48.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.57,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 17.1,
+        "environment": 10.5,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2132,
+        "barrel_rate": 0.05,
+        "hard_hit_rate": 0.3789,
+        "fb_rate": 0.5246,
+        "z_contact_rate": 0.8091,
+        "sweet_spot_rate": 0.3584,
+        "xwobacon": 0.3365,
+        "ev90": 102.7
+      },
+      "reasons": [
+        "vs Jack Flaherty \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
+        "Platoon shape: spikes vs RHP (barrel 3%, air-pull 29%)",
+        "Elite air-pull (29%)",
+        "Poor pitch-mix fit (57% fastballs, rel 0.30 \u2192 mix-fit 0.57x)",
+        "Slightly + park (100)",
+        "Highly wind-dependent",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8183,62 +8185,57 @@
       ]
     },
     {
-      "id": 680776,
-      "name": "Jarren Duran",
-      "team": "Boston Red Sox",
+      "id": 676475,
+      "name": "Alec Burleson",
+      "team": "St. Louis Cardinals",
       "bats": "L",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Shane Baz",
-      "venue": "Fenway Park",
-      "gamePk": 824736,
+      "opp": "Los Angeles Angels",
+      "opp_pitcher": "Jos\u00e9 Soriano",
+      "venue": "Angel Stadium",
+      "gamePk": 824006,
       "slot": null,
       "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.15,
-      "total": 48.5,
+      "season_hr": 15,
+      "iso": 0.188,
+      "total": 48.4,
       "tier": "Pass",
-      "role": "Watchlist",
+      "role": "Pass",
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 1.66,
+      "mix_fit": 1.22,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 2.4,
-      "pitcher_grade": "C",
+      "due_hr": 2.1,
+      "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 21.5,
+        "pitcher": 6.0,
+        "hitter": 25.4,
         "environment": 8.0,
         "lineup": 6.0,
         "confidence": 3.0
       },
       "statcast": {
-        "air_pull_rate": 0.1372,
-        "barrel_rate": 0.1044,
-        "hard_hit_rate": 0.3789,
-        "fb_rate": 0.4636,
-        "z_contact_rate": 0.8612,
-        "sweet_spot_rate": 0.3217,
-        "xwobacon": 0.3769,
-        "ev90": 104.7
+        "air_pull_rate": 0.2056,
+        "barrel_rate": 0.0964,
+        "hard_hit_rate": 0.4254,
+        "fb_rate": 0.4802,
+        "z_contact_rate": 0.837,
+        "sweet_spot_rate": 0.3539,
+        "xwobacon": 0.3834,
+        "ev90": 107.8
       },
       "reasons": [
-        "vs Shane Baz \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.73)",
-        "Platoon shape: spikes vs RHP (barrel 14%, air-pull 12%)",
-        "Strong barrels (14%)",
+        "vs Jos\u00e9 Soriano \u2014 cause Pass (6.0/25)",
+        "Good air-pull (22%)",
+        "Above-avg barrels (11%)",
         "Platoon edge (L vs RHP)",
-        "Pitch-mix fit: damages this arsenal (56% fastballs, rel 1.82 \u2192 mix-fit 1.66x)",
-        "Green Monster cuts LHB HR, aids doubles",
-        "Warm (83\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
+        "Pitch-mix fit: damages this arsenal (48% fastballs, rel 1.20 \u2192 mix-fit 1.22x)",
+        "Warm (80\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
       ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
+      "role_notes": []
     },
     {
       "id": 678218,
@@ -8456,63 +8453,6 @@
         "Platoon edge (L vs RHP)",
         "Hitter-friendly park (107)",
         "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 666139,
-      "name": "Josh Lowe",
-      "team": "Los Angeles Angels",
-      "bats": "L",
-      "opp": "St. Louis Cardinals",
-      "opp_pitcher": "Kyle Leahy",
-      "venue": "Angel Stadium",
-      "gamePk": 824006,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.159,
-      "total": 48.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.02,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 12.5,
-        "hitter": 18.1,
-        "environment": 9.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1661,
-        "barrel_rate": 0.0864,
-        "hard_hit_rate": 0.3718,
-        "fb_rate": 0.5002,
-        "z_contact_rate": 0.7829,
-        "sweet_spot_rate": 0.3126,
-        "xwobacon": 0.3692,
-        "ev90": 101.8
-      },
-      "reasons": [
-        "vs Kyle Leahy \u2014 cause C (12.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.91)",
-        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 18%)",
-        "Above-avg barrels (11%)",
-        "Platoon edge (L vs RHP)",
-        "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8923,63 +8863,6 @@
       ]
     },
     {
-      "id": 608324,
-      "name": "Alex Bregman",
-      "team": "Chicago Cubs",
-      "bats": "R",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Jack Flaherty",
-      "venue": "Wrigley Field",
-      "gamePk": 824654,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.123,
-      "total": 47.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.8,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -2.6,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 13.2,
-        "environment": 13.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1927,
-        "barrel_rate": 0.0617,
-        "hard_hit_rate": 0.3596,
-        "fb_rate": 0.5363,
-        "z_contact_rate": 0.8935,
-        "sweet_spot_rate": 0.3132,
-        "xwobacon": 0.3171,
-        "ev90": 100.8
-      },
-      "reasons": [
-        "vs Jack Flaherty \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "Good air-pull (22%)",
-        "Poor pitch-mix fit (57% fastballs, rel 0.54 \u2192 mix-fit 0.80x)",
-        "HR overperformance vs barrels (-2.6 xHR) \u2014 luck risk",
-        "Slightly + park (100)",
-        "Highly wind-dependent",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 694192,
       "name": "Jackson Chourio",
       "team": "Milwaukee Brewers",
@@ -9130,61 +9013,6 @@
       ],
       "warnings": [
         "Pitcher park (93)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 677951,
-      "name": "Bobby Witt Jr.",
-      "team": "Kansas City Royals",
-      "bats": "R",
-      "opp": "San Francisco Giants",
-      "opp_pitcher": "Trevor McDonald",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824087,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.171,
-      "total": 46.9,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.13,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.4,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.0,
-        "hitter": 17.4,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1539,
-        "barrel_rate": 0.0889,
-        "hard_hit_rate": 0.4464,
-        "fb_rate": 0.49,
-        "z_contact_rate": 0.8894,
-        "sweet_spot_rate": 0.3509,
-        "xwobacon": 0.4009,
-        "ev90": 107.2
-      },
-      "reasons": [
-        "vs Trevor McDonald \u2014 cause C (11.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.82)",
-        "Above-avg barrels (9%)",
-        "Hot (102\u00b0F)",
-        "Wind out ~7 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -9358,6 +9186,62 @@
       "role_notes": []
     },
     {
+      "id": 666139,
+      "name": "Josh Lowe",
+      "team": "Los Angeles Angels",
+      "bats": "L",
+      "opp": "St. Louis Cardinals",
+      "opp_pitcher": "Kyle Leahy",
+      "venue": "Angel Stadium",
+      "gamePk": 824006,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 8,
+      "iso": 0.159,
+      "total": 46.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.02,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 12.5,
+        "hitter": 18.1,
+        "environment": 8.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1661,
+        "barrel_rate": 0.0864,
+        "hard_hit_rate": 0.3718,
+        "fb_rate": 0.5002,
+        "z_contact_rate": 0.7829,
+        "sweet_spot_rate": 0.3126,
+        "xwobacon": 0.3692,
+        "ev90": 101.8
+      },
+      "reasons": [
+        "vs Kyle Leahy \u2014 cause C (12.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.91)",
+        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 18%)",
+        "Above-avg barrels (11%)",
+        "Platoon edge (L vs RHP)",
+        "Warm (80\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 668901,
       "name": "Mark Vientos",
       "team": "New York Mets",
@@ -9506,63 +9390,6 @@
         "Pitcher: Above-avg barrels allowed (9%)",
         "Pitch-mix fit: damages this arsenal (56% fastballs, rel 2.20 \u2192 mix-fit 1.67x)",
         "Warm (80\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 686681,
-      "name": "Michael Massey",
-      "team": "Kansas City Royals",
-      "bats": "L",
-      "opp": "San Francisco Giants",
-      "opp_pitcher": "Trevor McDonald",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824087,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.157,
-      "total": 46.4,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.69,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.0,
-        "hitter": 16.9,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1875,
-        "barrel_rate": 0.0596,
-        "hard_hit_rate": 0.4228,
-        "fb_rate": 0.5121,
-        "z_contact_rate": 0.8936,
-        "sweet_spot_rate": 0.3736,
-        "xwobacon": 0.3634,
-        "ev90": 100.5
-      },
-      "reasons": [
-        "vs Trevor McDonald \u2014 cause C (11.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.82)",
-        "Good air-pull (22%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (57% fastballs, rel 0.99 \u2192 mix-fit 0.69x)",
-        "Hot (102\u00b0F)",
-        "Wind out ~7 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9909,116 +9736,6 @@
       ]
     },
     {
-      "id": 687093,
-      "name": "Vaughn Grissom",
-      "team": "Los Angeles Angels",
-      "bats": "R",
-      "opp": "St. Louis Cardinals",
-      "opp_pitcher": "Kyle Leahy",
-      "venue": "Angel Stadium",
-      "gamePk": 824006,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 5,
-      "iso": 0.139,
-      "total": 45.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.82,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.4,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 12.5,
-        "hitter": 15.8,
-        "environment": 9.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1736,
-        "barrel_rate": 0.0734,
-        "hard_hit_rate": 0.404,
-        "fb_rate": 0.5252,
-        "z_contact_rate": 0.8822,
-        "sweet_spot_rate": 0.4048,
-        "xwobacon": 0.3859,
-        "ev90": 103.4
-      },
-      "reasons": [
-        "vs Kyle Leahy \u2014 cause C (12.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.91)",
-        "Poor pitch-mix fit (48% breaking balls, rel 0.30 \u2192 mix-fit 0.82x)",
-        "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 686555,
-      "name": "Isaac Collins",
-      "team": "Kansas City Royals",
-      "bats": "S",
-      "opp": "San Francisco Giants",
-      "opp_pitcher": "Trevor McDonald",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824087,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 5,
-      "iso": 0.122,
-      "total": 45.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.04,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.6,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.0,
-        "hitter": 16.2,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1807,
-        "barrel_rate": 0.0718,
-        "hard_hit_rate": 0.3928,
-        "fb_rate": 0.5368,
-        "z_contact_rate": 0.8612,
-        "sweet_spot_rate": 0.3705,
-        "xwobacon": 0.3598,
-        "ev90": 101.4
-      },
-      "reasons": [
-        "vs Trevor McDonald \u2014 cause C (11.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.82)",
-        "Good air-pull (20%)",
-        "Hot (102\u00b0F)",
-        "Wind out ~7 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 502671,
       "name": "Paul Goldschmidt",
       "team": "New York Yankees",
@@ -10179,6 +9896,60 @@
         "Poor pitch-mix fit (48% breaking balls, rel 0.30 \u2192 mix-fit 0.38x)",
         "Slightly + park (100)",
         "Retractable roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 677951,
+      "name": "Bobby Witt Jr.",
+      "team": "Kansas City Royals",
+      "bats": "R",
+      "opp": "San Francisco Giants",
+      "opp_pitcher": "Trevor McDonald",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824087,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 13,
+      "iso": 0.171,
+      "total": 45.4,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.13,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.4,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 17.4,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1539,
+        "barrel_rate": 0.0889,
+        "hard_hit_rate": 0.4464,
+        "fb_rate": 0.49,
+        "z_contact_rate": 0.8894,
+        "sweet_spot_rate": 0.3509,
+        "xwobacon": 0.4009,
+        "ev90": 107.2
+      },
+      "reasons": [
+        "vs Trevor McDonald \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.82)",
+        "Above-avg barrels (9%)",
+        "Hot (101\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -10359,6 +10130,62 @@
       ]
     },
     {
+      "id": 686681,
+      "name": "Michael Massey",
+      "team": "Kansas City Royals",
+      "bats": "L",
+      "opp": "San Francisco Giants",
+      "opp_pitcher": "Trevor McDonald",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824087,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.157,
+      "total": 44.9,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.69,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.7,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 16.9,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1875,
+        "barrel_rate": 0.0596,
+        "hard_hit_rate": 0.4228,
+        "fb_rate": 0.5121,
+        "z_contact_rate": 0.8936,
+        "sweet_spot_rate": 0.3736,
+        "xwobacon": 0.3634,
+        "ev90": 100.5
+      },
+      "reasons": [
+        "vs Trevor McDonald \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.82)",
+        "Good air-pull (22%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (57% fastballs, rel 0.99 \u2192 mix-fit 0.69x)",
+        "Hot (101\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 596142,
       "name": "Gary S\u00e1nchez",
       "team": "Milwaukee Brewers",
@@ -10463,6 +10290,120 @@
         "Retractable roof (weather neutralized)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 683002,
+      "name": "Gunnar Henderson",
+      "team": "Baltimore Orioles",
+      "bats": "L",
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
+      "venue": "Fenway Park",
+      "gamePk": 824736,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 17,
+      "iso": 0.173,
+      "total": 44.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.63,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 14.5,
+        "hitter": 12.7,
+        "environment": 9.5,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1869,
+        "barrel_rate": 0.0533,
+        "hard_hit_rate": 0.4151,
+        "fb_rate": 0.4949,
+        "z_contact_rate": 0.8902,
+        "sweet_spot_rate": 0.3304,
+        "xwobacon": 0.3475,
+        "ev90": 106.0
+      },
+      "reasons": [
+        "vs Payton Tolle \u2014 cause B (14.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.86)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Good air-pull (20%)",
+        "Poor pitch-mix fit (88% fastballs, rel 0.65 \u2192 mix-fit 0.63x)",
+        "Green Monster cuts LHB HR, aids doubles",
+        "Warm (82\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 608324,
+      "name": "Alex Bregman",
+      "team": "Chicago Cubs",
+      "bats": "R",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Jack Flaherty",
+      "venue": "Wrigley Field",
+      "gamePk": 824654,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 10,
+      "iso": 0.123,
+      "total": 44.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.8,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -2.6,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 13.2,
+        "environment": 10.5,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1927,
+        "barrel_rate": 0.0617,
+        "hard_hit_rate": 0.3596,
+        "fb_rate": 0.5363,
+        "z_contact_rate": 0.8935,
+        "sweet_spot_rate": 0.3132,
+        "xwobacon": 0.3171,
+        "ev90": 100.8
+      },
+      "reasons": [
+        "vs Jack Flaherty \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
+        "Good air-pull (22%)",
+        "Poor pitch-mix fit (57% fastballs, rel 0.54 \u2192 mix-fit 0.80x)",
+        "HR overperformance vs barrels (-2.6 xHR) \u2014 luck risk",
+        "Slightly + park (100)",
+        "Highly wind-dependent",
+        "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -10641,6 +10582,114 @@
       ]
     },
     {
+      "id": 687093,
+      "name": "Vaughn Grissom",
+      "team": "Los Angeles Angels",
+      "bats": "R",
+      "opp": "St. Louis Cardinals",
+      "opp_pitcher": "Kyle Leahy",
+      "venue": "Angel Stadium",
+      "gamePk": 824006,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 5,
+      "iso": 0.139,
+      "total": 44.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.82,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.4,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 12.5,
+        "hitter": 15.8,
+        "environment": 8.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1736,
+        "barrel_rate": 0.0734,
+        "hard_hit_rate": 0.404,
+        "fb_rate": 0.5252,
+        "z_contact_rate": 0.8822,
+        "sweet_spot_rate": 0.4048,
+        "xwobacon": 0.3859,
+        "ev90": 103.4
+      },
+      "reasons": [
+        "vs Kyle Leahy \u2014 cause C (12.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.91)",
+        "Poor pitch-mix fit (48% breaking balls, rel 0.30 \u2192 mix-fit 0.82x)",
+        "Warm (80\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 686555,
+      "name": "Isaac Collins",
+      "team": "Kansas City Royals",
+      "bats": "S",
+      "opp": "San Francisco Giants",
+      "opp_pitcher": "Trevor McDonald",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824087,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 5,
+      "iso": 0.122,
+      "total": 44.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.04,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.6,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 16.2,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1807,
+        "barrel_rate": 0.0718,
+        "hard_hit_rate": 0.3928,
+        "fb_rate": 0.5368,
+        "z_contact_rate": 0.8612,
+        "sweet_spot_rate": 0.3705,
+        "xwobacon": 0.3598,
+        "ev90": 101.4
+      },
+      "reasons": [
+        "vs Trevor McDonald \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.82)",
+        "Good air-pull (20%)",
+        "Hot (101\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 661388,
       "name": "William Contreras",
       "team": "Milwaukee Brewers",
@@ -10752,115 +10801,6 @@
       ]
     },
     {
-      "id": 608348,
-      "name": "Carson Kelly",
-      "team": "Chicago Cubs",
-      "bats": "R",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Jack Flaherty",
-      "venue": "Wrigley Field",
-      "gamePk": 824654,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 6,
-      "iso": 0.123,
-      "total": 44.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.01,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.6,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 10.1,
-        "environment": 13.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1336,
-        "barrel_rate": 0.0759,
-        "hard_hit_rate": 0.3774,
-        "fb_rate": 0.4417,
-        "z_contact_rate": 0.8739,
-        "sweet_spot_rate": 0.3427,
-        "xwobacon": 0.3684,
-        "ev90": 100.8
-      },
-      "reasons": [
-        "vs Jack Flaherty \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "Low air-pull (11%)",
-        "Slightly + park (100)",
-        "Highly wind-dependent",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 687263,
-      "name": "Zach Neto",
-      "team": "Los Angeles Angels",
-      "bats": "R",
-      "opp": "St. Louis Cardinals",
-      "opp_pitcher": "Kyle Leahy",
-      "venue": "Angel Stadium",
-      "gamePk": 824006,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 19,
-      "iso": 0.211,
-      "total": 44.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.95,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 1.7,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 12.5,
-        "hitter": 14.0,
-        "environment": 9.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1762,
-        "barrel_rate": 0.086,
-        "hard_hit_rate": 0.3785,
-        "fb_rate": 0.4557,
-        "z_contact_rate": 0.8372,
-        "sweet_spot_rate": 0.3265,
-        "xwobacon": 0.3554,
-        "ev90": 103.1
-      },
-      "reasons": [
-        "vs Kyle Leahy \u2014 cause C (12.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.91)",
-        "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 686797,
       "name": "Brooks Lee",
       "team": "Minnesota Twins",
@@ -10906,6 +10846,63 @@
         "Good air-pull (21%)",
         "Poor pitch-mix fit (64% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
         "Warm (80\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 668939,
+      "name": "Adley Rutschman",
+      "team": "Baltimore Orioles",
+      "bats": "S",
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
+      "venue": "Fenway Park",
+      "gamePk": 824736,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 8,
+      "iso": 0.182,
+      "total": 44.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.3,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 14.5,
+        "hitter": 12.0,
+        "environment": 9.5,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2044,
+        "barrel_rate": 0.0479,
+        "hard_hit_rate": 0.3722,
+        "fb_rate": 0.5118,
+        "z_contact_rate": 0.8772,
+        "sweet_spot_rate": 0.3882,
+        "xwobacon": 0.3414,
+        "ev90": 103.1
+      },
+      "reasons": [
+        "vs Payton Tolle \u2014 cause B (14.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.86)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Good air-pull (23%)",
+        "Poor pitch-mix fit (88% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
+        "Green Monster cuts LHB HR, aids doubles",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -11257,6 +11254,61 @@
       ]
     },
     {
+      "id": 681297,
+      "name": "Colton Cowser",
+      "team": "Baltimore Orioles",
+      "bats": "L",
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
+      "venue": "Fenway Park",
+      "gamePk": 824736,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 8,
+      "iso": 0.127,
+      "total": 43.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.91,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 14.5,
+        "hitter": 11.3,
+        "environment": 9.5,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1874,
+        "barrel_rate": 0.059,
+        "hard_hit_rate": 0.4187,
+        "fb_rate": 0.5002,
+        "z_contact_rate": 0.8506,
+        "sweet_spot_rate": 0.2851,
+        "xwobacon": 0.3479,
+        "ev90": 101.6
+      },
+      "reasons": [
+        "vs Payton Tolle \u2014 cause B (14.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.86)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Green Monster cuts LHB HR, aids doubles",
+        "Warm (82\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 547180,
       "name": "Bryce Harper",
       "team": "Philadelphia Phillies",
@@ -11303,63 +11355,6 @@
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (39% breaking balls, rel 0.30 \u2192 mix-fit 0.30x)",
         "Hitter-friendly park (108)",
-        "Warm (83\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 683002,
-      "name": "Gunnar Henderson",
-      "team": "Baltimore Orioles",
-      "bats": "L",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
-      "venue": "Fenway Park",
-      "gamePk": 824736,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.173,
-      "total": 43.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.63,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 14.5,
-        "hitter": 12.7,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1869,
-        "barrel_rate": 0.0533,
-        "hard_hit_rate": 0.4151,
-        "fb_rate": 0.4949,
-        "z_contact_rate": 0.8902,
-        "sweet_spot_rate": 0.3304,
-        "xwobacon": 0.3475,
-        "ev90": 106.0
-      },
-      "reasons": [
-        "vs Payton Tolle \u2014 cause B (14.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.86)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "Good air-pull (20%)",
-        "Poor pitch-mix fit (88% fastballs, rel 0.65 \u2192 mix-fit 0.63x)",
-        "Green Monster cuts LHB HR, aids doubles",
         "Warm (83\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -11540,62 +11535,6 @@
       ]
     },
     {
-      "id": 545361,
-      "name": "Mike Trout",
-      "team": "Los Angeles Angels",
-      "bats": "R",
-      "opp": "St. Louis Cardinals",
-      "opp_pitcher": "Kyle Leahy",
-      "venue": "Angel Stadium",
-      "gamePk": 824006,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.233,
-      "total": 43.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.75,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 12.5,
-        "hitter": 13.0,
-        "environment": 9.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1952,
-        "barrel_rate": 0.07,
-        "hard_hit_rate": 0.3381,
-        "fb_rate": 0.5145,
-        "z_contact_rate": 0.8579,
-        "sweet_spot_rate": 0.3769,
-        "xwobacon": 0.3823,
-        "ev90": 108.4
-      },
-      "reasons": [
-        "vs Kyle Leahy \u2014 cause C (12.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.91)",
-        "Good air-pull (22%)",
-        "Poor pitch-mix fit (48% breaking balls, rel 1.00 \u2192 mix-fit 0.75x)",
-        "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 681715,
       "name": "Heriberto Hern\u00e1ndez",
       "team": "Miami Marlins",
@@ -11763,100 +11702,6 @@
       ]
     },
     {
-      "id": 656305,
-      "name": "Matt Chapman",
-      "team": "San Francisco Giants",
-      "bats": "R",
-      "opp": "Kansas City Royals",
-      "opp_pitcher": "Michael Wacha",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824087,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.133,
-      "total": 43.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "A+",
-      "breakdown": {
-        "pitcher": 20.5,
-        "hitter": 2.0,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Michael Wacha \u2014 cause A+ (20.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.06)",
-        "Pitcher: Barrels up (10% allowed)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hot (102\u00b0F)",
-        "Wind out ~7 mph",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 694208,
-      "name": "Mois\u00e9s Ballesteros",
-      "team": "Chicago Cubs",
-      "bats": "L",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Jack Flaherty",
-      "venue": "Wrigley Field",
-      "gamePk": 824654,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 6,
-      "iso": 0.154,
-      "total": 43.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 9.0,
-        "environment": 13.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Jack Flaherty \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Slightly + park (100)",
-        "Highly wind-dependent",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 663728,
       "name": "Cal Raleigh",
       "team": "Seattle Mariners",
@@ -11905,63 +11750,6 @@
       ],
       "warnings": [
         "Pitcher park (93)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 694384,
-      "name": "Nolan Schanuel",
-      "team": "Los Angeles Angels",
-      "bats": "L",
-      "opp": "St. Louis Cardinals",
-      "opp_pitcher": "Kyle Leahy",
-      "venue": "Angel Stadium",
-      "gamePk": 824006,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 6,
-      "iso": 0.117,
-      "total": 42.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.3,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 12.5,
-        "hitter": 12.8,
-        "environment": 9.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1982,
-        "barrel_rate": 0.0465,
-        "hard_hit_rate": 0.3327,
-        "fb_rate": 0.5395,
-        "z_contact_rate": 0.9088,
-        "sweet_spot_rate": 0.3976,
-        "xwobacon": 0.386,
-        "ev90": 98.6
-      },
-      "reasons": [
-        "vs Kyle Leahy \u2014 cause C (12.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.91)",
-        "Good air-pull (20%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (48% breaking balls, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -12084,6 +11872,59 @@
       ]
     },
     {
+      "id": 687263,
+      "name": "Zach Neto",
+      "team": "Los Angeles Angels",
+      "bats": "R",
+      "opp": "St. Louis Cardinals",
+      "opp_pitcher": "Kyle Leahy",
+      "venue": "Angel Stadium",
+      "gamePk": 824006,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 19,
+      "iso": 0.211,
+      "total": 42.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.95,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 1.7,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 12.5,
+        "hitter": 14.0,
+        "environment": 8.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1762,
+        "barrel_rate": 0.086,
+        "hard_hit_rate": 0.3785,
+        "fb_rate": 0.4557,
+        "z_contact_rate": 0.8372,
+        "sweet_spot_rate": 0.3265,
+        "xwobacon": 0.3554,
+        "ev90": 103.1
+      },
+      "reasons": [
+        "vs Kyle Leahy \u2014 cause C (12.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.91)",
+        "Warm (80\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 680777,
       "name": "Ryan Jeffers",
       "team": "Minnesota Twins",
@@ -12128,63 +11969,6 @@
         "Pitcher: High HR allowed (HR/9 1.59)",
         "Poor pitch-mix fit (64% fastballs, rel 0.30 \u2192 mix-fit 0.45x)",
         "Warm (80\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 668939,
-      "name": "Adley Rutschman",
-      "team": "Baltimore Orioles",
-      "bats": "S",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
-      "venue": "Fenway Park",
-      "gamePk": 824736,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.182,
-      "total": 42.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.3,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 14.5,
-        "hitter": 12.0,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2044,
-        "barrel_rate": 0.0479,
-        "hard_hit_rate": 0.3722,
-        "fb_rate": 0.5118,
-        "z_contact_rate": 0.8772,
-        "sweet_spot_rate": 0.3882,
-        "xwobacon": 0.3414,
-        "ev90": 103.1
-      },
-      "reasons": [
-        "vs Payton Tolle \u2014 cause B (14.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.86)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "Good air-pull (23%)",
-        "Poor pitch-mix fit (88% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Green Monster cuts LHB HR, aids doubles",
-        "Warm (83\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -12465,61 +12249,6 @@
       ]
     },
     {
-      "id": 681297,
-      "name": "Colton Cowser",
-      "team": "Baltimore Orioles",
-      "bats": "L",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
-      "venue": "Fenway Park",
-      "gamePk": 824736,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.127,
-      "total": 41.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.91,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 14.5,
-        "hitter": 11.3,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1874,
-        "barrel_rate": 0.059,
-        "hard_hit_rate": 0.4187,
-        "fb_rate": 0.5002,
-        "z_contact_rate": 0.8506,
-        "sweet_spot_rate": 0.2851,
-        "xwobacon": 0.3479,
-        "ev90": 101.6
-      },
-      "reasons": [
-        "vs Payton Tolle \u2014 cause B (14.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.86)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "Green Monster cuts LHB HR, aids doubles",
-        "Warm (83\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 666182,
       "name": "Bo Bichette",
       "team": "New York Mets",
@@ -12566,6 +12295,116 @@
         "Poor pitch-mix fit (71% fastballs, rel 0.66 \u2192 mix-fit 0.76x)",
         "Hitter-friendly park (105)",
         "Retractable roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 608348,
+      "name": "Carson Kelly",
+      "team": "Chicago Cubs",
+      "bats": "R",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Jack Flaherty",
+      "venue": "Wrigley Field",
+      "gamePk": 824654,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 6,
+      "iso": 0.123,
+      "total": 41.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.01,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.6,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 10.1,
+        "environment": 10.5,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1336,
+        "barrel_rate": 0.0759,
+        "hard_hit_rate": 0.3774,
+        "fb_rate": 0.4417,
+        "z_contact_rate": 0.8739,
+        "sweet_spot_rate": 0.3427,
+        "xwobacon": 0.3684,
+        "ev90": 100.8
+      },
+      "reasons": [
+        "vs Jack Flaherty \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
+        "Low air-pull (11%)",
+        "Slightly + park (100)",
+        "Highly wind-dependent",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 545361,
+      "name": "Mike Trout",
+      "team": "Los Angeles Angels",
+      "bats": "R",
+      "opp": "St. Louis Cardinals",
+      "opp_pitcher": "Kyle Leahy",
+      "venue": "Angel Stadium",
+      "gamePk": 824006,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 18,
+      "iso": 0.233,
+      "total": 41.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.75,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 12.5,
+        "hitter": 13.0,
+        "environment": 8.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1952,
+        "barrel_rate": 0.07,
+        "hard_hit_rate": 0.3381,
+        "fb_rate": 0.5145,
+        "z_contact_rate": 0.8579,
+        "sweet_spot_rate": 0.3769,
+        "xwobacon": 0.3823,
+        "ev90": 108.4
+      },
+      "reasons": [
+        "vs Kyle Leahy \u2014 cause C (12.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.91)",
+        "Good air-pull (22%)",
+        "Poor pitch-mix fit (48% breaking balls, rel 1.00 \u2192 mix-fit 0.75x)",
+        "Warm (80\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -12624,6 +12463,53 @@
       ],
       "warnings": [
         "Pitcher park (93)",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 656305,
+      "name": "Matt Chapman",
+      "team": "San Francisco Giants",
+      "bats": "R",
+      "opp": "Kansas City Royals",
+      "opp_pitcher": "Michael Wacha",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824087,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.133,
+      "total": 41.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "A+",
+      "breakdown": {
+        "pitcher": 20.5,
+        "hitter": 2.0,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Michael Wacha \u2014 cause A+ (20.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.06)",
+        "Pitcher: Barrels up (10% allowed)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Hot (101\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -12742,52 +12628,52 @@
       ]
     },
     {
-      "id": 686469,
-      "name": "Vinnie Pasquantino",
-      "team": "Kansas City Royals",
+      "id": 694384,
+      "name": "Nolan Schanuel",
+      "team": "Los Angeles Angels",
       "bats": "L",
-      "opp": "San Francisco Giants",
-      "opp_pitcher": "Trevor McDonald",
-      "venue": "Kauffman Stadium",
-      "gamePk": 824087,
+      "opp": "St. Louis Cardinals",
+      "opp_pitcher": "Kyle Leahy",
+      "venue": "Angel Stadium",
+      "gamePk": 824006,
       "slot": null,
       "confirmed": false,
       "season_hr": 6,
-      "iso": 0.119,
+      "iso": 0.117,
       "total": 41.3,
       "tier": "Pass",
       "role": "Watchlist",
       "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.6,
+      "pull_fit": true,
+      "mix_fit": 0.3,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.7,
+      "due_hr": 0.0,
       "pitcher_grade": "C",
       "breakdown": {
-        "pitcher": 11.0,
-        "hitter": 11.8,
-        "environment": 10.5,
+        "pitcher": 12.5,
+        "hitter": 12.8,
+        "environment": 8.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1614,
-        "barrel_rate": 0.0778,
-        "hard_hit_rate": 0.3901,
-        "fb_rate": 0.468,
-        "z_contact_rate": 0.887,
-        "sweet_spot_rate": 0.3288,
-        "xwobacon": 0.3439,
-        "ev90": 101.1
+        "air_pull_rate": 0.1982,
+        "barrel_rate": 0.0465,
+        "hard_hit_rate": 0.3327,
+        "fb_rate": 0.5395,
+        "z_contact_rate": 0.9088,
+        "sweet_spot_rate": 0.3976,
+        "xwobacon": 0.386,
+        "ev90": 98.6
       },
       "reasons": [
-        "vs Trevor McDonald \u2014 cause C (11.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.82)",
+        "vs Kyle Leahy \u2014 cause C (12.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.91)",
+        "Good air-pull (20%)",
         "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (57% fastballs, rel 0.30 \u2192 mix-fit 0.60x)",
-        "Hot (102\u00b0F)",
-        "Wind out ~7 mph",
+        "Poor pitch-mix fit (48% breaking balls, rel 0.30 \u2192 mix-fit 0.30x)",
+        "Warm (80\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -12845,60 +12731,6 @@
         "Poor pitch-mix fit (42% offspeed, rel 0.30 \u2192 mix-fit 0.73x)",
         "Hitter-friendly park (108)",
         "Warm (83\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 802139,
-      "name": "JJ Wetherholt",
-      "team": "St. Louis Cardinals",
-      "bats": "L",
-      "opp": "Los Angeles Angels",
-      "opp_pitcher": "Jos\u00e9 Soriano",
-      "venue": "Angel Stadium",
-      "gamePk": 824006,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.142,
-      "total": 41.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.01,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 1.4,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.0,
-        "hitter": 17.6,
-        "environment": 9.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1545,
-        "barrel_rate": 0.0842,
-        "hard_hit_rate": 0.4286,
-        "fb_rate": 0.529,
-        "z_contact_rate": 0.8924,
-        "sweet_spot_rate": 0.3691,
-        "xwobacon": 0.3578,
-        "ev90": 101.3
-      },
-      "reasons": [
-        "vs Jos\u00e9 Soriano \u2014 cause Pass (6.0/25)",
-        "Platoon edge (L vs RHP)",
-        "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -13020,6 +12852,52 @@
       ]
     },
     {
+      "id": 694208,
+      "name": "Mois\u00e9s Ballesteros",
+      "team": "Chicago Cubs",
+      "bats": "L",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Jack Flaherty",
+      "venue": "Wrigley Field",
+      "gamePk": 824654,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 6,
+      "iso": 0.154,
+      "total": 40.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 9.0,
+        "environment": 10.5,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Jack Flaherty \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Slightly + park (100)",
+        "Highly wind-dependent",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 683953,
       "name": "Travis Bazzana",
       "team": "Cleveland Guardians",
@@ -13066,6 +12944,62 @@
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (56% fastballs, rel 0.30 \u2192 mix-fit 0.56x)",
         "Warm (80\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 702616,
+      "name": "Jackson Holliday",
+      "team": "Baltimore Orioles",
+      "bats": "L",
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
+      "venue": "Fenway Park",
+      "gamePk": 824736,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 5,
+      "iso": 0.159,
+      "total": 40.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.32,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 14.5,
+        "hitter": 8.2,
+        "environment": 9.5,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1641,
+        "barrel_rate": 0.0554,
+        "hard_hit_rate": 0.3061,
+        "fb_rate": 0.466,
+        "z_contact_rate": 0.8466,
+        "sweet_spot_rate": 0.3614,
+        "xwobacon": 0.3435,
+        "ev90": 95.9
+      },
+      "reasons": [
+        "vs Payton Tolle \u2014 cause B (14.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.86)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Poor pitch-mix fit (88% fastballs, rel 0.30 \u2192 mix-fit 0.32x)",
+        "Green Monster cuts LHB HR, aids doubles",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -13226,6 +13160,61 @@
       ]
     },
     {
+      "id": 686469,
+      "name": "Vinnie Pasquantino",
+      "team": "Kansas City Royals",
+      "bats": "L",
+      "opp": "San Francisco Giants",
+      "opp_pitcher": "Trevor McDonald",
+      "venue": "Kauffman Stadium",
+      "gamePk": 824087,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 6,
+      "iso": 0.119,
+      "total": 39.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.6,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.7,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 11.8,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1614,
+        "barrel_rate": 0.0778,
+        "hard_hit_rate": 0.3901,
+        "fb_rate": 0.468,
+        "z_contact_rate": 0.887,
+        "sweet_spot_rate": 0.3288,
+        "xwobacon": 0.3439,
+        "ev90": 101.1
+      },
+      "reasons": [
+        "vs Trevor McDonald \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.82)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (57% fastballs, rel 0.30 \u2192 mix-fit 0.60x)",
+        "Hot (101\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 665926,
       "name": "Andr\u00e9s Gim\u00e9nez",
       "team": "Toronto Blue Jays",
@@ -13283,51 +13272,49 @@
       ]
     },
     {
-      "id": 666176,
-      "name": "Jo Adell",
-      "team": "Los Angeles Angels",
-      "bats": "R",
-      "opp": "St. Louis Cardinals",
-      "opp_pitcher": "Kyle Leahy",
+      "id": 802139,
+      "name": "JJ Wetherholt",
+      "team": "St. Louis Cardinals",
+      "bats": "L",
+      "opp": "Los Angeles Angels",
+      "opp_pitcher": "Jos\u00e9 Soriano",
       "venue": "Angel Stadium",
       "gamePk": 824006,
       "slot": null,
       "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.146,
+      "season_hr": 14,
+      "iso": 0.142,
       "total": 39.6,
       "tier": "Pass",
       "role": "Watchlist",
       "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": 1.26,
+      "mix_fit": 1.01,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -0.6,
-      "pitcher_grade": "C",
+      "due_hr": 1.4,
+      "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 12.5,
-        "hitter": 9.6,
-        "environment": 9.5,
+        "pitcher": 6.0,
+        "hitter": 17.6,
+        "environment": 8.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1462,
-        "barrel_rate": 0.066,
-        "hard_hit_rate": 0.341,
-        "fb_rate": 0.4557,
-        "z_contact_rate": 0.8566,
-        "sweet_spot_rate": 0.3154,
-        "xwobacon": 0.3412,
-        "ev90": 105.2
+        "air_pull_rate": 0.1545,
+        "barrel_rate": 0.0842,
+        "hard_hit_rate": 0.4286,
+        "fb_rate": 0.529,
+        "z_contact_rate": 0.8924,
+        "sweet_spot_rate": 0.3691,
+        "xwobacon": 0.3578,
+        "ev90": 101.3
       },
       "reasons": [
-        "vs Kyle Leahy \u2014 cause C (12.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.91)",
-        "Pitch-mix fit: damages this arsenal (48% breaking balls, rel 1.89 \u2192 mix-fit 1.26x)",
-        "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
+        "vs Jos\u00e9 Soriano \u2014 cause Pass (6.0/25)",
+        "Platoon edge (L vs RHP)",
+        "Warm (80\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -13393,52 +13380,50 @@
       ]
     },
     {
-      "id": 702616,
-      "name": "Jackson Holliday",
-      "team": "Baltimore Orioles",
-      "bats": "L",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
+      "id": 678882,
+      "name": "Ceddanne Rafaela",
+      "team": "Boston Red Sox",
+      "bats": "R",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Shane Baz",
       "venue": "Fenway Park",
       "gamePk": 824736,
       "slot": null,
       "confirmed": false,
-      "season_hr": 5,
-      "iso": 0.159,
-      "total": 38.7,
+      "season_hr": 8,
+      "iso": 0.154,
+      "total": 39.0,
       "tier": "Pass",
       "role": "Watchlist",
       "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": 0.32,
+      "mix_fit": 0.85,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "B",
+      "due_hr": 0.4,
+      "pitcher_grade": "C",
       "breakdown": {
-        "pitcher": 14.5,
-        "hitter": 8.2,
-        "environment": 8.0,
+        "pitcher": 10.0,
+        "hitter": 10.5,
+        "environment": 10.5,
         "lineup": 6.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1641,
-        "barrel_rate": 0.0554,
-        "hard_hit_rate": 0.3061,
-        "fb_rate": 0.466,
-        "z_contact_rate": 0.8466,
-        "sweet_spot_rate": 0.3614,
-        "xwobacon": 0.3435,
-        "ev90": 95.9
+        "air_pull_rate": 0.1633,
+        "barrel_rate": 0.0579,
+        "hard_hit_rate": 0.2902,
+        "fb_rate": 0.5194,
+        "z_contact_rate": 0.8366,
+        "sweet_spot_rate": 0.3691,
+        "xwobacon": 0.344,
+        "ev90": 102.8
       },
       "reasons": [
-        "vs Payton Tolle \u2014 cause B (14.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.86)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "Poor pitch-mix fit (88% fastballs, rel 0.30 \u2192 mix-fit 0.32x)",
+        "vs Shane Baz \u2014 cause C (10.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.73)",
+        "Slightly + park (103)",
         "Green Monster cuts LHB HR, aids doubles",
-        "Warm (83\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -13557,6 +13542,60 @@
       "role_notes": []
     },
     {
+      "id": 666176,
+      "name": "Jo Adell",
+      "team": "Los Angeles Angels",
+      "bats": "R",
+      "opp": "St. Louis Cardinals",
+      "opp_pitcher": "Kyle Leahy",
+      "venue": "Angel Stadium",
+      "gamePk": 824006,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 13,
+      "iso": 0.146,
+      "total": 38.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.26,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.6,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 12.5,
+        "hitter": 9.6,
+        "environment": 8.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1462,
+        "barrel_rate": 0.066,
+        "hard_hit_rate": 0.341,
+        "fb_rate": 0.4557,
+        "z_contact_rate": 0.8566,
+        "sweet_spot_rate": 0.3154,
+        "xwobacon": 0.3412,
+        "ev90": 105.2
+      },
+      "reasons": [
+        "vs Kyle Leahy \u2014 cause C (12.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.91)",
+        "Pitch-mix fit: damages this arsenal (48% breaking balls, rel 1.89 \u2192 mix-fit 1.26x)",
+        "Warm (80\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 676356,
       "name": "Jonny DeLuca",
       "team": "Tampa Bay Rays",
@@ -13603,60 +13642,6 @@
         "Poor pitch-mix fit (48% fastballs, rel 0.83 \u2192 mix-fit 0.66x)",
         "Slightly + park (102)",
         "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 678882,
-      "name": "Ceddanne Rafaela",
-      "team": "Boston Red Sox",
-      "bats": "R",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Shane Baz",
-      "venue": "Fenway Park",
-      "gamePk": 824736,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.154,
-      "total": 37.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.85,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.4,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 10.5,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1633,
-        "barrel_rate": 0.0579,
-        "hard_hit_rate": 0.2902,
-        "fb_rate": 0.5194,
-        "z_contact_rate": 0.8366,
-        "sweet_spot_rate": 0.3691,
-        "xwobacon": 0.344,
-        "ev90": 102.8
-      },
-      "reasons": [
-        "vs Shane Baz \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.73)",
-        "Slightly + park (103)",
-        "Green Monster cuts LHB HR, aids doubles",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -13761,63 +13746,6 @@
       ]
     },
     {
-      "id": 672724,
-      "name": "Oswald Peraza",
-      "team": "Los Angeles Angels",
-      "bats": "R",
-      "opp": "St. Louis Cardinals",
-      "opp_pitcher": "Kyle Leahy",
-      "venue": "Angel Stadium",
-      "gamePk": 824006,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.137,
-      "total": 35.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.41,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 12.5,
-        "hitter": 5.8,
-        "environment": 9.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1455,
-        "barrel_rate": 0.063,
-        "hard_hit_rate": 0.3827,
-        "fb_rate": 0.4606,
-        "z_contact_rate": 0.8799,
-        "sweet_spot_rate": 0.2918,
-        "xwobacon": 0.3357,
-        "ev90": 101.5
-      },
-      "reasons": [
-        "vs Kyle Leahy \u2014 cause C (12.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.91)",
-        "Platoon shape fades vs RHP",
-        "Low air-pull (11%)",
-        "Poor pitch-mix fit (48% breaking balls, rel 0.30 \u2192 mix-fit 0.41x)",
-        "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 806068,
       "name": "Colt Emerson",
       "team": "Seattle Mariners",
@@ -13865,6 +13793,61 @@
       ],
       "warnings": [
         "Pitcher park (93)",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 702332,
+      "name": "Caleb Durbin",
+      "team": "Boston Red Sox",
+      "bats": "R",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Shane Baz",
+      "venue": "Fenway Park",
+      "gamePk": 824736,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 9,
+      "iso": 0.156,
+      "total": 35.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.47,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.3,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.0,
+        "hitter": 6.8,
+        "environment": 10.5,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1724,
+        "barrel_rate": 0.0519,
+        "hard_hit_rate": 0.31,
+        "fb_rate": 0.4695,
+        "z_contact_rate": 0.9138,
+        "sweet_spot_rate": 0.3509,
+        "xwobacon": 0.3273,
+        "ev90": 102.1
+      },
+      "reasons": [
+        "vs Shane Baz \u2014 cause C (10.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.73)",
+        "Poor pitch-mix fit (56% fastballs, rel 0.60 \u2192 mix-fit 0.47x)",
+        "Slightly + park (103)",
+        "Green Monster cuts LHB HR, aids doubles",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -13983,6 +13966,62 @@
       ]
     },
     {
+      "id": 672724,
+      "name": "Oswald Peraza",
+      "team": "Los Angeles Angels",
+      "bats": "R",
+      "opp": "St. Louis Cardinals",
+      "opp_pitcher": "Kyle Leahy",
+      "venue": "Angel Stadium",
+      "gamePk": 824006,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.137,
+      "total": 34.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.41,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 12.5,
+        "hitter": 5.8,
+        "environment": 8.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1455,
+        "barrel_rate": 0.063,
+        "hard_hit_rate": 0.3827,
+        "fb_rate": 0.4606,
+        "z_contact_rate": 0.8799,
+        "sweet_spot_rate": 0.2918,
+        "xwobacon": 0.3357,
+        "ev90": 101.5
+      },
+      "reasons": [
+        "vs Kyle Leahy \u2014 cause C (12.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.91)",
+        "Platoon shape fades vs RHP",
+        "Low air-pull (11%)",
+        "Poor pitch-mix fit (48% breaking balls, rel 0.30 \u2192 mix-fit 0.41x)",
+        "Warm (80\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 672640,
       "name": "Otto Lopez",
       "team": "Miami Marlins",
@@ -14026,61 +14065,6 @@
         "vs Ronel Blanco \u2014 cause ? (0/25)",
         "Hitter-friendly park (106)",
         "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 702332,
-      "name": "Caleb Durbin",
-      "team": "Boston Red Sox",
-      "bats": "R",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Shane Baz",
-      "venue": "Fenway Park",
-      "gamePk": 824736,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.156,
-      "total": 33.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.47,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.3,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 6.8,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1724,
-        "barrel_rate": 0.0519,
-        "hard_hit_rate": 0.31,
-        "fb_rate": 0.4695,
-        "z_contact_rate": 0.9138,
-        "sweet_spot_rate": 0.3509,
-        "xwobacon": 0.3273,
-        "ev90": 102.1
-      },
-      "reasons": [
-        "vs Shane Baz \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.73)",
-        "Poor pitch-mix fit (56% fastballs, rel 0.60 \u2192 mix-fit 0.47x)",
-        "Slightly + park (103)",
-        "Green Monster cuts LHB HR, aids doubles",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -14215,7 +14199,7 @@
       "confirmed": false,
       "season_hr": 8,
       "iso": 0.141,
-      "total": 31.9,
+      "total": 30.4,
       "tier": "Pass",
       "role": "Watchlist",
       "shape_source": "statcast",
@@ -14228,7 +14212,7 @@
       "breakdown": {
         "pitcher": 6.0,
         "hitter": 8.4,
-        "environment": 9.5,
+        "environment": 8.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
@@ -14247,62 +14231,7 @@
         "Platoon shape fades vs RHP",
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (48% fastballs, rel 0.92 \u2192 mix-fit 0.84x)",
-        "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 671056,
-      "name": "Iv\u00e1n Herrera",
-      "team": "St. Louis Cardinals",
-      "bats": "R",
-      "opp": "Los Angeles Angels",
-      "opp_pitcher": "Jos\u00e9 Soriano",
-      "venue": "Angel Stadium",
-      "gamePk": 824006,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.135,
-      "total": 30.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.3,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.0,
-        "hitter": 6.8,
-        "environment": 9.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1762,
-        "barrel_rate": 0.0393,
-        "hard_hit_rate": 0.3122,
-        "fb_rate": 0.4581,
-        "z_contact_rate": 0.8592,
-        "sweet_spot_rate": 0.2933,
-        "xwobacon": 0.3021,
-        "ev90": 101.9
-      },
-      "reasons": [
-        "vs Jos\u00e9 Soriano \u2014 cause Pass (6.0/25)",
-        "Poor pitch-mix fit (48% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
+        "Warm (80\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -14420,6 +14349,59 @@
       ]
     },
     {
+      "id": 671056,
+      "name": "Iv\u00e1n Herrera",
+      "team": "St. Louis Cardinals",
+      "bats": "R",
+      "opp": "Los Angeles Angels",
+      "opp_pitcher": "Jos\u00e9 Soriano",
+      "venue": "Angel Stadium",
+      "gamePk": 824006,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 11,
+      "iso": 0.135,
+      "total": 28.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.3,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.0,
+        "hitter": 6.8,
+        "environment": 8.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1762,
+        "barrel_rate": 0.0393,
+        "hard_hit_rate": 0.3122,
+        "fb_rate": 0.4581,
+        "z_contact_rate": 0.8592,
+        "sweet_spot_rate": 0.2933,
+        "xwobacon": 0.3021,
+        "ev90": 101.9
+      },
+      "reasons": [
+        "vs Jos\u00e9 Soriano \u2014 cause Pass (6.0/25)",
+        "Poor pitch-mix fit (48% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
+        "Warm (80\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 669357,
       "name": "Nolan Gorman",
       "team": "St. Louis Cardinals",
@@ -14432,7 +14414,7 @@
       "confirmed": false,
       "season_hr": 7,
       "iso": 0.124,
-      "total": 27.5,
+      "total": 26.0,
       "tier": "Pass",
       "role": "Watchlist",
       "shape_source": "proxy",
@@ -14445,7 +14427,7 @@
       "breakdown": {
         "pitcher": 6.0,
         "hitter": 4.0,
-        "environment": 9.5,
+        "environment": 8.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
@@ -14453,8 +14435,7 @@
       "reasons": [
         "vs Jos\u00e9 Soriano \u2014 cause Pass (6.0/25)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (78\u00b0F)",
-        "Wind out ~7 mph",
+        "Warm (80\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -14523,9 +14504,9 @@
   "structures": {
     "rr_core_4leg": {
       "legs": [
-        "Riley Greene (Detroit Tigers, 76.0, Cause Satellite)",
-        "Bryce Eldridge (San Francisco Giants, 72.2, Cause Satellite)",
+        "Riley Greene (Detroit Tigers, 73.5, Cause Satellite)",
         "Curtis Mead (Washington Nationals, 71.5, Cause Satellite)",
+        "Bryce Eldridge (San Francisco Giants, 70.7, Cause Satellite)",
         "Shea Langeliers (Athletics, 70.5, Core)"
       ],
       "why": "Four different games/causes (survival layer) \u2014 RR scores on cause diversity."
@@ -14905,19 +14886,7 @@
         "team": "Detroit Tigers",
         "opp_pitcher": "Jameson Taillon",
         "role": "Cause Satellite",
-        "total": 76.0,
-        "cause_grade": "A+",
-        "result_hr": null,
-        "cause_fired": null,
-        "teammate_hr": null,
-        "outcome": null
-      },
-      {
-        "player": "Bryce Eldridge",
-        "team": "San Francisco Giants",
-        "opp_pitcher": "Michael Wacha",
-        "role": "Cause Satellite",
-        "total": 72.2,
+        "total": 73.5,
         "cause_grade": "A+",
         "result_hr": null,
         "cause_fired": null,
@@ -14937,24 +14906,24 @@
         "outcome": null
       },
       {
-        "player": "Shea Langeliers",
-        "team": "Athletics",
-        "opp_pitcher": "Mitch Bratt",
-        "role": "Core",
-        "total": 70.5,
-        "cause_grade": "A",
+        "player": "Bryce Eldridge",
+        "team": "San Francisco Giants",
+        "opp_pitcher": "Michael Wacha",
+        "role": "Cause Satellite",
+        "total": 70.7,
+        "cause_grade": "A+",
         "result_hr": null,
         "cause_fired": null,
         "teammate_hr": null,
         "outcome": null
       },
       {
-        "player": "Spencer Torkelson",
-        "team": "Detroit Tigers",
-        "opp_pitcher": "Jameson Taillon",
-        "role": "Cause Satellite",
-        "total": 69.7,
-        "cause_grade": "A+",
+        "player": "Shea Langeliers",
+        "team": "Athletics",
+        "opp_pitcher": "Mitch Bratt",
+        "role": "Core",
+        "total": 70.5,
+        "cause_grade": "A",
         "result_hr": null,
         "cause_fired": null,
         "teammate_hr": null,
@@ -14997,6 +14966,18 @@
         "outcome": null
       },
       {
+        "player": "Spencer Torkelson",
+        "team": "Detroit Tigers",
+        "opp_pitcher": "Jameson Taillon",
+        "role": "Cause Satellite",
+        "total": 67.2,
+        "cause_grade": "A+",
+        "result_hr": null,
+        "cause_fired": null,
+        "teammate_hr": null,
+        "outcome": null
+      },
+      {
         "player": "Luis Garc\u00eda Jr.",
         "team": "Washington Nationals",
         "opp_pitcher": "Kyle Freeland",
@@ -15033,18 +15014,6 @@
         "outcome": null
       },
       {
-        "player": "Colt Keith",
-        "team": "Detroit Tigers",
-        "opp_pitcher": "Jameson Taillon",
-        "role": "Cause Satellite",
-        "total": 66.3,
-        "cause_grade": "A+",
-        "result_hr": null,
-        "cause_fired": null,
-        "teammate_hr": null,
-        "outcome": null
-      },
-      {
         "player": "Ty France",
         "team": "San Diego Padres",
         "opp_pitcher": "Bryce Elder",
@@ -15074,6 +15043,18 @@
         "opp_pitcher": "Kyle Freeland",
         "role": "Cause Satellite",
         "total": 66.0,
+        "cause_grade": "A",
+        "result_hr": null,
+        "cause_fired": null,
+        "teammate_hr": null,
+        "outcome": null
+      },
+      {
+        "player": "Jackson Merrill",
+        "team": "San Diego Padres",
+        "opp_pitcher": "Bryce Elder",
+        "role": "Cause Satellite",
+        "total": 65.8,
         "cause_grade": "A",
         "result_hr": null,
         "cause_fired": null,
