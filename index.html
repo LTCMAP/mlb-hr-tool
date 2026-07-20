@@ -43,6 +43,7 @@
   .fit-trap{background:#5c1a1a;color:#ff9d9d;border:1px solid #7a2424}
   .fit-pitch{background:#16432a;color:#7ee2a0;border:1px solid #1f5c39}
   .fit-value{background:#4a3a0e;color:#ffd866;border:1px solid #6b551a}
+  .fit-due{background:#0e3a4a;color:#66d9ff;border:1px solid #1a556b}
   .tier{font-size:11px;padding:2px 8px;border-radius:20px;display:inline-block;
     margin-top:4px;font-weight:600}
   .t-elite{background:#7a3b00;color:#ffcf99}
@@ -230,18 +231,20 @@ function renderCandidates(){
       ? `<span title="Does this bat damage what this pitcher throws? 1.0=neutral">mix-fit ${c.mix_fit}×</span>` : "";
     const chips = s ? `<div class="chips">
         <span>air-pull ${pct(s.air_pull_rate)}</span><span>barrel ${pct(s.barrel_rate)}</span>
-        <span>hard-hit ${pct(s.hard_hit_rate)}</span><span>FB ${pct(s.fb_rate)}</span>${mfChip}</div>` : "";
+        <span>hard-hit ${pct(s.hard_hit_rate)}</span>${s.z_contact_rate!=null?`<span title="In-zone contact rate — pairs with hard-hit for the zone-damage slot">Z-ct ${pct(s.z_contact_rate)}</span>`:""}${s.sweet_spot_rate!=null?`<span title="Batted balls launched 8–32°">sweet ${pct(s.sweet_spot_rate)}</span>`:""}${s.xwobacon!=null?`<span title="Expected wOBA on contact (EV+LA)">xCON .${String(Math.round(s.xwobacon*1000)).padStart(3,"0")}</span>`:""}${s.ev90!=null?`<span title="90th percentile exit velocity">EV90 ${s.ev90}</span>`:""}<span>FB ${pct(s.fb_rate)}</span>${mfChip}</div>` : "";
     const fitTag = c.fit_tag==="TRAP"
       ? '<span class="fit fit-trap" title="Strong surface shape but poor pitch-type fit vs this arsenal">⚠ TRAP</span>'
       : c.fit_tag==="PITCH-FIT"
       ? '<span class="fit fit-pitch" title="Shape specifically punishes this arsenal">PITCH-FIT</span>' : "";
     const valTag = c.value_play
       ? '<span class="fit fit-value" title="Off-chalk live dog: real shape + cause below the core line">★ VALUE</span>' : "";
+    const dueTag = (c.due_hr!=null && c.due_hr>=2)
+      ? `<span class="fit fit-due" title="Barrels not cashing yet: +${c.due_hr} xHR vs actual over the window — positive regression">⇧ DUE</span>` : "";
     return `<div class="card">
       <div class="top">
         <div>
           <div class="nm">${c.name} <span style="color:var(--dim);font-weight:400">${c.bats}</span>
-            ${c.shape_source==="statcast"?'<span class="sc">SC</span>':'<span class="sc" style="color:var(--dim)">proxy</span>'}${fitTag}${valTag}</div>
+            ${c.shape_source==="statcast"?'<span class="sc">SC</span>':'<span class="sc" style="color:var(--dim)">proxy</span>'}${fitTag}${valTag}${dueTag}</div>
           <div class="meta">${c.team} ${c.slot?("· bats "+c.slot):""} ${c.confirmed?"✓":"<span style='color:var(--yellow)'>unconfirmed</span>"} · vs ${c.opp_pitcher||"TBD"} (${c.pitcher_grade}) · ${c.venue}</div>
         </div>
         <div><div class="score">${c.total}</div><span class="role ${roleClass(c.role)}">${c.role}</span></div>
@@ -482,7 +485,7 @@ async function buildLive(){
     cands.push({id:h.id,name:h.name,team:c.team,bats:bat||"?",opp:c.opp,
       opp_pitcher:op?op.name:null,venue:c.venue,gamePk:c.gamePk,slot,confirmed,
       season_hr:h.hr,iso:Math.round((h.slg-h.avg)*1000)/1000,total,tier:tierLabel(total),role,
-      shape_source:H.shape,pull_fit:H.pull_fit,statcast:null,mix_fit:null,fit_tag:null,value_play:false,
+      shape_source:H.shape,pull_fit:H.pull_fit,statcast:null,mix_fit:null,fit_tag:null,value_play:false,due_hr:null,
       pitcher_grade:pg,breakdown:{pitcher:pPts,hitter:H.score,environment:E.score,lineup:L.score,confidence:C.score},
       reasons,warnings:[...E.warn,...L.warn],role_notes:notes});
   });

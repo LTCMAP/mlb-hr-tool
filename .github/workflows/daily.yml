@@ -35,8 +35,10 @@ jobs:
         uses: actions/cache@v4
         with:
           path: data/cache/statcast
-          key: statcast-${{ github.run_id }}
-          restore-keys: statcast-
+          # v2.6: bumped to -v2- to drop the poisoned cache (empty files written
+          # while Savant was 403ing, before cache validation existed).
+          key: statcast-v2-${{ github.run_id }}
+          restore-keys: statcast-v2-
 
       - name: Build today's slate JSON
         run: python3 build.py

@@ -1,4 +1,25 @@
-# ⚾ Daily MLB Home Run Picks — odds-free (v2.5)
+# ⚾ Daily MLB Home Run Picks — odds-free (v2.6)
+
+## What changed in v2.6
+- **Savant fetch fixed + hardened.** Mid-2026 Baseball Savant started 403ing
+  scripted user agents, which silently killed the Statcast layer. The fetch now
+  sends browser-grade headers, handles gzip, retries with backoff, and —
+  critically — **validates every response before caching** (a blocked page can
+  no longer poison the cache as an "empty day"). Invalid cached files are
+  auto-purged and refetched. The Actions cache key was bumped to drop the
+  poisoned entries.
+- **Zone-damage slot (7 pts):** hard-hit% **paired with Z-Contact%** (in-zone
+  contact). Loud contact only cashes if the bat meets hittable pitches — the
+  HH+Z-Ct combo tracks HR/FB far better than either metric alone.
+- **Contact quality via xwOBAcon:** expected wOBA on contact (EV+LA) backstops
+  season ISO, stripping park/defense noise out of "is this contact dangerous".
+- **HR-luck pairing (skill vs. luck):** window xHR from barrels vs actual HR.
+  Bats barreling without cashing get a **⇧ DUE** tag (+2); arms allowing loud
+  contact without HR damage get **HR-DUE** (their HR/9 hides the fade); HR
+  overperformers are flagged as luck risks.
+- **New dashboard chips:** Z-contact, sweet-spot%, xwOBAcon, EV90.
+- Shape 40 re-weighted: air-pull 11 / barrel 8 / zone-damage 7 / matchup 6 /
+  quality 3 / recent 3 / due 2. New rates get their own EB-shrinkage priors.
 
 A **free**, no-API-key tool that grades today's MLB hitters for home-run upside
 and refreshes daily via a JSON file. Implements the **HR Pairing System** workflow:

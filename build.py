@@ -212,8 +212,9 @@ def fetch_weather(park, game_iso):
 # --------------------------------------------------------------------------- #
 # v2.3 scoring
 # --------------------------------------------------------------------------- #
-def score_pitcher(p, scp):
+def score_pitcher(p, scp, lg=None):
     """Pitcher Cause: 0-25. scp = statcast pitcher dict or None."""
+    lg = lg or {}
     if not p or p["ip"] < 1:
         return 0.0, "?", ["No pitcher stats available"]
     flags, pts = [], 0.0
@@ -272,6 +273,29 @@ def score_pitcher(p, scp):
     else:
         pts += 1.5
 
+    # v2.6 — luck/skill pairing on the arm:
+    # (a) HR-DUE: loud contact allowed but HRs haven't followed yet → the cause
+    #     is BETTER than his HR/9 shows (surface stats hide the fade).
+    # (b) Hard-hit allowed ≥46% → extra loud-contact credit.
+    if scp:
+        hh_a = scp.get("hard_hit_allowed_rate")
+        # xHR allowed from raw barrel count (immune to shrinkage flattening)
+        nb_a, hr_a = scp.get("barrels_allowed"), scp.get("hr_allowed")
+        if nb_a is not None and hr_a is not None:
+            hpb = lg.get("hr_per_barrel") or LEAGUE_DEFAULT["hr_per_barrel"]
+            due_a = nb_a * hpb - hr_a
+            if due_a >= 2.5 and nb_a >= 4:
+                pts += 1.5
+                flags.append(f"HR-DUE: {nb_a} barrels allowed, only {hr_a} HR "
+                             f"(+{due_a:.1f} xHR) — regression incoming, better "
+                             "fade than HR/9 shows")
+            elif due_a <= -3:
+                flags.append(f"HR luck against him ({due_a:+.1f} xHR) — HR/9 "
+                             "overstates the fade")
+        if hh_a is not None and hh_a >= 0.46:
+            pts += 1
+            flags.append(f"Loud contact allowed (hard-hit {hh_a*100:.0f}%)")
+
     pts = max(0.0, min(25.0, pts))
     grade = ("A+" if pts >= 20 else "A" if pts >= 17 else "B" if pts >= 13.5
              else "C" if pts >= 10 else "Pass")
@@ -282,13 +306,19 @@ def score_pitcher(p, scp):
 # league rate over the same window; prior weights (in BBE) follow published
 # stabilization research (batted-ball quality rates settle around 40–80 BBE;
 # HR/PA is far noisier, so pitcher HR/PA gets a heavy ~350-PA prior).
-SHRINK_B = {"barrel_rate": 60, "hard_hit_rate": 40, "fb_rate": 50, "air_pull_rate": 60}
+SHRINK_B = {"barrel_rate": 60, "hard_hit_rate": 40, "fb_rate": 50, "air_pull_rate": 60,
+            "sweet_spot_rate": 50, "xwobacon": 60}
+# v2.6 — Z-Contact stabilizes fast (~60 in-zone swings); shrunk on its own
+# denominator (zone_swings), not BBE.
+SHRINK_B_ZSW = {"z_contact_rate": 60}
 SHRINK_P = {"barrel_allowed_rate": ("barrel_rate", 70),
             "hard_hit_allowed_rate": ("hard_hit_rate", 50),
             "fb_allowed_rate": ("fly_rate", 60)}
 HR_PA_PRIOR = 350  # PA weight for pitcher HR/PA shrinkage
 LEAGUE_DEFAULT = {"barrel_rate": 0.085, "hard_hit_rate": 0.40, "fb_rate": 0.47,
-                  "air_pull_rate": 0.18, "fly_rate": 0.27, "hr_per_pa": 0.031}
+                  "air_pull_rate": 0.18, "fly_rate": 0.27, "hr_per_pa": 0.031,
+                  "z_contact": 0.82, "sweet_spot_rate": 0.335,
+                  "xwobacon": 0.365, "hr_per_barrel": 0.55}
 
 
 def apply_shrinkage(scb, scp_map, league):
@@ -300,11 +330,19 @@ def apply_shrinkage(scb, scp_map, league):
     are preserved under ['raw'] for the dashboard/debugging.
     """
     lg = {**LEAGUE_DEFAULT, **(league or {})}
+    if not lg.get("z_contact"):
+        lg["z_contact"] = LEAGUE_DEFAULT["z_contact"]      # older cached league blocks
     for b in scb.values():
         n = b["bbe"]
-        b["raw"] = {k: b[k] for k in SHRINK_B}
+        b["raw"] = {k: b[k] for k in SHRINK_B if k in b}
         for k, kw in SHRINK_B.items():
-            b[k] = round((b[k] * n + lg[k] * kw) / (n + kw), 4)
+            if b.get(k) is not None:
+                nk = b.get("xw_n", n) if k == "xwobacon" else n   # v2.6 own denom
+                b[k] = round((b[k] * nk + lg.get(k, LEAGUE_DEFAULT[k]) * kw) / (nk + kw), 4)
+        for k, kw in SHRINK_B_ZSW.items():                 # v2.6 — zone-swing denom
+            if b.get(k) is not None:
+                nz = b.get("zone_swings", 0)
+                b[k] = round((b[k] * nz + lg["z_contact"] * kw) / (nz + kw), 4)
     for p in scp_map.values():
         n = p["bbe"]
         for k, (lk, kw) in SHRINK_P.items():
@@ -355,9 +393,14 @@ def pitch_mix_fit(scb, scp):
     return round(fit, 2), detail
 
 
-def score_hitter(h, scb, scp, bats, throws):
-    """Hitter HR Shape: 0-40. Returns (score, reasons, shape_source, pull_fit, mix_fit)."""
+def score_hitter(h, scb, scp, bats, throws, lg=None):
+    """Hitter HR Shape: 0-40. Returns (score, reasons, shape_source, pull_fit, mix_fit, due_hr).
+
+    v2.6 weights: air-pull 11 / barrel 8 / zone-damage 7 (hard-hit × Z-Contact)
+    / matchup 6 / contact quality 3 / recent form 3 / HR-luck 'due' 2.
+    """
     iso = max(0.0, h["slg"] - h["avg"])
+    lg = lg or {}
     reasons = []
     if scb:                                   # Statcast shape (preferred)
         pts = 0.0
@@ -377,38 +420,57 @@ def score_hitter(h, scb, scp, bats, throws):
             elif br_h <= br * 0.8 and ap_h <= ap * 0.85:
                 reasons.append(f"Platoon shape fades vs {throws}HP")
             ap, br = ap_h, br_h
-        # Air-pull (12) — top HR signal. v2.5: true spray-angle pull (outer
-        # third); league ~18% of BBE, elite pullers ~28%+.
+        # Air-pull (11) — top HR signal (pulled air balls are ~17.5% of contact
+        # but ~66% of HR). v2.5: true spray-angle pull (outer third); league
+        # ~18% of BBE, elite pullers ~28%+.
         if ap >= 0.28:
-            pts += 12; reasons.append(f"Elite air-pull ({ap*100:.0f}%)")
+            pts += 11; reasons.append(f"Elite air-pull ({ap*100:.0f}%)")
         elif ap >= 0.23:
-            pts += 10; reasons.append(f"Strong air-pull ({ap*100:.0f}%)")
+            pts += 9; reasons.append(f"Strong air-pull ({ap*100:.0f}%)")
         elif ap >= 0.19:
-            pts += 8; reasons.append(f"Good air-pull ({ap*100:.0f}%)")
+            pts += 7; reasons.append(f"Good air-pull ({ap*100:.0f}%)")
         elif ap >= 0.15:
-            pts += 5
+            pts += 4.5
         elif ap >= 0.11:
-            pts += 3
+            pts += 2.5
         else:
             pts += 1; reasons.append(f"Low air-pull ({ap*100:.0f}%)")
-        # Barrels (9)
+        # Barrels (8)
         if br >= 0.15:
-            pts += 9; reasons.append(f"Elite barrel rate ({br*100:.0f}%)")
+            pts += 8; reasons.append(f"Elite barrel rate ({br*100:.0f}%)")
         elif br >= 0.12:
-            pts += 7.5; reasons.append(f"Strong barrels ({br*100:.0f}%)")
+            pts += 6.5; reasons.append(f"Strong barrels ({br*100:.0f}%)")
         elif br >= 0.09:
-            pts += 6; reasons.append(f"Above-avg barrels ({br*100:.0f}%)")
+            pts += 5.5; reasons.append(f"Above-avg barrels ({br*100:.0f}%)")
         elif br >= 0.06:
-            pts += 4
+            pts += 3.5
         elif br >= 0.04:
             pts += 2
         else:
             pts += 0.5
-        # Hard-hit (6)
-        pts += (6 if hh >= 0.50 else 5 if hh >= 0.45 else 4 if hh >= 0.40
-                else 2.5 if hh >= 0.35 else 1)
-        if hh >= 0.45:
-            reasons.append(f"Hard-hit {hh*100:.0f}%")
+        # Zone-damage (7) — v2.6: hard-hit PAIRED with in-zone contact. Hard
+        # contact only cashes if the bat actually meets hittable pitches;
+        # HH% + Z-Contact% together track HR/FB far better than either alone
+        # (r≈0.8 with barrels in published fits). League HH ~40%, Z-Ct ~82%.
+        zc = scb.get("z_contact_rate")
+        if zc is not None and hh >= 0.50 and zc >= 0.85:
+            pts += 7; reasons.append(
+                f"Zone-damage elite: hard-hit {hh*100:.0f}% + Z-contact {zc*100:.0f}%")
+        elif zc is not None and hh >= 0.45 and zc >= 0.82:
+            pts += 5.5; reasons.append(
+                f"Zone-damage: hard-hit {hh*100:.0f}% + Z-contact {zc*100:.0f}%")
+        elif hh >= 0.50:
+            pts += 5; reasons.append(f"Hard-hit {hh*100:.0f}%")
+        elif hh >= 0.45:
+            pts += 4.5; reasons.append(f"Hard-hit {hh*100:.0f}%")
+        elif hh >= 0.40:
+            pts += 3 + (0.5 if (zc or 0) >= 0.86 else 0)
+        elif hh >= 0.35:
+            pts += 2
+        else:
+            pts += 1
+        if zc is not None and zc < 0.75:
+            reasons.append(f"Whiff risk: Z-contact only {zc*100:.0f}%")
         # Matchup fit (6): platoon hand + real pitch-mix fit (v2.4)
         fit = 3.0
         if bats and throws:
@@ -428,9 +490,22 @@ def score_hitter(h, scb, scp, bats, throws):
         elif scp and ap >= 0.18 and (scp["fb_allowed_rate"] >= 0.30 or scp["barrel_allowed_rate"] >= 0.09):
             fit += 2.0; reasons.append("Cause-capture synergy (air-pull bat vs fly-ball/barrel-prone arm)")
         pts += max(0.0, min(6.0, fit))
-        # Platoon/season ISO (4)
-        pts += (4 if iso >= 0.25 else 3 if iso >= 0.20 else 2 if iso >= 0.16
-                else 1 if iso >= 0.13 else 0.5)
+        # Contact quality (3) — v2.6: xwOBA-on-contact (EV+LA expectation)
+        # backstopped by season ISO. xwOBAcon strips defense/park/sequencing
+        # noise out of "is this contact actually dangerous".
+        xw = scb.get("xwobacon") or 0.0
+        if xw >= 0.42 or iso >= 0.25:
+            pts += 3
+            if xw >= 0.42:
+                reasons.append(f"Dangerous contact (xwOBAcon .{int(xw*1000):03d})")
+        elif xw >= 0.38 or iso >= 0.20:
+            pts += 2.25
+        elif iso >= 0.16 or xw >= 0.35:
+            pts += 1.5
+        elif iso >= 0.13:
+            pts += 0.75
+        else:
+            pts += 0.25
         # Recent form (3)
         rb, rhr = scb["recent_barrels"], scb["recent_hr"]
         if rhr >= 2 or rb >= 4:
@@ -439,8 +514,26 @@ def score_hitter(h, scb, scp, bats, throws):
             pts += 2
         elif rb >= 1:
             pts += 1
+        # HR luck / 'due' (2) — v2.6 pairing luck with skill: expected window
+        # HR from barrels (league ~50-60% of barrels become HR) vs actual.
+        # A bat barreling balls that haven't cashed yet is the sharpest
+        # positive-regression play; one whose HR >> barrels is riding luck.
+        due_hr = None
+        n_barrels = scb.get("barrels")
+        w_hr = scb.get("window_hr")
+        if n_barrels is not None and w_hr is not None:
+            hpb = lg.get("hr_per_barrel") or LEAGUE_DEFAULT["hr_per_barrel"]
+            due_hr = round(n_barrels * hpb - w_hr, 1)
+            if due_hr >= 2:
+                pts += 2; reasons.append(
+                    f"DUE: {n_barrels} barrels, only {w_hr} HR in window "
+                    f"(+{due_hr} xHR) — positive regression")
+            elif due_hr >= 1:
+                pts += 1
+            elif due_hr <= -2.5:
+                reasons.append(f"HR overperformance vs barrels ({due_hr} xHR) — luck risk")
         return (round(max(0.0, min(40.0, pts)), 1), reasons, "statcast",
-                (ap >= 0.19 or br >= 0.10), mix_fit)
+                (ap >= 0.19 or br >= 0.10), mix_fit, due_hr)
 
     # ----- proxy fallback (no Statcast): season power only, CAPPED at 30/40 -----
     hr_rate = h["hr"] / h["pa"] if h["pa"] else 0
@@ -463,7 +556,7 @@ def score_hitter(h, scb, scp, bats, throws):
         pts += 2
     pts += 6 if h["slg"] >= 0.52 else 4 if h["slg"] >= 0.46 else 2 if h["slg"] >= 0.41 else 0
     reasons.append("No Statcast shape — score capped (season-power proxy)")
-    return round(min(30.0, pts), 1), reasons, "proxy", False, None
+    return round(min(30.0, pts), 1), reasons, "proxy", False, None, None
 
 
 def wind_hr_effect(park, weather):
@@ -678,7 +771,7 @@ def build(date, window=21, use_statcast=True):
     # pitcher cause cards
     pcards = {}
     for pid, p in pstats.items():
-        s, grade, flags = score_pitcher(p, scp_map.get(pid))
+        s, grade, flags = score_pitcher(p, scp_map.get(pid), (scmeta or {}).get("league"))
         pcards[pid] = {"score": s, "grade": grade, "flags": flags,
                        "hr9": round(p["hr"] * 9.0 / p["ip"], 2) if p["ip"] else None,
                        "barrel_allowed": (scp_map.get(pid) or {}).get("barrel_allowed_rate")}
@@ -698,8 +791,9 @@ def build(date, window=21, use_statcast=True):
         throws = pthrow.get(op["id"], {}).get("throws", "") if op else ""
 
         scb_h = scb.get(h["id"])
-        h40, h_reasons, shape_src, pull_fit, mix_fit = score_hitter(
-            h, scb_h, scp_map.get(op["id"]) if op else None, bats, throws)
+        h40, h_reasons, shape_src, pull_fit, mix_fit, due_hr = score_hitter(
+            h, scb_h, scp_map.get(op["id"]) if op else None, bats, throws,
+            (scmeta or {}).get("league"))
         park = park_for(ctx["venue"], parks)
         e_pts, e_reasons, e_warn, hf = score_environment(park, weather.get(ctx["gamePk"]), bats)
         l_pts, l_reasons, l_warn = score_lineup(slot, confirmed)
@@ -756,11 +850,13 @@ def build(date, window=21, use_statcast=True):
             "total": total, "tier": tier_label(total), "role": role,
             "shape_source": shape_src, "pull_fit": pull_fit,
             "mix_fit": mix_fit, "fit_tag": fit_tag, "value_play": value_play,
+            "due_hr": due_hr,
             "pitcher_grade": pgrade,
             "breakdown": {"pitcher": pcause, "hitter": h40, "environment": e_pts,
                           "lineup": l_pts, "confidence": c_pts},
-            "statcast": ({k: scb[h["id"]][k] for k in
-                          ("air_pull_rate", "barrel_rate", "hard_hit_rate", "fb_rate")}
+            "statcast": ({k: scb[h["id"]].get(k) for k in
+                          ("air_pull_rate", "barrel_rate", "hard_hit_rate", "fb_rate",
+                           "z_contact_rate", "sweet_spot_rate", "xwobacon", "ev90")}
                          if scb.get(h["id"]) else None),
             "reasons": reasons, "warnings": warnings, "role_notes": role_notes,
         })
@@ -771,18 +867,21 @@ def build(date, window=21, use_statcast=True):
     audit = build_audit_template(candidates, causes)
 
     return {
-        "version": "2.5",
+        "version": "2.6",
         "generated_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
         "slate_date": date, "games": len(games),
         "confirmed_lineups": sum(1 for tid in lineups if lineups[tid]),
         "statcast": bool(scb),
         "statcast_meta": scmeta,
-        "method": "v2.5: rank causes → choose capture → lock confirmed shape that "
-                  "captures the cause. Adds directional wind (park bearing × wind dir, "
-                  "±3 env), empirical-Bayes shrinkage (small samples regress to league), "
-                  "and platoon-split shape (barrel/air-pull vs THIS hand), on top of "
-                  "v2.4 pitch-mix fit + TRAP flags. Weights P25/Shape40/Env15/Lineup12/Src8. "
-                  + ("Statcast (Savant) air-pull/barrel/pitch-mix active."
+        "method": "v2.6: rank causes → choose capture → lock confirmed shape that "
+                  "captures the cause. NEW: zone-damage slot (hard-hit% × Z-Contact% — "
+                  "loud contact that actually meets hittable pitches), xwOBAcon contact "
+                  "quality, and HR-luck pairing (barrels-vs-HR xHR gap → DUE bats and "
+                  "HR-DUE arms). Also: hardened Savant fetch w/ cache validation, "
+                  "directional wind, EB shrinkage, platoon-split shape, pitch-mix fit "
+                  "+ TRAP flags. Weights P25/Shape40(11 air-pull/8 barrel/7 zone-dmg/"
+                  "6 matchup/3 quality/3 recent/2 due)/Env15/Lineup12/Src8. "
+                  + ("Statcast (Savant) shape layer active."
                      if scb else "PROXY shape mode (no Statcast) — scores capped, no pitch-mix fit."),
         "tiers": {"Elite Core": "85+", "Core": "78-84", "Satellite": "70-77",
                   "Longshot": "62-69", "Pass": "<62"},
