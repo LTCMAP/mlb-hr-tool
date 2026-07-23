@@ -1,6 +1,6 @@
 {
   "version": "2.6",
-  "generated_utc": "2026-07-23T20:34:04.610312+00:00",
+  "generated_utc": "2026-07-23T23:25:56.022666+00:00",
   "slate_date": "2026-07-23",
   "games": 5,
   "confirmed_lineups": 10,
@@ -55,22 +55,22 @@
       "pitcher": "Shane Bieber",
       "venue": "Rogers Centre",
       "grade": "A",
-      "pitcher_cause": 19.5,
+      "pitcher_cause": 18.0,
       "park_hr": 102,
-      "cause_score": 20.0,
+      "cause_score": 18.5,
       "capture_method": "2-bat mini-stack (cause supports coverage)",
       "public_heat": false,
       "n_playable": 2,
       "playable_bats": [
         {
           "name": "Junior Caminero",
-          "total": 68.1,
+          "total": 66.6,
           "role": "Cause Satellite",
           "fit_tag": "PITCH-FIT"
         },
         {
           "name": "Victor Mesa Jr.",
-          "total": 67.9,
+          "total": 66.4,
           "role": "Cause Satellite",
           "fit_tag": null
         }
@@ -308,7 +308,7 @@
       "slot": 2,
       "confirmed": true,
       "season_hr": 9,
-      "iso": 0.169,
+      "iso": 0.168,
       "total": 68.5,
       "tier": "Longshot",
       "role": "Power Satellite",
@@ -338,12 +338,12 @@
       },
       "reasons": [
         "vs Troy Melton \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.15)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.09)",
         "Platoon shape: spikes vs RHP (barrel 16%, air-pull 29%)",
         "Elite air-pull (29%)",
         "Elite barrel rate (16%)",
         "Zone-damage elite: hard-hit 51% + Z-contact 86%",
-        "Warm (77\u00b0F)",
+        "Warm (76\u00b0F)",
         "Top of order (#2)",
         "Elite-hitter override (beats a neutral spot)",
         "Model: one strong signal"
@@ -411,119 +411,6 @@
       "role_notes": []
     },
     {
-      "id": 691406,
-      "name": "Junior Caminero",
-      "team": "Tampa Bay Rays",
-      "bats": "R",
-      "opp": "Toronto Blue Jays",
-      "opp_pitcher": "Shane Bieber",
-      "venue": "Rogers Centre",
-      "gamePk": 822785,
-      "slot": 3,
-      "confirmed": true,
-      "season_hr": 29,
-      "iso": 0.268,
-      "total": 68.1,
-      "tier": "Longshot",
-      "role": "Cause Satellite",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.32,
-      "fit_tag": "PITCH-FIT",
-      "value_play": true,
-      "due_hr": -1.7,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 19.5,
-        "hitter": 25.6,
-        "environment": 8.0,
-        "lineup": 11.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1981,
-        "barrel_rate": 0.0969,
-        "hard_hit_rate": 0.408,
-        "fb_rate": 0.4482,
-        "z_contact_rate": 0.8691,
-        "sweet_spot_rate": 0.3419,
-        "xwobacon": 0.3973,
-        "ev90": 109.0
-      },
-      "reasons": [
-        "vs Shane Bieber \u2014 cause A (19.5/25)",
-        "Pitcher: Elevated HR allowed (HR/9 2.23)",
-        "Pitcher: Low K rate (16%)",
-        "Strong air-pull (24%)",
-        "Above-avg barrels (11%)",
-        "Pitch-mix fit: damages this arsenal (47% fastballs, rel 1.15 \u2192 mix-fit 1.32x)",
-        "Slightly + park (102)",
-        "Retractable roof (weather neutralized)",
-        "Heart of order (#3)",
-        "Model: one strong signal",
-        "VALUE longshot: real shape + cause off the chalk"
-      ],
-      "warnings": [],
-      "role_notes": []
-    },
-    {
-      "id": 683748,
-      "name": "Victor Mesa Jr.",
-      "team": "Tampa Bay Rays",
-      "bats": "L",
-      "opp": "Toronto Blue Jays",
-      "opp_pitcher": "Shane Bieber",
-      "venue": "Rogers Centre",
-      "gamePk": 822785,
-      "slot": 4,
-      "confirmed": true,
-      "season_hr": 8,
-      "iso": 0.246,
-      "total": 67.9,
-      "tier": "Longshot",
-      "role": "Cause Satellite",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.23,
-      "fit_tag": null,
-      "value_play": true,
-      "due_hr": -2.0,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 19.5,
-        "hitter": 25.4,
-        "environment": 8.0,
-        "lineup": 11.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1903,
-        "barrel_rate": 0.0926,
-        "hard_hit_rate": 0.3747,
-        "fb_rate": 0.5402,
-        "z_contact_rate": 0.8806,
-        "sweet_spot_rate": 0.3254,
-        "xwobacon": 0.3506,
-        "ev90": 103.8
-      },
-      "reasons": [
-        "vs Shane Bieber \u2014 cause A (19.5/25)",
-        "Pitcher: Elevated HR allowed (HR/9 2.23)",
-        "Pitcher: Low K rate (16%)",
-        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 21%)",
-        "Good air-pull (21%)",
-        "Above-avg barrels (11%)",
-        "Platoon edge (L vs RHP)",
-        "Slightly + park (102)",
-        "Retractable roof (weather neutralized)",
-        "Heart of order (#4)",
-        "Model: one strong signal",
-        "VALUE longshot: real shape + cause off the chalk"
-      ],
-      "warnings": [],
-      "role_notes": []
-    },
-    {
       "id": 664034,
       "name": "Ty France",
       "team": "San Diego Padres",
@@ -580,6 +467,117 @@
       "role_notes": []
     },
     {
+      "id": 691406,
+      "name": "Junior Caminero",
+      "team": "Tampa Bay Rays",
+      "bats": "R",
+      "opp": "Toronto Blue Jays",
+      "opp_pitcher": "Shane Bieber",
+      "venue": "Rogers Centre",
+      "gamePk": 822785,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 29,
+      "iso": 0.266,
+      "total": 66.6,
+      "tier": "Longshot",
+      "role": "Cause Satellite",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.32,
+      "fit_tag": "PITCH-FIT",
+      "value_play": true,
+      "due_hr": -1.7,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.0,
+        "hitter": 25.6,
+        "environment": 8.0,
+        "lineup": 11.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1981,
+        "barrel_rate": 0.0969,
+        "hard_hit_rate": 0.408,
+        "fb_rate": 0.4482,
+        "z_contact_rate": 0.8691,
+        "sweet_spot_rate": 0.3419,
+        "xwobacon": 0.3973,
+        "ev90": 109.0
+      },
+      "reasons": [
+        "vs Shane Bieber \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 2.09)",
+        "Strong air-pull (24%)",
+        "Above-avg barrels (11%)",
+        "Pitch-mix fit: damages this arsenal (47% fastballs, rel 1.15 \u2192 mix-fit 1.32x)",
+        "Slightly + park (102)",
+        "Retractable roof (weather neutralized)",
+        "Heart of order (#3)",
+        "Model: one strong signal",
+        "VALUE longshot: real shape + cause off the chalk"
+      ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
+      "id": 683748,
+      "name": "Victor Mesa Jr.",
+      "team": "Tampa Bay Rays",
+      "bats": "L",
+      "opp": "Toronto Blue Jays",
+      "opp_pitcher": "Shane Bieber",
+      "venue": "Rogers Centre",
+      "gamePk": 822785,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 8,
+      "iso": 0.243,
+      "total": 66.4,
+      "tier": "Longshot",
+      "role": "Cause Satellite",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.23,
+      "fit_tag": null,
+      "value_play": true,
+      "due_hr": -2.0,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.0,
+        "hitter": 25.4,
+        "environment": 8.0,
+        "lineup": 11.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1903,
+        "barrel_rate": 0.0926,
+        "hard_hit_rate": 0.3747,
+        "fb_rate": 0.5402,
+        "z_contact_rate": 0.8806,
+        "sweet_spot_rate": 0.3254,
+        "xwobacon": 0.3506,
+        "ev90": 103.8
+      },
+      "reasons": [
+        "vs Shane Bieber \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 2.09)",
+        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 21%)",
+        "Good air-pull (21%)",
+        "Above-avg barrels (11%)",
+        "Platoon edge (L vs RHP)",
+        "Slightly + park (102)",
+        "Retractable roof (weather neutralized)",
+        "Heart of order (#4)",
+        "Model: one strong signal",
+        "VALUE longshot: real shape + cause off the chalk"
+      ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
       "id": 682998,
       "name": "Corbin Carroll",
       "team": "Arizona Diamondbacks",
@@ -588,10 +586,10 @@
       "opp_pitcher": "Michael McGreevy",
       "venue": "Busch Stadium",
       "gamePk": 823042,
-      "slot": 2,
+      "slot": 1,
       "confirmed": true,
       "season_hr": 15,
-      "iso": 0.238,
+      "iso": 0.241,
       "total": 66.1,
       "tier": "Longshot",
       "role": "Longshot",
@@ -621,13 +619,13 @@
       },
       "reasons": [
         "vs Michael McGreevy \u2014 cause B (15.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.17)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.18)",
         "Pitcher: Above-avg barrels allowed (10%)",
         "Strong air-pull (25%)",
         "Above-avg barrels (10%)",
         "Platoon edge (L vs RHP)",
-        "Warm (81\u00b0F)",
-        "Top of order (#2)",
+        "Warm (78\u00b0F)",
+        "Top of order (#1)",
         "Model: one strong signal",
         "VALUE longshot: real shape + cause off the chalk"
       ],
@@ -732,13 +730,13 @@
       },
       "reasons": [
         "vs Randy Dobnak \u2014 cause B (14.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.29)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.12)",
         "Pitcher: Low K rate (11%)",
         "Platoon shape: spikes vs RHP (barrel 19%, air-pull 28%)",
         "Strong air-pull (28%)",
         "Elite barrel rate (19%)",
         "Platoon edge (L vs RHP)",
-        "Warm (77\u00b0F)",
+        "Warm (76\u00b0F)",
         "Heart of order (#4)",
         "Model: one strong signal",
         "VALUE longshot: real shape + cause off the chalk"
@@ -761,9 +759,9 @@
       "confirmed": true,
       "season_hr": 14,
       "iso": 0.159,
-      "total": 63.0,
-      "tier": "Longshot",
-      "role": "Longshot",
+      "total": 61.5,
+      "tier": "Pass",
+      "role": "Watchlist",
       "shape_source": "statcast",
       "pull_fit": true,
       "mix_fit": 1.2,
@@ -772,7 +770,7 @@
       "due_hr": 2.3,
       "pitcher_grade": "A",
       "breakdown": {
-        "pitcher": 19.5,
+        "pitcher": 18.0,
         "hitter": 19.5,
         "environment": 8.0,
         "lineup": 12.0,
@@ -789,9 +787,8 @@
         "ev90": 102.1
       },
       "reasons": [
-        "vs Shane Bieber \u2014 cause A (19.5/25)",
-        "Pitcher: Elevated HR allowed (HR/9 2.23)",
-        "Pitcher: Low K rate (16%)",
+        "vs Shane Bieber \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 2.09)",
         "Platoon shape: spikes vs RHP (barrel 12%, air-pull 10%)",
         "Low air-pull (10%)",
         "Strong barrels (12%)",
@@ -1087,7 +1084,7 @@
       "slot": 4,
       "confirmed": true,
       "season_hr": 10,
-      "iso": 0.159,
+      "iso": 0.162,
       "total": 58.9,
       "tier": "Pass",
       "role": "Watchlist",
@@ -1145,7 +1142,7 @@
       "slot": 3,
       "confirmed": true,
       "season_hr": 8,
-      "iso": 0.143,
+      "iso": 0.142,
       "total": 58.2,
       "tier": "Pass",
       "role": "Pass",
@@ -1175,13 +1172,13 @@
       },
       "reasons": [
         "vs Randy Dobnak \u2014 cause B (14.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.29)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.12)",
         "Pitcher: Low K rate (11%)",
         "Good air-pull (22%)",
         "Above-avg barrels (10%)",
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (57% fastballs, rel 2.18 \u2192 mix-fit 1.67x)",
-        "Warm (77\u00b0F)",
+        "Warm (76\u00b0F)",
         "Heart of order (#3)"
       ],
       "warnings": [
@@ -1243,59 +1240,6 @@
       "role_notes": []
     },
     {
-      "id": 571448,
-      "name": "Nolan Arenado",
-      "team": "Arizona Diamondbacks",
-      "bats": "R",
-      "opp": "St. Louis Cardinals",
-      "opp_pitcher": "Michael McGreevy",
-      "venue": "Busch Stadium",
-      "gamePk": 823042,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.185,
-      "total": 57.6,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.12,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.4,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 15.5,
-        "hitter": 25.1,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2374,
-        "barrel_rate": 0.0945,
-        "hard_hit_rate": 0.4117,
-        "fb_rate": 0.5295,
-        "z_contact_rate": 0.8603,
-        "sweet_spot_rate": 0.3633,
-        "xwobacon": 0.3617,
-        "ev90": 102.1
-      },
-      "reasons": [
-        "vs Michael McGreevy \u2014 cause B (15.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.17)",
-        "Pitcher: Above-avg barrels allowed (10%)",
-        "Elite air-pull (29%)",
-        "Above-avg barrels (10%)",
-        "Warm (81\u00b0F)"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 676475,
       "name": "Alec Burleson",
       "team": "St. Louis Cardinals",
@@ -1337,12 +1281,12 @@
       },
       "reasons": [
         "vs Brandon Pfaadt \u2014 cause Pass (9.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.22)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.11)",
         "Good air-pull (22%)",
         "Above-avg barrels (11%)",
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (56% fastballs, rel 1.34 \u2192 mix-fit 1.20x)",
-        "Warm (81\u00b0F)",
+        "Warm (78\u00b0F)",
         "Heart of order (#3)"
       ],
       "warnings": [],
@@ -1398,6 +1342,59 @@
         "Mid order (#6)"
       ],
       "warnings": [],
+      "role_notes": []
+    },
+    {
+      "id": 571448,
+      "name": "Nolan Arenado",
+      "team": "Arizona Diamondbacks",
+      "bats": "R",
+      "opp": "St. Louis Cardinals",
+      "opp_pitcher": "Michael McGreevy",
+      "venue": "Busch Stadium",
+      "gamePk": 823042,
+      "slot": 9,
+      "confirmed": true,
+      "season_hr": 14,
+      "iso": 0.185,
+      "total": 56.6,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.12,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.4,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 15.5,
+        "hitter": 25.1,
+        "environment": 8.0,
+        "lineup": 5.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2374,
+        "barrel_rate": 0.0945,
+        "hard_hit_rate": 0.4117,
+        "fb_rate": 0.5295,
+        "z_contact_rate": 0.8603,
+        "sweet_spot_rate": 0.3633,
+        "xwobacon": 0.3617,
+        "ev90": 102.1
+      },
+      "reasons": [
+        "vs Michael McGreevy \u2014 cause B (15.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.18)",
+        "Pitcher: Above-avg barrels allowed (10%)",
+        "Elite air-pull (29%)",
+        "Above-avg barrels (10%)",
+        "Warm (78\u00b0F)"
+      ],
+      "warnings": [
+        "Bottom of order (#9)"
+      ],
       "role_notes": []
     },
     {
@@ -1496,15 +1493,71 @@
       },
       "reasons": [
         "vs Brandon Pfaadt \u2014 cause Pass (9.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.22)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.11)",
         "Platoon shape: spikes vs RHP (barrel 15%, air-pull 18%)",
         "Strong barrels (15%)",
         "Pitch-mix fit: damages this arsenal (56% fastballs, rel 2.05 \u2192 mix-fit 1.54x)",
-        "Warm (81\u00b0F)",
+        "Warm (78\u00b0F)",
         "Top of order (#2)"
       ],
       "warnings": [],
       "role_notes": []
+    },
+    {
+      "id": 680728,
+      "name": "Adrian Del Castillo",
+      "team": "Arizona Diamondbacks",
+      "bats": "L",
+      "opp": "St. Louis Cardinals",
+      "opp_pitcher": "Michael McGreevy",
+      "venue": "Busch Stadium",
+      "gamePk": 823042,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 5,
+      "iso": 0.132,
+      "total": 55.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 15.5,
+        "hitter": 20.8,
+        "environment": 8.0,
+        "lineup": 8.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.194,
+        "barrel_rate": 0.0861,
+        "hard_hit_rate": 0.3829,
+        "fb_rate": 0.5071,
+        "z_contact_rate": 0.8663,
+        "sweet_spot_rate": 0.3533,
+        "xwobacon": 0.3812,
+        "ev90": 105.9
+      },
+      "reasons": [
+        "vs Michael McGreevy \u2014 cause B (15.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.18)",
+        "Pitcher: Above-avg barrels allowed (10%)",
+        "Good air-pull (19%)",
+        "Platoon edge (L vs RHP)",
+        "Cause-capture synergy (air-pull bat vs fly-ball/barrel-prone arm)",
+        "Warm (78\u00b0F)",
+        "Mid order (#5)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 663586,
@@ -1610,63 +1663,6 @@
         "Warm (83\u00b0F)",
         "Heart of order (#3)",
         "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 676356,
-      "name": "Jonny DeLuca",
-      "team": "Tampa Bay Rays",
-      "bats": "R",
-      "opp": "Toronto Blue Jays",
-      "opp_pitcher": "Shane Bieber",
-      "venue": "Rogers Centre",
-      "gamePk": 822785,
-      "slot": 5,
-      "confirmed": true,
-      "season_hr": 6,
-      "iso": 0.178,
-      "total": 54.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.76,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.3,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 19.5,
-        "hitter": 14.8,
-        "environment": 8.0,
-        "lineup": 8.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1836,
-        "barrel_rate": 0.0658,
-        "hard_hit_rate": 0.3266,
-        "fb_rate": 0.5052,
-        "z_contact_rate": 0.8566,
-        "sweet_spot_rate": 0.3791,
-        "xwobacon": 0.3556,
-        "ev90": 100.0
-      },
-      "reasons": [
-        "vs Shane Bieber \u2014 cause A (19.5/25)",
-        "Pitcher: Elevated HR allowed (HR/9 2.23)",
-        "Pitcher: Low K rate (16%)",
-        "Good air-pull (19%)",
-        "Poor pitch-mix fit (47% fastballs, rel 0.89 \u2192 mix-fit 0.76x)",
-        "Slightly + park (102)",
-        "Retractable roof (weather neutralized)",
-        "Mid order (#5)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
       ],
       "warnings": [],
       "role_notes": [
@@ -1824,13 +1820,13 @@
       },
       "reasons": [
         "vs Randy Dobnak \u2014 cause B (14.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.29)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.12)",
         "Pitcher: Low K rate (11%)",
         "Platoon shape: spikes vs RHP (barrel 14%, air-pull 24%)",
         "Strong air-pull (24%)",
         "Strong barrels (14%)",
         "Pitch-mix fit: damages this arsenal (57% fastballs, rel 1.63 \u2192 mix-fit 1.36x)",
-        "Warm (77\u00b0F)"
+        "Warm (76\u00b0F)"
       ],
       "warnings": [
         "Pitcher park (94)",
@@ -1839,223 +1835,53 @@
       "role_notes": []
     },
     {
-      "id": 668723,
-      "name": "Ryan Vilade",
+      "id": 676356,
+      "name": "Jonny DeLuca",
       "team": "Tampa Bay Rays",
       "bats": "R",
       "opp": "Toronto Blue Jays",
       "opp_pitcher": "Shane Bieber",
       "venue": "Rogers Centre",
       "gamePk": 822785,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.202,
-      "total": 53.4,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 6,
+      "iso": 0.177,
+      "total": 52.8,
       "tier": "Pass",
       "role": "Watchlist",
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 0.84,
+      "mix_fit": 0.76,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -0.3,
+      "due_hr": -1.3,
       "pitcher_grade": "A",
       "breakdown": {
-        "pitcher": 19.5,
-        "hitter": 15.9,
+        "pitcher": 18.0,
+        "hitter": 14.8,
         "environment": 8.0,
-        "lineup": 6.0,
+        "lineup": 8.0,
         "confidence": 4.0
       },
       "statcast": {
-        "air_pull_rate": 0.2001,
-        "barrel_rate": 0.0718,
-        "hard_hit_rate": 0.3661,
-        "fb_rate": 0.5131,
-        "z_contact_rate": 0.8521,
-        "sweet_spot_rate": 0.3593,
-        "xwobacon": 0.3429,
-        "ev90": 102.7
+        "air_pull_rate": 0.1836,
+        "barrel_rate": 0.0658,
+        "hard_hit_rate": 0.3266,
+        "fb_rate": 0.5052,
+        "z_contact_rate": 0.8566,
+        "sweet_spot_rate": 0.3791,
+        "xwobacon": 0.3556,
+        "ev90": 100.0
       },
       "reasons": [
-        "vs Shane Bieber \u2014 cause A (19.5/25)",
-        "Pitcher: Elevated HR allowed (HR/9 2.23)",
-        "Pitcher: Low K rate (16%)",
-        "Good air-pull (20%)",
-        "Poor pitch-mix fit (47% fastballs, rel 1.07 \u2192 mix-fit 0.84x)",
-        "Slightly + park (102)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 662139,
-      "name": "Daulton Varsho",
-      "team": "Toronto Blue Jays",
-      "bats": "L",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Casey Legumina",
-      "venue": "Rogers Centre",
-      "gamePk": 822785,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.14,
-      "total": 53.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.1,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 2.0,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 15.5,
-        "hitter": 20.8,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1834,
-        "barrel_rate": 0.0791,
-        "hard_hit_rate": 0.3846,
-        "fb_rate": 0.522,
-        "z_contact_rate": 0.9103,
-        "sweet_spot_rate": 0.3422,
-        "xwobacon": 0.3411,
-        "ev90": 102.8
-      },
-      "reasons": [
-        "vs Casey Legumina \u2014 cause B (15.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.15)",
-        "Pitcher: Fly-ball prone (29% FB allowed)",
+        "vs Shane Bieber \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 2.09)",
         "Good air-pull (19%)",
-        "Platoon edge (L vs RHP)",
-        "DUE: 3 barrels, only 0 HR in window (+2.0 xHR) \u2014 positive regression",
+        "Poor pitch-mix fit (47% fastballs, rel 0.89 \u2192 mix-fit 0.76x)",
         "Slightly + park (102)",
         "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 606466,
-      "name": "Ketel Marte",
-      "team": "Arizona Diamondbacks",
-      "bats": "S",
-      "opp": "St. Louis Cardinals",
-      "opp_pitcher": "Michael McGreevy",
-      "venue": "Busch Stadium",
-      "gamePk": 823042,
-      "slot": 1,
-      "confirmed": true,
-      "season_hr": 18,
-      "iso": 0.203,
-      "total": 52.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.98,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 1.3,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 15.5,
-        "hitter": 15.2,
-        "environment": 8.0,
-        "lineup": 12.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1824,
-        "barrel_rate": 0.0647,
-        "hard_hit_rate": 0.3687,
-        "fb_rate": 0.4662,
-        "z_contact_rate": 0.8633,
-        "sweet_spot_rate": 0.3525,
-        "xwobacon": 0.3426,
-        "ev90": 105.4
-      },
-      "reasons": [
-        "vs Michael McGreevy \u2014 cause B (15.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.17)",
-        "Pitcher: Above-avg barrels allowed (10%)",
-        "Warm (81\u00b0F)",
-        "Top of order (#1)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 650490,
-      "name": "Yandy D\u00edaz",
-      "team": "Tampa Bay Rays",
-      "bats": "R",
-      "opp": "Toronto Blue Jays",
-      "opp_pitcher": "Shane Bieber",
-      "venue": "Rogers Centre",
-      "gamePk": 822785,
-      "slot": 1,
-      "confirmed": true,
-      "season_hr": 14,
-      "iso": 0.16,
-      "total": 52.6,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.61,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.3,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 19.5,
-        "hitter": 9.1,
-        "environment": 8.0,
-        "lineup": 12.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1321,
-        "barrel_rate": 0.064,
-        "hard_hit_rate": 0.4365,
-        "fb_rate": 0.4504,
-        "z_contact_rate": 0.8523,
-        "sweet_spot_rate": 0.338,
-        "xwobacon": 0.356,
-        "ev90": 106.2
-      },
-      "reasons": [
-        "vs Shane Bieber \u2014 cause A (19.5/25)",
-        "Pitcher: Elevated HR allowed (HR/9 2.23)",
-        "Pitcher: Low K rate (16%)",
-        "Low air-pull (10%)",
-        "Poor pitch-mix fit (47% fastballs, rel 0.58 \u2192 mix-fit 0.61x)",
-        "Slightly + park (102)",
-        "Retractable roof (weather neutralized)",
-        "Top of order (#1)",
+        "Mid order (#5)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -2076,7 +1902,7 @@
       "slot": 6,
       "confirmed": true,
       "season_hr": 22,
-      "iso": 0.217,
+      "iso": 0.216,
       "total": 52.5,
       "tier": "Pass",
       "role": "Watchlist",
@@ -2122,85 +1948,27 @@
       ]
     },
     {
-      "id": 656775,
-      "name": "Cedric Mullins",
-      "team": "Tampa Bay Rays",
+      "id": 662139,
+      "name": "Daulton Varsho",
+      "team": "Toronto Blue Jays",
       "bats": "L",
-      "opp": "Toronto Blue Jays",
-      "opp_pitcher": "Shane Bieber",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Casey Legumina",
       "venue": "Rogers Centre",
       "gamePk": 822785,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.143,
-      "total": 52.4,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.92,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 19.5,
-        "hitter": 14.9,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1954,
-        "barrel_rate": 0.0658,
-        "hard_hit_rate": 0.3266,
-        "fb_rate": 0.4385,
-        "z_contact_rate": 0.8212,
-        "sweet_spot_rate": 0.2591,
-        "xwobacon": 0.3254,
-        "ev90": 101.1
-      },
-      "reasons": [
-        "vs Shane Bieber \u2014 cause A (19.5/25)",
-        "Pitcher: Elevated HR allowed (HR/9 2.23)",
-        "Pitcher: Low K rate (16%)",
-        "Good air-pull (22%)",
-        "Platoon edge (L vs RHP)",
-        "Slightly + park (102)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 680728,
-      "name": "Adrian Del Castillo",
-      "team": "Arizona Diamondbacks",
-      "bats": "L",
-      "opp": "St. Louis Cardinals",
-      "opp_pitcher": "Michael McGreevy",
-      "venue": "Busch Stadium",
-      "gamePk": 823042,
-      "slot": 7,
+      "slot": 8,
       "confirmed": true,
-      "season_hr": 5,
-      "iso": 0.13,
+      "season_hr": 7,
+      "iso": 0.14,
       "total": 52.3,
       "tier": "Pass",
       "role": "Watchlist",
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": null,
+      "mix_fit": 1.1,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -0.3,
+      "due_hr": 2.0,
       "pitcher_grade": "B",
       "breakdown": {
         "pitcher": 15.5,
@@ -2210,27 +1978,28 @@
         "confidence": 3.0
       },
       "statcast": {
-        "air_pull_rate": 0.194,
-        "barrel_rate": 0.0861,
-        "hard_hit_rate": 0.3829,
-        "fb_rate": 0.5071,
-        "z_contact_rate": 0.8663,
-        "sweet_spot_rate": 0.3533,
-        "xwobacon": 0.3812,
-        "ev90": 105.9
+        "air_pull_rate": 0.1834,
+        "barrel_rate": 0.0791,
+        "hard_hit_rate": 0.3846,
+        "fb_rate": 0.522,
+        "z_contact_rate": 0.9103,
+        "sweet_spot_rate": 0.3422,
+        "xwobacon": 0.3411,
+        "ev90": 102.8
       },
       "reasons": [
-        "vs Michael McGreevy \u2014 cause B (15.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.17)",
-        "Pitcher: Above-avg barrels allowed (10%)",
+        "vs Casey Legumina \u2014 cause B (15.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.15)",
+        "Pitcher: Fly-ball prone (29% FB allowed)",
         "Good air-pull (19%)",
         "Platoon edge (L vs RHP)",
-        "Cause-capture synergy (air-pull bat vs fly-ball/barrel-prone arm)",
-        "Warm (81\u00b0F)",
+        "DUE: 3 barrels, only 0 HR in window (+2.0 xHR) \u2014 positive regression",
+        "Slightly + park (102)",
+        "Retractable roof (weather neutralized)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Bottom of order (#7)"
+        "Bottom of order (#8)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -2329,6 +2098,63 @@
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Warm (75\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 668723,
+      "name": "Ryan Vilade",
+      "team": "Tampa Bay Rays",
+      "bats": "R",
+      "opp": "Toronto Blue Jays",
+      "opp_pitcher": "Shane Bieber",
+      "venue": "Rogers Centre",
+      "gamePk": 822785,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.202,
+      "total": 51.9,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.84,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.0,
+        "hitter": 15.9,
+        "environment": 8.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2001,
+        "barrel_rate": 0.0718,
+        "hard_hit_rate": 0.3661,
+        "fb_rate": 0.5131,
+        "z_contact_rate": 0.8521,
+        "sweet_spot_rate": 0.3593,
+        "xwobacon": 0.3429,
+        "ev90": 102.7
+      },
+      "reasons": [
+        "vs Shane Bieber \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 2.09)",
+        "Good air-pull (20%)",
+        "Poor pitch-mix fit (47% fastballs, rel 1.07 \u2192 mix-fit 0.84x)",
+        "Slightly + park (102)",
+        "Retractable roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -2450,6 +2276,62 @@
       ]
     },
     {
+      "id": 650490,
+      "name": "Yandy D\u00edaz",
+      "team": "Tampa Bay Rays",
+      "bats": "R",
+      "opp": "Toronto Blue Jays",
+      "opp_pitcher": "Shane Bieber",
+      "venue": "Rogers Centre",
+      "gamePk": 822785,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 14,
+      "iso": 0.16,
+      "total": 51.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.61,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.3,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.0,
+        "hitter": 9.1,
+        "environment": 8.0,
+        "lineup": 12.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1321,
+        "barrel_rate": 0.064,
+        "hard_hit_rate": 0.4365,
+        "fb_rate": 0.4504,
+        "z_contact_rate": 0.8523,
+        "sweet_spot_rate": 0.338,
+        "xwobacon": 0.356,
+        "ev90": 106.2
+      },
+      "reasons": [
+        "vs Shane Bieber \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 2.09)",
+        "Low air-pull (10%)",
+        "Poor pitch-mix fit (47% fastballs, rel 0.58 \u2192 mix-fit 0.61x)",
+        "Slightly + park (102)",
+        "Retractable roof (weather neutralized)",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 521692,
       "name": "Salvador Perez",
       "team": "Kansas City Royals",
@@ -2461,7 +2343,7 @@
       "slot": 4,
       "confirmed": true,
       "season_hr": 14,
-      "iso": 0.152,
+      "iso": 0.151,
       "total": 50.9,
       "tier": "Pass",
       "role": "Watchlist",
@@ -2491,15 +2373,72 @@
       },
       "reasons": [
         "vs Troy Melton \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.15)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.09)",
         "Good air-pull (22%)",
         "Pitch-mix fit: damages this arsenal (74% fastballs, rel 1.61 \u2192 mix-fit 1.34x)",
-        "Warm (77\u00b0F)",
+        "Warm (76\u00b0F)",
         "Heart of order (#4)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 656775,
+      "name": "Cedric Mullins",
+      "team": "Tampa Bay Rays",
+      "bats": "L",
+      "opp": "Toronto Blue Jays",
+      "opp_pitcher": "Shane Bieber",
+      "venue": "Rogers Centre",
+      "gamePk": 822785,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 12,
+      "iso": 0.143,
+      "total": 50.9,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.92,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.0,
+        "hitter": 14.9,
+        "environment": 8.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1954,
+        "barrel_rate": 0.0658,
+        "hard_hit_rate": 0.3266,
+        "fb_rate": 0.4385,
+        "z_contact_rate": 0.8212,
+        "sweet_spot_rate": 0.2591,
+        "xwobacon": 0.3254,
+        "ev90": 101.1
+      },
+      "reasons": [
+        "vs Shane Bieber \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 2.09)",
+        "Good air-pull (22%)",
+        "Platoon edge (L vs RHP)",
+        "Slightly + park (102)",
+        "Retractable roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -2517,7 +2456,7 @@
       "slot": 1,
       "confirmed": true,
       "season_hr": 15,
-      "iso": 0.146,
+      "iso": 0.145,
       "total": 48.6,
       "tier": "Pass",
       "role": "Watchlist",
@@ -2547,9 +2486,9 @@
       },
       "reasons": [
         "vs Brandon Pfaadt \u2014 cause Pass (9.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.22)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.11)",
         "Platoon edge (L vs RHP)",
-        "Warm (81\u00b0F)",
+        "Warm (78\u00b0F)",
         "Top of order (#1)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -2626,7 +2565,7 @@
       "slot": 9,
       "confirmed": true,
       "season_hr": 6,
-      "iso": 0.116,
+      "iso": 0.115,
       "total": 48.5,
       "tier": "Pass",
       "role": "Watchlist",
@@ -2712,11 +2651,11 @@
       },
       "reasons": [
         "vs Troy Melton \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.15)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.09)",
         "Platoon shape: spikes vs RHP (barrel 13%, air-pull 18%)",
         "Strong barrels (13%)",
         "Platoon edge (L vs RHP)",
-        "Warm (77\u00b0F)"
+        "Warm (76\u00b0F)"
       ],
       "warnings": [
         "Pitcher park (94)",
@@ -3044,6 +2983,60 @@
       ]
     },
     {
+      "id": 672695,
+      "name": "Geraldo Perdomo",
+      "team": "Arizona Diamondbacks",
+      "bats": "S",
+      "opp": "St. Louis Cardinals",
+      "opp_pitcher": "Michael McGreevy",
+      "venue": "Busch Stadium",
+      "gamePk": 823042,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 7,
+      "iso": 0.117,
+      "total": 47.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.69,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.3,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 15.5,
+        "hitter": 9.7,
+        "environment": 8.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1761,
+        "barrel_rate": 0.056,
+        "hard_hit_rate": 0.3029,
+        "fb_rate": 0.5321,
+        "z_contact_rate": 0.8751,
+        "sweet_spot_rate": 0.2826,
+        "xwobacon": 0.3176,
+        "ev90": 97.2
+      },
+      "reasons": [
+        "vs Michael McGreevy \u2014 cause B (15.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.18)",
+        "Pitcher: Above-avg barrels allowed (10%)",
+        "Poor pitch-mix fit (55% fastballs, rel 0.30 \u2192 mix-fit 0.69x)",
+        "Warm (78\u00b0F)",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 609280,
       "name": "Miguel Andujar",
       "team": "San Diego Padres",
@@ -3100,6 +3093,60 @@
       ]
     },
     {
+      "id": 606466,
+      "name": "Ketel Marte",
+      "team": "Arizona Diamondbacks",
+      "bats": "S",
+      "opp": "St. Louis Cardinals",
+      "opp_pitcher": "Michael McGreevy",
+      "venue": "Busch Stadium",
+      "gamePk": 823042,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 18,
+      "iso": 0.203,
+      "total": 46.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.98,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 1.3,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 15.5,
+        "hitter": 15.2,
+        "environment": 8.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1824,
+        "barrel_rate": 0.0647,
+        "hard_hit_rate": 0.3687,
+        "fb_rate": 0.4662,
+        "z_contact_rate": 0.8633,
+        "sweet_spot_rate": 0.3525,
+        "xwobacon": 0.3426,
+        "ev90": 105.4
+      },
+      "reasons": [
+        "vs Michael McGreevy \u2014 cause B (15.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.18)",
+        "Pitcher: Above-avg barrels allowed (10%)",
+        "Warm (78\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 805808,
       "name": "Kevin McGonigle",
       "team": "Detroit Tigers",
@@ -3111,7 +3158,7 @@
       "slot": 1,
       "confirmed": true,
       "season_hr": 9,
-      "iso": 0.142,
+      "iso": 0.141,
       "total": 46.3,
       "tier": "Pass",
       "role": "Watchlist",
@@ -3141,11 +3188,11 @@
       },
       "reasons": [
         "vs Randy Dobnak \u2014 cause B (14.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.29)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.12)",
         "Pitcher: Low K rate (11%)",
         "Low air-pull (7%)",
         "Platoon edge (L vs RHP)",
-        "Warm (77\u00b0F)",
+        "Warm (76\u00b0F)",
         "Top of order (#1)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -3157,52 +3204,54 @@
       ]
     },
     {
-      "id": 672695,
-      "name": "Geraldo Perdomo",
-      "team": "Arizona Diamondbacks",
-      "bats": "S",
-      "opp": "St. Louis Cardinals",
-      "opp_pitcher": "Michael McGreevy",
-      "venue": "Busch Stadium",
-      "gamePk": 823042,
-      "slot": 3,
+      "id": 665926,
+      "name": "Andr\u00e9s Gim\u00e9nez",
+      "team": "Toronto Blue Jays",
+      "bats": "L",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Casey Legumina",
+      "venue": "Rogers Centre",
+      "gamePk": 822785,
+      "slot": 1,
       "confirmed": true,
       "season_hr": 7,
-      "iso": 0.118,
-      "total": 46.2,
+      "iso": 0.125,
+      "total": 45.7,
       "tier": "Pass",
       "role": "Watchlist",
       "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": 0.69,
+      "mix_fit": 0.43,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -1.3,
+      "due_hr": 0.0,
       "pitcher_grade": "B",
       "breakdown": {
         "pitcher": 15.5,
-        "hitter": 9.7,
+        "hitter": 8.2,
         "environment": 8.0,
-        "lineup": 11.0,
+        "lineup": 12.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1761,
-        "barrel_rate": 0.056,
-        "hard_hit_rate": 0.3029,
-        "fb_rate": 0.5321,
-        "z_contact_rate": 0.8751,
-        "sweet_spot_rate": 0.2826,
-        "xwobacon": 0.3176,
-        "ev90": 97.2
+        "air_pull_rate": 0.1601,
+        "barrel_rate": 0.0541,
+        "hard_hit_rate": 0.2959,
+        "fb_rate": 0.4652,
+        "z_contact_rate": 0.8727,
+        "sweet_spot_rate": 0.3391,
+        "xwobacon": 0.3403,
+        "ev90": 95.6
       },
       "reasons": [
-        "vs Michael McGreevy \u2014 cause B (15.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.17)",
-        "Pitcher: Above-avg barrels allowed (10%)",
-        "Poor pitch-mix fit (55% fastballs, rel 0.30 \u2192 mix-fit 0.69x)",
-        "Warm (81\u00b0F)",
-        "Heart of order (#3)",
+        "vs Casey Legumina \u2014 cause B (15.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.15)",
+        "Pitcher: Fly-ball prone (29% FB allowed)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (67% fastballs, rel 0.30 \u2192 mix-fit 0.43x)",
+        "Slightly + park (102)",
+        "Retractable roof (weather neutralized)",
+        "Top of order (#1)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
@@ -3525,10 +3574,10 @@
       },
       "reasons": [
         "vs Troy Melton \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.15)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.09)",
         "Good air-pull (22%)",
         "Platoon edge (L vs RHP)",
-        "Warm (77\u00b0F)",
+        "Warm (76\u00b0F)",
         "Mid order (#5)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -3551,7 +3600,7 @@
       "slot": 1,
       "confirmed": true,
       "season_hr": 14,
-      "iso": 0.192,
+      "iso": 0.191,
       "total": 43.6,
       "tier": "Pass",
       "role": "Watchlist",
@@ -3581,10 +3630,10 @@
       },
       "reasons": [
         "vs Troy Melton \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.15)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.09)",
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (74% fastballs, rel 0.30 \u2192 mix-fit 0.52x)",
-        "Warm (77\u00b0F)",
+        "Warm (76\u00b0F)",
         "Top of order (#1)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -3637,10 +3686,10 @@
       },
       "reasons": [
         "vs Randy Dobnak \u2014 cause B (14.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.29)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.12)",
         "Pitcher: Low K rate (11%)",
         "Platoon edge (L vs RHP)",
-        "Warm (77\u00b0F)",
+        "Warm (76\u00b0F)",
         "Mid order (#6)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -3660,10 +3709,10 @@
       "opp_pitcher": "Michael McGreevy",
       "venue": "Busch Stadium",
       "gamePk": 823042,
-      "slot": 4,
+      "slot": 3,
       "confirmed": true,
       "season_hr": 7,
-      "iso": 0.14,
+      "iso": 0.141,
       "total": 43.0,
       "tier": "Pass",
       "role": "Watchlist",
@@ -3693,13 +3742,13 @@
       },
       "reasons": [
         "vs Michael McGreevy \u2014 cause B (15.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.17)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.18)",
         "Pitcher: Above-avg barrels allowed (10%)",
         "Platoon shape fades vs RHP",
         "Low air-pull (10%)",
         "Poor pitch-mix fit (55% fastballs, rel 0.70 \u2192 mix-fit 0.60x)",
-        "Warm (81\u00b0F)",
-        "Heart of order (#4)",
+        "Warm (78\u00b0F)",
+        "Heart of order (#3)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
@@ -3923,7 +3972,7 @@
       "slot": 3,
       "confirmed": true,
       "season_hr": 6,
-      "iso": 0.118,
+      "iso": 0.117,
       "total": 40.2,
       "tier": "Pass",
       "role": "Watchlist",
@@ -3953,10 +4002,10 @@
       },
       "reasons": [
         "vs Troy Melton \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.15)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.09)",
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (74% fastballs, rel 0.30 \u2192 mix-fit 0.48x)",
-        "Warm (77\u00b0F)",
+        "Warm (76\u00b0F)",
         "Heart of order (#3)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -4000,71 +4049,14 @@
       "statcast": null,
       "reasons": [
         "vs Randy Dobnak \u2014 cause B (14.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.29)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.12)",
         "Pitcher: Low K rate (11%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (77\u00b0F)",
+        "Warm (76\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 665926,
-      "name": "Andr\u00e9s Gim\u00e9nez",
-      "team": "Toronto Blue Jays",
-      "bats": "L",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Casey Legumina",
-      "venue": "Rogers Centre",
-      "gamePk": 822785,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.125,
-      "total": 39.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.43,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 15.5,
-        "hitter": 8.2,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1601,
-        "barrel_rate": 0.0541,
-        "hard_hit_rate": 0.2959,
-        "fb_rate": 0.4652,
-        "z_contact_rate": 0.8727,
-        "sweet_spot_rate": 0.3391,
-        "xwobacon": 0.3403,
-        "ev90": 95.6
-      },
-      "reasons": [
-        "vs Casey Legumina \u2014 cause B (15.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.15)",
-        "Pitcher: Fly-ball prone (29% FB allowed)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (67% fastballs, rel 0.30 \u2192 mix-fit 0.43x)",
-        "Slightly + park (102)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -4159,10 +4151,10 @@
       },
       "reasons": [
         "vs Troy Melton \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.15)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.09)",
         "Platoon shape fades vs RHP",
         "Pitch-mix fit: damages this arsenal (74% fastballs, rel 1.34 \u2192 mix-fit 1.22x)",
-        "Warm (77\u00b0F)",
+        "Warm (76\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4182,10 +4174,10 @@
       "opp_pitcher": "Michael McGreevy",
       "venue": "Busch Stadium",
       "gamePk": 823042,
-      "slot": 8,
+      "slot": 7,
       "confirmed": true,
       "season_hr": 7,
-      "iso": 0.139,
+      "iso": 0.137,
       "total": 38.9,
       "tier": "Pass",
       "role": "Watchlist",
@@ -4215,15 +4207,15 @@
       },
       "reasons": [
         "vs Michael McGreevy \u2014 cause B (15.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.17)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.18)",
         "Pitcher: Above-avg barrels allowed (10%)",
         "Platoon shape fades vs RHP",
         "Poor pitch-mix fit (55% fastballs, rel 0.30 \u2192 mix-fit 0.53x)",
-        "Warm (81\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Bottom of order (#8)"
+        "Bottom of order (#7)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -4271,9 +4263,9 @@
       },
       "reasons": [
         "vs Troy Melton \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.15)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.09)",
         "Poor pitch-mix fit (74% fastballs, rel 0.74 \u2192 mix-fit 0.81x)",
-        "Warm (77\u00b0F)",
+        "Warm (76\u00b0F)",
         "Mid order (#6)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -4381,12 +4373,12 @@
       },
       "reasons": [
         "vs Randy Dobnak \u2014 cause B (14.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.29)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.12)",
         "Pitcher: Low K rate (11%)",
         "Platoon shape fades vs RHP",
         "Low air-pull (9%)",
         "Poor pitch-mix fit (57% fastballs, rel 0.30 \u2192 mix-fit 0.46x)",
-        "Warm (77\u00b0F)",
+        "Warm (76\u00b0F)",
         "Mid order (#5)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -4439,9 +4431,9 @@
       },
       "reasons": [
         "vs Brandon Pfaadt \u2014 cause Pass (9.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.22)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.11)",
         "Poor pitch-mix fit (56% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Warm (81\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4463,7 +4455,7 @@
       "slot": 7,
       "confirmed": true,
       "season_hr": 8,
-      "iso": 0.138,
+      "iso": 0.136,
       "total": 31.5,
       "tier": "Pass",
       "role": "Watchlist",
@@ -4493,11 +4485,11 @@
       },
       "reasons": [
         "vs Brandon Pfaadt \u2014 cause Pass (9.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.22)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.11)",
         "Platoon shape fades vs RHP",
         "Low air-pull (7%)",
         "Platoon edge (L vs RHP)",
-        "Warm (81\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4540,9 +4532,9 @@
       "statcast": null,
       "reasons": [
         "vs Brandon Pfaadt \u2014 cause Pass (9.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.22)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.11)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (81\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4558,8 +4550,7 @@
       "legs": [
         "Corbin Carroll (Arizona Diamondbacks, 66.1)",
         "Royce Lewis (Minnesota Twins, 66.0)",
-        "Riley Greene (Detroit Tigers, 64.2)",
-        "Jonathan Aranda (Tampa Bay Rays, 63.0)"
+        "Riley Greene (Detroit Tigers, 64.2)"
       ],
       "why": "Deeper bats with a real pitcher/park cause \u2014 bonus-only convergence."
     }
@@ -4568,13 +4559,12 @@
     {
       "id": 669456,
       "name": "Shane Bieber",
-      "score": 19.5,
+      "score": 18.0,
       "grade": "A",
       "flags": [
-        "Elevated HR allowed (HR/9 2.23)",
-        "Low K rate (16%)"
+        "Elevated HR allowed (HR/9 2.09)"
       ],
-      "hr9": 2.23,
+      "hr9": 2.09,
       "barrel_allowed": 0.0734
     },
     {
@@ -4597,10 +4587,10 @@
       "score": 15.5,
       "grade": "B",
       "flags": [
-        "Avg+ HR allowed (HR/9 1.17)",
+        "Avg+ HR allowed (HR/9 1.18)",
         "Above-avg barrels allowed (10%)"
       ],
-      "hr9": 1.17,
+      "hr9": 1.18,
       "barrel_allowed": 0.0968
     },
     {
@@ -4632,10 +4622,10 @@
       "score": 14.0,
       "grade": "B",
       "flags": [
-        "Avg+ HR allowed (HR/9 1.29)",
+        "Avg+ HR allowed (HR/9 1.12)",
         "Low K rate (11%)"
       ],
-      "hr9": 1.29,
+      "hr9": 1.12,
       "barrel_allowed": 0.082
     },
     {
@@ -4668,9 +4658,9 @@
       "score": 10.0,
       "grade": "C",
       "flags": [
-        "Avg+ HR allowed (HR/9 1.15)"
+        "Avg+ HR allowed (HR/9 1.09)"
       ],
-      "hr9": 1.15,
+      "hr9": 1.09,
       "barrel_allowed": 0.0692
     },
     {
@@ -4679,9 +4669,9 @@
       "score": 9.5,
       "grade": "Pass",
       "flags": [
-        "Avg+ HR allowed (HR/9 1.22)"
+        "Avg+ HR allowed (HR/9 1.11)"
       ],
-      "hr9": 1.22,
+      "hr9": 1.11,
       "barrel_allowed": 0.0521
     }
   ],
@@ -4735,7 +4725,7 @@
         "team": "Tampa Bay Rays",
         "opp_pitcher": "Shane Bieber",
         "role": "Cause Satellite",
-        "total": 68.1,
+        "total": 66.6,
         "cause_grade": "A",
         "result_hr": null,
         "cause_fired": null,
@@ -4747,7 +4737,7 @@
         "team": "Tampa Bay Rays",
         "opp_pitcher": "Shane Bieber",
         "role": "Cause Satellite",
-        "total": 67.9,
+        "total": 66.4,
         "cause_grade": "A",
         "result_hr": null,
         "cause_fired": null,
