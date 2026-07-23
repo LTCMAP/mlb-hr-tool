@@ -1,17 +1,17 @@
 {
   "version": "2.6",
-  "generated_utc": "2026-07-23T15:32:36.415640+00:00",
+  "generated_utc": "2026-07-23T17:55:02.057840+00:00",
   "slate_date": "2026-07-23",
   "games": 5,
-  "confirmed_lineups": 4,
+  "confirmed_lineups": 6,
   "statcast": true,
   "statcast_meta": {
     "window_days": 21,
     "recent_days": 7,
     "start": "2026-07-03",
     "end": "2026-07-23",
-    "days_fetched": 1,
-    "days_cached": 20,
+    "days_fetched": 0,
+    "days_cached": 21,
     "days_failed": 0,
     "batters": 389,
     "pitchers": 453,
@@ -58,10 +58,23 @@
       "pitcher_cause": 18.0,
       "park_hr": 102,
       "cause_score": 18.5,
-      "capture_method": "Team-HR placeholder (cause strong, bat capture thin)",
+      "capture_method": "2-bat mini-stack (cause supports coverage)",
       "public_heat": false,
-      "n_playable": 0,
-      "playable_bats": []
+      "n_playable": 2,
+      "playable_bats": [
+        {
+          "name": "Junior Caminero",
+          "total": 66.6,
+          "role": "Cause Satellite",
+          "fit_tag": "PITCH-FIT"
+        },
+        {
+          "name": "Victor Mesa Jr.",
+          "total": 66.4,
+          "role": "Cause Satellite",
+          "fit_tag": null
+        }
+      ]
     },
     {
       "team": "Minnesota Twins",
@@ -111,6 +124,20 @@
       "playable_bats": []
     },
     {
+      "team": "Cleveland Guardians",
+      "opp": "Minnesota Twins",
+      "pitcher": "Taj Bradley",
+      "venue": "Progressive Field",
+      "grade": "B",
+      "pitcher_cause": 15.0,
+      "park_hr": 98,
+      "cause_score": 14.5,
+      "capture_method": "Team-HR placeholder (cause strong, bat capture thin)",
+      "public_heat": false,
+      "n_playable": 0,
+      "playable_bats": []
+    },
+    {
       "team": "Arizona Diamondbacks",
       "opp": "St. Louis Cardinals",
       "pitcher": "Michael McGreevy",
@@ -144,20 +171,6 @@
           "fit_tag": null
         }
       ]
-    },
-    {
-      "team": "Cleveland Guardians",
-      "opp": "Minnesota Twins",
-      "pitcher": "Taj Bradley",
-      "venue": "Progressive Field",
-      "grade": "B",
-      "pitcher_cause": 13.5,
-      "park_hr": 98,
-      "cause_score": 13.0,
-      "capture_method": "Team-HR placeholder (cause strong, bat capture thin)",
-      "public_heat": false,
-      "n_playable": 0,
-      "playable_bats": []
     },
     {
       "team": "Detroit Tigers",
@@ -236,7 +249,7 @@
       "slot": 2,
       "confirmed": true,
       "season_hr": 25,
-      "iso": 0.297,
+      "iso": 0.296,
       "total": 70.5,
       "tier": "Satellite",
       "role": "Core",
@@ -257,10 +270,10 @@
       "statcast": null,
       "reasons": [
         "vs Gavin Williams \u2014 cause B (16.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.51)",
+        "Pitcher: High HR allowed (HR/9 1.47)",
         "Pitcher: Above-avg barrels allowed (10%)",
         "Proxy: elite HR rate (1/14 PA)",
-        "Proxy: elite ISO (0.297)",
+        "Proxy: elite ISO (0.296)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Top of order (#2)",
         "Model: elite shape + clear cause"
@@ -310,7 +323,7 @@
       },
       "reasons": [
         "vs Gavin Williams \u2014 cause B (16.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.51)",
+        "Pitcher: High HR allowed (HR/9 1.47)",
         "Pitcher: Above-avg barrels allowed (10%)",
         "Elite air-pull (30%)",
         "Strong barrels (12%)",
@@ -334,7 +347,7 @@
       "slot": 4,
       "confirmed": true,
       "season_hr": 15,
-      "iso": 0.263,
+      "iso": 0.26,
       "total": 67.0,
       "tier": "Longshot",
       "role": "Pass",
@@ -364,16 +377,127 @@
       },
       "reasons": [
         "vs Chris Sale \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.69)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.65)",
         "Pitcher: Above-avg barrels allowed (9%)",
         "Good air-pull (22%)",
         "Above-avg barrels (9%)",
         "Zone-damage: hard-hit 47% + Z-contact 89%",
         "Platoon edge (R vs LHP)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Heart of order (#4)",
         "Model: one strong signal"
+      ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
+      "id": 691406,
+      "name": "Junior Caminero",
+      "team": "Tampa Bay Rays",
+      "bats": "R",
+      "opp": "Toronto Blue Jays",
+      "opp_pitcher": "Shane Bieber",
+      "venue": "Rogers Centre",
+      "gamePk": 822785,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 29,
+      "iso": 0.269,
+      "total": 66.6,
+      "tier": "Longshot",
+      "role": "Cause Satellite",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.32,
+      "fit_tag": "PITCH-FIT",
+      "value_play": true,
+      "due_hr": -1.7,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.0,
+        "hitter": 25.6,
+        "environment": 8.0,
+        "lineup": 11.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1981,
+        "barrel_rate": 0.0969,
+        "hard_hit_rate": 0.408,
+        "fb_rate": 0.4482,
+        "z_contact_rate": 0.8691,
+        "sweet_spot_rate": 0.3419,
+        "xwobacon": 0.3973,
+        "ev90": 109.0
+      },
+      "reasons": [
+        "vs Shane Bieber \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 2.72)",
+        "Strong air-pull (24%)",
+        "Above-avg barrels (11%)",
+        "Pitch-mix fit: damages this arsenal (47% fastballs, rel 1.15 \u2192 mix-fit 1.32x)",
+        "Slightly + park (102)",
+        "Retractable roof (weather neutralized)",
+        "Heart of order (#3)",
+        "Model: one strong signal",
+        "VALUE longshot: real shape + cause off the chalk"
+      ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
+      "id": 683748,
+      "name": "Victor Mesa Jr.",
+      "team": "Tampa Bay Rays",
+      "bats": "L",
+      "opp": "Toronto Blue Jays",
+      "opp_pitcher": "Shane Bieber",
+      "venue": "Rogers Centre",
+      "gamePk": 822785,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 8,
+      "iso": 0.25,
+      "total": 66.4,
+      "tier": "Longshot",
+      "role": "Cause Satellite",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.23,
+      "fit_tag": null,
+      "value_play": true,
+      "due_hr": -2.0,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.0,
+        "hitter": 25.4,
+        "environment": 8.0,
+        "lineup": 11.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1903,
+        "barrel_rate": 0.0926,
+        "hard_hit_rate": 0.3747,
+        "fb_rate": 0.5402,
+        "z_contact_rate": 0.8806,
+        "sweet_spot_rate": 0.3254,
+        "xwobacon": 0.3506,
+        "ev90": 103.8
+      },
+      "reasons": [
+        "vs Shane Bieber \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 2.72)",
+        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 21%)",
+        "Good air-pull (21%)",
+        "Above-avg barrels (11%)",
+        "Platoon edge (L vs RHP)",
+        "Slightly + park (102)",
+        "Retractable roof (weather neutralized)",
+        "Heart of order (#4)",
+        "Model: one strong signal",
+        "VALUE longshot: real shape + cause off the chalk"
       ],
       "warnings": [],
       "role_notes": []
@@ -390,7 +514,7 @@
       "slot": 6,
       "confirmed": true,
       "season_hr": 10,
-      "iso": 0.171,
+      "iso": 0.17,
       "total": 65.0,
       "tier": "Longshot",
       "role": "Longshot",
@@ -420,7 +544,7 @@
       },
       "reasons": [
         "vs Gavin Williams \u2014 cause B (16.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.51)",
+        "Pitcher: High HR allowed (HR/9 1.47)",
         "Pitcher: Above-avg barrels allowed (10%)",
         "Platoon shape: spikes vs RHP (barrel 14%, air-pull 31%)",
         "Elite air-pull (31%)",
@@ -480,7 +604,7 @@
         "Elite air-pull (29%)",
         "Elite barrel rate (16%)",
         "Zone-damage elite: hard-hit 51% + Z-contact 86%",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Elite-hitter override (beats a neutral spot)",
         "Model: one strong signal"
       ],
@@ -493,115 +617,62 @@
       ]
     },
     {
-      "id": 691406,
-      "name": "Junior Caminero",
-      "team": "Tampa Bay Rays",
-      "bats": "R",
-      "opp": "Toronto Blue Jays",
-      "opp_pitcher": "Shane Bieber",
-      "venue": "Rogers Centre",
-      "gamePk": 822785,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 29,
-      "iso": 0.269,
-      "total": 61.6,
-      "tier": "Pass",
-      "role": "Cause Satellite",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.32,
-      "fit_tag": "PITCH-FIT",
-      "value_play": false,
-      "due_hr": -1.7,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 18.0,
-        "hitter": 25.6,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1981,
-        "barrel_rate": 0.0969,
-        "hard_hit_rate": 0.408,
-        "fb_rate": 0.4482,
-        "z_contact_rate": 0.8691,
-        "sweet_spot_rate": 0.3419,
-        "xwobacon": 0.3973,
-        "ev90": 109.0
-      },
-      "reasons": [
-        "vs Shane Bieber \u2014 cause A (18.0/25)",
-        "Pitcher: Elevated HR allowed (HR/9 2.72)",
-        "Strong air-pull (24%)",
-        "Above-avg barrels (11%)",
-        "Pitch-mix fit: damages this arsenal (47% fastballs, rel 1.15 \u2192 mix-fit 1.32x)",
-        "Slightly + park (102)",
-        "Retractable roof (weather neutralized)",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 683748,
-      "name": "Victor Mesa Jr.",
+      "id": 666018,
+      "name": "Jonathan Aranda",
       "team": "Tampa Bay Rays",
       "bats": "L",
       "opp": "Toronto Blue Jays",
       "opp_pitcher": "Shane Bieber",
       "venue": "Rogers Centre",
       "gamePk": 822785,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.25,
-      "total": 61.4,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 14,
+      "iso": 0.161,
+      "total": 61.5,
       "tier": "Pass",
-      "role": "Cause Satellite",
+      "role": "Watchlist",
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 1.23,
+      "mix_fit": 1.2,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -2.0,
+      "due_hr": 2.3,
       "pitcher_grade": "A",
       "breakdown": {
         "pitcher": 18.0,
-        "hitter": 25.4,
+        "hitter": 19.5,
         "environment": 8.0,
-        "lineup": 6.0,
+        "lineup": 12.0,
         "confidence": 4.0
       },
       "statcast": {
-        "air_pull_rate": 0.1903,
-        "barrel_rate": 0.0926,
-        "hard_hit_rate": 0.3747,
-        "fb_rate": 0.5402,
-        "z_contact_rate": 0.8806,
-        "sweet_spot_rate": 0.3254,
-        "xwobacon": 0.3506,
-        "ev90": 103.8
+        "air_pull_rate": 0.13,
+        "barrel_rate": 0.0989,
+        "hard_hit_rate": 0.4316,
+        "fb_rate": 0.5849,
+        "z_contact_rate": 0.8153,
+        "sweet_spot_rate": 0.3728,
+        "xwobacon": 0.3686,
+        "ev90": 102.1
       },
       "reasons": [
         "vs Shane Bieber \u2014 cause A (18.0/25)",
         "Pitcher: Elevated HR allowed (HR/9 2.72)",
-        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 21%)",
-        "Good air-pull (21%)",
-        "Above-avg barrels (11%)",
+        "Platoon shape: spikes vs RHP (barrel 12%, air-pull 10%)",
+        "Low air-pull (10%)",
+        "Strong barrels (12%)",
         "Platoon edge (L vs RHP)",
         "Slightly + park (102)",
         "Retractable roof (weather neutralized)",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 605137,
@@ -645,7 +716,7 @@
       },
       "reasons": [
         "vs Gavin Williams \u2014 cause B (16.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.51)",
+        "Pitcher: High HR allowed (HR/9 1.47)",
         "Pitcher: Above-avg barrels allowed (10%)",
         "Strong air-pull (24%)",
         "Pitch-mix fit: damages this arsenal (53% fastballs, rel 1.24 \u2192 mix-fit 1.63x)",
@@ -701,12 +772,64 @@
         "Strong air-pull (25%)",
         "Above-avg barrels (10%)",
         "Platoon edge (L vs RHP)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
       ],
+      "role_notes": []
+    },
+    {
+      "id": 800050,
+      "name": "Chase DeLauter",
+      "team": "Cleveland Guardians",
+      "bats": "L",
+      "opp": "Minnesota Twins",
+      "opp_pitcher": "Taj Bradley",
+      "venue": "Progressive Field",
+      "gamePk": 824406,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 11,
+      "iso": 0.166,
+      "total": 59.8,
+      "tier": "Pass",
+      "role": "Pass",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.66,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.0,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 15.0,
+        "hitter": 23.8,
+        "environment": 7.0,
+        "lineup": 11.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1695,
+        "barrel_rate": 0.1081,
+        "hard_hit_rate": 0.4773,
+        "fb_rate": 0.4988,
+        "z_contact_rate": 0.8976,
+        "sweet_spot_rate": 0.3458,
+        "xwobacon": 0.389,
+        "ev90": 106.7
+      },
+      "reasons": [
+        "vs Taj Bradley \u2014 cause B (15.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.31)",
+        "Strong barrels (13%)",
+        "Zone-damage: hard-hit 48% + Z-contact 90%",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (72% fastballs, rel 2.20 \u2192 mix-fit 1.66x)",
+        "Heart of order (#3)"
+      ],
+      "warnings": [],
       "role_notes": []
     },
     {
@@ -721,7 +844,7 @@
       "slot": 1,
       "confirmed": true,
       "season_hr": 18,
-      "iso": 0.199,
+      "iso": 0.197,
       "total": 59.4,
       "tier": "Pass",
       "role": "Pass",
@@ -751,13 +874,13 @@
       },
       "reasons": [
         "vs Kyle Hart \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.03)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
         "Above-avg barrels (12%)",
         "Zone-damage elite: hard-hit 50% + Z-contact 90%",
         "Pitch-mix fit: damages this arsenal (42% breaking balls, rel 1.83 \u2192 mix-fit 1.33x)",
         "Hot (3 HR / 3 barrels last 7d)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Top of order (#1)"
       ],
       "warnings": [],
@@ -775,7 +898,7 @@
       "slot": 3,
       "confirmed": true,
       "season_hr": 26,
-      "iso": 0.262,
+      "iso": 0.26,
       "total": 59.3,
       "tier": "Pass",
       "role": "Pass",
@@ -805,13 +928,13 @@
       },
       "reasons": [
         "vs Kyle Hart \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.03)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
         "Good air-pull (20%)",
         "Strong barrels (14%)",
         "Pitch-mix fit: damages this arsenal (42% breaking balls, rel 0.30 \u2192 mix-fit 1.25x)",
         "Dangerous contact (xwOBAcon .424)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Heart of order (#3)"
       ],
       "warnings": [],
@@ -865,7 +988,7 @@
         "Strong air-pull (28%)",
         "Elite barrel rate (19%)",
         "Platoon edge (L vs RHP)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Model: one strong signal"
       ],
       "warnings": [
@@ -886,7 +1009,7 @@
       "slot": 1,
       "confirmed": true,
       "season_hr": 8,
-      "iso": 0.122,
+      "iso": 0.121,
       "total": 59.0,
       "tier": "Pass",
       "role": "Pass",
@@ -916,71 +1039,76 @@
       },
       "reasons": [
         "vs Chris Sale \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.69)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.65)",
         "Pitcher: Above-avg barrels allowed (9%)",
         "Zone-damage: hard-hit 47% + Z-contact 90%",
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (54% fastballs, rel 1.10 \u2192 mix-fit 1.30x)",
         "Hot (2 HR / 3 barrels last 7d)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Top of order (#1)"
       ],
       "warnings": [],
       "role_notes": []
     },
     {
-      "id": 800050,
-      "name": "Chase DeLauter",
-      "team": "Cleveland Guardians",
-      "bats": "L",
-      "opp": "Minnesota Twins",
-      "opp_pitcher": "Taj Bradley",
-      "venue": "Progressive Field",
-      "gamePk": 824406,
-      "slot": 3,
+      "id": 543807,
+      "name": "George Springer",
+      "team": "Toronto Blue Jays",
+      "bats": "R",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Casey Legumina",
+      "venue": "Rogers Centre",
+      "gamePk": 822785,
+      "slot": 4,
       "confirmed": true,
-      "season_hr": 11,
-      "iso": 0.167,
-      "total": 58.3,
+      "season_hr": 10,
+      "iso": 0.159,
+      "total": 58.9,
       "tier": "Pass",
-      "role": "Pass",
+      "role": "Watchlist",
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 1.66,
+      "mix_fit": 1.38,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -0.0,
+      "due_hr": -0.7,
       "pitcher_grade": "B",
       "breakdown": {
-        "pitcher": 13.5,
-        "hitter": 23.8,
-        "environment": 7.0,
+        "pitcher": 15.5,
+        "hitter": 21.4,
+        "environment": 8.0,
         "lineup": 11.0,
         "confidence": 3.0
       },
       "statcast": {
-        "air_pull_rate": 0.1695,
-        "barrel_rate": 0.1081,
-        "hard_hit_rate": 0.4773,
-        "fb_rate": 0.4988,
-        "z_contact_rate": 0.8976,
-        "sweet_spot_rate": 0.3458,
-        "xwobacon": 0.389,
-        "ev90": 106.7
+        "air_pull_rate": 0.1767,
+        "barrel_rate": 0.0857,
+        "hard_hit_rate": 0.4251,
+        "fb_rate": 0.5058,
+        "z_contact_rate": 0.9125,
+        "sweet_spot_rate": 0.3348,
+        "xwobacon": 0.3688,
+        "ev90": 104.5
       },
       "reasons": [
-        "vs Taj Bradley \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.34)",
-        "Pitcher: High K rate (27%)",
-        "Strong barrels (13%)",
-        "Zone-damage: hard-hit 48% + Z-contact 90%",
-        "Platoon edge (L vs RHP)",
-        "Pitch-mix fit: damages this arsenal (72% fastballs, rel 2.20 \u2192 mix-fit 1.66x)",
-        "Heart of order (#3)"
+        "vs Casey Legumina \u2014 cause B (15.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.23)",
+        "Pitcher: Fly-ball prone (29% FB allowed)",
+        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 20%)",
+        "Good air-pull (20%)",
+        "Above-avg barrels (11%)",
+        "Pitch-mix fit: damages this arsenal (67% fastballs, rel 1.30 \u2192 mix-fit 1.38x)",
+        "Slightly + park (102)",
+        "Retractable roof (weather neutralized)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
-      "role_notes": []
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 671739,
@@ -993,8 +1121,8 @@
       "gamePk": 824893,
       "slot": 4,
       "confirmed": true,
-      "season_hr": 18,
-      "iso": 0.203,
+      "season_hr": 19,
+      "iso": 0.21,
       "total": 57.9,
       "tier": "Pass",
       "role": "Pass",
@@ -1024,12 +1152,12 @@
       },
       "reasons": [
         "vs Kyle Hart \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.03)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
         "Platoon shape: spikes vs LHP (barrel 9%, air-pull 23%)",
         "Strong air-pull (23%)",
         "Zone-damage: hard-hit 47% + Z-contact 87%",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Heart of order (#4)"
       ],
       "warnings": [],
@@ -1081,7 +1209,7 @@
         "Pitcher: Above-avg barrels allowed (10%)",
         "Elite air-pull (29%)",
         "Above-avg barrels (10%)",
-        "Warm (83\u00b0F)"
+        "Warm (82\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -1130,7 +1258,7 @@
       },
       "reasons": [
         "vs Gavin Williams \u2014 cause B (16.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.51)",
+        "Pitcher: High HR allowed (HR/9 1.47)",
         "Pitcher: Above-avg barrels allowed (10%)",
         "Strong air-pull (25%)",
         "Platoon edge (L vs RHP)",
@@ -1142,63 +1270,55 @@
       "role_notes": []
     },
     {
-      "id": 666018,
-      "name": "Jonathan Aranda",
-      "team": "Tampa Bay Rays",
-      "bats": "L",
-      "opp": "Toronto Blue Jays",
-      "opp_pitcher": "Shane Bieber",
-      "venue": "Rogers Centre",
-      "gamePk": 822785,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.161,
-      "total": 55.5,
+      "id": 656555,
+      "name": "Rhys Hoskins",
+      "team": "Cleveland Guardians",
+      "bats": "R",
+      "opp": "Minnesota Twins",
+      "opp_pitcher": "Taj Bradley",
+      "venue": "Progressive Field",
+      "gamePk": 824406,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 11,
+      "iso": 0.202,
+      "total": 55.8,
       "tier": "Pass",
-      "role": "Watchlist",
+      "role": "Pass",
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 1.2,
+      "mix_fit": 1.89,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 2.3,
-      "pitcher_grade": "A",
+      "due_hr": -0.0,
+      "pitcher_grade": "B",
       "breakdown": {
-        "pitcher": 18.0,
-        "hitter": 19.5,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 4.0
+        "pitcher": 15.0,
+        "hitter": 22.8,
+        "environment": 7.0,
+        "lineup": 8.0,
+        "confidence": 3.0
       },
       "statcast": {
-        "air_pull_rate": 0.13,
-        "barrel_rate": 0.0989,
-        "hard_hit_rate": 0.4316,
-        "fb_rate": 0.5849,
-        "z_contact_rate": 0.8153,
-        "sweet_spot_rate": 0.3728,
-        "xwobacon": 0.3686,
-        "ev90": 102.1
+        "air_pull_rate": 0.2029,
+        "barrel_rate": 0.1055,
+        "hard_hit_rate": 0.3506,
+        "fb_rate": 0.5143,
+        "z_contact_rate": 0.8126,
+        "sweet_spot_rate": 0.3618,
+        "xwobacon": 0.3877,
+        "ev90": 104.9
       },
       "reasons": [
-        "vs Shane Bieber \u2014 cause A (18.0/25)",
-        "Pitcher: Elevated HR allowed (HR/9 2.72)",
-        "Platoon shape: spikes vs RHP (barrel 12%, air-pull 10%)",
-        "Low air-pull (10%)",
-        "Strong barrels (12%)",
-        "Platoon edge (L vs RHP)",
-        "Slightly + park (102)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
+        "vs Taj Bradley \u2014 cause B (15.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.31)",
+        "Good air-pull (20%)",
+        "Above-avg barrels (11%)",
+        "Pitch-mix fit: damages this arsenal (72% fastballs, rel 2.20 \u2192 mix-fit 1.89x)",
+        "Mid order (#6)"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
+      "warnings": [],
+      "role_notes": []
     },
     {
       "id": 663586,
@@ -1212,7 +1332,7 @@
       "slot": 6,
       "confirmed": true,
       "season_hr": 12,
-      "iso": 0.139,
+      "iso": 0.138,
       "total": 54.7,
       "tier": "Pass",
       "role": "Pass",
@@ -1242,13 +1362,13 @@
       },
       "reasons": [
         "vs Kyle Hart \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.03)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
         "Above-avg barrels (12%)",
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (42% breaking balls, rel 2.20 \u2192 mix-fit 1.55x)",
         "Hot (3 HR / 3 barrels last 7d)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Mid order (#6)"
       ],
       "warnings": [],
@@ -1302,7 +1422,7 @@
         "Strong air-pull (24%)",
         "Strong barrels (14%)",
         "Pitch-mix fit: damages this arsenal (57% fastballs, rel 1.63 \u2192 mix-fit 1.36x)",
-        "Warm (79\u00b0F)"
+        "Warm (78\u00b0F)"
       ],
       "warnings": [
         "Pitcher park (94)",
@@ -1322,7 +1442,7 @@
       "slot": 3,
       "confirmed": true,
       "season_hr": 22,
-      "iso": 0.226,
+      "iso": 0.224,
       "total": 54.3,
       "tier": "Pass",
       "role": "Watchlist",
@@ -1352,12 +1472,12 @@
       },
       "reasons": [
         "vs Chris Sale \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.69)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.65)",
         "Pitcher: Above-avg barrels allowed (9%)",
         "Good air-pull (19%)",
         "Platoon edge (R vs LHP)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Heart of order (#3)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -1367,112 +1487,56 @@
       ]
     },
     {
-      "id": 656555,
-      "name": "Rhys Hoskins",
-      "team": "Cleveland Guardians",
-      "bats": "R",
-      "opp": "Minnesota Twins",
-      "opp_pitcher": "Taj Bradley",
-      "venue": "Progressive Field",
-      "gamePk": 824406,
-      "slot": 6,
-      "confirmed": true,
-      "season_hr": 11,
-      "iso": 0.202,
-      "total": 54.3,
-      "tier": "Pass",
-      "role": "Pass",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.89,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.0,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 13.5,
-        "hitter": 22.8,
-        "environment": 7.0,
-        "lineup": 8.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2029,
-        "barrel_rate": 0.1055,
-        "hard_hit_rate": 0.3506,
-        "fb_rate": 0.5143,
-        "z_contact_rate": 0.8126,
-        "sweet_spot_rate": 0.3618,
-        "xwobacon": 0.3877,
-        "ev90": 104.9
-      },
-      "reasons": [
-        "vs Taj Bradley \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.34)",
-        "Pitcher: High K rate (27%)",
-        "Good air-pull (20%)",
-        "Above-avg barrels (11%)",
-        "Pitch-mix fit: damages this arsenal (72% fastballs, rel 2.20 \u2192 mix-fit 1.89x)",
-        "Mid order (#6)"
-      ],
-      "warnings": [],
-      "role_notes": []
-    },
-    {
-      "id": 543807,
-      "name": "George Springer",
+      "id": 665489,
+      "name": "Vladimir Guerrero Jr.",
       "team": "Toronto Blue Jays",
       "bats": "R",
       "opp": "Tampa Bay Rays",
       "opp_pitcher": "Casey Legumina",
       "venue": "Rogers Centre",
       "gamePk": 822785,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.159,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 6,
+      "iso": 0.095,
       "total": 53.9,
       "tier": "Pass",
       "role": "Watchlist",
       "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.38,
+      "pull_fit": false,
+      "mix_fit": 1.18,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -0.7,
+      "due_hr": -0.0,
       "pitcher_grade": "B",
       "breakdown": {
         "pitcher": 15.5,
-        "hitter": 21.4,
+        "hitter": 16.4,
         "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 3.0
+        "lineup": 12.0,
+        "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1767,
-        "barrel_rate": 0.0857,
-        "hard_hit_rate": 0.4251,
-        "fb_rate": 0.5058,
-        "z_contact_rate": 0.9125,
-        "sweet_spot_rate": 0.3348,
-        "xwobacon": 0.3688,
-        "ev90": 104.5
+        "air_pull_rate": 0.1495,
+        "barrel_rate": 0.0835,
+        "hard_hit_rate": 0.4117,
+        "fb_rate": 0.5419,
+        "z_contact_rate": 0.8154,
+        "sweet_spot_rate": 0.3757,
+        "xwobacon": 0.3766,
+        "ev90": 108.3
       },
       "reasons": [
         "vs Casey Legumina \u2014 cause B (15.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.23)",
         "Pitcher: Fly-ball prone (29% FB allowed)",
-        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 20%)",
-        "Good air-pull (20%)",
-        "Above-avg barrels (11%)",
-        "Pitch-mix fit: damages this arsenal (67% fastballs, rel 1.30 \u2192 mix-fit 1.38x)",
+        "Above-avg barrels (10%)",
         "Slightly + park (102)",
         "Retractable roof (weather neutralized)",
+        "Top of order (#2)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -1582,7 +1646,7 @@
         "Good air-pull (19%)",
         "Platoon edge (L vs RHP)",
         "Cause-capture synergy (air-pull bat vs fly-ball/barrel-prone arm)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -1640,7 +1704,7 @@
         "Above-avg barrels (10%)",
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (57% fastballs, rel 2.18 \u2192 mix-fit 1.67x)",
-        "Warm (79\u00b0F)"
+        "Warm (78\u00b0F)"
       ],
       "warnings": [
         "Pitcher park (94)",
@@ -1690,17 +1754,130 @@
       },
       "reasons": [
         "vs Kyle Hart \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.03)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
         "Strong air-pull (25%)",
         "Above-avg barrels (11%)",
         "Pitch-mix fit: damages this arsenal (42% breaking balls, rel 1.00 \u2192 mix-fit 1.43x)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)"
+        "Warm (83\u00b0F)"
       ],
       "warnings": [
         "Bottom of order (#8)"
       ],
       "role_notes": []
+    },
+    {
+      "id": 676356,
+      "name": "Jonny DeLuca",
+      "team": "Tampa Bay Rays",
+      "bats": "R",
+      "opp": "Toronto Blue Jays",
+      "opp_pitcher": "Shane Bieber",
+      "venue": "Rogers Centre",
+      "gamePk": 822785,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 6,
+      "iso": 0.174,
+      "total": 52.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.76,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.3,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.0,
+        "hitter": 14.8,
+        "environment": 8.0,
+        "lineup": 8.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1836,
+        "barrel_rate": 0.0658,
+        "hard_hit_rate": 0.3266,
+        "fb_rate": 0.5052,
+        "z_contact_rate": 0.8566,
+        "sweet_spot_rate": 0.3791,
+        "xwobacon": 0.3556,
+        "ev90": 100.0
+      },
+      "reasons": [
+        "vs Shane Bieber \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 2.72)",
+        "Good air-pull (19%)",
+        "Poor pitch-mix fit (47% fastballs, rel 0.89 \u2192 mix-fit 0.76x)",
+        "Slightly + park (102)",
+        "Retractable roof (weather neutralized)",
+        "Mid order (#5)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 672960,
+      "name": "Kazuma Okamoto",
+      "team": "Toronto Blue Jays",
+      "bats": "R",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Casey Legumina",
+      "venue": "Rogers Centre",
+      "gamePk": 822785,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 22,
+      "iso": 0.218,
+      "total": 52.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.25,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.4,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 15.5,
+        "hitter": 19.0,
+        "environment": 8.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1959,
+        "barrel_rate": 0.0905,
+        "hard_hit_rate": 0.3498,
+        "fb_rate": 0.5281,
+        "z_contact_rate": 0.8396,
+        "sweet_spot_rate": 0.2874,
+        "xwobacon": 0.3518,
+        "ev90": 105.6
+      },
+      "reasons": [
+        "vs Casey Legumina \u2014 cause B (15.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.23)",
+        "Pitcher: Fly-ball prone (29% FB allowed)",
+        "Good air-pull (21%)",
+        "Above-avg barrels (9%)",
+        "Pitch-mix fit: damages this arsenal (67% fastballs, rel 1.33 \u2192 mix-fit 1.25x)",
+        "Slightly + park (102)",
+        "Retractable roof (weather neutralized)",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 701538,
@@ -1744,13 +1921,13 @@
       },
       "reasons": [
         "vs Chris Sale \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.69)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.65)",
         "Pitcher: Above-avg barrels allowed (9%)",
         "Good air-pull (21%)",
         "Pitch-mix fit: damages this arsenal (54% fastballs, rel 2.20 \u2192 mix-fit 1.33x)",
         "Hot (2 HR / 3 barrels last 7d)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -1807,7 +1984,7 @@
         "Above-avg barrels (11%)",
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (56% fastballs, rel 1.34 \u2192 mix-fit 1.20x)",
-        "Warm (83\u00b0F)"
+        "Warm (82\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -1863,6 +2040,107 @@
         "Retractable roof (weather neutralized)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 650490,
+      "name": "Yandy D\u00edaz",
+      "team": "Tampa Bay Rays",
+      "bats": "R",
+      "opp": "Toronto Blue Jays",
+      "opp_pitcher": "Shane Bieber",
+      "venue": "Rogers Centre",
+      "gamePk": 822785,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 14,
+      "iso": 0.161,
+      "total": 51.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.61,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.3,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 18.0,
+        "hitter": 9.1,
+        "environment": 8.0,
+        "lineup": 12.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1321,
+        "barrel_rate": 0.064,
+        "hard_hit_rate": 0.4365,
+        "fb_rate": 0.4504,
+        "z_contact_rate": 0.8523,
+        "sweet_spot_rate": 0.338,
+        "xwobacon": 0.356,
+        "ev90": 106.2
+      },
+      "reasons": [
+        "vs Shane Bieber \u2014 cause A (18.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 2.72)",
+        "Low air-pull (10%)",
+        "Poor pitch-mix fit (47% fastballs, rel 0.58 \u2192 mix-fit 0.61x)",
+        "Slightly + park (102)",
+        "Retractable roof (weather neutralized)",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 682657,
+      "name": "Angel Mart\u00ednez",
+      "team": "Cleveland Guardians",
+      "bats": "S",
+      "opp": "Minnesota Twins",
+      "opp_pitcher": "Taj Bradley",
+      "venue": "Progressive Field",
+      "gamePk": 824406,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 11,
+      "iso": 0.203,
+      "total": 51.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 15.0,
+        "hitter": 20.0,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Taj Bradley \u2014 cause B (15.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.31)",
+        "Proxy: strong HR rate",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -1929,162 +2207,54 @@
       ]
     },
     {
-      "id": 676356,
-      "name": "Jonny DeLuca",
-      "team": "Tampa Bay Rays",
-      "bats": "R",
-      "opp": "Toronto Blue Jays",
-      "opp_pitcher": "Shane Bieber",
-      "venue": "Rogers Centre",
-      "gamePk": 822785,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 6,
-      "iso": 0.174,
-      "total": 50.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.76,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.3,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 18.0,
-        "hitter": 14.8,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1836,
-        "barrel_rate": 0.0658,
-        "hard_hit_rate": 0.3266,
-        "fb_rate": 0.5052,
-        "z_contact_rate": 0.8566,
-        "sweet_spot_rate": 0.3791,
-        "xwobacon": 0.3556,
-        "ev90": 100.0
-      },
-      "reasons": [
-        "vs Shane Bieber \u2014 cause A (18.0/25)",
-        "Pitcher: Elevated HR allowed (HR/9 2.72)",
-        "Good air-pull (19%)",
-        "Poor pitch-mix fit (47% fastballs, rel 0.89 \u2192 mix-fit 0.76x)",
-        "Slightly + park (102)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 672960,
-      "name": "Kazuma Okamoto",
-      "team": "Toronto Blue Jays",
-      "bats": "R",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Casey Legumina",
-      "venue": "Rogers Centre",
-      "gamePk": 822785,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 22,
-      "iso": 0.218,
-      "total": 50.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.25,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.4,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 15.5,
-        "hitter": 19.0,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1959,
-        "barrel_rate": 0.0905,
-        "hard_hit_rate": 0.3498,
-        "fb_rate": 0.5281,
-        "z_contact_rate": 0.8396,
-        "sweet_spot_rate": 0.2874,
-        "xwobacon": 0.3518,
-        "ev90": 105.6
-      },
-      "reasons": [
-        "vs Casey Legumina \u2014 cause B (15.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.23)",
-        "Pitcher: Fly-ball prone (29% FB allowed)",
-        "Good air-pull (21%)",
-        "Above-avg barrels (9%)",
-        "Pitch-mix fit: damages this arsenal (67% fastballs, rel 1.33 \u2192 mix-fit 1.25x)",
-        "Slightly + park (102)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 682657,
-      "name": "Angel Mart\u00ednez",
+      "id": 677587,
+      "name": "Brayan Rocchio",
       "team": "Cleveland Guardians",
       "bats": "S",
       "opp": "Minnesota Twins",
       "opp_pitcher": "Taj Bradley",
       "venue": "Progressive Field",
       "gamePk": 824406,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.203,
-      "total": 49.5,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 9,
+      "iso": 0.133,
+      "total": 50.2,
       "tier": "Pass",
       "role": "Watchlist",
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.83,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": null,
+      "due_hr": -0.7,
       "pitcher_grade": "B",
       "breakdown": {
-        "pitcher": 13.5,
-        "hitter": 20.0,
+        "pitcher": 15.0,
+        "hitter": 15.2,
         "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 3.0
+        "lineup": 11.0,
+        "confidence": 2.0
       },
-      "statcast": null,
+      "statcast": {
+        "air_pull_rate": 0.1879,
+        "barrel_rate": 0.0666,
+        "hard_hit_rate": 0.3827,
+        "fb_rate": 0.4932,
+        "z_contact_rate": 0.8865,
+        "sweet_spot_rate": 0.3644,
+        "xwobacon": 0.3642,
+        "ev90": 102.6
+      },
       "reasons": [
-        "vs Taj Bradley \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.34)",
-        "Pitcher: High K rate (27%)",
-        "Proxy: strong HR rate",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "vs Taj Bradley \u2014 cause B (15.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.31)",
+        "Good air-pull (19%)",
+        "Poor pitch-mix fit (72% fastballs, rel 0.60 \u2192 mix-fit 0.83x)",
+        "Heart of order (#4)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -2135,66 +2305,12 @@
         "Platoon shape: spikes vs RHP (barrel 15%, air-pull 18%)",
         "Strong barrels (15%)",
         "Pitch-mix fit: damages this arsenal (56% fastballs, rel 2.05 \u2192 mix-fit 1.54x)",
-        "Warm (83\u00b0F)"
+        "Warm (82\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": []
-    },
-    {
-      "id": 677587,
-      "name": "Brayan Rocchio",
-      "team": "Cleveland Guardians",
-      "bats": "S",
-      "opp": "Minnesota Twins",
-      "opp_pitcher": "Taj Bradley",
-      "venue": "Progressive Field",
-      "gamePk": 824406,
-      "slot": 4,
-      "confirmed": true,
-      "season_hr": 9,
-      "iso": 0.134,
-      "total": 48.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.83,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.7,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 13.5,
-        "hitter": 15.2,
-        "environment": 7.0,
-        "lineup": 11.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1879,
-        "barrel_rate": 0.0666,
-        "hard_hit_rate": 0.3827,
-        "fb_rate": 0.4932,
-        "z_contact_rate": 0.8865,
-        "sweet_spot_rate": 0.3644,
-        "xwobacon": 0.3642,
-        "ev90": 102.6
-      },
-      "reasons": [
-        "vs Taj Bradley \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.34)",
-        "Pitcher: High K rate (27%)",
-        "Good air-pull (19%)",
-        "Poor pitch-mix fit (72% fastballs, rel 0.60 \u2192 mix-fit 0.83x)",
-        "Heart of order (#4)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
     },
     {
       "id": 678218,
@@ -2253,6 +2369,61 @@
       ]
     },
     {
+      "id": 682177,
+      "name": "Daniel Schneemann",
+      "team": "Cleveland Guardians",
+      "bats": "L",
+      "opp": "Minnesota Twins",
+      "opp_pitcher": "Taj Bradley",
+      "venue": "Progressive Field",
+      "gamePk": 824406,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 6,
+      "iso": 0.116,
+      "total": 48.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.83,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 1.3,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 15.0,
+        "hitter": 18.5,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1527,
+        "barrel_rate": 0.0868,
+        "hard_hit_rate": 0.3613,
+        "fb_rate": 0.4983,
+        "z_contact_rate": 0.8506,
+        "sweet_spot_rate": 0.3247,
+        "xwobacon": 0.3564,
+        "ev90": 102.0
+      },
+      "reasons": [
+        "vs Taj Bradley \u2014 cause B (15.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.31)",
+        "Above-avg barrels (10%)",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (72% fastballs, rel 2.20 \u2192 mix-fit 1.83x)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 695506,
       "name": "Jac Caglianone",
       "team": "Kansas City Royals",
@@ -2298,69 +2469,13 @@
         "Platoon shape: spikes vs RHP (barrel 13%, air-pull 18%)",
         "Strong barrels (13%)",
         "Platoon edge (L vs RHP)",
-        "Warm (79\u00b0F)"
+        "Warm (78\u00b0F)"
       ],
       "warnings": [
         "Pitcher park (94)",
         "Lineup not confirmed"
       ],
       "role_notes": []
-    },
-    {
-      "id": 665489,
-      "name": "Vladimir Guerrero Jr.",
-      "team": "Toronto Blue Jays",
-      "bats": "R",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Casey Legumina",
-      "venue": "Rogers Centre",
-      "gamePk": 822785,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 6,
-      "iso": 0.095,
-      "total": 47.9,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.18,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.0,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 15.5,
-        "hitter": 16.4,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1495,
-        "barrel_rate": 0.0835,
-        "hard_hit_rate": 0.4117,
-        "fb_rate": 0.5419,
-        "z_contact_rate": 0.8154,
-        "sweet_spot_rate": 0.3757,
-        "xwobacon": 0.3766,
-        "ev90": 108.3
-      },
-      "reasons": [
-        "vs Casey Legumina \u2014 cause B (15.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.23)",
-        "Pitcher: Fly-ball prone (29% FB allowed)",
-        "Above-avg barrels (10%)",
-        "Slightly + park (102)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
     },
     {
       "id": 645277,
@@ -2373,8 +2488,8 @@
       "gamePk": 824893,
       "slot": 2,
       "confirmed": true,
-      "season_hr": 15,
-      "iso": 0.168,
+      "season_hr": 16,
+      "iso": 0.174,
       "total": 47.5,
       "tier": "Pass",
       "role": "Watchlist",
@@ -2404,11 +2519,11 @@
       },
       "reasons": [
         "vs Kyle Hart \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.03)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
         "Strong air-pull (28%)",
         "Poor pitch-mix fit (42% breaking balls, rel 0.30 \u2192 mix-fit 0.45x)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Top of order (#2)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -2459,13 +2574,69 @@
       },
       "reasons": [
         "vs Chris Sale \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.69)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.65)",
         "Pitcher: Above-avg barrels allowed (9%)",
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (54% fastballs, rel 1.86 \u2192 mix-fit 1.22x)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Mid order (#5)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 676391,
+      "name": "Ernie Clement",
+      "team": "Toronto Blue Jays",
+      "bats": "R",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Casey Legumina",
+      "venue": "Rogers Centre",
+      "gamePk": 822785,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 8,
+      "iso": 0.128,
+      "total": 47.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.4,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 15.5,
+        "hitter": 10.8,
+        "environment": 8.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2001,
+        "barrel_rate": 0.0518,
+        "hard_hit_rate": 0.2299,
+        "fb_rate": 0.4785,
+        "z_contact_rate": 0.8867,
+        "sweet_spot_rate": 0.3411,
+        "xwobacon": 0.3231,
+        "ev90": 95.3
+      },
+      "reasons": [
+        "vs Casey Legumina \u2014 cause B (15.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.23)",
+        "Pitcher: Fly-ball prone (29% FB allowed)",
+        "Strong air-pull (25%)",
+        "Poor pitch-mix fit (67% fastballs, rel 0.30 \u2192 mix-fit 0.40x)",
+        "Slightly + park (102)",
+        "Retractable roof (weather neutralized)",
+        "Heart of order (#3)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
@@ -2485,7 +2656,7 @@
       "slot": 3,
       "confirmed": true,
       "season_hr": 9,
-      "iso": 0.265,
+      "iso": 0.264,
       "total": 47.2,
       "tier": "Pass",
       "role": "Watchlist",
@@ -2515,7 +2686,7 @@
       },
       "reasons": [
         "vs Gavin Williams \u2014 cause B (16.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.51)",
+        "Pitcher: High HR allowed (HR/9 1.47)",
         "Pitcher: Above-avg barrels allowed (10%)",
         "Poor pitch-mix fit (53% fastballs, rel 0.30 \u2192 mix-fit 0.63x)",
         "Heart of order (#3)",
@@ -2538,7 +2709,7 @@
       "slot": 1,
       "confirmed": true,
       "season_hr": 15,
-      "iso": 0.182,
+      "iso": 0.181,
       "total": 47.0,
       "tier": "Pass",
       "role": "Watchlist",
@@ -2568,7 +2739,7 @@
       },
       "reasons": [
         "vs Gavin Williams \u2014 cause B (16.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.51)",
+        "Pitcher: High HR allowed (HR/9 1.47)",
         "Pitcher: Above-avg barrels allowed (10%)",
         "Poor pitch-mix fit (53% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
         "Top of order (#1)",
@@ -2580,57 +2751,44 @@
       ]
     },
     {
-      "id": 682177,
-      "name": "Daniel Schneemann",
+      "id": 608070,
+      "name": "Jos\u00e9 Ram\u00edrez",
       "team": "Cleveland Guardians",
-      "bats": "L",
+      "bats": "S",
       "opp": "Minnesota Twins",
       "opp_pitcher": "Taj Bradley",
       "venue": "Progressive Field",
       "gamePk": 824406,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 6,
-      "iso": 0.116,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 10,
+      "iso": 0.175,
       "total": 47.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.83,
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 1.3,
+      "due_hr": null,
       "pitcher_grade": "B",
       "breakdown": {
-        "pitcher": 13.5,
-        "hitter": 18.5,
+        "pitcher": 15.0,
+        "hitter": 11.0,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 12.0,
         "confidence": 2.0
       },
-      "statcast": {
-        "air_pull_rate": 0.1527,
-        "barrel_rate": 0.0868,
-        "hard_hit_rate": 0.3613,
-        "fb_rate": 0.4983,
-        "z_contact_rate": 0.8506,
-        "sweet_spot_rate": 0.3247,
-        "xwobacon": 0.3564,
-        "ev90": 102.0
-      },
+      "statcast": null,
       "reasons": [
-        "vs Taj Bradley \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.34)",
-        "Pitcher: High K rate (27%)",
-        "Above-avg barrels (10%)",
-        "Platoon edge (L vs RHP)",
-        "Pitch-mix fit: damages this arsenal (72% fastballs, rel 2.20 \u2192 mix-fit 1.83x)",
+        "vs Taj Bradley \u2014 cause B (15.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.31)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Top of order (#2)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -2677,11 +2835,11 @@
       },
       "reasons": [
         "vs Chris Sale \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.69)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.65)",
         "Pitcher: Above-avg barrels allowed (9%)",
         "Platoon edge (R vs LHP)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2735,7 +2893,7 @@
         "vs Michael McGreevy \u2014 cause B (15.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.17)",
         "Pitcher: Above-avg barrels allowed (10%)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2790,7 +2948,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.15)",
         "Good air-pull (22%)",
         "Pitch-mix fit: damages this arsenal (74% fastballs, rel 1.61 \u2192 mix-fit 1.34x)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2813,7 +2971,7 @@
       "slot": 5,
       "confirmed": true,
       "season_hr": 10,
-      "iso": 0.15,
+      "iso": 0.149,
       "total": 45.5,
       "tier": "Pass",
       "role": "Watchlist",
@@ -2843,117 +3001,16 @@
       },
       "reasons": [
         "vs Kyle Hart \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.03)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
         "Platoon shape: spikes vs LHP (barrel 4%, air-pull 23%)",
         "Good air-pull (23%)",
         "Platoon edge (R vs LHP)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Mid order (#5)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 608070,
-      "name": "Jos\u00e9 Ram\u00edrez",
-      "team": "Cleveland Guardians",
-      "bats": "S",
-      "opp": "Minnesota Twins",
-      "opp_pitcher": "Taj Bradley",
-      "venue": "Progressive Field",
-      "gamePk": 824406,
-      "slot": 2,
-      "confirmed": true,
-      "season_hr": 10,
-      "iso": 0.176,
-      "total": 45.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 13.5,
-        "hitter": 11.0,
-        "environment": 7.0,
-        "lineup": 12.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Taj Bradley \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.34)",
-        "Pitcher: High K rate (27%)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Top of order (#2)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 650490,
-      "name": "Yandy D\u00edaz",
-      "team": "Tampa Bay Rays",
-      "bats": "R",
-      "opp": "Toronto Blue Jays",
-      "opp_pitcher": "Shane Bieber",
-      "venue": "Rogers Centre",
-      "gamePk": 822785,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.161,
-      "total": 45.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.61,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.3,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 18.0,
-        "hitter": 9.1,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1321,
-        "barrel_rate": 0.064,
-        "hard_hit_rate": 0.4365,
-        "fb_rate": 0.4504,
-        "z_contact_rate": 0.8523,
-        "sweet_spot_rate": 0.338,
-        "xwobacon": 0.356,
-        "ev90": 106.2
-      },
-      "reasons": [
-        "vs Shane Bieber \u2014 cause A (18.0/25)",
-        "Pitcher: Elevated HR allowed (HR/9 2.72)",
-        "Low air-pull (10%)",
-        "Poor pitch-mix fit (47% fastballs, rel 0.58 \u2192 mix-fit 0.61x)",
-        "Slightly + park (102)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -3000,7 +3057,7 @@
       },
       "reasons": [
         "vs Gavin Williams \u2014 cause B (16.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.51)",
+        "Pitcher: High HR allowed (HR/9 1.47)",
         "Pitcher: Above-avg barrels allowed (10%)",
         "Pitch-mix fit: damages this arsenal (53% fastballs, rel 0.30 \u2192 mix-fit 1.20x)",
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -3025,7 +3082,7 @@
       "confirmed": false,
       "season_hr": 5,
       "iso": 0.165,
-      "total": 42.7,
+      "total": 44.2,
       "tier": "Pass",
       "role": "Watchlist",
       "shape_source": "statcast",
@@ -3036,7 +3093,7 @@
       "due_hr": -0.7,
       "pitcher_grade": "B",
       "breakdown": {
-        "pitcher": 13.5,
+        "pitcher": 15.0,
         "hitter": 14.2,
         "environment": 7.0,
         "lineup": 6.0,
@@ -3053,9 +3110,8 @@
         "ev90": 108.4
       },
       "reasons": [
-        "vs Taj Bradley \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.34)",
-        "Pitcher: High K rate (27%)",
+        "vs Taj Bradley \u2014 cause B (15.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.31)",
         "Above-avg barrels (9%)",
         "Poor pitch-mix fit (72% fastballs, rel 0.30 \u2192 mix-fit 0.55x)",
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -3063,6 +3119,111 @@
       "warnings": [
         "Lineup not confirmed"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 681807,
+      "name": "David Fry",
+      "team": "Cleveland Guardians",
+      "bats": "R",
+      "opp": "Minnesota Twins",
+      "opp_pitcher": "Taj Bradley",
+      "venue": "Progressive Field",
+      "gamePk": 824406,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 6,
+      "iso": 0.162,
+      "total": 43.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 15.0,
+        "hitter": 13.5,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1786,
+        "barrel_rate": 0.0707,
+        "hard_hit_rate": 0.3829,
+        "fb_rate": 0.4707,
+        "z_contact_rate": 0.8335,
+        "sweet_spot_rate": 0.3169,
+        "xwobacon": 0.3399,
+        "ev90": 97.1
+      },
+      "reasons": [
+        "vs Taj Bradley \u2014 cause B (15.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.31)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 683953,
+      "name": "Travis Bazzana",
+      "team": "Cleveland Guardians",
+      "bats": "L",
+      "opp": "Minnesota Twins",
+      "opp_pitcher": "Taj Bradley",
+      "venue": "Progressive Field",
+      "gamePk": 824406,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 9,
+      "iso": 0.17,
+      "total": 43.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.47,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 15.0,
+        "hitter": 11.0,
+        "environment": 7.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.137,
+        "barrel_rate": 0.0608,
+        "hard_hit_rate": 0.3504,
+        "fb_rate": 0.4987,
+        "z_contact_rate": 0.8654,
+        "sweet_spot_rate": 0.2857,
+        "xwobacon": 0.3331,
+        "ev90": 102.1
+      },
+      "reasons": [
+        "vs Taj Bradley \u2014 cause B (15.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.31)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (72% fastballs, rel 0.30 \u2192 mix-fit 0.47x)",
+        "Mid order (#5)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -3111,7 +3272,7 @@
         "vs Brandon Pfaadt \u2014 cause Pass (9.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.22)",
         "Platoon edge (L vs RHP)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3169,63 +3330,6 @@
       ]
     },
     {
-      "id": 676391,
-      "name": "Ernie Clement",
-      "team": "Toronto Blue Jays",
-      "bats": "R",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Casey Legumina",
-      "venue": "Rogers Centre",
-      "gamePk": 822785,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.128,
-      "total": 42.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.4,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 15.5,
-        "hitter": 10.8,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2001,
-        "barrel_rate": 0.0518,
-        "hard_hit_rate": 0.2299,
-        "fb_rate": 0.4785,
-        "z_contact_rate": 0.8867,
-        "sweet_spot_rate": 0.3411,
-        "xwobacon": 0.3231,
-        "ev90": 95.3
-      },
-      "reasons": [
-        "vs Casey Legumina \u2014 cause B (15.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.23)",
-        "Pitcher: Fly-ball prone (29% FB allowed)",
-        "Strong air-pull (25%)",
-        "Poor pitch-mix fit (67% fastballs, rel 0.30 \u2192 mix-fit 0.40x)",
-        "Slightly + park (102)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 657656,
       "name": "Ram\u00f3n Laureano",
       "team": "San Diego Padres",
@@ -3258,11 +3362,11 @@
       "statcast": null,
       "reasons": [
         "vs Chris Sale \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.69)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.65)",
         "Pitcher: Above-avg barrels allowed (9%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3317,64 +3421,11 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.15)",
         "Good air-pull (22%)",
         "Platoon edge (L vs RHP)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 681807,
-      "name": "David Fry",
-      "team": "Cleveland Guardians",
-      "bats": "R",
-      "opp": "Minnesota Twins",
-      "opp_pitcher": "Taj Bradley",
-      "venue": "Progressive Field",
-      "gamePk": 824406,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 6,
-      "iso": 0.162,
-      "total": 42.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 13.5,
-        "hitter": 13.5,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1786,
-        "barrel_rate": 0.0707,
-        "hard_hit_rate": 0.3829,
-        "fb_rate": 0.4707,
-        "z_contact_rate": 0.8335,
-        "sweet_spot_rate": 0.3169,
-        "xwobacon": 0.3399,
-        "ev90": 97.1
-      },
-      "reasons": [
-        "vs Taj Bradley \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.34)",
-        "Pitcher: High K rate (27%)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -3426,67 +3477,13 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.29)",
         "Pitcher: Low K rate (11%)",
         "Platoon edge (L vs RHP)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
         "Lineup not confirmed"
       ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 683953,
-      "name": "Travis Bazzana",
-      "team": "Cleveland Guardians",
-      "bats": "L",
-      "opp": "Minnesota Twins",
-      "opp_pitcher": "Taj Bradley",
-      "venue": "Progressive Field",
-      "gamePk": 824406,
-      "slot": 5,
-      "confirmed": true,
-      "season_hr": 9,
-      "iso": 0.17,
-      "total": 41.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.47,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 13.5,
-        "hitter": 11.0,
-        "environment": 7.0,
-        "lineup": 8.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.137,
-        "barrel_rate": 0.0608,
-        "hard_hit_rate": 0.3504,
-        "fb_rate": 0.4987,
-        "z_contact_rate": 0.8654,
-        "sweet_spot_rate": 0.2857,
-        "xwobacon": 0.3331,
-        "ev90": 102.1
-      },
-      "reasons": [
-        "vs Taj Bradley \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.34)",
-        "Pitcher: High K rate (27%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (72% fastballs, rel 0.30 \u2192 mix-fit 0.47x)",
-        "Mid order (#5)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -3536,7 +3533,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.17)",
         "Pitcher: Above-avg barrels allowed (10%)",
         "Poor pitch-mix fit (55% fastballs, rel 0.30 \u2192 mix-fit 0.69x)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3558,7 +3555,7 @@
       "slot": 6,
       "confirmed": true,
       "season_hr": 14,
-      "iso": 0.193,
+      "iso": 0.191,
       "total": 41.0,
       "tier": "Pass",
       "role": "Watchlist",
@@ -3588,11 +3585,11 @@
       },
       "reasons": [
         "vs Chris Sale \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.69)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.65)",
         "Pitcher: Above-avg barrels allowed (9%)",
         "Poor pitch-mix fit (54% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Mid order (#6)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -3647,7 +3644,7 @@
         "Pitcher: Low K rate (11%)",
         "Low air-pull (7%)",
         "Platoon edge (L vs RHP)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3694,7 +3691,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.29)",
         "Pitcher: Low K rate (11%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3751,7 +3748,7 @@
         "Pitcher: Above-avg barrels allowed (10%)",
         "Platoon shape fades vs RHP",
         "Poor pitch-mix fit (55% fastballs, rel 0.30 \u2192 mix-fit 0.53x)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3851,10 +3848,10 @@
       "statcast": null,
       "reasons": [
         "vs Kyle Hart \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.03)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3909,12 +3906,66 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.15)",
         "Platoon shape fades vs RHP",
         "Pitch-mix fit: damages this arsenal (74% fastballs, rel 1.34 \u2192 mix-fit 1.22x)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
         "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 700932,
+      "name": "Kyle Manzardo",
+      "team": "Cleveland Guardians",
+      "bats": "L",
+      "opp": "Minnesota Twins",
+      "opp_pitcher": "Taj Bradley",
+      "venue": "Progressive Field",
+      "gamePk": 824406,
+      "slot": 7,
+      "confirmed": true,
+      "season_hr": 11,
+      "iso": 0.153,
+      "total": 38.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.38,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.7,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 15.0,
+        "hitter": 9.2,
+        "environment": 7.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1601,
+        "barrel_rate": 0.0658,
+        "hard_hit_rate": 0.3574,
+        "fb_rate": 0.4652,
+        "z_contact_rate": 0.827,
+        "sweet_spot_rate": 0.3124,
+        "xwobacon": 0.341,
+        "ev90": 99.9
+      },
+      "reasons": [
+        "vs Taj Bradley \u2014 cause B (15.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.31)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (72% fastballs, rel 0.30 \u2192 mix-fit 0.38x)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Bottom of order (#7)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -3967,7 +4018,7 @@
         "Platoon shape fades vs RHP",
         "Low air-pull (10%)",
         "Poor pitch-mix fit (55% fastballs, rel 0.70 \u2192 mix-fit 0.60x)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4022,7 +4073,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.15)",
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (74% fastballs, rel 0.30 \u2192 mix-fit 0.52x)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4034,51 +4085,51 @@
       ]
     },
     {
-      "id": 700932,
-      "name": "Kyle Manzardo",
-      "team": "Cleveland Guardians",
+      "id": 642086,
+      "name": "Dominic Smith",
+      "team": "Atlanta Braves",
       "bats": "L",
-      "opp": "Minnesota Twins",
-      "opp_pitcher": "Taj Bradley",
-      "venue": "Progressive Field",
-      "gamePk": 824406,
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Kyle Hart",
+      "venue": "Truist Park",
+      "gamePk": 824893,
       "slot": 7,
       "confirmed": true,
-      "season_hr": 11,
-      "iso": 0.153,
+      "season_hr": 7,
+      "iso": 0.132,
       "total": 36.7,
       "tier": "Pass",
       "role": "Watchlist",
       "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": 0.38,
+      "mix_fit": 0.59,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "B",
+      "due_hr": 0.0,
+      "pitcher_grade": "C",
       "breakdown": {
-        "pitcher": 13.5,
+        "pitcher": 11.5,
         "hitter": 9.2,
-        "environment": 7.0,
+        "environment": 9.0,
         "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1601,
-        "barrel_rate": 0.0658,
-        "hard_hit_rate": 0.3574,
-        "fb_rate": 0.4652,
-        "z_contact_rate": 0.827,
-        "sweet_spot_rate": 0.3124,
-        "xwobacon": 0.341,
-        "ev90": 99.9
+        "air_pull_rate": 0.1781,
+        "barrel_rate": 0.056,
+        "hard_hit_rate": 0.3586,
+        "fb_rate": 0.4568,
+        "z_contact_rate": 0.8803,
+        "sweet_spot_rate": 0.3115,
+        "xwobacon": 0.316,
+        "ev90": 97.8
       },
       "reasons": [
-        "vs Taj Bradley \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.34)",
-        "Pitcher: High K rate (27%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (72% fastballs, rel 0.30 \u2192 mix-fit 0.38x)",
+        "vs Kyle Hart \u2014 cause C (11.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
+        "Poor pitch-mix fit (42% breaking balls, rel 1.00 \u2192 mix-fit 0.59x)",
+        "Slightly + park (103)",
+        "Warm (83\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4132,67 +4183,12 @@
         "vs Troy Melton \u2014 cause C (10.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.15)",
         "Poor pitch-mix fit (74% fastballs, rel 0.74 \u2192 mix-fit 0.81x)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
         "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 642086,
-      "name": "Dominic Smith",
-      "team": "Atlanta Braves",
-      "bats": "L",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Kyle Hart",
-      "venue": "Truist Park",
-      "gamePk": 824893,
-      "slot": 7,
-      "confirmed": true,
-      "season_hr": 6,
-      "iso": 0.119,
-      "total": 36.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.59,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.5,
-        "hitter": 8.8,
-        "environment": 9.0,
-        "lineup": 5.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1781,
-        "barrel_rate": 0.056,
-        "hard_hit_rate": 0.3586,
-        "fb_rate": 0.4568,
-        "z_contact_rate": 0.8803,
-        "sweet_spot_rate": 0.3115,
-        "xwobacon": 0.316,
-        "ev90": 97.8
-      },
-      "reasons": [
-        "vs Kyle Hart \u2014 cause C (11.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.03)",
-        "Poor pitch-mix fit (42% breaking balls, rel 1.00 \u2192 mix-fit 0.59x)",
-        "Slightly + park (103)",
-        "Warm (84\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Bottom of order (#7)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -4243,7 +4239,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.15)",
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (74% fastballs, rel 0.30 \u2192 mix-fit 0.48x)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4301,7 +4297,7 @@
         "Platoon shape fades vs RHP",
         "Low air-pull (9%)",
         "Poor pitch-mix fit (57% fastballs, rel 0.30 \u2192 mix-fit 0.46x)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4358,7 +4354,7 @@
         "Platoon shape fades vs RHP",
         "Low air-pull (7%)",
         "Platoon edge (L vs RHP)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4412,7 +4408,7 @@
         "vs Brandon Pfaadt \u2014 cause Pass (9.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.22)",
         "Poor pitch-mix fit (56% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4457,7 +4453,7 @@
         "vs Brandon Pfaadt \u2014 cause Pass (9.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.22)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4494,12 +4490,12 @@
       "score": 16.5,
       "grade": "B",
       "flags": [
-        "High HR allowed (HR/9 1.51)",
+        "High HR allowed (HR/9 1.47)",
         "Above-avg barrels allowed (10%)",
         "Fly-ball prone (30% FB allowed)",
         "High K rate (30%)"
       ],
-      "hr9": 1.51,
+      "hr9": 1.47,
       "barrel_allowed": 0.0951
     },
     {
@@ -4527,6 +4523,17 @@
       "barrel_allowed": 0.0837
     },
     {
+      "id": 671737,
+      "name": "Taj Bradley",
+      "score": 15.0,
+      "grade": "B",
+      "flags": [
+        "High HR allowed (HR/9 1.31)"
+      ],
+      "hr9": 1.31,
+      "barrel_allowed": 0.078
+    },
+    {
       "id": 677976,
       "name": "Randy Dobnak",
       "score": 14.0,
@@ -4539,28 +4546,16 @@
       "barrel_allowed": 0.082
     },
     {
-      "id": 671737,
-      "name": "Taj Bradley",
-      "score": 13.5,
-      "grade": "B",
-      "flags": [
-        "High HR allowed (HR/9 1.34)",
-        "High K rate (27%)"
-      ],
-      "hr9": 1.34,
-      "barrel_allowed": 0.078
-    },
-    {
       "id": 519242,
       "name": "Chris Sale",
       "score": 13.0,
       "grade": "C",
       "flags": [
-        "Avg+ HR allowed (HR/9 0.69)",
+        "Avg+ HR allowed (HR/9 0.65)",
         "Above-avg barrels allowed (9%)",
         "High K rate (29%)"
       ],
-      "hr9": 0.69,
+      "hr9": 0.65,
       "barrel_allowed": 0.0851
     },
     {
@@ -4569,9 +4564,9 @@
       "score": 11.5,
       "grade": "C",
       "flags": [
-        "Avg+ HR allowed (HR/9 1.03)"
+        "Avg+ HR allowed (HR/9 1.00)"
       ],
-      "hr9": 1.03,
+      "hr9": 1.0,
       "barrel_allowed": 0.0589
     },
     {
@@ -4631,23 +4626,11 @@
         "outcome": null
       },
       {
-        "player": "Lane Thomas",
-        "team": "Kansas City Royals",
-        "opp_pitcher": "Troy Melton",
-        "role": "Power Satellite",
-        "total": 62.5,
-        "cause_grade": "C",
-        "result_hr": null,
-        "cause_fired": null,
-        "teammate_hr": null,
-        "outcome": null
-      },
-      {
         "player": "Junior Caminero",
         "team": "Tampa Bay Rays",
         "opp_pitcher": "Shane Bieber",
         "role": "Cause Satellite",
-        "total": 61.6,
+        "total": 66.6,
         "cause_grade": "A",
         "result_hr": null,
         "cause_fired": null,
@@ -4659,8 +4642,20 @@
         "team": "Tampa Bay Rays",
         "opp_pitcher": "Shane Bieber",
         "role": "Cause Satellite",
-        "total": 61.4,
+        "total": 66.4,
         "cause_grade": "A",
+        "result_hr": null,
+        "cause_fired": null,
+        "teammate_hr": null,
+        "outcome": null
+      },
+      {
+        "player": "Lane Thomas",
+        "team": "Kansas City Royals",
+        "opp_pitcher": "Troy Melton",
+        "role": "Power Satellite",
+        "total": 62.5,
+        "cause_grade": "C",
         "result_hr": null,
         "cause_fired": null,
         "teammate_hr": null,
