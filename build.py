@@ -1022,8 +1022,11 @@ def build(date, window=21, use_statcast=True):
         dq_warnings.append("NO CONFIRMED LINEUPS — every bat is using a neutral "
                            "slot default. Likely built before lineups posted; "
                            "re-run closer to first pitch.")
-    elif games and confirmed_n < games:
-        dq_warnings.append(f"Only {confirmed_n}/{games} lineups confirmed — "
+    elif games and confirmed_n < 2 * len(games):
+        # confirmed_n counts TEAMS with a posted lineup; a slate of N games has
+        # 2N teams. (Comparing teams to games is what produced the v2.7.0
+        # int-vs-list crash and an off-by-2x message.)
+        dq_warnings.append(f"Only {confirmed_n}/{2 * len(games)} lineups confirmed — "
                            "unconfirmed bats use a neutral slot default.")
     if scmeta and scmeta.get("days_failed", 0) > 0:
         dq_warnings.append(f"Statcast: {scmeta['days_failed']} day(s) failed to "
