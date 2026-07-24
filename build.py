@@ -559,6 +559,130 @@ def score_hitter(h, scb, scp, bats, throws, lg=None):
     return round(min(30.0, pts), 1), reasons, "proxy", False, None, None
 
 
+def score_total_bases(h, scb, scp, bats, throws, pcause, hf, slot, weather, lg=None):
+    """v2.7 — Total-Bases upside: 0-100. A companion market to HR.
+
+    TB (1B+2B·2+3B·3+HR·4) is a MUCH higher-probability outcome than a HR, so
+    the shape weighting differs from the HR board: the HR board leans on
+    air-pull (a HR-specific signal); TB leans on **making dangerous contact
+    often**. So we up-weight hard-hit / xwOBAcon / contact-frequency and
+    down-weight pull-air. HR is a subset of TB, so barrel/ISO still matter — a
+    2+ TB night usually means an extra-base hit.
+
+    Components (Statcast path):
+      Contact quality 28 (xwOBAcon + hard-hit + sweet-spot)
+      Contact frequency 20 (contact% + Z-contact — avoid the whiff, bank singles/dbls)
+      Power / XBH juice 18 (barrel + ISO + SLG)
+      Matchup 14 (platoon + pitch-mix fit + weak-pitcher tailwind)
+      Environment 12 (park + temp — TB cares about overall offense, not just carry)
+      Lineup 8 (PAs — top of order sees more pitches to bank TB)
+
+    Proxy path (no Statcast): AVG/SLG/ISO only, capped at 62.
+    Returns (tb_score, reasons, tier).
+    """
+    lg = lg or {}
+    iso = max(0.0, h["slg"] - h["avg"])
+    reasons = []
+
+    def env_pts():
+        pts = 0.0
+        if hf is None:
+            pts += 5.0
+        else:
+            pts += (8 if hf >= 108 else 6.5 if hf >= 103 else 5 if hf >= 98
+                    else 3.5 if hf >= 93 else 2)
+        if weather:
+            t = weather.get("temp_f")
+            if t is not None:
+                pts += 4 if t >= 85 else 3 if t >= 72 else 2 if t >= 60 else 0.5
+        else:
+            pts += 2
+        return min(12.0, pts)
+
+    def matchup_pts():
+        pts = 6.0
+        if bats and throws:
+            if bats != throws and bats in ("L", "R"):
+                pts += 2; reasons.append(f"Platoon edge ({bats} vs {throws}HP)")
+            elif bats == throws:
+                pts -= 1.5
+            elif bats == "S":
+                pts += 1
+        # weak pitcher = TB tailwind for the whole lineup (pcause is 0-25)
+        if pcause >= 18:
+            pts += 4; reasons.append("Soft-tossing / hittable arm (TB tailwind)")
+        elif pcause >= 14:
+            pts += 2.5
+        elif pcause >= 10:
+            pts += 1
+        mf, _ = pitch_mix_fit(scb, scp) if scb else (None, None)
+        if mf is not None:
+            pts += max(-2.0, min(2.0, (mf - 1.0) * 4.0))
+        return max(0.0, min(14.0, pts)), (mf if scb else None)
+
+    def slot_pts():
+        if slot is None:
+            return 4.0
+        return 8.0 if slot <= 2 else 7.0 if slot <= 5 else 4.0
+
+    if scb:
+        hh = scb["hard_hit_rate"]
+        xw = scb.get("xwobacon") or 0.0
+        ss = scb.get("sweet_spot_rate") or 0.0
+        br = scb["barrel_rate"]
+        cr = scb.get("contact_rate") or 0.0
+        zc = scb.get("z_contact_rate") or 0.0
+        pts = 0.0
+        # Contact quality (28)
+        q = 0.0
+        q += 11 if xw >= 0.42 else 8.5 if xw >= 0.38 else 6 if xw >= 0.34 else 3 if xw >= 0.30 else 1
+        q += 10 if hh >= 0.50 else 8 if hh >= 0.45 else 6 if hh >= 0.40 else 3.5 if hh >= 0.35 else 1.5
+        q += 7 if ss >= 0.38 else 5 if ss >= 0.34 else 3.5 if ss >= 0.30 else 1.5
+        pts += min(28.0, q)
+        if xw >= 0.40 or hh >= 0.48:
+            reasons.append(f"Dangerous contact (hard-hit {hh*100:.0f}%, xwOBAcon .{int(xw*1000):03d})")
+        # Contact frequency (20) — the TB-specific edge vs the HR board
+        f = 0.0
+        f += 12 if cr >= 0.80 else 9 if cr >= 0.76 else 6.5 if cr >= 0.72 else 4 if cr >= 0.68 else 1.5
+        f += 8 if zc >= 0.88 else 6 if zc >= 0.84 else 4 if zc >= 0.80 else 1.5
+        pts += min(20.0, f)
+        if cr >= 0.80 and zc >= 0.86:
+            reasons.append(f"High-contact bat (contact {cr*100:.0f}%, Z-contact {zc*100:.0f}%) — banks XBH")
+        elif zc < 0.75:
+            reasons.append(f"Whiff risk (Z-contact {zc*100:.0f}%) — TB volatility")
+        # Power / XBH juice (18)
+        pw = 0.0
+        pw += 10 if br >= 0.13 else 8 if br >= 0.10 else 6 if br >= 0.075 else 3.5 if br >= 0.05 else 1.5
+        pw += 8 if iso >= 0.25 else 6 if iso >= 0.20 else 4 if iso >= 0.16 else 2 if iso >= 0.13 else 0.5
+        pts += min(18.0, pw)
+        # Matchup (14) + Env (12) + Lineup (8)
+        mp, _ = matchup_pts()
+        pts += mp + env_pts() + slot_pts()
+        # Recent form nudge (share the HR window signal)
+        rb = scb.get("recent_barrels", 0)
+        if rb >= 3:
+            pts += 2; reasons.append(f"Hot ({rb} barrels last 7d)")
+        elif rb >= 1:
+            pts += 1
+        tb = round(max(0.0, min(100.0, pts)), 1)
+        src = "statcast"
+    else:
+        pts = 0.0
+        hr_rate = h["hr"] / h["pa"] if h["pa"] else 0
+        pts += 22 if h["avg"] >= 0.290 else 17 if h["avg"] >= 0.265 else 12 if h["avg"] >= 0.245 else 6
+        pts += 20 if h["slg"] >= 0.52 else 15 if h["slg"] >= 0.46 else 10 if h["slg"] >= 0.41 else 4
+        pts += 12 if iso >= 0.22 else 8 if iso >= 0.17 else 4 if iso >= 0.13 else 1
+        mp, _ = matchup_pts()
+        pts += mp + env_pts() + slot_pts()
+        reasons.append("No Statcast shape — TB score capped (season-rate proxy)")
+        tb = round(min(62.0, pts), 1)
+        src = "proxy"
+
+    tier = ("Elite TB" if tb >= 80 else "Strong TB" if tb >= 70 else "Solid TB"
+            if tb >= 60 else "Dart" if tb >= 50 else "Pass")
+    return tb, reasons, tier, src
+
+
 def wind_hr_effect(park, weather):
     """v2.5 — directional wind for open-air parks. Returns (pts_adj, reasons, warnings).
 
@@ -800,6 +924,12 @@ def build(date, window=21, use_statcast=True):
         c_pts, c_reasons = score_confidence(h40, pcause)
         warnings = e_warn + l_warn
 
+        # v2.7 — Total-Bases companion score (higher-probability market)
+        tb_score, tb_reasons, tb_tier, tb_src = score_total_bases(
+            h, scb_h, scp_map.get(op["id"]) if op else None, bats, throws,
+            pcause, hf, slot, weather.get(ctx["gamePk"]),
+            (scmeta or {}).get("league"))
+
         total = round(pcause + h40 + e_pts + l_pts + c_pts, 1)
         role, role_notes = assign_role(total, h40, pgrade, pcause, hf, pull_fit,
                                         slot, confirmed, e_pts, warnings)
@@ -848,6 +978,7 @@ def build(date, window=21, use_statcast=True):
             "confirmed": confirmed, "season_hr": h["hr"],
             "iso": round(h["slg"] - h["avg"], 3),
             "total": total, "tier": tier_label(total), "role": role,
+            "tb_score": tb_score, "tb_tier": tb_tier, "tb_reasons": tb_reasons[:4],
             "shape_source": shape_src, "pull_fit": pull_fit,
             "mix_fit": mix_fit, "fit_tag": fit_tag, "value_play": value_play,
             "due_hr": due_hr,
@@ -862,17 +993,60 @@ def build(date, window=21, use_statcast=True):
         })
 
     candidates.sort(key=lambda c: c["total"], reverse=True)
+    # v2.7 — TB board: same candidate pool ranked by total-bases upside.
+    tb_board = sorted(
+        ({"id": c["id"], "name": c["name"], "team": c["team"], "opp": c["opp"],
+          "opp_pitcher": c["opp_pitcher"], "venue": c["venue"], "gamePk": c["gamePk"],
+          "slot": c["slot"], "confirmed": c["confirmed"], "bats": c["bats"],
+          "tb_score": c["tb_score"], "tb_tier": c["tb_tier"],
+          "tb_reasons": c["tb_reasons"], "shape_source": c["shape_source"],
+          "hr_total": c["total"], "hr_role": c["role"]}
+         for c in candidates),
+        key=lambda x: x["tb_score"], reverse=True)
     causes = build_causes(games, team_ctx, pcards, weather, parks, candidates)
     structures = build_structures(candidates)
     audit = build_audit_template(candidates, causes)
 
+    # v2.7 — explicit data-quality block so a silently-degraded slate can never
+    # masquerade as a full one (the mid-2026 failure mode: Savant 403s → proxy
+    # shape → "picks aren't hitting" while the JSON looked normal).
+    confirmed_n = sum(1 for tid in lineups if lineups[tid])
+    n_statcast_bats = sum(1 for c in candidates if c["shape_source"] == "statcast")
+    dq_warnings = []
+    mode = "statcast" if scb else "proxy"
+    if not scb:
+        dq_warnings.append("PROXY MODE — no Statcast shape (season-power only, "
+                           "scores capped, no Locked Core / pitch-mix fit / DUE). "
+                           "Do not trust shape-based picks.")
+    if games and confirmed_n == 0:
+        dq_warnings.append("NO CONFIRMED LINEUPS — every bat is using a neutral "
+                           "slot default. Likely built before lineups posted; "
+                           "re-run closer to first pitch.")
+    elif games and confirmed_n < games:
+        dq_warnings.append(f"Only {confirmed_n}/{games} lineups confirmed — "
+                           "unconfirmed bats use a neutral slot default.")
+    if scmeta and scmeta.get("days_failed", 0) > 0:
+        dq_warnings.append(f"Statcast: {scmeta['days_failed']} day(s) failed to "
+                           f"fetch in the {window}-day window (thinner sample).")
+    data_quality = {
+        "mode": mode,
+        "trustworthy": bool(scb) and confirmed_n > 0,
+        "statcast_batters": (scmeta or {}).get("batters", 0),
+        "statcast_candidates": n_statcast_bats,
+        "confirmed_lineups": confirmed_n,
+        "games": len(games),
+        "days_failed": (scmeta or {}).get("days_failed", 0),
+        "warnings": dq_warnings,
+    }
+
     return {
-        "version": "2.6",
+        "version": "2.7",
         "generated_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
         "slate_date": date, "games": len(games),
-        "confirmed_lineups": sum(1 for tid in lineups if lineups[tid]),
+        "confirmed_lineups": confirmed_n,
         "statcast": bool(scb),
         "statcast_meta": scmeta,
+        "data_quality": data_quality,
         "method": "v2.6: rank causes → choose capture → lock confirmed shape that "
                   "captures the cause. NEW: zone-damage slot (hard-hit% × Z-Contact% — "
                   "loud contact that actually meets hittable pitches), xwOBAcon contact "
@@ -888,6 +1062,7 @@ def build(date, window=21, use_statcast=True):
         "roles": ["Locked Core", "Mini-Stack Bat", "Power Satellite", "Cause Satellite",
                   "Core", "Longshot", "Watchlist", "Pass"],
         "causes": causes, "candidates": candidates, "structures": structures,
+        "tb_board": tb_board,
         "pitcher_board": sorted(
             [{"id": pid,
               "name": next((g[s]["pitcher"]["name"] for g in games for s in ("home", "away")
@@ -1015,23 +1190,71 @@ def build_audit_template(cands, causes):
     }
 
 
+def _load_existing_latest():
+    try:
+        with open(os.path.join(DATA, "latest.json")) as f:
+            return json.load(f)
+    except Exception:
+        return None
+
+
+def _should_publish(new_out, force=False):
+    """v2.7 anti-downgrade guard.
+
+    The mid-2026 failure mode: a day Savant 403'd produced a proxy build that
+    silently *replaced* a good Statcast board on the live site. Guard: never let
+    a proxy build overwrite latest.json when the currently-published board is a
+    Statcast board for the same-or-newer slate date. The dated snapshot is still
+    written either way, so no data is lost — only the site's `latest.json` is
+    protected. `--force` overrides.
+
+    Returns (publish: bool, reason: str).
+    """
+    if force:
+        return True, "forced"
+    cur = _load_existing_latest()
+    if not cur:
+        return True, "no existing latest.json"
+    new_is_proxy = not new_out.get("statcast")
+    cur_is_statcast = bool(cur.get("statcast"))
+    if new_is_proxy and cur_is_statcast and cur.get("slate_date", "") >= new_out.get("slate_date", ""):
+        return False, (f"refusing to downgrade published Statcast board "
+                       f"({cur.get('slate_date')}) with a PROXY build "
+                       f"({new_out.get('slate_date')}); dated snapshot still saved. "
+                       f"Use --force to override.")
+    return True, "ok"
+
+
 def main():
     date = dt.date.today().isoformat()
-    window, use_sc = 21, True
+    window, use_sc, force = 21, True, "--force" in sys.argv
     if "--date" in sys.argv:
         date = sys.argv[sys.argv.index("--date") + 1]
     if "--window" in sys.argv:
         window = int(sys.argv[sys.argv.index("--window") + 1])
     if "--no-statcast" in sys.argv:
         use_sc = False
-    print(f"Building HR slate v2.5 for {date} ...")
+    print(f"Building HR slate v2.7 for {date} ...")
     out = build(date, window=window, use_statcast=use_sc)
     os.makedirs(DATA, exist_ok=True)
-    for name in ("latest.json", f"picks-{date}.json"):
-        with open(os.path.join(DATA, name), "w") as f:
+    # Always persist the dated snapshot (backtest record) ...
+    with open(os.path.join(DATA, f"picks-{date}.json"), "w") as f:
+        json.dump(out, f, indent=2)
+    # ... but protect the live board from a silent downgrade.
+    publish, reason = _should_publish(out, force=force)
+    if publish:
+        with open(os.path.join(DATA, "latest.json"), "w") as f:
             json.dump(out, f, indent=2)
+    else:
+        print(f"  ⚠ NOT publishing to latest.json: {reason}")
+    dq = out.get("data_quality", {})
+    if dq.get("warnings"):
+        print("  ⚠ DATA QUALITY:")
+        for w in dq["warnings"]:
+            print(f"      - {w}")
     print(f"  games={out['games']} candidates={len(out['candidates'])} "
-          f"confirmed_lineups={out['confirmed_lineups']} statcast={out['statcast']}")
+          f"confirmed_lineups={out['confirmed_lineups']} statcast={out['statcast']} "
+          f"mode={dq.get('mode')} published={publish}")
     print("\n  Top causes:")
     for c in out["causes"][:4]:
         print(f"    {c['cause_score']:>5} {c['grade']:<2} {c['team']} vs {c['pitcher']} "

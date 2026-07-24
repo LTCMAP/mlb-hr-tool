@@ -43,11 +43,22 @@ jobs:
       - name: Build today's slate JSON
         run: python3 build.py
 
+      # v2.7 — grade the last ~30 settled slates so the site's Results panel
+      # stays current. Uses committed dated snapshots + git history of
+      # latest.json for the pick record, and the free MLB Stats API (cached in
+      # data/cache/results) for actual HR/TB outcomes. Non-fatal if it hiccups.
+      - name: Backtest recent slates
+        run: python3 backtest.py --days 30 || echo "backtest step skipped (non-fatal)"
+
       - name: Commit updated data
         run: |
           git config user.name  "hr-bot"
           git config user.email "hr-bot@users.noreply.github.com"
-          git add data/latest.json
+          # v2.7 — also persist the dated snapshot (the backtest record), the
+          # graded results, and the results cache. build.py writes a dated
+          # picks-YYYY-MM-DD.json every run; committing it means the model's
+          # own history is preserved instead of living only in latest.json.
+          git add data/latest.json data/picks-*.json data/backtest.json data/cache/results 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No changes to commit (slate unchanged)."
           else

@@ -95,12 +95,66 @@
     border-radius:8px;padding:7px 10px;font-size:13px}
   a{color:var(--blue)}
   #status{font-size:13px;color:var(--dim)}
+  /* v2.7 — tabs */
+  .tabs{display:flex;gap:6px;flex-wrap:wrap;margin:14px 0 4px;border-bottom:1px solid var(--line);padding-bottom:0}
+  .tab{background:transparent;border:1px solid transparent;border-bottom:none;border-radius:8px 8px 0 0;
+    padding:9px 15px;font-size:13.5px;color:var(--dim);cursor:pointer;font-weight:600}
+  .tab:hover{color:var(--txt)}
+  .tab.on{background:var(--panel);border-color:var(--line);color:var(--accent)}
+  .tab .badge{background:var(--chip);color:var(--txt);border-radius:10px;padding:0 6px;font-size:11px;margin-left:5px}
+  /* v2.7 — data-quality banner tones */
+  .dq{border-radius:8px;padding:10px 14px;font-size:13px;margin:12px 0;line-height:1.45}
+  .dq-bad{background:#4a1616;border:1px solid #7a2424;color:#ff9d9d}
+  .dq-warn{background:#3a2e12;border:1px solid #6b5318;color:#e8d27a}
+  .dq-ok{background:#0d2818;border:1px solid #1f4d2b;color:#7ee2a0}
+  /* v2.7 — TB cards */
+  .tb-elite{background:#3b1f5c;color:#cdaaff}
+  .tb-strong{background:#1f4d2b;color:#7ee2a0}
+  .tb-solid{background:#1f3b5c;color:#9cc8ff}
+  .tb-dart{background:#4d4416;color:#e8d27a}
+  .tb-pass{background:#30363d;color:#8b949e}
+  .addbtn{background:#16432a;border:1px solid #1f5c39;color:#7ee2a0;border-radius:7px;
+    padding:4px 9px;font-size:12px;cursor:pointer;font-weight:600}
+  .addbtn.added{background:#3b1f5c;border-color:#5a3b82;color:#cdaaff}
+  .rmbtn{background:#4a1616;border:1px solid #7a2424;color:#ff9d9d;border-radius:6px;padding:2px 8px;font-size:12px;cursor:pointer}
+  /* v2.7 — by-game */
+  .game-card{background:var(--panel2);border:1px solid var(--line);border-radius:11px;padding:14px;margin-bottom:14px}
+  .game-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+  .game-head .vs{font-size:16px;font-weight:700}
+  .side{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:720px){.side{grid-template-columns:1fr}}
+  .side-col h4{margin:0 0 6px;font-size:13px;color:var(--txt)}
+  .side-col .arm{font-size:12px;color:var(--dim);margin-bottom:7px}
+  .mini-bat{display:flex;justify-content:space-between;gap:8px;font-size:13px;padding:4px 0;border-bottom:1px dashed var(--line)}
+  .mini-bat:last-child{border:0}
+  .mini-bat .r{color:var(--dim);font-size:11.5px}
+  /* v2.7 — builder */
+  .builder-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:18px;align-items:start}
+  @media(max-width:900px){.builder-grid{grid-template-columns:1fr}}
+  .slip{position:sticky;top:12px}
+  .leg{display:flex;justify-content:space-between;align-items:center;gap:8px;background:var(--panel2);
+    border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin-bottom:7px;font-size:13px}
+  .leg .lm{color:var(--dim);font-size:11.5px}
+  .kpi{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--dim);margin:8px 0}
+  .kpi b{color:var(--txt);font-size:15px}
+  .quickfill{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 12px}
+  /* v2.7 — results */
+  .res-kpis{display:flex;gap:20px;flex-wrap:wrap;margin:6px 0 16px}
+  .res-kpi{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:12px 16px;min-width:130px}
+  .res-kpi .v{font-size:24px;font-weight:700}
+  .res-kpi .l{color:var(--dim);font-size:12px;margin-top:2px}
+  table.res{width:100%;border-collapse:collapse;font-size:13px;margin:6px 0 14px}
+  table.res th,table.res td{text-align:left;padding:6px 9px;border-bottom:1px solid var(--line)}
+  table.res th{color:var(--dim);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.4px}
+  .rbar{display:inline-block;height:9px;background:var(--green);border-radius:3px;vertical-align:middle;margin-left:6px}
+  .verdict{background:#1c2330;border-left:3px solid var(--accent);border-radius:6px;padding:10px 14px;font-size:13px;margin:6px 0}
+  .hidden{display:none}
 </style>
 </head>
 <body>
 <header>
-  <h1><span class="ball">⚾</span> Daily MLB Home Run Picks <span style="color:var(--dim);font-size:13px;font-weight:400">· odds-free</span></h1>
-  <div class="sub">v2.4 · rank CAUSES → choose CAPTURE → lock SHAPE that captures the cause + pitch-mix fit (does this bat damage THIS arsenal?) · free data (MLB Stats API + Baseball Savant + Open-Meteo)</div>
+  <h1><span class="ball">⚾</span> Daily MLB HR + Total-Bases Picks <span style="color:var(--dim);font-size:13px;font-weight:400">· odds-free</span></h1>
+  <div class="sub">v2.7 · rank CAUSES → choose CAPTURE → lock SHAPE that captures the cause · now with a <b>Total-Bases board</b>, a card <b>Builder</b>, per-game breakdowns, and a <b>Results</b> scoreboard that grades past picks · free data (MLB Stats API + Baseball Savant + Open-Meteo)</div>
 </header>
 
 <div class="wrap">
@@ -123,41 +177,98 @@
 
   <div class="stats" id="summary"></div>
 
-  <div id="banner"></div>
-  <div class="note" id="method"></div>
+  <div id="dq"></div>
 
-  <div class="panel">
-    <h2>Cause Board — rank causes first, then capture</h2>
-    <div id="causes"></div>
+  <div class="tabs" id="tabs">
+    <button class="tab on" data-view="hr">🏟️ HR Board</button>
+    <button class="tab" data-view="tb">💥 Total Bases</button>
+    <button class="tab" data-view="games">📋 By Game</button>
+    <button class="tab" data-view="builder">🧱 Builder <span class="badge" id="legCount">0</span></button>
+    <button class="tab" data-view="results">📊 Results</button>
   </div>
 
-  <div class="grid">
-    <div>
-      <div class="panel">
-        <h2>Hitter Candidate Board</h2>
-        <div id="candidates"></div>
+  <div id="view-hr">
+    <div class="note" id="method"></div>
+
+    <div class="panel">
+      <h2>Cause Board — rank causes first, then capture</h2>
+      <div id="causes"></div>
+    </div>
+
+    <div class="grid">
+      <div>
+        <div class="panel">
+          <h2>Hitter Candidate Board</h2>
+          <div id="candidates"></div>
+        </div>
+      </div>
+      <div>
+        <div class="panel struct">
+          <h2>Suggested Structures</h2>
+          <div id="structures"></div>
+        </div>
+        <div class="panel">
+          <h2>Pitcher Fade Board</h2>
+          <div id="pitchers"></div>
+        </div>
       </div>
     </div>
-    <div>
-      <div class="panel struct">
-        <h2>Suggested Structures</h2>
-        <div id="structures"></div>
+  </div>
+
+  <div id="view-tb" class="hidden">
+    <div class="note">💥 <b>Total Bases</b> is a higher-probability market than a HR — a 2+ TB night just needs an extra-base hit or a couple of knocks. The TB score up-weights <b>hard-hit%, xwOBAcon, sweet-spot and contact frequency</b> (making dangerous contact <i>often</i>) and down-weights pull-air (a HR-specific signal). Add any bat to your <b>Builder</b> card with <b>+</b>.</div>
+    <div class="panel">
+      <h2>Total-Bases Board</h2>
+      <div id="tb-list"></div>
+    </div>
+  </div>
+
+  <div id="view-games" class="hidden">
+    <div class="note">📋 Every game on the slate: each side's opposing-pitcher cause grade, park, and the bats with the shape to capture it — HR score and Total-Bases score side by side.</div>
+    <div id="games-list"></div>
+  </div>
+
+  <div id="view-builder" class="hidden">
+    <div class="builder-grid">
+      <div>
+        <div class="panel">
+          <h2>Add legs</h2>
+          <div class="quickfill" id="quickfill"></div>
+          <div class="note" style="margin-top:0">Pick from the model's own structures above, or add individual bats from the <b>HR Board</b> and <b>Total Bases</b> tabs with the <b>+</b> button.</div>
+          <div id="builder-pool"></div>
+        </div>
       </div>
-      <div class="panel">
-        <h2>Pitcher Fade Board</h2>
-        <div id="pitchers"></div>
+      <div class="slip">
+        <div class="panel">
+          <h2>Your Card <span class="badge" id="legCount2">0</span></h2>
+          <div id="slip"></div>
+          <div class="kpi" id="slip-kpi"></div>
+          <div class="bar" style="margin:6px 0 0">
+            <button id="copySlip">⧉ Copy slip</button>
+            <button id="exportSlip">⤓ Export card JSON</button>
+            <button id="clearSlip">✕ Clear</button>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
+
+  <div id="view-results" class="hidden">
+    <div class="panel">
+      <h2>Results — is the model actually hitting?</h2>
+      <div id="results-body"></div>
     </div>
   </div>
 
   <div class="note">
     <b>Not betting advice.</b> Decision-support only, <b>no odds</b>, no guaranteed picks.
-    v2.4 ranks causes first, then capture method, then locks hitters whose air-pull/barrel
-    shape can capture the cause — and adds <b>pitch-mix fit</b> (does this bat damage what
-    this pitcher actually throws?), flagging <b>TRAP</b> bats (great surface shape, wrong
-    arsenal fit) and <b>PITCH-FIT</b> bats. When built via <code>build.py</code>, shape +
-    pitch-mix use real Statcast (Baseball Savant); the in-browser live build falls back to a
-    capped season-power proxy (no pitch-mix). Always confirm lineups near lock.
+    v2.7 ranks causes first, then capture, then locks hitters whose air-pull/barrel shape can
+    capture the cause (+ <b>pitch-mix fit</b>, <b>TRAP</b>/<b>PITCH-FIT</b> flags). New in v2.7:
+    a <b>Total-Bases board</b> (higher-probability market), a card <b>Builder</b>, per-game
+    breakdowns, and a <b>Results</b> tab that grades past picks vs actual HR/TB so you can see
+    whether misses are the feed or the model. Full shape needs <code>build.py</code> + a live
+    Baseball Savant feed; the in-browser live build is a capped season-power proxy. The
+    data-quality banner at the top tells you which you're looking at — <b>always confirm lineups near lock.</b>
   </div>
 </div>
 
@@ -171,20 +282,22 @@ const roleClass=r=>({"Locked Core":"r-locked","Core":"r-core","Mini-Stack Bat":"
 const ACTIONABLE=new Set(["Locked Core","Core","Mini-Stack Bat","Cause Satellite","Power Satellite"]);
 const gradeClass=g=>"g-"+(g==="A+"?"Aplus":g);
 const pct=x=>x==null?"–":(x*100).toFixed(0)+"%";
+const pct1=x=>x==null?"–":(x*100).toFixed(1)+"%";
+const tbClass=t=>({"Elite TB":"tb-elite","Strong TB":"tb-strong","Solid TB":"tb-solid","Dart":"tb-dart","Pass":"tb-pass"}[t]||"tb-pass");
+const BASKET=[];   // v2.7 builder card (in-memory)
 
 // ---------- render ----------
 function render(){
   if(!DATA) return;
   $("#status").textContent="slate "+DATA.slate_date;
-  $("#method").textContent=DATA.method;
+  if($("#method")) $("#method").textContent=DATA.method;
   $("#summary").innerHTML=
     `<span>Games: <b>${DATA.games}</b></span>`+
     `<span>Confirmed lineups: <b>${DATA.confirmed_lineups}</b></span>`+
     `<span>Candidates: <b>${DATA.candidates.length}</b></span>`+
     `<span>Shape data: <b>${DATA.statcast?"Statcast ✓":"proxy only"}</b></span>`+
     `<span>Generated: <b>${new Date(DATA.generated_utc).toLocaleString()}</b></span>`;
-  $("#banner").innerHTML = DATA.statcast ? "" :
-    `<div class="banner">⚠ <b>Proxy shape mode</b> — built live in-browser without Statcast (Baseball Savant has no browser access). Hitter scores use season ISO/HR-rate and are <b>capped</b>, so no player can reach <b>Locked Core</b>. For full air-pull/barrel shape, run <code>build.py</code> (locally or via the daily GitHub Action) and reload.</div>`;
+  renderDQ();
 
   // game filter options
   const gsel=$("#game");
@@ -196,6 +309,176 @@ function render(){
   renderCandidates();
   renderStructures();
   renderPitchers();
+  renderTB();
+  renderGames();
+  renderBuilder();
+}
+
+// ---------- v2.7 data-quality banner ----------
+function renderDQ(){
+  const dq=DATA.data_quality;
+  const el=$("#dq"); if(!el) return;
+  // Back-compat: older boards have no data_quality block — synthesize from flags.
+  const mode = dq ? dq.mode : (DATA.statcast?"statcast":"proxy");
+  const warns = dq ? (dq.warnings||[]) : (DATA.statcast?[]:["PROXY MODE — no Statcast shape (scores capped, no Locked Core)."]);
+  if(!warns.length){
+    el.innerHTML=`<div class="dq dq-ok">✓ <b>Full Statcast shape</b> — ${dq?dq.statcast_candidates:DATA.candidates.length} bats with air-pull/barrel/zone-damage data · ${DATA.confirmed_lineups}/${DATA.games} lineups confirmed. This is a trustworthy slate.</div>`;
+    return;
+  }
+  const bad = warns.some(w=>/PROXY MODE|NO CONFIRMED/.test(w));
+  el.innerHTML=`<div class="dq ${bad?'dq-bad':'dq-warn'}">${bad?'⛔':'⚠'} <b>Data quality: ${mode.toUpperCase()}${(dq&&dq.trustworthy)?'':' — not fully trustworthy'}</b>`+
+    `<ul style="margin:6px 0 0;padding-left:18px">${warns.map(w=>`<li>${w}</li>`).join("")}</ul>`+
+    (bad?`<div style="margin-top:6px">Fix: run <code>python3 build.py</code> closer to first pitch (lineups posted) with the Savant feed alive, or trigger the GitHub Action.</div>`:"")+
+    `</div>`;
+}
+
+// ---------- v2.7 builder basket helpers ----------
+function legKey(market,id){return market+":"+id;}
+function inBasket(market,id){return BASKET.some(l=>l.key===legKey(market,id));}
+function addBtnHTML(item,market){
+  const id=item.id, on=inBasket(market,id);
+  const mk=market==='tb'?'TB':'HR';
+  return `<button class="addbtn ${on?'added':''}" onclick="toggleLeg('${market}',${id})">${on?'✓ on card':'+ '+mk}</button>`;
+}
+function toggleLeg(market,id){
+  const key=legKey(market,id);
+  const i=BASKET.findIndex(l=>l.key===key);
+  if(i>=0){ BASKET.splice(i,1); }
+  else{
+    const src = market==='tb' ? (DATA.tb_board||[]).find(x=>x.id===id)
+                              : DATA.candidates.find(x=>x.id===id);
+    if(!src) return;
+    BASKET.push({key,market,id,name:src.name,team:src.team,opp:src.opp,gamePk:src.gamePk,
+      opp_pitcher:src.opp_pitcher,slot:src.slot,confirmed:src.confirmed,
+      score: market==='tb'?src.tb_score:src.total,
+      label: market==='tb'?src.tb_tier:src.role});
+  }
+  // refresh anything showing add-state
+  renderCandidates(); renderTB(); renderBuilder(); updateLegBadges();
+}
+function updateLegBadges(){
+  ["#legCount","#legCount2"].forEach(s=>{const e=$(s); if(e)e.textContent=BASKET.length;});
+}
+
+// ---------- v2.7 Total-Bases board ----------
+function renderTB(){
+  const el=$("#tb-list"); if(!el) return;
+  const list=(DATA.tb_board||[]);
+  if(!list.length){ el.innerHTML="<div class='meta'>No TB board in this slate — regenerate with build.py v2.7+.</div>"; return; }
+  const f=$("#filter")?$("#filter").value:"all", g=$("#game")?$("#game").value:"all";
+  const rows=list.filter(t=>{
+    if(g!=="all"&&String(t.gamePk)!==g) return false;
+    if(f==="confirmed") return t.confirmed;
+    return true;
+  }).slice(0,80);
+  el.innerHTML=rows.map(t=>`
+    <div class="card">
+      <div class="top">
+        <div>
+          <div class="nm">${t.name} <span style="color:var(--dim);font-weight:400">${t.bats||""}</span>
+            ${t.shape_source==="statcast"?'<span class="sc">SC</span>':'<span class="sc" style="color:var(--dim)">proxy</span>'}</div>
+          <div class="meta">${t.team} ${t.slot?("· bats "+t.slot):""} ${t.confirmed?"✓":"<span style='color:var(--yellow)'>unconfirmed</span>"} · vs ${t.opp_pitcher||"TBD"} · HR board: ${t.hr_total} (${t.hr_role})</div>
+        </div>
+        <div style="text-align:right"><div class="score">${t.tb_score}</div>
+          <span class="tier ${tbClass(t.tb_tier)}">${t.tb_tier}</span>
+          <div style="margin-top:6px">${addBtnHTML(t,'tb')}</div></div>
+      </div>
+      <ul class="reasons">${(t.tb_reasons||[]).slice(0,4).map(r=>`<li>${r}</li>`).join("")}</ul>
+    </div>`).join("") || "<div class='meta'>No TB candidates match this filter.</div>";
+}
+
+// ---------- v2.7 By-Game breakdown ----------
+function renderGames(){
+  const el=$("#games-list"); if(!el) return;
+  const tbById={}; (DATA.tb_board||[]).forEach(t=>tbById[t.id]=t);
+  // group candidates by game
+  const byGame={};
+  DATA.candidates.forEach(c=>{(byGame[c.gamePk]=byGame[c.gamePk]||[]).push(c);});
+  // order games by the best HR total inside them
+  const games=Object.entries(byGame).map(([pk,arr])=>({pk,arr,top:Math.max(...arr.map(c=>c.total))}))
+    .sort((a,b)=>b.top-a.top);
+  el.innerHTML=games.map(({pk,arr})=>{
+    const teams=[...new Set(arr.map(c=>c.team))];
+    const venue=arr[0].venue;
+    const col=team=>{
+      const bats=arr.filter(c=>c.team===team).sort((a,b)=>b.total-a.total).slice(0,5);
+      const arm=bats[0]?bats[0].opp_pitcher:null, grade=bats[0]?bats[0].pitcher_grade:"?";
+      return `<div class="side-col">
+        <h4>${team}</h4>
+        <div class="arm">vs ${arm||"TBD"} · cause <span class="grade ${gradeClass(grade)}">${grade}</span></div>
+        ${bats.map(c=>{const tb=tbById[c.id];return `<div class="mini-bat">
+          <div>${c.name} <span class="role ${roleClass(c.role)}" style="font-size:10px;padding:1px 5px">${c.role}</span>
+            <div class="r">${(c.reasons||[]).find(r=>/air-pull|barrel|Zone|Platoon|Pitch-mix/.test(r))||c.reasons?.[0]||""}</div></div>
+          <div style="text-align:right;white-space:nowrap">HR <b>${c.total}</b>${tb?` · TB <b>${tb.tb_score}</b>`:""}
+            <div>${addBtnHTML(c,'hr')}</div></div>
+        </div>`;}).join("")}
+      </div>`;
+    };
+    return `<div class="game-card">
+      <div class="game-head"><span class="vs">${teams[0]||"?"} vs ${teams[1]||"?"}</span>
+        <span class="meta">${venue}</span></div>
+      <div class="side">${teams.map(col).join("")}</div>
+    </div>`;
+  }).join("") || "<div class='meta'>No games.</div>";
+}
+
+// ---------- v2.7 Builder ----------
+function renderBuilder(){
+  const pool=$("#builder-pool"); if(!pool) return;
+  updateLegBadges();
+  // quick-fill buttons from the model's structures
+  const qf=$("#quickfill"); const s=DATA.structures||{};
+  const btns=[];
+  if(s.rr_core_4leg) btns.push(`<button onclick="fillFrom('rr')">Fill 4-leg RR core</button>`);
+  if(s.same_game_pair) btns.push(`<button onclick="fillFrom('sgp')">Fill same-game pair</button>`);
+  if(s.longshot_group) btns.push(`<button onclick="fillFrom('ls')">Fill longshot group</button>`);
+  if((DATA.tb_board||[]).length) btns.push(`<button onclick="fillFrom('tb3')">Fill 3 best TB</button>`);
+  if(qf) qf.innerHTML=btns.join("")||"<span class='meta'>No model structures for quick-fill.</span>";
+  // top actionable HR bats to add
+  const top=DATA.candidates.filter(c=>ACTIONABLE.has(c.role)).slice(0,12);
+  pool.innerHTML=`<div style="font-size:12px;color:var(--dim);margin-bottom:6px">Top actionable HR bats</div>`+
+    top.map(c=>`<div class="leg">
+      <div><b>${c.name}</b> <span class="lm">${c.team} · HR ${c.total} · ${c.role} · vs ${c.opp_pitcher||"TBD"}</span></div>
+      ${addBtnHTML(c,'hr')}</div>`).join("");
+  // the slip
+  const slip=$("#slip");
+  if(!BASKET.length){ slip.innerHTML="<div class='meta'>No legs yet. Add bats from any board.</div>"; $("#slip-kpi").innerHTML=""; return; }
+  slip.innerHTML=BASKET.map(l=>`<div class="leg">
+    <div><b>${l.name}</b> <span class="lm">${l.market.toUpperCase()} ${l.score} · ${l.label} · ${l.team}${l.opp_pitcher?" vs "+l.opp_pitcher:""}</span></div>
+    <button class="rmbtn" onclick="toggleLeg('${l.market}',${l.id})">✕</button></div>`).join("");
+  // KPIs: legs, games covered (diversity), same-game correlations, avg score
+  const games=new Set(BASKET.map(l=>l.gamePk));
+  const dupGames=BASKET.length-games.size;
+  const avg=(BASKET.reduce((a,l)=>a+l.score,0)/BASKET.length).toFixed(1);
+  const unconf=BASKET.filter(l=>!l.confirmed).length;
+  let structHint = games.size===BASKET.length ? "All different games → round-robin / survival card."
+    : dupGames>0 ? `${dupGames} same-game pairing(s) → correlated same-game card.` : "";
+  $("#slip-kpi").innerHTML=
+    `<span><b>${BASKET.length}</b> legs</span>`+
+    `<span><b>${games.size}</b> games</span>`+
+    `<span>avg score <b>${avg}</b></span>`+
+    (unconf?`<span style="color:var(--yellow)"><b>${unconf}</b> unconfirmed</span>`:"")+
+    (structHint?`<div style="width:100%;color:var(--accent);margin-top:4px">${structHint}</div>`:"");
+}
+function _addByName(name,market){
+  const src=(market==='tb'?(DATA.tb_board||[]):DATA.candidates).find(x=>x.name===name);
+  if(src&&!inBasket(market,src.id)) toggleLegSilent(market,src.id,src);
+}
+function toggleLegSilent(market,id,src){
+  const key=legKey(market,id);
+  if(BASKET.some(l=>l.key===key)) return;
+  BASKET.push({key,market,id,name:src.name,team:src.team,opp:src.opp,gamePk:src.gamePk,
+    opp_pitcher:src.opp_pitcher,slot:src.slot,confirmed:src.confirmed,
+    score:market==='tb'?src.tb_score:src.total,label:market==='tb'?src.tb_tier:src.role});
+}
+function fillFrom(kind){
+  const s=DATA.structures||{};
+  const pullNames=legs=>legs.map(l=>l.split(" (")[0]);
+  if(kind==='rr'&&s.rr_core_4leg) pullNames(s.rr_core_4leg.legs).forEach(n=>_addByName(n,'hr'));
+  if(kind==='sgp'&&s.same_game_pair) pullNames(s.same_game_pair.legs).forEach(n=>_addByName(n,'hr'));
+  if(kind==='ls'&&s.longshot_group) pullNames(s.longshot_group.legs).forEach(n=>_addByName(n,'hr'));
+  if(kind==='tb3') (DATA.tb_board||[]).slice(0,3).forEach(t=>toggleLegSilent('tb',t.id,t));
+  renderCandidates(); renderTB(); renderBuilder(); updateLegBadges();
 }
 
 function renderCauses(){
@@ -247,7 +530,8 @@ function renderCandidates(){
             ${c.shape_source==="statcast"?'<span class="sc">SC</span>':'<span class="sc" style="color:var(--dim)">proxy</span>'}${fitTag}${valTag}${dueTag}</div>
           <div class="meta">${c.team} ${c.slot?("· bats "+c.slot):""} ${c.confirmed?"✓":"<span style='color:var(--yellow)'>unconfirmed</span>"} · vs ${c.opp_pitcher||"TBD"} (${c.pitcher_grade}) · ${c.venue}</div>
         </div>
-        <div><div class="score">${c.total}</div><span class="role ${roleClass(c.role)}">${c.role}</span></div>
+        <div style="text-align:right"><div class="score">${c.total}</div><span class="role ${roleClass(c.role)}">${c.role}</span>
+          <div style="margin-top:6px">${addBtnHTML(c,'hr')}</div></div>
       </div>
       ${chips}
       <div class="bd">
@@ -278,6 +562,85 @@ function renderPitchers(){
     `<div class="pitch-row"><div>${p.name}<div class="meta">HR/9 ${p.hr9??"–"} · ${(p.flags||[])[0]||""}</div></div>
      <span class="grade ${gradeClass(p.grade)}">${p.grade} ${p.score}</span></div>`
   ).join("") || "<div class='meta'>No pitcher data.</div>";
+}
+
+// ---------- v2.7 Results panel (backtest.json) ----------
+let BACKTEST=null, backtestTried=false;
+async function renderResults(){
+  const el=$("#results-body"); if(!el) return;
+  if(!BACKTEST && !backtestTried){
+    backtestTried=true;
+    el.innerHTML="<div class='meta'>Loading results…</div>";
+    try{ const r=await fetch("data/backtest.json?t="+Date.now(),{cache:"no-store"});
+      if(r.ok) BACKTEST=await r.json(); }catch(e){}
+  }
+  const b=BACKTEST;
+  if(!b || !b.n_dates){
+    el.innerHTML=`<div class="note">No graded results yet. Generate them with:
+      <div style="margin:8px 0"><code>python3 backtest.py --days 30</code></div>
+      It reconstructs past picks from the git history of <code>latest.json</code> (plus any committed
+      <code>picks-*.json</code>), pulls actual HR/TB outcomes from the MLB Stats API, and writes
+      <code>data/backtest.json</code>. The daily GitHub Action now runs it automatically.</div>`;
+    return;
+  }
+  const o=b.overall_actionable, base=b.slate_baseline, lc=b.locked_core;
+  const kpi=(v,l)=>`<div class="res-kpi"><div class="v">${v}</div><div class="l">${l}</div></div>`;
+  let h=`<div class="meta" style="margin-bottom:8px">${b.n_dates} settled slate-day(s): ${b.dates_graded[0]} → ${b.dates_graded[b.dates_graded.length-1]}</div>`;
+  h+=`<div class="res-kpis">
+    ${kpi(pct1(o.hr_rate),"Actionable HR hit-rate")}
+    ${kpi(pct1(o.tb2_rate),"Actionable 2+ TB")}
+    ${kpi(pct1(lc.hr_rate),"Locked Core HR")}
+    ${kpi("×"+(b.locked_core_lift_vs_baseline??"–"),"Locked Core lift vs slate")}
+    ${kpi(o.played,"picks graded")}</div>`;
+  // verdict
+  h+=(b.verdict||[]).map(v=>`<div class="verdict">${v}</div>`).join("");
+  // feed diagnostic
+  const fd=b.feed_diagnostic||{};
+  if(fd.statcast_day&&fd.proxy_day){
+    h+=`<h3 style="color:var(--accent);margin:16px 0 6px">Feed diagnostic — is it the data or the model?</h3>
+      <table class="res"><tr><th>Slate type</th><th>Picks</th><th>HR hit-rate</th><th>2+ TB</th></tr>
+      <tr><td>Statcast days</td><td>${fd.statcast_day.played}</td><td>${pct1(fd.statcast_day.hr_rate)}</td><td>${pct1(fd.statcast_day.tb2_rate)}</td></tr>
+      <tr><td>Proxy days</td><td>${fd.proxy_day.played}</td><td>${pct1(fd.proxy_day.hr_rate)}</td><td>${pct1(fd.proxy_day.tb2_rate)}</td></tr>
+      </table>`;
+  }
+  // calibration
+  if((b.calibration||[]).length){
+    const mx=Math.max(...b.calibration.map(c=>c.hr_rate||0))||1;
+    h+=`<h3 style="color:var(--accent);margin:16px 0 6px">Calibration — HR hit-rate by score bucket (should fall as you go down)</h3><table class="res"><tr><th>Score</th><th>Picks</th><th>HR hit-rate</th></tr>`;
+    b.calibration.forEach(c=>{h+=`<tr><td>${c.bucket}</td><td>${c.played}</td><td>${pct1(c.hr_rate)}<span class="rbar" style="width:${Math.round((c.hr_rate||0)/mx*120)}px"></span></td></tr>`;});
+    h+=`</table>`;
+  }
+  // by tier
+  if(b.by_tier){
+    h+=`<h3 style="color:var(--accent);margin:16px 0 6px">By tier</h3><table class="res"><tr><th>Tier</th><th>Picks</th><th>HR</th><th>2+ TB</th></tr>`;
+    ["Elite Core","Core","Satellite","Longshot","Pass"].forEach(t=>{const s=b.by_tier[t];
+      if(s&&s.played)h+=`<tr><td>${t}</td><td>${s.played}</td><td>${pct1(s.hr_rate)}</td><td>${pct1(s.tb2_rate)}</td></tr>`;});
+    h+=`</table>`;
+  }
+  // TB tiers
+  if(b.tb_by_tier&&Object.keys(b.tb_by_tier).length){
+    h+=`<h3 style="color:var(--accent);margin:16px 0 6px">Total-Bases board — 2+ TB hit-rate by tier</h3><table class="res"><tr><th>TB tier</th><th>Picks</th><th>2+ TB</th><th>3+ TB</th></tr>`;
+    ["Elite TB","Strong TB","Solid TB","Dart","Pass"].forEach(t=>{const s=b.tb_by_tier[t];
+      if(s&&s.played)h+=`<tr><td>${t}</td><td>${s.played}</td><td>${pct1(s.tb2_rate)}</td><td>${pct1(s.tb3_rate)}</td></tr>`;});
+    h+=`</table>`;
+  }
+  // cause fired
+  if(b.cause_fired_by_grade&&Object.keys(b.cause_fired_by_grade).length){
+    h+=`<h3 style="color:var(--accent);margin:16px 0 6px">Cause fired — targeted pitcher allowed ≥1 HR</h3><table class="res"><tr><th>Grade</th><th>Arms</th><th>Fired</th></tr>`;
+    ["A+","A","B","C","Pass"].forEach(g=>{const s=b.cause_fired_by_grade[g];
+      if(s)h+=`<tr><td>${g}</td><td>${s.n}</td><td>${pct1(s.fire_rate)}</td></tr>`;});
+    h+=`</table>`;
+  }
+  el.innerHTML=h;
+}
+
+// ---------- v2.7 tab switching ----------
+function showView(name){
+  ["hr","tb","games","builder","results"].forEach(v=>{
+    const el=$("#view-"+v); if(el) el.classList.toggle("hidden",v!==name);
+  });
+  document.querySelectorAll(".tab").forEach(t=>t.classList.toggle("on",t.dataset.view===name));
+  if(name==="results") renderResults();
 }
 
 // ---------- load cached JSON ----------
@@ -522,13 +885,28 @@ function buildStructures(c){
 }
 
 // ---------- events ----------
-$("#filter").onchange=renderCandidates;
-$("#game").onchange=renderCandidates;
+$("#filter").onchange=()=>{renderCandidates();renderTB();};
+$("#game").onchange=()=>{renderCandidates();renderTB();};
 $("#liveBtn").onclick=()=>buildLive().catch(e=>$("#status").innerHTML=`<span class="err">Live build failed: ${e.message}</span>`);
 $("#exportBtn").onclick=()=>{
   if(!DATA)return; const blob=new Blob([JSON.stringify(DATA,null,2)],{type:"application/json"});
   const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=`hr-picks-${DATA.slate_date}.json`;a.click();
 };
+// tabs
+document.querySelectorAll(".tab").forEach(t=>t.onclick=()=>showView(t.dataset.view));
+// builder card actions
+function slipText(){
+  if(!BASKET.length) return "";
+  const lines=BASKET.map((l,i)=>`${i+1}. ${l.name} — ${l.market.toUpperCase()} ${l.score} (${l.label}, ${l.team}${l.opp_pitcher?" vs "+l.opp_pitcher:""})${l.confirmed?"":" [UNCONFIRMED]"}`);
+  const games=new Set(BASKET.map(l=>l.gamePk)).size;
+  return `HR/TB card — slate ${DATA?DATA.slate_date:""}\n${lines.join("\n")}\n(${BASKET.length} legs across ${games} games)`;
+}
+$("#copySlip").onclick=()=>{const t=slipText(); if(!t)return;
+  navigator.clipboard?.writeText(t).then(()=>{$("#copySlip").textContent="✓ Copied";setTimeout(()=>$("#copySlip").textContent="⧉ Copy slip",1200);});};
+$("#exportSlip").onclick=()=>{if(!BASKET.length)return;
+  const blob=new Blob([JSON.stringify({slate:DATA?DATA.slate_date:null,legs:BASKET},null,2)],{type:"application/json"});
+  const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=`hr-card-${DATA?DATA.slate_date:"slate"}.json`;a.click();};
+$("#clearSlip").onclick=()=>{BASKET.length=0;renderCandidates();renderTB();renderBuilder();updateLegBadges();};
 
 // On load: ALWAYS show the committed Statcast JSON (the high-quality build).
 // We never silently downgrade to the in-browser proxy — that only happens when

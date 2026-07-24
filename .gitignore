@@ -1,7 +1,14 @@
-# keep latest.json (the site reads it) but ignore the dated daily archive
-data/picks-*.json
-# Statcast daily cache (large; regenerated/cached by CI)
-data/cache/
+# v2.7 — the dated daily archive is now COMMITTED (data/picks-YYYY-MM-DD.json).
+# Without it the model never recorded what it picked, so it could never be
+# backtested. These files are small and compress well in git; they are the
+# pick-side record the results scorer grades against.
+
+# Statcast daily raw pulls are large and fully regenerable -> stay ignored.
+data/cache/statcast/
+
+# Everything else under data/cache/ (e.g. cache/results/*.json — the graded
+# actual outcomes) IS committed so backtest.json is reproducible and CI is fast.
+
 __pycache__/
 *.pyc
 .DS_Store
