@@ -1,17 +1,17 @@
 {
   "version": "2.7",
-  "generated_utc": "2026-07-29T14:54:09.332678+00:00",
+  "generated_utc": "2026-07-29T15:30:59.969471+00:00",
   "slate_date": "2026-07-29",
   "games": 16,
-  "confirmed_lineups": 7,
+  "confirmed_lineups": 8,
   "statcast": true,
   "statcast_meta": {
     "window_days": 21,
     "recent_days": 7,
     "start": "2026-07-09",
     "end": "2026-07-29",
-    "days_fetched": 1,
-    "days_cached": 20,
+    "days_fetched": 0,
+    "days_cached": 21,
     "days_failed": 0,
     "batters": 349,
     "pitchers": 371,
@@ -35,11 +35,11 @@
     "trustworthy": true,
     "statcast_batters": 349,
     "statcast_candidates": 219,
-    "confirmed_lineups": 7,
+    "confirmed_lineups": 8,
     "games": 16,
     "days_failed": 0,
     "warnings": [
-      "Only 7/32 lineups confirmed \u2014 unconfirmed bats use a neutral slot default."
+      "Only 8/32 lineups confirmed \u2014 unconfirmed bats use a neutral slot default."
     ]
   },
   "method": "v2.6: rank causes \u2192 choose capture \u2192 lock confirmed shape that captures the cause. NEW: zone-damage slot (hard-hit% \u00d7 Z-Contact% \u2014 loud contact that actually meets hittable pitches), xwOBAcon contact quality, and HR-luck pairing (barrels-vs-HR xHR gap \u2192 DUE bats and HR-DUE arms). Also: hardened Savant fetch w/ cache validation, directional wind, EB shrinkage, platoon-split shape, pitch-mix fit + TRAP flags. Weights P25/Shape40(11 air-pull/8 barrel/7 zone-dmg/6 matchup/3 quality/3 recent/2 due)/Env15/Lineup12/Src8. Statcast (Savant) shape layer active.",
@@ -8729,6 +8729,70 @@
       ]
     },
     {
+      "id": 624413,
+      "name": "Pete Alonso",
+      "team": "Baltimore Orioles",
+      "bats": "R",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Tarik Skubal",
+      "venue": "Comerica Park",
+      "gamePk": 824242,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 22,
+      "iso": 0.215,
+      "total": 45.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 57.4,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.59,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.0,
+        "hitter": 17.2,
+        "environment": 7.5,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1512,
+        "barrel_rate": 0.0806,
+        "hard_hit_rate": 0.451,
+        "fb_rate": 0.4958,
+        "z_contact_rate": 0.7889,
+        "sweet_spot_rate": 0.3717,
+        "xwobacon": 0.3855,
+        "ev90": 104.2
+      },
+      "reasons": [
+        "vs Tarik Skubal \u2014 cause Pass (7.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
+        "Pitcher: High K rate (32%)",
+        "Hard-hit 45%",
+        "Platoon edge (R vs LHP)",
+        "Poor pitch-mix fit (58% fastballs, rel 0.30 \u2192 mix-fit 0.59x)",
+        "Warm (81\u00b0F)",
+        "Wind out ~11 mph",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Pitcher park (94)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 691023,
       "name": "Jordan Walker",
       "team": "St. Louis Cardinals",
@@ -9380,6 +9444,66 @@
       ]
     },
     {
+      "id": 683002,
+      "name": "Gunnar Henderson",
+      "team": "Baltimore Orioles",
+      "bats": "L",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Tarik Skubal",
+      "venue": "Comerica Park",
+      "gamePk": 824242,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 18,
+      "iso": 0.178,
+      "total": 45.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 53.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.0,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.0,
+        "hitter": 17.5,
+        "environment": 7.5,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1973,
+        "barrel_rate": 0.0714,
+        "hard_hit_rate": 0.4161,
+        "fb_rate": 0.518,
+        "z_contact_rate": 0.8684,
+        "sweet_spot_rate": 0.3232,
+        "xwobacon": 0.3612,
+        "ev90": 106.3
+      },
+      "reasons": [
+        "vs Tarik Skubal \u2014 cause Pass (7.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
+        "Pitcher: High K rate (32%)",
+        "Good air-pull (20%)",
+        "Warm (81\u00b0F)",
+        "Wind out ~11 mph",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Pitcher park (94)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 608369,
       "name": "Corey Seager",
       "team": "Texas Rangers",
@@ -9426,6 +9550,68 @@
       ],
       "warnings": [
         "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 641933,
+      "name": "Tyler O'Neill",
+      "team": "Baltimore Orioles",
+      "bats": "R",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Tarik Skubal",
+      "venue": "Comerica Park",
+      "gamePk": 824242,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 7,
+      "iso": 0.165,
+      "total": 45.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 58.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.0,
+        "hitter": 17.5,
+        "environment": 7.5,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1604,
+        "barrel_rate": 0.0855,
+        "hard_hit_rate": 0.425,
+        "fb_rate": 0.5312,
+        "z_contact_rate": 0.8698,
+        "sweet_spot_rate": 0.3446,
+        "xwobacon": 0.3579,
+        "ev90": 102.8
+      },
+      "reasons": [
+        "vs Tarik Skubal \u2014 cause Pass (7.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
+        "Pitcher: High K rate (32%)",
+        "Platoon edge (R vs LHP)",
+        "Warm (81\u00b0F)",
+        "Wind out ~11 mph",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Pitcher park (94)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -10097,6 +10283,70 @@
       ]
     },
     {
+      "id": 621493,
+      "name": "Taylor Ward",
+      "team": "Baltimore Orioles",
+      "bats": "R",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Tarik Skubal",
+      "venue": "Comerica Park",
+      "gamePk": 824242,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 7,
+      "iso": 0.103,
+      "total": 43.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 56.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.76,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.0,
+        "hitter": 15.1,
+        "environment": 7.5,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1919,
+        "barrel_rate": 0.0743,
+        "hard_hit_rate": 0.3313,
+        "fb_rate": 0.5113,
+        "z_contact_rate": 0.8443,
+        "sweet_spot_rate": 0.353,
+        "xwobacon": 0.3456,
+        "ev90": 99.6
+      },
+      "reasons": [
+        "vs Tarik Skubal \u2014 cause Pass (7.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
+        "Pitcher: High K rate (32%)",
+        "Good air-pull (19%)",
+        "Platoon edge (R vs LHP)",
+        "Poor pitch-mix fit (58% fastballs, rel 0.30 \u2192 mix-fit 0.76x)",
+        "Warm (81\u00b0F)",
+        "Wind out ~11 mph",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Pitcher park (94)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 518692,
       "name": "Freddie Freeman",
       "team": "Los Angeles Dodgers",
@@ -10326,6 +10576,70 @@
       ],
       "warnings": [
         "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 691723,
+      "name": "Coby Mayo",
+      "team": "Baltimore Orioles",
+      "bats": "R",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Tarik Skubal",
+      "venue": "Comerica Park",
+      "gamePk": 824242,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 14,
+      "iso": 0.211,
+      "total": 43.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 55.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Dangerous contact (hard-hit 38%, xwOBAcon .404)",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.0,
+        "hitter": 18.8,
+        "environment": 7.5,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1824,
+        "barrel_rate": 0.1108,
+        "hard_hit_rate": 0.3786,
+        "fb_rate": 0.5211,
+        "z_contact_rate": 0.8245,
+        "sweet_spot_rate": 0.378,
+        "xwobacon": 0.4041,
+        "ev90": 110.9
+      },
+      "reasons": [
+        "vs Tarik Skubal \u2014 cause Pass (7.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
+        "Pitcher: High K rate (32%)",
+        "Above-avg barrels (11%)",
+        "Platoon edge (R vs LHP)",
+        "Warm (81\u00b0F)",
+        "Wind out ~11 mph",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Pitcher park (94)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -11330,70 +11644,6 @@
       ]
     },
     {
-      "id": 691723,
-      "name": "Coby Mayo",
-      "team": "Baltimore Orioles",
-      "bats": "R",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Tarik Skubal",
-      "venue": "Comerica Park",
-      "gamePk": 824242,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.211,
-      "total": 41.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 55.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Dangerous contact (hard-hit 38%, xwOBAcon .404)",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.0,
-        "hitter": 18.8,
-        "environment": 7.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1824,
-        "barrel_rate": 0.1108,
-        "hard_hit_rate": 0.3786,
-        "fb_rate": 0.5211,
-        "z_contact_rate": 0.8245,
-        "sweet_spot_rate": 0.378,
-        "xwobacon": 0.4041,
-        "ev90": 110.9
-      },
-      "reasons": [
-        "vs Tarik Skubal \u2014 cause Pass (7.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
-        "Pitcher: High K rate (32%)",
-        "Above-avg barrels (11%)",
-        "Platoon edge (R vs LHP)",
-        "Warm (81\u00b0F)",
-        "Wind out ~11 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (94)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 666182,
       "name": "Bo Bichette",
       "team": "New York Mets",
@@ -12151,66 +12401,6 @@
       ]
     },
     {
-      "id": 683002,
-      "name": "Gunnar Henderson",
-      "team": "Baltimore Orioles",
-      "bats": "L",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Tarik Skubal",
-      "venue": "Comerica Park",
-      "gamePk": 824242,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.178,
-      "total": 40.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 50.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.0,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.0,
-        "hitter": 17.5,
-        "environment": 7.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1973,
-        "barrel_rate": 0.0714,
-        "hard_hit_rate": 0.4161,
-        "fb_rate": 0.518,
-        "z_contact_rate": 0.8684,
-        "sweet_spot_rate": 0.3232,
-        "xwobacon": 0.3612,
-        "ev90": 106.3
-      },
-      "reasons": [
-        "vs Tarik Skubal \u2014 cause Pass (7.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
-        "Pitcher: High K rate (32%)",
-        "Good air-pull (20%)",
-        "Warm (81\u00b0F)",
-        "Wind out ~11 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (94)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 669016,
       "name": "Brandon Marsh",
       "team": "Philadelphia Phillies",
@@ -12266,132 +12456,6 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 641933,
-      "name": "Tyler O'Neill",
-      "team": "Baltimore Orioles",
-      "bats": "R",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Tarik Skubal",
-      "venue": "Comerica Park",
-      "gamePk": 824242,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.165,
-      "total": 40.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 55.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.0,
-        "hitter": 17.5,
-        "environment": 7.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1604,
-        "barrel_rate": 0.0855,
-        "hard_hit_rate": 0.425,
-        "fb_rate": 0.5312,
-        "z_contact_rate": 0.8698,
-        "sweet_spot_rate": 0.3446,
-        "xwobacon": 0.3579,
-        "ev90": 102.8
-      },
-      "reasons": [
-        "vs Tarik Skubal \u2014 cause Pass (7.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
-        "Pitcher: High K rate (32%)",
-        "Platoon edge (R vs LHP)",
-        "Warm (81\u00b0F)",
-        "Wind out ~11 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (94)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 624413,
-      "name": "Pete Alonso",
-      "team": "Baltimore Orioles",
-      "bats": "R",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Tarik Skubal",
-      "venue": "Comerica Park",
-      "gamePk": 824242,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 22,
-      "iso": 0.215,
-      "total": 39.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 53.4,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.59,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.0,
-        "hitter": 17.2,
-        "environment": 7.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1512,
-        "barrel_rate": 0.0806,
-        "hard_hit_rate": 0.451,
-        "fb_rate": 0.4958,
-        "z_contact_rate": 0.7889,
-        "sweet_spot_rate": 0.3717,
-        "xwobacon": 0.3855,
-        "ev90": 104.2
-      },
-      "reasons": [
-        "vs Tarik Skubal \u2014 cause Pass (7.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
-        "Pitcher: High K rate (32%)",
-        "Hard-hit 45%",
-        "Platoon edge (R vs LHP)",
-        "Poor pitch-mix fit (58% fastballs, rel 0.30 \u2192 mix-fit 0.59x)",
-        "Warm (81\u00b0F)",
-        "Wind out ~11 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (94)",
-        "Lineup not confirmed"
-      ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -13222,70 +13286,6 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 621493,
-      "name": "Taylor Ward",
-      "team": "Baltimore Orioles",
-      "bats": "R",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Tarik Skubal",
-      "venue": "Comerica Park",
-      "gamePk": 824242,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.103,
-      "total": 37.6,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.76,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.0,
-        "hitter": 15.1,
-        "environment": 7.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1919,
-        "barrel_rate": 0.0743,
-        "hard_hit_rate": 0.3313,
-        "fb_rate": 0.5113,
-        "z_contact_rate": 0.8443,
-        "sweet_spot_rate": 0.353,
-        "xwobacon": 0.3456,
-        "ev90": 99.6
-      },
-      "reasons": [
-        "vs Tarik Skubal \u2014 cause Pass (7.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.00)",
-        "Pitcher: High K rate (32%)",
-        "Good air-pull (19%)",
-        "Platoon edge (R vs LHP)",
-        "Poor pitch-mix fit (58% fastballs, rel 0.30 \u2192 mix-fit 0.76x)",
-        "Warm (81\u00b0F)",
-        "Wind out ~11 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (94)",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -15238,11 +15238,11 @@
       "opp_pitcher": "Tarik Skubal",
       "venue": "Comerica Park",
       "gamePk": 824242,
-      "slot": null,
-      "confirmed": false,
+      "slot": 8,
+      "confirmed": true,
       "season_hr": 7,
       "iso": 0.145,
-      "total": 28.5,
+      "total": 27.5,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 38.5,
@@ -15262,7 +15262,7 @@
         "pitcher": 7.0,
         "hitter": 6.0,
         "environment": 7.5,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": null,
@@ -15277,7 +15277,7 @@
       ],
       "warnings": [
         "Pitcher park (94)",
-        "Lineup not confirmed"
+        "Bottom of order (#8)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -17335,6 +17335,26 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 641933,
+      "name": "Tyler O'Neill",
+      "team": "Baltimore Orioles",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Tarik Skubal",
+      "venue": "Comerica Park",
+      "gamePk": 824242,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 58.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 45.0,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 666160,
       "name": "Mickey Moniak",
       "team": "Colorado Rockies",
@@ -17611,6 +17631,26 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 624413,
+      "name": "Pete Alonso",
+      "team": "Baltimore Orioles",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Tarik Skubal",
+      "venue": "Comerica Park",
+      "gamePk": 824242,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 57.4,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 45.7,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 691718,
       "name": "Pete Crow-Armstrong",
       "team": "Chicago Cubs",
@@ -17791,6 +17831,26 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 621493,
+      "name": "Taylor Ward",
+      "team": "Baltimore Orioles",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Tarik Skubal",
+      "venue": "Comerica Park",
+      "gamePk": 824242,
+      "slot": 1,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 56.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 43.6,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 672640,
       "name": "Otto Lopez",
       "team": "Miami Marlins",
@@ -17862,26 +17922,6 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 40.7,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 641933,
-      "name": "Tyler O'Neill",
-      "team": "Baltimore Orioles",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Tarik Skubal",
-      "venue": "Comerica Park",
-      "gamePk": 824242,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 55.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 40.0,
       "hr_role": "Watchlist"
     },
     {
@@ -17972,8 +18012,8 @@
       "opp_pitcher": "Tarik Skubal",
       "venue": "Comerica Park",
       "gamePk": 824242,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 55.0,
       "tb_tier": "Dart",
@@ -17982,7 +18022,7 @@
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 41.3,
+      "hr_total": 43.3,
       "hr_role": "Watchlist"
     },
     {
@@ -18239,6 +18279,24 @@
       "hr_role": "Pass"
     },
     {
+      "id": 683002,
+      "name": "Gunnar Henderson",
+      "team": "Baltimore Orioles",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Tarik Skubal",
+      "venue": "Comerica Park",
+      "gamePk": 824242,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 53.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 45.0,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 545341,
       "name": "Randal Grichuk",
       "team": "Chicago White Sox",
@@ -18348,26 +18406,6 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 29.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 624413,
-      "name": "Pete Alonso",
-      "team": "Baltimore Orioles",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Tarik Skubal",
-      "venue": "Comerica Park",
-      "gamePk": 824242,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 53.4,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 39.7,
       "hr_role": "Watchlist"
     },
     {
@@ -18601,26 +18639,6 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 40.2,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 621493,
-      "name": "Taylor Ward",
-      "team": "Baltimore Orioles",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Tarik Skubal",
-      "venue": "Comerica Park",
-      "gamePk": 824242,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 37.6,
       "hr_role": "Watchlist"
     },
     {
@@ -19012,24 +19030,6 @@
       ],
       "shape_source": "statcast",
       "hr_total": 40.7,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 683002,
-      "name": "Gunnar Henderson",
-      "team": "Baltimore Orioles",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Tarik Skubal",
-      "venue": "Comerica Park",
-      "gamePk": 824242,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 50.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 40.0,
       "hr_role": "Watchlist"
     },
     {
@@ -19971,8 +19971,8 @@
       "opp_pitcher": "Tarik Skubal",
       "venue": "Comerica Park",
       "gamePk": 824242,
-      "slot": null,
-      "confirmed": false,
+      "slot": 8,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 38.5,
       "tb_tier": "Pass",
@@ -19981,7 +19981,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 28.5,
+      "hr_total": 27.5,
       "hr_role": "Watchlist"
     },
     {
