@@ -1,6 +1,6 @@
 {
   "version": "2.7",
-  "generated_utc": "2026-07-30T15:32:55.153239+00:00",
+  "generated_utc": "2026-07-30T17:56:27.976594+00:00",
   "slate_date": "2026-07-30",
   "games": 10,
   "confirmed_lineups": 8,
@@ -10,8 +10,8 @@
     "recent_days": 7,
     "start": "2026-07-10",
     "end": "2026-07-30",
-    "days_fetched": 1,
-    "days_cached": 20,
+    "days_fetched": 0,
+    "days_cached": 21,
     "days_failed": 0,
     "batters": 342,
     "pitchers": 345,
@@ -257,7 +257,7 @@
       "playable_bats": [
         {
           "name": "Miguel Vargas",
-          "total": 66.8,
+          "total": 65.3,
           "role": "Pass",
           "fit_tag": null
         }
@@ -403,7 +403,7 @@
       "statcast": null,
       "reasons": [
         "vs Noah Cameron \u2014 cause A (18.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.18)",
+        "Pitcher: High HR allowed (HR/9 1.17)",
         "Pitcher: Above-avg barrels allowed (9%)",
         "Proxy: elite HR rate (1/14 PA)",
         "Proxy: elite ISO (0.281)",
@@ -479,66 +479,6 @@
       "role_notes": []
     },
     {
-      "id": 678246,
-      "name": "Miguel Vargas",
-      "team": "Chicago White Sox",
-      "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Ryan Weathers",
-      "venue": "Rate Field",
-      "gamePk": 824568,
-      "slot": 3,
-      "confirmed": true,
-      "season_hr": 22,
-      "iso": 0.238,
-      "total": 66.8,
-      "tier": "Longshot",
-      "role": "Pass",
-      "tb_score": 81.5,
-      "tb_tier": "Elite TB",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.92,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 2.6,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 12.0,
-        "hitter": 30.8,
-        "environment": 9.0,
-        "lineup": 11.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2112,
-        "barrel_rate": 0.1395,
-        "hard_hit_rate": 0.4671,
-        "fb_rate": 0.5166,
-        "z_contact_rate": 0.859,
-        "sweet_spot_rate": 0.373,
-        "xwobacon": 0.3873,
-        "ev90": 104.3
-      },
-      "reasons": [
-        "vs Ryan Weathers \u2014 cause C (12.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.42)",
-        "Platoon shape: spikes vs LHP (barrel 20%, air-pull 23%)",
-        "Good air-pull (23%)",
-        "Elite barrel rate (20%)",
-        "Zone-damage: hard-hit 47% + Z-contact 86%",
-        "Slightly + park (101)",
-        "Warm (78\u00b0F)",
-        "Heart of order (#3)",
-        "Model: one strong signal"
-      ],
-      "warnings": [],
-      "role_notes": []
-    },
-    {
       "id": 677800,
       "name": "Wilyer Abreu",
       "team": "Boston Red Sox",
@@ -592,12 +532,74 @@
         "Elite barrel rate (21%)",
         "Zone-damage: hard-hit 47% + Z-contact 86%",
         "Slightly + park (102)",
-        "Hot (95\u00b0F)",
+        "Hot (94\u00b0F)",
         "Model: one strong signal",
         "VALUE longshot: real shape + cause off the chalk"
       ],
       "warnings": [
         "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 678246,
+      "name": "Miguel Vargas",
+      "team": "Chicago White Sox",
+      "bats": "R",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Ryan Weathers",
+      "venue": "Rate Field",
+      "gamePk": 824568,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 22,
+      "iso": 0.238,
+      "total": 65.3,
+      "tier": "Longshot",
+      "role": "Pass",
+      "tb_score": 81.5,
+      "tb_tier": "Elite TB",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.92,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 2.6,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 12.0,
+        "hitter": 30.8,
+        "environment": 7.5,
+        "lineup": 11.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2112,
+        "barrel_rate": 0.1395,
+        "hard_hit_rate": 0.4671,
+        "fb_rate": 0.5166,
+        "z_contact_rate": 0.859,
+        "sweet_spot_rate": 0.373,
+        "xwobacon": 0.3873,
+        "ev90": 104.3
+      },
+      "reasons": [
+        "vs Ryan Weathers \u2014 cause C (12.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.42)",
+        "Platoon shape: spikes vs LHP (barrel 20%, air-pull 23%)",
+        "Good air-pull (23%)",
+        "Elite barrel rate (20%)",
+        "Zone-damage: hard-hit 47% + Z-contact 86%",
+        "Slightly + park (101)",
+        "Warm (77\u00b0F)",
+        "Heart of order (#3)",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Wind in ~7 mph"
       ],
       "role_notes": []
     },
@@ -613,7 +615,7 @@
       "slot": 3,
       "confirmed": true,
       "season_hr": 10,
-      "iso": 0.17,
+      "iso": 0.169,
       "total": 65.0,
       "tier": "Longshot",
       "role": "Cause Satellite",
@@ -649,7 +651,7 @@
       },
       "reasons": [
         "vs Noah Cameron \u2014 cause A (18.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.18)",
+        "Pitcher: High HR allowed (HR/9 1.17)",
         "Pitcher: Above-avg barrels allowed (9%)",
         "Good air-pull (22%)",
         "Above-avg barrels (10%)",
@@ -776,58 +778,6 @@
         "Zone-damage: hard-hit 46% + Z-contact 87%",
         "Elite HR park (111)",
         "Hot (86\u00b0F)"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 592450,
-      "name": "Aaron Judge",
-      "team": "New York Yankees",
-      "bats": "R",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Burke",
-      "venue": "Rate Field",
-      "gamePk": 824568,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.285,
-      "total": 59.0,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 61.5,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 30.0,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Sean Burke \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "Pitcher: High K rate (27%)",
-        "Proxy: elite HR rate (1/15 PA)",
-        "Proxy: elite ISO (0.285)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Slightly + park (101)",
-        "Warm (78\u00b0F)",
-        "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -1083,11 +1033,11 @@
       "slot": 2,
       "confirmed": true,
       "season_hr": 12,
-      "iso": 0.18,
+      "iso": 0.179,
       "total": 58.5,
       "tier": "Pass",
       "role": "Pass",
-      "tb_score": 64.5,
+      "tb_score": 63.5,
       "tb_tier": "Solid TB",
       "tb_reasons": [
         "Platoon edge (R vs LHP)"
@@ -1118,7 +1068,7 @@
       },
       "reasons": [
         "vs Shane McClanahan \u2014 cause B (14.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.66)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.64)",
         "Pitcher: Fly-ball prone (31% FB allowed)",
         "Good air-pull (19%)",
         "Above-avg barrels (9%)",
@@ -1131,126 +1081,56 @@
       "role_notes": []
     },
     {
-      "id": 663757,
-      "name": "Trent Grisham",
+      "id": 592450,
+      "name": "Aaron Judge",
       "team": "New York Yankees",
-      "bats": "L",
+      "bats": "R",
       "opp": "Chicago White Sox",
       "opp_pitcher": "Sean Burke",
       "venue": "Rate Field",
       "gamePk": 824568,
-      "slot": 1,
-      "confirmed": true,
-      "season_hr": 11,
-      "iso": 0.169,
-      "total": 58.5,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 72.5,
-      "tb_tier": "Strong TB",
-      "tb_reasons": [
-        "High-contact bat (contact 81%, Z-contact 89%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.74,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 24.5,
-        "environment": 9.0,
-        "lineup": 12.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1839,
-        "barrel_rate": 0.0959,
-        "hard_hit_rate": 0.431,
-        "fb_rate": 0.4596,
-        "z_contact_rate": 0.8876,
-        "sweet_spot_rate": 0.3077,
-        "xwobacon": 0.3722,
-        "ev90": 106.4
-      },
-      "reasons": [
-        "vs Sean Burke \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "Pitcher: High K rate (27%)",
-        "Platoon shape: spikes vs RHP (barrel 13%, air-pull 21%)",
-        "Good air-pull (21%)",
-        "Strong barrels (13%)",
-        "Platoon edge (L vs RHP)",
-        "Slightly + park (101)",
-        "Warm (78\u00b0F)",
-        "Top of order (#1)"
-      ],
-      "warnings": [],
-      "role_notes": []
-    },
-    {
-      "id": 700250,
-      "name": "Ben Rice",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Burke",
-      "venue": "Rate Field",
-      "gamePk": 824568,
-      "slot": 2,
-      "confirmed": true,
-      "season_hr": 31,
-      "iso": 0.305,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 17,
+      "iso": 0.285,
       "total": 57.5,
       "tier": "Pass",
       "role": "Pass",
-      "tb_score": 89.0,
-      "tb_tier": "Elite TB",
+      "tb_score": 61.5,
+      "tb_tier": "Solid TB",
       "tb_reasons": [
-        "Dangerous contact (hard-hit 47%, xwOBAcon .423)",
-        "High-contact bat (contact 83%, Z-contact 88%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.78,
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 1.6,
+      "due_hr": null,
       "pitcher_grade": "C",
       "breakdown": {
         "pitcher": 10.0,
-        "hitter": 23.5,
-        "environment": 9.0,
-        "lineup": 12.0,
-        "confidence": 3.0
+        "hitter": 30.0,
+        "environment": 7.5,
+        "lineup": 6.0,
+        "confidence": 4.0
       },
-      "statcast": {
-        "air_pull_rate": 0.1606,
-        "barrel_rate": 0.11,
-        "hard_hit_rate": 0.4729,
-        "fb_rate": 0.5105,
-        "z_contact_rate": 0.8832,
-        "sweet_spot_rate": 0.3857,
-        "xwobacon": 0.4237,
-        "ev90": 106.2
-      },
+      "statcast": null,
       "reasons": [
         "vs Sean Burke \u2014 cause C (10.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 0.99)",
         "Pitcher: High K rate (27%)",
-        "Above-avg barrels (11%)",
-        "Zone-damage: hard-hit 47% + Z-contact 88%",
-        "Platoon edge (L vs RHP)",
-        "Pitch-mix fit: damages this arsenal (62% fastballs, rel 1.52 \u2192 mix-fit 1.78x)",
+        "Proxy: elite HR rate (1/15 PA)",
+        "Proxy: elite ISO (0.285)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (101)",
-        "Warm (78\u00b0F)",
-        "Top of order (#2)"
+        "Warm (77\u00b0F)",
+        "Model: one strong signal"
       ],
-      "warnings": [],
+      "warnings": [
+        "Wind in ~7 mph",
+        "Lineup not confirmed"
+      ],
       "role_notes": []
     },
     {
@@ -1366,7 +1246,7 @@
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (65% fastballs, rel 2.11 \u2192 mix-fit 1.72x)",
         "Slightly + park (102)",
-        "Hot (95\u00b0F)"
+        "Hot (94\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -1424,7 +1304,7 @@
         "Good air-pull (19%)",
         "Above-avg barrels (9%)",
         "Slightly + park (102)",
-        "Hot (95\u00b0F)",
+        "Hot (94\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -1483,7 +1363,7 @@
         "Pitcher: Elevated HR allowed (HR/9 1.86)",
         "Above-avg barrels (10%)",
         "Slightly + park (102)",
-        "Hot (95\u00b0F)",
+        "Hot (94\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -1493,6 +1373,69 @@
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
+    },
+    {
+      "id": 663757,
+      "name": "Trent Grisham",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Burke",
+      "venue": "Rate Field",
+      "gamePk": 824568,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 11,
+      "iso": 0.169,
+      "total": 57.0,
+      "tier": "Pass",
+      "role": "Pass",
+      "tb_score": 72.5,
+      "tb_tier": "Strong TB",
+      "tb_reasons": [
+        "High-contact bat (contact 81%, Z-contact 89%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.74,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.0,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.0,
+        "hitter": 24.5,
+        "environment": 7.5,
+        "lineup": 12.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1839,
+        "barrel_rate": 0.0959,
+        "hard_hit_rate": 0.431,
+        "fb_rate": 0.4596,
+        "z_contact_rate": 0.8876,
+        "sweet_spot_rate": 0.3077,
+        "xwobacon": 0.3722,
+        "ev90": 106.4
+      },
+      "reasons": [
+        "vs Sean Burke \u2014 cause C (10.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
+        "Pitcher: High K rate (27%)",
+        "Platoon shape: spikes vs RHP (barrel 13%, air-pull 21%)",
+        "Good air-pull (21%)",
+        "Strong barrels (13%)",
+        "Platoon edge (L vs RHP)",
+        "Slightly + park (101)",
+        "Warm (77\u00b0F)",
+        "Top of order (#1)"
+      ],
+      "warnings": [
+        "Wind in ~7 mph"
+      ],
+      "role_notes": []
     },
     {
       "id": 673548,
@@ -1676,6 +1619,70 @@
       ]
     },
     {
+      "id": 700250,
+      "name": "Ben Rice",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Burke",
+      "venue": "Rate Field",
+      "gamePk": 824568,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 31,
+      "iso": 0.305,
+      "total": 56.0,
+      "tier": "Pass",
+      "role": "Pass",
+      "tb_score": 89.0,
+      "tb_tier": "Elite TB",
+      "tb_reasons": [
+        "Dangerous contact (hard-hit 47%, xwOBAcon .423)",
+        "High-contact bat (contact 83%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.78,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 1.6,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.0,
+        "hitter": 23.5,
+        "environment": 7.5,
+        "lineup": 12.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1606,
+        "barrel_rate": 0.11,
+        "hard_hit_rate": 0.4729,
+        "fb_rate": 0.5105,
+        "z_contact_rate": 0.8832,
+        "sweet_spot_rate": 0.3857,
+        "xwobacon": 0.4237,
+        "ev90": 106.2
+      },
+      "reasons": [
+        "vs Sean Burke \u2014 cause C (10.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
+        "Pitcher: High K rate (27%)",
+        "Above-avg barrels (11%)",
+        "Zone-damage: hard-hit 47% + Z-contact 88%",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (62% fastballs, rel 1.52 \u2192 mix-fit 1.78x)",
+        "Slightly + park (101)",
+        "Warm (77\u00b0F)",
+        "Top of order (#2)"
+      ],
+      "warnings": [
+        "Wind in ~7 mph"
+      ],
+      "role_notes": []
+    },
+    {
       "id": 695600,
       "name": "Carter Jensen",
       "team": "Kansas City Royals",
@@ -1723,7 +1730,7 @@
       },
       "reasons": [
         "vs Bailey Ober \u2014 cause B (14.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.44)",
+        "Pitcher: High HR allowed (HR/9 1.43)",
         "Good air-pull (20%)",
         "Platoon edge (L vs RHP)",
         "Warm (84\u00b0F)",
@@ -1778,7 +1785,7 @@
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (102)",
-        "Hot (95\u00b0F)"
+        "Hot (94\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -1837,7 +1844,7 @@
         "Above-avg barrels (10%)",
         "Platoon edge (L vs RHP)",
         "Slightly + park (102)",
-        "Hot (95\u00b0F)",
+        "Hot (94\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -1860,11 +1867,11 @@
       "slot": 1,
       "confirmed": true,
       "season_hr": 12,
-      "iso": 0.229,
+      "iso": 0.231,
       "total": 55.4,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 72.3,
+      "tb_score": 71.3,
       "tb_tier": "Strong TB",
       "tb_reasons": [
         "Platoon edge (R vs LHP)"
@@ -1895,7 +1902,7 @@
       },
       "reasons": [
         "vs Shane McClanahan \u2014 cause B (14.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.66)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.64)",
         "Pitcher: Fly-ball prone (31% FB allowed)",
         "Good air-pull (19%)",
         "Platoon edge (R vs LHP)",
@@ -1955,7 +1962,7 @@
       },
       "reasons": [
         "vs Bailey Ober \u2014 cause B (14.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.44)",
+        "Pitcher: High HR allowed (HR/9 1.43)",
         "Strong air-pull (26%)",
         "Above-avg barrels (10%)",
         "Zone-damage: hard-hit 46% + Z-contact 86%",
@@ -2016,7 +2023,7 @@
         "Pitcher: Elevated HR allowed (HR/9 1.86)",
         "Good air-pull (20%)",
         "Slightly + park (102)",
-        "Hot (95\u00b0F)",
+        "Hot (94\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -2039,7 +2046,7 @@
       "slot": 2,
       "confirmed": true,
       "season_hr": 9,
-      "iso": 0.237,
+      "iso": 0.236,
       "total": 55.3,
       "tier": "Pass",
       "role": "Watchlist",
@@ -2075,7 +2082,7 @@
       },
       "reasons": [
         "vs Noah Cameron \u2014 cause A (18.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.18)",
+        "Pitcher: High HR allowed (HR/9 1.17)",
         "Pitcher: Above-avg barrels allowed (9%)",
         "Platoon edge (R vs LHP)",
         "Poor pitch-mix fit (47% fastballs, rel 0.30 \u2192 mix-fit 0.52x)",
@@ -2199,7 +2206,7 @@
       },
       "reasons": [
         "vs Noah Cameron \u2014 cause A (18.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.18)",
+        "Pitcher: High HR allowed (HR/9 1.17)",
         "Pitcher: Above-avg barrels allowed (9%)",
         "Good air-pull (21%)",
         "Warm (84\u00b0F)",
@@ -2224,7 +2231,7 @@
       "slot": 3,
       "confirmed": true,
       "season_hr": 16,
-      "iso": 0.195,
+      "iso": 0.194,
       "total": 55.0,
       "tier": "Pass",
       "role": "Watchlist",
@@ -2260,7 +2267,7 @@
       },
       "reasons": [
         "vs Bailey Ober \u2014 cause B (14.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.44)",
+        "Pitcher: High HR allowed (HR/9 1.43)",
         "Platoon shape: spikes vs RHP (barrel 12%, air-pull 16%)",
         "Above-avg barrels (12%)",
         "Platoon edge (L vs RHP)",
@@ -2347,11 +2354,11 @@
       "slot": 6,
       "confirmed": true,
       "season_hr": 8,
-      "iso": 0.232,
+      "iso": 0.228,
       "total": 54.7,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 68.5,
+      "tb_score": 67.5,
       "tb_tier": "Solid TB",
       "tb_reasons": [
         "High-contact bat (contact 91%, Z-contact 88%) \u2014 banks XBH",
@@ -2383,7 +2390,7 @@
       },
       "reasons": [
         "vs Cole Winn \u2014 cause B (15.5/25)",
-        "Pitcher: Elevated HR allowed (HR/9 1.79)",
+        "Pitcher: Elevated HR allowed (HR/9 1.75)",
         "Good air-pull (20%)",
         "Above-avg barrels (10%)",
         "Platoon edge (L vs RHP)",
@@ -2649,7 +2656,7 @@
       "total": 54.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 73.0,
+      "tb_score": 72.0,
       "tb_tier": "Strong TB",
       "tb_reasons": [
         "High-contact bat (contact 81%, Z-contact 87%) \u2014 banks XBH"
@@ -2680,7 +2687,7 @@
       },
       "reasons": [
         "vs Cole Winn \u2014 cause B (15.5/25)",
-        "Pitcher: Elevated HR allowed (HR/9 1.79)",
+        "Pitcher: Elevated HR allowed (HR/9 1.75)",
         "Above-avg barrels (9%)",
         "Dome roof (weather neutralized)",
         "Heart of order (#3)",
@@ -2863,7 +2870,7 @@
         "Above-avg barrels (11%)",
         "Pitch-mix fit: damages this arsenal (65% fastballs, rel 2.11 \u2192 mix-fit 1.72x)",
         "Slightly + park (102)",
-        "Hot (95\u00b0F)",
+        "Hot (94\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2921,7 +2928,7 @@
       },
       "reasons": [
         "vs Noah Cameron \u2014 cause A (18.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.18)",
+        "Pitcher: High HR allowed (HR/9 1.17)",
         "Pitcher: Above-avg barrels allowed (9%)",
         "Poor pitch-mix fit (47% fastballs, rel 0.30 \u2192 mix-fit 0.52x)",
         "Warm (84\u00b0F)",
@@ -3068,11 +3075,11 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 19,
-      "iso": 0.252,
+      "iso": 0.251,
       "total": 52.6,
       "tier": "Pass",
       "role": "Pass",
-      "tb_score": 66.5,
+      "tb_score": 65.5,
       "tb_tier": "Solid TB",
       "tb_reasons": [],
       "shape_source": "statcast",
@@ -3101,7 +3108,7 @@
       },
       "reasons": [
         "vs Shane McClanahan \u2014 cause B (14.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.66)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.64)",
         "Pitcher: Fly-ball prone (31% FB allowed)",
         "Good air-pull (20%)",
         "Above-avg barrels (9%)",
@@ -3125,11 +3132,11 @@
       "slot": 1,
       "confirmed": true,
       "season_hr": 15,
-      "iso": 0.163,
+      "iso": 0.162,
       "total": 52.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 66.0,
+      "tb_score": 65.0,
       "tb_tier": "Solid TB",
       "tb_reasons": [
         "High-contact bat (contact 87%, Z-contact 86%) \u2014 banks XBH"
@@ -3160,7 +3167,7 @@
       },
       "reasons": [
         "vs Cole Winn \u2014 cause B (15.5/25)",
-        "Pitcher: Elevated HR allowed (HR/9 1.79)",
+        "Pitcher: Elevated HR allowed (HR/9 1.75)",
         "Above-avg barrels (9%)",
         "Dome roof (weather neutralized)",
         "Top of order (#1)",
@@ -3216,7 +3223,7 @@
       },
       "reasons": [
         "vs Bailey Ober \u2014 cause B (14.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.44)",
+        "Pitcher: High HR allowed (HR/9 1.43)",
         "Good air-pull (21%)",
         "Warm (84\u00b0F)",
         "Heart of order (#4)",
@@ -3300,11 +3307,11 @@
       "slot": 4,
       "confirmed": true,
       "season_hr": 19,
-      "iso": 0.191,
+      "iso": 0.19,
       "total": 52.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 54.9,
+      "tb_score": 53.9,
       "tb_tier": "Dart",
       "tb_reasons": [
         "Platoon edge (R vs LHP)"
@@ -3335,7 +3342,7 @@
       },
       "reasons": [
         "vs Shane McClanahan \u2014 cause B (14.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.66)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.64)",
         "Pitcher: Fly-ball prone (31% FB allowed)",
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (43% fastballs, rel 1.80 \u2192 mix-fit 1.34x)",
@@ -3545,11 +3552,11 @@
       "slot": 2,
       "confirmed": true,
       "season_hr": 14,
-      "iso": 0.155,
+      "iso": 0.153,
       "total": 51.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 66.5,
+      "tb_score": 65.5,
       "tb_tier": "Solid TB",
       "tb_reasons": [
         "Platoon edge (L vs RHP)"
@@ -3580,7 +3587,7 @@
       },
       "reasons": [
         "vs Cole Winn \u2014 cause B (15.5/25)",
-        "Pitcher: Elevated HR allowed (HR/9 1.79)",
+        "Pitcher: Elevated HR allowed (HR/9 1.75)",
         "Platoon edge (L vs RHP)",
         "Dome roof (weather neutralized)",
         "Top of order (#2)",
@@ -3639,65 +3646,6 @@
         "Bottom of order (#7)"
       ],
       "role_notes": []
-    },
-    {
-      "id": 545341,
-      "name": "Randal Grichuk",
-      "team": "Chicago White Sox",
-      "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Ryan Weathers",
-      "venue": "Rate Field",
-      "gamePk": 824568,
-      "slot": 4,
-      "confirmed": true,
-      "season_hr": 9,
-      "iso": 0.259,
-      "total": 51.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 58.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 12.0,
-        "hitter": 17.5,
-        "environment": 9.0,
-        "lineup": 11.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1721,
-        "barrel_rate": 0.0683,
-        "hard_hit_rate": 0.3921,
-        "fb_rate": 0.4686,
-        "z_contact_rate": 0.8556,
-        "sweet_spot_rate": 0.3198,
-        "xwobacon": 0.351,
-        "ev90": 105.0
-      },
-      "reasons": [
-        "vs Ryan Weathers \u2014 cause C (12.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.42)",
-        "Platoon edge (R vs LHP)",
-        "Slightly + park (101)",
-        "Warm (78\u00b0F)",
-        "Heart of order (#4)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
     },
     {
       "id": 691023,
@@ -3759,69 +3707,6 @@
       ]
     },
     {
-      "id": 665862,
-      "name": "Jazz Chisholm Jr.",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Burke",
-      "venue": "Rate Field",
-      "gamePk": 824568,
-      "slot": 6,
-      "confirmed": true,
-      "season_hr": 16,
-      "iso": 0.185,
-      "total": 51.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 65.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.74,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.7,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 21.2,
-        "environment": 9.0,
-        "lineup": 8.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1828,
-        "barrel_rate": 0.0889,
-        "hard_hit_rate": 0.4338,
-        "fb_rate": 0.5267,
-        "z_contact_rate": 0.8455,
-        "sweet_spot_rate": 0.3473,
-        "xwobacon": 0.3871,
-        "ev90": 104.1
-      },
-      "reasons": [
-        "vs Sean Burke \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "Pitcher: High K rate (27%)",
-        "Platoon shape: spikes vs RHP (barrel 12%, air-pull 19%)",
-        "Above-avg barrels (12%)",
-        "Platoon edge (L vs RHP)",
-        "Pitch-mix fit: damages this arsenal (62% fastballs, rel 2.20 \u2192 mix-fit 1.74x)",
-        "Slightly + park (101)",
-        "Warm (78\u00b0F)",
-        "Mid order (#6)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 678882,
       "name": "Ceddanne Rafaela",
       "team": "Boston Red Sox",
@@ -3868,7 +3753,7 @@
         "vs Mason Barnett \u2014 cause A (17.0/25)",
         "Pitcher: Elevated HR allowed (HR/9 1.86)",
         "Slightly + park (102)",
-        "Hot (95\u00b0F)",
+        "Hot (94\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -3926,7 +3811,7 @@
       },
       "reasons": [
         "vs Noah Cameron \u2014 cause A (18.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.18)",
+        "Pitcher: High HR allowed (HR/9 1.17)",
         "Pitcher: Above-avg barrels allowed (9%)",
         "Warm (84\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot",
@@ -4014,11 +3899,11 @@
       "slot": 4,
       "confirmed": true,
       "season_hr": 12,
-      "iso": 0.147,
+      "iso": 0.146,
       "total": 50.7,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 49.5,
+      "tb_score": 48.5,
       "tb_tier": "Pass",
       "tb_reasons": [
         "Platoon edge (L vs RHP)"
@@ -4049,7 +3934,7 @@
       },
       "reasons": [
         "vs Cole Winn \u2014 cause B (15.5/25)",
-        "Pitcher: Elevated HR allowed (HR/9 1.79)",
+        "Pitcher: Elevated HR allowed (HR/9 1.75)",
         "Platoon edge (L vs RHP)",
         "Dome roof (weather neutralized)",
         "Heart of order (#4)",
@@ -4161,7 +4046,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.02)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (102)",
-        "Hot (95\u00b0F)",
+        "Hot (94\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4219,7 +4104,7 @@
       },
       "reasons": [
         "vs Noah Cameron \u2014 cause A (18.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.18)",
+        "Pitcher: High HR allowed (HR/9 1.17)",
         "Pitcher: Above-avg barrels allowed (9%)",
         "Good air-pull (19%)",
         "Poor pitch-mix fit (47% fastballs, rel 0.30 \u2192 mix-fit 0.67x)",
@@ -4409,6 +4294,67 @@
       ]
     },
     {
+      "id": 545341,
+      "name": "Randal Grichuk",
+      "team": "Chicago White Sox",
+      "bats": "R",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Ryan Weathers",
+      "venue": "Rate Field",
+      "gamePk": 824568,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 9,
+      "iso": 0.259,
+      "total": 50.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 58.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 12.0,
+        "hitter": 17.5,
+        "environment": 7.5,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1721,
+        "barrel_rate": 0.0683,
+        "hard_hit_rate": 0.3921,
+        "fb_rate": 0.4686,
+        "z_contact_rate": 0.8556,
+        "sweet_spot_rate": 0.3198,
+        "xwobacon": 0.351,
+        "ev90": 105.0
+      },
+      "reasons": [
+        "vs Ryan Weathers \u2014 cause C (12.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.42)",
+        "Platoon edge (R vs LHP)",
+        "Slightly + park (101)",
+        "Warm (77\u00b0F)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Wind in ~7 mph"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 696285,
       "name": "Jacob Young",
       "team": "Washington Nationals",
@@ -4462,6 +4408,71 @@
       ],
       "warnings": [
         "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 665862,
+      "name": "Jazz Chisholm Jr.",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Burke",
+      "venue": "Rate Field",
+      "gamePk": 824568,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 16,
+      "iso": 0.185,
+      "total": 49.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 65.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.74,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.7,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.0,
+        "hitter": 21.2,
+        "environment": 7.5,
+        "lineup": 8.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1828,
+        "barrel_rate": 0.0889,
+        "hard_hit_rate": 0.4338,
+        "fb_rate": 0.5267,
+        "z_contact_rate": 0.8455,
+        "sweet_spot_rate": 0.3473,
+        "xwobacon": 0.3871,
+        "ev90": 104.1
+      },
+      "reasons": [
+        "vs Sean Burke \u2014 cause C (10.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
+        "Pitcher: High K rate (27%)",
+        "Platoon shape: spikes vs RHP (barrel 12%, air-pull 19%)",
+        "Above-avg barrels (12%)",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (62% fastballs, rel 2.20 \u2192 mix-fit 1.74x)",
+        "Slightly + park (101)",
+        "Warm (77\u00b0F)",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Wind in ~7 mph"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -4523,66 +4534,6 @@
       "warnings": [
         "Lineup not confirmed"
       ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 808959,
-      "name": "Munetaka Murakami",
-      "team": "Chicago White Sox",
-      "bats": "L",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Ryan Weathers",
-      "venue": "Rate Field",
-      "gamePk": 824568,
-      "slot": 2,
-      "confirmed": true,
-      "season_hr": 23,
-      "iso": 0.307,
-      "total": 49.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 49.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Whiff risk (Z-contact 69%) \u2014 TB volatility"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.46,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 12.0,
-        "hitter": 14.0,
-        "environment": 9.0,
-        "lineup": 12.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1647,
-        "barrel_rate": 0.0654,
-        "hard_hit_rate": 0.4286,
-        "fb_rate": 0.4785,
-        "z_contact_rate": 0.6876,
-        "sweet_spot_rate": 0.3038,
-        "xwobacon": 0.3456,
-        "ev90": 102.9
-      },
-      "reasons": [
-        "vs Ryan Weathers \u2014 cause C (12.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.42)",
-        "Whiff risk: Z-contact only 69%",
-        "Poor pitch-mix fit (57% breaking balls, rel 0.30 \u2192 mix-fit 0.46x)",
-        "Slightly + park (101)",
-        "Warm (78\u00b0F)",
-        "Top of order (#2)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -4862,73 +4813,12 @@
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (102)",
-        "Hot (95\u00b0F)",
+        "Hot (94\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Lineup not confirmed"
       ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 805367,
-      "name": "Chase Meidroth",
-      "team": "Chicago White Sox",
-      "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Ryan Weathers",
-      "venue": "Rate Field",
-      "gamePk": 824568,
-      "slot": 1,
-      "confirmed": true,
-      "season_hr": 9,
-      "iso": 0.122,
-      "total": 48.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 58.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 88%, Z-contact 87%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.46,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 12.0,
-        "hitter": 13.5,
-        "environment": 9.0,
-        "lineup": 12.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1716,
-        "barrel_rate": 0.0627,
-        "hard_hit_rate": 0.3854,
-        "fb_rate": 0.4875,
-        "z_contact_rate": 0.8728,
-        "sweet_spot_rate": 0.337,
-        "xwobacon": 0.3535,
-        "ev90": 99.2
-      },
-      "reasons": [
-        "vs Ryan Weathers \u2014 cause C (12.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.42)",
-        "Platoon edge (R vs LHP)",
-        "Poor pitch-mix fit (57% breaking balls, rel 0.30 \u2192 mix-fit 0.46x)",
-        "Slightly + park (101)",
-        "Warm (78\u00b0F)",
-        "Top of order (#1)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -4985,63 +4875,6 @@
         "Heart of order (#4)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
-      ],
-      "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 695657,
-      "name": "Colson Montgomery",
-      "team": "Chicago White Sox",
-      "bats": "L",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Ryan Weathers",
-      "venue": "Rate Field",
-      "gamePk": 824568,
-      "slot": 5,
-      "confirmed": true,
-      "season_hr": 24,
-      "iso": 0.235,
-      "total": 48.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 56.9,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.86,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 12.0,
-        "hitter": 17.1,
-        "environment": 9.0,
-        "lineup": 8.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2187,
-        "barrel_rate": 0.0786,
-        "hard_hit_rate": 0.4202,
-        "fb_rate": 0.5362,
-        "z_contact_rate": 0.8231,
-        "sweet_spot_rate": 0.3644,
-        "xwobacon": 0.3923,
-        "ev90": 106.3
-      },
-      "reasons": [
-        "vs Ryan Weathers \u2014 cause C (12.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.42)",
-        "Good air-pull (22%)",
-        "Slightly + park (101)",
-        "Warm (78\u00b0F)",
-        "Mid order (#5)",
-        "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
       "role_notes": [
@@ -5168,117 +5001,62 @@
       ]
     },
     {
-      "id": 641857,
-      "name": "Ryan McMahon",
-      "team": "New York Yankees",
+      "id": 808959,
+      "name": "Munetaka Murakami",
+      "team": "Chicago White Sox",
       "bats": "L",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Burke",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Ryan Weathers",
       "venue": "Rate Field",
       "gamePk": 824568,
-      "slot": 8,
+      "slot": 2,
       "confirmed": true,
-      "season_hr": 9,
-      "iso": 0.159,
-      "total": 48.0,
+      "season_hr": 23,
+      "iso": 0.307,
+      "total": 47.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 64.5,
-      "tb_tier": "Solid TB",
+      "tb_score": 49.5,
+      "tb_tier": "Pass",
       "tb_reasons": [
-        "High-contact bat (contact 83%, Z-contact 87%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
+        "Whiff risk (Z-contact 69%) \u2014 TB volatility"
       ],
       "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": 1.74,
+      "mix_fit": 0.46,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.3,
+      "due_hr": 0.0,
       "pitcher_grade": "C",
       "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 21.0,
-        "environment": 9.0,
-        "lineup": 5.0,
-        "confidence": 3.0
+        "pitcher": 12.0,
+        "hitter": 14.0,
+        "environment": 7.5,
+        "lineup": 12.0,
+        "confidence": 2.0
       },
       "statcast": {
         "air_pull_rate": 0.1647,
-        "barrel_rate": 0.094,
-        "hard_hit_rate": 0.4086,
+        "barrel_rate": 0.0654,
+        "hard_hit_rate": 0.4286,
         "fb_rate": 0.4785,
-        "z_contact_rate": 0.8665,
-        "sweet_spot_rate": 0.3372,
-        "xwobacon": 0.3637,
-        "ev90": 104.6
+        "z_contact_rate": 0.6876,
+        "sweet_spot_rate": 0.3038,
+        "xwobacon": 0.3456,
+        "ev90": 102.9
       },
       "reasons": [
-        "vs Sean Burke \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "Pitcher: High K rate (27%)",
-        "Above-avg barrels (9%)",
-        "Platoon edge (L vs RHP)",
-        "Pitch-mix fit: damages this arsenal (62% fastballs, rel 2.20 \u2192 mix-fit 1.74x)",
+        "vs Ryan Weathers \u2014 cause C (12.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.42)",
+        "Whiff risk: Z-contact only 69%",
+        "Poor pitch-mix fit (57% breaking balls, rel 0.30 \u2192 mix-fit 0.46x)",
         "Slightly + park (101)",
-        "Warm (78\u00b0F)",
+        "Warm (77\u00b0F)",
+        "Top of order (#2)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Bottom of order (#8)"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 642708,
-      "name": "Amed Rosario",
-      "team": "New York Yankees",
-      "bats": "R",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Burke",
-      "venue": "Rate Field",
-      "gamePk": 824568,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.205,
-      "total": 48.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 41.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 20.0,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Sean Burke \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "Pitcher: High K rate (27%)",
-        "Proxy: strong HR rate",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Slightly + park (101)",
-        "Warm (78\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
+        "Wind in ~7 mph"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -5300,7 +5078,7 @@
       "total": 47.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 55.3,
+      "tb_score": 54.3,
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
@@ -5329,7 +5107,7 @@
       },
       "reasons": [
         "vs Shane McClanahan \u2014 cause B (14.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.66)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.64)",
         "Pitcher: Fly-ball prone (31% FB allowed)",
         "Poor pitch-mix fit (43% fastballs, rel 0.30 \u2192 mix-fit 0.70x)",
         "Dome roof (weather neutralized)",
@@ -5445,7 +5223,7 @@
         "Good air-pull (19%)",
         "Poor pitch-mix fit (65% fastballs, rel 0.30 \u2192 mix-fit 0.37x)",
         "Slightly + park (102)",
-        "Hot (95\u00b0F)",
+        "Hot (94\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5471,7 +5249,7 @@
       "total": 47.3,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 61.5,
+      "tb_score": 60.5,
       "tb_tier": "Solid TB",
       "tb_reasons": [
         "High-contact bat (contact 90%, Z-contact 87%) \u2014 banks XBH"
@@ -5502,7 +5280,7 @@
       },
       "reasons": [
         "vs Cole Winn \u2014 cause B (15.5/25)",
-        "Pitcher: Elevated HR allowed (HR/9 1.79)",
+        "Pitcher: Elevated HR allowed (HR/9 1.75)",
         "Good air-pull (21%)",
         "Dome roof (weather neutralized)",
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -5530,7 +5308,7 @@
       "total": 47.2,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 64.8,
+      "tb_score": 63.8,
       "tb_tier": "Solid TB",
       "tb_reasons": [
         "Platoon edge (R vs LHP)"
@@ -5561,7 +5339,7 @@
       },
       "reasons": [
         "vs Shane McClanahan \u2014 cause B (14.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.66)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.64)",
         "Pitcher: Fly-ball prone (31% FB allowed)",
         "Platoon edge (R vs LHP)",
         "Dome roof (weather neutralized)",
@@ -5569,6 +5347,69 @@
       ],
       "warnings": [
         "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 805367,
+      "name": "Chase Meidroth",
+      "team": "Chicago White Sox",
+      "bats": "R",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Ryan Weathers",
+      "venue": "Rate Field",
+      "gamePk": 824568,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 9,
+      "iso": 0.122,
+      "total": 47.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 58.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 88%, Z-contact 87%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.46,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 12.0,
+        "hitter": 13.5,
+        "environment": 7.5,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1716,
+        "barrel_rate": 0.0627,
+        "hard_hit_rate": 0.3854,
+        "fb_rate": 0.4875,
+        "z_contact_rate": 0.8728,
+        "sweet_spot_rate": 0.337,
+        "xwobacon": 0.3535,
+        "ev90": 99.2
+      },
+      "reasons": [
+        "vs Ryan Weathers \u2014 cause C (12.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.42)",
+        "Platoon edge (R vs LHP)",
+        "Poor pitch-mix fit (57% breaking balls, rel 0.30 \u2192 mix-fit 0.46x)",
+        "Slightly + park (101)",
+        "Warm (77\u00b0F)",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Wind in ~7 mph"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -5625,7 +5466,7 @@
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (65% fastballs, rel 0.30 \u2192 mix-fit 0.37x)",
         "Slightly + park (102)",
-        "Hot (95\u00b0F)",
+        "Hot (94\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5945,7 +5786,7 @@
       "total": 46.7,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 63.5,
+      "tb_score": 62.5,
       "tb_tier": "Solid TB",
       "tb_reasons": [
         "High-contact bat (contact 83%, Z-contact 87%) \u2014 banks XBH",
@@ -5977,7 +5818,7 @@
       },
       "reasons": [
         "vs Shane McClanahan \u2014 cause B (14.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.66)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.64)",
         "Pitcher: Fly-ball prone (31% FB allowed)",
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (43% fastballs, rel 1.57 \u2192 mix-fit 1.24x)",
@@ -5985,6 +5826,184 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 695657,
+      "name": "Colson Montgomery",
+      "team": "Chicago White Sox",
+      "bats": "L",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Ryan Weathers",
+      "venue": "Rate Field",
+      "gamePk": 824568,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 24,
+      "iso": 0.235,
+      "total": 46.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 56.9,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.86,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 12.0,
+        "hitter": 17.1,
+        "environment": 7.5,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2187,
+        "barrel_rate": 0.0786,
+        "hard_hit_rate": 0.4202,
+        "fb_rate": 0.5362,
+        "z_contact_rate": 0.8231,
+        "sweet_spot_rate": 0.3644,
+        "xwobacon": 0.3923,
+        "ev90": 106.3
+      },
+      "reasons": [
+        "vs Ryan Weathers \u2014 cause C (12.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.42)",
+        "Good air-pull (22%)",
+        "Slightly + park (101)",
+        "Warm (77\u00b0F)",
+        "Mid order (#5)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Wind in ~7 mph"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 641857,
+      "name": "Ryan McMahon",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Burke",
+      "venue": "Rate Field",
+      "gamePk": 824568,
+      "slot": 8,
+      "confirmed": true,
+      "season_hr": 9,
+      "iso": 0.159,
+      "total": 46.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 64.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 83%, Z-contact 87%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.74,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.3,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.0,
+        "hitter": 21.0,
+        "environment": 7.5,
+        "lineup": 5.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1647,
+        "barrel_rate": 0.094,
+        "hard_hit_rate": 0.4086,
+        "fb_rate": 0.4785,
+        "z_contact_rate": 0.8665,
+        "sweet_spot_rate": 0.3372,
+        "xwobacon": 0.3637,
+        "ev90": 104.6
+      },
+      "reasons": [
+        "vs Sean Burke \u2014 cause C (10.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
+        "Pitcher: High K rate (27%)",
+        "Above-avg barrels (9%)",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (62% fastballs, rel 2.20 \u2192 mix-fit 1.74x)",
+        "Slightly + park (101)",
+        "Warm (77\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Wind in ~7 mph",
+        "Bottom of order (#8)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 642708,
+      "name": "Amed Rosario",
+      "team": "New York Yankees",
+      "bats": "R",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Burke",
+      "venue": "Rate Field",
+      "gamePk": 824568,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 9,
+      "iso": 0.205,
+      "total": 46.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 41.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.0,
+        "hitter": 20.0,
+        "environment": 7.5,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Sean Burke \u2014 cause C (10.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
+        "Pitcher: High K rate (27%)",
+        "Proxy: strong HR rate",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Slightly + park (101)",
+        "Warm (77\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Wind in ~7 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -6042,7 +6061,7 @@
         "Good air-pull (19%)",
         "Poor pitch-mix fit (65% fastballs, rel 0.93 \u2192 mix-fit 0.78x)",
         "Slightly + park (102)",
-        "Hot (95\u00b0F)",
+        "Hot (94\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6101,7 +6120,7 @@
         "vs Mason Barnett \u2014 cause A (17.0/25)",
         "Pitcher: Elevated HR allowed (HR/9 1.86)",
         "Slightly + park (102)",
-        "Hot (95\u00b0F)",
+        "Hot (94\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -6160,7 +6179,7 @@
       },
       "reasons": [
         "vs Noah Cameron \u2014 cause A (18.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.18)",
+        "Pitcher: High HR allowed (HR/9 1.17)",
         "Pitcher: Above-avg barrels allowed (9%)",
         "Poor pitch-mix fit (47% fastballs, rel 0.30 \u2192 mix-fit 0.52x)",
         "Warm (84\u00b0F)",
@@ -6186,11 +6205,11 @@
       "slot": 5,
       "confirmed": true,
       "season_hr": 6,
-      "iso": 0.166,
+      "iso": 0.165,
       "total": 46.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 64.0,
+      "tb_score": 63.0,
       "tb_tier": "Solid TB",
       "tb_reasons": [
         "High-contact bat (contact 80%, Z-contact 86%) \u2014 banks XBH"
@@ -6221,67 +6240,7 @@
       },
       "reasons": [
         "vs Cole Winn \u2014 cause B (15.5/25)",
-        "Pitcher: Elevated HR allowed (HR/9 1.79)",
-        "Dome roof (weather neutralized)",
-        "Mid order (#5)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 679822,
-      "name": "Justin Foscue",
-      "team": "Texas Rangers",
-      "bats": "R",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Shane McClanahan",
-      "venue": "Tropicana Field",
-      "gamePk": 822946,
-      "slot": 5,
-      "confirmed": true,
-      "season_hr": 7,
-      "iso": 0.224,
-      "total": 45.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 54.8,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.7,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 14.5,
-        "hitter": 14.2,
-        "environment": 7.0,
-        "lineup": 8.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1721,
-        "barrel_rate": 0.0683,
-        "hard_hit_rate": 0.3495,
-        "fb_rate": 0.4861,
-        "z_contact_rate": 0.8309,
-        "sweet_spot_rate": 0.3374,
-        "xwobacon": 0.3485,
-        "ev90": 94.0
-      },
-      "reasons": [
-        "vs Shane McClanahan \u2014 cause B (14.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.66)",
-        "Pitcher: Fly-ball prone (31% FB allowed)",
-        "Platoon edge (R vs LHP)",
-        "Poor pitch-mix fit (43% fastballs, rel 0.30 \u2192 mix-fit 0.70x)",
+        "Pitcher: Elevated HR allowed (HR/9 1.75)",
         "Dome roof (weather neutralized)",
         "Mid order (#5)",
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -6307,7 +6266,7 @@
       "total": 45.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 36.5,
+      "tb_score": 35.5,
       "tb_tier": "Pass",
       "tb_reasons": [
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
@@ -6329,7 +6288,7 @@
       "statcast": null,
       "reasons": [
         "vs Shane McClanahan \u2014 cause B (14.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.66)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.64)",
         "Pitcher: Fly-ball prone (31% FB allowed)",
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
@@ -6339,65 +6298,6 @@
       "warnings": [
         "Lineup not confirmed"
       ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 691176,
-      "name": "Jasson Dom\u00ednguez",
-      "team": "New York Yankees",
-      "bats": "S",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Burke",
-      "venue": "Rate Field",
-      "gamePk": 824568,
-      "slot": 3,
-      "confirmed": true,
-      "season_hr": 6,
-      "iso": 0.156,
-      "total": 45.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 61.7,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 88%, Z-contact 90%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.06,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 13.3,
-        "environment": 9.0,
-        "lineup": 11.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1713,
-        "barrel_rate": 0.0706,
-        "hard_hit_rate": 0.3971,
-        "fb_rate": 0.4451,
-        "z_contact_rate": 0.8954,
-        "sweet_spot_rate": 0.3367,
-        "xwobacon": 0.3684,
-        "ev90": 106.0
-      },
-      "reasons": [
-        "vs Sean Burke \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "Pitcher: High K rate (27%)",
-        "Slightly + park (101)",
-        "Warm (78\u00b0F)",
-        "Heart of order (#3)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -6464,64 +6364,6 @@
       ]
     },
     {
-      "id": 502671,
-      "name": "Paul Goldschmidt",
-      "team": "New York Yankees",
-      "bats": "R",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Burke",
-      "venue": "Rate Field",
-      "gamePk": 824568,
-      "slot": 4,
-      "confirmed": true,
-      "season_hr": 16,
-      "iso": 0.215,
-      "total": 44.9,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 50.9,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.73,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 12.9,
-        "environment": 9.0,
-        "lineup": 11.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1624,
-        "barrel_rate": 0.0786,
-        "hard_hit_rate": 0.3613,
-        "fb_rate": 0.5035,
-        "z_contact_rate": 0.7776,
-        "sweet_spot_rate": 0.3972,
-        "xwobacon": 0.3773,
-        "ev90": 99.1
-      },
-      "reasons": [
-        "vs Sean Burke \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "Pitcher: High K rate (27%)",
-        "Poor pitch-mix fit (62% fastballs, rel 1.00 \u2192 mix-fit 0.73x)",
-        "Slightly + park (101)",
-        "Warm (78\u00b0F)",
-        "Heart of order (#4)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 686555,
       "name": "Isaac Collins",
       "team": "Kansas City Royals",
@@ -6566,7 +6408,7 @@
       },
       "reasons": [
         "vs Bailey Ober \u2014 cause B (14.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.44)",
+        "Pitcher: High HR allowed (HR/9 1.43)",
         "Warm (84\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -6628,7 +6470,7 @@
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (65% fastballs, rel 1.00 \u2192 mix-fit 0.82x)",
         "Slightly + park (102)",
-        "Hot (95\u00b0F)",
+        "Hot (94\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6993,6 +6835,128 @@
       ]
     },
     {
+      "id": 691176,
+      "name": "Jasson Dom\u00ednguez",
+      "team": "New York Yankees",
+      "bats": "S",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Burke",
+      "venue": "Rate Field",
+      "gamePk": 824568,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 6,
+      "iso": 0.156,
+      "total": 43.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 61.7,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 88%, Z-contact 90%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.06,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.0,
+        "hitter": 13.3,
+        "environment": 7.5,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1713,
+        "barrel_rate": 0.0706,
+        "hard_hit_rate": 0.3971,
+        "fb_rate": 0.4451,
+        "z_contact_rate": 0.8954,
+        "sweet_spot_rate": 0.3367,
+        "xwobacon": 0.3684,
+        "ev90": 106.0
+      },
+      "reasons": [
+        "vs Sean Burke \u2014 cause C (10.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
+        "Pitcher: High K rate (27%)",
+        "Slightly + park (101)",
+        "Warm (77\u00b0F)",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Wind in ~7 mph"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 679822,
+      "name": "Justin Foscue",
+      "team": "Texas Rangers",
+      "bats": "R",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Shane McClanahan",
+      "venue": "Tropicana Field",
+      "gamePk": 822946,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.222,
+      "total": 43.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 50.8,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.7,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 14.5,
+        "hitter": 14.2,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1721,
+        "barrel_rate": 0.0683,
+        "hard_hit_rate": 0.3495,
+        "fb_rate": 0.4861,
+        "z_contact_rate": 0.8309,
+        "sweet_spot_rate": 0.3374,
+        "xwobacon": 0.3485,
+        "ev90": 94.0
+      },
+      "reasons": [
+        "vs Shane McClanahan \u2014 cause B (14.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.64)",
+        "Pitcher: Fly-ball prone (31% FB allowed)",
+        "Platoon edge (R vs LHP)",
+        "Poor pitch-mix fit (43% fastballs, rel 0.30 \u2192 mix-fit 0.70x)",
+        "Dome roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 686681,
       "name": "Michael Massey",
       "team": "Kansas City Royals",
@@ -7040,7 +7004,7 @@
       },
       "reasons": [
         "vs Bailey Ober \u2014 cause B (14.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.44)",
+        "Pitcher: High HR allowed (HR/9 1.43)",
         "Platoon shape fades vs RHP",
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (41% fastballs, rel 0.30 \u2192 mix-fit 0.71x)",
@@ -7107,6 +7071,66 @@
       ],
       "warnings": [
         "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 502671,
+      "name": "Paul Goldschmidt",
+      "team": "New York Yankees",
+      "bats": "R",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Burke",
+      "venue": "Rate Field",
+      "gamePk": 824568,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 16,
+      "iso": 0.215,
+      "total": 43.4,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 50.9,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.73,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.0,
+        "hitter": 12.9,
+        "environment": 7.5,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1624,
+        "barrel_rate": 0.0786,
+        "hard_hit_rate": 0.3613,
+        "fb_rate": 0.5035,
+        "z_contact_rate": 0.7776,
+        "sweet_spot_rate": 0.3972,
+        "xwobacon": 0.3773,
+        "ev90": 99.1
+      },
+      "reasons": [
+        "vs Sean Burke \u2014 cause C (10.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
+        "Pitcher: High K rate (27%)",
+        "Poor pitch-mix fit (62% fastballs, rel 1.00 \u2192 mix-fit 0.73x)",
+        "Slightly + park (101)",
+        "Warm (77\u00b0F)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Wind in ~7 mph"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -7355,7 +7379,7 @@
       "total": 42.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 53.3,
+      "tb_score": 52.3,
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
@@ -7384,7 +7408,7 @@
       },
       "reasons": [
         "vs Shane McClanahan \u2014 cause B (14.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.66)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.64)",
         "Pitcher: Fly-ball prone (31% FB allowed)",
         "Poor pitch-mix fit (43% fastballs, rel 0.30 \u2192 mix-fit 0.70x)",
         "Dome roof (weather neutralized)",
@@ -7679,67 +7703,6 @@
       ]
     },
     {
-      "id": 669224,
-      "name": "Austin Wells",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Burke",
-      "venue": "Rate Field",
-      "gamePk": 824568,
-      "slot": 9,
-      "confirmed": true,
-      "season_hr": 7,
-      "iso": 0.107,
-      "total": 42.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 50.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 16.0,
-        "environment": 9.0,
-        "lineup": 5.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1816,
-        "barrel_rate": 0.0808,
-        "hard_hit_rate": 0.3965,
-        "fb_rate": 0.4866,
-        "z_contact_rate": 0.8331,
-        "sweet_spot_rate": 0.3429,
-        "xwobacon": 0.3716,
-        "ev90": 102.6
-      },
-      "reasons": [
-        "vs Sean Burke \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "Pitcher: High K rate (27%)",
-        "Platoon edge (L vs RHP)",
-        "Slightly + park (101)",
-        "Warm (78\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Bottom of order (#9)"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 642715,
       "name": "Willy Adames",
       "team": "San Francisco Giants",
@@ -7843,7 +7806,7 @@
       },
       "reasons": [
         "vs Bailey Ober \u2014 cause B (14.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.44)",
+        "Pitcher: High HR allowed (HR/9 1.43)",
         "Low air-pull (9%)",
         "Pitch-mix fit: damages this arsenal (41% fastballs, rel 2.20 \u2192 mix-fit 1.29x)",
         "Warm (84\u00b0F)",
@@ -7918,65 +7881,6 @@
       ]
     },
     {
-      "id": 643217,
-      "name": "Andrew Benintendi",
-      "team": "Chicago White Sox",
-      "bats": "L",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Ryan Weathers",
-      "venue": "Rate Field",
-      "gamePk": 824568,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.173,
-      "total": 41.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 56.9,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 82%, Z-contact 86%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.86,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 12.0,
-        "hitter": 12.8,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1693,
-        "barrel_rate": 0.0619,
-        "hard_hit_rate": 0.3598,
-        "fb_rate": 0.4955,
-        "z_contact_rate": 0.8609,
-        "sweet_spot_rate": 0.3473,
-        "xwobacon": 0.3425,
-        "ev90": 97.6
-      },
-      "reasons": [
-        "vs Ryan Weathers \u2014 cause C (12.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.42)",
-        "Slightly + park (101)",
-        "Warm (78\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 686469,
       "name": "Vinnie Pasquantino",
       "team": "Kansas City Royals",
@@ -8024,7 +7928,7 @@
       },
       "reasons": [
         "vs Bailey Ober \u2014 cause B (14.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.44)",
+        "Pitcher: High HR allowed (HR/9 1.43)",
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (41% fastballs, rel 0.30 \u2192 mix-fit 0.71x)",
         "Warm (84\u00b0F)",
@@ -8215,64 +8119,6 @@
       ]
     },
     {
-      "id": 671976,
-      "name": "Tristan Peters",
-      "team": "Chicago White Sox",
-      "bats": "L",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Ryan Weathers",
-      "venue": "Rate Field",
-      "gamePk": 824568,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 6,
-      "iso": 0.156,
-      "total": 41.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 49.8,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.71,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 12.0,
-        "hitter": 12.1,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1887,
-        "barrel_rate": 0.0724,
-        "hard_hit_rate": 0.3935,
-        "fb_rate": 0.5181,
-        "z_contact_rate": 0.8559,
-        "sweet_spot_rate": 0.3318,
-        "xwobacon": 0.3607,
-        "ev90": 101.0
-      },
-      "reasons": [
-        "vs Ryan Weathers \u2014 cause C (12.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.42)",
-        "Poor pitch-mix fit (57% breaking balls, rel 0.30 \u2192 mix-fit 0.71x)",
-        "Slightly + park (101)",
-        "Warm (78\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 683357,
       "name": "Owen Caissie",
       "team": "Miami Marlins",
@@ -8438,66 +8284,6 @@
       ]
     },
     {
-      "id": 803011,
-      "name": "Sam Antonacci",
-      "team": "Chicago White Sox",
-      "bats": "L",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Ryan Weathers",
-      "venue": "Rate Field",
-      "gamePk": 824568,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.139,
-      "total": 40.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 54.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 91%, Z-contact 86%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.63,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.3,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 12.0,
-        "hitter": 11.7,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1757,
-        "barrel_rate": 0.0724,
-        "hard_hit_rate": 0.3759,
-        "fb_rate": 0.4733,
-        "z_contact_rate": 0.8609,
-        "sweet_spot_rate": 0.3617,
-        "xwobacon": 0.3534,
-        "ev90": 103.1
-      },
-      "reasons": [
-        "vs Ryan Weathers \u2014 cause C (12.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.42)",
-        "Poor pitch-mix fit (57% breaking balls, rel 0.30 \u2192 mix-fit 0.63x)",
-        "Slightly + park (101)",
-        "Warm (78\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 606192,
       "name": "Teoscar Hern\u00e1ndez",
       "team": "Los Angeles Dodgers",
@@ -8601,6 +8387,128 @@
         "Model: one strong signal"
       ],
       "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 669224,
+      "name": "Austin Wells",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Burke",
+      "venue": "Rate Field",
+      "gamePk": 824568,
+      "slot": 9,
+      "confirmed": true,
+      "season_hr": 7,
+      "iso": 0.107,
+      "total": 40.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 50.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.0,
+        "hitter": 16.0,
+        "environment": 7.5,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1816,
+        "barrel_rate": 0.0808,
+        "hard_hit_rate": 0.3965,
+        "fb_rate": 0.4866,
+        "z_contact_rate": 0.8331,
+        "sweet_spot_rate": 0.3429,
+        "xwobacon": 0.3716,
+        "ev90": 102.6
+      },
+      "reasons": [
+        "vs Sean Burke \u2014 cause C (10.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
+        "Pitcher: High K rate (27%)",
+        "Platoon edge (L vs RHP)",
+        "Slightly + park (101)",
+        "Warm (77\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Wind in ~7 mph",
+        "Bottom of order (#9)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 643217,
+      "name": "Andrew Benintendi",
+      "team": "Chicago White Sox",
+      "bats": "L",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Ryan Weathers",
+      "venue": "Rate Field",
+      "gamePk": 824568,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 10,
+      "iso": 0.173,
+      "total": 40.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 56.9,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 82%, Z-contact 86%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.86,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 12.0,
+        "hitter": 12.8,
+        "environment": 7.5,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1693,
+        "barrel_rate": 0.0619,
+        "hard_hit_rate": 0.3598,
+        "fb_rate": 0.4955,
+        "z_contact_rate": 0.8609,
+        "sweet_spot_rate": 0.3473,
+        "xwobacon": 0.3425,
+        "ev90": 97.6
+      },
+      "reasons": [
+        "vs Ryan Weathers \u2014 cause C (12.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.42)",
+        "Slightly + park (101)",
+        "Warm (77\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Wind in ~7 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -8732,6 +8640,65 @@
       ]
     },
     {
+      "id": 671976,
+      "name": "Tristan Peters",
+      "team": "Chicago White Sox",
+      "bats": "L",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Ryan Weathers",
+      "venue": "Rate Field",
+      "gamePk": 824568,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 6,
+      "iso": 0.156,
+      "total": 39.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 49.8,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.71,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 12.0,
+        "hitter": 12.1,
+        "environment": 7.5,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1887,
+        "barrel_rate": 0.0724,
+        "hard_hit_rate": 0.3935,
+        "fb_rate": 0.5181,
+        "z_contact_rate": 0.8559,
+        "sweet_spot_rate": 0.3318,
+        "xwobacon": 0.3607,
+        "ev90": 101.0
+      },
+      "reasons": [
+        "vs Ryan Weathers \u2014 cause C (12.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.42)",
+        "Poor pitch-mix fit (57% breaking balls, rel 0.30 \u2192 mix-fit 0.71x)",
+        "Slightly + park (101)",
+        "Warm (77\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Wind in ~7 mph",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 663728,
       "name": "Cal Raleigh",
       "team": "Seattle Mariners",
@@ -8789,6 +8756,67 @@
       ]
     },
     {
+      "id": 803011,
+      "name": "Sam Antonacci",
+      "team": "Chicago White Sox",
+      "bats": "L",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Ryan Weathers",
+      "venue": "Rate Field",
+      "gamePk": 824568,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 8,
+      "iso": 0.139,
+      "total": 39.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 54.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 91%, Z-contact 86%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.63,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.3,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 12.0,
+        "hitter": 11.7,
+        "environment": 7.5,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1757,
+        "barrel_rate": 0.0724,
+        "hard_hit_rate": 0.3759,
+        "fb_rate": 0.4733,
+        "z_contact_rate": 0.8609,
+        "sweet_spot_rate": 0.3617,
+        "xwobacon": 0.3534,
+        "ev90": 103.1
+      },
+      "reasons": [
+        "vs Ryan Weathers \u2014 cause C (12.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.42)",
+        "Poor pitch-mix fit (57% breaking balls, rel 0.30 \u2192 mix-fit 0.63x)",
+        "Slightly + park (101)",
+        "Warm (77\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Wind in ~7 mph",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 694208,
       "name": "Mois\u00e9s Ballesteros",
       "team": "Chicago Cubs",
@@ -8830,69 +8858,6 @@
         "Pitcher: Avg+ HR allowed (HR/9 0.80)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Hot (88\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 641355,
-      "name": "Cody Bellinger",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Burke",
-      "venue": "Rate Field",
-      "gamePk": 824568,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.161,
-      "total": 37.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 63.5,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 80%, Z-contact 87%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.3,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 10.8,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1586,
-        "barrel_rate": 0.0579,
-        "hard_hit_rate": 0.3801,
-        "fb_rate": 0.5465,
-        "z_contact_rate": 0.873,
-        "sweet_spot_rate": 0.3801,
-        "xwobacon": 0.3814,
-        "ev90": 101.1
-      },
-      "reasons": [
-        "vs Sean Burke \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "Pitcher: High K rate (27%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (62% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Slightly + park (101)",
-        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9303,6 +9268,70 @@
       ]
     },
     {
+      "id": 641355,
+      "name": "Cody Bellinger",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Burke",
+      "venue": "Rate Field",
+      "gamePk": 824568,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 11,
+      "iso": 0.161,
+      "total": 36.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 63.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 80%, Z-contact 87%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.3,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.0,
+        "hitter": 10.8,
+        "environment": 7.5,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1586,
+        "barrel_rate": 0.0579,
+        "hard_hit_rate": 0.3801,
+        "fb_rate": 0.5465,
+        "z_contact_rate": 0.873,
+        "sweet_spot_rate": 0.3801,
+        "xwobacon": 0.3814,
+        "ev90": 101.1
+      },
+      "reasons": [
+        "vs Sean Burke \u2014 cause C (10.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
+        "Pitcher: High K rate (27%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (62% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
+        "Slightly + park (101)",
+        "Warm (77\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Wind in ~7 mph",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 701807,
       "name": "Carson Benge",
       "team": "New York Mets",
@@ -9589,65 +9618,6 @@
       ]
     },
     {
-      "id": 676609,
-      "name": "Jos\u00e9 Caballero",
-      "team": "New York Yankees",
-      "bats": "R",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Burke",
-      "venue": "Rate Field",
-      "gamePk": 824568,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.137,
-      "total": 33.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 45.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.3,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 6.2,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1558,
-        "barrel_rate": 0.0619,
-        "hard_hit_rate": 0.3413,
-        "fb_rate": 0.4486,
-        "z_contact_rate": 0.8558,
-        "sweet_spot_rate": 0.2848,
-        "xwobacon": 0.337,
-        "ev90": 98.5
-      },
-      "reasons": [
-        "vs Sean Burke \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "Pitcher: High K rate (27%)",
-        "Poor pitch-mix fit (62% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Slightly + park (101)",
-        "Warm (78\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 689414,
       "name": "Liam Hicks",
       "team": "Miami Marlins",
@@ -9806,6 +9776,66 @@
       "warnings": [
         "Park factor unknown",
         "Weather unavailable",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 676609,
+      "name": "Jos\u00e9 Caballero",
+      "team": "New York Yankees",
+      "bats": "R",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Burke",
+      "venue": "Rate Field",
+      "gamePk": 824568,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 10,
+      "iso": 0.137,
+      "total": 31.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 45.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.3,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.0,
+        "hitter": 6.2,
+        "environment": 7.5,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1558,
+        "barrel_rate": 0.0619,
+        "hard_hit_rate": 0.3413,
+        "fb_rate": 0.4486,
+        "z_contact_rate": 0.8558,
+        "sweet_spot_rate": 0.2848,
+        "xwobacon": 0.337,
+        "ev90": 98.5
+      },
+      "reasons": [
+        "vs Sean Burke \u2014 cause C (10.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
+        "Pitcher: High K rate (27%)",
+        "Poor pitch-mix fit (62% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
+        "Slightly + park (101)",
+        "Warm (77\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Wind in ~7 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -10321,7 +10351,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 57.5,
+      "hr_total": 56.0,
       "hr_role": "Pass"
     },
     {
@@ -10341,7 +10371,7 @@
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 66.8,
+      "hr_total": 65.3,
       "hr_role": "Pass"
     },
     {
@@ -10492,26 +10522,6 @@
       "hr_role": "Pass"
     },
     {
-      "id": 691406,
-      "name": "Junior Caminero",
-      "team": "Tampa Bay Rays",
-      "opp": "Texas Rangers",
-      "opp_pitcher": "Cole Winn",
-      "venue": "Tropicana Field",
-      "gamePk": 822946,
-      "slot": 3,
-      "confirmed": true,
-      "bats": "R",
-      "tb_score": 73.0,
-      "tb_tier": "Strong TB",
-      "tb_reasons": [
-        "High-contact bat (contact 81%, Z-contact 87%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 54.0,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 663757,
       "name": "Trent Grisham",
       "team": "New York Yankees",
@@ -10529,27 +10539,27 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 58.5,
+      "hr_total": 57.0,
       "hr_role": "Pass"
     },
     {
-      "id": 694671,
-      "name": "Wyatt Langford",
-      "team": "Texas Rangers",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Shane McClanahan",
+      "id": 691406,
+      "name": "Junior Caminero",
+      "team": "Tampa Bay Rays",
+      "opp": "Texas Rangers",
+      "opp_pitcher": "Cole Winn",
       "venue": "Tropicana Field",
       "gamePk": 822946,
-      "slot": 1,
+      "slot": 3,
       "confirmed": true,
       "bats": "R",
-      "tb_score": 72.3,
+      "tb_score": 72.0,
       "tb_tier": "Strong TB",
       "tb_reasons": [
-        "Platoon edge (R vs LHP)"
+        "High-contact bat (contact 81%, Z-contact 87%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 55.4,
+      "hr_total": 54.0,
       "hr_role": "Watchlist"
     },
     {
@@ -10571,6 +10581,26 @@
       ],
       "shape_source": "statcast",
       "hr_total": 58.7,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 694671,
+      "name": "Wyatt Langford",
+      "team": "Texas Rangers",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Shane McClanahan",
+      "venue": "Tropicana Field",
+      "gamePk": 822946,
+      "slot": 1,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 71.3,
+      "tb_tier": "Strong TB",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 55.4,
       "hr_role": "Watchlist"
     },
     {
@@ -10718,27 +10748,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 683748,
-      "name": "Victor Mesa Jr.",
-      "team": "Tampa Bay Rays",
-      "opp": "Texas Rangers",
-      "opp_pitcher": "Cole Winn",
-      "venue": "Tropicana Field",
-      "gamePk": 822946,
-      "slot": 6,
-      "confirmed": true,
-      "bats": "L",
-      "tb_score": 68.5,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 91%, Z-contact 88%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 54.7,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 668715,
       "name": "Spencer Steer",
       "team": "Cincinnati Reds",
@@ -10818,6 +10827,27 @@
       "shape_source": "statcast",
       "hr_total": 60.8,
       "hr_role": "Pass"
+    },
+    {
+      "id": 683748,
+      "name": "Victor Mesa Jr.",
+      "team": "Tampa Bay Rays",
+      "opp": "Texas Rangers",
+      "opp_pitcher": "Cole Winn",
+      "venue": "Tropicana Field",
+      "gamePk": 822946,
+      "slot": 6,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 67.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 91%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 54.7,
+      "hr_role": "Watchlist"
     },
     {
       "id": 663586,
@@ -10941,44 +10971,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 592626,
-      "name": "Joc Pederson",
-      "team": "Texas Rangers",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Shane McClanahan",
-      "venue": "Tropicana Field",
-      "gamePk": 822946,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 66.5,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 52.6,
-      "hr_role": "Pass"
-    },
-    {
-      "id": 666018,
-      "name": "Jonathan Aranda",
-      "team": "Tampa Bay Rays",
-      "opp": "Texas Rangers",
-      "opp_pitcher": "Cole Winn",
-      "venue": "Tropicana Field",
-      "gamePk": 822946,
-      "slot": 2,
-      "confirmed": true,
-      "bats": "L",
-      "tb_score": 66.5,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 51.5,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 680777,
       "name": "Ryan Jeffers",
       "team": "Minnesota Twins",
@@ -10997,26 +10989,6 @@
       ],
       "shape_source": "statcast",
       "hr_total": 55.3,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 650490,
-      "name": "Yandy D\u00edaz",
-      "team": "Tampa Bay Rays",
-      "opp": "Texas Rangers",
-      "opp_pitcher": "Cole Winn",
-      "venue": "Tropicana Field",
-      "gamePk": 822946,
-      "slot": 1,
-      "confirmed": true,
-      "bats": "R",
-      "tb_score": 66.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 87%, Z-contact 86%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 52.5,
       "hr_role": "Watchlist"
     },
     {
@@ -11041,6 +11013,24 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 592626,
+      "name": "Joc Pederson",
+      "team": "Texas Rangers",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Shane McClanahan",
+      "venue": "Tropicana Field",
+      "gamePk": 822946,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 65.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 52.6,
+      "hr_role": "Pass"
+    },
+    {
       "id": 660271,
       "name": "Shohei Ohtani",
       "team": "Los Angeles Dodgers",
@@ -11060,6 +11050,26 @@
       "shape_source": "statcast",
       "hr_total": 52.3,
       "hr_role": "Pass"
+    },
+    {
+      "id": 666018,
+      "name": "Jonathan Aranda",
+      "team": "Tampa Bay Rays",
+      "opp": "Texas Rangers",
+      "opp_pitcher": "Cole Winn",
+      "venue": "Tropicana Field",
+      "gamePk": 822946,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 65.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 51.5,
+      "hr_role": "Watchlist"
     },
     {
       "id": 695600,
@@ -11104,6 +11114,26 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 650490,
+      "name": "Yandy D\u00edaz",
+      "team": "Tampa Bay Rays",
+      "opp": "Texas Rangers",
+      "opp_pitcher": "Cole Winn",
+      "venue": "Tropicana Field",
+      "gamePk": 822946,
+      "slot": 1,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 65.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 87%, Z-contact 86%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 52.5,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 665862,
       "name": "Jazz Chisholm Jr.",
       "team": "New York Yankees",
@@ -11120,27 +11150,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 51.2,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 673962,
-      "name": "Josh Jung",
-      "team": "Texas Rangers",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Shane McClanahan",
-      "venue": "Tropicana Field",
-      "gamePk": 822946,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 64.8,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 47.2,
+      "hr_total": 49.7,
       "hr_role": "Watchlist"
     },
     {
@@ -11185,26 +11195,6 @@
       "hr_role": "Pass"
     },
     {
-      "id": 677649,
-      "name": "Ezequiel Duran",
-      "team": "Texas Rangers",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Shane McClanahan",
-      "venue": "Tropicana Field",
-      "gamePk": 822946,
-      "slot": 2,
-      "confirmed": true,
-      "bats": "R",
-      "tb_score": 64.5,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 58.5,
-      "hr_role": "Pass"
-    },
-    {
       "id": 701398,
       "name": "Sal Stewart",
       "team": "Cincinnati Reds",
@@ -11242,27 +11232,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 48.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 676356,
-      "name": "Jonny DeLuca",
-      "team": "Tampa Bay Rays",
-      "opp": "Texas Rangers",
-      "opp_pitcher": "Cole Winn",
-      "venue": "Tropicana Field",
-      "gamePk": 822946,
-      "slot": 5,
-      "confirmed": true,
-      "bats": "R",
-      "tb_score": 64.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 80%, Z-contact 86%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 46.0,
+      "hr_total": 46.5,
       "hr_role": "Watchlist"
     },
     {
@@ -11306,6 +11276,26 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 673962,
+      "name": "Josh Jung",
+      "team": "Texas Rangers",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Shane McClanahan",
+      "venue": "Tropicana Field",
+      "gamePk": 822946,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 63.8,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 47.2,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 699013,
       "name": "Esmerlyn Valdez",
       "team": "Pittsburgh Pirates",
@@ -11324,25 +11314,24 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 543309,
-      "name": "Kyle Higashioka",
+      "id": 677649,
+      "name": "Ezequiel Duran",
       "team": "Texas Rangers",
       "opp": "Tampa Bay Rays",
       "opp_pitcher": "Shane McClanahan",
       "venue": "Tropicana Field",
       "gamePk": 822946,
-      "slot": null,
-      "confirmed": false,
+      "slot": 2,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 63.5,
       "tb_tier": "Solid TB",
       "tb_reasons": [
-        "High-contact bat (contact 83%, Z-contact 87%) \u2014 banks XBH",
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 46.7,
-      "hr_role": "Watchlist"
+      "hr_total": 58.5,
+      "hr_role": "Pass"
     },
     {
       "id": 641355,
@@ -11362,7 +11351,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 37.8,
+      "hr_total": 36.3,
       "hr_role": "Watchlist"
     },
     {
@@ -11428,6 +11417,26 @@
       "hr_role": "Pass"
     },
     {
+      "id": 676356,
+      "name": "Jonny DeLuca",
+      "team": "Tampa Bay Rays",
+      "opp": "Texas Rangers",
+      "opp_pitcher": "Cole Winn",
+      "venue": "Tropicana Field",
+      "gamePk": 822946,
+      "slot": 5,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 63.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 80%, Z-contact 86%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 46.0,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 571970,
       "name": "Max Muncy",
       "team": "Los Angeles Dodgers",
@@ -11446,6 +11455,27 @@
       ],
       "shape_source": "statcast",
       "hr_total": 40.8,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 543309,
+      "name": "Kyle Higashioka",
+      "team": "Texas Rangers",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Shane McClanahan",
+      "venue": "Tropicana Field",
+      "gamePk": 822946,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 62.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 83%, Z-contact 87%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 46.7,
       "hr_role": "Watchlist"
     },
     {
@@ -11527,28 +11557,8 @@
         "High-contact bat (contact 88%, Z-contact 90%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 45.3,
+      "hr_total": 43.8,
       "hr_role": "Watchlist"
-    },
-    {
-      "id": 592450,
-      "name": "Aaron Judge",
-      "team": "New York Yankees",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Burke",
-      "venue": "Rate Field",
-      "gamePk": 824568,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 61.5,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 59.0,
-      "hr_role": "Pass"
     },
     {
       "id": 665833,
@@ -11569,6 +11579,26 @@
       ],
       "shape_source": "proxy",
       "hr_total": 59.0,
+      "hr_role": "Pass"
+    },
+    {
+      "id": 592450,
+      "name": "Aaron Judge",
+      "team": "New York Yankees",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Burke",
+      "venue": "Rate Field",
+      "gamePk": 824568,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 61.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "hr_total": 57.5,
       "hr_role": "Pass"
     },
     {
@@ -11611,26 +11641,6 @@
       "shape_source": "statcast",
       "hr_total": 49.0,
       "hr_role": "Pass"
-    },
-    {
-      "id": 668723,
-      "name": "Ryan Vilade",
-      "team": "Tampa Bay Rays",
-      "opp": "Texas Rangers",
-      "opp_pitcher": "Cole Winn",
-      "venue": "Tropicana Field",
-      "gamePk": 822946,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 61.5,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 90%, Z-contact 87%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 47.3,
-      "hr_role": "Watchlist"
     },
     {
       "id": 641487,
@@ -11772,6 +11782,26 @@
       ],
       "shape_source": "statcast",
       "hr_total": 41.8,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 668723,
+      "name": "Ryan Vilade",
+      "team": "Tampa Bay Rays",
+      "opp": "Texas Rangers",
+      "opp_pitcher": "Cole Winn",
+      "venue": "Tropicana Field",
+      "gamePk": 822946,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 60.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 90%, Z-contact 87%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 47.3,
       "hr_role": "Watchlist"
     },
     {
@@ -11943,26 +11973,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 545341,
-      "name": "Randal Grichuk",
-      "team": "Chicago White Sox",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Ryan Weathers",
-      "venue": "Rate Field",
-      "gamePk": 824568,
-      "slot": 4,
-      "confirmed": true,
-      "bats": "R",
-      "tb_score": 58.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 51.5,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 680869,
       "name": "Zack Gelof",
       "team": "Athletics",
@@ -11980,6 +11990,26 @@
       ],
       "shape_source": "proxy",
       "hr_total": 50.5,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 545341,
+      "name": "Randal Grichuk",
+      "team": "Chicago White Sox",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Ryan Weathers",
+      "venue": "Rate Field",
+      "gamePk": 824568,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 58.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 50.0,
       "hr_role": "Watchlist"
     },
     {
@@ -12062,7 +12092,7 @@
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 48.5,
+      "hr_total": 47.0,
       "hr_role": "Watchlist"
     },
     {
@@ -12156,7 +12186,7 @@
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 48.1,
+      "hr_total": 46.6,
       "hr_role": "Watchlist"
     },
     {
@@ -12176,7 +12206,7 @@
         "High-contact bat (contact 82%, Z-contact 86%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 41.8,
+      "hr_total": 40.3,
       "hr_role": "Watchlist"
     },
     {
@@ -12327,51 +12357,11 @@
       "slot": 3,
       "confirmed": true,
       "bats": "L",
-      "tb_score": 55.3,
+      "tb_score": 54.3,
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 47.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 669394,
-      "name": "Jake Burger",
-      "team": "Texas Rangers",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Shane McClanahan",
-      "venue": "Tropicana Field",
-      "gamePk": 822946,
-      "slot": 4,
-      "confirmed": true,
-      "bats": "R",
-      "tb_score": 54.9,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 52.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 679822,
-      "name": "Justin Foscue",
-      "team": "Texas Rangers",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Shane McClanahan",
-      "venue": "Tropicana Field",
-      "gamePk": 822946,
-      "slot": 5,
-      "confirmed": true,
-      "bats": "R",
-      "tb_score": 54.8,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 45.7,
       "hr_role": "Watchlist"
     },
     {
@@ -12411,7 +12401,27 @@
         "High-contact bat (contact 91%, Z-contact 86%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 40.7,
+      "hr_total": 39.2,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 669394,
+      "name": "Jake Burger",
+      "team": "Texas Rangers",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Shane McClanahan",
+      "venue": "Tropicana Field",
+      "gamePk": 822946,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 53.9,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 52.0,
       "hr_role": "Watchlist"
     },
     {
@@ -12548,24 +12558,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 694497,
-      "name": "Evan Carter",
-      "team": "Texas Rangers",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Shane McClanahan",
-      "venue": "Tropicana Field",
-      "gamePk": 822946,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 53.3,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 42.5,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 681715,
       "name": "Heriberto Hern\u00e1ndez",
       "team": "Miami Marlins",
@@ -12675,6 +12667,24 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 48.9,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 694497,
+      "name": "Evan Carter",
+      "team": "Texas Rangers",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Shane McClanahan",
+      "venue": "Tropicana Field",
+      "gamePk": 822946,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 52.3,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 42.5,
       "hr_role": "Watchlist"
     },
     {
@@ -12843,7 +12853,27 @@
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 44.9,
+      "hr_total": 43.4,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 679822,
+      "name": "Justin Foscue",
+      "team": "Texas Rangers",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Shane McClanahan",
+      "venue": "Tropicana Field",
+      "gamePk": 822946,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 50.8,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 43.7,
       "hr_role": "Watchlist"
     },
     {
@@ -12937,7 +12967,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 42.0,
+      "hr_total": 40.5,
       "hr_role": "Watchlist"
     },
     {
@@ -12973,7 +13003,7 @@
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 41.1,
+      "hr_total": 39.6,
       "hr_role": "Watchlist"
     },
     {
@@ -13015,26 +13045,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 656775,
-      "name": "Cedric Mullins",
-      "team": "Tampa Bay Rays",
-      "opp": "Texas Rangers",
-      "opp_pitcher": "Cole Winn",
-      "venue": "Tropicana Field",
-      "gamePk": 822946,
-      "slot": 4,
-      "confirmed": true,
-      "bats": "L",
-      "tb_score": 49.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 50.7,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 808959,
       "name": "Munetaka Murakami",
       "team": "Chicago White Sox",
@@ -13051,7 +13061,7 @@
         "Whiff risk (Z-contact 69%) \u2014 TB volatility"
       ],
       "shape_source": "statcast",
-      "hr_total": 49.0,
+      "hr_total": 47.5,
       "hr_role": "Watchlist"
     },
     {
@@ -13088,6 +13098,26 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 42.5,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 656775,
+      "name": "Cedric Mullins",
+      "team": "Tampa Bay Rays",
+      "opp": "Texas Rangers",
+      "opp_pitcher": "Cole Winn",
+      "venue": "Tropicana Field",
+      "gamePk": 822946,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 48.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 50.7,
       "hr_role": "Watchlist"
     },
     {
@@ -13261,7 +13291,7 @@
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 33.2,
+      "hr_total": 31.7,
       "hr_role": "Watchlist"
     },
     {
@@ -13379,7 +13409,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 48.0,
+      "hr_total": 46.5,
       "hr_role": "Watchlist"
     },
     {
@@ -13441,26 +13471,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 608369,
-      "name": "Corey Seager",
-      "team": "Texas Rangers",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Shane McClanahan",
-      "venue": "Tropicana Field",
-      "gamePk": 822946,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 36.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 45.5,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 669257,
       "name": "Will Smith",
       "team": "Los Angeles Dodgers",
@@ -13478,6 +13488,26 @@
       ],
       "shape_source": "proxy",
       "hr_total": 32.5,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 608369,
+      "name": "Corey Seager",
+      "team": "Texas Rangers",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Shane McClanahan",
+      "venue": "Tropicana Field",
+      "gamePk": 822946,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 35.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "hr_total": 45.5,
       "hr_role": "Watchlist"
     },
     {
@@ -13672,11 +13702,11 @@
       "score": 18.0,
       "grade": "A",
       "flags": [
-        "High HR allowed (HR/9 1.18)",
+        "High HR allowed (HR/9 1.17)",
         "Above-avg barrels allowed (9%)",
         "Fly-ball prone (30% FB allowed)"
       ],
-      "hr9": 1.18,
+      "hr9": 1.17,
       "barrel_allowed": 0.0949
     },
     {
@@ -13708,9 +13738,9 @@
       "score": 15.5,
       "grade": "B",
       "flags": [
-        "Elevated HR allowed (HR/9 1.79)"
+        "Elevated HR allowed (HR/9 1.75)"
       ],
-      "hr9": 1.79,
+      "hr9": 1.75,
       "barrel_allowed": 0.0685
     },
     {
@@ -13719,10 +13749,10 @@
       "score": 14.5,
       "grade": "B",
       "flags": [
-        "Avg+ HR allowed (HR/9 0.66)",
+        "Avg+ HR allowed (HR/9 0.64)",
         "Fly-ball prone (31% FB allowed)"
       ],
-      "hr9": 0.66,
+      "hr9": 0.64,
       "barrel_allowed": 0.0844
     },
     {
@@ -13731,9 +13761,9 @@
       "score": 14.5,
       "grade": "B",
       "flags": [
-        "High HR allowed (HR/9 1.44)"
+        "High HR allowed (HR/9 1.43)"
       ],
-      "hr9": 1.44,
+      "hr9": 1.43,
       "barrel_allowed": 0.0773
     },
     {
