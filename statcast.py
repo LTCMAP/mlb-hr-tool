@@ -7,6 +7,26 @@ hit it directly with urllib + csv and do our own per-day caching. This gives the
 hitter "shape" layer the proxy model was missing: air-pull rate, barrel rate,
 hard-hit rate, fly-ball rate, plus pitcher barrel/fly-ball/HR allowed.
 
+v2.8 additions (the "Savant went dark" fix):
+  - The bare 5-parameter Savant CSV query is no longer reliably accepted. We now
+    send the FULL canonical statcast_search parameter set (the one Savant's own
+    UI and pybaseball send, incl. hfGT game-type and hfSea season) and fall back
+    through progressively simpler URL variants.
+  - REAL SECOND SOURCE: if Savant is unreachable/blocked for a day, the same
+    pitch-level rows are rebuilt from the MLB Stats API play-by-play feed
+    (statsapi.mlb.com), which carries the identical Statcast measurements
+    (launchSpeed, launchAngle, trajectory, hit coordinates, pitch type, zone).
+    statsapi is the feed build.py already uses for schedule/lineups, so if the
+    slate builds at all, the shape layer can now be built too. Previously a
+    Savant outage meant PROXY mode: capped, shape-blind scores.
+    Barrel (launch_speed_angle==6) is recomputed from EV/LA in fallback mode;
+    xwOBAcon is unavailable there and regresses to the league prior.
+  - No more dead time: the retry backoff no longer sleeps after the final
+    attempt (21 failed days used to burn ~10 minutes doing nothing).
+  - meta reports per-source day counts so build.py can label the board
+    "Savant", "MLB API fallback", or "mixed" instead of silently degrading.
+  - `python3 statcast.py --diag` prints a one-screen source diagnosis.
+
 v2.6 additions:
   - Hardened fetch: browser-grade headers + gzip + retries (Savant started
     rejecting non-browser user agents mid-2026, which silently killed the pull).
@@ -31,19 +51,46 @@ Cache: data/cache/statcast/YYYY-MM-DD.csv.gz (raw daily pulls; re-used across ru
 import os
 import csv
 import io
+import json
 import gzip
 import math
 import time
 import zlib
 import datetime as dt
 from urllib.request import urlopen, Request
+from concurrent.futures import ThreadPoolExecutor
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(ROOT, "data", "cache", "statcast")
 
-SAVANT = ("https://baseballsavant.mlb.com/statcast_search/csv?all=true"
-          "&type=details&player_type=batter&min_pitches=0"
-          "&game_date_gt={d}&game_date_lt={d}")
+# v2.8 — Savant URL variants, tried in order. The first is the canonical full
+# parameter set that Savant's own search UI submits (and that pybaseball has
+# always sent). The stripped-down query we used through v2.7 is kept last as a
+# long shot; it is what stopped returning data in mid-2026.
+SAVANT_FULL = (
+    "https://baseballsavant.mlb.com/statcast_search/csv?all=true"
+    "&hfPT=&hfAB=&hfGT=R%7CPO%7CS%7C&hfPR=&hfZ=&hfStadium=&hfBBL=&hfNewZones="
+    "&hfSea={season}%7C&hfSit=&player_type=batter&hfOuts=&hfOpponent="
+    "&pitcher_throws=&batter_stands=&hfSA=&game_date_gt={d}&game_date_lt={d}"
+    "&hfMo=&hfTeam=&home_road=&hfRO=&position=&hfInfield=&hfOutfield=&hfInn="
+    "&hfBBT=&hfFlag=&metric_1=&group_by=name&min_pitches=0&min_results=0"
+    "&min_pas=0&sort_col=pitches&player_event_sort=api_p_release_speed"
+    "&sort_order=desc&type=details&"
+)
+SAVANT_PYBB = (
+    "https://baseballsavant.mlb.com/statcast_search/csv?all=true"
+    "&hfPT=&hfAB=&hfBBT=&hfPR=&hfZ=&stadium=&hfBBL=&hfNewZones="
+    "&hfGT=R%7CPO%7CS%7C&hfSea=&hfSit=&player_type=pitcher&hfOuts="
+    "&opponent=&pitcher_throws=&batter_stands=&hfSA=&game_date_gt={d}"
+    "&game_date_lt={d}&team=&position=&hfRO=&home_road=&hfFlag=&metric_1="
+    "&hfInn=&min_pitches=0&min_results=0&group_by=name&sort_col=pitches"
+    "&player_event_sort=h_launch_speed&sort_order=desc&min_abs=0&type=details&"
+)
+SAVANT_MIN = ("https://baseballsavant.mlb.com/statcast_search/csv?all=true"
+              "&type=details&player_type=batter&min_pitches=0"
+              "&game_date_gt={d}&game_date_lt={d}")
+SAVANT_VARIANTS = (SAVANT_FULL, SAVANT_PYBB, SAVANT_MIN)
+SAVANT = SAVANT_MIN            # kept for backwards compatibility / callers
 
 # v2.6 — Savant (Akamai) now 403s obviously-scripted user agents. Look like a
 # normal browser download: real UA + Accept + referer, and accept gzip.
@@ -57,10 +104,45 @@ FETCH_HEADERS = {
     "Referer": "https://baseballsavant.mlb.com/statcast_search",
     "Connection": "keep-alive",
 }
-FETCH_RETRIES = 3          # attempts per day
-FETCH_BACKOFF = 4          # seconds; doubles per retry
+FETCH_RETRIES = 2          # attempts per URL variant per day (3 variants)
+FETCH_BACKOFF = 3          # seconds; doubles per retry
+FETCH_TIMEOUT = 120        # v2.8 — a full day of type=details is slow to build
 # Columns that must exist for a pull to be considered a real Statcast CSV.
 REQUIRED_COLS = {"batter", "pitcher", "launch_speed", "events", "type"}
+
+# --------------------------------------------------------------------------- #
+# v2.8 — MLB Stats API fallback source
+# --------------------------------------------------------------------------- #
+# statsapi carries the same Statcast measurements Savant does (they come from
+# the same tracking system); it is a plain public JSON API with no WAF in front
+# of it, and build.py already depends on it for schedule/probables/lineups.
+STATS_API = "https://statsapi.mlb.com/api/v1"
+MLBAPI_HEADERS = {"User-Agent": "mlb-hr-tool/2.8 (statcast-fallback)",
+                  "Accept": "application/json"}
+MLBAPI_WORKERS = 6
+MLBAPI_TIMEOUT = 45
+# Game types that count as "real" baseball for shape purposes: regular season
+# plus every postseason round. Spring (S), All-Star (A) and exhibition (E) out.
+GAME_TYPES_OK = {"R", "F", "D", "L", "W", "P"}
+# Savant writes a status column we don't have; we tag fallback rows so meta can
+# tell the operator which source a cached day came from.
+SRC_COL = "_src"
+# statsapi pitch-result code -> Savant `description` vocabulary. Using the code
+# (not the human string) keeps this stable across MLB copy changes.
+CODE_DESC = {
+    "B": "ball", "*B": "blocked_ball", "V": "ball", "I": "ball",
+    "C": "called_strike", "S": "swinging_strike",
+    "W": "swinging_strike_blocked", "Q": "swinging_strike_blocked",
+    "F": "foul", "R": "foul", "T": "foul_tip", "O": "foul_tip",
+    "L": "foul_bunt", "M": "missed_bunt", "N": "bunt_foul_tip",
+    "X": "hit_into_play", "D": "hit_into_play", "E": "hit_into_play",
+    "H": "hit_by_pitch", "P": "pitchout", "Y": "pitchout",
+}
+# Columns the fallback writes so the cached file is a drop-in for a Savant pull.
+FALLBACK_COLS = ["batter", "pitcher", "events", "description", "type",
+                 "launch_speed", "launch_angle", "launch_speed_angle",
+                 "estimated_woba_using_speedangle", "bb_type", "stand",
+                 "hc_x", "hc_y", "zone", "pitch_type", "p_throws", SRC_COL]
 
 # Savant hit-coordinate origin (home plate ≈ (125.42, 198.27), y grows toward
 # home). Spray angle = atan((hc_x-125.42)/(198.27-hc_y)); pull = the outer
@@ -140,32 +222,189 @@ def _read_cached(path):
     return [], False
 
 
+def _is_barrel(ev, la):
+    """Barrel classification from EV/LA (Savant's launch_speed_angle == 6).
+
+    Only used by the MLB-API fallback, which does not ship Savant's own
+    classification. Barrels start at 98 mph / 26-30°, and the LA window widens
+    about a degree per side per extra mph, topping out near 8-50° at 116+.
+    """
+    if ev is None or la is None or ev < 98.0:
+        return False
+    over = ev - 98.0
+    lo = max(8.0, 26.0 - over)                 # anchors: 98 -> 26, 116 -> 8
+    hi = min(50.0, 30.0 + over * (20.0 / 18.0))  # anchors: 98 -> 30, 116 -> 50
+    return lo <= la <= hi
+
+
+def _get_json(url, timeout=MLBAPI_TIMEOUT):
+    req = Request(url, headers=MLBAPI_HEADERS)
+    with urlopen(req, timeout=timeout) as r:
+        return json.loads(_decode_body(r.read(), r.headers))
+
+
+def _game_pks(date_str):
+    """Completed MLB game ids for a date (regular season + postseason)."""
+    url = f"{STATS_API}/schedule?sportId=1&date={date_str}"
+    pks = []
+    for d in _get_json(url).get("dates", []):
+        for g in d.get("games", []):
+            if g.get("gameType") not in GAME_TYPES_OK:
+                continue
+            # Only finished games have complete tracking data.
+            if (g.get("status", {}).get("codedGameState") or "") not in ("F", "O"):
+                continue
+            pks.append(g["gamePk"])
+    return pks
+
+
+def _rows_from_game(pk):
+    """Pitch-level rows for one game, shaped like Savant's type=details CSV."""
+    try:
+        pbp = _get_json(f"{STATS_API}/game/{pk}/playByPlay")
+    except Exception as e:
+        print(f"  [statcast] mlbapi game {pk} failed: {e}")
+        return []
+    out = []
+    for play in pbp.get("allPlays", []):
+        m = play.get("matchup", {}) or {}
+        bid = (m.get("batter") or {}).get("id")
+        pid = (m.get("pitcher") or {}).get("id")
+        if not bid or not pid:
+            continue
+        stand = (m.get("batSide") or {}).get("code") or ""
+        throws = (m.get("pitchHand") or {}).get("code") or ""
+        event = (play.get("result") or {}).get("eventType") or ""
+        pitches = [e for e in play.get("playEvents", []) if e.get("isPitch")]
+        for i, e in enumerate(pitches):
+            det = e.get("details", {}) or {}
+            pd_ = e.get("pitchData", {}) or {}
+            hd = e.get("hitData", {}) or {}
+            in_play = bool(det.get("isInPlay"))
+            code = det.get("code") or ""
+            desc = CODE_DESC.get(code)
+            if desc is None:
+                desc = ("hit_into_play" if in_play else
+                        (det.get("description") or "").strip().lower().replace(" ", "_"))
+            ev = _f(hd.get("launchSpeed"))
+            la = _f(hd.get("launchAngle"))
+            coord = hd.get("coordinates", {}) or {}
+            out.append({
+                "batter": str(bid), "pitcher": str(pid),
+                # Savant only stamps the PA outcome on the final pitch.
+                "events": event if i == len(pitches) - 1 else "",
+                "description": desc,
+                "type": "X" if in_play else ("B" if det.get("isBall") else "S"),
+                "launch_speed": "" if ev is None else ev,
+                "launch_angle": "" if la is None else la,
+                "launch_speed_angle": "6" if _is_barrel(ev, la) else "",
+                # not published by statsapi — regresses to the league prior
+                "estimated_woba_using_speedangle": "",
+                "bb_type": (hd.get("trajectory") or ""),
+                "stand": stand,
+                "hc_x": coord.get("coordX", ""),
+                "hc_y": coord.get("coordY", ""),
+                "zone": str(pd_.get("zone") or ""),
+                "pitch_type": ((det.get("type") or {}).get("code") or ""),
+                "p_throws": throws,
+                SRC_COL: "mlbapi",
+            })
+    return out
+
+
+def _fetch_day_mlbapi(date_str):
+    """v2.8 fallback: rebuild a day of Statcast rows from statsapi play-by-play."""
+    try:
+        pks = _game_pks(date_str)
+    except Exception as e:
+        print(f"  [statcast] {date_str}: mlbapi schedule failed: {e}")
+        return None
+    if not pks:
+        # A legitimate off-day. Return an empty (but valid) day so we cache a
+        # header and never re-hammer the API for it.
+        return []
+    rows = []
+    with ThreadPoolExecutor(max_workers=MLBAPI_WORKERS) as ex:
+        for got in ex.map(_rows_from_game, pks):
+            rows.extend(got)
+    if not rows:
+        return None                      # games existed but nothing came back
+    print(f"  [statcast] {date_str}: MLB API fallback OK "
+          f"({len(pks)} games, {len(rows)} pitches)")
+    return rows
+
+
+def _rows_to_csv(rows):
+    buf = io.StringIO()
+    w = csv.DictWriter(buf, fieldnames=FALLBACK_COLS, extrasaction="ignore")
+    w.writeheader()
+    for r in rows:
+        w.writerow(r)
+    return buf.getvalue()
+
+
+# v2.8 — circuit breaker. With Savant fully down, retrying 3 variants x 2
+# attempts on all 21 days cost ~7 minutes of pure backoff before the fallback
+# even started. After this many consecutive dead days we stop asking.
+SAVANT_CIRCUIT_BREAK = 2
+_savant_strikes = 0
+
+
+def _fetch_savant(date_str):
+    """Try each Savant URL variant; return CSV text or None."""
+    global _savant_strikes
+    if _savant_strikes >= SAVANT_CIRCUIT_BREAK:
+        return None                    # tripped earlier this run; don't re-probe
+    season = date_str[:4]
+    for vi, tpl in enumerate(SAVANT_VARIANTS, 1):
+        url = tpl.format(d=date_str, season=season)
+        for attempt in range(FETCH_RETRIES):
+            req = Request(url, headers=FETCH_HEADERS)
+            try:
+                with urlopen(req, timeout=FETCH_TIMEOUT) as r:
+                    body = _decode_body(r.read(), r.headers)
+                if _looks_valid(body):
+                    _savant_strikes = 0        # it's alive; reset the breaker
+                    return body
+                print(f"  [statcast] {date_str} savant v{vi} attempt {attempt+1}: "
+                      f"response is not a Statcast CSV (blocked page?)")
+            except Exception as e:
+                print(f"  [statcast] {date_str} savant v{vi} attempt {attempt+1} "
+                      f"failed: {e}")
+            # v2.8 — don't sleep after the final attempt of the final variant
+            if not (vi == len(SAVANT_VARIANTS) and attempt == FETCH_RETRIES - 1):
+                time.sleep(FETCH_BACKOFF * (2 ** attempt))
+    _savant_strikes += 1
+    if _savant_strikes == SAVANT_CIRCUIT_BREAK:
+        print(f"  [statcast] Savant failed {_savant_strikes} days running — "
+              f"skipping it for the rest of this run, using the MLB Stats API")
+    return None
+
+
 def _fetch_day(date_str):
-    """Return list of dict rows for one date, using validated disk cache."""
+    """Return list of dict rows for one date, using validated disk cache.
+
+    Source order: disk cache -> Baseball Savant CSV -> MLB Stats API play-by-play.
+    A day is only written to cache once it parses as real data, so a blocked
+    response can never poison later runs.
+    """
     os.makedirs(CACHE, exist_ok=True)
     path = os.path.join(CACHE, f"{date_str}.csv.gz")
     if os.path.exists(path):
         rows, valid = _read_cached(path)
         if valid:
             return rows
-    url = SAVANT.format(d=date_str)
-    text = None
-    for attempt in range(FETCH_RETRIES):
-        req = Request(url, headers=FETCH_HEADERS)
-        try:
-            with urlopen(req, timeout=60) as r:
-                body = _decode_body(r.read(), r.headers)
-            if _looks_valid(body):
-                text = body
-                break
-            print(f"  [statcast] {date_str} attempt {attempt+1}: response not a "
-                  f"Statcast CSV (blocked page?) — retrying")
-        except Exception as e:
-            print(f"  [statcast] {date_str} attempt {attempt+1} failed: {e}")
-        time.sleep(FETCH_BACKOFF * (2 ** attempt))
+
+    text = _fetch_savant(date_str)
     if text is None:
-        print(f"  [statcast] {date_str}: giving up (NOT cached — will retry next run)")
-        return []
+        print(f"  [statcast] {date_str}: Savant unavailable — trying MLB Stats API")
+        rows = _fetch_day_mlbapi(date_str)
+        if rows is None:
+            print(f"  [statcast] {date_str}: giving up on both sources "
+                  f"(NOT cached — will retry next run)")
+            return []
+        text = _rows_to_csv(rows)
+
     # Cache the RAW text so the header survives even on 0-game days.
     with gzip.open(path, "wt", encoding="utf-8", newline="") as f:
         f.write(text)
@@ -213,6 +452,7 @@ def load_window(end_date, days=21, recent_days=7):
     B = {}   # batter agg
     P = {}   # pitcher agg
     fetched, cached, failed = 0, 0, 0
+    from_savant, from_mlbapi = 0, 0          # v2.8 — provenance per day
     for d in dates:
         before = os.path.exists(os.path.join(CACHE, f"{d}.csv.gz"))
         rows = _fetch_day(d)
@@ -223,6 +463,11 @@ def load_window(end_date, days=21, recent_days=7):
             fetched += 1
         else:
             failed += 1
+        if rows:
+            if rows[0].get(SRC_COL) == "mlbapi":
+                from_mlbapi += 1
+            else:
+                from_savant += 1
         for r in rows:
             bid = r.get("batter")
             pid = r.get("pitcher")
@@ -341,7 +586,9 @@ def load_window(end_date, days=21, recent_days=7):
             "ev90": round(_pctile(evs, 0.90), 1) if evs else None,
             "air_ev": round(b["air_ev"] / b["air_n"], 1) if b["air_n"] else None,
             "air_n": b["air_n"],
-            "xwobacon": rate(b["xw"], b["xw_n"]),
+            # v2.8 — None (not 0.0) when the source can't supply it, so
+            # shrinkage skips the key instead of pinning everyone at .000.
+            "xwobacon": rate(b["xw"], b["xw_n"]) if b["xw_n"] else None,
             "xw_n": b["xw_n"],
             # v2.6 — luck layer inputs (xHR-vs-HR computed in build.py)
             "window_hr": b["hr"], "barrels": b["barrels"],
@@ -401,21 +648,113 @@ def load_window(end_date, days=21, recent_days=7):
         "z_contact": rate(tot_zct, tot_zsw),
         "sweet_spot_rate": rate(tot_sweet, tb[0]),
         "air_ev": round(tot_air_ev / tot_air_n, 1) if tot_air_n else 0.0,
-        "xwobacon": rate(tot_xw, tot_xw_n),
         "hr_per_barrel": rate(tot_hr_b, tb[1]),
         "bbe_total": tb[0],
     }
+    # v2.8 — only publish a league xwOBAcon when the window actually had one.
+    # An explicit 0.0 here used to override build.py's LEAGUE_DEFAULT prior and
+    # drag every hitter's shrunk xwOBAcon to .000.
+    if tot_xw_n:
+        league["xwobacon"] = rate(tot_xw, tot_xw_n)
+    # v2.8 — which feed actually produced this window. "mlbapi" means Savant was
+    # unreachable and we rebuilt shape from statsapi play-by-play: everything
+    # works except xwOBAcon (regressed to prior) and barrels are recomputed
+    # from EV/LA rather than read from Savant's own classification.
+    source = ("savant" if from_savant and not from_mlbapi else
+              "mlbapi" if from_mlbapi and not from_savant else
+              "mixed" if from_mlbapi else "none")
     meta = {"window_days": days, "recent_days": recent_days,
             "start": dates[-1], "end": end_date,
             "days_fetched": fetched, "days_cached": cached,
             "days_failed": failed,
+            "source": source,
+            "days_savant": from_savant, "days_mlbapi": from_mlbapi,
+            "xwobacon_available": from_savant > 0,
             "batters": len(batters), "pitchers": len(pitchers),
             "league": league}
     return batters, pitchers, meta
 
 
+def diagnose(date_str=None):
+    """v2.8 — one-screen answer to 'why is the board in PROXY mode?'.
+
+    Run: python3 statcast.py --diag [YYYY-MM-DD]
+    """
+    day = date_str or (dt.date.today() - dt.timedelta(days=1)).isoformat()
+    print(f"Statcast source diagnosis for {day}\n" + "-" * 46)
+
+    print("[1/3] Baseball Savant CSV endpoint")
+    ok_savant = False
+    season = day[:4]
+    for vi, tpl in enumerate(SAVANT_VARIANTS, 1):
+        url = tpl.format(d=day, season=season)
+        try:
+            req = Request(url, headers=FETCH_HEADERS)
+            t0 = time.time()
+            with urlopen(req, timeout=FETCH_TIMEOUT) as r:
+                status = getattr(r, "status", r.getcode())
+                body = _decode_body(r.read(), r.headers)
+            dur = time.time() - t0
+            good = _looks_valid(body)
+            head = body.lstrip().splitlines()[0][:70] if body.strip() else "<empty>"
+            print(f"  variant {vi}: HTTP {status} in {dur:.1f}s, {len(body)} chars, "
+                  f"valid_csv={good}\n            first line: {head}")
+            if good:
+                ok_savant = True
+                break
+        except Exception as e:
+            print(f"  variant {vi}: FAILED — {type(e).__name__}: {e}")
+
+    print("[2/3] MLB Stats API fallback")
+    ok_api = False
+    try:
+        pks = _game_pks(day)
+        print(f"  schedule OK — {len(pks)} completed games")
+        if pks:
+            rows = _rows_from_game(pks[0])
+            bip = sum(1 for r in rows if r["type"] == "X")
+            ev = sum(1 for r in rows if r["launch_speed"] != "")
+            print(f"  game {pks[0]}: {len(rows)} pitches, {bip} in play, "
+                  f"{ev} with exit velocity")
+            ok_api = ev > 0
+        else:
+            ok_api = True                      # legitimate off-day
+    except Exception as e:
+        print(f"  FAILED — {type(e).__name__}: {e}")
+
+    print("[3/3] Local cache")
+    if os.path.isdir(CACHE):
+        files = sorted(f for f in os.listdir(CACHE) if f.endswith(".csv.gz"))
+        newest = files[-1][:-7] if files else "none"
+        print(f"  {len(files)} cached day(s); newest = {newest}")
+        stale = (files and
+                 newest < (dt.date.today() - dt.timedelta(days=2)).isoformat())
+        if stale:
+            print("  NOTE: cache is stale — a fresh window needs live fetches.")
+    else:
+        print("  no cache directory yet")
+
+    print("-" * 46)
+    if ok_savant:
+        print("VERDICT: Savant is reachable. Shape layer should build normally.")
+    elif ok_api:
+        print("VERDICT: Savant is DOWN/blocked, but the MLB Stats API fallback "
+              "works.\n         build.py will produce a real shape layer "
+              "(source=mlbapi):\n         xwOBAcon regresses to the league "
+              "prior, everything else is live.")
+    else:
+        print("VERDICT: BOTH sources failed. Check network/DNS/proxy — this is "
+              "not a\n         code problem. The board will stay in PROXY mode "
+              "until one returns.")
+    return ok_savant, ok_api
+
+
 if __name__ == "__main__":
     import sys
+    if "--diag" in sys.argv:
+        rest = [a for a in sys.argv[1:] if not a.startswith("-")]
+        diagnose(rest[0] if rest else None)
+        sys.exit(0)
     end = sys.argv[1] if len(sys.argv) > 1 else dt.date.today().isoformat()
     days = int(sys.argv[2]) if len(sys.argv) > 2 else 21
     b, p, m = load_window(end, days)

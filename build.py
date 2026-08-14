@@ -330,8 +330,13 @@ def apply_shrinkage(scb, scp_map, league):
     are preserved under ['raw'] for the dashboard/debugging.
     """
     lg = {**LEAGUE_DEFAULT, **(league or {})}
-    if not lg.get("z_contact"):
-        lg["z_contact"] = LEAGUE_DEFAULT["z_contact"]      # older cached league blocks
+    # v2.8 — a league block may carry an explicit 0.0 for a metric the source
+    # couldn't supply (e.g. xwOBAcon on the MLB-API fallback). A 0.0 prior is
+    # not "no information", it's a wrong one: it drags every hitter to .000.
+    for _k in ("z_contact", "xwobacon", "barrel_rate", "hard_hit_rate",
+               "fb_rate", "air_pull_rate", "fly_rate", "sweet_spot_rate"):
+        if not lg.get(_k):
+            lg[_k] = LEAGUE_DEFAULT[_k]                    # older/partial league blocks
     for b in scb.values():
         n = b["bbe"]
         b["raw"] = {k: b[k] for k in SHRINK_B if k in b}
@@ -860,6 +865,10 @@ def build(date, window=21, use_statcast=True):
             print(f"  statcast: {scmeta['batters']} batters, {scmeta['pitchers']} pitchers "
                   f"({scmeta['start']}..{scmeta['end']}), shrinkage applied "
                   f"(lg barrel {scmeta.get('league', {}).get('barrel_rate', '?')})")
+            # v2.8 — say out loud which feed produced the shape layer.
+            print(f"  statcast source: {scmeta.get('source', 'savant')} "
+                  f"(savant {scmeta.get('days_savant', '?')}d / "
+                  f"mlbapi {scmeta.get('days_mlbapi', 0)}d)")
         except Exception as e:
             print(f"  statcast unavailable ({e}); using proxy shape")
 
@@ -1031,8 +1040,21 @@ def build(date, window=21, use_statcast=True):
     if scmeta and scmeta.get("days_failed", 0) > 0:
         dq_warnings.append(f"Statcast: {scmeta['days_failed']} day(s) failed to "
                            f"fetch in the {window}-day window (thinner sample).")
+    # v2.8 — a board built off the MLB Stats API fallback is a REAL shape board,
+    # not proxy: air-pull / hard-hit / zone-contact / fly-ball are all live. Note
+    # the two things that differ so the operator isn't guessing.
+    sc_source = (scmeta or {}).get("source", "savant" if scb else "none")
+    if scb and sc_source in ("mlbapi", "mixed"):
+        dq_warnings.append(
+            f"Shape built from the MLB Stats API fallback ({scmeta.get('days_mlbapi', 0)}"
+            f"/{window} days) because Baseball Savant was unreachable. All shape "
+            "signals are live; xwOBAcon is unavailable (regressed to league prior, "
+            "ISO backstops it) and barrels are recomputed from EV/LA.")
     data_quality = {
         "mode": mode,
+        "source": sc_source,
+        "days_savant": (scmeta or {}).get("days_savant", 0),
+        "days_mlbapi": (scmeta or {}).get("days_mlbapi", 0),
         "trustworthy": bool(scb) and confirmed_n > 0,
         "statcast_batters": (scmeta or {}).get("batters", 0),
         "statcast_candidates": n_statcast_bats,
@@ -1043,7 +1065,7 @@ def build(date, window=21, use_statcast=True):
     }
 
     return {
-        "version": "2.7",
+        "version": "2.8",
         "generated_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
         "slate_date": date, "games": len(games),
         "confirmed_lineups": confirmed_n,
@@ -1058,8 +1080,17 @@ def build(date, window=21, use_statcast=True):
                   "directional wind, EB shrinkage, platoon-split shape, pitch-mix fit "
                   "+ TRAP flags. Weights P25/Shape40(11 air-pull/8 barrel/7 zone-dmg/"
                   "6 matchup/3 quality/3 recent/2 due)/Env15/Lineup12/Src8. "
-                  + ("Statcast (Savant) shape layer active."
-                     if scb else "PROXY shape mode (no Statcast) — scores capped, no pitch-mix fit."),
+                  "v2.8: dual-source shape — Baseball Savant with an MLB Stats API "
+                  "play-by-play fallback, so a Savant outage no longer drops the "
+                  "board to proxy. "
+                  + ({"savant": "Statcast (Savant) shape layer active.",
+                      "mlbapi": "Statcast shape layer active via the MLB Stats API "
+                                "fallback (Savant unreachable) — xwOBAcon regressed "
+                                "to league prior, barrels recomputed from EV/LA.",
+                      "mixed": "Statcast shape layer active (mixed Savant + MLB Stats "
+                               "API days)."}.get(sc_source, "Statcast shape layer active.")
+                     if scb else
+                     "PROXY shape mode (no Statcast) — scores capped, no pitch-mix fit."),
         "tiers": {"Elite Core": "85+", "Core": "78-84", "Satellite": "70-77",
                   "Longshot": "62-69", "Pass": "<62"},
         "roles": ["Locked Core", "Mini-Stack Bat", "Power Satellite", "Cause Satellite",

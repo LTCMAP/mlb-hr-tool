@@ -1,4 +1,55 @@
-# ⚾ Daily MLB Home Run Picks — odds-free (v2.6)
+# ⚾ Daily MLB Home Run Picks — odds-free (v2.8)
+
+## What changed in v2.8 — the shape layer stops depending on one feed
+
+The board had gone to `PROXY` mode (season power only, scores capped, no Locked
+Core / pitch-mix fit / DUE) because **Baseball Savant stopped answering the CSV
+query**. v2.6 hardened the *headers*; the failure that came back is a different
+one, so v2.8 attacks it from three directions:
+
+1. **Correct query.** The stripped-down 5-parameter Savant URL is no longer
+   reliably served. `statcast.py` now sends the **full canonical
+   `statcast_search` parameter set** (with `hfGT` game-type and `hfSea` season —
+   the same one Savant's own search UI submits), then falls back through
+   simpler variants.
+2. **A real second source.** If Savant is unreachable, the identical pitch-level
+   rows are rebuilt from the **MLB Stats API play-by-play feed**
+   (`statsapi.mlb.com/api/v1/game/{pk}/playByPlay`), which carries the same
+   Statcast measurements: `launchSpeed`, `launchAngle`, `trajectory`, hit
+   coordinates, pitch type, zone, bat side / throw hand. That is the feed
+   `build.py` already uses for schedule and lineups — **if the slate builds at
+   all, the shape layer can now build too.** No more PROXY on a Savant outage.
+3. **Visible provenance.** `statcast_meta.source` is `savant` / `mlbapi` /
+   `mixed`, and the dashboard banner says which. A degraded board can't look
+   like a clean one.
+
+**What the fallback costs you** (only while Savant is down):
+- `xwOBAcon` isn't published by statsapi → it regresses to the league prior, and
+  season ISO backstops the "dangerous contact" slot.
+- Barrels are recomputed from EV/LA (98 mph @ 26-30°, widening ~1°/mph per side
+  to 8-50° at 116+) rather than read from Savant's own classification.
+
+Everything else — air-pull, barrel rate, hard-hit, fly-ball, Z-Contact,
+sweet-spot, EV90, platoon splits, pitch-mix fit, HR-luck — is fully live.
+
+Also in v2.8:
+- **Fail fast.** The retry backoff no longer sleeps after the final attempt, and
+  a circuit breaker stops re-probing Savant after 2 dead days in a run. A
+  21-day window with Savant down went from **~10 minutes of dead sleep, then
+  PROXY** to **~40 seconds and a real board**.
+- **Zero-prior bug fixed.** A league block carrying an explicit `0.0` for a
+  metric the source couldn't supply used to shrink every hitter toward `.000`
+  instead of toward the league default. Missing metrics are now `None`.
+- **`python3 statcast.py --diag`** — one screen telling you exactly which feed
+  is failing, and whether it's a code problem or a network problem.
+
+```
+$ python3 statcast.py --diag
+[1/3] Baseball Savant CSV endpoint   ...
+[2/3] MLB Stats API fallback         ...
+[3/3] Local cache                    ...
+VERDICT: Savant is DOWN/blocked, but the MLB Stats API fallback works.
+```
 
 ## What changed in v2.6
 - **Savant fetch fixed + hardened.** Mid-2026 Baseball Savant started 403ing
@@ -110,8 +161,8 @@ The cause scan was already finding the right *games*; v2.4 sharpens *which hitte
 
 | Source | Used for | CORS |
 |---|---|---|
-| [MLB Stats API](https://statsapi.mlb.com) | schedule, probable pitchers, lineups, season stats, bat/throw hand | ✅ |
-| [Baseball Savant](https://baseballsavant.mlb.com) (Statcast) | air-pull, barrel, hard-hit, fly-ball; pitcher barrel/FB/HR allowed | ❌ (server-side only) |
+| [MLB Stats API](https://statsapi.mlb.com) | schedule, probable pitchers, lineups, season stats, bat/throw hand — **and (v2.8) full Statcast shape via `playByPlay` when Savant is down** | ✅ |
+| [Baseball Savant](https://baseballsavant.mlb.com) (Statcast) | air-pull, barrel, hard-hit, fly-ball; pitcher barrel/FB/HR allowed (primary source) | ❌ (server-side only) |
 | [Open-Meteo](https://open-meteo.com) | hourly temperature / wind / precip near game time | ✅ |
 | `data/parks.json` | HR park factors (handedness-aware), roof, lat/lon | local |
 

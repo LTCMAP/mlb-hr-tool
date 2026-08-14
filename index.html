@@ -320,15 +320,19 @@ function renderDQ(){
   const el=$("#dq"); if(!el) return;
   // Back-compat: older boards have no data_quality block — synthesize from flags.
   const mode = dq ? dq.mode : (DATA.statcast?"statcast":"proxy");
+  // v2.8 — shape can come from Savant OR the MLB Stats API fallback. Both are
+  // real Statcast measurements, so label the feed instead of crying PROXY.
+  const src = dq ? (dq.source||"savant") : "savant";
+  const srcLabel = src==="mlbapi" ? " via MLB API" : src==="mixed" ? " via Savant + MLB API" : "";
   const warns = dq ? (dq.warnings||[]) : (DATA.statcast?[]:["PROXY MODE — no Statcast shape (scores capped, no Locked Core)."]);
   if(!warns.length){
-    el.innerHTML=`<div class="dq dq-ok">✓ <b>Full Statcast shape</b> — ${dq?dq.statcast_candidates:DATA.candidates.length} bats with air-pull/barrel/zone-damage data · ${DATA.confirmed_lineups}/${DATA.games} lineups confirmed. This is a trustworthy slate.</div>`;
+    el.innerHTML=`<div class="dq dq-ok">✓ <b>Full Statcast shape${srcLabel}</b> — ${dq?dq.statcast_candidates:DATA.candidates.length} bats with air-pull/barrel/zone-damage data · ${DATA.confirmed_lineups}/${DATA.games} lineups confirmed. This is a trustworthy slate.</div>`;
     return;
   }
   const bad = warns.some(w=>/PROXY MODE|NO CONFIRMED/.test(w));
-  el.innerHTML=`<div class="dq ${bad?'dq-bad':'dq-warn'}">${bad?'⛔':'⚠'} <b>Data quality: ${mode.toUpperCase()}${(dq&&dq.trustworthy)?'':' — not fully trustworthy'}</b>`+
+  el.innerHTML=`<div class="dq ${bad?'dq-bad':'dq-warn'}">${bad?'⛔':'⚠'} <b>Data quality: ${mode.toUpperCase()}${srcLabel}${(dq&&dq.trustworthy)?'':' — not fully trustworthy'}</b>`+
     `<ul style="margin:6px 0 0;padding-left:18px">${warns.map(w=>`<li>${w}</li>`).join("")}</ul>`+
-    (bad?`<div style="margin-top:6px">Fix: run <code>python3 build.py</code> closer to first pitch (lineups posted) with the Savant feed alive, or trigger the GitHub Action.</div>`:"")+
+    (bad?`<div style="margin-top:6px">Fix: run <code>python3 build.py</code> closer to first pitch (lineups posted). If it says PROXY, run <code>python3 statcast.py --diag</code> to see which feed is failing.</div>`:"")+
     `</div>`;
 }
 
