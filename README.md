@@ -1,17 +1,43 @@
-# ⚾ Daily MLB Home Run Picks — odds-free (v2.8)
+# ⚾ Daily MLB Home Run Picks — odds-free (v2.8.1)
+
+## What changed in v2.8.1 — the actual root cause
+
+Savant was **never down**. `--diag` proved it: the bare `type=details` query
+returns HTTP 200 with ~17 MB of real pitch-level data in ~34s.
+
+Two things were wrong instead:
+
+- **`group_by=name` silently poisons a details query.** Adding it (as the
+  "canonical" Savant/pybaseball parameter set does) makes Savant return HTTP 200
+  and ~3 MB of *player-aggregate* CSV — `"pitches","player_id","player_name",
+  "total_pitches",…` — instead of pitch-level rows. It looks like a successful
+  fetch and is useless. `group_by` is now gone from every variant, the bare
+  query runs first, and `_looks_valid()` explicitly rejects an aggregate header
+  so a wrong-shaped 200 can never be cached.
+- **A cold 21-day window took ~12 minutes.** Each day is a ~17 MB download that
+  Savant spends 30-40s building, and they ran one at a time — long enough that
+  runs looked hung and got killed, which is what actually left the board in
+  PROXY mode. Downloads now run **5 at a time** (~2-3 min cold, seconds warm),
+  parse only after caching, so memory stays flat.
+
+Also: `_game_pks()` checked only `codedGameState`, which statsapi doesn't always
+populate — the fallback reported "0 completed games" on a date that had a full
+slate. It now checks every status field, and `--diag` prints what it skipped.
 
 ## What changed in v2.8 — the shape layer stops depending on one feed
 
-The board had gone to `PROXY` mode (season power only, scores capped, no Locked
-Core / pitch-mix fit / DUE) because **Baseball Savant stopped answering the CSV
-query**. v2.6 hardened the *headers*; the failure that came back is a different
-one, so v2.8 attacks it from three directions:
+> **Note:** v2.8 was written on the assumption that Savant had stopped
+> answering. It hadn't — see v2.8.1 above for the real root cause. The
+> single-point-of-failure problem it fixed was still real, so the fallback
+> stays; only the diagnosis was wrong.
 
-1. **Correct query.** The stripped-down 5-parameter Savant URL is no longer
-   reliably served. `statcast.py` now sends the **full canonical
-   `statcast_search` parameter set** (with `hfGT` game-type and `hfSea` season —
-   the same one Savant's own search UI submits), then falls back through
-   simpler variants.
+Whatever the trigger, the shape layer had **one** source, and losing it dropped
+the board to `PROXY` (season power only, scores capped, no Locked Core /
+pitch-mix fit / DUE). v2.8 removes that dependency:
+
+1. **Multiple query forms.** `statcast.py` tries the bare `type=details` query
+   first, then longer parameter sets, and validates the *shape* of what comes
+   back rather than trusting HTTP 200.
 2. **A real second source.** If Savant is unreachable, the identical pitch-level
    rows are rebuilt from the **MLB Stats API play-by-play feed**
    (`statsapi.mlb.com/api/v1/game/{pk}/playByPlay`), which carries the same

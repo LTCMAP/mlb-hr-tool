@@ -63,18 +63,25 @@ from concurrent.futures import ThreadPoolExecutor
 ROOT = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(ROOT, "data", "cache", "statcast")
 
-# v2.8 — Savant URL variants, tried in order. The first is the canonical full
-# parameter set that Savant's own search UI submits (and that pybaseball has
-# always sent). The stripped-down query we used through v2.7 is kept last as a
-# long shot; it is what stopped returning data in mid-2026.
+# v2.8.1 — Savant URL variants, tried in order.
+#
+# HARD-WON LESSON: `group_by=name` overrides `type=details`. With it, Savant
+# happily returns HTTP 200 and ~3 MB of PLAYER-AGGREGATE csv
+# ("pitches","player_id","player_name","total_pitches",...) instead of the
+# pitch-level rows we need. It looks like a successful fetch and is useless.
+# Never put group_by in a details query. The bare query below is the one that
+# actually returns pitch-level data (~17 MB/day), so it goes FIRST; the longer
+# forms are de-grouped backups in case the bare form is ever rejected.
+SAVANT_MIN = ("https://baseballsavant.mlb.com/statcast_search/csv?all=true"
+              "&type=details&player_type=batter&min_pitches=0"
+              "&game_date_gt={d}&game_date_lt={d}")
 SAVANT_FULL = (
     "https://baseballsavant.mlb.com/statcast_search/csv?all=true"
     "&hfPT=&hfAB=&hfGT=R%7CPO%7CS%7C&hfPR=&hfZ=&hfStadium=&hfBBL=&hfNewZones="
     "&hfSea={season}%7C&hfSit=&player_type=batter&hfOuts=&hfOpponent="
     "&pitcher_throws=&batter_stands=&hfSA=&game_date_gt={d}&game_date_lt={d}"
     "&hfMo=&hfTeam=&home_road=&hfRO=&position=&hfInfield=&hfOutfield=&hfInn="
-    "&hfBBT=&hfFlag=&metric_1=&group_by=name&min_pitches=0&min_results=0"
-    "&min_pas=0&sort_col=pitches&player_event_sort=api_p_release_speed"
+    "&hfBBT=&hfFlag=&metric_1=&min_pitches=0&min_results=0&min_pas=0"
     "&sort_order=desc&type=details&"
 )
 SAVANT_PYBB = (
@@ -83,14 +90,16 @@ SAVANT_PYBB = (
     "&hfGT=R%7CPO%7CS%7C&hfSea=&hfSit=&player_type=pitcher&hfOuts="
     "&opponent=&pitcher_throws=&batter_stands=&hfSA=&game_date_gt={d}"
     "&game_date_lt={d}&team=&position=&hfRO=&home_road=&hfFlag=&metric_1="
-    "&hfInn=&min_pitches=0&min_results=0&group_by=name&sort_col=pitches"
-    "&player_event_sort=h_launch_speed&sort_order=desc&min_abs=0&type=details&"
+    "&hfInn=&min_pitches=0&min_results=0&min_abs=0&type=details&"
 )
-SAVANT_MIN = ("https://baseballsavant.mlb.com/statcast_search/csv?all=true"
-              "&type=details&player_type=batter&min_pitches=0"
-              "&game_date_gt={d}&game_date_lt={d}")
-SAVANT_VARIANTS = (SAVANT_FULL, SAVANT_PYBB, SAVANT_MIN)
+SAVANT_VARIANTS = (SAVANT_MIN, SAVANT_FULL, SAVANT_PYBB)
+SAVANT_LABELS = ("bare details query", "full params (de-grouped)",
+                 "pybaseball params (de-grouped)")
 SAVANT = SAVANT_MIN            # kept for backwards compatibility / callers
+# A details CSV must carry pitch-level columns. The aggregate CSV that
+# group_by returns has player_id/total_pitches instead — reject it explicitly
+# so a 200-with-wrong-shape can never be mistaken for data.
+AGGREGATE_COLS = {"total_pitches", "pitch_percent", "player_name"}
 
 # v2.6 — Savant (Akamai) now 403s obviously-scripted user agents. Look like a
 # normal browser download: real UA + Accept + referer, and accept gzip.
@@ -107,6 +116,8 @@ FETCH_HEADERS = {
 FETCH_RETRIES = 2          # attempts per URL variant per day (3 variants)
 FETCH_BACKOFF = 3          # seconds; doubles per retry
 FETCH_TIMEOUT = 120        # v2.8 — a full day of type=details is slow to build
+DIAG_TIMEOUT = 45          # --diag answers "up or down?"; it needn't wait 2 min
+PREFETCH_WORKERS = 5       # concurrent day downloads on a cold cache
 # Columns that must exist for a pull to be considered a real Statcast CSV.
 REQUIRED_COLS = {"batter", "pitcher", "launch_speed", "events", "type"}
 
@@ -191,6 +202,10 @@ def _looks_valid(text):
     if "<" in header[:5]:               # HTML error/block page
         return False
     cols = {c.strip().strip('"') for c in header.split(",")}
+    # v2.8.1 — a group_by aggregate response is a 200 with real CSV that is the
+    # WRONG SHAPE. Reject it loudly rather than caching a useless day.
+    if cols & AGGREGATE_COLS:
+        return False
     return REQUIRED_COLS.issubset(cols)
 
 
@@ -243,18 +258,37 @@ def _get_json(url, timeout=MLBAPI_TIMEOUT):
         return json.loads(_decode_body(r.read(), r.headers))
 
 
-def _game_pks(date_str):
-    """Completed MLB game ids for a date (regular season + postseason)."""
+def _game_pks(date_str, verbose=False):
+    """Completed MLB game ids for a date (regular season + postseason).
+
+    v2.8.1 — 'completed' is checked against BOTH status fields. statsapi is
+    inconsistent about which one it populates, and keying on codedGameState
+    alone silently returned zero games (making the fallback look broken when
+    it wasn't).
+    """
     url = f"{STATS_API}/schedule?sportId=1&date={date_str}"
-    pks = []
+    pks, seen, skipped = [], 0, {}
     for d in _get_json(url).get("dates", []):
         for g in d.get("games", []):
-            if g.get("gameType") not in GAME_TYPES_OK:
+            seen += 1
+            gt = g.get("gameType")
+            if gt not in GAME_TYPES_OK:
+                skipped[f"gameType={gt}"] = skipped.get(f"gameType={gt}", 0) + 1
                 continue
-            # Only finished games have complete tracking data.
-            if (g.get("status", {}).get("codedGameState") or "") not in ("F", "O"):
+            st = g.get("status", {}) or {}
+            done = (st.get("codedGameState") in ("F", "O")
+                    or st.get("statusCode") in ("F", "O")
+                    or st.get("abstractGameState") == "Final"
+                    or (st.get("detailedState") or "").startswith("Final")
+                    or (st.get("detailedState") or "") == "Completed Early")
+            if not done:
+                key = f"state={st.get('detailedState') or st.get('abstractGameState')}"
+                skipped[key] = skipped.get(key, 0) + 1
                 continue
             pks.append(g["gamePk"])
+    if verbose:
+        print(f"  [statcast] {date_str}: {seen} scheduled, {len(pks)} usable"
+              + (f", skipped {skipped}" if skipped else ""))
     return pks
 
 
@@ -381,20 +415,34 @@ def _fetch_savant(date_str):
     return None
 
 
-def _fetch_day(date_str):
-    """Return list of dict rows for one date, using validated disk cache.
+def _cache_header_ok(path):
+    """Cheap validity probe: read only the header line, not the whole 17 MB."""
+    try:
+        with gzip.open(path, "rt", encoding="utf-8-sig", newline="") as f:
+            return _looks_valid(f.readline())
+    except OSError:
+        return False
 
-    Source order: disk cache -> Baseball Savant CSV -> MLB Stats API play-by-play.
-    A day is only written to cache once it parses as real data, so a blocked
-    response can never poison later runs.
+
+def _ensure_day_cached(date_str):
+    """Download one day to the cache if it isn't validly cached already.
+
+    Returns "cache" | "savant" | "mlbapi" | None. Does NOT parse the CSV, so
+    this is safe to run concurrently across days without holding 21 days of
+    parsed rows (hundreds of MB) in memory at once.
     """
     os.makedirs(CACHE, exist_ok=True)
     path = os.path.join(CACHE, f"{date_str}.csv.gz")
     if os.path.exists(path):
-        rows, valid = _read_cached(path)
-        if valid:
-            return rows
+        if _cache_header_ok(path):
+            return "cache"
+        try:                            # poisoned/aggregate/empty — drop it
+            os.remove(path)
+            print(f"  [statcast] purged invalid cache {os.path.basename(path)}")
+        except OSError:
+            pass
 
+    src = "savant"
     text = _fetch_savant(date_str)
     if text is None:
         print(f"  [statcast] {date_str}: Savant unavailable — trying MLB Stats API")
@@ -402,13 +450,54 @@ def _fetch_day(date_str):
         if rows is None:
             print(f"  [statcast] {date_str}: giving up on both sources "
                   f"(NOT cached — will retry next run)")
-            return []
-        text = _rows_to_csv(rows)
+            return None
+        text, src = _rows_to_csv(rows), "mlbapi"
 
-    # Cache the RAW text so the header survives even on 0-game days.
-    with gzip.open(path, "wt", encoding="utf-8", newline="") as f:
+    # Write via a temp file so an interrupted run can't leave a half day behind.
+    tmp = f"{path}.part{os.getpid()}"
+    with gzip.open(tmp, "wt", encoding="utf-8", newline="") as f:
         f.write(text)
-    return list(csv.DictReader(io.StringIO(text)))
+    os.replace(tmp, path)
+    return src
+
+
+def _prefetch(dates, workers=None):
+    """v2.8.1 — download all missing days CONCURRENTLY.
+
+    A full day of type=details is ~17 MB and takes Savant ~30-40s to build, so
+    a cold 21-day window took ~12 minutes one-at-a-time; long enough that runs
+    looked hung and got killed, which is what left the board in PROXY mode.
+    Downloads are independent, so we overlap them (modestly — Savant is a free
+    service and we are not trying to hammer it).
+    """
+    todo = [d for d in dates
+            if not _cache_header_ok(os.path.join(CACHE, f"{d}.csv.gz"))]
+    if not todo:
+        return {}
+    n = workers or min(PREFETCH_WORKERS, len(todo))
+    print(f"  [statcast] fetching {len(todo)} uncached day(s) with {n} workers "
+          f"(~{FETCH_TIMEOUT}s each; this is the slow part of a cold run)")
+    t0 = time.time()
+    os.makedirs(CACHE, exist_ok=True)
+    with ThreadPoolExecutor(max_workers=n) as ex:
+        out = dict(zip(todo, ex.map(_ensure_day_cached, todo)))
+    print(f"  [statcast] fetch phase done in {time.time() - t0:.0f}s")
+    return out
+
+
+def _fetch_day(date_str):
+    """Return list of dict rows for one date, using validated disk cache.
+
+    Source order: disk cache -> Baseball Savant CSV -> MLB Stats API play-by-play.
+    A day is only written to cache once it parses as real data, so a blocked
+    (or wrong-shaped) response can never poison later runs.
+    """
+    path = os.path.join(CACHE, f"{date_str}.csv.gz")
+    if not os.path.exists(path) or not _cache_header_ok(path):
+        if _ensure_day_cached(date_str) is None:
+            return []
+    rows, valid = _read_cached(path)
+    return rows if valid else []
 
 
 def _is_pulled(stand, hc_x, hc_y):
@@ -453,8 +542,13 @@ def load_window(end_date, days=21, recent_days=7):
     P = {}   # pitcher agg
     fetched, cached, failed = 0, 0, 0
     from_savant, from_mlbapi = 0, 0          # v2.8 — provenance per day
+    # v2.8.1 — snapshot what was already on disk BEFORE the concurrent prefetch
+    # fills it, or every day would report as "cached" and days_fetched stuck at 0.
+    was_cached = {d: _cache_header_ok(os.path.join(CACHE, f"{d}.csv.gz"))
+                  for d in dates}
+    _prefetch(dates)                          # concurrent cold-cache fill
     for d in dates:
-        before = os.path.exists(os.path.join(CACHE, f"{d}.csv.gz"))
+        before = was_cached[d]
         rows = _fetch_day(d)
         after = os.path.exists(os.path.join(CACHE, f"{d}.csv.gz"))
         if before and after:
@@ -681,71 +775,81 @@ def diagnose(date_str=None):
     Run: python3 statcast.py --diag [YYYY-MM-DD]
     """
     day = date_str or (dt.date.today() - dt.timedelta(days=1)).isoformat()
-    print(f"Statcast source diagnosis for {day}\n" + "-" * 46)
+    say = lambda *a: print(*a, flush=True)     # never buffer a progress line
+    say(f"Statcast source diagnosis for {day}\n" + "-" * 46)
 
-    print("[1/3] Baseball Savant CSV endpoint")
+    say(f"[1/3] Baseball Savant CSV endpoint  "
+        f"({len(SAVANT_VARIANTS)} query variants, up to {DIAG_TIMEOUT}s each —"
+        f" a slow reply here is normal, Savant builds the CSV on demand)")
     ok_savant = False
     season = day[:4]
     for vi, tpl in enumerate(SAVANT_VARIANTS, 1):
         url = tpl.format(d=day, season=season)
+        label = ("full canonical params", "pybaseball params", "minimal params (v2.7)")[vi - 1]
+        say(f"  variant {vi}/{len(SAVANT_VARIANTS)} ({label}): requesting…")
+        t0 = time.time()
         try:
             req = Request(url, headers=FETCH_HEADERS)
-            t0 = time.time()
-            with urlopen(req, timeout=FETCH_TIMEOUT) as r:
-                status = getattr(r, "status", r.getcode())
+            with urlopen(req, timeout=DIAG_TIMEOUT) as r:
+                status = getattr(r, "status", None) or r.getcode()
                 body = _decode_body(r.read(), r.headers)
             dur = time.time() - t0
             good = _looks_valid(body)
             head = body.lstrip().splitlines()[0][:70] if body.strip() else "<empty>"
-            print(f"  variant {vi}: HTTP {status} in {dur:.1f}s, {len(body)} chars, "
-                  f"valid_csv={good}\n            first line: {head}")
+            say(f"    -> HTTP {status} in {dur:.1f}s, {len(body)} chars, valid_csv={good}"
+                f"\n       first line: {head}")
             if good:
                 ok_savant = True
                 break
         except Exception as e:
-            print(f"  variant {vi}: FAILED — {type(e).__name__}: {e}")
+            say(f"    -> FAILED after {time.time() - t0:.1f}s — {type(e).__name__}: {e}")
 
-    print("[2/3] MLB Stats API fallback")
+    say("[2/3] MLB Stats API fallback")
     ok_api = False
     try:
-        pks = _game_pks(day)
-        print(f"  schedule OK — {len(pks)} completed games")
+        say("  fetching schedule…")
+        pks = _game_pks(day, verbose=True)
+        say(f"    -> schedule OK, {len(pks)} completed games")
+        if not pks:
+            say("       (0 usable games — if that date HAD games, the status "
+                "filter is the\n        problem, not the feed; the line above "
+                "shows what was skipped)")
         if pks:
+            say(f"  pulling play-by-play for game {pks[0]}…")
             rows = _rows_from_game(pks[0])
             bip = sum(1 for r in rows if r["type"] == "X")
             ev = sum(1 for r in rows if r["launch_speed"] != "")
-            print(f"  game {pks[0]}: {len(rows)} pitches, {bip} in play, "
-                  f"{ev} with exit velocity")
+            say(f"    -> {len(rows)} pitches, {bip} in play, {ev} with exit velocity")
             ok_api = ev > 0
         else:
             ok_api = True                      # legitimate off-day
     except Exception as e:
-        print(f"  FAILED — {type(e).__name__}: {e}")
+        say(f"    -> FAILED — {type(e).__name__}: {e}")
 
-    print("[3/3] Local cache")
+    say("[3/3] Local cache")
     if os.path.isdir(CACHE):
         files = sorted(f for f in os.listdir(CACHE) if f.endswith(".csv.gz"))
         newest = files[-1][:-7] if files else "none"
-        print(f"  {len(files)} cached day(s); newest = {newest}")
+        say(f"  {len(files)} cached day(s); newest = {newest}")
         stale = (files and
                  newest < (dt.date.today() - dt.timedelta(days=2)).isoformat())
         if stale:
-            print("  NOTE: cache is stale — a fresh window needs live fetches.")
+            say("  NOTE: cache is stale — a fresh window needs live fetches.")
     else:
-        print("  no cache directory yet")
+        say("  no cache directory yet")
 
-    print("-" * 46)
+    say("-" * 46)
     if ok_savant:
-        print("VERDICT: Savant is reachable. Shape layer should build normally.")
+        say("VERDICT: Savant is reachable. Shape layer should build normally.")
     elif ok_api:
-        print("VERDICT: Savant is DOWN/blocked, but the MLB Stats API fallback "
-              "works.\n         build.py will produce a real shape layer "
-              "(source=mlbapi):\n         xwOBAcon regresses to the league "
-              "prior, everything else is live.")
+        say("VERDICT: Savant is DOWN/blocked, but the MLB Stats API fallback "
+            "works.\n         build.py will produce a real shape layer "
+            "(source=mlbapi):\n         xwOBAcon regresses to the league "
+            "prior, everything else is live.\n         Just run: python3 build.py")
     else:
-        print("VERDICT: BOTH sources failed. Check network/DNS/proxy — this is "
-              "not a\n         code problem. The board will stay in PROXY mode "
-              "until one returns.")
+        say("VERDICT: BOTH sources failed. Check network/DNS/proxy — this is "
+            "not a\n         code problem. The board will stay in PROXY mode "
+            "until one returns.")
     return ok_savant, ok_api
 
 

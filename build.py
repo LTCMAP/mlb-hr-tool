@@ -1268,7 +1268,7 @@ def main():
         window = int(sys.argv[sys.argv.index("--window") + 1])
     if "--no-statcast" in sys.argv:
         use_sc = False
-    print(f"Building HR slate v2.7 for {date} ...")
+    print(f"Building HR slate v2.8 for {date} ...")
     out = build(date, window=window, use_statcast=use_sc)
     os.makedirs(DATA, exist_ok=True)
     # Always persist the dated snapshot (backtest record) ...
