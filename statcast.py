@@ -258,13 +258,13 @@ def _get_json(url, timeout=MLBAPI_TIMEOUT):
         return json.loads(_decode_body(r.read(), r.headers))
 
 
-def _game_pks(date_str, verbose=False):
-    """Completed MLB game ids for a date (regular season + postseason).
+def _schedule_counts(date_str):
+    """(usable_game_pks, games_scheduled, skipped_reasons) for a date.
 
-    v2.8.1 — 'completed' is checked against BOTH status fields. statsapi is
-    inconsistent about which one it populates, and keying on codedGameState
-    alone silently returned zero games (making the fallback look broken when
-    it wasn't).
+    v2.8.2 — the scheduled count matters as much as the usable one. A date with
+    ZERO games scheduled is a legitimate off-day and may be cached as an empty
+    file. A date with games scheduled but none usable means our filter (or the
+    feed) failed, and caching an empty day there poisons the cache forever.
     """
     url = f"{STATS_API}/schedule?sportId=1&date={date_str}"
     pks, seen, skipped = [], 0, {}
@@ -286,6 +286,18 @@ def _game_pks(date_str, verbose=False):
                 skipped[key] = skipped.get(key, 0) + 1
                 continue
             pks.append(g["gamePk"])
+    return pks, seen, skipped
+
+
+def _game_pks(date_str, verbose=False):
+    """Completed MLB game ids for a date (regular season + postseason).
+
+    v2.8.1 — 'completed' is checked against EVERY status field. statsapi is
+    inconsistent about which one it populates, and keying on codedGameState
+    alone silently returned zero games (making the fallback look broken when
+    it wasn't, and caching 21 empty days as a result).
+    """
+    pks, seen, skipped = _schedule_counts(date_str)
     if verbose:
         print(f"  [statcast] {date_str}: {seen} scheduled, {len(pks)} usable"
               + (f", skipped {skipped}" if skipped else ""))
@@ -349,14 +361,21 @@ def _rows_from_game(pk):
 def _fetch_day_mlbapi(date_str):
     """v2.8 fallback: rebuild a day of Statcast rows from statsapi play-by-play."""
     try:
-        pks = _game_pks(date_str)
+        pks, scheduled, skipped = _schedule_counts(date_str)
     except Exception as e:
         print(f"  [statcast] {date_str}: mlbapi schedule failed: {e}")
         return None
     if not pks:
-        # A legitimate off-day. Return an empty (but valid) day so we cache a
-        # header and never re-hammer the API for it.
-        return []
+        if scheduled == 0:
+            # A legitimate off-day (All-Star break, etc). Cache an empty day so
+            # we never re-hammer the API for it.
+            return []
+        # v2.8.2 — games WERE played but none came through the filter. Caching
+        # an empty day here is what silently produced 21 "valid" but rowless
+        # cached days on CI, and with them a permanent PROXY board.
+        print(f"  [statcast] {date_str}: {scheduled} games scheduled but 0 usable "
+              f"({skipped}) — refusing to cache an empty day")
+        return None
     rows = []
     with ThreadPoolExecutor(max_workers=MLBAPI_WORKERS) as ex:
         for got in ex.map(_rows_from_game, pks):
@@ -424,6 +443,41 @@ def _cache_header_ok(path):
         return False
 
 
+def _cache_has_rows(path):
+    """True if the cached day holds at least one data row (header + 1 line)."""
+    try:
+        with gzip.open(path, "rt", encoding="utf-8-sig", newline="") as f:
+            f.readline()                       # header
+            return bool(f.readline().strip())
+    except OSError:
+        return False
+
+
+def _cache_ok(path, date_str):
+    """Full cache validation: right shape AND actually contains data.
+
+    v2.8.2 — the failure that kept CI in PROXY mode was 21 cached days that
+    were perfectly well-formed and completely EMPTY. `_looks_valid` passed
+    them (correct header), `days_cached` read 21, `days_failed` read 0, and
+    `batters` read 0. A rowless day is only legitimate if MLB genuinely played
+    none that date, so we make it prove that — once, cheaply — before trusting
+    it. Days with rows (the overwhelming majority) never pay for this check.
+    """
+    if not _cache_header_ok(path):
+        return False
+    if _cache_has_rows(path):
+        return True
+    try:
+        _, scheduled, _ = _schedule_counts(date_str)
+    except Exception:
+        return True                            # can't verify — don't thrash
+    if scheduled == 0:
+        return True                            # real off-day
+    print(f"  [statcast] {date_str}: cached day is EMPTY but {scheduled} games "
+          f"were played — purging and refetching")
+    return False
+
+
 def _ensure_day_cached(date_str):
     """Download one day to the cache if it isn't validly cached already.
 
@@ -434,7 +488,7 @@ def _ensure_day_cached(date_str):
     os.makedirs(CACHE, exist_ok=True)
     path = os.path.join(CACHE, f"{date_str}.csv.gz")
     if os.path.exists(path):
-        if _cache_header_ok(path):
+        if _cache_ok(path, date_str):
             return "cache"
         try:                            # poisoned/aggregate/empty — drop it
             os.remove(path)
@@ -471,7 +525,7 @@ def _prefetch(dates, workers=None):
     service and we are not trying to hammer it).
     """
     todo = [d for d in dates
-            if not _cache_header_ok(os.path.join(CACHE, f"{d}.csv.gz"))]
+            if not _cache_ok(os.path.join(CACHE, f"{d}.csv.gz"), d)]
     if not todo:
         return {}
     n = workers or min(PREFETCH_WORKERS, len(todo))
@@ -493,7 +547,7 @@ def _fetch_day(date_str):
     (or wrong-shaped) response can never poison later runs.
     """
     path = os.path.join(CACHE, f"{date_str}.csv.gz")
-    if not os.path.exists(path) or not _cache_header_ok(path):
+    if not os.path.exists(path) or not _cache_ok(path, date_str):
         if _ensure_day_cached(date_str) is None:
             return []
     rows, valid = _read_cached(path)
@@ -544,7 +598,7 @@ def load_window(end_date, days=21, recent_days=7):
     from_savant, from_mlbapi = 0, 0          # v2.8 — provenance per day
     # v2.8.1 — snapshot what was already on disk BEFORE the concurrent prefetch
     # fills it, or every day would report as "cached" and days_fetched stuck at 0.
-    was_cached = {d: _cache_header_ok(os.path.join(CACHE, f"{d}.csv.gz"))
+    was_cached = {d: _cache_ok(os.path.join(CACHE, f"{d}.csv.gz"), d)
                   for d in dates}
     _prefetch(dates)                          # concurrent cold-cache fill
     for d in dates:
