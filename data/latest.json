@@ -1,9 +1,9 @@
 {
   "version": "2.8",
-  "generated_utc": "2026-08-17T16:55:36.204076+00:00",
+  "generated_utc": "2026-08-17T19:48:42.721849+00:00",
   "slate_date": "2026-08-17",
   "games": 11,
-  "confirmed_lineups": 0,
+  "confirmed_lineups": 6,
   "statcast": true,
   "statcast_meta": {
     "window_days": 21,
@@ -38,14 +38,14 @@
     "source": "mlbapi",
     "days_savant": 0,
     "days_mlbapi": 20,
-    "trustworthy": false,
+    "trustworthy": true,
     "statcast_batters": 400,
     "statcast_candidates": 146,
-    "confirmed_lineups": 0,
+    "confirmed_lineups": 6,
     "games": 11,
     "days_failed": 1,
     "warnings": [
-      "NO CONFIRMED LINEUPS \u2014 every bat is using a neutral slot default. Likely built before lineups posted; re-run closer to first pitch.",
+      "Only 6/22 lineups confirmed \u2014 unconfirmed bats use a neutral slot default.",
       "Statcast: 1 day(s) failed to fetch in the 21-day window (thinner sample).",
       "Shape built from the MLB Stats API fallback (20/21 days) because Baseball Savant was unreachable. All shape signals are live; xwOBAcon is unavailable (regressed to league prior, ISO backstops it) and barrels are recomputed from EV/LA."
     ]
@@ -208,8 +208,8 @@
       "playable_bats": [
         {
           "name": "Kyle Schwarber",
-          "total": 66.0,
-          "role": "Power Satellite",
+          "total": 72.0,
+          "role": "Locked Core",
           "fit_tag": "PITCH-FIT"
         }
       ]
@@ -399,6 +399,66 @@
   ],
   "candidates": [
     {
+      "id": 656941,
+      "name": "Kyle Schwarber",
+      "team": "Philadelphia Phillies",
+      "bats": "L",
+      "opp": "Miami Marlins",
+      "opp_pitcher": "Janson Junk",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823427,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 37,
+      "iso": 0.29,
+      "total": 72.0,
+      "tier": "Satellite",
+      "role": "Locked Core",
+      "tb_score": 66.9,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.34,
+      "fit_tag": "PITCH-FIT",
+      "value_play": false,
+      "due_hr": -0.6,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 33.0,
+        "environment": 12.0,
+        "lineup": 12.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2089,
+        "barrel_rate": 0.0981,
+        "hard_hit_rate": 0.4569,
+        "fb_rate": 0.5151,
+        "z_contact_rate": 0.8295,
+        "sweet_spot_rate": 0.4136,
+        "xwobacon": null,
+        "ev90": 108.0
+      },
+      "reasons": [
+        "vs Janson Junk \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.24)",
+        "Platoon shape: spikes vs RHP (barrel 13%, air-pull 24%)",
+        "Strong air-pull (24%)",
+        "Strong barrels (13%)",
+        "Zone-damage: hard-hit 46% + Z-contact 83%",
+        "Hitter-friendly park (108)",
+        "Hot (86\u00b0F)",
+        "Top of order (#1)",
+        "Model: one strong signal"
+      ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
       "id": 660271,
       "name": "Shohei Ohtani",
       "team": "Los Angeles Dodgers",
@@ -586,70 +646,6 @@
         "Lineup not confirmed"
       ],
       "role_notes": []
-    },
-    {
-      "id": 656941,
-      "name": "Kyle Schwarber",
-      "team": "Philadelphia Phillies",
-      "bats": "L",
-      "opp": "Miami Marlins",
-      "opp_pitcher": "Janson Junk",
-      "venue": "Citizens Bank Park",
-      "gamePk": 823427,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 37,
-      "iso": 0.29,
-      "total": 66.0,
-      "tier": "Longshot",
-      "role": "Power Satellite",
-      "tb_score": 62.9,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.34,
-      "fit_tag": "PITCH-FIT",
-      "value_play": false,
-      "due_hr": -0.6,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.0,
-        "hitter": 33.0,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2089,
-        "barrel_rate": 0.0981,
-        "hard_hit_rate": 0.4569,
-        "fb_rate": 0.5151,
-        "z_contact_rate": 0.8295,
-        "sweet_spot_rate": 0.4136,
-        "xwobacon": null,
-        "ev90": 108.0
-      },
-      "reasons": [
-        "vs Janson Junk \u2014 cause C (11.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.24)",
-        "Platoon shape: spikes vs RHP (barrel 13%, air-pull 24%)",
-        "Strong air-pull (24%)",
-        "Strong barrels (13%)",
-        "Zone-damage: hard-hit 46% + Z-contact 83%",
-        "Hitter-friendly park (108)",
-        "Hot (86\u00b0F)",
-        "Elite-hitter override (beats a neutral spot)",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Elite-hitter override (beats a neutral spot)"
-      ]
     },
     {
       "id": 687221,
@@ -1043,7 +1039,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 18,
-      "iso": 0.211,
+      "iso": 0.209,
       "total": 61.8,
       "tier": "Pass",
       "role": "Power Satellite",
@@ -1345,6 +1341,177 @@
       "role_notes": []
     },
     {
+      "id": 691406,
+      "name": "Junior Caminero",
+      "team": "Tampa Bay Rays",
+      "bats": "R",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Brandon Young",
+      "venue": "Tropicana Field",
+      "gamePk": 822939,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 35,
+      "iso": 0.267,
+      "total": 58.4,
+      "tier": "Pass",
+      "role": "Pass",
+      "tb_score": 57.4,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.47,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.2,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 12.5,
+        "hitter": 24.9,
+        "environment": 7.0,
+        "lineup": 11.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1941,
+        "barrel_rate": 0.1013,
+        "hard_hit_rate": 0.4361,
+        "fb_rate": 0.465,
+        "z_contact_rate": 0.8473,
+        "sweet_spot_rate": 0.2975,
+        "xwobacon": null,
+        "ev90": 110.0
+      },
+      "reasons": [
+        "vs Brandon Young \u2014 cause C (12.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.95)",
+        "Platoon shape: spikes vs RHP (barrel 14%, air-pull 20%)",
+        "Good air-pull (20%)",
+        "Strong barrels (14%)",
+        "Pitch-mix fit: damages this arsenal (53% fastballs, rel 1.41 \u2192 mix-fit 1.47x)",
+        "Dome roof (weather neutralized)",
+        "Heart of order (#3)"
+      ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
+      "id": 668904,
+      "name": "Royce Lewis",
+      "team": "Minnesota Twins",
+      "bats": "R",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Mart\u00edn P\u00e9rez",
+      "venue": "Target Field",
+      "gamePk": 823668,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 13,
+      "iso": 0.186,
+      "total": 58.0,
+      "tier": "Pass",
+      "role": "Pass",
+      "tb_score": 56.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.69,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 1.1,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.0,
+        "hitter": 29.5,
+        "environment": 9.5,
+        "lineup": 8.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2633,
+        "barrel_rate": 0.0927,
+        "hard_hit_rate": 0.4532,
+        "fb_rate": 0.5551,
+        "z_contact_rate": 0.8148,
+        "sweet_spot_rate": 0.4177,
+        "xwobacon": null,
+        "ev90": 107.2
+      },
+      "reasons": [
+        "vs Mart\u00edn P\u00e9rez \u2014 cause Pass (7.0/25)",
+        "Platoon shape: spikes vs LHP (barrel 11%, air-pull 28%)",
+        "Elite air-pull (28%)",
+        "Above-avg barrels (11%)",
+        "Hard-hit 45%",
+        "Warm (83\u00b0F)",
+        "Wind out ~8 mph",
+        "Mid order (#5)",
+        "Model: one strong signal"
+      ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
+      "id": 596019,
+      "name": "Francisco Lindor",
+      "team": "New York Mets",
+      "bats": "S",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Walker Buehler",
+      "venue": "Citi Field",
+      "gamePk": 823589,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 12,
+      "iso": 0.196,
+      "total": 58.0,
+      "tier": "Pass",
+      "role": "Pass",
+      "tb_score": 57.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.65,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.2,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.0,
+        "hitter": 25.0,
+        "environment": 8.0,
+        "lineup": 12.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2248,
+        "barrel_rate": 0.0734,
+        "hard_hit_rate": 0.4294,
+        "fb_rate": 0.5551,
+        "z_contact_rate": 0.8466,
+        "sweet_spot_rate": 0.3219,
+        "xwobacon": null,
+        "ev90": 104.0
+      },
+      "reasons": [
+        "vs Walker Buehler \u2014 cause C (10.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.10)",
+        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 27%)",
+        "Strong air-pull (27%)",
+        "Above-avg barrels (11%)",
+        "Pitch-mix fit: damages this arsenal (70% fastballs, rel 1.95 \u2192 mix-fit 1.65x)",
+        "Warm (76\u00b0F)",
+        "Top of order (#2)"
+      ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
       "id": 805367,
       "name": "Chase Meidroth",
       "team": "Chicago White Sox",
@@ -1535,66 +1702,6 @@
       "role_notes": []
     },
     {
-      "id": 668904,
-      "name": "Royce Lewis",
-      "team": "Minnesota Twins",
-      "bats": "R",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Mart\u00edn P\u00e9rez",
-      "venue": "Target Field",
-      "gamePk": 823668,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.186,
-      "total": 56.0,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 53.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.69,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 1.1,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.0,
-        "hitter": 29.5,
-        "environment": 9.5,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2633,
-        "barrel_rate": 0.0927,
-        "hard_hit_rate": 0.4532,
-        "fb_rate": 0.5551,
-        "z_contact_rate": 0.8148,
-        "sweet_spot_rate": 0.4177,
-        "xwobacon": null,
-        "ev90": 107.2
-      },
-      "reasons": [
-        "vs Mart\u00edn P\u00e9rez \u2014 cause Pass (7.0/25)",
-        "Platoon shape: spikes vs LHP (barrel 11%, air-pull 28%)",
-        "Elite air-pull (28%)",
-        "Above-avg barrels (11%)",
-        "Hard-hit 45%",
-        "Warm (83\u00b0F)",
-        "Wind out ~8 mph",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 681624,
       "name": "Andy Pages",
       "team": "Los Angeles Dodgers",
@@ -1714,6 +1821,66 @@
       "warnings": [
         "Lineup not confirmed"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 547180,
+      "name": "Bryce Harper",
+      "team": "Philadelphia Phillies",
+      "bats": "L",
+      "opp": "Miami Marlins",
+      "opp_pitcher": "Janson Junk",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823427,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 25,
+      "iso": 0.237,
+      "total": 55.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 70.9,
+      "tb_tier": "Strong TB",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.48,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.2,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 19.8,
+        "environment": 12.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1671,
+        "barrel_rate": 0.0779,
+        "hard_hit_rate": 0.424,
+        "fb_rate": 0.468,
+        "z_contact_rate": 0.8903,
+        "sweet_spot_rate": 0.3666,
+        "xwobacon": null,
+        "ev90": 105.6
+      },
+      "reasons": [
+        "vs Janson Junk \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.24)",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (46% fastballs, rel 1.83 \u2192 mix-fit 1.48x)",
+        "Hitter-friendly park (108)",
+        "Hot (86\u00b0F)",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -2453,63 +2620,6 @@
       ]
     },
     {
-      "id": 691406,
-      "name": "Junior Caminero",
-      "team": "Tampa Bay Rays",
-      "bats": "R",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Brandon Young",
-      "venue": "Tropicana Field",
-      "gamePk": 822939,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 35,
-      "iso": 0.267,
-      "total": 53.4,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 54.4,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.47,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.2,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 12.5,
-        "hitter": 24.9,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1941,
-        "barrel_rate": 0.1013,
-        "hard_hit_rate": 0.4361,
-        "fb_rate": 0.465,
-        "z_contact_rate": 0.8473,
-        "sweet_spot_rate": 0.2975,
-        "xwobacon": null,
-        "ev90": 110.0
-      },
-      "reasons": [
-        "vs Brandon Young \u2014 cause C (12.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.95)",
-        "Platoon shape: spikes vs RHP (barrel 14%, air-pull 20%)",
-        "Good air-pull (20%)",
-        "Strong barrels (14%)",
-        "Pitch-mix fit: damages this arsenal (53% fastballs, rel 1.41 \u2192 mix-fit 1.47x)",
-        "Dome roof (weather neutralized)"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 678554,
       "name": "Curtis Mead",
       "team": "Boston Red Sox",
@@ -2870,63 +2980,6 @@
       ]
     },
     {
-      "id": 682626,
-      "name": "Francisco Alvarez",
-      "team": "New York Mets",
-      "bats": "R",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Walker Buehler",
-      "venue": "Citi Field",
-      "gamePk": 823589,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.18,
-      "total": 52.5,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 45.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.92,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 2.4,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 25.5,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1788,
-        "barrel_rate": 0.1004,
-        "hard_hit_rate": 0.3798,
-        "fb_rate": 0.4761,
-        "z_contact_rate": 0.8004,
-        "sweet_spot_rate": 0.3719,
-        "xwobacon": null,
-        "ev90": 107.1
-      },
-      "reasons": [
-        "vs Walker Buehler \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.10)",
-        "Platoon shape: spikes vs RHP (barrel 16%, air-pull 21%)",
-        "Good air-pull (21%)",
-        "Elite barrel rate (16%)",
-        "Pitch-mix fit: damages this arsenal (70% fastballs, rel 2.20 \u2192 mix-fit 1.92x)",
-        "Warm (76\u00b0F)"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 691011,
       "name": "Drew Romo",
       "team": "Chicago White Sox",
@@ -2988,61 +3041,64 @@
       ]
     },
     {
-      "id": 596019,
-      "name": "Francisco Lindor",
-      "team": "New York Mets",
-      "bats": "S",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Walker Buehler",
-      "venue": "Citi Field",
-      "gamePk": 823589,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.196,
-      "total": 52.0,
+      "id": 666018,
+      "name": "Jonathan Aranda",
+      "team": "Tampa Bay Rays",
+      "bats": "L",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Brandon Young",
+      "venue": "Tropicana Field",
+      "gamePk": 822939,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 15,
+      "iso": 0.141,
+      "total": 52.4,
       "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 53.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
+      "role": "Watchlist",
+      "tb_score": 64.2,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 1.65,
+      "mix_fit": 1.04,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -0.2,
+      "due_hr": 1.1,
       "pitcher_grade": "C",
       "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 25.0,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 3.0
+        "pitcher": 12.5,
+        "hitter": 18.9,
+        "environment": 7.0,
+        "lineup": 12.0,
+        "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.2248,
-        "barrel_rate": 0.0734,
-        "hard_hit_rate": 0.4294,
-        "fb_rate": 0.5551,
-        "z_contact_rate": 0.8466,
-        "sweet_spot_rate": 0.3219,
+        "air_pull_rate": 0.1887,
+        "barrel_rate": 0.0614,
+        "hard_hit_rate": 0.4326,
+        "fb_rate": 0.5223,
+        "z_contact_rate": 0.8806,
+        "sweet_spot_rate": 0.3802,
         "xwobacon": null,
-        "ev90": 104.0
+        "ev90": 104.1
       },
       "reasons": [
-        "vs Walker Buehler \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.10)",
-        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 27%)",
-        "Strong air-pull (27%)",
-        "Above-avg barrels (11%)",
-        "Pitch-mix fit: damages this arsenal (70% fastballs, rel 1.95 \u2192 mix-fit 1.65x)",
-        "Warm (76\u00b0F)"
+        "vs Brandon Young \u2014 cause C (12.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.95)",
+        "Good air-pull (21%)",
+        "Platoon edge (L vs RHP)",
+        "Dome roof (weather neutralized)",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 671056,
@@ -3056,7 +3112,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 13,
-      "iso": 0.138,
+      "iso": 0.139,
       "total": 51.9,
       "tier": "Pass",
       "role": "Watchlist",
@@ -3202,6 +3258,63 @@
       "role_notes": []
     },
     {
+      "id": 682626,
+      "name": "Francisco Alvarez",
+      "team": "New York Mets",
+      "bats": "R",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Walker Buehler",
+      "venue": "Citi Field",
+      "gamePk": 823589,
+      "slot": 9,
+      "confirmed": true,
+      "season_hr": 13,
+      "iso": 0.18,
+      "total": 51.5,
+      "tier": "Pass",
+      "role": "Pass",
+      "tb_score": 45.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.92,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 2.4,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.0,
+        "hitter": 25.5,
+        "environment": 8.0,
+        "lineup": 5.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1788,
+        "barrel_rate": 0.1004,
+        "hard_hit_rate": 0.3798,
+        "fb_rate": 0.4761,
+        "z_contact_rate": 0.8004,
+        "sweet_spot_rate": 0.3719,
+        "xwobacon": null,
+        "ev90": 107.1
+      },
+      "reasons": [
+        "vs Walker Buehler \u2014 cause C (10.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.10)",
+        "Platoon shape: spikes vs RHP (barrel 16%, air-pull 21%)",
+        "Good air-pull (21%)",
+        "Elite barrel rate (16%)",
+        "Pitch-mix fit: damages this arsenal (70% fastballs, rel 2.20 \u2192 mix-fit 1.92x)",
+        "Warm (76\u00b0F)"
+      ],
+      "warnings": [
+        "Bottom of order (#9)"
+      ],
+      "role_notes": []
+    },
+    {
       "id": 691016,
       "name": "Tyler Soderstrom",
       "team": "Athletics",
@@ -3263,124 +3376,62 @@
       ]
     },
     {
-      "id": 547180,
-      "name": "Bryce Harper",
-      "team": "Philadelphia Phillies",
+      "id": 689414,
+      "name": "Liam Hicks",
+      "team": "Tampa Bay Rays",
       "bats": "L",
-      "opp": "Miami Marlins",
-      "opp_pitcher": "Janson Junk",
-      "venue": "Citizens Bank Park",
-      "gamePk": 823427,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 25,
-      "iso": 0.237,
-      "total": 50.8,
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Brandon Young",
+      "venue": "Tropicana Field",
+      "gamePk": 822939,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 16,
+      "iso": 0.161,
+      "total": 50.6,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 67.9,
-      "tb_tier": "Solid TB",
+      "tb_score": 57.3,
+      "tb_tier": "Dart",
       "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.48,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.2,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.0,
-        "hitter": 19.8,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1671,
-        "barrel_rate": 0.0779,
-        "hard_hit_rate": 0.424,
-        "fb_rate": 0.468,
-        "z_contact_rate": 0.8903,
-        "sweet_spot_rate": 0.3666,
-        "xwobacon": null,
-        "ev90": 105.6
-      },
-      "reasons": [
-        "vs Janson Junk \u2014 cause C (11.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.24)",
-        "Platoon edge (L vs RHP)",
-        "Pitch-mix fit: damages this arsenal (46% fastballs, rel 1.83 \u2192 mix-fit 1.48x)",
-        "Hitter-friendly park (108)",
-        "Hot (86\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 669016,
-      "name": "Brandon Marsh",
-      "team": "Philadelphia Phillies",
-      "bats": "L",
-      "opp": "Miami Marlins",
-      "opp_pitcher": "Janson Junk",
-      "venue": "Citizens Bank Park",
-      "gamePk": 823427,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.166,
-      "total": 50.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 65.1,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 92%) \u2014 banks XBH",
+        "High-contact bat (contact 94%, Z-contact 92%) \u2014 banks XBH",
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 0.91,
+      "mix_fit": 0.82,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.4,
+      "due_hr": -0.6,
       "pitcher_grade": "C",
       "breakdown": {
-        "pitcher": 11.0,
-        "hitter": 19.1,
-        "environment": 12.0,
-        "lineup": 6.0,
+        "pitcher": 12.5,
+        "hitter": 18.1,
+        "environment": 7.0,
+        "lineup": 11.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.198,
-        "barrel_rate": 0.0522,
-        "hard_hit_rate": 0.4212,
-        "fb_rate": 0.5426,
-        "z_contact_rate": 0.9168,
-        "sweet_spot_rate": 0.37,
+        "air_pull_rate": 0.2036,
+        "barrel_rate": 0.0537,
+        "hard_hit_rate": 0.2596,
+        "fb_rate": 0.5387,
+        "z_contact_rate": 0.9218,
+        "sweet_spot_rate": 0.3396,
         "xwobacon": null,
-        "ev90": 102.1
+        "ev90": 98.6
       },
       "reasons": [
-        "vs Janson Junk \u2014 cause C (11.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.24)",
-        "Good air-pull (22%)",
+        "vs Brandon Young \u2014 cause C (12.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.95)",
+        "Strong air-pull (25%)",
         "Platoon edge (L vs RHP)",
-        "Hitter-friendly park (108)",
-        "Hot (86\u00b0F)",
+        "Poor pitch-mix fit (53% fastballs, rel 1.28 \u2192 mix-fit 0.82x)",
+        "Dome roof (weather neutralized)",
+        "Heart of order (#4)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -3523,7 +3574,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 12,
-      "iso": 0.174,
+      "iso": 0.173,
       "total": 50.0,
       "tier": "Pass",
       "role": "Pass",
@@ -3812,6 +3863,68 @@
       ]
     },
     {
+      "id": 669016,
+      "name": "Brandon Marsh",
+      "team": "Philadelphia Phillies",
+      "bats": "L",
+      "opp": "Miami Marlins",
+      "opp_pitcher": "Janson Junk",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823427,
+      "slot": 7,
+      "confirmed": true,
+      "season_hr": 17,
+      "iso": 0.166,
+      "total": 49.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 65.1,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 92%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.91,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.4,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 19.1,
+        "environment": 12.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.198,
+        "barrel_rate": 0.0522,
+        "hard_hit_rate": 0.4212,
+        "fb_rate": 0.5426,
+        "z_contact_rate": 0.9168,
+        "sweet_spot_rate": 0.37,
+        "xwobacon": null,
+        "ev90": 102.1
+      },
+      "reasons": [
+        "vs Janson Junk \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.24)",
+        "Good air-pull (22%)",
+        "Platoon edge (L vs RHP)",
+        "Hitter-friendly park (108)",
+        "Hot (86\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Bottom of order (#7)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 608324,
       "name": "Alex Bregman",
       "team": "Chicago Cubs",
@@ -3885,7 +3998,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 16,
-      "iso": 0.133,
+      "iso": 0.134,
       "total": 48.6,
       "tier": "Pass",
       "role": "Watchlist",
@@ -3930,6 +4043,64 @@
       "warnings": [
         "Lineup not confirmed"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 607208,
+      "name": "Trea Turner",
+      "team": "Philadelphia Phillies",
+      "bats": "R",
+      "opp": "Miami Marlins",
+      "opp_pitcher": "Janson Junk",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823427,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 17,
+      "iso": 0.151,
+      "total": 48.4,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 51.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.74,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.6,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 11.4,
+        "environment": 12.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1757,
+        "barrel_rate": 0.0486,
+        "hard_hit_rate": 0.3236,
+        "fb_rate": 0.4922,
+        "z_contact_rate": 0.8871,
+        "sweet_spot_rate": 0.3609,
+        "xwobacon": null,
+        "ev90": 103.8
+      },
+      "reasons": [
+        "vs Janson Junk \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.24)",
+        "Good air-pull (20%)",
+        "Poor pitch-mix fit (46% fastballs, rel 0.30 \u2192 mix-fit 0.74x)",
+        "Hitter-friendly park (106)",
+        "Hot (86\u00b0F)",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -4054,6 +4225,65 @@
       "warnings": [
         "Lineup not confirmed"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 805999,
+      "name": "A.J. Ewing",
+      "team": "New York Mets",
+      "bats": "L",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Walker Buehler",
+      "venue": "Citi Field",
+      "gamePk": 823589,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 7,
+      "iso": 0.128,
+      "total": 47.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 56.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.01,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 2.8,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.0,
+        "hitter": 15.8,
+        "environment": 8.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1493,
+        "barrel_rate": 0.0741,
+        "hard_hit_rate": 0.4346,
+        "fb_rate": 0.5073,
+        "z_contact_rate": 0.8553,
+        "sweet_spot_rate": 0.3361,
+        "xwobacon": null,
+        "ev90": 103.9
+      },
+      "reasons": [
+        "vs Walker Buehler \u2014 cause C (10.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.10)",
+        "Platoon edge (L vs RHP)",
+        "DUE: 4 barrels, only 0 HR in window (+2.8 xHR) \u2014 positive regression",
+        "Warm (76\u00b0F)",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -4302,6 +4532,67 @@
       "role_notes": []
     },
     {
+      "id": 676724,
+      "name": "Jared Young",
+      "team": "New York Mets",
+      "bats": "L",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Walker Buehler",
+      "venue": "Citi Field",
+      "gamePk": 823589,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 8,
+      "iso": 0.183,
+      "total": 47.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 51.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.76,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.7,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.0,
+        "hitter": 19.3,
+        "environment": 8.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1689,
+        "barrel_rate": 0.0478,
+        "hard_hit_rate": 0.4684,
+        "fb_rate": 0.4848,
+        "z_contact_rate": 0.8596,
+        "sweet_spot_rate": 0.3248,
+        "xwobacon": null,
+        "ev90": 107.6
+      },
+      "reasons": [
+        "vs Walker Buehler \u2014 cause C (10.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.10)",
+        "Good air-pull (19%)",
+        "Zone-damage: hard-hit 47% + Z-contact 86%",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (70% fastballs, rel 0.95 \u2192 mix-fit 0.76x)",
+        "Warm (76\u00b0F)",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 664954,
       "name": "Brett Sullivan",
       "team": "Colorado Rockies",
@@ -4357,6 +4648,126 @@
       "warnings": [
         "Lineup not confirmed"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 701807,
+      "name": "Carson Benge",
+      "team": "New York Mets",
+      "bats": "L",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Walker Buehler",
+      "venue": "Citi Field",
+      "gamePk": 823589,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 14,
+      "iso": 0.143,
+      "total": 47.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 63.4,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.48,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 1.4,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.0,
+        "hitter": 16.2,
+        "environment": 8.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1437,
+        "barrel_rate": 0.0807,
+        "hard_hit_rate": 0.4261,
+        "fb_rate": 0.4864,
+        "z_contact_rate": 0.8477,
+        "sweet_spot_rate": 0.3429,
+        "xwobacon": null,
+        "ev90": 104.7
+      },
+      "reasons": [
+        "vs Walker Buehler \u2014 cause C (10.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.10)",
+        "Low air-pull (11%)",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (70% fastballs, rel 1.69 \u2192 mix-fit 1.48x)",
+        "Warm (76\u00b0F)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 664761,
+      "name": "Alec Bohm",
+      "team": "Philadelphia Phillies",
+      "bats": "R",
+      "opp": "Miami Marlins",
+      "opp_pitcher": "Janson Junk",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823427,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 14,
+      "iso": 0.142,
+      "total": 47.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 59.6,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 87%, Z-contact 91%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.15,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 2.1,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 14.0,
+        "environment": 12.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1025,
+        "barrel_rate": 0.0598,
+        "hard_hit_rate": 0.3854,
+        "fb_rate": 0.5265,
+        "z_contact_rate": 0.9138,
+        "sweet_spot_rate": 0.3689,
+        "xwobacon": null,
+        "ev90": 104.2
+      },
+      "reasons": [
+        "vs Janson Junk \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.24)",
+        "Low air-pull (4%)",
+        "DUE: 3 barrels, only 0 HR in window (+2.1 xHR) \u2014 positive regression",
+        "Hitter-friendly park (106)",
+        "Hot (86\u00b0F)",
+        "Mid order (#5)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -4544,62 +4955,63 @@
       ]
     },
     {
-      "id": 666018,
-      "name": "Jonathan Aranda",
-      "team": "Tampa Bay Rays",
+      "id": 681082,
+      "name": "Bryson Stott",
+      "team": "Philadelphia Phillies",
       "bats": "L",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Brandon Young",
-      "venue": "Tropicana Field",
-      "gamePk": 822939,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 15,
-      "iso": 0.141,
-      "total": 46.4,
+      "opp": "Miami Marlins",
+      "opp_pitcher": "Janson Junk",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823427,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 9,
+      "iso": 0.154,
+      "total": 46.8,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 60.2,
-      "tb_tier": "Solid TB",
+      "tb_score": 58.5,
+      "tb_tier": "Dart",
       "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 88%) \u2014 banks XBH",
+        "High-contact bat (contact 86%, Z-contact 90%) \u2014 banks XBH",
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 1.04,
+      "mix_fit": 0.3,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 1.1,
+      "due_hr": 0.0,
       "pitcher_grade": "C",
       "breakdown": {
-        "pitcher": 12.5,
-        "hitter": 18.9,
-        "environment": 7.0,
-        "lineup": 6.0,
+        "pitcher": 11.0,
+        "hitter": 13.8,
+        "environment": 12.0,
+        "lineup": 8.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1887,
-        "barrel_rate": 0.0614,
-        "hard_hit_rate": 0.4326,
-        "fb_rate": 0.5223,
-        "z_contact_rate": 0.8806,
-        "sweet_spot_rate": 0.3802,
+        "air_pull_rate": 0.1829,
+        "barrel_rate": 0.0343,
+        "hard_hit_rate": 0.4427,
+        "fb_rate": 0.481,
+        "z_contact_rate": 0.9047,
+        "sweet_spot_rate": 0.3569,
         "xwobacon": null,
-        "ev90": 104.1
+        "ev90": 101.9
       },
       "reasons": [
-        "vs Brandon Young \u2014 cause C (12.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.95)",
-        "Good air-pull (21%)",
+        "vs Janson Junk \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.24)",
+        "Good air-pull (20%)",
         "Platoon edge (L vs RHP)",
-        "Dome roof (weather neutralized)",
+        "Poor pitch-mix fit (46% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
+        "Hitter-friendly park (108)",
+        "Hot (86\u00b0F)",
+        "Mid order (#6)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -4616,7 +5028,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 26,
-      "iso": 0.215,
+      "iso": 0.214,
       "total": 46.2,
       "tier": "Pass",
       "role": "Watchlist",
@@ -4720,6 +5132,67 @@
       "warnings": [
         "Lineup not confirmed"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 605137,
+      "name": "Josh Bell",
+      "team": "Minnesota Twins",
+      "bats": "S",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Mart\u00edn P\u00e9rez",
+      "venue": "Target Field",
+      "gamePk": 823668,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 16,
+      "iso": 0.167,
+      "total": 46.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 61.7,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 83%, Z-contact 90%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.42,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 1.1,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.0,
+        "hitter": 16.6,
+        "environment": 9.5,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1424,
+        "barrel_rate": 0.0892,
+        "hard_hit_rate": 0.3758,
+        "fb_rate": 0.4916,
+        "z_contact_rate": 0.896,
+        "sweet_spot_rate": 0.3394,
+        "xwobacon": null,
+        "ev90": 103.5
+      },
+      "reasons": [
+        "vs Mart\u00edn P\u00e9rez \u2014 cause Pass (7.0/25)",
+        "Platoon shape: spikes vs LHP (barrel 12%, air-pull 11%)",
+        "Low air-pull (11%)",
+        "Above-avg barrels (12%)",
+        "Pitch-mix fit: damages this arsenal (60% fastballs, rel 2.17 \u2192 mix-fit 1.42x)",
+        "Warm (83\u00b0F)",
+        "Wind out ~8 mph",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -4967,189 +5440,181 @@
       ]
     },
     {
-      "id": 689414,
-      "name": "Liam Hicks",
-      "team": "Tampa Bay Rays",
-      "bats": "L",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Brandon Young",
-      "venue": "Tropicana Field",
-      "gamePk": 822939,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.161,
-      "total": 45.6,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 54.3,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 94%, Z-contact 92%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.82,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.6,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 12.5,
-        "hitter": 18.1,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2036,
-        "barrel_rate": 0.0537,
-        "hard_hit_rate": 0.2596,
-        "fb_rate": 0.5387,
-        "z_contact_rate": 0.9218,
-        "sweet_spot_rate": 0.3396,
-        "xwobacon": null,
-        "ev90": 98.6
-      },
-      "reasons": [
-        "vs Brandon Young \u2014 cause C (12.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.95)",
-        "Strong air-pull (25%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (53% fastballs, rel 1.28 \u2192 mix-fit 0.82x)",
-        "Dome roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 676724,
-      "name": "Jared Young",
-      "team": "New York Mets",
-      "bats": "L",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Walker Buehler",
-      "venue": "Citi Field",
-      "gamePk": 823589,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.183,
-      "total": 45.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 51.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.76,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 19.3,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1689,
-        "barrel_rate": 0.0478,
-        "hard_hit_rate": 0.4684,
-        "fb_rate": 0.4848,
-        "z_contact_rate": 0.8596,
-        "sweet_spot_rate": 0.3248,
-        "xwobacon": null,
-        "ev90": 107.6
-      },
-      "reasons": [
-        "vs Walker Buehler \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.10)",
-        "Good air-pull (19%)",
-        "Zone-damage: hard-hit 47% + Z-contact 86%",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (70% fastballs, rel 0.95 \u2192 mix-fit 0.76x)",
-        "Warm (76\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 664761,
-      "name": "Alec Bohm",
-      "team": "Philadelphia Phillies",
+      "id": 807712,
+      "name": "Luke Keaschall",
+      "team": "Minnesota Twins",
       "bats": "R",
-      "opp": "Miami Marlins",
-      "opp_pitcher": "Janson Junk",
-      "venue": "Citizens Bank Park",
-      "gamePk": 823427,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.142,
-      "total": 45.0,
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Mart\u00edn P\u00e9rez",
+      "venue": "Target Field",
+      "gamePk": 823668,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 7,
+      "iso": 0.106,
+      "total": 45.8,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 56.6,
+      "tb_score": 58.4,
       "tb_tier": "Dart",
       "tb_reasons": [
-        "High-contact bat (contact 87%, Z-contact 91%) \u2014 banks XBH"
+        "High-contact bat (contact 84%, Z-contact 89%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.22,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.6,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.0,
+        "hitter": 15.3,
+        "environment": 9.5,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2056,
+        "barrel_rate": 0.0542,
+        "hard_hit_rate": 0.3579,
+        "fb_rate": 0.5232,
+        "z_contact_rate": 0.8859,
+        "sweet_spot_rate": 0.3432,
+        "xwobacon": null,
+        "ev90": 101.0
+      },
+      "reasons": [
+        "vs Mart\u00edn P\u00e9rez \u2014 cause Pass (7.0/25)",
+        "Good air-pull (22%)",
+        "Platoon edge (R vs LHP)",
+        "Pitch-mix fit: damages this arsenal (60% fastballs, rel 1.42 \u2192 mix-fit 1.22x)",
+        "Warm (83\u00b0F)",
+        "Wind out ~8 mph",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 621439,
+      "name": "Byron Buxton",
+      "team": "Minnesota Twins",
+      "bats": "R",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Mart\u00edn P\u00e9rez",
+      "venue": "Target Field",
+      "gamePk": 823668,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 25,
+      "iso": 0.274,
+      "total": 45.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 59.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 89%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": 1.15,
+      "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 2.1,
-      "pitcher_grade": "C",
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 11.0,
-        "hitter": 14.0,
-        "environment": 12.0,
-        "lineup": 6.0,
+        "pitcher": 7.0,
+        "hitter": 15.0,
+        "environment": 9.5,
+        "lineup": 12.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1025,
-        "barrel_rate": 0.0598,
-        "hard_hit_rate": 0.3854,
-        "fb_rate": 0.5265,
-        "z_contact_rate": 0.9138,
-        "sweet_spot_rate": 0.3689,
+        "air_pull_rate": 0.1573,
+        "barrel_rate": 0.0551,
+        "hard_hit_rate": 0.3493,
+        "fb_rate": 0.4496,
+        "z_contact_rate": 0.8765,
+        "sweet_spot_rate": 0.3082,
         "xwobacon": null,
-        "ev90": 104.2
+        "ev90": 96.0
       },
       "reasons": [
-        "vs Janson Junk \u2014 cause C (11.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.24)",
-        "Low air-pull (4%)",
-        "DUE: 3 barrels, only 0 HR in window (+2.1 xHR) \u2014 positive regression",
-        "Hitter-friendly park (106)",
-        "Hot (86\u00b0F)",
+        "vs Mart\u00edn P\u00e9rez \u2014 cause Pass (7.0/25)",
+        "Platoon edge (R vs LHP)",
+        "Warm (83\u00b0F)",
+        "Wind out ~8 mph",
+        "Top of order (#2)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
+    },
+    {
+      "id": 664040,
+      "name": "Brandon Lowe",
+      "team": "Pittsburgh Pirates",
+      "bats": "L",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Framber Valdez",
+      "venue": "PNC Park",
+      "gamePk": 823343,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 26,
+      "iso": 0.226,
+      "total": 45.3,
+      "tier": "Pass",
+      "role": "Pass",
+      "tb_score": 52.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.64,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.1,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 4.5,
+        "hitter": 23.8,
+        "environment": 6.0,
+        "lineup": 8.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1998,
+        "barrel_rate": 0.0994,
+        "hard_hit_rate": 0.4424,
+        "fb_rate": 0.5308,
+        "z_contact_rate": 0.8401,
+        "sweet_spot_rate": 0.3248,
+        "xwobacon": null,
+        "ev90": 103.8
+      },
+      "reasons": [
+        "vs Framber Valdez \u2014 cause Pass (4.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.88)",
+        "Good air-pull (20%)",
+        "Above-avg barrels (10%)",
+        "Pitch-mix fit: damages this arsenal (45% fastballs, rel 1.61 \u2192 mix-fit 1.64x)",
+        "Warm (79\u00b0F)",
+        "Mid order (#5)"
+      ],
+      "warnings": [
+        "Pitcher park (90)"
+      ],
+      "role_notes": []
     },
     {
       "id": 678882,
@@ -5204,69 +5669,6 @@
         "Poor pitch-mix fit (51% fastballs, rel 0.30 \u2192 mix-fit 0.79x)",
         "Slightly + park (103)",
         "Green Monster cuts LHB HR, aids doubles",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 681082,
-      "name": "Bryson Stott",
-      "team": "Philadelphia Phillies",
-      "bats": "L",
-      "opp": "Miami Marlins",
-      "opp_pitcher": "Janson Junk",
-      "venue": "Citizens Bank Park",
-      "gamePk": 823427,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.154,
-      "total": 44.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 58.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 86%, Z-contact 90%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.3,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.0,
-        "hitter": 13.8,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1829,
-        "barrel_rate": 0.0343,
-        "hard_hit_rate": 0.4427,
-        "fb_rate": 0.481,
-        "z_contact_rate": 0.9047,
-        "sweet_spot_rate": 0.3569,
-        "xwobacon": null,
-        "ev90": 101.9
-      },
-      "reasons": [
-        "vs Janson Junk \u2014 cause C (11.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.24)",
-        "Good air-pull (20%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (46% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Hitter-friendly park (108)",
-        "Hot (86\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5340,6 +5742,61 @@
       ]
     },
     {
+      "id": 668723,
+      "name": "Ryan Vilade",
+      "team": "Tampa Bay Rays",
+      "bats": "R",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Brandon Young",
+      "venue": "Tropicana Field",
+      "gamePk": 822939,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 10,
+      "iso": 0.222,
+      "total": 44.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 50.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.99,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.6,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 12.5,
+        "hitter": 15.2,
+        "environment": 7.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1868,
+        "barrel_rate": 0.0732,
+        "hard_hit_rate": 0.3872,
+        "fb_rate": 0.5101,
+        "z_contact_rate": 0.8613,
+        "sweet_spot_rate": 0.3322,
+        "xwobacon": null,
+        "ev90": 107.3
+      },
+      "reasons": [
+        "vs Brandon Young \u2014 cause C (12.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.95)",
+        "Dome roof (weather neutralized)",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 667670,
       "name": "Brent Rooker",
       "team": "Athletics",
@@ -5386,6 +5843,66 @@
       "warnings": [
         "Lineup not confirmed"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 650490,
+      "name": "Yandy D\u00edaz",
+      "team": "Tampa Bay Rays",
+      "bats": "R",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Brandon Young",
+      "venue": "Tropicana Field",
+      "gamePk": 822939,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 17,
+      "iso": 0.158,
+      "total": 44.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 60.1,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 86%, Z-contact 90%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.9,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.9,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 12.5,
+        "hitter": 10.8,
+        "environment": 7.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1229,
+        "barrel_rate": 0.0567,
+        "hard_hit_rate": 0.4646,
+        "fb_rate": 0.497,
+        "z_contact_rate": 0.901,
+        "sweet_spot_rate": 0.3482,
+        "xwobacon": null,
+        "ev90": 104.6
+      },
+      "reasons": [
+        "vs Brandon Young \u2014 cause C (12.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.95)",
+        "Platoon shape fades vs RHP",
+        "Low air-pull (6%)",
+        "Zone-damage: hard-hit 46% + Z-contact 90%",
+        "Dome roof (weather neutralized)",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -5575,7 +6092,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 11,
-      "iso": 0.154,
+      "iso": 0.153,
       "total": 43.5,
       "tier": "Pass",
       "role": "Watchlist",
@@ -5622,120 +6139,6 @@
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
-    },
-    {
-      "id": 592663,
-      "name": "J.T. Realmuto",
-      "team": "Philadelphia Phillies",
-      "bats": "R",
-      "opp": "Miami Marlins",
-      "opp_pitcher": "Janson Junk",
-      "venue": "Citizens Bank Park",
-      "gamePk": 823427,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.123,
-      "total": 43.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 47.2,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.05,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.4,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.0,
-        "hitter": 12.5,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1761,
-        "barrel_rate": 0.0606,
-        "hard_hit_rate": 0.3708,
-        "fb_rate": 0.5082,
-        "z_contact_rate": 0.8701,
-        "sweet_spot_rate": 0.3284,
-        "xwobacon": null,
-        "ev90": 104.1
-      },
-      "reasons": [
-        "vs Janson Junk \u2014 cause C (11.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.24)",
-        "Hitter-friendly park (106)",
-        "Hot (86\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 664040,
-      "name": "Brandon Lowe",
-      "team": "Pittsburgh Pirates",
-      "bats": "L",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Framber Valdez",
-      "venue": "PNC Park",
-      "gamePk": 823343,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 26,
-      "iso": 0.226,
-      "total": 43.3,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 49.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.64,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.1,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 23.8,
-        "environment": 6.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1998,
-        "barrel_rate": 0.0994,
-        "hard_hit_rate": 0.4424,
-        "fb_rate": 0.5308,
-        "z_contact_rate": 0.8401,
-        "sweet_spot_rate": 0.3248,
-        "xwobacon": null,
-        "ev90": 103.8
-      },
-      "reasons": [
-        "vs Framber Valdez \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.88)",
-        "Good air-pull (20%)",
-        "Above-avg barrels (10%)",
-        "Pitch-mix fit: damages this arsenal (45% fastballs, rel 1.61 \u2192 mix-fit 1.64x)",
-        "Warm (79\u00b0F)"
-      ],
-      "warnings": [
-        "Pitcher park (90)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
     },
     {
       "id": 592518,
@@ -5794,6 +6197,65 @@
       "warnings": [
         "Lineup not confirmed"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 680777,
+      "name": "Ryan Jeffers",
+      "team": "Minnesota Twins",
+      "bats": "R",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Mart\u00edn P\u00e9rez",
+      "venue": "Target Field",
+      "gamePk": 823668,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 10,
+      "iso": 0.209,
+      "total": 43.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 58.3,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 88%, Z-contact 89%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.96,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.0,
+        "hitter": 13.6,
+        "environment": 9.5,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1538,
+        "barrel_rate": 0.0464,
+        "hard_hit_rate": 0.3633,
+        "fb_rate": 0.4687,
+        "z_contact_rate": 0.8912,
+        "sweet_spot_rate": 0.314,
+        "xwobacon": null,
+        "ev90": 102.5
+      },
+      "reasons": [
+        "vs Mart\u00edn P\u00e9rez \u2014 cause Pass (7.0/25)",
+        "Platoon edge (R vs LHP)",
+        "Warm (83\u00b0F)",
+        "Wind out ~8 mph",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -5862,56 +6324,63 @@
       ]
     },
     {
-      "id": 668723,
-      "name": "Ryan Vilade",
-      "team": "Tampa Bay Rays",
+      "id": 693307,
+      "name": "Dillon Dingler",
+      "team": "Detroit Tigers",
       "bats": "R",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Brandon Young",
-      "venue": "Tropicana Field",
-      "gamePk": 822939,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.222,
-      "total": 42.7,
+      "opp": "Pittsburgh Pirates",
+      "opp_pitcher": "Carmen Mlodzinski",
+      "venue": "PNC Park",
+      "gamePk": 823343,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 26,
+      "iso": 0.24,
+      "total": 42.6,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 50.5,
+      "tb_score": 55.0,
       "tb_tier": "Dart",
-      "tb_reasons": [],
+      "tb_reasons": [
+        "High-contact bat (contact 81%, Z-contact 91%) \u2014 banks XBH"
+      ],
       "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": 0.99,
+      "mix_fit": 1.38,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -0.6,
-      "pitcher_grade": "C",
+      "due_hr": -1.2,
+      "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 12.5,
-        "hitter": 15.2,
-        "environment": 7.0,
-        "lineup": 6.0,
+        "pitcher": 8.5,
+        "hitter": 15.1,
+        "environment": 6.0,
+        "lineup": 11.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1868,
-        "barrel_rate": 0.0732,
-        "hard_hit_rate": 0.3872,
-        "fb_rate": 0.5101,
-        "z_contact_rate": 0.8613,
-        "sweet_spot_rate": 0.3322,
+        "air_pull_rate": 0.1503,
+        "barrel_rate": 0.07,
+        "hard_hit_rate": 0.3378,
+        "fb_rate": 0.4665,
+        "z_contact_rate": 0.9087,
+        "sweet_spot_rate": 0.3158,
         "xwobacon": null,
-        "ev90": 107.3
+        "ev90": 102.6
       },
       "reasons": [
-        "vs Brandon Young \u2014 cause C (12.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.95)",
-        "Dome roof (weather neutralized)",
+        "vs Carmen Mlodzinski \u2014 cause Pass (8.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.73)",
+        "Pitcher: Loud contact allowed (hard-hit 46%)",
+        "Platoon shape: spikes vs RHP (barrel 10%, air-pull 14%)",
+        "Above-avg barrels (10%)",
+        "Pitch-mix fit: damages this arsenal (59% fastballs, rel 2.12 \u2192 mix-fit 1.38x)",
+        "Warm (79\u00b0F)",
+        "Heart of order (#3)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
+        "Pitcher park (94)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -6028,120 +6497,57 @@
       ]
     },
     {
-      "id": 607208,
-      "name": "Trea Turner",
+      "id": 592663,
+      "name": "J.T. Realmuto",
       "team": "Philadelphia Phillies",
       "bats": "R",
       "opp": "Miami Marlins",
       "opp_pitcher": "Janson Junk",
       "venue": "Citizens Bank Park",
       "gamePk": 823427,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.151,
-      "total": 42.4,
+      "slot": 8,
+      "confirmed": true,
+      "season_hr": 8,
+      "iso": 0.123,
+      "total": 42.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 47.0,
+      "tb_score": 47.2,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.74,
+      "pull_fit": false,
+      "mix_fit": 1.05,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -1.6,
+      "due_hr": 0.4,
       "pitcher_grade": "C",
       "breakdown": {
         "pitcher": 11.0,
-        "hitter": 11.4,
+        "hitter": 12.5,
         "environment": 12.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1757,
-        "barrel_rate": 0.0486,
-        "hard_hit_rate": 0.3236,
-        "fb_rate": 0.4922,
-        "z_contact_rate": 0.8871,
-        "sweet_spot_rate": 0.3609,
+        "air_pull_rate": 0.1761,
+        "barrel_rate": 0.0606,
+        "hard_hit_rate": 0.3708,
+        "fb_rate": 0.5082,
+        "z_contact_rate": 0.8701,
+        "sweet_spot_rate": 0.3284,
         "xwobacon": null,
-        "ev90": 103.8
+        "ev90": 104.1
       },
       "reasons": [
         "vs Janson Junk \u2014 cause C (11.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.24)",
-        "Good air-pull (20%)",
-        "Poor pitch-mix fit (46% fastballs, rel 0.30 \u2192 mix-fit 0.74x)",
         "Hitter-friendly park (106)",
         "Hot (86\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 701807,
-      "name": "Carson Benge",
-      "team": "New York Mets",
-      "bats": "L",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Walker Buehler",
-      "venue": "Citi Field",
-      "gamePk": 823589,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.143,
-      "total": 42.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 60.4,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.48,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 1.4,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 16.2,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1437,
-        "barrel_rate": 0.0807,
-        "hard_hit_rate": 0.4261,
-        "fb_rate": 0.4864,
-        "z_contact_rate": 0.8477,
-        "sweet_spot_rate": 0.3429,
-        "xwobacon": null,
-        "ev90": 104.7
-      },
-      "reasons": [
-        "vs Walker Buehler \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.10)",
-        "Low air-pull (11%)",
-        "Platoon edge (L vs RHP)",
-        "Pitch-mix fit: damages this arsenal (70% fastballs, rel 1.69 \u2192 mix-fit 1.48x)",
-        "Warm (76\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#8)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -6202,6 +6608,70 @@
       ],
       "warnings": [
         "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 805808,
+      "name": "Kevin McGonigle",
+      "team": "Detroit Tigers",
+      "bats": "L",
+      "opp": "Pittsburgh Pirates",
+      "opp_pitcher": "Carmen Mlodzinski",
+      "venue": "PNC Park",
+      "gamePk": 823343,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 12,
+      "iso": 0.137,
+      "total": 42.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 48.7,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "High-contact bat (contact 86%, Z-contact 90%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.56,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -2.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 13.6,
+        "environment": 6.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2139,
+        "barrel_rate": 0.0407,
+        "hard_hit_rate": 0.3411,
+        "fb_rate": 0.5498,
+        "z_contact_rate": 0.9023,
+        "sweet_spot_rate": 0.3102,
+        "xwobacon": null,
+        "ev90": 100.3
+      },
+      "reasons": [
+        "vs Carmen Mlodzinski \u2014 cause Pass (8.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.73)",
+        "Pitcher: Loud contact allowed (hard-hit 46%)",
+        "Strong air-pull (25%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (59% fastballs, rel 0.74 \u2192 mix-fit 0.56x)",
+        "Warm (79\u00b0F)",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Pitcher park (90)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -6318,66 +6788,6 @@
         "Zone-damage: hard-hit 49% + Z-contact 87%",
         "Hitter-friendly park (108)",
         "Hot (86\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 805999,
-      "name": "A.J. Ewing",
-      "team": "New York Mets",
-      "bats": "L",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Walker Buehler",
-      "venue": "Citi Field",
-      "gamePk": 823589,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.128,
-      "total": 41.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.01,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 2.8,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 15.8,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1493,
-        "barrel_rate": 0.0741,
-        "hard_hit_rate": 0.4346,
-        "fb_rate": 0.5073,
-        "z_contact_rate": 0.8553,
-        "sweet_spot_rate": 0.3361,
-        "xwobacon": null,
-        "ev90": 103.9
-      },
-      "reasons": [
-        "vs Walker Buehler \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.10)",
-        "Platoon edge (L vs RHP)",
-        "DUE: 4 barrels, only 0 HR in window (+2.8 xHR) \u2014 positive regression",
-        "Warm (76\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6622,128 +7032,6 @@
       ]
     },
     {
-      "id": 686797,
-      "name": "Brooks Lee",
-      "team": "Minnesota Twins",
-      "bats": "S",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Mart\u00edn P\u00e9rez",
-      "venue": "Target Field",
-      "gamePk": 823668,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.179,
-      "total": 41.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 51.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 92%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.63,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.0,
-        "hitter": 16.6,
-        "environment": 9.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2465,
-        "barrel_rate": 0.0433,
-        "hard_hit_rate": 0.3686,
-        "fb_rate": 0.5276,
-        "z_contact_rate": 0.9226,
-        "sweet_spot_rate": 0.3016,
-        "xwobacon": null,
-        "ev90": 101.2
-      },
-      "reasons": [
-        "vs Mart\u00edn P\u00e9rez \u2014 cause Pass (7.0/25)",
-        "Elite air-pull (30%)",
-        "Poor pitch-mix fit (60% fastballs, rel 0.86 \u2192 mix-fit 0.63x)",
-        "Warm (83\u00b0F)",
-        "Wind out ~8 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 605137,
-      "name": "Josh Bell",
-      "team": "Minnesota Twins",
-      "bats": "S",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Mart\u00edn P\u00e9rez",
-      "venue": "Target Field",
-      "gamePk": 823668,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.167,
-      "total": 41.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 58.7,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 83%, Z-contact 90%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.42,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 1.1,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.0,
-        "hitter": 16.6,
-        "environment": 9.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1424,
-        "barrel_rate": 0.0892,
-        "hard_hit_rate": 0.3758,
-        "fb_rate": 0.4916,
-        "z_contact_rate": 0.896,
-        "sweet_spot_rate": 0.3394,
-        "xwobacon": null,
-        "ev90": 103.5
-      },
-      "reasons": [
-        "vs Mart\u00edn P\u00e9rez \u2014 cause Pass (7.0/25)",
-        "Platoon shape: spikes vs LHP (barrel 12%, air-pull 11%)",
-        "Low air-pull (11%)",
-        "Above-avg barrels (12%)",
-        "Pitch-mix fit: damages this arsenal (60% fastballs, rel 2.17 \u2192 mix-fit 1.42x)",
-        "Warm (83\u00b0F)",
-        "Wind out ~8 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 668715,
       "name": "Spencer Steer",
       "team": "Cincinnati Reds",
@@ -6790,6 +7078,64 @@
       "warnings": [
         "Lineup not confirmed"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 666182,
+      "name": "Bo Bichette",
+      "team": "New York Mets",
+      "bats": "R",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Walker Buehler",
+      "venue": "Citi Field",
+      "gamePk": 823589,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 12,
+      "iso": 0.12,
+      "total": 40.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 51.9,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 82%, Z-contact 90%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.11,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.6,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.0,
+        "hitter": 9.8,
+        "environment": 8.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1836,
+        "barrel_rate": 0.0508,
+        "hard_hit_rate": 0.3414,
+        "fb_rate": 0.5166,
+        "z_contact_rate": 0.9033,
+        "sweet_spot_rate": 0.3689,
+        "xwobacon": null,
+        "ev90": 103.2
+      },
+      "reasons": [
+        "vs Walker Buehler \u2014 cause C (10.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.10)",
+        "Platoon shape fades vs RHP",
+        "Warm (76\u00b0F)",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -7036,6 +7382,121 @@
       ]
     },
     {
+      "id": 665019,
+      "name": "Kody Clemens",
+      "team": "Minnesota Twins",
+      "bats": "L",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Mart\u00edn P\u00e9rez",
+      "venue": "Target Field",
+      "gamePk": 823668,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 21,
+      "iso": 0.233,
+      "total": 40.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 48.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.88,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.1,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.0,
+        "hitter": 13.7,
+        "environment": 9.5,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1882,
+        "barrel_rate": 0.0644,
+        "hard_hit_rate": 0.3743,
+        "fb_rate": 0.4858,
+        "z_contact_rate": 0.8841,
+        "sweet_spot_rate": 0.2931,
+        "xwobacon": null,
+        "ev90": 104.5
+      },
+      "reasons": [
+        "vs Mart\u00edn P\u00e9rez \u2014 cause Pass (7.0/25)",
+        "Warm (83\u00b0F)",
+        "Wind out ~8 mph",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 686797,
+      "name": "Brooks Lee",
+      "team": "Minnesota Twins",
+      "bats": "S",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Mart\u00edn P\u00e9rez",
+      "venue": "Target Field",
+      "gamePk": 823668,
+      "slot": 7,
+      "confirmed": true,
+      "season_hr": 18,
+      "iso": 0.179,
+      "total": 40.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 51.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 92%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.63,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.0,
+        "hitter": 16.6,
+        "environment": 9.5,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2465,
+        "barrel_rate": 0.0433,
+        "hard_hit_rate": 0.3686,
+        "fb_rate": 0.5276,
+        "z_contact_rate": 0.9226,
+        "sweet_spot_rate": 0.3016,
+        "xwobacon": null,
+        "ev90": 101.2
+      },
+      "reasons": [
+        "vs Mart\u00edn P\u00e9rez \u2014 cause Pass (7.0/25)",
+        "Elite air-pull (30%)",
+        "Poor pitch-mix fit (60% fastballs, rel 0.86 \u2192 mix-fit 0.63x)",
+        "Warm (83\u00b0F)",
+        "Wind out ~8 mph",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Bottom of order (#7)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 606466,
       "name": "Ketel Marte",
       "team": "Arizona Diamondbacks",
@@ -7152,184 +7613,62 @@
       ]
     },
     {
-      "id": 807712,
-      "name": "Luke Keaschall",
-      "team": "Minnesota Twins",
+      "id": 699013,
+      "name": "Esmerlyn Valdez",
+      "team": "Pittsburgh Pirates",
       "bats": "R",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Mart\u00edn P\u00e9rez",
-      "venue": "Target Field",
-      "gamePk": 823668,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.106,
-      "total": 39.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 54.4,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 89%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.22,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.6,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.0,
-        "hitter": 15.3,
-        "environment": 9.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2056,
-        "barrel_rate": 0.0542,
-        "hard_hit_rate": 0.3579,
-        "fb_rate": 0.5232,
-        "z_contact_rate": 0.8859,
-        "sweet_spot_rate": 0.3432,
-        "xwobacon": null,
-        "ev90": 101.0
-      },
-      "reasons": [
-        "vs Mart\u00edn P\u00e9rez \u2014 cause Pass (7.0/25)",
-        "Good air-pull (22%)",
-        "Platoon edge (R vs LHP)",
-        "Pitch-mix fit: damages this arsenal (60% fastballs, rel 1.42 \u2192 mix-fit 1.22x)",
-        "Warm (83\u00b0F)",
-        "Wind out ~8 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 656775,
-      "name": "Cedric Mullins",
-      "team": "Tampa Bay Rays",
-      "bats": "L",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Brandon Young",
-      "venue": "Tropicana Field",
-      "gamePk": 822939,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.153,
-      "total": 39.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 48.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 89%, Z-contact 90%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.42,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 12.5,
-        "hitter": 12.2,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1955,
-        "barrel_rate": 0.0387,
-        "hard_hit_rate": 0.3523,
-        "fb_rate": 0.4664,
-        "z_contact_rate": 0.9012,
-        "sweet_spot_rate": 0.2888,
-        "xwobacon": null,
-        "ev90": 100.0
-      },
-      "reasons": [
-        "vs Brandon Young \u2014 cause C (12.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.95)",
-        "Good air-pull (20%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (53% fastballs, rel 0.30 \u2192 mix-fit 0.42x)",
-        "Dome roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 621439,
-      "name": "Byron Buxton",
-      "team": "Minnesota Twins",
-      "bats": "R",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Mart\u00edn P\u00e9rez",
-      "venue": "Target Field",
-      "gamePk": 823668,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 25,
-      "iso": 0.274,
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Framber Valdez",
+      "venue": "PNC Park",
+      "gamePk": 823343,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 14,
+      "iso": 0.304,
       "total": 39.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 55.5,
-      "tb_tier": "Dart",
+      "tb_score": 40.5,
+      "tb_tier": "Pass",
       "tb_reasons": [
-        "High-contact bat (contact 89%, Z-contact 88%) \u2014 banks XBH",
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
+      "pull_fit": true,
+      "mix_fit": 0.3,
       "fit_tag": null,
       "value_play": false,
       "due_hr": 0.0,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 7.0,
+        "pitcher": 4.5,
         "hitter": 15.0,
-        "environment": 9.5,
-        "lineup": 6.0,
+        "environment": 6.0,
+        "lineup": 12.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1573,
-        "barrel_rate": 0.0551,
-        "hard_hit_rate": 0.3493,
-        "fb_rate": 0.4496,
-        "z_contact_rate": 0.8765,
-        "sweet_spot_rate": 0.3082,
+        "air_pull_rate": 0.1931,
+        "barrel_rate": 0.0404,
+        "hard_hit_rate": 0.3438,
+        "fb_rate": 0.5773,
+        "z_contact_rate": 0.7813,
+        "sweet_spot_rate": 0.3407,
         "xwobacon": null,
-        "ev90": 96.0
+        "ev90": 98.5
       },
       "reasons": [
-        "vs Mart\u00edn P\u00e9rez \u2014 cause Pass (7.0/25)",
+        "vs Framber Valdez \u2014 cause Pass (4.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.88)",
+        "Good air-pull (19%)",
         "Platoon edge (R vs LHP)",
-        "Warm (83\u00b0F)",
-        "Wind out ~8 mph",
+        "Poor pitch-mix fit (45% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
+        "Warm (79\u00b0F)",
+        "Top of order (#2)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
+        "Pitcher park (94)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -7511,7 +7850,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 20,
-      "iso": 0.215,
+      "iso": 0.213,
       "total": 38.8,
       "tier": "Pass",
       "role": "Watchlist",
@@ -7676,6 +8015,68 @@
       ]
     },
     {
+      "id": 656775,
+      "name": "Cedric Mullins",
+      "team": "Tampa Bay Rays",
+      "bats": "L",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Brandon Young",
+      "venue": "Tropicana Field",
+      "gamePk": 822939,
+      "slot": 7,
+      "confirmed": true,
+      "season_hr": 13,
+      "iso": 0.153,
+      "total": 38.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 48.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "High-contact bat (contact 89%, Z-contact 90%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.42,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.0,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 12.5,
+        "hitter": 12.2,
+        "environment": 7.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1955,
+        "barrel_rate": 0.0387,
+        "hard_hit_rate": 0.3523,
+        "fb_rate": 0.4664,
+        "z_contact_rate": 0.9012,
+        "sweet_spot_rate": 0.2888,
+        "xwobacon": null,
+        "ev90": 100.0
+      },
+      "reasons": [
+        "vs Brandon Young \u2014 cause C (12.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.95)",
+        "Good air-pull (20%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (53% fastballs, rel 0.30 \u2192 mix-fit 0.42x)",
+        "Dome roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Bottom of order (#7)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 681715,
       "name": "Heriberto Hern\u00e1ndez",
       "team": "Miami Marlins",
@@ -7786,183 +8187,6 @@
         "Pitcher: High K rate (37%)",
         "Slightly + park (100)",
         "Highly wind-dependent",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 650490,
-      "name": "Yandy D\u00edaz",
-      "team": "Tampa Bay Rays",
-      "bats": "R",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Brandon Young",
-      "venue": "Tropicana Field",
-      "gamePk": 822939,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.158,
-      "total": 38.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 56.1,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 86%, Z-contact 90%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.9,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.9,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 12.5,
-        "hitter": 10.8,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1229,
-        "barrel_rate": 0.0567,
-        "hard_hit_rate": 0.4646,
-        "fb_rate": 0.497,
-        "z_contact_rate": 0.901,
-        "sweet_spot_rate": 0.3482,
-        "xwobacon": null,
-        "ev90": 104.6
-      },
-      "reasons": [
-        "vs Brandon Young \u2014 cause C (12.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.95)",
-        "Platoon shape fades vs RHP",
-        "Low air-pull (6%)",
-        "Zone-damage: hard-hit 46% + Z-contact 90%",
-        "Dome roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 665019,
-      "name": "Kody Clemens",
-      "team": "Minnesota Twins",
-      "bats": "L",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Mart\u00edn P\u00e9rez",
-      "venue": "Target Field",
-      "gamePk": 823668,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 21,
-      "iso": 0.233,
-      "total": 38.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 48.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.88,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.1,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.0,
-        "hitter": 13.7,
-        "environment": 9.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1882,
-        "barrel_rate": 0.0644,
-        "hard_hit_rate": 0.3743,
-        "fb_rate": 0.4858,
-        "z_contact_rate": 0.8841,
-        "sweet_spot_rate": 0.2931,
-        "xwobacon": null,
-        "ev90": 104.5
-      },
-      "reasons": [
-        "vs Mart\u00edn P\u00e9rez \u2014 cause Pass (7.0/25)",
-        "Warm (83\u00b0F)",
-        "Wind out ~8 mph",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 680777,
-      "name": "Ryan Jeffers",
-      "team": "Minnesota Twins",
-      "bats": "R",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Mart\u00edn P\u00e9rez",
-      "venue": "Target Field",
-      "gamePk": 823668,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.209,
-      "total": 38.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 55.3,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 88%, Z-contact 89%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.96,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.0,
-        "hitter": 13.6,
-        "environment": 9.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1538,
-        "barrel_rate": 0.0464,
-        "hard_hit_rate": 0.3633,
-        "fb_rate": 0.4687,
-        "z_contact_rate": 0.8912,
-        "sweet_spot_rate": 0.314,
-        "xwobacon": null,
-        "ev90": 102.5
-      },
-      "reasons": [
-        "vs Mart\u00edn P\u00e9rez \u2014 cause Pass (7.0/25)",
-        "Platoon edge (R vs LHP)",
-        "Warm (83\u00b0F)",
-        "Wind out ~8 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8132,69 +8356,6 @@
       ]
     },
     {
-      "id": 693307,
-      "name": "Dillon Dingler",
-      "team": "Detroit Tigers",
-      "bats": "R",
-      "opp": "Pittsburgh Pirates",
-      "opp_pitcher": "Carmen Mlodzinski",
-      "venue": "PNC Park",
-      "gamePk": 823343,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 26,
-      "iso": 0.24,
-      "total": 37.6,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 81%, Z-contact 91%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.38,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.2,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 15.1,
-        "environment": 6.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1503,
-        "barrel_rate": 0.07,
-        "hard_hit_rate": 0.3378,
-        "fb_rate": 0.4665,
-        "z_contact_rate": 0.9087,
-        "sweet_spot_rate": 0.3158,
-        "xwobacon": null,
-        "ev90": 102.6
-      },
-      "reasons": [
-        "vs Carmen Mlodzinski \u2014 cause Pass (8.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.73)",
-        "Pitcher: Loud contact allowed (hard-hit 46%)",
-        "Platoon shape: spikes vs RHP (barrel 10%, air-pull 14%)",
-        "Above-avg barrels (10%)",
-        "Pitch-mix fit: damages this arsenal (59% fastballs, rel 2.12 \u2192 mix-fit 1.38x)",
-        "Warm (79\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (94)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 680776,
       "name": "Jarren Duran",
       "team": "Boston Red Sox",
@@ -8248,6 +8409,66 @@
       ],
       "warnings": [
         "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 650402,
+      "name": "Gleyber Torres",
+      "team": "Detroit Tigers",
+      "bats": "R",
+      "opp": "Pittsburgh Pirates",
+      "opp_pitcher": "Carmen Mlodzinski",
+      "venue": "PNC Park",
+      "gamePk": 823343,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 8,
+      "iso": 0.135,
+      "total": 37.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 51.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.76,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -2.6,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 9.1,
+        "environment": 6.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1319,
+        "barrel_rate": 0.0517,
+        "hard_hit_rate": 0.394,
+        "fb_rate": 0.4766,
+        "z_contact_rate": 0.8849,
+        "sweet_spot_rate": 0.346,
+        "xwobacon": null,
+        "ev90": 100.3
+      },
+      "reasons": [
+        "vs Carmen Mlodzinski \u2014 cause Pass (8.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.73)",
+        "Pitcher: Loud contact allowed (hard-hit 46%)",
+        "Poor pitch-mix fit (59% fastballs, rel 0.72 \u2192 mix-fit 0.76x)",
+        "HR overperformance vs barrels (-2.6 xHR) \u2014 luck risk",
+        "Warm (79\u00b0F)",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Pitcher park (94)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -8547,123 +8768,58 @@
       ]
     },
     {
-      "id": 805808,
-      "name": "Kevin McGonigle",
-      "team": "Detroit Tigers",
-      "bats": "L",
-      "opp": "Pittsburgh Pirates",
-      "opp_pitcher": "Carmen Mlodzinski",
+      "id": 668804,
+      "name": "Bryan Reynolds",
+      "team": "Pittsburgh Pirates",
+      "bats": "S",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Framber Valdez",
       "venue": "PNC Park",
       "gamePk": 823343,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.137,
-      "total": 36.1,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 15,
+      "iso": 0.171,
+      "total": 36.3,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 44.7,
+      "tb_score": 47.6,
       "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 86%, Z-contact 90%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.56,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -2.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 13.6,
-        "environment": 6.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2139,
-        "barrel_rate": 0.0407,
-        "hard_hit_rate": 0.3411,
-        "fb_rate": 0.5498,
-        "z_contact_rate": 0.9023,
-        "sweet_spot_rate": 0.3102,
-        "xwobacon": null,
-        "ev90": 100.3
-      },
-      "reasons": [
-        "vs Carmen Mlodzinski \u2014 cause Pass (8.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.73)",
-        "Pitcher: Loud contact allowed (hard-hit 46%)",
-        "Strong air-pull (25%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (59% fastballs, rel 0.74 \u2192 mix-fit 0.56x)",
-        "Warm (79\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (90)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 666182,
-      "name": "Bo Bichette",
-      "team": "New York Mets",
-      "bats": "R",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Walker Buehler",
-      "venue": "Citi Field",
-      "gamePk": 823589,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.12,
-      "total": 35.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 48.9,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 82%, Z-contact 90%) \u2014 banks XBH"
-      ],
+      "tb_reasons": [],
       "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": 1.11,
+      "mix_fit": 0.77,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -0.6,
-      "pitcher_grade": "C",
+      "due_hr": 0.4,
+      "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 9.8,
-        "environment": 8.0,
-        "lineup": 6.0,
+        "pitcher": 4.5,
+        "hitter": 12.8,
+        "environment": 6.0,
+        "lineup": 11.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1836,
-        "barrel_rate": 0.0508,
-        "hard_hit_rate": 0.3414,
-        "fb_rate": 0.5166,
-        "z_contact_rate": 0.9033,
-        "sweet_spot_rate": 0.3689,
+        "air_pull_rate": 0.141,
+        "barrel_rate": 0.0552,
+        "hard_hit_rate": 0.4033,
+        "fb_rate": 0.5128,
+        "z_contact_rate": 0.8503,
+        "sweet_spot_rate": 0.3615,
         "xwobacon": null,
-        "ev90": 103.2
+        "ev90": 102.9
       },
       "reasons": [
-        "vs Walker Buehler \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.10)",
-        "Platoon shape fades vs RHP",
-        "Warm (76\u00b0F)",
+        "vs Framber Valdez \u2014 cause Pass (4.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.88)",
+        "Poor pitch-mix fit (45% fastballs, rel 1.34 \u2192 mix-fit 0.77x)",
+        "Warm (79\u00b0F)",
+        "Heart of order (#3)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
+        "Pitcher park (92)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -8787,63 +8943,6 @@
       ]
     },
     {
-      "id": 543760,
-      "name": "Marcus Semien",
-      "team": "New York Mets",
-      "bats": "R",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Walker Buehler",
-      "venue": "Citi Field",
-      "gamePk": 823589,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.145,
-      "total": 35.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 36.2,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.81,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.3,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 9.3,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1914,
-        "barrel_rate": 0.0483,
-        "hard_hit_rate": 0.3299,
-        "fb_rate": 0.5137,
-        "z_contact_rate": 0.8489,
-        "sweet_spot_rate": 0.3519,
-        "xwobacon": null,
-        "ev90": 100.2
-      },
-      "reasons": [
-        "vs Walker Buehler \u2014 cause C (10.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.10)",
-        "Poor pitch-mix fit (70% fastballs, rel 0.94 \u2192 mix-fit 0.81x)",
-        "Warm (76\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 681297,
       "name": "Colton Cowser",
       "team": "Baltimore Orioles",
@@ -8894,6 +8993,69 @@
       ],
       "warnings": [
         "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 690993,
+      "name": "Colt Keith",
+      "team": "Detroit Tigers",
+      "bats": "L",
+      "opp": "Pittsburgh Pirates",
+      "opp_pitcher": "Carmen Mlodzinski",
+      "venue": "PNC Park",
+      "gamePk": 823343,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 9,
+      "iso": 0.154,
+      "total": 35.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 51.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 82%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.3,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 7.8,
+        "environment": 6.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1503,
+        "barrel_rate": 0.0409,
+        "hard_hit_rate": 0.3778,
+        "fb_rate": 0.496,
+        "z_contact_rate": 0.8843,
+        "sweet_spot_rate": 0.3704,
+        "xwobacon": null,
+        "ev90": 102.2
+      },
+      "reasons": [
+        "vs Carmen Mlodzinski \u2014 cause Pass (8.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.73)",
+        "Pitcher: Loud contact allowed (hard-hit 46%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (59% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
+        "Warm (79\u00b0F)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Pitcher park (90)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -9073,62 +9235,57 @@
       ]
     },
     {
-      "id": 699013,
-      "name": "Esmerlyn Valdez",
-      "team": "Pittsburgh Pirates",
+      "id": 543760,
+      "name": "Marcus Semien",
+      "team": "New York Mets",
       "bats": "R",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Framber Valdez",
-      "venue": "PNC Park",
-      "gamePk": 823343,
-      "slot": null,
-      "confirmed": false,
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Walker Buehler",
+      "venue": "Citi Field",
+      "gamePk": 823589,
+      "slot": 7,
+      "confirmed": true,
       "season_hr": 14,
-      "iso": 0.304,
-      "total": 33.5,
+      "iso": 0.145,
+      "total": 34.3,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 36.5,
+      "tb_score": 36.2,
       "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
+      "tb_reasons": [],
       "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.3,
+      "pull_fit": false,
+      "mix_fit": 0.81,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
+      "due_hr": -1.3,
+      "pitcher_grade": "C",
       "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 15.0,
-        "environment": 6.0,
-        "lineup": 6.0,
+        "pitcher": 10.0,
+        "hitter": 9.3,
+        "environment": 8.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1931,
-        "barrel_rate": 0.0404,
-        "hard_hit_rate": 0.3438,
-        "fb_rate": 0.5773,
-        "z_contact_rate": 0.7813,
-        "sweet_spot_rate": 0.3407,
+        "air_pull_rate": 0.1914,
+        "barrel_rate": 0.0483,
+        "hard_hit_rate": 0.3299,
+        "fb_rate": 0.5137,
+        "z_contact_rate": 0.8489,
+        "sweet_spot_rate": 0.3519,
         "xwobacon": null,
-        "ev90": 98.5
+        "ev90": 100.2
       },
       "reasons": [
-        "vs Framber Valdez \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.88)",
-        "Good air-pull (19%)",
-        "Platoon edge (R vs LHP)",
-        "Poor pitch-mix fit (45% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Warm (79\u00b0F)",
+        "vs Walker Buehler \u2014 cause C (10.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.10)",
+        "Poor pitch-mix fit (70% fastballs, rel 0.94 \u2192 mix-fit 0.81x)",
+        "Warm (76\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Pitcher park (94)",
-        "Lineup not confirmed"
+        "Bottom of order (#7)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -9436,185 +9593,6 @@
       ]
     },
     {
-      "id": 650402,
-      "name": "Gleyber Torres",
-      "team": "Detroit Tigers",
-      "bats": "R",
-      "opp": "Pittsburgh Pirates",
-      "opp_pitcher": "Carmen Mlodzinski",
-      "venue": "PNC Park",
-      "gamePk": 823343,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.135,
-      "total": 31.6,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 47.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.76,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -2.6,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 9.1,
-        "environment": 6.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1319,
-        "barrel_rate": 0.0517,
-        "hard_hit_rate": 0.394,
-        "fb_rate": 0.4766,
-        "z_contact_rate": 0.8849,
-        "sweet_spot_rate": 0.346,
-        "xwobacon": null,
-        "ev90": 100.3
-      },
-      "reasons": [
-        "vs Carmen Mlodzinski \u2014 cause Pass (8.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.73)",
-        "Pitcher: Loud contact allowed (hard-hit 46%)",
-        "Poor pitch-mix fit (59% fastballs, rel 0.72 \u2192 mix-fit 0.76x)",
-        "HR overperformance vs barrels (-2.6 xHR) \u2014 luck risk",
-        "Warm (79\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (94)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 680779,
-      "name": "Henry Davis",
-      "team": "Pittsburgh Pirates",
-      "bats": "R",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Framber Valdez",
-      "venue": "PNC Park",
-      "gamePk": 823343,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.132,
-      "total": 31.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 49.4,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 82%, Z-contact 87%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.85,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 13.0,
-        "environment": 6.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1632,
-        "barrel_rate": 0.0565,
-        "hard_hit_rate": 0.3559,
-        "fb_rate": 0.4886,
-        "z_contact_rate": 0.8685,
-        "sweet_spot_rate": 0.337,
-        "xwobacon": null,
-        "ev90": 103.8
-      },
-      "reasons": [
-        "vs Framber Valdez \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.88)",
-        "Platoon edge (R vs LHP)",
-        "Warm (79\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (94)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 668804,
-      "name": "Bryan Reynolds",
-      "team": "Pittsburgh Pirates",
-      "bats": "S",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Framber Valdez",
-      "venue": "PNC Park",
-      "gamePk": 823343,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 15,
-      "iso": 0.171,
-      "total": 31.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 44.6,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.77,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.4,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 12.8,
-        "environment": 6.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.141,
-        "barrel_rate": 0.0552,
-        "hard_hit_rate": 0.4033,
-        "fb_rate": 0.5128,
-        "z_contact_rate": 0.8503,
-        "sweet_spot_rate": 0.3615,
-        "xwobacon": null,
-        "ev90": 102.9
-      },
-      "reasons": [
-        "vs Framber Valdez \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.88)",
-        "Poor pitch-mix fit (45% fastballs, rel 1.34 \u2192 mix-fit 0.77x)",
-        "Warm (79\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (92)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 672695,
       "name": "Geraldo Perdomo",
       "team": "Arizona Diamondbacks",
@@ -9674,63 +9652,61 @@
       ]
     },
     {
-      "id": 690993,
-      "name": "Colt Keith",
-      "team": "Detroit Tigers",
-      "bats": "L",
-      "opp": "Pittsburgh Pirates",
-      "opp_pitcher": "Carmen Mlodzinski",
+      "id": 680779,
+      "name": "Henry Davis",
+      "team": "Pittsburgh Pirates",
+      "bats": "R",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Framber Valdez",
       "venue": "PNC Park",
       "gamePk": 823343,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.154,
-      "total": 30.3,
+      "slot": 9,
+      "confirmed": true,
+      "season_hr": 8,
+      "iso": 0.132,
+      "total": 30.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 48.0,
+      "tb_score": 49.4,
       "tb_tier": "Pass",
       "tb_reasons": [
-        "High-contact bat (contact 82%, Z-contact 88%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
+        "High-contact bat (contact 82%, Z-contact 87%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": 0.3,
+      "mix_fit": 0.85,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.0,
+      "due_hr": 0.7,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 7.8,
+        "pitcher": 4.5,
+        "hitter": 13.0,
         "environment": 6.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1503,
-        "barrel_rate": 0.0409,
-        "hard_hit_rate": 0.3778,
-        "fb_rate": 0.496,
-        "z_contact_rate": 0.8843,
-        "sweet_spot_rate": 0.3704,
+        "air_pull_rate": 0.1632,
+        "barrel_rate": 0.0565,
+        "hard_hit_rate": 0.3559,
+        "fb_rate": 0.4886,
+        "z_contact_rate": 0.8685,
+        "sweet_spot_rate": 0.337,
         "xwobacon": null,
-        "ev90": 102.2
+        "ev90": 103.8
       },
       "reasons": [
-        "vs Carmen Mlodzinski \u2014 cause Pass (8.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.73)",
-        "Pitcher: Loud contact allowed (hard-hit 46%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (59% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
+        "vs Framber Valdez \u2014 cause Pass (4.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.88)",
+        "Platoon edge (R vs LHP)",
         "Warm (79\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Pitcher park (90)",
-        "Lineup not confirmed"
+        "Pitcher park (94)",
+        "Bottom of order (#9)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -10056,6 +10032,26 @@
   },
   "tb_board": [
     {
+      "id": 547180,
+      "name": "Bryce Harper",
+      "team": "Philadelphia Phillies",
+      "opp": "Miami Marlins",
+      "opp_pitcher": "Janson Junk",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823427,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 70.9,
+      "tb_tier": "Strong TB",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 55.8,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 691718,
       "name": "Pete Crow-Armstrong",
       "team": "Chicago Cubs",
@@ -10138,24 +10134,24 @@
       "hr_role": "Pass"
     },
     {
-      "id": 547180,
-      "name": "Bryce Harper",
+      "id": 656941,
+      "name": "Kyle Schwarber",
       "team": "Philadelphia Phillies",
       "opp": "Miami Marlins",
       "opp_pitcher": "Janson Junk",
       "venue": "Citizens Bank Park",
       "gamePk": 823427,
-      "slot": null,
-      "confirmed": false,
+      "slot": 1,
+      "confirmed": true,
       "bats": "L",
-      "tb_score": 67.9,
+      "tb_score": 66.9,
       "tb_tier": "Solid TB",
       "tb_reasons": [
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 50.8,
-      "hr_role": "Watchlist"
+      "hr_total": 72.0,
+      "hr_role": "Locked Core"
     },
     {
       "id": 663886,
@@ -10227,8 +10223,8 @@
       "opp_pitcher": "Janson Junk",
       "venue": "Citizens Bank Park",
       "gamePk": 823427,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 65.1,
       "tb_tier": "Solid TB",
@@ -10237,7 +10233,28 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 50.1,
+      "hr_total": 49.1,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 666018,
+      "name": "Jonathan Aranda",
+      "team": "Tampa Bay Rays",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Brandon Young",
+      "venue": "Tropicana Field",
+      "gamePk": 822939,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 64.2,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 52.4,
       "hr_role": "Watchlist"
     },
     {
@@ -10283,6 +10300,26 @@
       "hr_role": "Cause Satellite"
     },
     {
+      "id": 701807,
+      "name": "Carson Benge",
+      "team": "New York Mets",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Walker Buehler",
+      "venue": "Citi Field",
+      "gamePk": 823589,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 63.4,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 47.2,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 673548,
       "name": "Seiya Suzuki",
       "team": "Chicago Cubs",
@@ -10302,26 +10339,6 @@
       "shape_source": "statcast",
       "hr_total": 52.7,
       "hr_role": "Pass"
-    },
-    {
-      "id": 656941,
-      "name": "Kyle Schwarber",
-      "team": "Philadelphia Phillies",
-      "opp": "Miami Marlins",
-      "opp_pitcher": "Janson Junk",
-      "venue": "Citizens Bank Park",
-      "gamePk": 823427,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 62.9,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 66.0,
-      "hr_role": "Power Satellite"
     },
     {
       "id": 681624,
@@ -10408,6 +10425,26 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 605137,
+      "name": "Josh Bell",
+      "team": "Minnesota Twins",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Mart\u00edn P\u00e9rez",
+      "venue": "Target Field",
+      "gamePk": 823668,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "S",
+      "tb_score": 61.7,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 83%, Z-contact 90%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 46.1,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 671056,
       "name": "Iv\u00e1n Herrera",
       "team": "St. Louis Cardinals",
@@ -10490,26 +10527,6 @@
       "hr_role": "Pass"
     },
     {
-      "id": 701807,
-      "name": "Carson Benge",
-      "team": "New York Mets",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Walker Buehler",
-      "venue": "Citi Field",
-      "gamePk": 823589,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 60.4,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 42.2,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 701538,
       "name": "Jackson Merrill",
       "team": "San Diego Padres",
@@ -10551,24 +10568,23 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 666018,
-      "name": "Jonathan Aranda",
+      "id": 650490,
+      "name": "Yandy D\u00edaz",
       "team": "Tampa Bay Rays",
       "opp": "Baltimore Orioles",
       "opp_pitcher": "Brandon Young",
       "venue": "Tropicana Field",
       "gamePk": 822939,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 60.2,
+      "slot": 1,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 60.1,
       "tb_tier": "Solid TB",
       "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 88%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
+        "High-contact bat (contact 86%, Z-contact 90%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 46.4,
+      "hr_total": 44.3,
       "hr_role": "Watchlist"
     },
     {
@@ -10608,6 +10624,26 @@
       ],
       "shape_source": "statcast",
       "hr_total": 48.6,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 664761,
+      "name": "Alec Bohm",
+      "team": "Philadelphia Phillies",
+      "opp": "Miami Marlins",
+      "opp_pitcher": "Janson Junk",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823427,
+      "slot": 5,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 59.6,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 87%, Z-contact 91%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 47.0,
       "hr_role": "Watchlist"
     },
     {
@@ -10652,6 +10688,27 @@
       "hr_role": "Pass"
     },
     {
+      "id": 621439,
+      "name": "Byron Buxton",
+      "team": "Minnesota Twins",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Mart\u00edn P\u00e9rez",
+      "venue": "Target Field",
+      "gamePk": 823668,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 59.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 89%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 45.5,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 668709,
       "name": "JJ Bleday",
       "team": "Cincinnati Reds",
@@ -10670,26 +10727,6 @@
       "shape_source": "statcast",
       "hr_total": 52.8,
       "hr_role": "Pass"
-    },
-    {
-      "id": 605137,
-      "name": "Josh Bell",
-      "team": "Minnesota Twins",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Mart\u00edn P\u00e9rez",
-      "venue": "Target Field",
-      "gamePk": 823668,
-      "slot": null,
-      "confirmed": false,
-      "bats": "S",
-      "tb_score": 58.7,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 83%, Z-contact 90%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 41.1,
-      "hr_role": "Watchlist"
     },
     {
       "id": 686948,
@@ -10739,8 +10776,8 @@
       "opp_pitcher": "Janson Junk",
       "venue": "Citizens Bank Park",
       "gamePk": 823427,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 58.5,
       "tb_tier": "Dart",
@@ -10749,7 +10786,49 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 44.8,
+      "hr_total": 46.8,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 807712,
+      "name": "Luke Keaschall",
+      "team": "Minnesota Twins",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Mart\u00edn P\u00e9rez",
+      "venue": "Target Field",
+      "gamePk": 823668,
+      "slot": 1,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 58.4,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 89%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 45.8,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 680777,
+      "name": "Ryan Jeffers",
+      "team": "Minnesota Twins",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Mart\u00edn P\u00e9rez",
+      "venue": "Target Field",
+      "gamePk": 823668,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 58.3,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 88%, Z-contact 89%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 43.1,
       "hr_role": "Watchlist"
     },
     {
@@ -10769,6 +10848,24 @@
       "shape_source": "statcast",
       "hr_total": 61.8,
       "hr_role": "Power Satellite"
+    },
+    {
+      "id": 596019,
+      "name": "Francisco Lindor",
+      "team": "New York Mets",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Walker Buehler",
+      "venue": "Citi Field",
+      "gamePk": 823589,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "S",
+      "tb_score": 57.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 58.0,
+      "hr_role": "Pass"
     },
     {
       "id": 664954,
@@ -10810,6 +10907,24 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 691406,
+      "name": "Junior Caminero",
+      "team": "Tampa Bay Rays",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Brandon Young",
+      "venue": "Tropicana Field",
+      "gamePk": 822939,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 57.4,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 58.4,
+      "hr_role": "Pass"
+    },
+    {
       "id": 608324,
       "name": "Alex Bregman",
       "team": "Chicago Cubs",
@@ -10827,6 +10942,27 @@
       ],
       "shape_source": "statcast",
       "hr_total": 48.7,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 689414,
+      "name": "Liam Hicks",
+      "team": "Tampa Bay Rays",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Brandon Young",
+      "venue": "Tropicana Field",
+      "gamePk": 822939,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 57.3,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 94%, Z-contact 92%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 50.6,
       "hr_role": "Watchlist"
     },
     {
@@ -10870,24 +11006,24 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 664761,
-      "name": "Alec Bohm",
-      "team": "Philadelphia Phillies",
-      "opp": "Miami Marlins",
-      "opp_pitcher": "Janson Junk",
-      "venue": "Citizens Bank Park",
-      "gamePk": 823427,
-      "slot": null,
-      "confirmed": false,
+      "id": 668904,
+      "name": "Royce Lewis",
+      "team": "Minnesota Twins",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Mart\u00edn P\u00e9rez",
+      "venue": "Target Field",
+      "gamePk": 823668,
+      "slot": 5,
+      "confirmed": true,
       "bats": "R",
-      "tb_score": 56.6,
+      "tb_score": 56.5,
       "tb_tier": "Dart",
       "tb_reasons": [
-        "High-contact bat (contact 87%, Z-contact 91%) \u2014 banks XBH"
+        "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 45.0,
-      "hr_role": "Watchlist"
+      "hr_total": 58.0,
+      "hr_role": "Pass"
     },
     {
       "id": 660670,
@@ -10943,26 +11079,6 @@
       ],
       "shape_source": "statcast",
       "hr_total": 41.9,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 650490,
-      "name": "Yandy D\u00edaz",
-      "team": "Tampa Bay Rays",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Brandon Young",
-      "venue": "Tropicana Field",
-      "gamePk": 822939,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 56.1,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 86%, Z-contact 90%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 38.3,
       "hr_role": "Watchlist"
     },
     {
@@ -11025,6 +11141,26 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 805999,
+      "name": "A.J. Ewing",
+      "team": "New York Mets",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Walker Buehler",
+      "venue": "Citi Field",
+      "gamePk": 823589,
+      "slot": 1,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 56.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 47.8,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 805367,
       "name": "Chase Meidroth",
       "team": "Chicago White Sox",
@@ -11069,27 +11205,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 621439,
-      "name": "Byron Buxton",
-      "team": "Minnesota Twins",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Mart\u00edn P\u00e9rez",
-      "venue": "Target Field",
-      "gamePk": 823668,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 55.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 89%, Z-contact 88%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 39.5,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 702332,
       "name": "Caleb Durbin",
       "team": "Boston Red Sox",
@@ -11110,27 +11225,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 680777,
-      "name": "Ryan Jeffers",
-      "team": "Minnesota Twins",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Mart\u00edn P\u00e9rez",
-      "venue": "Target Field",
-      "gamePk": 823668,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 55.3,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 88%, Z-contact 89%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 38.1,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 664983,
       "name": "Jake McCarthy",
       "team": "Colorado Rockies",
@@ -11148,6 +11242,26 @@
       ],
       "shape_source": "statcast",
       "hr_total": 40.7,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 693307,
+      "name": "Dillon Dingler",
+      "team": "Detroit Tigers",
+      "opp": "Pittsburgh Pirates",
+      "opp_pitcher": "Carmen Mlodzinski",
+      "venue": "PNC Park",
+      "gamePk": 823343,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 55.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 81%, Z-contact 91%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 42.6,
       "hr_role": "Watchlist"
     },
     {
@@ -11286,24 +11400,6 @@
       "hr_role": "Pass"
     },
     {
-      "id": 691406,
-      "name": "Junior Caminero",
-      "team": "Tampa Bay Rays",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Brandon Young",
-      "venue": "Tropicana Field",
-      "gamePk": 822939,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 54.4,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 53.4,
-      "hr_role": "Pass"
-    },
-    {
       "id": 656537,
       "name": "Derek Hill",
       "team": "Philadelphia Phillies",
@@ -11319,48 +11415,6 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 46.9,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 807712,
-      "name": "Luke Keaschall",
-      "team": "Minnesota Twins",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Mart\u00edn P\u00e9rez",
-      "venue": "Target Field",
-      "gamePk": 823668,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 54.4,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 89%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 39.8,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 689414,
-      "name": "Liam Hicks",
-      "team": "Tampa Bay Rays",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Brandon Young",
-      "venue": "Tropicana Field",
-      "gamePk": 822939,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 54.3,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 94%, Z-contact 92%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 45.6,
       "hr_role": "Watchlist"
     },
     {
@@ -11442,44 +11496,6 @@
       "shape_source": "statcast",
       "hr_total": 44.9,
       "hr_role": "Watchlist"
-    },
-    {
-      "id": 668904,
-      "name": "Royce Lewis",
-      "team": "Minnesota Twins",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Mart\u00edn P\u00e9rez",
-      "venue": "Target Field",
-      "gamePk": 823668,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 53.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 56.0,
-      "hr_role": "Pass"
-    },
-    {
-      "id": 596019,
-      "name": "Francisco Lindor",
-      "team": "New York Mets",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Walker Buehler",
-      "venue": "Citi Field",
-      "gamePk": 823589,
-      "slot": null,
-      "confirmed": false,
-      "bats": "S",
-      "tb_score": 53.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 52.0,
-      "hr_role": "Pass"
     },
     {
       "id": 592518,
@@ -11680,24 +11696,22 @@
       "hr_role": "Pass"
     },
     {
-      "id": 805999,
-      "name": "A.J. Ewing",
-      "team": "New York Mets",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Walker Buehler",
-      "venue": "Citi Field",
-      "gamePk": 823589,
-      "slot": null,
-      "confirmed": false,
+      "id": 664040,
+      "name": "Brandon Lowe",
+      "team": "Pittsburgh Pirates",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Framber Valdez",
+      "venue": "PNC Park",
+      "gamePk": 823343,
+      "slot": 5,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 52.0,
       "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
+      "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 41.8,
-      "hr_role": "Watchlist"
+      "hr_total": 45.3,
+      "hr_role": "Pass"
     },
     {
       "id": 606466,
@@ -11715,26 +11729,6 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 40.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 693307,
-      "name": "Dillon Dingler",
-      "team": "Detroit Tigers",
-      "opp": "Pittsburgh Pirates",
-      "opp_pitcher": "Carmen Mlodzinski",
-      "venue": "PNC Park",
-      "gamePk": 823343,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 81%, Z-contact 91%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 37.6,
       "hr_role": "Watchlist"
     },
     {
@@ -11756,6 +11750,26 @@
       ],
       "shape_source": "statcast",
       "hr_total": 28.3,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 666182,
+      "name": "Bo Bichette",
+      "team": "New York Mets",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Walker Buehler",
+      "venue": "Citi Field",
+      "gamePk": 823589,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 51.9,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 82%, Z-contact 90%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 40.8,
       "hr_role": "Watchlist"
     },
     {
@@ -11825,8 +11839,8 @@
       "opp_pitcher": "Walker Buehler",
       "venue": "Citi Field",
       "gamePk": 823589,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 51.5,
       "tb_tier": "Dart",
@@ -11834,7 +11848,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 45.3,
+      "hr_total": 47.3,
       "hr_role": "Watchlist"
     },
     {
@@ -11856,6 +11870,24 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 607208,
+      "name": "Trea Turner",
+      "team": "Philadelphia Phillies",
+      "opp": "Miami Marlins",
+      "opp_pitcher": "Janson Junk",
+      "venue": "Citizens Bank Park",
+      "gamePk": 823427,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 51.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 48.4,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 686797,
       "name": "Brooks Lee",
       "team": "Minnesota Twins",
@@ -11863,8 +11895,8 @@
       "opp_pitcher": "Mart\u00edn P\u00e9rez",
       "venue": "Target Field",
       "gamePk": 823668,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "bats": "S",
       "tb_score": 51.0,
       "tb_tier": "Dart",
@@ -11872,7 +11904,46 @@
         "High-contact bat (contact 84%, Z-contact 92%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 41.1,
+      "hr_total": 40.1,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 650402,
+      "name": "Gleyber Torres",
+      "team": "Detroit Tigers",
+      "opp": "Pittsburgh Pirates",
+      "opp_pitcher": "Carmen Mlodzinski",
+      "venue": "PNC Park",
+      "gamePk": 823343,
+      "slot": 1,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 51.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 37.6,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 690993,
+      "name": "Colt Keith",
+      "team": "Detroit Tigers",
+      "opp": "Pittsburgh Pirates",
+      "opp_pitcher": "Carmen Mlodzinski",
+      "venue": "PNC Park",
+      "gamePk": 823343,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 51.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 82%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 35.3,
       "hr_role": "Watchlist"
     },
     {
@@ -11938,6 +12009,24 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 668723,
+      "name": "Ryan Vilade",
+      "team": "Tampa Bay Rays",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Brandon Young",
+      "venue": "Tropicana Field",
+      "gamePk": 822939,
+      "slot": 6,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 50.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 44.7,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 621438,
       "name": "Tyrone Taylor",
       "team": "Chicago Cubs",
@@ -11955,24 +12044,6 @@
       ],
       "shape_source": "statcast",
       "hr_total": 43.9,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 668723,
-      "name": "Ryan Vilade",
-      "team": "Tampa Bay Rays",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Brandon Young",
-      "venue": "Tropicana Field",
-      "gamePk": 822939,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 50.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 42.7,
       "hr_role": "Watchlist"
     },
     {
@@ -12120,8 +12191,8 @@
       "opp_pitcher": "Framber Valdez",
       "venue": "PNC Park",
       "gamePk": 823343,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 49.4,
       "tb_tier": "Pass",
@@ -12130,7 +12201,7 @@
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 31.5,
+      "hr_total": 30.5,
       "hr_role": "Watchlist"
     },
     {
@@ -12152,44 +12223,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 664040,
-      "name": "Brandon Lowe",
-      "team": "Pittsburgh Pirates",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Framber Valdez",
-      "venue": "PNC Park",
-      "gamePk": 823343,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 49.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 43.3,
-      "hr_role": "Pass"
-    },
-    {
-      "id": 666182,
-      "name": "Bo Bichette",
-      "team": "New York Mets",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Walker Buehler",
-      "venue": "Citi Field",
-      "gamePk": 823589,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 48.9,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 82%, Z-contact 90%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 35.8,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 664023,
       "name": "Ian Happ",
       "team": "Chicago Cubs",
@@ -12205,6 +12238,27 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 46.1,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 805808,
+      "name": "Kevin McGonigle",
+      "team": "Detroit Tigers",
+      "opp": "Pittsburgh Pirates",
+      "opp_pitcher": "Carmen Mlodzinski",
+      "venue": "PNC Park",
+      "gamePk": 823343,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 48.7,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "High-contact bat (contact 86%, Z-contact 90%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 42.1,
       "hr_role": "Watchlist"
     },
     {
@@ -12255,14 +12309,14 @@
       "opp_pitcher": "Mart\u00edn P\u00e9rez",
       "venue": "Target Field",
       "gamePk": 823668,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 48.5,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 38.2,
+      "hr_total": 40.2,
       "hr_role": "Watchlist"
     },
     {
@@ -12313,8 +12367,8 @@
       "opp_pitcher": "Brandon Young",
       "venue": "Tropicana Field",
       "gamePk": 822939,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 48.0,
       "tb_tier": "Pass",
@@ -12323,7 +12377,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 39.7,
+      "hr_total": 38.7,
       "hr_role": "Watchlist"
     },
     {
@@ -12367,24 +12421,21 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 690993,
-      "name": "Colt Keith",
-      "team": "Detroit Tigers",
-      "opp": "Pittsburgh Pirates",
-      "opp_pitcher": "Carmen Mlodzinski",
+      "id": 668804,
+      "name": "Bryan Reynolds",
+      "team": "Pittsburgh Pirates",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Framber Valdez",
       "venue": "PNC Park",
       "gamePk": 823343,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 48.0,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "S",
+      "tb_score": 47.6,
       "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 82%, Z-contact 88%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
+      "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 30.3,
+      "hr_total": 36.3,
       "hr_role": "Watchlist"
     },
     {
@@ -12453,14 +12504,14 @@
       "opp_pitcher": "Janson Junk",
       "venue": "Citizens Bank Park",
       "gamePk": 823427,
-      "slot": null,
-      "confirmed": false,
+      "slot": 8,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 47.2,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 43.5,
+      "hr_total": 42.5,
       "hr_role": "Watchlist"
     },
     {
@@ -12500,42 +12551,6 @@
       ],
       "shape_source": "statcast",
       "hr_total": 44.8,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 607208,
-      "name": "Trea Turner",
-      "team": "Philadelphia Phillies",
-      "opp": "Miami Marlins",
-      "opp_pitcher": "Janson Junk",
-      "venue": "Citizens Bank Park",
-      "gamePk": 823427,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 47.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 42.4,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 650402,
-      "name": "Gleyber Torres",
-      "team": "Detroit Tigers",
-      "opp": "Pittsburgh Pirates",
-      "opp_pitcher": "Carmen Mlodzinski",
-      "venue": "PNC Park",
-      "gamePk": 823343,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 47.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 31.6,
       "hr_role": "Watchlist"
     },
     {
@@ -12660,36 +12675,15 @@
       "opp_pitcher": "Walker Buehler",
       "venue": "Citi Field",
       "gamePk": 823589,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 45.0,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 52.5,
+      "hr_total": 51.5,
       "hr_role": "Pass"
-    },
-    {
-      "id": 805808,
-      "name": "Kevin McGonigle",
-      "team": "Detroit Tigers",
-      "opp": "Pittsburgh Pirates",
-      "opp_pitcher": "Carmen Mlodzinski",
-      "venue": "PNC Park",
-      "gamePk": 823343,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 44.7,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 86%, Z-contact 90%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 36.1,
-      "hr_role": "Watchlist"
     },
     {
       "id": 608348,
@@ -12709,24 +12703,6 @@
       ],
       "shape_source": "statcast",
       "hr_total": 32.1,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 668804,
-      "name": "Bryan Reynolds",
-      "team": "Pittsburgh Pirates",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Framber Valdez",
-      "venue": "PNC Park",
-      "gamePk": 823343,
-      "slot": null,
-      "confirmed": false,
-      "bats": "S",
-      "tb_score": 44.6,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 31.3,
       "hr_role": "Watchlist"
     },
     {
@@ -12963,6 +12939,26 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 699013,
+      "name": "Esmerlyn Valdez",
+      "team": "Pittsburgh Pirates",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "Framber Valdez",
+      "venue": "PNC Park",
+      "gamePk": 823343,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 40.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 39.5,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 694212,
       "name": "Samuel Basallo",
       "team": "Baltimore Orioles",
@@ -13061,26 +13057,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 699013,
-      "name": "Esmerlyn Valdez",
-      "team": "Pittsburgh Pirates",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "Framber Valdez",
-      "venue": "PNC Park",
-      "gamePk": 823343,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 36.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 33.5,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 543760,
       "name": "Marcus Semien",
       "team": "New York Mets",
@@ -13088,14 +13064,14 @@
       "opp_pitcher": "Walker Buehler",
       "venue": "Citi Field",
       "gamePk": 823589,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 36.2,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 35.3,
+      "hr_total": 34.3,
       "hr_role": "Watchlist"
     },
     {
@@ -13304,6 +13280,18 @@
       "barrel_allowed": 0.0552
     },
     {
+      "id": 592288,
+      "name": "Kent Emanuel",
+      "score": 12.5,
+      "grade": "C",
+      "flags": [
+        "Suppresses HR (HR/9 0.00)",
+        "Hard contact allowed (.474 SLG)"
+      ],
+      "hr9": 0.0,
+      "barrel_allowed": null
+    },
+    {
       "id": 695076,
       "name": "Rhett Lowder",
       "score": 12.5,
@@ -13400,11 +13388,8 @@
       "name": "Quinn Mathews",
       "score": 7.5,
       "grade": "Pass",
-      "flags": [
-        "Suppresses HR (HR/9 0.00)",
-        "Low K rate (12%)"
-      ],
-      "hr9": 0.0,
+      "flags": [],
+      "hr9": 1.0,
       "barrel_allowed": 0.0482
     },
     {
@@ -13495,6 +13480,18 @@
     "instructions": "After games, set result_hr / cause_fired (did target pitcher or team produce HRs/barrels) / teammate_hr, then classify outcome A-D.",
     "rows": [
       {
+        "player": "Kyle Schwarber",
+        "team": "Philadelphia Phillies",
+        "opp_pitcher": "Janson Junk",
+        "role": "Locked Core",
+        "total": 72.0,
+        "cause_grade": "C",
+        "result_hr": null,
+        "cause_fired": null,
+        "teammate_hr": null,
+        "outcome": null
+      },
+      {
         "player": "Shohei Ohtani",
         "team": "Los Angeles Dodgers",
         "opp_pitcher": "Tomoyuki Sugano",
@@ -13513,18 +13510,6 @@
         "role": "Cause Satellite",
         "total": 68.0,
         "cause_grade": "A",
-        "result_hr": null,
-        "cause_fired": null,
-        "teammate_hr": null,
-        "outcome": null
-      },
-      {
-        "player": "Kyle Schwarber",
-        "team": "Philadelphia Phillies",
-        "opp_pitcher": "Janson Junk",
-        "role": "Power Satellite",
-        "total": 66.0,
-        "cause_grade": "C",
         "result_hr": null,
         "cause_fired": null,
         "teammate_hr": null,
