@@ -1,17 +1,17 @@
 {
   "version": "2.8",
-  "generated_utc": "2026-08-20T19:52:23.913132+00:00",
+  "generated_utc": "2026-08-20T22:51:25.183695+00:00",
   "slate_date": "2026-08-20",
   "games": 9,
-  "confirmed_lineups": 13,
+  "confirmed_lineups": 18,
   "statcast": true,
   "statcast_meta": {
     "window_days": 21,
     "recent_days": 7,
     "start": "2026-07-31",
     "end": "2026-08-20",
-    "days_fetched": 1,
-    "days_cached": 20,
+    "days_fetched": 0,
+    "days_cached": 21,
     "days_failed": 0,
     "source": "mlbapi",
     "days_savant": 0,
@@ -41,11 +41,10 @@
     "trustworthy": true,
     "statcast_batters": 397,
     "statcast_candidates": 133,
-    "confirmed_lineups": 13,
+    "confirmed_lineups": 18,
     "games": 9,
     "days_failed": 0,
     "warnings": [
-      "Only 13/18 lineups confirmed \u2014 unconfirmed bats use a neutral slot default.",
       "Shape built from the MLB Stats API fallback (21/21 days) because Baseball Savant was unreachable. All shape signals are live; xwOBAcon is unavailable (regressed to league prior, ISO backstops it) and barrels are recomputed from EV/LA."
     ]
   },
@@ -212,8 +211,15 @@
       "cause_score": 10.8,
       "capture_method": "Watchlist / pass (no clear cause)",
       "public_heat": false,
-      "n_playable": 0,
-      "playable_bats": []
+      "n_playable": 1,
+      "playable_bats": [
+        {
+          "name": "Yordan Alvarez",
+          "total": 62.5,
+          "role": "Pass",
+          "fit_tag": null
+        }
+      ]
     },
     {
       "team": "Chicago White Sox",
@@ -414,7 +420,7 @@
       "slot": 3,
       "confirmed": true,
       "season_hr": 36,
-      "iso": 0.282,
+      "iso": 0.28,
       "total": 65.0,
       "tier": "Longshot",
       "role": "Pass",
@@ -513,6 +519,65 @@
         "Top of order (#2)",
         "Model: one strong signal",
         "VALUE longshot: real shape + cause off the chalk"
+      ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
+      "id": 670541,
+      "name": "Yordan Alvarez",
+      "team": "Houston Astros",
+      "bats": "L",
+      "opp": "Los Angeles Angels",
+      "opp_pitcher": "Grayson Rodriguez",
+      "venue": "Daikin Park",
+      "gamePk": 824153,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 36,
+      "iso": 0.293,
+      "total": 62.5,
+      "tier": "Longshot",
+      "role": "Pass",
+      "tb_score": 67.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.57,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 3.6,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.5,
+        "hitter": 29.0,
+        "environment": 7.0,
+        "lineup": 12.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2197,
+        "barrel_rate": 0.0892,
+        "hard_hit_rate": 0.444,
+        "fb_rate": 0.566,
+        "z_contact_rate": 0.8715,
+        "sweet_spot_rate": 0.3706,
+        "xwobacon": null,
+        "ev90": 108.5
+      },
+      "reasons": [
+        "vs Grayson Rodriguez \u2014 cause C (10.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.53)",
+        "Strong air-pull (27%)",
+        "Above-avg barrels (11%)",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (52% fastballs, rel 1.18 \u2192 mix-fit 1.57x)",
+        "Retractable roof (weather neutralized)",
+        "Top of order (#2)",
+        "Model: one strong signal"
       ],
       "warnings": [],
       "role_notes": []
@@ -693,6 +758,66 @@
       "warnings": [
         "Bottom of order (#9)"
       ],
+      "role_notes": []
+    },
+    {
+      "id": 663757,
+      "name": "Trent Grisham",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Kyle Bradish",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824802,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 17,
+      "iso": 0.2,
+      "total": 60.7,
+      "tier": "Pass",
+      "role": "Pass",
+      "tb_score": 66.2,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.04,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.4,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.5,
+        "hitter": 29.2,
+        "environment": 9.0,
+        "lineup": 12.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2579,
+        "barrel_rate": 0.0848,
+        "hard_hit_rate": 0.4779,
+        "fb_rate": 0.5896,
+        "z_contact_rate": 0.856,
+        "sweet_spot_rate": 0.4266,
+        "xwobacon": null,
+        "ev90": 104.5
+      },
+      "reasons": [
+        "vs Kyle Bradish \u2014 cause Pass (6.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.88)",
+        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 36%)",
+        "Elite air-pull (36%)",
+        "Above-avg barrels (11%)",
+        "Zone-damage: hard-hit 48% + Z-contact 86%",
+        "Slightly + park (101)",
+        "Deep LF wall suppresses RHB HR",
+        "Top of order (#1)",
+        "Model: one strong signal"
+      ],
+      "warnings": [],
       "role_notes": []
     },
     {
@@ -948,7 +1073,7 @@
       "slot": 2,
       "confirmed": true,
       "season_hr": 29,
-      "iso": 0.304,
+      "iso": 0.303,
       "total": 58.0,
       "tier": "Pass",
       "role": "Pass",
@@ -1061,11 +1186,11 @@
       "opp_pitcher": "Grayson Rodriguez",
       "venue": "Daikin Park",
       "gamePk": 824153,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "season_hr": 17,
       "iso": 0.178,
-      "total": 58.0,
+      "total": 57.0,
       "tier": "Pass",
       "role": "Pass",
       "tb_score": 62.5,
@@ -1082,7 +1207,7 @@
         "pitcher": 10.5,
         "hitter": 27.5,
         "environment": 10.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 4.0
       },
       "statcast": {
@@ -1107,126 +1232,129 @@
         "Model: one strong signal"
       ],
       "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#7)"
       ],
       "role_notes": []
     },
     {
-      "id": 663728,
-      "name": "Cal Raleigh",
-      "team": "Seattle Mariners",
-      "bats": "S",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Robert Gasser",
-      "venue": "American Family Field",
-      "gamePk": 823747,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.14,
-      "total": 56.8,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 52.6,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.41,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 2.6,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 12.0,
-        "hitter": 25.8,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2061,
-        "barrel_rate": 0.103,
-        "hard_hit_rate": 0.3936,
-        "fb_rate": 0.5168,
-        "z_contact_rate": 0.8531,
-        "sweet_spot_rate": 0.3547,
-        "xwobacon": null,
-        "ev90": 106.2
-      },
-      "reasons": [
-        "vs Robert Gasser \u2014 cause C (12.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.52)",
-        "Strong air-pull (24%)",
-        "Strong barrels (12%)",
-        "Pitch-mix fit: damages this arsenal (58% fastballs, rel 1.14 \u2192 mix-fit 1.41x)",
-        "DUE: 5 barrels, only 1 HR in window (+2.6 xHR) \u2014 positive regression",
-        "Hitter-friendly park (106)",
-        "Retractable roof (weather neutralized)"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 670541,
-      "name": "Yordan Alvarez",
-      "team": "Houston Astros",
+      "id": 695734,
+      "name": "Daylen Lile",
+      "team": "Washington Nationals",
       "bats": "L",
-      "opp": "Los Angeles Angels",
-      "opp_pitcher": "Grayson Rodriguez",
-      "venue": "Daikin Park",
-      "gamePk": 824153,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 36,
-      "iso": 0.293,
-      "total": 56.5,
+      "opp": "Texas Rangers",
+      "opp_pitcher": "Jacob deGrom",
+      "venue": "Globe Life Field",
+      "gamePk": 822861,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 15,
+      "iso": 0.162,
+      "total": 56.6,
       "tier": "Pass",
       "role": "Pass",
-      "tb_score": 63.5,
-      "tb_tier": "Solid TB",
+      "tb_score": 57.9,
+      "tb_tier": "Dart",
       "tb_reasons": [
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 1.57,
+      "mix_fit": 1.23,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 3.6,
-      "pitcher_grade": "C",
+      "due_hr": 0.2,
+      "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 10.5,
-        "hitter": 29.0,
-        "environment": 7.0,
-        "lineup": 6.0,
+        "pitcher": 8.5,
+        "hitter": 25.1,
+        "environment": 8.0,
+        "lineup": 12.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.248,
+        "barrel_rate": 0.0679,
+        "hard_hit_rate": 0.4384,
+        "fb_rate": 0.5936,
+        "z_contact_rate": 0.8759,
+        "sweet_spot_rate": 0.3778,
+        "xwobacon": null,
+        "ev90": 102.7
+      },
+      "reasons": [
+        "vs Jacob deGrom \u2014 cause Pass (8.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.27)",
+        "Pitcher: High K rate (30%)",
+        "Platoon shape: spikes vs RHP (barrel 7%, air-pull 34%)",
+        "Elite air-pull (34%)",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (46% fastballs, rel 0.30 \u2192 mix-fit 1.23x)",
+        "Slightly + park (100)",
+        "Retractable roof (weather neutralized)",
+        "Top of order (#1)"
+      ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
+      "id": 671277,
+      "name": "Luis Garc\u00eda Jr.",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Kyle Bradish",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824802,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 24,
+      "iso": 0.257,
+      "total": 56.5,
+      "tier": "Pass",
+      "role": "Pass",
+      "tb_score": 69.3,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 86%, Z-contact 90%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.45,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 1.9,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.5,
+        "hitter": 26.0,
+        "environment": 9.0,
+        "lineup": 11.0,
         "confidence": 4.0
       },
       "statcast": {
-        "air_pull_rate": 0.2197,
-        "barrel_rate": 0.0892,
-        "hard_hit_rate": 0.444,
-        "fb_rate": 0.566,
-        "z_contact_rate": 0.8715,
-        "sweet_spot_rate": 0.3706,
+        "air_pull_rate": 0.1784,
+        "barrel_rate": 0.0789,
+        "hard_hit_rate": 0.4051,
+        "fb_rate": 0.474,
+        "z_contact_rate": 0.9007,
+        "sweet_spot_rate": 0.3132,
         "xwobacon": null,
-        "ev90": 108.5
+        "ev90": 107.9
       },
       "reasons": [
-        "vs Grayson Rodriguez \u2014 cause C (10.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.53)",
-        "Strong air-pull (27%)",
+        "vs Kyle Bradish \u2014 cause Pass (6.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.88)",
+        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 21%)",
+        "Good air-pull (21%)",
         "Above-avg barrels (11%)",
         "Platoon edge (L vs RHP)",
-        "Pitch-mix fit: damages this arsenal (52% fastballs, rel 1.18 \u2192 mix-fit 1.57x)",
-        "Retractable roof (weather neutralized)",
+        "Slightly + park (101)",
+        "Deep LF wall suppresses RHB HR",
+        "Heart of order (#4)",
         "Model: one strong signal"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": []
     },
     {
@@ -1407,63 +1535,60 @@
       ]
     },
     {
-      "id": 663757,
-      "name": "Trent Grisham",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Kyle Bradish",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824802,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.2,
-      "total": 54.7,
+      "id": 663728,
+      "name": "Cal Raleigh",
+      "team": "Seattle Mariners",
+      "bats": "S",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Robert Gasser",
+      "venue": "American Family Field",
+      "gamePk": 823747,
+      "slot": 8,
+      "confirmed": true,
+      "season_hr": 13,
+      "iso": 0.14,
+      "total": 55.8,
       "tier": "Pass",
       "role": "Pass",
-      "tb_score": 62.2,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
+      "tb_score": 52.6,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 1.04,
+      "mix_fit": 1.41,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -1.4,
-      "pitcher_grade": "Pass",
+      "due_hr": 2.6,
+      "pitcher_grade": "C",
       "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 29.2,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 4.0
+        "pitcher": 12.0,
+        "hitter": 25.8,
+        "environment": 10.0,
+        "lineup": 5.0,
+        "confidence": 3.0
       },
       "statcast": {
-        "air_pull_rate": 0.2579,
-        "barrel_rate": 0.0848,
-        "hard_hit_rate": 0.4779,
-        "fb_rate": 0.5896,
-        "z_contact_rate": 0.856,
-        "sweet_spot_rate": 0.4266,
+        "air_pull_rate": 0.2061,
+        "barrel_rate": 0.103,
+        "hard_hit_rate": 0.3936,
+        "fb_rate": 0.5168,
+        "z_contact_rate": 0.8531,
+        "sweet_spot_rate": 0.3547,
         "xwobacon": null,
-        "ev90": 104.5
+        "ev90": 106.2
       },
       "reasons": [
-        "vs Kyle Bradish \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.88)",
-        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 36%)",
-        "Elite air-pull (36%)",
-        "Above-avg barrels (11%)",
-        "Zone-damage: hard-hit 48% + Z-contact 86%",
-        "Slightly + park (101)",
-        "Deep LF wall suppresses RHB HR",
-        "Model: one strong signal"
+        "vs Robert Gasser \u2014 cause C (12.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.52)",
+        "Strong air-pull (24%)",
+        "Strong barrels (12%)",
+        "Pitch-mix fit: damages this arsenal (58% fastballs, rel 1.14 \u2192 mix-fit 1.41x)",
+        "DUE: 5 barrels, only 1 HR in window (+2.6 xHR) \u2014 positive regression",
+        "Hitter-friendly park (106)",
+        "Retractable roof (weather neutralized)"
       ],
       "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#8)"
       ],
       "role_notes": []
     },
@@ -1706,7 +1831,7 @@
       "slot": 4,
       "confirmed": true,
       "season_hr": 13,
-      "iso": 0.179,
+      "iso": 0.178,
       "total": 52.7,
       "tier": "Pass",
       "role": "Watchlist",
@@ -1939,7 +2064,7 @@
       "slot": 2,
       "confirmed": true,
       "season_hr": 17,
-      "iso": 0.178,
+      "iso": 0.177,
       "total": 51.7,
       "tier": "Pass",
       "role": "Watchlist",
@@ -1987,68 +2112,6 @@
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
-    },
-    {
-      "id": 671277,
-      "name": "Luis Garc\u00eda Jr.",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Kyle Bradish",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824802,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 24,
-      "iso": 0.257,
-      "total": 51.5,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 66.3,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 86%, Z-contact 90%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.45,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 1.9,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 26.0,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1784,
-        "barrel_rate": 0.0789,
-        "hard_hit_rate": 0.4051,
-        "fb_rate": 0.474,
-        "z_contact_rate": 0.9007,
-        "sweet_spot_rate": 0.3132,
-        "xwobacon": null,
-        "ev90": 107.9
-      },
-      "reasons": [
-        "vs Kyle Bradish \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.88)",
-        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 21%)",
-        "Good air-pull (21%)",
-        "Above-avg barrels (11%)",
-        "Platoon edge (L vs RHP)",
-        "Slightly + park (101)",
-        "Deep LF wall suppresses RHB HR",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
     },
     {
       "id": 669477,
@@ -2226,7 +2289,7 @@
       "slot": 4,
       "confirmed": true,
       "season_hr": 10,
-      "iso": 0.23,
+      "iso": 0.227,
       "total": 51.2,
       "tier": "Pass",
       "role": "Watchlist",
@@ -2340,7 +2403,7 @@
       "slot": 3,
       "confirmed": true,
       "season_hr": 14,
-      "iso": 0.214,
+      "iso": 0.212,
       "total": 51.1,
       "tier": "Pass",
       "role": "Watchlist",
@@ -2551,67 +2614,6 @@
       ],
       "warnings": [
         "Bottom of order (#8)"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 695734,
-      "name": "Daylen Lile",
-      "team": "Washington Nationals",
-      "bats": "L",
-      "opp": "Texas Rangers",
-      "opp_pitcher": "Jacob deGrom",
-      "venue": "Globe Life Field",
-      "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 15,
-      "iso": 0.162,
-      "total": 50.6,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 53.9,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.23,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.2,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 25.1,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.248,
-        "barrel_rate": 0.0679,
-        "hard_hit_rate": 0.4384,
-        "fb_rate": 0.5936,
-        "z_contact_rate": 0.8759,
-        "sweet_spot_rate": 0.3778,
-        "xwobacon": null,
-        "ev90": 102.7
-      },
-      "reasons": [
-        "vs Jacob deGrom \u2014 cause Pass (8.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.27)",
-        "Pitcher: High K rate (30%)",
-        "Platoon shape: spikes vs RHP (barrel 7%, air-pull 34%)",
-        "Elite air-pull (34%)",
-        "Platoon edge (L vs RHP)",
-        "Pitch-mix fit: damages this arsenal (46% fastballs, rel 0.30 \u2192 mix-fit 1.23x)",
-        "Slightly + park (100)",
-        "Retractable roof (weather neutralized)"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
       ],
       "role_notes": []
     },
@@ -2856,7 +2858,7 @@
       "slot": 4,
       "confirmed": true,
       "season_hr": 19,
-      "iso": 0.164,
+      "iso": 0.163,
       "total": 48.8,
       "tier": "Pass",
       "role": "Watchlist",
@@ -2894,6 +2896,65 @@
         "Pitcher: High HR allowed (HR/9 1.52)",
         "Platoon edge (R vs LHP)",
         "Hitter-friendly park (105)",
+        "Retractable roof (weather neutralized)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 514888,
+      "name": "Jose Altuve",
+      "team": "Houston Astros",
+      "bats": "R",
+      "opp": "Los Angeles Angels",
+      "opp_pitcher": "Grayson Rodriguez",
+      "venue": "Daikin Park",
+      "gamePk": 824153,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 13,
+      "iso": 0.151,
+      "total": 48.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 50.7,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 82%, Z-contact 91%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.05,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.5,
+        "hitter": 15.0,
+        "environment": 10.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2094,
+        "barrel_rate": 0.048,
+        "hard_hit_rate": 0.3012,
+        "fb_rate": 0.451,
+        "z_contact_rate": 0.9073,
+        "sweet_spot_rate": 0.2902,
+        "xwobacon": null,
+        "ev90": 98.5
+      },
+      "reasons": [
+        "vs Grayson Rodriguez \u2014 cause C (10.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.53)",
+        "Strong air-pull (25%)",
+        "Hitter-friendly park (106)",
         "Retractable roof (weather neutralized)",
         "Heart of order (#4)",
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -3036,7 +3097,7 @@
       "slot": 1,
       "confirmed": true,
       "season_hr": 16,
-      "iso": 0.178,
+      "iso": 0.177,
       "total": 48.0,
       "tier": "Pass",
       "role": "Watchlist",
@@ -3096,7 +3157,7 @@
       "slot": 5,
       "confirmed": true,
       "season_hr": 11,
-      "iso": 0.167,
+      "iso": 0.166,
       "total": 48.0,
       "tier": "Pass",
       "role": "Watchlist",
@@ -3136,6 +3197,67 @@
         "Pitch-mix fit: damages this arsenal (52% fastballs, rel 1.79 \u2192 mix-fit 1.41x)",
         "Slightly + park (101)",
         "Mid order (#5)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 700250,
+      "name": "Ben Rice",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Kyle Bradish",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824802,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 34,
+      "iso": 0.283,
+      "total": 47.9,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 50.3,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.69,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.4,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.5,
+        "hitter": 18.4,
+        "environment": 9.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1967,
+        "barrel_rate": 0.0642,
+        "hard_hit_rate": 0.3999,
+        "fb_rate": 0.5287,
+        "z_contact_rate": 0.8174,
+        "sweet_spot_rate": 0.3236,
+        "xwobacon": null,
+        "ev90": 103.9
+      },
+      "reasons": [
+        "vs Kyle Bradish \u2014 cause Pass (6.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.88)",
+        "Good air-pull (21%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (58% fastballs, rel 0.97 \u2192 mix-fit 0.69x)",
+        "Slightly + park (101)",
+        "Deep LF wall suppresses RHB HR",
+        "Top of order (#2)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
@@ -3317,6 +3439,124 @@
         "Platoon edge (L vs RHP)",
         "Warm (80\u00b0F)",
         "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 679822,
+      "name": "Justin Foscue",
+      "team": "Texas Rangers",
+      "bats": "R",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Andrew Alvarez",
+      "venue": "Globe Life Field",
+      "gamePk": 822861,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 8,
+      "iso": 0.217,
+      "total": 47.2,
+      "tier": "Pass",
+      "role": "Pass",
+      "tb_score": 61.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 80%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.34,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 23.2,
+        "environment": 8.0,
+        "lineup": 8.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2441,
+        "barrel_rate": 0.0621,
+        "hard_hit_rate": 0.4035,
+        "fb_rate": 0.5114,
+        "z_contact_rate": 0.8803,
+        "sweet_spot_rate": 0.3422,
+        "xwobacon": null,
+        "ev90": 103.9
+      },
+      "reasons": [
+        "vs Andrew Alvarez \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.36)",
+        "Platoon shape: spikes vs LHP (barrel 7%, air-pull 32%)",
+        "Elite air-pull (32%)",
+        "Platoon edge (R vs LHP)",
+        "Poor pitch-mix fit (53% breaking balls, rel 0.30 \u2192 mix-fit 0.34x)",
+        "Slightly + park (100)",
+        "Retractable roof (weather neutralized)",
+        "Mid order (#6)"
+      ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
+      "id": 665953,
+      "name": "Andr\u00e9s Chaparro",
+      "team": "Washington Nationals",
+      "bats": "R",
+      "opp": "Texas Rangers",
+      "opp_pitcher": "Jacob deGrom",
+      "venue": "Globe Life Field",
+      "gamePk": 822861,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 8,
+      "iso": 0.293,
+      "total": 47.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 52.3,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.33,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.4,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 17.6,
+        "environment": 8.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1623,
+        "barrel_rate": 0.0689,
+        "hard_hit_rate": 0.3741,
+        "fb_rate": 0.4478,
+        "z_contact_rate": 0.8599,
+        "sweet_spot_rate": 0.309,
+        "xwobacon": null,
+        "ev90": 102.8
+      },
+      "reasons": [
+        "vs Jacob deGrom \u2014 cause Pass (8.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.27)",
+        "Pitcher: High K rate (30%)",
+        "Pitch-mix fit: damages this arsenal (46% fastballs, rel 1.71 \u2192 mix-fit 1.33x)",
+        "Slightly + park (100)",
+        "Retractable roof (weather neutralized)",
+        "Heart of order (#3)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
@@ -3780,6 +4020,66 @@
       ]
     },
     {
+      "id": 670623,
+      "name": "Isaac Paredes",
+      "team": "Houston Astros",
+      "bats": "R",
+      "opp": "Los Angeles Angels",
+      "opp_pitcher": "Grayson Rodriguez",
+      "venue": "Daikin Park",
+      "gamePk": 824153,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 16,
+      "iso": 0.161,
+      "total": 45.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 56.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 88%, Z-contact 91%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.3,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.0,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.5,
+        "hitter": 12.0,
+        "environment": 10.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2285,
+        "barrel_rate": 0.0358,
+        "hard_hit_rate": 0.3072,
+        "fb_rate": 0.5243,
+        "z_contact_rate": 0.9114,
+        "sweet_spot_rate": 0.394,
+        "xwobacon": null,
+        "ev90": 101.1
+      },
+      "reasons": [
+        "vs Grayson Rodriguez \u2014 cause C (10.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.53)",
+        "Strong air-pull (27%)",
+        "Poor pitch-mix fit (52% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
+        "Hitter-friendly park (106)",
+        "Retractable roof (weather neutralized)",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 668723,
       "name": "Ryan Vilade",
       "team": "Tampa Bay Rays",
@@ -3833,6 +4133,63 @@
       "warnings": [
         "Lineup not confirmed"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 687263,
+      "name": "Zach Neto",
+      "team": "Los Angeles Angels",
+      "bats": "R",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Peter Lambert",
+      "venue": "Daikin Park",
+      "gamePk": 824153,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 20,
+      "iso": 0.185,
+      "total": 45.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 41.6,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.77,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 9.0,
+        "hitter": 13.3,
+        "environment": 10.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2054,
+        "barrel_rate": 0.0495,
+        "hard_hit_rate": 0.381,
+        "fb_rate": 0.5386,
+        "z_contact_rate": 0.8073,
+        "sweet_spot_rate": 0.3481,
+        "xwobacon": null,
+        "ev90": 101.4
+      },
+      "reasons": [
+        "vs Peter Lambert \u2014 cause Pass (9.0/25)",
+        "Good air-pull (23%)",
+        "Poor pitch-mix fit (62% fastballs, rel 0.84 \u2192 mix-fit 0.77x)",
+        "Hitter-friendly park (106)",
+        "Retractable roof (weather neutralized)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -3953,67 +4310,6 @@
       "role_notes": []
     },
     {
-      "id": 679822,
-      "name": "Justin Foscue",
-      "team": "Texas Rangers",
-      "bats": "R",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Andrew Alvarez",
-      "venue": "Globe Life Field",
-      "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.217,
-      "total": 45.2,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 61.5,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 80%, Z-contact 88%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.34,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 5.0,
-        "hitter": 23.2,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2441,
-        "barrel_rate": 0.0621,
-        "hard_hit_rate": 0.4035,
-        "fb_rate": 0.5114,
-        "z_contact_rate": 0.8803,
-        "sweet_spot_rate": 0.3422,
-        "xwobacon": null,
-        "ev90": 103.9
-      },
-      "reasons": [
-        "vs Andrew Alvarez \u2014 cause Pass (5.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.36)",
-        "Platoon shape: spikes vs LHP (barrel 7%, air-pull 32%)",
-        "Elite air-pull (32%)",
-        "Platoon edge (R vs LHP)",
-        "Poor pitch-mix fit (53% breaking balls, rel 0.30 \u2192 mix-fit 0.34x)",
-        "Slightly + park (100)",
-        "Retractable roof (weather neutralized)"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 669003,
       "name": "Garrett Mitchell",
       "team": "Milwaukee Brewers",
@@ -4024,8 +4320,8 @@
       "gamePk": 823747,
       "slot": 7,
       "confirmed": true,
-      "season_hr": 8,
-      "iso": 0.153,
+      "season_hr": 9,
+      "iso": 0.16,
       "total": 45.2,
       "tier": "Pass",
       "role": "Watchlist",
@@ -4071,6 +4367,126 @@
       "warnings": [
         "Bottom of order (#7)"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 694384,
+      "name": "Nolan Schanuel",
+      "team": "Los Angeles Angels",
+      "bats": "L",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Peter Lambert",
+      "venue": "Daikin Park",
+      "gamePk": 824153,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 7,
+      "iso": 0.111,
+      "total": 44.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 52.4,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 87%, Z-contact 90%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.6,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 9.0,
+        "hitter": 15.8,
+        "environment": 7.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2145,
+        "barrel_rate": 0.0447,
+        "hard_hit_rate": 0.3594,
+        "fb_rate": 0.5451,
+        "z_contact_rate": 0.8951,
+        "sweet_spot_rate": 0.3537,
+        "xwobacon": null,
+        "ev90": 102.0
+      },
+      "reasons": [
+        "vs Peter Lambert \u2014 cause Pass (9.0/25)",
+        "Strong air-pull (23%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (62% fastballs, rel 0.30 \u2192 mix-fit 0.60x)",
+        "Retractable roof (weather neutralized)",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 691781,
+      "name": "Brady House",
+      "team": "Washington Nationals",
+      "bats": "R",
+      "opp": "Texas Rangers",
+      "opp_pitcher": "Jacob deGrom",
+      "venue": "Globe Life Field",
+      "gamePk": 822861,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 9,
+      "iso": 0.161,
+      "total": 44.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 52.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.54,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 1.2,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 18.2,
+        "environment": 8.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.153,
+        "barrel_rate": 0.0765,
+        "hard_hit_rate": 0.4357,
+        "fb_rate": 0.4966,
+        "z_contact_rate": 0.8545,
+        "sweet_spot_rate": 0.3798,
+        "xwobacon": null,
+        "ev90": 105.2
+      },
+      "reasons": [
+        "vs Jacob deGrom \u2014 cause Pass (8.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.27)",
+        "Pitcher: High K rate (30%)",
+        "Platoon shape: spikes vs RHP (barrel 10%, air-pull 13%)",
+        "Above-avg barrels (10%)",
+        "Pitch-mix fit: damages this arsenal (46% fastballs, rel 1.01 \u2192 mix-fit 1.54x)",
+        "Slightly + park (100)",
+        "Retractable roof (weather neutralized)",
+        "Mid order (#5)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -4246,6 +4662,65 @@
       ]
     },
     {
+      "id": 608369,
+      "name": "Corey Seager",
+      "team": "Texas Rangers",
+      "bats": "L",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Andrew Alvarez",
+      "venue": "Globe Life Field",
+      "gamePk": 822861,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 12,
+      "iso": 0.185,
+      "total": 44.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 52.4,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.6,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.2,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 17.5,
+        "environment": 8.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1931,
+        "barrel_rate": 0.0665,
+        "hard_hit_rate": 0.4524,
+        "fb_rate": 0.536,
+        "z_contact_rate": 0.8662,
+        "sweet_spot_rate": 0.3361,
+        "xwobacon": null,
+        "ev90": 106.6
+      },
+      "reasons": [
+        "vs Andrew Alvarez \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.36)",
+        "Good air-pull (21%)",
+        "Zone-damage: hard-hit 45% + Z-contact 87%",
+        "Poor pitch-mix fit (53% breaking balls, rel 0.30 \u2192 mix-fit 0.60x)",
+        "Slightly + park (100)",
+        "Retractable roof (weather neutralized)",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 671739,
       "name": "Michael Harris II",
       "team": "Atlanta Braves",
@@ -4380,7 +4855,7 @@
       "slot": 2,
       "confirmed": true,
       "season_hr": 16,
-      "iso": 0.178,
+      "iso": 0.177,
       "total": 44.1,
       "tier": "Pass",
       "role": "Watchlist",
@@ -4669,66 +5144,6 @@
       ]
     },
     {
-      "id": 514888,
-      "name": "Jose Altuve",
-      "team": "Houston Astros",
-      "bats": "R",
-      "opp": "Los Angeles Angels",
-      "opp_pitcher": "Grayson Rodriguez",
-      "venue": "Daikin Park",
-      "gamePk": 824153,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.151,
-      "total": 43.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 47.7,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 82%, Z-contact 91%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.05,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 10.5,
-        "hitter": 15.0,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2094,
-        "barrel_rate": 0.048,
-        "hard_hit_rate": 0.3012,
-        "fb_rate": 0.451,
-        "z_contact_rate": 0.9073,
-        "sweet_spot_rate": 0.2902,
-        "xwobacon": null,
-        "ev90": 98.5
-      },
-      "reasons": [
-        "vs Grayson Rodriguez \u2014 cause C (10.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.53)",
-        "Strong air-pull (25%)",
-        "Hitter-friendly park (106)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 682657,
       "name": "Angel Mart\u00ednez",
       "team": "Cleveland Guardians",
@@ -4902,6 +5317,61 @@
       ]
     },
     {
+      "id": 545361,
+      "name": "Mike Trout",
+      "team": "Los Angeles Angels",
+      "bats": "R",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Peter Lambert",
+      "venue": "Daikin Park",
+      "gamePk": 824153,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 20,
+      "iso": 0.197,
+      "total": 43.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 55.1,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.02,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.6,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 9.0,
+        "hitter": 10.1,
+        "environment": 10.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1431,
+        "barrel_rate": 0.0608,
+        "hard_hit_rate": 0.3999,
+        "fb_rate": 0.533,
+        "z_contact_rate": 0.8503,
+        "sweet_spot_rate": 0.3523,
+        "xwobacon": null,
+        "ev90": 105.1
+      },
+      "reasons": [
+        "vs Peter Lambert \u2014 cause Pass (9.0/25)",
+        "Hitter-friendly park (106)",
+        "Retractable roof (weather neutralized)",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 695600,
       "name": "Carter Jensen",
       "team": "Kansas City Royals",
@@ -4961,62 +5431,120 @@
       ]
     },
     {
-      "id": 691781,
-      "name": "Brady House",
-      "team": "Washington Nationals",
+      "id": 694671,
+      "name": "Wyatt Langford",
+      "team": "Texas Rangers",
       "bats": "R",
-      "opp": "Texas Rangers",
-      "opp_pitcher": "Jacob deGrom",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Andrew Alvarez",
       "venue": "Globe Life Field",
       "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.161,
-      "total": 42.7,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 14,
+      "iso": 0.206,
+      "total": 42.9,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 49.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
+      "tb_score": 54.7,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
       "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.54,
+      "pull_fit": true,
+      "mix_fit": 0.92,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 1.2,
+      "due_hr": -0.3,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 18.2,
+        "pitcher": 5.0,
+        "hitter": 15.9,
         "environment": 8.0,
-        "lineup": 6.0,
+        "lineup": 12.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.153,
-        "barrel_rate": 0.0765,
-        "hard_hit_rate": 0.4357,
-        "fb_rate": 0.4966,
-        "z_contact_rate": 0.8545,
-        "sweet_spot_rate": 0.3798,
+        "air_pull_rate": 0.1682,
+        "barrel_rate": 0.0512,
+        "hard_hit_rate": 0.383,
+        "fb_rate": 0.4844,
+        "z_contact_rate": 0.8722,
+        "sweet_spot_rate": 0.3117,
         "xwobacon": null,
-        "ev90": 105.2
+        "ev90": 103.9
       },
       "reasons": [
-        "vs Jacob deGrom \u2014 cause Pass (8.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.27)",
-        "Pitcher: High K rate (30%)",
-        "Platoon shape: spikes vs RHP (barrel 10%, air-pull 13%)",
-        "Above-avg barrels (10%)",
-        "Pitch-mix fit: damages this arsenal (46% fastballs, rel 1.01 \u2192 mix-fit 1.54x)",
+        "vs Andrew Alvarez \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.36)",
+        "Good air-pull (19%)",
+        "Platoon edge (R vs LHP)",
         "Slightly + park (100)",
         "Retractable roof (weather neutralized)",
+        "Top of order (#1)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 665862,
+      "name": "Jazz Chisholm Jr.",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Kyle Bradish",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824802,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 17,
+      "iso": 0.169,
+      "total": 42.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 48.6,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
       ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.15,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.5,
+        "hitter": 17.2,
+        "environment": 9.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1745,
+        "barrel_rate": 0.0568,
+        "hard_hit_rate": 0.4063,
+        "fb_rate": 0.4617,
+        "z_contact_rate": 0.8278,
+        "sweet_spot_rate": 0.2951,
+        "xwobacon": null,
+        "ev90": 103.1
+      },
+      "reasons": [
+        "vs Kyle Bradish \u2014 cause Pass (6.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.88)",
+        "Platoon edge (L vs RHP)",
+        "Slightly + park (101)",
+        "Deep LF wall suppresses RHB HR",
+        "Mid order (#5)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -5069,127 +5597,6 @@
         "Pitcher: High HR allowed (HR/9 1.53)",
         "Hitter-friendly park (106)",
         "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 665953,
-      "name": "Andr\u00e9s Chaparro",
-      "team": "Washington Nationals",
-      "bats": "R",
-      "opp": "Texas Rangers",
-      "opp_pitcher": "Jacob deGrom",
-      "venue": "Globe Life Field",
-      "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.293,
-      "total": 42.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 49.3,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.33,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.4,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 17.6,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1623,
-        "barrel_rate": 0.0689,
-        "hard_hit_rate": 0.3741,
-        "fb_rate": 0.4478,
-        "z_contact_rate": 0.8599,
-        "sweet_spot_rate": 0.309,
-        "xwobacon": null,
-        "ev90": 102.8
-      },
-      "reasons": [
-        "vs Jacob deGrom \u2014 cause Pass (8.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.27)",
-        "Pitcher: High K rate (30%)",
-        "Pitch-mix fit: damages this arsenal (46% fastballs, rel 1.71 \u2192 mix-fit 1.33x)",
-        "Slightly + park (100)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 700250,
-      "name": "Ben Rice",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Kyle Bradish",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824802,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 34,
-      "iso": 0.283,
-      "total": 41.9,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 46.3,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.69,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.4,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 18.4,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1967,
-        "barrel_rate": 0.0642,
-        "hard_hit_rate": 0.3999,
-        "fb_rate": 0.5287,
-        "z_contact_rate": 0.8174,
-        "sweet_spot_rate": 0.3236,
-        "xwobacon": null,
-        "ev90": 103.9
-      },
-      "reasons": [
-        "vs Kyle Bradish \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.88)",
-        "Good air-pull (21%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (58% fastballs, rel 0.97 \u2192 mix-fit 0.69x)",
-        "Slightly + park (101)",
-        "Deep LF wall suppresses RHB HR",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5272,7 +5679,7 @@
       "slot": 3,
       "confirmed": true,
       "season_hr": 19,
-      "iso": 0.234,
+      "iso": 0.232,
       "total": 41.5,
       "tier": "Pass",
       "role": "Watchlist",
@@ -5377,6 +5784,122 @@
       ]
     },
     {
+      "id": 691011,
+      "name": "Drew Romo",
+      "team": "Chicago White Sox",
+      "bats": "S",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Grant Holmes",
+      "venue": "Rate Field",
+      "gamePk": 824589,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.164,
+      "total": 41.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 49.1,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.14,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 9.5,
+        "hitter": 15.7,
+        "environment": 8.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1706,
+        "barrel_rate": 0.0597,
+        "hard_hit_rate": 0.3654,
+        "fb_rate": 0.4888,
+        "z_contact_rate": 0.8403,
+        "sweet_spot_rate": 0.3418,
+        "xwobacon": null,
+        "ev90": 103.5
+      },
+      "reasons": [
+        "vs Grant Holmes \u2014 cause Pass (9.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.39)",
+        "Slightly + park (101)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 607043,
+      "name": "Brandon Nimmo",
+      "team": "Texas Rangers",
+      "bats": "L",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Andrew Alvarez",
+      "venue": "Globe Life Field",
+      "gamePk": 822861,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 13,
+      "iso": 0.162,
+      "total": 41.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 55.2,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 82%, Z-contact 88%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.3,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.6,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 15.0,
+        "environment": 8.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1714,
+        "barrel_rate": 0.056,
+        "hard_hit_rate": 0.3974,
+        "fb_rate": 0.4861,
+        "z_contact_rate": 0.8766,
+        "sweet_spot_rate": 0.3324,
+        "xwobacon": null,
+        "ev90": 103.9
+      },
+      "reasons": [
+        "vs Andrew Alvarez \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.36)",
+        "Platoon shape: spikes vs LHP (barrel 8%, air-pull 19%)",
+        "Pitch-mix fit: damages this arsenal (53% breaking balls, rel 2.20 \u2192 mix-fit 1.30x)",
+        "Slightly + park (100)",
+        "Retractable roof (weather neutralized)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 687401,
       "name": "Joey Ortiz",
       "team": "Milwaukee Brewers",
@@ -5388,11 +5911,11 @@
       "slot": 6,
       "confirmed": true,
       "season_hr": 7,
-      "iso": 0.13,
-      "total": 41.2,
+      "iso": 0.129,
+      "total": 40.8,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 54.1,
+      "tb_score": 52.6,
       "tb_tier": "Dart",
       "tb_reasons": [
         "High-contact bat (contact 84%, Z-contact 91%) \u2014 banks XBH"
@@ -5406,7 +5929,7 @@
       "pitcher_grade": "C",
       "breakdown": {
         "pitcher": 10.0,
-        "hitter": 11.2,
+        "hitter": 10.8,
         "environment": 10.0,
         "lineup": 8.0,
         "confidence": 2.0
@@ -5431,66 +5954,6 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 665862,
-      "name": "Jazz Chisholm Jr.",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Kyle Bradish",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824802,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.169,
-      "total": 40.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 45.6,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.15,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 17.2,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1745,
-        "barrel_rate": 0.0568,
-        "hard_hit_rate": 0.4063,
-        "fb_rate": 0.4617,
-        "z_contact_rate": 0.8278,
-        "sweet_spot_rate": 0.2951,
-        "xwobacon": null,
-        "ev90": 103.1
-      },
-      "reasons": [
-        "vs Kyle Bradish \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.88)",
-        "Platoon edge (L vs RHP)",
-        "Slightly + park (101)",
-        "Deep LF wall suppresses RHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -5603,67 +6066,6 @@
         "Pitcher: High K rate (30%)",
         "Platoon edge (L vs RHP)",
         "Slightly + park (100)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 670623,
-      "name": "Isaac Paredes",
-      "team": "Houston Astros",
-      "bats": "R",
-      "opp": "Los Angeles Angels",
-      "opp_pitcher": "Grayson Rodriguez",
-      "venue": "Daikin Park",
-      "gamePk": 824153,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.161,
-      "total": 40.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 53.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 88%, Z-contact 91%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.3,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 10.5,
-        "hitter": 12.0,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2285,
-        "barrel_rate": 0.0358,
-        "hard_hit_rate": 0.3072,
-        "fb_rate": 0.5243,
-        "z_contact_rate": 0.9114,
-        "sweet_spot_rate": 0.394,
-        "xwobacon": null,
-        "ev90": 101.1
-      },
-      "reasons": [
-        "vs Grayson Rodriguez \u2014 cause C (10.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.53)",
-        "Strong air-pull (27%)",
-        "Poor pitch-mix fit (52% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Hitter-friendly park (106)",
         "Retractable roof (weather neutralized)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -5792,64 +6194,6 @@
       ]
     },
     {
-      "id": 687263,
-      "name": "Zach Neto",
-      "team": "Los Angeles Angels",
-      "bats": "R",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Peter Lambert",
-      "venue": "Daikin Park",
-      "gamePk": 824153,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 20,
-      "iso": 0.185,
-      "total": 40.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 38.6,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.77,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 9.0,
-        "hitter": 13.3,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2054,
-        "barrel_rate": 0.0495,
-        "hard_hit_rate": 0.381,
-        "fb_rate": 0.5386,
-        "z_contact_rate": 0.8073,
-        "sweet_spot_rate": 0.3481,
-        "xwobacon": null,
-        "ev90": 101.4
-      },
-      "reasons": [
-        "vs Peter Lambert \u2014 cause Pass (9.0/25)",
-        "Good air-pull (23%)",
-        "Poor pitch-mix fit (62% fastballs, rel 0.84 \u2192 mix-fit 0.77x)",
-        "Hitter-friendly park (106)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 543807,
       "name": "George Springer",
       "team": "Toronto Blue Jays",
@@ -5923,7 +6267,7 @@
       "slot": 5,
       "confirmed": true,
       "season_hr": 10,
-      "iso": 0.104,
+      "iso": 0.103,
       "total": 40.2,
       "tier": "Pass",
       "role": "Watchlist",
@@ -5966,123 +6310,6 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 691011,
-      "name": "Drew Romo",
-      "team": "Chicago White Sox",
-      "bats": "S",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Grant Holmes",
-      "venue": "Rate Field",
-      "gamePk": 824589,
-      "slot": 9,
-      "confirmed": true,
-      "season_hr": 7,
-      "iso": 0.164,
-      "total": 40.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 49.1,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.14,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 9.5,
-        "hitter": 15.7,
-        "environment": 8.0,
-        "lineup": 5.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1706,
-        "barrel_rate": 0.0597,
-        "hard_hit_rate": 0.3654,
-        "fb_rate": 0.4888,
-        "z_contact_rate": 0.8403,
-        "sweet_spot_rate": 0.3418,
-        "xwobacon": null,
-        "ev90": 103.5
-      },
-      "reasons": [
-        "vs Grant Holmes \u2014 cause Pass (9.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.39)",
-        "Slightly + park (101)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Bottom of order (#9)"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 694384,
-      "name": "Nolan Schanuel",
-      "team": "Los Angeles Angels",
-      "bats": "L",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Peter Lambert",
-      "venue": "Daikin Park",
-      "gamePk": 824153,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.111,
-      "total": 39.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 49.4,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 87%, Z-contact 90%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.6,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 9.0,
-        "hitter": 15.8,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2145,
-        "barrel_rate": 0.0447,
-        "hard_hit_rate": 0.3594,
-        "fb_rate": 0.5451,
-        "z_contact_rate": 0.8951,
-        "sweet_spot_rate": 0.3537,
-        "xwobacon": null,
-        "ev90": 102.0
-      },
-      "reasons": [
-        "vs Peter Lambert \u2014 cause Pass (9.0/25)",
-        "Strong air-pull (23%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (62% fastballs, rel 0.30 \u2192 mix-fit 0.60x)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -6135,6 +6362,126 @@
       "warnings": [
         "Lineup not confirmed"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 671976,
+      "name": "Tristan Peters",
+      "team": "Chicago White Sox",
+      "bats": "L",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Grant Holmes",
+      "venue": "Rate Field",
+      "gamePk": 824589,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.154,
+      "total": 39.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 44.1,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.65,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 9.5,
+        "hitter": 14.0,
+        "environment": 8.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2012,
+        "barrel_rate": 0.0425,
+        "hard_hit_rate": 0.3211,
+        "fb_rate": 0.5032,
+        "z_contact_rate": 0.8475,
+        "sweet_spot_rate": 0.3848,
+        "xwobacon": null,
+        "ev90": 99.4
+      },
+      "reasons": [
+        "vs Grant Holmes \u2014 cause Pass (9.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.39)",
+        "Strong air-pull (24%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (50% fastballs, rel 0.30 \u2192 mix-fit 0.65x)",
+        "Slightly + park (101)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 662139,
+      "name": "Daulton Varsho",
+      "team": "Houston Astros",
+      "bats": "L",
+      "opp": "Los Angeles Angels",
+      "opp_pitcher": "Grayson Rodriguez",
+      "venue": "Daikin Park",
+      "gamePk": 824153,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 8,
+      "iso": 0.124,
+      "total": 39.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 51.1,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.52,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.5,
+        "hitter": 11.8,
+        "environment": 7.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1555,
+        "barrel_rate": 0.0506,
+        "hard_hit_rate": 0.4194,
+        "fb_rate": 0.5029,
+        "z_contact_rate": 0.8536,
+        "sweet_spot_rate": 0.32,
+        "xwobacon": null,
+        "ev90": 103.0
+      },
+      "reasons": [
+        "vs Grayson Rodriguez \u2014 cause C (10.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.53)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (52% fastballs, rel 0.30 \u2192 mix-fit 0.52x)",
+        "Retractable roof (weather neutralized)",
+        "Mid order (#5)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -6319,7 +6666,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 10,
-      "iso": 0.273,
+      "iso": 0.271,
       "total": 38.8,
       "tier": "Pass",
       "role": "Watchlist",
@@ -6358,66 +6705,6 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 676609,
-      "name": "Jos\u00e9 Caballero",
-      "team": "New York Yankees",
-      "bats": "R",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Kyle Bradish",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824802,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.146,
-      "total": 38.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 42.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.7,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.6,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 18.2,
-        "environment": 6.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2156,
-        "barrel_rate": 0.0796,
-        "hard_hit_rate": 0.3567,
-        "fb_rate": 0.5449,
-        "z_contact_rate": 0.8635,
-        "sweet_spot_rate": 0.4302,
-        "xwobacon": null,
-        "ev90": 104.1
-      },
-      "reasons": [
-        "vs Kyle Bradish \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.88)",
-        "Good air-pull (22%)",
-        "Pitch-mix fit: damages this arsenal (58% fastballs, rel 2.20 \u2192 mix-fit 1.70x)",
-        "Deep LF wall suppresses RHB HR",
-        "Warm (79\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (92)",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -6480,127 +6767,6 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 608369,
-      "name": "Corey Seager",
-      "team": "Texas Rangers",
-      "bats": "L",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Andrew Alvarez",
-      "venue": "Globe Life Field",
-      "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.185,
-      "total": 38.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 48.4,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.6,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.2,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 5.0,
-        "hitter": 17.5,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1931,
-        "barrel_rate": 0.0665,
-        "hard_hit_rate": 0.4524,
-        "fb_rate": 0.536,
-        "z_contact_rate": 0.8662,
-        "sweet_spot_rate": 0.3361,
-        "xwobacon": null,
-        "ev90": 106.6
-      },
-      "reasons": [
-        "vs Andrew Alvarez \u2014 cause Pass (5.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.36)",
-        "Good air-pull (21%)",
-        "Zone-damage: hard-hit 45% + Z-contact 87%",
-        "Poor pitch-mix fit (53% breaking balls, rel 0.30 \u2192 mix-fit 0.60x)",
-        "Slightly + park (100)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 671976,
-      "name": "Tristan Peters",
-      "team": "Chicago White Sox",
-      "bats": "L",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Grant Holmes",
-      "venue": "Rate Field",
-      "gamePk": 824589,
-      "slot": 8,
-      "confirmed": true,
-      "season_hr": 7,
-      "iso": 0.154,
-      "total": 38.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 44.1,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.65,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 9.5,
-        "hitter": 14.0,
-        "environment": 8.0,
-        "lineup": 5.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2012,
-        "barrel_rate": 0.0425,
-        "hard_hit_rate": 0.3211,
-        "fb_rate": 0.5032,
-        "z_contact_rate": 0.8475,
-        "sweet_spot_rate": 0.3848,
-        "xwobacon": null,
-        "ev90": 99.4
-      },
-      "reasons": [
-        "vs Grant Holmes \u2014 cause Pass (9.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.39)",
-        "Strong air-pull (24%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (50% fastballs, rel 0.30 \u2192 mix-fit 0.65x)",
-        "Slightly + park (101)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Bottom of order (#8)"
-      ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -6841,63 +7007,181 @@
       ]
     },
     {
-      "id": 669224,
-      "name": "Austin Wells",
+      "id": 676609,
+      "name": "Jos\u00e9 Caballero",
       "team": "New York Yankees",
-      "bats": "L",
+      "bats": "R",
       "opp": "Baltimore Orioles",
       "opp_pitcher": "Kyle Bradish",
       "venue": "Oriole Park at Camden Yards",
       "gamePk": 824802,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.119,
-      "total": 37.8,
+      "slot": 9,
+      "confirmed": true,
+      "season_hr": 12,
+      "iso": 0.146,
+      "total": 37.7,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 52.8,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 89%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
+      "tb_score": 42.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
       "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.21,
+      "pull_fit": true,
+      "mix_fit": 1.7,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -0.3,
+      "due_hr": -0.6,
       "pitcher_grade": "Pass",
       "breakdown": {
         "pitcher": 6.5,
-        "hitter": 14.3,
-        "environment": 9.0,
-        "lineup": 6.0,
+        "hitter": 18.2,
+        "environment": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1745,
-        "barrel_rate": 0.0568,
-        "hard_hit_rate": 0.3741,
-        "fb_rate": 0.5172,
-        "z_contact_rate": 0.8865,
-        "sweet_spot_rate": 0.3367,
+        "air_pull_rate": 0.2156,
+        "barrel_rate": 0.0796,
+        "hard_hit_rate": 0.3567,
+        "fb_rate": 0.5449,
+        "z_contact_rate": 0.8635,
+        "sweet_spot_rate": 0.4302,
         "xwobacon": null,
-        "ev90": 104.3
+        "ev90": 104.1
       },
       "reasons": [
         "vs Kyle Bradish \u2014 cause Pass (6.5/25)",
         "Pitcher: Suppresses HR (HR/9 0.88)",
-        "Platoon edge (L vs RHP)",
-        "Pitch-mix fit: damages this arsenal (58% fastballs, rel 1.35 \u2192 mix-fit 1.21x)",
-        "Slightly + park (101)",
+        "Good air-pull (22%)",
+        "Pitch-mix fit: damages this arsenal (58% fastballs, rel 2.20 \u2192 mix-fit 1.70x)",
         "Deep LF wall suppresses RHB HR",
+        "Warm (79\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
+        "Pitcher park (92)",
+        "Bottom of order (#9)"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 660688,
+      "name": "Keibert Ruiz",
+      "team": "Washington Nationals",
+      "bats": "S",
+      "opp": "Texas Rangers",
+      "opp_pitcher": "Jacob deGrom",
+      "venue": "Globe Life Field",
+      "gamePk": 822861,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 7,
+      "iso": 0.159,
+      "total": 37.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 51.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 89%, Z-contact 91%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.36,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 11.2,
+        "environment": 8.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1822,
+        "barrel_rate": 0.0435,
+        "hard_hit_rate": 0.3936,
+        "fb_rate": 0.5168,
+        "z_contact_rate": 0.912,
+        "sweet_spot_rate": 0.3682,
+        "xwobacon": null,
+        "ev90": 102.1
+      },
+      "reasons": [
+        "vs Jacob deGrom \u2014 cause Pass (8.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.27)",
+        "Pitcher: High K rate (30%)",
+        "Good air-pull (21%)",
+        "Poor pitch-mix fit (46% fastballs, rel 0.30 \u2192 mix-fit 0.36x)",
+        "Slightly + park (100)",
+        "Retractable roof (weather neutralized)",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 669394,
+      "name": "Jake Burger",
+      "team": "Texas Rangers",
+      "bats": "R",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Andrew Alvarez",
+      "venue": "Globe Life Field",
+      "gamePk": 822861,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 21,
+      "iso": 0.185,
+      "total": 37.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 51.7,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.92,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.7,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 11.6,
+        "environment": 8.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1682,
+        "barrel_rate": 0.0512,
+        "hard_hit_rate": 0.4253,
+        "fb_rate": 0.4721,
+        "z_contact_rate": 0.8481,
+        "sweet_spot_rate": 0.3117,
+        "xwobacon": null,
+        "ev90": 108.5
+      },
+      "reasons": [
+        "vs Andrew Alvarez \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.36)",
+        "Platoon edge (R vs LHP)",
+        "Slightly + park (100)",
+        "Retractable roof (weather neutralized)",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -6954,242 +7238,6 @@
       ]
     },
     {
-      "id": 686611,
-      "name": "Dylan Crews",
-      "team": "Washington Nationals",
-      "bats": "R",
-      "opp": "Texas Rangers",
-      "opp_pitcher": "Jacob deGrom",
-      "venue": "Globe Life Field",
-      "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.147,
-      "total": 37.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 47.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.46,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 1.2,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 12.8,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1731,
-        "barrel_rate": 0.0665,
-        "hard_hit_rate": 0.4149,
-        "fb_rate": 0.536,
-        "z_contact_rate": 0.8449,
-        "sweet_spot_rate": 0.4027,
-        "xwobacon": null,
-        "ev90": 102.5
-      },
-      "reasons": [
-        "vs Jacob deGrom \u2014 cause Pass (8.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.27)",
-        "Pitcher: High K rate (30%)",
-        "Poor pitch-mix fit (46% fastballs, rel 0.52 \u2192 mix-fit 0.46x)",
-        "Slightly + park (100)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 662139,
-      "name": "Daulton Varsho",
-      "team": "Houston Astros",
-      "bats": "L",
-      "opp": "Los Angeles Angels",
-      "opp_pitcher": "Grayson Rodriguez",
-      "venue": "Daikin Park",
-      "gamePk": 824153,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.124,
-      "total": 37.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 48.1,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.52,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 10.5,
-        "hitter": 11.8,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1555,
-        "barrel_rate": 0.0506,
-        "hard_hit_rate": 0.4194,
-        "fb_rate": 0.5029,
-        "z_contact_rate": 0.8536,
-        "sweet_spot_rate": 0.32,
-        "xwobacon": null,
-        "ev90": 103.0
-      },
-      "reasons": [
-        "vs Grayson Rodriguez \u2014 cause C (10.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.53)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (52% fastballs, rel 0.30 \u2192 mix-fit 0.52x)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 545361,
-      "name": "Mike Trout",
-      "team": "Los Angeles Angels",
-      "bats": "R",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Peter Lambert",
-      "venue": "Daikin Park",
-      "gamePk": 824153,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 20,
-      "iso": 0.197,
-      "total": 37.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 51.1,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.02,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.6,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 9.0,
-        "hitter": 10.1,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1431,
-        "barrel_rate": 0.0608,
-        "hard_hit_rate": 0.3999,
-        "fb_rate": 0.533,
-        "z_contact_rate": 0.8503,
-        "sweet_spot_rate": 0.3523,
-        "xwobacon": null,
-        "ev90": 105.1
-      },
-      "reasons": [
-        "vs Peter Lambert \u2014 cause Pass (9.0/25)",
-        "Hitter-friendly park (106)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 694671,
-      "name": "Wyatt Langford",
-      "team": "Texas Rangers",
-      "bats": "R",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Andrew Alvarez",
-      "venue": "Globe Life Field",
-      "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.206,
-      "total": 36.9,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 50.7,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.92,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 5.0,
-        "hitter": 15.9,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1682,
-        "barrel_rate": 0.0512,
-        "hard_hit_rate": 0.383,
-        "fb_rate": 0.4844,
-        "z_contact_rate": 0.8722,
-        "sweet_spot_rate": 0.3117,
-        "xwobacon": null,
-        "ev90": 103.9
-      },
-      "reasons": [
-        "vs Andrew Alvarez \u2014 cause Pass (5.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.36)",
-        "Good air-pull (19%)",
-        "Platoon edge (R vs LHP)",
-        "Slightly + park (100)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 702284,
       "name": "Cole Young",
       "team": "Seattle Mariners",
@@ -7201,7 +7249,7 @@
       "slot": 7,
       "confirmed": true,
       "season_hr": 15,
-      "iso": 0.142,
+      "iso": 0.141,
       "total": 36.8,
       "tier": "Pass",
       "role": "Watchlist",
@@ -7250,61 +7298,182 @@
       ]
     },
     {
-      "id": 666139,
-      "name": "Josh Lowe",
-      "team": "Los Angeles Angels",
+      "id": 669224,
+      "name": "Austin Wells",
+      "team": "New York Yankees",
       "bats": "L",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Peter Lambert",
-      "venue": "Daikin Park",
-      "gamePk": 824153,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.156,
-      "total": 36.2,
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Kyle Bradish",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824802,
+      "slot": 8,
+      "confirmed": true,
+      "season_hr": 8,
+      "iso": 0.119,
+      "total": 36.8,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 35.5,
-      "tb_tier": "Pass",
+      "tb_score": 52.8,
+      "tb_tier": "Dart",
       "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 89%) \u2014 banks XBH",
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.43,
+      "pull_fit": false,
+      "mix_fit": 1.21,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -1.0,
+      "due_hr": -0.3,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 9.0,
-        "hitter": 12.2,
-        "environment": 7.0,
-        "lineup": 6.0,
+        "pitcher": 6.5,
+        "hitter": 14.3,
+        "environment": 9.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.2014,
-        "barrel_rate": 0.0481,
-        "hard_hit_rate": 0.3963,
-        "fb_rate": 0.5491,
-        "z_contact_rate": 0.7825,
-        "sweet_spot_rate": 0.3825,
+        "air_pull_rate": 0.1745,
+        "barrel_rate": 0.0568,
+        "hard_hit_rate": 0.3741,
+        "fb_rate": 0.5172,
+        "z_contact_rate": 0.8865,
+        "sweet_spot_rate": 0.3367,
         "xwobacon": null,
-        "ev90": 103.3
+        "ev90": 104.3
       },
       "reasons": [
-        "vs Peter Lambert \u2014 cause Pass (9.0/25)",
-        "Good air-pull (23%)",
+        "vs Kyle Bradish \u2014 cause Pass (6.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.88)",
         "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (62% fastballs, rel 0.30 \u2192 mix-fit 0.43x)",
+        "Pitch-mix fit: damages this arsenal (58% fastballs, rel 1.35 \u2192 mix-fit 1.21x)",
+        "Slightly + park (101)",
+        "Deep LF wall suppresses RHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Bottom of order (#8)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 686611,
+      "name": "Dylan Crews",
+      "team": "Washington Nationals",
+      "bats": "R",
+      "opp": "Texas Rangers",
+      "opp_pitcher": "Jacob deGrom",
+      "venue": "Globe Life Field",
+      "gamePk": 822861,
+      "slot": 7,
+      "confirmed": true,
+      "season_hr": 10,
+      "iso": 0.147,
+      "total": 36.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 47.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.46,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 1.2,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 12.8,
+        "environment": 8.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1731,
+        "barrel_rate": 0.0665,
+        "hard_hit_rate": 0.4149,
+        "fb_rate": 0.536,
+        "z_contact_rate": 0.8449,
+        "sweet_spot_rate": 0.4027,
+        "xwobacon": null,
+        "ev90": 102.5
+      },
+      "reasons": [
+        "vs Jacob deGrom \u2014 cause Pass (8.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.27)",
+        "Pitcher: High K rate (30%)",
+        "Poor pitch-mix fit (46% fastballs, rel 0.52 \u2192 mix-fit 0.46x)",
+        "Slightly + park (100)",
         "Retractable roof (weather neutralized)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#7)"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 677649,
+      "name": "Ezequiel Duran",
+      "team": "Texas Rangers",
+      "bats": "R",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Andrew Alvarez",
+      "venue": "Globe Life Field",
+      "gamePk": 822861,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 13,
+      "iso": 0.166,
+      "total": 36.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 50.9,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.72,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 13.1,
+        "environment": 8.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1822,
+        "barrel_rate": 0.049,
+        "hard_hit_rate": 0.3892,
+        "fb_rate": 0.4734,
+        "z_contact_rate": 0.8856,
+        "sweet_spot_rate": 0.3205,
+        "xwobacon": null,
+        "ev90": 104.1
+      },
+      "reasons": [
+        "vs Andrew Alvarez \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.36)",
+        "Platoon edge (R vs LHP)",
+        "Poor pitch-mix fit (53% breaking balls, rel 0.30 \u2192 mix-fit 0.72x)",
+        "Slightly + park (100)",
+        "Retractable roof (weather neutralized)",
+        "Mid order (#5)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -7358,67 +7527,6 @@
         "vs Landen Roupp \u2014 cause Pass (5.0/25)",
         "Pitcher: Suppresses HR (HR/9 0.67)",
         "Platoon edge (L vs RHP)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 607043,
-      "name": "Brandon Nimmo",
-      "team": "Texas Rangers",
-      "bats": "L",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Andrew Alvarez",
-      "venue": "Globe Life Field",
-      "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.162,
-      "total": 36.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.2,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 82%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.3,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.6,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 5.0,
-        "hitter": 15.0,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1714,
-        "barrel_rate": 0.056,
-        "hard_hit_rate": 0.3974,
-        "fb_rate": 0.4861,
-        "z_contact_rate": 0.8766,
-        "sweet_spot_rate": 0.3324,
-        "xwobacon": null,
-        "ev90": 103.9
-      },
-      "reasons": [
-        "vs Andrew Alvarez \u2014 cause Pass (5.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.36)",
-        "Platoon shape: spikes vs LHP (barrel 8%, air-pull 19%)",
-        "Pitch-mix fit: damages this arsenal (53% breaking balls, rel 2.20 \u2192 mix-fit 1.30x)",
-        "Slightly + park (100)",
-        "Retractable roof (weather neutralized)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7668,7 +7776,7 @@
       "slot": 7,
       "confirmed": true,
       "season_hr": 10,
-      "iso": 0.127,
+      "iso": 0.126,
       "total": 35.7,
       "tier": "Pass",
       "role": "Watchlist",
@@ -7712,68 +7820,6 @@
       ],
       "warnings": [
         "Bottom of order (#7)"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 660688,
-      "name": "Keibert Ruiz",
-      "team": "Washington Nationals",
-      "bats": "S",
-      "opp": "Texas Rangers",
-      "opp_pitcher": "Jacob deGrom",
-      "venue": "Globe Life Field",
-      "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.159,
-      "total": 35.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 51.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 89%, Z-contact 91%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.36,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 11.2,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1822,
-        "barrel_rate": 0.0435,
-        "hard_hit_rate": 0.3936,
-        "fb_rate": 0.5168,
-        "z_contact_rate": 0.912,
-        "sweet_spot_rate": 0.3682,
-        "xwobacon": null,
-        "ev90": 102.1
-      },
-      "reasons": [
-        "vs Jacob deGrom \u2014 cause Pass (8.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.27)",
-        "Pitcher: High K rate (30%)",
-        "Good air-pull (21%)",
-        "Poor pitch-mix fit (46% fastballs, rel 0.30 \u2192 mix-fit 0.36x)",
-        "Slightly + park (100)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -7960,6 +8006,66 @@
       ]
     },
     {
+      "id": 666139,
+      "name": "Josh Lowe",
+      "team": "Los Angeles Angels",
+      "bats": "L",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Peter Lambert",
+      "venue": "Daikin Park",
+      "gamePk": 824153,
+      "slot": 7,
+      "confirmed": true,
+      "season_hr": 10,
+      "iso": 0.156,
+      "total": 35.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 35.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.43,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 9.0,
+        "hitter": 12.2,
+        "environment": 7.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2014,
+        "barrel_rate": 0.0481,
+        "hard_hit_rate": 0.3963,
+        "fb_rate": 0.5491,
+        "z_contact_rate": 0.7825,
+        "sweet_spot_rate": 0.3825,
+        "xwobacon": null,
+        "ev90": 103.3
+      },
+      "reasons": [
+        "vs Peter Lambert \u2014 cause Pass (9.0/25)",
+        "Good air-pull (23%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (62% fastballs, rel 0.30 \u2192 mix-fit 0.43x)",
+        "Retractable roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Bottom of order (#7)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 641355,
       "name": "Cody Bellinger",
       "team": "New York Yankees",
@@ -8063,6 +8169,63 @@
       ]
     },
     {
+      "id": 687093,
+      "name": "Vaughn Grissom",
+      "team": "Los Angeles Angels",
+      "bats": "R",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Peter Lambert",
+      "venue": "Daikin Park",
+      "gamePk": 824153,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 7,
+      "iso": 0.127,
+      "total": 34.4,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 41.3,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.83,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.7,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 9.0,
+        "hitter": 5.4,
+        "environment": 10.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1475,
+        "barrel_rate": 0.048,
+        "hard_hit_rate": 0.3012,
+        "fb_rate": 0.428,
+        "z_contact_rate": 0.9083,
+        "sweet_spot_rate": 0.2787,
+        "xwobacon": null,
+        "ev90": 98.5
+      },
+      "reasons": [
+        "vs Peter Lambert \u2014 cause Pass (9.0/25)",
+        "Platoon shape fades vs RHP",
+        "Poor pitch-mix fit (62% fastballs, rel 1.16 \u2192 mix-fit 0.83x)",
+        "Hitter-friendly park (106)",
+        "Retractable roof (weather neutralized)",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 665926,
       "name": "Andr\u00e9s Gim\u00e9nez",
       "team": "Toronto Blue Jays",
@@ -8112,67 +8275,6 @@
         "Platoon shape fades vs LHP",
         "Poor pitch-mix fit (45% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
         "Dome roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 677649,
-      "name": "Ezequiel Duran",
-      "team": "Texas Rangers",
-      "bats": "R",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Andrew Alvarez",
-      "venue": "Globe Life Field",
-      "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.166,
-      "total": 34.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 47.9,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.72,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 5.0,
-        "hitter": 13.1,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1822,
-        "barrel_rate": 0.049,
-        "hard_hit_rate": 0.3892,
-        "fb_rate": 0.4734,
-        "z_contact_rate": 0.8856,
-        "sweet_spot_rate": 0.3205,
-        "xwobacon": null,
-        "ev90": 104.1
-      },
-      "reasons": [
-        "vs Andrew Alvarez \u2014 cause Pass (5.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.36)",
-        "Platoon edge (R vs LHP)",
-        "Poor pitch-mix fit (53% breaking balls, rel 0.30 \u2192 mix-fit 0.72x)",
-        "Slightly + park (100)",
-        "Retractable roof (weather neutralized)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8241,6 +8343,66 @@
       ]
     },
     {
+      "id": 671218,
+      "name": "Heliot Ramos",
+      "team": "New York Yankees",
+      "bats": "R",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Kyle Bradish",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824802,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 9,
+      "iso": 0.149,
+      "total": 33.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 34.7,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.79,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.7,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.5,
+        "hitter": 7.7,
+        "environment": 6.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1213,
+        "barrel_rate": 0.0548,
+        "hard_hit_rate": 0.4183,
+        "fb_rate": 0.4565,
+        "z_contact_rate": 0.7785,
+        "sweet_spot_rate": 0.3233,
+        "xwobacon": null,
+        "ev90": 106.0
+      },
+      "reasons": [
+        "vs Kyle Bradish \u2014 cause Pass (6.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.88)",
+        "Low air-pull (8%)",
+        "Poor pitch-mix fit (58% fastballs, rel 1.14 \u2192 mix-fit 0.79x)",
+        "Deep LF wall suppresses RHB HR",
+        "Warm (79\u00b0F)",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Pitcher park (92)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 677587,
       "name": "Brayan Rocchio",
       "team": "Cleveland Guardians",
@@ -8300,124 +8462,6 @@
       ]
     },
     {
-      "id": 669394,
-      "name": "Jake Burger",
-      "team": "Texas Rangers",
-      "bats": "R",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Andrew Alvarez",
-      "venue": "Globe Life Field",
-      "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 21,
-      "iso": 0.185,
-      "total": 32.6,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 48.7,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.92,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 5.0,
-        "hitter": 11.6,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1682,
-        "barrel_rate": 0.0512,
-        "hard_hit_rate": 0.4253,
-        "fb_rate": 0.4721,
-        "z_contact_rate": 0.8481,
-        "sweet_spot_rate": 0.3117,
-        "xwobacon": null,
-        "ev90": 108.5
-      },
-      "reasons": [
-        "vs Andrew Alvarez \u2014 cause Pass (5.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.36)",
-        "Platoon edge (R vs LHP)",
-        "Slightly + park (100)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 687093,
-      "name": "Vaughn Grissom",
-      "team": "Los Angeles Angels",
-      "bats": "R",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Peter Lambert",
-      "venue": "Daikin Park",
-      "gamePk": 824153,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.127,
-      "total": 32.4,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 41.3,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.83,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 9.0,
-        "hitter": 5.4,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1475,
-        "barrel_rate": 0.048,
-        "hard_hit_rate": 0.3012,
-        "fb_rate": 0.428,
-        "z_contact_rate": 0.9083,
-        "sweet_spot_rate": 0.2787,
-        "xwobacon": null,
-        "ev90": 98.5
-      },
-      "reasons": [
-        "vs Peter Lambert \u2014 cause Pass (9.0/25)",
-        "Platoon shape fades vs RHP",
-        "Poor pitch-mix fit (62% fastballs, rel 1.16 \u2192 mix-fit 0.83x)",
-        "Hitter-friendly park (106)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 666126,
       "name": "Carlos Cortes",
       "team": "Athletics",
@@ -8429,7 +8473,7 @@
       "slot": 6,
       "confirmed": true,
       "season_hr": 7,
-      "iso": 0.148,
+      "iso": 0.147,
       "total": 32.3,
       "tier": "Pass",
       "role": "Watchlist",
@@ -8548,7 +8592,7 @@
       "slot": 8,
       "confirmed": true,
       "season_hr": 11,
-      "iso": 0.167,
+      "iso": 0.169,
       "total": 31.8,
       "tier": "Pass",
       "role": "Watchlist",
@@ -8664,7 +8708,7 @@
       "slot": 7,
       "confirmed": true,
       "season_hr": 12,
-      "iso": 0.134,
+      "iso": 0.133,
       "total": 30.6,
       "tier": "Pass",
       "role": "Watchlist",
@@ -8926,66 +8970,6 @@
       ]
     },
     {
-      "id": 671218,
-      "name": "Heliot Ramos",
-      "team": "New York Yankees",
-      "bats": "R",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Kyle Bradish",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824802,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.149,
-      "total": 28.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 31.7,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.79,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 7.7,
-        "environment": 6.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1213,
-        "barrel_rate": 0.0548,
-        "hard_hit_rate": 0.4183,
-        "fb_rate": 0.4565,
-        "z_contact_rate": 0.7785,
-        "sweet_spot_rate": 0.3233,
-        "xwobacon": null,
-        "ev90": 106.0
-      },
-      "reasons": [
-        "vs Kyle Bradish \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.88)",
-        "Low air-pull (8%)",
-        "Poor pitch-mix fit (58% fastballs, rel 1.14 \u2192 mix-fit 0.79x)",
-        "Deep LF wall suppresses RHB HR",
-        "Warm (79\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (92)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 694497,
       "name": "Evan Carter",
       "team": "Texas Rangers",
@@ -8994,11 +8978,11 @@
       "opp_pitcher": "Andrew Alvarez",
       "venue": "Globe Life Field",
       "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "season_hr": 8,
       "iso": 0.127,
-      "total": 26.8,
+      "total": 25.8,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 36.3,
@@ -9015,7 +8999,7 @@
         "pitcher": 5.0,
         "hitter": 5.8,
         "environment": 8.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -9037,7 +9021,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#9)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -9055,7 +9039,7 @@
       "slot": 5,
       "confirmed": true,
       "season_hr": 7,
-      "iso": 0.124,
+      "iso": 0.123,
       "total": 24.0,
       "tier": "Pass",
       "role": "Watchlist",
@@ -9120,6 +9104,47 @@
       "hr_role": "Pass"
     },
     {
+      "id": 671277,
+      "name": "Luis Garc\u00eda Jr.",
+      "team": "New York Yankees",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Kyle Bradish",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824802,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 69.3,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 86%, Z-contact 90%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 56.5,
+      "hr_role": "Pass"
+    },
+    {
+      "id": 670541,
+      "name": "Yordan Alvarez",
+      "team": "Houston Astros",
+      "opp": "Los Angeles Angels",
+      "opp_pitcher": "Grayson Rodriguez",
+      "venue": "Daikin Park",
+      "gamePk": 824153,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 67.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 62.5,
+      "hr_role": "Pass"
+    },
+    {
       "id": 624413,
       "name": "Pete Alonso",
       "team": "Baltimore Orioles",
@@ -9180,24 +9205,23 @@
       "hr_role": "Core"
     },
     {
-      "id": 671277,
-      "name": "Luis Garc\u00eda Jr.",
+      "id": 663757,
+      "name": "Trent Grisham",
       "team": "New York Yankees",
       "opp": "Baltimore Orioles",
       "opp_pitcher": "Kyle Bradish",
       "venue": "Oriole Park at Camden Yards",
       "gamePk": 824802,
-      "slot": null,
-      "confirmed": false,
+      "slot": 1,
+      "confirmed": true,
       "bats": "L",
-      "tb_score": 66.3,
+      "tb_score": 66.2,
       "tb_tier": "Solid TB",
       "tb_reasons": [
-        "High-contact bat (contact 86%, Z-contact 90%) \u2014 banks XBH",
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 51.5,
+      "hr_total": 60.7,
       "hr_role": "Pass"
     },
     {
@@ -9278,26 +9302,6 @@
       "shape_source": "statcast",
       "hr_total": 56.5,
       "hr_role": "Watchlist"
-    },
-    {
-      "id": 670541,
-      "name": "Yordan Alvarez",
-      "team": "Houston Astros",
-      "opp": "Los Angeles Angels",
-      "opp_pitcher": "Grayson Rodriguez",
-      "venue": "Daikin Park",
-      "gamePk": 824153,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 63.5,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 56.5,
-      "hr_role": "Pass"
     },
     {
       "id": 668227,
@@ -9385,34 +9389,14 @@
       "opp_pitcher": "Grayson Rodriguez",
       "venue": "Daikin Park",
       "gamePk": 824153,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 62.5,
       "tb_tier": "Solid TB",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 58.0,
-      "hr_role": "Pass"
-    },
-    {
-      "id": 663757,
-      "name": "Trent Grisham",
-      "team": "New York Yankees",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Kyle Bradish",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824802,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 62.2,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 54.7,
+      "hr_total": 57.0,
       "hr_role": "Pass"
     },
     {
@@ -9423,8 +9407,8 @@
       "opp_pitcher": "Andrew Alvarez",
       "venue": "Globe Life Field",
       "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 61.5,
       "tb_tier": "Solid TB",
@@ -9433,7 +9417,7 @@
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 45.2,
+      "hr_total": 47.2,
       "hr_role": "Pass"
     },
     {
@@ -9736,6 +9720,26 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 695734,
+      "name": "Daylen Lile",
+      "team": "Washington Nationals",
+      "opp": "Texas Rangers",
+      "opp_pitcher": "Jacob deGrom",
+      "venue": "Globe Life Field",
+      "gamePk": 822861,
+      "slot": 1,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 57.9,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 56.6,
+      "hr_role": "Pass"
+    },
+    {
       "id": 592450,
       "name": "Aaron Judge",
       "team": "New York Yankees",
@@ -9955,6 +9959,26 @@
       "hr_role": "Pass"
     },
     {
+      "id": 670623,
+      "name": "Isaac Paredes",
+      "team": "Houston Astros",
+      "opp": "Los Angeles Angels",
+      "opp_pitcher": "Grayson Rodriguez",
+      "venue": "Daikin Park",
+      "gamePk": 824153,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 56.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 88%, Z-contact 91%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 45.5,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 647304,
       "name": "Josh Naylor",
       "team": "Seattle Mariners",
@@ -10053,6 +10077,44 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 607043,
+      "name": "Brandon Nimmo",
+      "team": "Texas Rangers",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Andrew Alvarez",
+      "venue": "Globe Life Field",
+      "gamePk": 822861,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 55.2,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 82%, Z-contact 88%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 41.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 545361,
+      "name": "Mike Trout",
+      "team": "Los Angeles Angels",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Peter Lambert",
+      "venue": "Daikin Park",
+      "gamePk": 824153,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 55.1,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 43.1,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 673237,
       "name": "Yainer Diaz",
       "team": "Houston Astros",
@@ -10070,6 +10132,26 @@
       ],
       "shape_source": "statcast",
       "hr_total": 37.8,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 694671,
+      "name": "Wyatt Langford",
+      "team": "Texas Rangers",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Andrew Alvarez",
+      "venue": "Globe Life Field",
+      "gamePk": 822861,
+      "slot": 1,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 54.7,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 42.9,
       "hr_role": "Watchlist"
     },
     {
@@ -10111,26 +10193,6 @@
       "hr_role": "Pass"
     },
     {
-      "id": 687401,
-      "name": "Joey Ortiz",
-      "team": "Milwaukee Brewers",
-      "opp": "Seattle Mariners",
-      "opp_pitcher": "George Kirby",
-      "venue": "American Family Field",
-      "gamePk": 823747,
-      "slot": 6,
-      "confirmed": true,
-      "bats": "R",
-      "tb_score": 54.1,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 91%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 41.2,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 680869,
       "name": "Zack Gelof",
       "team": "Athletics",
@@ -10166,26 +10228,6 @@
       ],
       "shape_source": "proxy",
       "hr_total": 46.5,
-      "hr_role": "Pass"
-    },
-    {
-      "id": 695734,
-      "name": "Daylen Lile",
-      "team": "Washington Nationals",
-      "opp": "Texas Rangers",
-      "opp_pitcher": "Jacob deGrom",
-      "venue": "Globe Life Field",
-      "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 53.9,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 50.6,
       "hr_role": "Pass"
     },
     {
@@ -10270,26 +10312,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 670623,
-      "name": "Isaac Paredes",
-      "team": "Houston Astros",
-      "opp": "Los Angeles Angels",
-      "opp_pitcher": "Grayson Rodriguez",
-      "venue": "Daikin Park",
-      "gamePk": 824153,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 53.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 88%, Z-contact 91%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 40.5,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 608070,
       "name": "Jos\u00e9 Ram\u00edrez",
       "team": "Cleveland Guardians",
@@ -10317,8 +10339,8 @@
       "opp_pitcher": "Kyle Bradish",
       "venue": "Oriole Park at Camden Yards",
       "gamePk": 824802,
-      "slot": null,
-      "confirmed": false,
+      "slot": 8,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 52.8,
       "tb_tier": "Dart",
@@ -10327,7 +10349,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 37.8,
+      "hr_total": 36.8,
       "hr_role": "Watchlist"
     },
     {
@@ -10356,15 +10378,35 @@
       "opp_pitcher": "Robert Gasser",
       "venue": "American Family Field",
       "gamePk": 823747,
-      "slot": null,
-      "confirmed": false,
+      "slot": 8,
+      "confirmed": true,
       "bats": "S",
       "tb_score": 52.6,
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 56.8,
+      "hr_total": 55.8,
       "hr_role": "Pass"
+    },
+    {
+      "id": 687401,
+      "name": "Joey Ortiz",
+      "team": "Milwaukee Brewers",
+      "opp": "Seattle Mariners",
+      "opp_pitcher": "George Kirby",
+      "venue": "American Family Field",
+      "gamePk": 823747,
+      "slot": 6,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 52.6,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 91%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 40.8,
+      "hr_role": "Watchlist"
     },
     {
       "id": 642350,
@@ -10427,6 +10469,63 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 694384,
+      "name": "Nolan Schanuel",
+      "team": "Los Angeles Angels",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Peter Lambert",
+      "venue": "Daikin Park",
+      "gamePk": 824153,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 52.4,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 87%, Z-contact 90%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 44.8,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 608369,
+      "name": "Corey Seager",
+      "team": "Texas Rangers",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Andrew Alvarez",
+      "venue": "Globe Life Field",
+      "gamePk": 822861,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 52.4,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 44.5,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 665953,
+      "name": "Andr\u00e9s Chaparro",
+      "team": "Washington Nationals",
+      "opp": "Texas Rangers",
+      "opp_pitcher": "Jacob deGrom",
+      "venue": "Globe Life Field",
+      "gamePk": 822861,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 52.3,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 47.1,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 691723,
       "name": "Coby Mayo",
       "team": "Baltimore Orioles",
@@ -10442,26 +10541,6 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 46.6,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 607043,
-      "name": "Brandon Nimmo",
-      "team": "Texas Rangers",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Andrew Alvarez",
-      "venue": "Globe Life Field",
-      "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 52.2,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 82%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 36.0,
       "hr_role": "Watchlist"
     },
     {
@@ -10543,6 +10622,24 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 691781,
+      "name": "Brady House",
+      "team": "Washington Nationals",
+      "opp": "Texas Rangers",
+      "opp_pitcher": "Jacob deGrom",
+      "venue": "Globe Life Field",
+      "gamePk": 822861,
+      "slot": 5,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 52.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 44.7,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 672960,
       "name": "Kazuma Okamoto",
       "team": "Toronto Blue Jays",
@@ -10604,6 +10701,26 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 669394,
+      "name": "Jake Burger",
+      "team": "Texas Rangers",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Andrew Alvarez",
+      "venue": "Globe Life Field",
+      "gamePk": 822861,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 51.7,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 37.6,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 677587,
       "name": "Brayan Rocchio",
       "team": "Cleveland Guardians",
@@ -10645,21 +10762,23 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 545361,
-      "name": "Mike Trout",
-      "team": "Los Angeles Angels",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Peter Lambert",
+      "id": 662139,
+      "name": "Daulton Varsho",
+      "team": "Houston Astros",
+      "opp": "Los Angeles Angels",
+      "opp_pitcher": "Grayson Rodriguez",
       "venue": "Daikin Park",
       "gamePk": 824153,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
+      "slot": 5,
+      "confirmed": true,
+      "bats": "L",
       "tb_score": 51.1,
       "tb_tier": "Dart",
-      "tb_reasons": [],
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
       "shape_source": "statcast",
-      "hr_total": 37.1,
+      "hr_total": 39.3,
       "hr_role": "Watchlist"
     },
     {
@@ -10688,8 +10807,8 @@
       "opp_pitcher": "Jacob deGrom",
       "venue": "Globe Life Field",
       "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "bats": "S",
       "tb_score": 51.0,
       "tb_tier": "Dart",
@@ -10697,7 +10816,7 @@
         "High-contact bat (contact 89%, Z-contact 91%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 35.7,
+      "hr_total": 37.7,
       "hr_role": "Watchlist"
     },
     {
@@ -10719,6 +10838,46 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 677649,
+      "name": "Ezequiel Duran",
+      "team": "Texas Rangers",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Andrew Alvarez",
+      "venue": "Globe Life Field",
+      "gamePk": 822861,
+      "slot": 5,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 50.9,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 36.1,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 514888,
+      "name": "Jose Altuve",
+      "team": "Houston Astros",
+      "opp": "Los Angeles Angels",
+      "opp_pitcher": "Grayson Rodriguez",
+      "venue": "Daikin Park",
+      "gamePk": 824153,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 50.7,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 82%, Z-contact 91%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 48.5,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 641680,
       "name": "Jonah Heim",
       "team": "Athletics",
@@ -10737,23 +10896,23 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 694671,
-      "name": "Wyatt Langford",
-      "team": "Texas Rangers",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Andrew Alvarez",
-      "venue": "Globe Life Field",
-      "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 50.7,
+      "id": 700250,
+      "name": "Ben Rice",
+      "team": "New York Yankees",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Kyle Bradish",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824802,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 50.3,
       "tb_tier": "Dart",
       "tb_reasons": [
-        "Platoon edge (R vs LHP)"
+        "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 36.9,
+      "hr_total": 47.9,
       "hr_role": "Watchlist"
     },
     {
@@ -10799,45 +10958,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 694384,
-      "name": "Nolan Schanuel",
-      "team": "Los Angeles Angels",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Peter Lambert",
-      "venue": "Daikin Park",
-      "gamePk": 824153,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 49.4,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 87%, Z-contact 90%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 39.8,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 665953,
-      "name": "Andr\u00e9s Chaparro",
-      "team": "Washington Nationals",
-      "opp": "Texas Rangers",
-      "opp_pitcher": "Jacob deGrom",
-      "venue": "Globe Life Field",
-      "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 49.3,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 42.1,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 691011,
       "name": "Drew Romo",
       "team": "Chicago White Sox",
@@ -10845,14 +10965,14 @@
       "opp_pitcher": "Grant Holmes",
       "venue": "Rate Field",
       "gamePk": 824589,
-      "slot": 9,
-      "confirmed": true,
+      "slot": null,
+      "confirmed": false,
       "bats": "S",
       "tb_score": 49.1,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 40.2,
+      "hr_total": 41.2,
       "hr_role": "Watchlist"
     },
     {
@@ -10871,24 +10991,6 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 38.8,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 691781,
-      "name": "Brady House",
-      "team": "Washington Nationals",
-      "opp": "Texas Rangers",
-      "opp_pitcher": "Jacob deGrom",
-      "venue": "Globe Life Field",
-      "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 49.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 42.7,
       "hr_role": "Watchlist"
     },
     {
@@ -10928,23 +11030,23 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 669394,
-      "name": "Jake Burger",
-      "team": "Texas Rangers",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Andrew Alvarez",
-      "venue": "Globe Life Field",
-      "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 48.7,
+      "id": 665862,
+      "name": "Jazz Chisholm Jr.",
+      "team": "New York Yankees",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Kyle Bradish",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824802,
+      "slot": 5,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 48.6,
       "tb_tier": "Pass",
       "tb_reasons": [
-        "Platoon edge (R vs LHP)"
+        "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 32.6,
+      "hr_total": 42.7,
       "hr_role": "Watchlist"
     },
     {
@@ -10969,24 +11071,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 608369,
-      "name": "Corey Seager",
-      "team": "Texas Rangers",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Andrew Alvarez",
-      "venue": "Globe Life Field",
-      "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 48.4,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 38.5,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 657041,
       "name": "Lane Thomas",
       "team": "Atlanta Braves",
@@ -11004,26 +11088,6 @@
       ],
       "shape_source": "statcast",
       "hr_total": 48.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 662139,
-      "name": "Daulton Varsho",
-      "team": "Houston Astros",
-      "opp": "Los Angeles Angels",
-      "opp_pitcher": "Grayson Rodriguez",
-      "venue": "Daikin Park",
-      "gamePk": 824153,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 48.1,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 37.3,
       "hr_role": "Watchlist"
     },
     {
@@ -11088,26 +11152,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 677649,
-      "name": "Ezequiel Duran",
-      "team": "Texas Rangers",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Andrew Alvarez",
-      "venue": "Globe Life Field",
-      "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 47.9,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 34.1,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 686681,
       "name": "Michael Massey",
       "team": "Kansas City Royals",
@@ -11123,26 +11167,6 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 31.8,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 514888,
-      "name": "Jose Altuve",
-      "team": "Houston Astros",
-      "opp": "Los Angeles Angels",
-      "opp_pitcher": "Grayson Rodriguez",
-      "venue": "Daikin Park",
-      "gamePk": 824153,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 47.7,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 82%, Z-contact 91%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 43.5,
       "hr_role": "Watchlist"
     },
     {
@@ -11213,14 +11237,14 @@
       "opp_pitcher": "Jacob deGrom",
       "venue": "Globe Life Field",
       "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 47.5,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 37.3,
+      "hr_total": 36.3,
       "hr_role": "Watchlist"
     },
     {
@@ -11321,26 +11345,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 700250,
-      "name": "Ben Rice",
-      "team": "New York Yankees",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Kyle Bradish",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824802,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 46.3,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 41.9,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 641355,
       "name": "Cody Bellinger",
       "team": "New York Yankees",
@@ -11359,26 +11363,6 @@
       ],
       "shape_source": "proxy",
       "hr_total": 34.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 665862,
-      "name": "Jazz Chisholm Jr.",
-      "team": "New York Yankees",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Kyle Bradish",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824802,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 45.6,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 40.7,
       "hr_role": "Watchlist"
     },
     {
@@ -11526,8 +11510,8 @@
       "opp_pitcher": "Grant Holmes",
       "venue": "Rate Field",
       "gamePk": 824589,
-      "slot": 8,
-      "confirmed": true,
+      "slot": null,
+      "confirmed": false,
       "bats": "L",
       "tb_score": 44.1,
       "tb_tier": "Pass",
@@ -11535,7 +11519,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 38.5,
+      "hr_total": 39.5,
       "hr_role": "Watchlist"
     },
     {
@@ -11658,14 +11642,14 @@
       "opp_pitcher": "Kyle Bradish",
       "venue": "Oriole Park at Camden Yards",
       "gamePk": 824802,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 42.5,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 38.7,
+      "hr_total": 37.7,
       "hr_role": "Watchlist"
     },
     {
@@ -11687,6 +11671,24 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 687263,
+      "name": "Zach Neto",
+      "team": "Los Angeles Angels",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Peter Lambert",
+      "venue": "Daikin Park",
+      "gamePk": 824153,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 41.6,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 45.3,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 687093,
       "name": "Vaughn Grissom",
       "team": "Los Angeles Angels",
@@ -11694,14 +11696,14 @@
       "opp_pitcher": "Peter Lambert",
       "venue": "Daikin Park",
       "gamePk": 824153,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 41.3,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 32.4,
+      "hr_total": 34.4,
       "hr_role": "Watchlist"
     },
     {
@@ -11722,24 +11724,6 @@
       ],
       "shape_source": "statcast",
       "hr_total": 32.3,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 687263,
-      "name": "Zach Neto",
-      "team": "Los Angeles Angels",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Peter Lambert",
-      "venue": "Daikin Park",
-      "gamePk": 824153,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 38.6,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 40.3,
       "hr_role": "Watchlist"
     },
     {
@@ -11804,14 +11788,14 @@
       "opp_pitcher": "Andrew Alvarez",
       "venue": "Globe Life Field",
       "gamePk": 822861,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 36.3,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 26.8,
+      "hr_total": 25.8,
       "hr_role": "Watchlist"
     },
     {
@@ -11822,8 +11806,8 @@
       "opp_pitcher": "Peter Lambert",
       "venue": "Daikin Park",
       "gamePk": 824153,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 35.5,
       "tb_tier": "Pass",
@@ -11831,7 +11815,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 36.2,
+      "hr_total": 35.2,
       "hr_role": "Watchlist"
     },
     {
@@ -11874,6 +11858,24 @@
       ],
       "shape_source": "proxy",
       "hr_total": 30.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 671218,
+      "name": "Heliot Ramos",
+      "team": "New York Yankees",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Kyle Bradish",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824802,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 34.7,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 33.2,
       "hr_role": "Watchlist"
     },
     {
@@ -11972,24 +11974,6 @@
       ],
       "shape_source": "proxy",
       "hr_total": 36.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 671218,
-      "name": "Heliot Ramos",
-      "team": "New York Yankees",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Kyle Bradish",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824802,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 31.7,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 28.2,
       "hr_role": "Watchlist"
     },
     {
