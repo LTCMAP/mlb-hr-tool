@@ -1,6 +1,6 @@
 {
   "version": "2.8",
-  "generated_utc": "2026-08-25T14:21:33.939310+00:00",
+  "generated_utc": "2026-08-25T17:05:47.051542+00:00",
   "slate_date": "2026-08-25",
   "games": 15,
   "confirmed_lineups": 0,
@@ -10,8 +10,8 @@
     "recent_days": 7,
     "start": "2026-08-05",
     "end": "2026-08-25",
-    "days_fetched": 1,
-    "days_cached": 19,
+    "days_fetched": 0,
+    "days_cached": 20,
     "days_failed": 1,
     "source": "mlbapi",
     "days_savant": 0,
@@ -94,17 +94,11 @@
       "cause_score": 15.5,
       "capture_method": "Single best bat",
       "public_heat": false,
-      "n_playable": 2,
+      "n_playable": 1,
       "playable_bats": [
         {
           "name": "Yordan Alvarez",
-          "total": 67.5,
-          "role": "Longshot",
-          "fit_tag": null
-        },
-        {
-          "name": "Cam Smith",
-          "total": 63.0,
+          "total": 66.0,
           "role": "Longshot",
           "fit_tag": null
         }
@@ -335,7 +329,7 @@
       "playable_bats": [
         {
           "name": "Trent Grisham",
-          "total": 64.2,
+          "total": 62.7,
           "role": "Power Satellite",
           "fit_tag": null
         }
@@ -496,7 +490,7 @@
       "confirmed": false,
       "season_hr": 36,
       "iso": 0.293,
-      "total": 67.5,
+      "total": 66.0,
       "tier": "Longshot",
       "role": "Longshot",
       "tb_score": 63.3,
@@ -514,7 +508,7 @@
       "breakdown": {
         "pitcher": 13.5,
         "hitter": 29.5,
-        "environment": 14.5,
+        "environment": 13.0,
         "lineup": 6.0,
         "confidence": 4.0
       },
@@ -544,71 +538,6 @@
         "Lineup not confirmed"
       ],
       "role_notes": []
-    },
-    {
-      "id": 663757,
-      "name": "Trent Grisham",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Ethan Pecko",
-      "venue": "Yankee Stadium",
-      "gamePk": 823505,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.201,
-      "total": 64.2,
-      "tier": "Longshot",
-      "role": "Power Satellite",
-      "tb_score": 66.5,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "Dangerous contact (hard-hit 49%, xwOBAcon .000)",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 32.2,
-        "environment": 14.5,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2097,
-        "barrel_rate": 0.1052,
-        "hard_hit_rate": 0.4858,
-        "fb_rate": 0.5662,
-        "z_contact_rate": 0.8449,
-        "sweet_spot_rate": 0.4169,
-        "xwobacon": null,
-        "ev90": 104.4
-      },
-      "reasons": [
-        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.00)",
-        "Platoon shape: spikes vs RHP (barrel 15%, air-pull 28%)",
-        "Elite air-pull (28%)",
-        "Elite barrel rate (15%)",
-        "Zone-damage: hard-hit 49% + Z-contact 84%",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Elite-hitter override (beats a neutral spot)",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Elite-hitter override (beats a neutral spot)"
-      ]
     },
     {
       "id": 621566,
@@ -664,7 +593,7 @@
         "Elite barrel rate (20%)",
         "Zone-damage: hard-hit 46% + Z-contact 86%",
         "Slightly + park (103)",
-        "Hot (90\u00b0F)",
+        "Hot (89\u00b0F)",
         "Elite-hitter override (beats a neutral spot)",
         "Model: one strong signal"
       ],
@@ -728,7 +657,7 @@
         "Elite barrel rate (15%)",
         "Platoon edge (L vs RHP)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
         "Model: one strong signal",
         "VALUE longshot: real shape + cause off the chalk"
       ],
@@ -737,6 +666,71 @@
         "Lineup not confirmed"
       ],
       "role_notes": []
+    },
+    {
+      "id": 663757,
+      "name": "Trent Grisham",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Ethan Pecko",
+      "venue": "Yankee Stadium",
+      "gamePk": 823505,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 18,
+      "iso": 0.201,
+      "total": 62.7,
+      "tier": "Longshot",
+      "role": "Power Satellite",
+      "tb_score": 66.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Dangerous contact (hard-hit 49%, xwOBAcon .000)",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.5,
+        "hitter": 32.2,
+        "environment": 13.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2097,
+        "barrel_rate": 0.1052,
+        "hard_hit_rate": 0.4858,
+        "fb_rate": 0.5662,
+        "z_contact_rate": 0.8449,
+        "sweet_spot_rate": 0.4169,
+        "xwobacon": null,
+        "ev90": 104.4
+      },
+      "reasons": [
+        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.00)",
+        "Platoon shape: spikes vs RHP (barrel 15%, air-pull 28%)",
+        "Elite air-pull (28%)",
+        "Elite barrel rate (15%)",
+        "Zone-damage: hard-hit 49% + Z-contact 84%",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Elite-hitter override (beats a neutral spot)",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Elite-hitter override (beats a neutral spot)"
+      ]
     },
     {
       "id": 701358,
@@ -751,9 +745,9 @@
       "confirmed": false,
       "season_hr": 17,
       "iso": 0.173,
-      "total": 63.0,
-      "tier": "Longshot",
-      "role": "Longshot",
+      "total": 61.5,
+      "tier": "Pass",
+      "role": "Pass",
       "tb_score": 55.5,
       "tb_tier": "Dart",
       "tb_reasons": [],
@@ -761,13 +755,13 @@
       "pull_fit": true,
       "mix_fit": 1.98,
       "fit_tag": null,
-      "value_play": true,
+      "value_play": false,
       "due_hr": -0.7,
       "pitcher_grade": "B",
       "breakdown": {
         "pitcher": 13.5,
         "hitter": 29.0,
-        "environment": 10.5,
+        "environment": 9.0,
         "lineup": 6.0,
         "confidence": 4.0
       },
@@ -790,8 +784,7 @@
         "Zone-damage: hard-hit 46% + Z-contact 88%",
         "Slightly + park (103)",
         "Short RF porch boosts LHB HR",
-        "Model: one strong signal",
-        "VALUE longshot: real shape + cause off the chalk"
+        "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -977,7 +970,7 @@
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (63% fastballs, rel 2.20 \u2192 mix-fit 1.76x)",
         "Slightly + park (103)",
-        "Hot (90\u00b0F)"
+        "Hot (89\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -997,7 +990,7 @@
       "confirmed": false,
       "season_hr": 17,
       "iso": 0.285,
-      "total": 58.0,
+      "total": 56.5,
       "tier": "Pass",
       "role": "Pass",
       "tb_score": 62.0,
@@ -1015,7 +1008,7 @@
       "breakdown": {
         "pitcher": 7.5,
         "hitter": 30.0,
-        "environment": 10.5,
+        "environment": 9.0,
         "lineup": 6.0,
         "confidence": 4.0
       },
@@ -1213,7 +1206,7 @@
         "Elite barrel rate (17%)",
         "Pitch-mix fit: damages this arsenal (75% fastballs, rel 2.20 \u2192 mix-fit 1.94x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
         "Model: one strong signal"
       ],
       "warnings": [
@@ -1366,7 +1359,7 @@
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (103)",
-        "Hot (90\u00b0F)"
+        "Hot (89\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -1481,7 +1474,7 @@
         "Proxy: strong HR rate",
         "Proxy: elite ISO (0.256)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (76\u00b0F)",
+        "Warm (77\u00b0F)",
         "Model: one strong signal"
       ],
       "warnings": [
@@ -1594,7 +1587,7 @@
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
         "Suppressive park + no pull/barrel fit \u2192 Watchlist"
       ],
       "warnings": [
@@ -1730,66 +1723,6 @@
       ]
     },
     {
-      "id": 671277,
-      "name": "Luis Garc\u00eda Jr.",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Ethan Pecko",
-      "venue": "Yankee Stadium",
-      "gamePk": 823505,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 26,
-      "iso": 0.265,
-      "total": 54.0,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 64.5,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 87%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 1.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 23.0,
-        "environment": 14.5,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1606,
-        "barrel_rate": 0.075,
-        "hard_hit_rate": 0.42,
-        "fb_rate": 0.4485,
-        "z_contact_rate": 0.872,
-        "sweet_spot_rate": 0.2809,
-        "xwobacon": null,
-        "ev90": 108.6
-      },
-      "reasons": [
-        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.00)",
-        "Platoon shape: spikes vs RHP (barrel 10%, air-pull 16%)",
-        "Above-avg barrels (10%)",
-        "Platoon edge (L vs RHP)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 676475,
       "name": "Alec Burleson",
       "team": "St. Louis Cardinals",
@@ -1842,7 +1775,7 @@
         "Good air-pull (21%)",
         "Above-avg barrels (10%)",
         "Zone-damage: hard-hit 47% + Z-contact 84%",
-        "Hot (88\u00b0F)"
+        "Hot (87\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -1902,7 +1835,7 @@
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (68% fastballs, rel 0.78 \u2192 mix-fit 1.23x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -1965,7 +1898,7 @@
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (68% fastballs, rel 1.22 \u2192 mix-fit 1.25x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2029,7 +1962,7 @@
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (63% fastballs, rel 1.53 \u2192 mix-fit 1.64x)",
         "Slightly + park (103)",
-        "Hot (90\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2038,6 +1971,66 @@
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
+    },
+    {
+      "id": 671277,
+      "name": "Luis Garc\u00eda Jr.",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Ethan Pecko",
+      "venue": "Yankee Stadium",
+      "gamePk": 823505,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 26,
+      "iso": 0.265,
+      "total": 52.5,
+      "tier": "Pass",
+      "role": "Pass",
+      "tb_score": 64.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 87%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 1.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.5,
+        "hitter": 23.0,
+        "environment": 13.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1606,
+        "barrel_rate": 0.075,
+        "hard_hit_rate": 0.42,
+        "fb_rate": 0.4485,
+        "z_contact_rate": 0.872,
+        "sweet_spot_rate": 0.2809,
+        "xwobacon": null,
+        "ev90": 108.6
+      },
+      "reasons": [
+        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.00)",
+        "Platoon shape: spikes vs RHP (barrel 10%, air-pull 16%)",
+        "Above-avg barrels (10%)",
+        "Platoon edge (L vs RHP)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
     },
     {
       "id": 641343,
@@ -2088,7 +2081,7 @@
         "Platoon shape: spikes vs LHP (barrel 15%, air-pull 15%)",
         "Strong barrels (15%)",
         "Pitch-mix fit: damages this arsenal (68% fastballs, rel 2.20 \u2192 mix-fit 1.81x)",
-        "Warm (76\u00b0F)"
+        "Warm (77\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -2145,7 +2138,7 @@
         "Above-avg barrels (10%)",
         "Pitch-mix fit: damages this arsenal (63% fastballs, rel 2.20 \u2192 mix-fit 1.67x)",
         "Slightly + park (103)",
-        "Hot (90\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2209,137 +2202,13 @@
         "Platoon edge (R vs LHP)",
         "Poor pitch-mix fit (47% fastballs, rel 0.30 \u2192 mix-fit 0.67x)",
         "Slightly + park (101)",
-        "Warm (76\u00b0F)"
+        "Warm (75\u00b0F)"
       ],
       "warnings": [
         "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": []
-    },
-    {
-      "id": 700250,
-      "name": "Ben Rice",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Ethan Pecko",
-      "venue": "Yankee Stadium",
-      "gamePk": 823505,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 34,
-      "iso": 0.276,
-      "total": 52.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 21.0,
-        "environment": 14.5,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1963,
-        "barrel_rate": 0.0684,
-        "hard_hit_rate": 0.4123,
-        "fb_rate": 0.4991,
-        "z_contact_rate": 0.7933,
-        "sweet_spot_rate": 0.3451,
-        "xwobacon": null,
-        "ev90": 104.8
-      },
-      "reasons": [
-        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.00)",
-        "Good air-pull (21%)",
-        "Platoon edge (L vs RHP)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 682987,
-      "name": "Spencer Jones",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Ethan Pecko",
-      "venue": "Yankee Stadium",
-      "gamePk": 823505,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.195,
-      "total": 52.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 60.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 3.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 21.0,
-        "environment": 14.5,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1481,
-        "barrel_rate": 0.1046,
-        "hard_hit_rate": 0.4123,
-        "fb_rate": 0.5949,
-        "z_contact_rate": 0.8428,
-        "sweet_spot_rate": 0.441,
-        "xwobacon": null,
-        "ev90": 109.0
-      },
-      "reasons": [
-        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.00)",
-        "Platoon shape: spikes vs RHP (barrel 14%, air-pull 13%)",
-        "Strong barrels (14%)",
-        "Platoon edge (L vs RHP)",
-        "DUE: 5 barrels, only 0 HR in window (+3.3 xHR) \u2014 positive regression",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
     },
     {
       "id": 701538,
@@ -2524,68 +2393,6 @@
       ]
     },
     {
-      "id": 662139,
-      "name": "Daulton Varsho",
-      "team": "Houston Astros",
-      "bats": "L",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Will Warren",
-      "venue": "Yankee Stadium",
-      "gamePk": 823505,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.131,
-      "total": 51.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 49.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.76,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 13.5,
-        "hitter": 15.1,
-        "environment": 14.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1778,
-        "barrel_rate": 0.0544,
-        "hard_hit_rate": 0.3936,
-        "fb_rate": 0.532,
-        "z_contact_rate": 0.8652,
-        "sweet_spot_rate": 0.3183,
-        "xwobacon": null,
-        "ev90": 104.3
-      },
-      "reasons": [
-        "vs Will Warren \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.40)",
-        "Good air-pull (20%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (60% fastballs, rel 0.30 \u2192 mix-fit 0.76x)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 691777,
       "name": "Max Muncy",
       "team": "Athletics",
@@ -2635,6 +2442,130 @@
         "Pitch-mix fit: damages this arsenal (72% fastballs, rel 2.20 \u2192 mix-fit 1.86x)",
         "Slightly + park (102)",
         "Hot (93\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 700250,
+      "name": "Ben Rice",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Ethan Pecko",
+      "venue": "Yankee Stadium",
+      "gamePk": 823505,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 34,
+      "iso": 0.276,
+      "total": 50.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 52.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.5,
+        "hitter": 21.0,
+        "environment": 13.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1963,
+        "barrel_rate": 0.0684,
+        "hard_hit_rate": 0.4123,
+        "fb_rate": 0.4991,
+        "z_contact_rate": 0.7933,
+        "sweet_spot_rate": 0.3451,
+        "xwobacon": null,
+        "ev90": 104.8
+      },
+      "reasons": [
+        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.00)",
+        "Good air-pull (21%)",
+        "Platoon edge (L vs RHP)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 682987,
+      "name": "Spencer Jones",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Ethan Pecko",
+      "venue": "Yankee Stadium",
+      "gamePk": 823505,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.195,
+      "total": 50.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 60.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 3.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.5,
+        "hitter": 21.0,
+        "environment": 13.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1481,
+        "barrel_rate": 0.1046,
+        "hard_hit_rate": 0.4123,
+        "fb_rate": 0.5949,
+        "z_contact_rate": 0.8428,
+        "sweet_spot_rate": 0.441,
+        "xwobacon": null,
+        "ev90": 109.0
+      },
+      "reasons": [
+        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.00)",
+        "Platoon shape: spikes vs RHP (barrel 14%, air-pull 13%)",
+        "Strong barrels (14%)",
+        "Platoon edge (L vs RHP)",
+        "DUE: 5 barrels, only 0 HR in window (+3.3 xHR) \u2014 positive regression",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2695,7 +2626,7 @@
         "Good air-pull (22%)",
         "Pitch-mix fit: damages this arsenal (63% fastballs, rel 1.72 \u2192 mix-fit 1.37x)",
         "Slightly + park (103)",
-        "Hot (90\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2815,7 +2746,7 @@
         "Platoon shape: spikes vs RHP (barrel 8%, air-pull 29%)",
         "Elite air-pull (29%)",
         "Poor pitch-mix fit (55% breaking balls, rel 0.30 \u2192 mix-fit 0.80x)",
-        "Hot (86\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2873,7 +2804,7 @@
         "Pitcher: Elevated HR allowed (HR/9 1.71)",
         "Pitch-mix fit: damages this arsenal (68% fastballs, rel 2.19 \u2192 mix-fit 1.60x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2935,7 +2866,7 @@
         "Zone-damage: hard-hit 49% + Z-contact 87%",
         "Pitch-mix fit: damages this arsenal (47% fastballs, rel 2.20 \u2192 mix-fit 1.57x)",
         "Slightly + park (101)",
-        "Warm (76\u00b0F)",
+        "Warm (75\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3001,6 +2932,68 @@
       ],
       "warnings": [
         "Pitcher park (93)",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 662139,
+      "name": "Daulton Varsho",
+      "team": "Houston Astros",
+      "bats": "L",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Will Warren",
+      "venue": "Yankee Stadium",
+      "gamePk": 823505,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 9,
+      "iso": 0.131,
+      "total": 49.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 49.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.76,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 15.1,
+        "environment": 13.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1778,
+        "barrel_rate": 0.0544,
+        "hard_hit_rate": 0.3936,
+        "fb_rate": 0.532,
+        "z_contact_rate": 0.8652,
+        "sweet_spot_rate": 0.3183,
+        "xwobacon": null,
+        "ev90": 104.3
+      },
+      "reasons": [
+        "vs Will Warren \u2014 cause B (13.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.40)",
+        "Good air-pull (20%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (60% fastballs, rel 0.30 \u2192 mix-fit 0.76x)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -3170,72 +3163,11 @@
         "Strong barrels (13%)",
         "Pitch-mix fit: damages this arsenal (75% fastballs, rel 2.20 \u2192 mix-fit 1.84x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Strong pitcher park (89)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 514888,
-      "name": "Jose Altuve",
-      "team": "Houston Astros",
-      "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Will Warren",
-      "venue": "Yankee Stadium",
-      "gamePk": 823505,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.154,
-      "total": 49.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 53.7,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 81%, Z-contact 90%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.3,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.3,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 13.5,
-        "hitter": 17.2,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.223,
-        "barrel_rate": 0.0571,
-        "hard_hit_rate": 0.3545,
-        "fb_rate": 0.4921,
-        "z_contact_rate": 0.9045,
-        "sweet_spot_rate": 0.3082,
-        "xwobacon": null,
-        "ev90": 98.7
-      },
-      "reasons": [
-        "vs Will Warren \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.40)",
-        "Strong air-pull (28%)",
-        "Pitch-mix fit: damages this arsenal (60% fastballs, rel 1.75 \u2192 mix-fit 1.30x)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -3291,7 +3223,7 @@
         "Pitcher: High K rate (30%)",
         "Strong air-pull (24%)",
         "Pitch-mix fit: damages this arsenal (60% fastballs, rel 2.20 \u2192 mix-fit 1.45x)",
-        "Warm (76\u00b0F)"
+        "Warm (77\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -3529,7 +3461,7 @@
         "Above-avg barrels (10%)",
         "Pitch-mix fit: damages this arsenal (75% fastballs, rel 2.20 \u2192 mix-fit 1.95x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3646,7 +3578,7 @@
         "Strong air-pull (24%)",
         "Platoon edge (L vs RHP)",
         "Slightly + park (101)",
-        "Warm (76\u00b0F)",
+        "Warm (75\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3711,12 +3643,12 @@
         "Good air-pull (19%)",
         "Above-avg barrels (10%)",
         "Pitch-mix fit: damages this arsenal (47% fastballs, rel 1.37 \u2192 mix-fit 1.24x)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -3774,7 +3706,7 @@
         "Good air-pull (20%)",
         "Pitch-mix fit: damages this arsenal (63% fastballs, rel 1.51 \u2192 mix-fit 1.24x)",
         "Slightly + park (103)",
-        "Hot (90\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3835,7 +3767,7 @@
         "Above-avg barrels (11%)",
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (68% fastballs, rel 1.86 \u2192 mix-fit 1.86x)",
-        "Warm (76\u00b0F)",
+        "Warm (77\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3897,7 +3829,7 @@
         "Strong air-pull (25%)",
         "Platoon edge (L vs RHP)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3909,57 +3841,56 @@
       ]
     },
     {
-      "id": 641857,
-      "name": "Ryan McMahon",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Ethan Pecko",
+      "id": 514888,
+      "name": "Jose Altuve",
+      "team": "Houston Astros",
+      "bats": "R",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Will Warren",
       "venue": "Yankee Stadium",
       "gamePk": 823505,
       "slot": null,
       "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.151,
-      "total": 47.8,
+      "season_hr": 14,
+      "iso": 0.154,
+      "total": 47.7,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 49.0,
-      "tb_tier": "Pass",
+      "tb_score": 53.7,
+      "tb_tier": "Dart",
       "tb_reasons": [
-        "Platoon edge (L vs RHP)"
+        "High-contact bat (contact 81%, Z-contact 90%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": null,
+      "mix_fit": 1.3,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
+      "due_hr": -1.3,
+      "pitcher_grade": "B",
       "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 17.8,
-        "environment": 14.5,
+        "pitcher": 13.5,
+        "hitter": 17.2,
+        "environment": 9.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.2305,
-        "barrel_rate": 0.049,
-        "hard_hit_rate": 0.345,
-        "fb_rate": 0.5605,
-        "z_contact_rate": 0.8564,
-        "sweet_spot_rate": 0.3722,
+        "air_pull_rate": 0.223,
+        "barrel_rate": 0.0571,
+        "hard_hit_rate": 0.3545,
+        "fb_rate": 0.4921,
+        "z_contact_rate": 0.9045,
+        "sweet_spot_rate": 0.3082,
         "xwobacon": null,
-        "ev90": 101.4
+        "ev90": 98.7
       },
       "reasons": [
-        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.00)",
-        "Platoon shape: spikes vs RHP (barrel 3%, air-pull 29%)",
-        "Elite air-pull (29%)",
-        "Platoon edge (L vs RHP)",
-        "Elite HR park (113)",
+        "vs Will Warren \u2014 cause B (13.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.40)",
+        "Strong air-pull (28%)",
+        "Pitch-mix fit: damages this arsenal (60% fastballs, rel 1.75 \u2192 mix-fit 1.30x)",
+        "Slightly + park (103)",
         "Short RF porch boosts LHB HR",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -4086,7 +4017,7 @@
         "Platoon edge (L vs RHP)",
         "Hot (2 HR / 1 barrels last 7d)",
         "Slightly + park (101)",
-        "Warm (76\u00b0F)",
+        "Warm (75\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4147,7 +4078,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.08)",
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (68% fastballs, rel 2.20 \u2192 mix-fit 1.81x)",
-        "Warm (76\u00b0F)",
+        "Warm (77\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4206,12 +4137,12 @@
         "Platoon shape: spikes vs RHP (barrel 9%, air-pull 21%)",
         "Good air-pull (21%)",
         "Zone-damage: hard-hit 45% + Z-contact 84%",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -4270,12 +4201,12 @@
         "Strong barrels (14%)",
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (61% fastballs, rel 2.20 \u2192 mix-fit 1.53x)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -4334,59 +4265,7 @@
         "Zone-damage: hard-hit 46% + Z-contact 85%",
         "Platoon edge (L vs RHP)",
         "Slightly + park (103)",
-        "Hot (90\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 502671,
-      "name": "Paul Goldschmidt",
-      "team": "New York Yankees",
-      "bats": "R",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Ethan Pecko",
-      "venue": "Yankee Stadium",
-      "gamePk": 823505,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.2,
-      "total": 47.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 48.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 20.0,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.00)",
-        "Proxy: strong HR rate",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4438,12 +4317,12 @@
         "Pitcher: High K rate (29%)",
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -4501,7 +4380,7 @@
         "Good air-pull (20%)",
         "Platoon edge (R vs LHP)",
         "Slightly + park (101)",
-        "Warm (76\u00b0F)",
+        "Warm (75\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4562,7 +4441,7 @@
         "Pitcher: Hard contact allowed (.439 SLG)",
         "Pitcher: Low K rate (15%)",
         "Good air-pull (20%)",
-        "Hot (88\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4625,7 +4504,7 @@
         "Good air-pull (22%)",
         "Platoon edge (L vs RHP)",
         "Slightly + park (103)",
-        "Hot (90\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4688,11 +4567,73 @@
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (48% fastballs, rel 2.20 \u2192 mix-fit 1.30x)",
         "Slightly + park (101)",
-        "Warm (76\u00b0F)",
+        "Warm (75\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Wind in ~8 mph",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 641857,
+      "name": "Ryan McMahon",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Ethan Pecko",
+      "venue": "Yankee Stadium",
+      "gamePk": 823505,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 10,
+      "iso": 0.151,
+      "total": 46.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 49.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.5,
+        "hitter": 17.8,
+        "environment": 13.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2305,
+        "barrel_rate": 0.049,
+        "hard_hit_rate": 0.345,
+        "fb_rate": 0.5605,
+        "z_contact_rate": 0.8564,
+        "sweet_spot_rate": 0.3722,
+        "xwobacon": null,
+        "ev90": 101.4
+      },
+      "reasons": [
+        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.00)",
+        "Platoon shape: spikes vs RHP (barrel 3%, air-pull 29%)",
+        "Elite air-pull (29%)",
+        "Platoon edge (L vs RHP)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -4812,7 +4753,7 @@
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (53% breaking balls, rel 1.00 \u2192 mix-fit 1.43x)",
         "Slightly + park (100)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4863,7 +4804,7 @@
         "Proxy: elite ISO (0.270)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (102)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Model: one strong signal"
       ],
       "warnings": [
@@ -4919,7 +4860,59 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.08)",
         "Zone-damage: hard-hit 47% + Z-contact 88%",
         "Pitch-mix fit: damages this arsenal (68% fastballs, rel 2.15 \u2192 mix-fit 1.61x)",
-        "Warm (76\u00b0F)",
+        "Warm (77\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 502671,
+      "name": "Paul Goldschmidt",
+      "team": "New York Yankees",
+      "bats": "R",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Ethan Pecko",
+      "venue": "Yankee Stadium",
+      "gamePk": 823505,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 16,
+      "iso": 0.2,
+      "total": 45.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 48.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.5,
+        "hitter": 20.0,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.00)",
+        "Proxy: strong HR rate",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4979,7 +4972,7 @@
         "Good air-pull (21%)",
         "Pitch-mix fit: damages this arsenal (53% breaking balls, rel 2.20 \u2192 mix-fit 1.76x)",
         "Slightly + park (101)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5039,7 +5032,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.13)",
         "Good air-pull (20%)",
         "Slightly + park (101)",
-        "Warm (76\u00b0F)",
+        "Warm (75\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5103,7 +5096,7 @@
         "Strong barrels (15%)",
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (60% fastballs, rel 2.20 \u2192 mix-fit 1.73x)",
-        "Warm (76\u00b0F)",
+        "Warm (77\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5344,7 +5337,7 @@
         "Platoon shape: spikes vs RHP (barrel 14%, air-pull 19%)",
         "Strong barrels (14%)",
         "Slightly + park (103)",
-        "Hot (90\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5463,7 +5456,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.13)",
         "Platoon edge (R vs LHP)",
         "Slightly + park (101)",
-        "Warm (76\u00b0F)",
+        "Warm (75\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5525,7 +5518,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.08)",
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (68% fastballs, rel 1.58 \u2192 mix-fit 1.39x)",
-        "Warm (76\u00b0F)",
+        "Warm (77\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5587,67 +5580,7 @@
         "Zone-damage: hard-hit 48% + Z-contact 89%",
         "Platoon edge (L vs RHP)",
         "Slightly + park (103)",
-        "Hot (90\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 665862,
-      "name": "Jazz Chisholm Jr.",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Ethan Pecko",
-      "venue": "Yankee Stadium",
-      "gamePk": 823505,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.177,
-      "total": 44.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 46.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 14.5,
-        "environment": 14.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1786,
-        "barrel_rate": 0.0585,
-        "hard_hit_rate": 0.3663,
-        "fb_rate": 0.4919,
-        "z_contact_rate": 0.8297,
-        "sweet_spot_rate": 0.317,
-        "xwobacon": null,
-        "ev90": 101.6
-      },
-      "reasons": [
-        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.00)",
-        "Platoon edge (L vs RHP)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5823,7 +5756,7 @@
         "vs Zac Thornton \u2014 cause C (12.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.08)",
         "Platoon edge (R vs LHP)",
-        "Warm (76\u00b0F)",
+        "Warm (77\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5882,12 +5815,12 @@
         "vs Jackson Jobe \u2014 cause C (12.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.29)",
         "Pitch-mix fit: damages this arsenal (61% fastballs, rel 2.20 \u2192 mix-fit 1.53x)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -6003,73 +5936,12 @@
         "Pitcher: High K rate (29%)",
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (47% fastballs, rel 0.96 \u2192 mix-fit 1.22x)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
-        "Wind in ~7 mph",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 670623,
-      "name": "Isaac Paredes",
-      "team": "Houston Astros",
-      "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Will Warren",
-      "venue": "Yankee Stadium",
-      "gamePk": 823505,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.168,
-      "total": 44.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 50.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 85%, Z-contact 90%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.3,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.0,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 13.5,
-        "hitter": 12.0,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2254,
-        "barrel_rate": 0.0409,
-        "hard_hit_rate": 0.3282,
-        "fb_rate": 0.5429,
-        "z_contact_rate": 0.9045,
-        "sweet_spot_rate": 0.3649,
-        "xwobacon": null,
-        "ev90": 101.9
-      },
-      "reasons": [
-        "vs Will Warren \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.40)",
-        "Strong air-pull (27%)",
-        "Poor pitch-mix fit (60% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -6126,7 +5998,7 @@
         "Platoon shape: spikes vs RHP (barrel 11%, air-pull 10%)",
         "Low air-pull (10%)",
         "Above-avg barrels (11%)",
-        "Hot (88\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6189,7 +6061,7 @@
         "Platoon edge (R vs LHP)",
         "Poor pitch-mix fit (47% fastballs, rel 0.30 \u2192 mix-fit 0.43x)",
         "Slightly + park (101)",
-        "Warm (76\u00b0F)",
+        "Warm (75\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6369,7 +6241,7 @@
         "Pitcher: High K rate (33%)",
         "Good air-pull (20%)",
         "Slightly + park (103)",
-        "Hot (90\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6489,7 +6361,7 @@
         "Pitcher: High HR allowed (HR/9 1.44)",
         "Platoon edge (L vs RHP)",
         "Slightly + park (103)",
-        "Hot (90\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6550,7 +6422,67 @@
         "Pitcher: Hard contact allowed (.439 SLG)",
         "Pitcher: Low K rate (15%)",
         "Platoon edge (L vs RHP)",
-        "Hot (88\u00b0F)",
+        "Hot (87\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 665862,
+      "name": "Jazz Chisholm Jr.",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Ethan Pecko",
+      "venue": "Yankee Stadium",
+      "gamePk": 823505,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 18,
+      "iso": 0.177,
+      "total": 43.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 46.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.5,
+        "hitter": 14.5,
+        "environment": 13.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1786,
+        "barrel_rate": 0.0585,
+        "hard_hit_rate": 0.3663,
+        "fb_rate": 0.4919,
+        "z_contact_rate": 0.8297,
+        "sweet_spot_rate": 0.317,
+        "xwobacon": null,
+        "ev90": 101.6
+      },
+      "reasons": [
+        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.00)",
+        "Platoon edge (L vs RHP)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6608,7 +6540,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.13)",
         "Platoon shape: spikes vs LHP (barrel 9%, air-pull 15%)",
         "Slightly + park (101)",
-        "Warm (76\u00b0F)",
+        "Warm (75\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6671,7 +6603,7 @@
         "Pitcher: High K rate (30%)",
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (60% fastballs, rel 1.86 \u2192 mix-fit 1.60x)",
-        "Warm (76\u00b0F)",
+        "Warm (77\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6742,63 +6674,6 @@
       ]
     },
     {
-      "id": 665161,
-      "name": "Jeremy Pe\u00f1a",
-      "team": "Houston Astros",
-      "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Will Warren",
-      "venue": "Yankee Stadium",
-      "gamePk": 823505,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.185,
-      "total": 42.9,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 38.9,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.98,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 13.5,
-        "hitter": 10.9,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1446,
-        "barrel_rate": 0.055,
-        "hard_hit_rate": 0.3535,
-        "fb_rate": 0.4191,
-        "z_contact_rate": 0.8167,
-        "sweet_spot_rate": 0.2825,
-        "xwobacon": null,
-        "ev90": 105.2
-      },
-      "reasons": [
-        "vs Will Warren \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.40)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 701398,
       "name": "Sal Stewart",
       "team": "Cincinnati Reds",
@@ -6847,7 +6722,7 @@
         "Pitcher: Low K rate (16%)",
         "Pitch-mix fit: damages this arsenal (75% fastballs, rel 1.54 \u2192 mix-fit 1.39x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6908,12 +6783,12 @@
         "Pitcher: High HR allowed (HR/9 1.60)",
         "Pitcher: High K rate (29%)",
         "Platoon edge (R vs LHP)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -7029,7 +6904,7 @@
         "Pitcher: Fly-ball prone (29% FB allowed)",
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (57% fastballs, rel 1.65 \u2192 mix-fit 1.29x)",
-        "Hot (86\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7093,6 +6968,67 @@
         "Pitch-mix fit: damages this arsenal (53% fastballs, rel 1.16 \u2192 mix-fit 1.38x)",
         "Slightly + park (102)",
         "Retractable roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 670623,
+      "name": "Isaac Paredes",
+      "team": "Houston Astros",
+      "bats": "R",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Will Warren",
+      "venue": "Yankee Stadium",
+      "gamePk": 823505,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 17,
+      "iso": 0.168,
+      "total": 42.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 50.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 85%, Z-contact 90%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.3,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.0,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 12.0,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2254,
+        "barrel_rate": 0.0409,
+        "hard_hit_rate": 0.3282,
+        "fb_rate": 0.5429,
+        "z_contact_rate": 0.9045,
+        "sweet_spot_rate": 0.3649,
+        "xwobacon": null,
+        "ev90": 101.9
+      },
+      "reasons": [
+        "vs Will Warren \u2014 cause B (13.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.40)",
+        "Strong air-pull (27%)",
+        "Poor pitch-mix fit (60% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7274,7 +7210,7 @@
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (53% breaking balls, rel 2.00 \u2192 mix-fit 1.88x)",
         "Slightly + park (100)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7336,7 +7272,7 @@
         "Pitcher: Low K rate (15%)",
         "Good air-pull (23%)",
         "Platoon edge (L vs RHP)",
-        "Hot (88\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7394,7 +7330,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.19)",
         "Pitcher: High K rate (30%)",
         "Pitch-mix fit: damages this arsenal (60% fastballs, rel 2.20 \u2192 mix-fit 1.50x)",
-        "Warm (76\u00b0F)",
+        "Warm (77\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7690,7 +7626,7 @@
         "Pitcher: High HR allowed (HR/9 1.46)",
         "Pitcher: High K rate (32%)",
         "Pitch-mix fit: damages this arsenal (55% breaking balls, rel 2.20 \u2192 mix-fit 1.55x)",
-        "Hot (86\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7751,7 +7687,7 @@
         "Pitcher: High K rate (30%)",
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (60% fastballs, rel 1.93 \u2192 mix-fit 1.33x)",
-        "Warm (76\u00b0F)",
+        "Warm (77\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7811,68 +7747,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.19)",
         "Pitcher: High K rate (30%)",
         "Platoon edge (R vs LHP)",
-        "Warm (76\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 669224,
-      "name": "Austin Wells",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Ethan Pecko",
-      "venue": "Yankee Stadium",
-      "gamePk": 823505,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.118,
-      "total": 41.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 81%, Z-contact 88%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 11.8,
-        "environment": 14.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1682,
-        "barrel_rate": 0.0466,
-        "hard_hit_rate": 0.3725,
-        "fb_rate": 0.528,
-        "z_contact_rate": 0.8768,
-        "sweet_spot_rate": 0.3506,
-        "xwobacon": null,
-        "ev90": 104.4
-      },
-      "reasons": [
-        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.00)",
-        "Platoon edge (L vs RHP)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
+        "Warm (77\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8049,7 +7924,7 @@
         "Pitcher: Low K rate (16%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8109,6 +7984,63 @@
         "Above-avg barrels (10%)",
         "Pitch-mix fit: damages this arsenal (78% fastballs, rel 2.20 \u2192 mix-fit 2.12x)",
         "Retractable roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 665161,
+      "name": "Jeremy Pe\u00f1a",
+      "team": "Houston Astros",
+      "bats": "R",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Will Warren",
+      "venue": "Yankee Stadium",
+      "gamePk": 823505,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 14,
+      "iso": 0.185,
+      "total": 41.4,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 38.9,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.98,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.7,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 10.9,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1446,
+        "barrel_rate": 0.055,
+        "hard_hit_rate": 0.3535,
+        "fb_rate": 0.4191,
+        "z_contact_rate": 0.8167,
+        "sweet_spot_rate": 0.2825,
+        "xwobacon": null,
+        "ev90": 105.2
+      },
+      "reasons": [
+        "vs Will Warren \u2014 cause B (13.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.40)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8232,7 +8164,7 @@
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (63% fastballs, rel 0.30 \u2192 mix-fit 0.38x)",
         "Slightly + park (103)",
-        "Hot (90\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8291,7 +8223,7 @@
         "Pitcher: High K rate (30%)",
         "Poor pitch-mix fit (48% fastballs, rel 0.30 \u2192 mix-fit 0.83x)",
         "Slightly + park (101)",
-        "Warm (76\u00b0F)",
+        "Warm (75\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8351,7 +8283,7 @@
         "Pitcher: Fly-ball prone (29% FB allowed)",
         "Above-avg barrels (11%)",
         "Pitch-mix fit: damages this arsenal (57% fastballs, rel 1.57 \u2192 mix-fit 1.63x)",
-        "Hot (86\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8402,7 +8334,7 @@
         "Pitcher: High HR allowed (HR/9 1.46)",
         "Pitcher: High K rate (32%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hot (86\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8463,7 +8395,7 @@
         "Pitcher: High K rate (30%)",
         "Good air-pull (20%)",
         "Platoon edge (R vs LHP)",
-        "Warm (76\u00b0F)",
+        "Warm (77\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8524,12 +8456,12 @@
         "Pitcher: High HR allowed (HR/9 1.60)",
         "Pitcher: High K rate (29%)",
         "Platoon edge (R vs LHP)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -8586,7 +8518,7 @@
         "Pitcher: Suppresses HR (HR/9 0.56)",
         "Pitcher: Fly-ball prone (29% FB allowed)",
         "Pitch-mix fit: damages this arsenal (57% fastballs, rel 1.84 \u2192 mix-fit 1.25x)",
-        "Hot (86\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8649,7 +8581,7 @@
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (68% fastballs, rel 0.97 \u2192 mix-fit 0.76x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8764,7 +8696,7 @@
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (48% fastballs, rel 0.30 \u2192 mix-fit 0.67x)",
         "Slightly + park (101)",
-        "Warm (76\u00b0F)",
+        "Warm (75\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8828,7 +8760,68 @@
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (53% breaking balls, rel 1.00 \u2192 mix-fit 1.40x)",
         "Slightly + park (100)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 669224,
+      "name": "Austin Wells",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Ethan Pecko",
+      "venue": "Yankee Stadium",
+      "gamePk": 823505,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 8,
+      "iso": 0.118,
+      "total": 40.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 52.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 81%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.5,
+        "hitter": 11.8,
+        "environment": 13.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1682,
+        "barrel_rate": 0.0466,
+        "hard_hit_rate": 0.3725,
+        "fb_rate": 0.528,
+        "z_contact_rate": 0.8768,
+        "sweet_spot_rate": 0.3506,
+        "xwobacon": null,
+        "ev90": 104.4
+      },
+      "reasons": [
+        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.00)",
+        "Platoon edge (L vs RHP)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8886,7 +8879,7 @@
       "reasons": [
         "Above-avg barrels (10%)",
         "Zone-damage elite: hard-hit 53% + Z-contact 86%",
-        "Hot (88\u00b0F)"
+        "Hot (87\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -8945,12 +8938,12 @@
         "Good air-pull (22%)",
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (61% fastballs, rel 1.16 \u2192 mix-fit 0.82x)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -9007,7 +9000,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.15)",
         "Pitcher: High K rate (33%)",
         "Slightly + park (103)",
-        "Hot (90\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9186,7 +9179,7 @@
         "Pitcher: High K rate (32%)",
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (55% breaking balls, rel 1.00 \u2192 mix-fit 0.69x)",
-        "Hot (86\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9306,7 +9299,7 @@
         "Pitcher: High K rate (33%)",
         "Platoon edge (L vs RHP)",
         "Slightly + park (103)",
-        "Hot (90\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9366,7 +9359,7 @@
         "Pitcher: Suppresses HR (HR/9 0.56)",
         "Pitcher: Fly-ball prone (29% FB allowed)",
         "Strong air-pull (23%)",
-        "Hot (86\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9425,7 +9418,7 @@
         "vs Kyle Harrison \u2014 cause C (10.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.19)",
         "Pitcher: High K rate (30%)",
-        "Warm (76\u00b0F)",
+        "Warm (77\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9481,7 +9474,7 @@
       "reasons": [
         "Strong air-pull (27%)",
         "Slightly + park (102)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9598,7 +9591,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.08)",
         "Zone-damage: hard-hit 46% + Z-contact 86%",
         "Poor pitch-mix fit (68% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Warm (76\u00b0F)",
+        "Warm (77\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9658,7 +9651,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.21)",
         "Pitcher: High K rate (30%)",
         "Slightly + park (101)",
-        "Warm (76\u00b0F)",
+        "Warm (75\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9777,7 +9770,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.15)",
         "Pitcher: High K rate (33%)",
         "Slightly + park (103)",
-        "Hot (90\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9954,7 +9947,7 @@
         "Good air-pull (20%)",
         "Poor pitch-mix fit (53% breaking balls, rel 0.30 \u2192 mix-fit 0.76x)",
         "Slightly + park (102)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -10015,7 +10008,7 @@
         "Pitcher: High K rate (33%)",
         "Good air-pull (21%)",
         "Slightly + park (103)",
-        "Hot (90\u00b0F)",
+        "Hot (89\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -10076,7 +10069,7 @@
         "Pitcher: Fly-ball prone (29% FB allowed)",
         "Strong air-pull (26%)",
         "Poor pitch-mix fit (57% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Hot (86\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -10136,65 +10129,7 @@
         "Platoon shape: spikes vs RHP (barrel 4%, air-pull 24%)",
         "Strong air-pull (24%)",
         "Poor pitch-mix fit (57% fastballs, rel 0.30 \u2192 mix-fit 0.60x)",
-        "Hot (86\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 572233,
-      "name": "Christian Walker",
-      "team": "Houston Astros",
-      "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Will Warren",
-      "venue": "Yankee Stadium",
-      "gamePk": 823505,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 23,
-      "iso": 0.205,
-      "total": 38.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 45.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.43,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 13.5,
-        "hitter": 6.2,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1463,
-        "barrel_rate": 0.0438,
-        "hard_hit_rate": 0.3434,
-        "fb_rate": 0.4923,
-        "z_contact_rate": 0.8705,
-        "sweet_spot_rate": 0.3134,
-        "xwobacon": null,
-        "ev90": 106.9
-      },
-      "reasons": [
-        "vs Will Warren \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.40)",
-        "Poor pitch-mix fit (60% fastballs, rel 0.30 \u2192 mix-fit 0.43x)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -10309,7 +10244,7 @@
         "Pitcher: Fly-ball prone (29% FB allowed)",
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (57% fastballs, rel 0.30 \u2192 mix-fit 0.74x)",
-        "Hot (86\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -10369,7 +10304,7 @@
         "Pitcher: High HR allowed (HR/9 1.46)",
         "Pitcher: High K rate (32%)",
         "Poor pitch-mix fit (55% breaking balls, rel 1.00 \u2192 mix-fit 0.69x)",
-        "Hot (86\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -10418,7 +10353,7 @@
       "reasons": [
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hot (88\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -10475,58 +10410,6 @@
       "role_notes": []
     },
     {
-      "id": 641355,
-      "name": "Cody Bellinger",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Ethan Pecko",
-      "venue": "Yankee Stadium",
-      "gamePk": 823505,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.159,
-      "total": 38.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 49.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)",
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 8.0,
-        "environment": 14.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.00)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 668901,
       "name": "Mark Vientos",
       "team": "New York Mets",
@@ -10568,115 +10451,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.19)",
         "Pitcher: High K rate (30%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (76\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 642708,
-      "name": "Amed Rosario",
-      "team": "New York Yankees",
-      "bats": "R",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Ethan Pecko",
-      "venue": "Yankee Stadium",
-      "gamePk": 823505,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.199,
-      "total": 38.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 48.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 12.0,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1737,
-        "barrel_rate": 0.0566,
-        "hard_hit_rate": 0.355,
-        "fb_rate": 0.4987,
-        "z_contact_rate": 0.8657,
-        "sweet_spot_rate": 0.3125,
-        "xwobacon": null,
-        "ev90": 96.3
-      },
-      "reasons": [
-        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.00)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 694728,
-      "name": "Brice Matthews",
-      "team": "Houston Astros",
-      "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Will Warren",
-      "venue": "Yankee Stadium",
-      "gamePk": 823505,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.135,
-      "total": 38.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 33.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 13.5,
-        "hitter": 6.0,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Will Warren \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.40)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
+        "Warm (77\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -10727,73 +10502,12 @@
         "Pitcher: High HR allowed (HR/9 1.60)",
         "Pitcher: High K rate (29%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
-        "Wind in ~7 mph",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 673237,
-      "name": "Yainer Diaz",
-      "team": "Houston Astros",
-      "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Will Warren",
-      "venue": "Yankee Stadium",
-      "gamePk": 823505,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.139,
-      "total": 37.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 46.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 80%, Z-contact 87%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.43,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 13.5,
-        "hitter": 5.8,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1617,
-        "barrel_rate": 0.0484,
-        "hard_hit_rate": 0.3746,
-        "fb_rate": 0.4611,
-        "z_contact_rate": 0.8712,
-        "sweet_spot_rate": 0.3059,
-        "xwobacon": null,
-        "ev90": 102.5
-      },
-      "reasons": [
-        "vs Will Warren \u2014 cause B (13.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.40)",
-        "Platoon shape fades vs RHP",
-        "Poor pitch-mix fit (60% fastballs, rel 0.30 \u2192 mix-fit 0.43x)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -10912,7 +10626,7 @@
         "Pitcher: Fly-ball prone (29% FB allowed)",
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (57% fastballs, rel 1.76 \u2192 mix-fit 1.43x)",
-        "Hot (86\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -11045,63 +10759,6 @@
       ]
     },
     {
-      "id": 676609,
-      "name": "Jos\u00e9 Caballero",
-      "team": "New York Yankees",
-      "bats": "R",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Ethan Pecko",
-      "venue": "Yankee Stadium",
-      "gamePk": 823505,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.142,
-      "total": 37.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 40.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 11.2,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1834,
-        "barrel_rate": 0.0549,
-        "hard_hit_rate": 0.3612,
-        "fb_rate": 0.5163,
-        "z_contact_rate": 0.8411,
-        "sweet_spot_rate": 0.3542,
-        "xwobacon": null,
-        "ev90": 98.3
-      },
-      "reasons": [
-        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.00)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 650402,
       "name": "Gleyber Torres",
       "team": "Detroit Tigers",
@@ -11154,12 +10811,12 @@
         "Platoon shape: spikes vs LHP (barrel 6%, air-pull 12%)",
         "Platoon edge (R vs LHP)",
         "Poor pitch-mix fit (47% fastballs, rel 0.30 \u2192 mix-fit 0.69x)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -11216,7 +10873,7 @@
         "Low air-pull (10%)",
         "Poor pitch-mix fit (75% fastballs, rel 0.30 \u2192 mix-fit 0.55x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -11269,7 +10926,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.13)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (101)",
-        "Warm (76\u00b0F)",
+        "Warm (75\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -11388,7 +11045,7 @@
       "reasons": [
         "Good air-pull (19%)",
         "Above-avg barrels (9%)",
-        "Hot (88\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -11446,12 +11103,12 @@
         "Pitcher: High HR allowed (HR/9 1.60)",
         "Pitcher: High K rate (29%)",
         "Poor pitch-mix fit (47% fastballs, rel 0.30 \u2192 mix-fit 0.49x)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -11504,12 +11161,70 @@
       "reasons": [
         "vs Jackson Jobe \u2014 cause C (12.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.29)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 572233,
+      "name": "Christian Walker",
+      "team": "Houston Astros",
+      "bats": "R",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Will Warren",
+      "venue": "Yankee Stadium",
+      "gamePk": 823505,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 23,
+      "iso": 0.205,
+      "total": 36.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 45.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.43,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 6.2,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1463,
+        "barrel_rate": 0.0438,
+        "hard_hit_rate": 0.3434,
+        "fb_rate": 0.4923,
+        "z_contact_rate": 0.8705,
+        "sweet_spot_rate": 0.3134,
+        "xwobacon": null,
+        "ev90": 106.9
+      },
+      "reasons": [
+        "vs Will Warren \u2014 cause B (13.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.40)",
+        "Poor pitch-mix fit (60% fastballs, rel 0.30 \u2192 mix-fit 0.43x)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -11627,12 +11342,12 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.29)",
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (61% fastballs, rel 0.98 \u2192 mix-fit 0.79x)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -11688,7 +11403,7 @@
         "vs Kyle Harrison \u2014 cause C (10.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.19)",
         "Pitcher: High K rate (30%)",
-        "Warm (76\u00b0F)",
+        "Warm (77\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -11803,7 +11518,228 @@
       },
       "reasons": [
         "Good air-pull (19%)",
-        "Hot (88\u00b0F)",
+        "Hot (87\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 641355,
+      "name": "Cody Bellinger",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Ethan Pecko",
+      "venue": "Yankee Stadium",
+      "gamePk": 823505,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 11,
+      "iso": 0.159,
+      "total": 36.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 49.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.5,
+        "hitter": 8.0,
+        "environment": 13.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.00)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 642708,
+      "name": "Amed Rosario",
+      "team": "New York Yankees",
+      "bats": "R",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Ethan Pecko",
+      "venue": "Yankee Stadium",
+      "gamePk": 823505,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 10,
+      "iso": 0.199,
+      "total": 36.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 48.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.5,
+        "hitter": 12.0,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1737,
+        "barrel_rate": 0.0566,
+        "hard_hit_rate": 0.355,
+        "fb_rate": 0.4987,
+        "z_contact_rate": 0.8657,
+        "sweet_spot_rate": 0.3125,
+        "xwobacon": null,
+        "ev90": 96.3
+      },
+      "reasons": [
+        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.00)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 694728,
+      "name": "Brice Matthews",
+      "team": "Houston Astros",
+      "bats": "R",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Will Warren",
+      "venue": "Yankee Stadium",
+      "gamePk": 823505,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.135,
+      "total": 36.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 33.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 6.0,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Will Warren \u2014 cause B (13.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.40)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 673237,
+      "name": "Yainer Diaz",
+      "team": "Houston Astros",
+      "bats": "R",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Will Warren",
+      "venue": "Yankee Stadium",
+      "gamePk": 823505,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 8,
+      "iso": 0.139,
+      "total": 36.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 46.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "High-contact bat (contact 80%, Z-contact 87%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.43,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 5.8,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1617,
+        "barrel_rate": 0.0484,
+        "hard_hit_rate": 0.3746,
+        "fb_rate": 0.4611,
+        "z_contact_rate": 0.8712,
+        "sweet_spot_rate": 0.3059,
+        "xwobacon": null,
+        "ev90": 102.5
+      },
+      "reasons": [
+        "vs Will Warren \u2014 cause B (13.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.40)",
+        "Platoon shape fades vs RHP",
+        "Poor pitch-mix fit (60% fastballs, rel 0.30 \u2192 mix-fit 0.43x)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -11860,65 +11796,7 @@
         "vs Kyle Harrison \u2014 cause C (10.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.19)",
         "Pitcher: High K rate (30%)",
-        "Warm (76\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 671218,
-      "name": "Heliot Ramos",
-      "team": "New York Yankees",
-      "bats": "R",
-      "opp": "Houston Astros",
-      "opp_pitcher": "Ethan Pecko",
-      "venue": "Yankee Stadium",
-      "gamePk": 823505,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.147,
-      "total": 36.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 43.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 10.2,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1336,
-        "barrel_rate": 0.0607,
-        "hard_hit_rate": 0.4382,
-        "fb_rate": 0.4691,
-        "z_contact_rate": 0.8011,
-        "sweet_spot_rate": 0.3461,
-        "xwobacon": null,
-        "ev90": 105.9
-      },
-      "reasons": [
-        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.00)",
-        "Low air-pull (9%)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
+        "Warm (77\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -11976,7 +11854,7 @@
         "Pitcher: Suppresses HR (HR/9 0.45)",
         "Pitcher: Fly-ball prone (29% FB allowed)",
         "Slightly + park (102)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -12034,7 +11912,7 @@
         "Pitcher: Suppresses HR (HR/9 0.56)",
         "Pitcher: Fly-ball prone (29% FB allowed)",
         "Poor pitch-mix fit (57% fastballs, rel 0.30 \u2192 mix-fit 0.60x)",
-        "Hot (86\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -12086,7 +11964,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.13)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (101)",
-        "Warm (76\u00b0F)",
+        "Warm (75\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -12147,12 +12025,12 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.29)",
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (61% fastballs, rel 0.30 \u2192 mix-fit 0.84x)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -12207,11 +12085,68 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.13)",
         "Poor pitch-mix fit (47% fastballs, rel 0.30 \u2192 mix-fit 0.43x)",
         "Slightly + park (101)",
-        "Warm (76\u00b0F)",
+        "Warm (75\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Wind in ~8 mph",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 676609,
+      "name": "Jos\u00e9 Caballero",
+      "team": "New York Yankees",
+      "bats": "R",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Ethan Pecko",
+      "venue": "Yankee Stadium",
+      "gamePk": 823505,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 12,
+      "iso": 0.142,
+      "total": 35.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 40.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.5,
+        "hitter": 11.2,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1834,
+        "barrel_rate": 0.0549,
+        "hard_hit_rate": 0.3612,
+        "fb_rate": 0.5163,
+        "z_contact_rate": 0.8411,
+        "sweet_spot_rate": 0.3542,
+        "xwobacon": null,
+        "ev90": 98.3
+      },
+      "reasons": [
+        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.00)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -12260,7 +12195,7 @@
         "Pitcher: Suppresses HR (HR/9 0.56)",
         "Pitcher: Fly-ball prone (29% FB allowed)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hot (86\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -12483,12 +12418,12 @@
         "Pitcher: High HR allowed (HR/9 1.60)",
         "Pitcher: High K rate (29%)",
         "Poor pitch-mix fit (47% fastballs, rel 0.30 \u2192 mix-fit 0.67x)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -12662,7 +12597,7 @@
       },
       "reasons": [
         "Good air-pull (20%)",
-        "Hot (88\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -12720,7 +12655,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.08)",
         "Platoon shape fades vs LHP",
         "Poor pitch-mix fit (68% fastballs, rel 0.30 \u2192 mix-fit 0.32x)",
-        "Warm (76\u00b0F)",
+        "Warm (77\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -12788,6 +12723,64 @@
       ],
       "warnings": [
         "Pitcher park (93)",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 671218,
+      "name": "Heliot Ramos",
+      "team": "New York Yankees",
+      "bats": "R",
+      "opp": "Houston Astros",
+      "opp_pitcher": "Ethan Pecko",
+      "venue": "Yankee Stadium",
+      "gamePk": 823505,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 9,
+      "iso": 0.147,
+      "total": 34.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 43.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.7,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.5,
+        "hitter": 10.2,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1336,
+        "barrel_rate": 0.0607,
+        "hard_hit_rate": 0.4382,
+        "fb_rate": 0.4691,
+        "z_contact_rate": 0.8011,
+        "sweet_spot_rate": 0.3461,
+        "xwobacon": null,
+        "ev90": 105.9
+      },
+      "reasons": [
+        "vs Ethan Pecko \u2014 cause Pass (7.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.00)",
+        "Low air-pull (9%)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -12896,7 +12889,7 @@
         "Pitcher: High HR allowed (HR/9 1.46)",
         "Pitcher: High K rate (32%)",
         "Poor pitch-mix fit (55% breaking balls, rel 0.30 \u2192 mix-fit 0.70x)",
-        "Hot (86\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -13123,7 +13116,7 @@
         "Pitcher: Elevated HR allowed (HR/9 1.71)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~14 mph toward CF (approx bearing)",
+        "Wind blowing OUT ~13 mph toward CF (approx bearing)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -13179,7 +13172,7 @@
       },
       "reasons": [
         "Slightly + park (100)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -13234,7 +13227,7 @@
       },
       "reasons": [
         "Slightly + park (102)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -13409,7 +13402,7 @@
       },
       "reasons": [
         "Slightly + park (100)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -13461,7 +13454,7 @@
         "Pitcher: Hard contact allowed (.439 SLG)",
         "Pitcher: Low K rate (15%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hot (88\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -13516,7 +13509,7 @@
       },
       "reasons": [
         "Slightly + park (100)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -13695,7 +13688,7 @@
       "reasons": [
         "Good air-pull (21%)",
         "Slightly + park (101)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -13877,7 +13870,7 @@
         "Pitcher: Fly-ball prone (29% FB allowed)",
         "Poor pitch-mix fit (53% breaking balls, rel 0.30 \u2192 mix-fit 0.62x)",
         "Slightly + park (102)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -13941,7 +13934,7 @@
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (48% fastballs, rel 0.30 \u2192 mix-fit 0.39x)",
         "Slightly + park (101)",
-        "Warm (76\u00b0F)",
+        "Warm (75\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -14003,12 +13996,12 @@
         "Platoon shape fades vs RHP",
         "Low air-pull (5%)",
         "Poor pitch-mix fit (61% fastballs, rel 0.79 \u2192 mix-fit 0.60x)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -14059,7 +14052,7 @@
         "ev90": 103.8
       },
       "reasons": [
-        "Hot (88\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -14121,7 +14114,7 @@
         "Platoon shape fades vs RHP",
         "Poor pitch-mix fit (48% fastballs, rel 1.01 \u2192 mix-fit 0.73x)",
         "Slightly + park (101)",
-        "Warm (76\u00b0F)",
+        "Warm (75\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -14236,7 +14229,7 @@
       },
       "reasons": [
         "Slightly + park (100)",
-        "Warm (83\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -15141,7 +15134,7 @@
         "ev90": 102.6
       },
       "reasons": [
-        "Hot (88\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -15269,9 +15262,8 @@
   "structures": {
     "longshot_group": {
       "legs": [
-        "Yordan Alvarez (Houston Astros, 67.5)",
-        "Drew Gilbert (San Francisco Giants, 63.3)",
-        "Cam Smith (Houston Astros, 63.0)"
+        "Yordan Alvarez (Houston Astros, 66.0)",
+        "Drew Gilbert (San Francisco Giants, 63.3)"
       ],
       "why": "Deeper bats with a real pitcher/park cause \u2014 bonus-only convergence."
     }
@@ -15335,7 +15327,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 64.2,
+      "hr_total": 62.7,
       "hr_role": "Power Satellite"
     },
     {
@@ -15377,7 +15369,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 54.0,
+      "hr_total": 52.5,
       "hr_role": "Pass"
     },
     {
@@ -15478,7 +15470,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 67.5,
+      "hr_total": 66.0,
       "hr_role": "Longshot"
     },
     {
@@ -15559,7 +15551,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 58.0,
+      "hr_total": 56.5,
       "hr_role": "Pass"
     },
     {
@@ -15804,7 +15796,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 52.0,
+      "hr_total": 50.5,
       "hr_role": "Watchlist"
     },
     {
@@ -16530,8 +16522,8 @@
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 63.0,
-      "hr_role": "Longshot"
+      "hr_total": 61.5,
+      "hr_role": "Pass"
     },
     {
       "id": 669016,
@@ -16970,7 +16962,7 @@
         "High-contact bat (contact 81%, Z-contact 90%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 49.2,
+      "hr_total": 47.7,
       "hr_role": "Watchlist"
     },
     {
@@ -17303,7 +17295,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 41.8,
+      "hr_total": 40.3,
       "hr_role": "Watchlist"
     },
     {
@@ -17382,7 +17374,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 52.0,
+      "hr_total": 50.5,
       "hr_role": "Watchlist"
     },
     {
@@ -17789,7 +17781,7 @@
         "High-contact bat (contact 85%, Z-contact 90%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 44.0,
+      "hr_total": 42.5,
       "hr_role": "Watchlist"
     },
     {
@@ -18102,7 +18094,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 51.1,
+      "hr_total": 49.6,
       "hr_role": "Watchlist"
     },
     {
@@ -18122,7 +18114,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 47.8,
+      "hr_total": 46.3,
       "hr_role": "Watchlist"
     },
     {
@@ -18143,7 +18135,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 38.0,
+      "hr_total": 36.5,
       "hr_role": "Watchlist"
     },
     {
@@ -18238,7 +18230,7 @@
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 38.0,
+      "hr_total": 36.5,
       "hr_role": "Watchlist"
     },
     {
@@ -18379,7 +18371,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 47.0,
+      "hr_total": 45.5,
       "hr_role": "Watchlist"
     },
     {
@@ -18742,7 +18734,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 44.5,
+      "hr_total": 43.0,
       "hr_role": "Watchlist"
     },
     {
@@ -18762,7 +18754,7 @@
         "High-contact bat (contact 80%, Z-contact 87%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 37.8,
+      "hr_total": 36.3,
       "hr_role": "Watchlist"
     },
     {
@@ -18895,7 +18887,7 @@
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 38.2,
+      "hr_total": 36.7,
       "hr_role": "Watchlist"
     },
     {
@@ -19295,7 +19287,7 @@
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 36.2,
+      "hr_total": 34.7,
       "hr_role": "Watchlist"
     },
     {
@@ -19597,7 +19589,7 @@
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 37.2,
+      "hr_total": 35.7,
       "hr_role": "Watchlist"
     },
     {
@@ -19751,7 +19743,7 @@
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 42.9,
+      "hr_total": 41.4,
       "hr_role": "Watchlist"
     },
     {
@@ -20021,7 +20013,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 38.0,
+      "hr_total": 36.5,
       "hr_role": "Watchlist"
     },
     {
@@ -20497,11 +20489,11 @@
     "instructions": "After games, set result_hr / cause_fired (did target pitcher or team produce HRs/barrels) / teammate_hr, then classify outcome A-D.",
     "rows": [
       {
-        "player": "Trent Grisham",
-        "team": "New York Yankees",
-        "opp_pitcher": "Ethan Pecko",
+        "player": "Matt Olson",
+        "team": "Atlanta Braves",
+        "opp_pitcher": "Tyler Glasnow",
         "role": "Power Satellite",
-        "total": 64.2,
+        "total": 63.5,
         "cause_grade": "Pass",
         "result_hr": null,
         "cause_fired": null,
@@ -20509,11 +20501,11 @@
         "outcome": null
       },
       {
-        "player": "Matt Olson",
-        "team": "Atlanta Braves",
-        "opp_pitcher": "Tyler Glasnow",
+        "player": "Trent Grisham",
+        "team": "New York Yankees",
+        "opp_pitcher": "Ethan Pecko",
         "role": "Power Satellite",
-        "total": 63.5,
+        "total": 62.7,
         "cause_grade": "Pass",
         "result_hr": null,
         "cause_fired": null,
