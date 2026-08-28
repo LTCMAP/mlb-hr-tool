@@ -1,6 +1,6 @@
 {
   "version": "2.8",
-  "generated_utc": "2026-08-28T03:38:02.146970+00:00",
+  "generated_utc": "2026-08-28T06:12:41.019843+00:00",
   "slate_date": "2026-08-28",
   "games": 15,
   "confirmed_lineups": 0,
@@ -103,6 +103,20 @@
           "fit_tag": "PITCH-FIT"
         }
       ]
+    },
+    {
+      "team": "San Francisco Giants",
+      "opp": "Arizona Diamondbacks",
+      "pitcher": "Kohl Drake",
+      "venue": "Oracle Park",
+      "grade": "A",
+      "pitcher_cause": 19.5,
+      "park_hr": 91,
+      "cause_score": 17.2,
+      "capture_method": "Team-HR placeholder (cause strong, bat capture thin)",
+      "public_heat": false,
+      "n_playable": 0,
+      "playable_bats": []
     },
     {
       "team": "Minnesota Twins",
@@ -649,6 +663,68 @@
       ]
     },
     {
+      "id": 687551,
+      "name": "Drew Gilbert",
+      "team": "San Francisco Giants",
+      "bats": "L",
+      "opp": "Arizona Diamondbacks",
+      "opp_pitcher": "Kohl Drake",
+      "venue": "Oracle Park",
+      "gamePk": 823178,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 8,
+      "iso": 0.149,
+      "total": 59.3,
+      "tier": "Pass",
+      "role": "Cause Satellite",
+      "tb_score": 56.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 1.3,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.5,
+        "hitter": 22.8,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2104,
+        "barrel_rate": 0.1003,
+        "hard_hit_rate": 0.4539,
+        "fb_rate": 0.5562,
+        "z_contact_rate": 0.8496,
+        "sweet_spot_rate": 0.396,
+        "xwobacon": null,
+        "ev90": 104.2
+      },
+      "reasons": [
+        "vs Kohl Drake \u2014 cause A (19.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.67)",
+        "Pitcher: Hard contact allowed (.552 SLG)",
+        "Good air-pull (21%)",
+        "Above-avg barrels (10%)",
+        "Zone-damage: hard-hit 45% + Z-contact 85%",
+        "Deep RF triples alley suppresses LHB HR",
+        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Pitcher park (92)",
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
       "id": 592450,
       "name": "Aaron Judge",
       "team": "New York Yankees",
@@ -758,6 +834,63 @@
         "Lineup not confirmed"
       ],
       "role_notes": []
+    },
+    {
+      "id": 669477,
+      "name": "Casey Schmitt",
+      "team": "San Francisco Giants",
+      "bats": "R",
+      "opp": "Arizona Diamondbacks",
+      "opp_pitcher": "Kohl Drake",
+      "venue": "Oracle Park",
+      "gamePk": 823178,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 21,
+      "iso": 0.212,
+      "total": 57.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 60.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)",
+        "Soft-tossing / hittable arm (TB tailwind)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.5,
+        "hitter": 22.0,
+        "environment": 6.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Kohl Drake \u2014 cause A (19.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.67)",
+        "Pitcher: Hard contact allowed (.552 SLG)",
+        "Proxy: strong HR rate",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Deep RF triples alley suppresses LHB HR",
+        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
+        "Suppressive park + no pull/barrel fit \u2192 Watchlist",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Strong pitcher park (89)",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Suppressive park + no pull/barrel fit \u2192 Watchlist"
+      ]
     },
     {
       "id": 573262,
@@ -1053,6 +1186,68 @@
         "Proxy: elite ISO (0.256)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Warm (76\u00b0F)",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 695734,
+      "name": "Daylen Lile",
+      "team": "Washington Nationals",
+      "bats": "L",
+      "opp": "Miami Marlins",
+      "opp_pitcher": "Eury P\u00e9rez",
+      "venue": "Nationals Park",
+      "gamePk": 822691,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 18,
+      "iso": 0.173,
+      "total": 56.4,
+      "tier": "Pass",
+      "role": "Pass",
+      "tb_score": 68.1,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 85%, Z-contact 91%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)",
+        "Hot (3 barrels last 7d)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.28,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.4,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.0,
+        "hitter": 30.4,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2431,
+        "barrel_rate": 0.0803,
+        "hard_hit_rate": 0.4394,
+        "fb_rate": 0.615,
+        "z_contact_rate": 0.9068,
+        "sweet_spot_rate": 0.4482,
+        "xwobacon": null,
+        "ev90": 104.2
+      },
+      "reasons": [
+        "vs Eury P\u00e9rez \u2014 cause Pass (6.0/25)",
+        "Platoon shape: spikes vs RHP (barrel 9%, air-pull 33%)",
+        "Elite air-pull (33%)",
+        "Above-avg barrels (9%)",
+        "Platoon edge (L vs RHP)",
+        "Slightly + park (102)",
+        "Hot (87\u00b0F)",
         "Model: one strong signal"
       ],
       "warnings": [
@@ -1364,68 +1559,6 @@
       "role_notes": []
     },
     {
-      "id": 695734,
-      "name": "Daylen Lile",
-      "team": "Washington Nationals",
-      "bats": "L",
-      "opp": "Miami Marlins",
-      "opp_pitcher": "Eury P\u00e9rez",
-      "venue": "Nationals Park",
-      "gamePk": 822691,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.173,
-      "total": 55.4,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 67.1,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 85%, Z-contact 91%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)",
-        "Hot (3 barrels last 7d)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.28,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.4,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.0,
-        "hitter": 30.4,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2431,
-        "barrel_rate": 0.0803,
-        "hard_hit_rate": 0.4394,
-        "fb_rate": 0.615,
-        "z_contact_rate": 0.9068,
-        "sweet_spot_rate": 0.4482,
-        "xwobacon": null,
-        "ev90": 104.2
-      },
-      "reasons": [
-        "vs Eury P\u00e9rez \u2014 cause Pass (6.0/25)",
-        "Platoon shape: spikes vs RHP (barrel 9%, air-pull 33%)",
-        "Elite air-pull (33%)",
-        "Above-avg barrels (9%)",
-        "Platoon edge (L vs RHP)",
-        "Slightly + park (102)",
-        "Warm (80\u00b0F)",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 664023,
       "name": "Ian Happ",
       "team": "Chicago Cubs",
@@ -1592,7 +1725,7 @@
         "Above-avg barrels (11%)",
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (40% fastballs, rel 2.20 \u2192 mix-fit 1.81x)",
-        "Warm (77\u00b0F)"
+        "Warm (78\u00b0F)"
       ],
       "warnings": [
         "Pitcher park (94)",
@@ -1719,6 +1852,69 @@
       ]
     },
     {
+      "id": 646240,
+      "name": "Rafael Devers",
+      "team": "San Francisco Giants",
+      "bats": "L",
+      "opp": "Arizona Diamondbacks",
+      "opp_pitcher": "Kohl Drake",
+      "venue": "Oracle Park",
+      "gamePk": 823178,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 29,
+      "iso": 0.238,
+      "total": 53.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 41.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.3,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.5,
+        "hitter": 16.8,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1797,
+        "barrel_rate": 0.0551,
+        "hard_hit_rate": 0.4055,
+        "fb_rate": 0.5307,
+        "z_contact_rate": 0.8358,
+        "sweet_spot_rate": 0.2986,
+        "xwobacon": null,
+        "ev90": 107.8
+      },
+      "reasons": [
+        "vs Kohl Drake \u2014 cause A (19.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.67)",
+        "Pitcher: Hard contact allowed (.552 SLG)",
+        "Hot (2 HR / 1 barrels last 7d)",
+        "Deep RF triples alley suppresses LHB HR",
+        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Pitcher park (92)",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 671739,
       "name": "Michael Harris II",
       "team": "Atlanta Braves",
@@ -1782,6 +1978,57 @@
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
+    },
+    {
+      "id": 695578,
+      "name": "James Wood",
+      "team": "Washington Nationals",
+      "bats": "L",
+      "opp": "Miami Marlins",
+      "opp_pitcher": "Eury P\u00e9rez",
+      "venue": "Nationals Park",
+      "gamePk": 822691,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 30,
+      "iso": 0.27,
+      "total": 53.0,
+      "tier": "Pass",
+      "role": "Pass",
+      "tb_score": 62.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.0,
+        "hitter": 27.0,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Eury P\u00e9rez \u2014 cause Pass (6.0/25)",
+        "Proxy: strong HR rate",
+        "Proxy: elite ISO (0.270)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Slightly + park (102)",
+        "Hot (87\u00b0F)",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
     },
     {
       "id": 605137,
@@ -2145,6 +2392,70 @@
       "role_notes": []
     },
     {
+      "id": 642715,
+      "name": "Willy Adames",
+      "team": "San Francisco Giants",
+      "bats": "R",
+      "opp": "Arizona Diamondbacks",
+      "opp_pitcher": "Kohl Drake",
+      "venue": "Oracle Park",
+      "gamePk": 823178,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 21,
+      "iso": 0.194,
+      "total": 52.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 51.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)",
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.3,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.5,
+        "hitter": 17.0,
+        "environment": 6.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1679,
+        "barrel_rate": 0.0722,
+        "hard_hit_rate": 0.3613,
+        "fb_rate": 0.504,
+        "z_contact_rate": 0.8561,
+        "sweet_spot_rate": 0.3396,
+        "xwobacon": null,
+        "ev90": 101.0
+      },
+      "reasons": [
+        "vs Kohl Drake \u2014 cause A (19.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.67)",
+        "Pitcher: Hard contact allowed (.552 SLG)",
+        "Platoon edge (R vs LHP)",
+        "Deep RF triples alley suppresses LHB HR",
+        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Strong pitcher park (89)",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 608369,
       "name": "Corey Seager",
       "team": "Texas Rangers",
@@ -2386,57 +2697,6 @@
       ]
     },
     {
-      "id": 695578,
-      "name": "James Wood",
-      "team": "Washington Nationals",
-      "bats": "L",
-      "opp": "Miami Marlins",
-      "opp_pitcher": "Eury P\u00e9rez",
-      "venue": "Nationals Park",
-      "gamePk": 822691,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 30,
-      "iso": 0.27,
-      "total": 52.0,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 62.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)",
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.0,
-        "hitter": 27.0,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Eury P\u00e9rez \u2014 cause Pass (6.0/25)",
-        "Proxy: strong HR rate",
-        "Proxy: elite ISO (0.270)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Slightly + park (102)",
-        "Warm (80\u00b0F)",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 696100,
       "name": "Hunter Goodman",
       "team": "Colorado Rockies",
@@ -2557,6 +2817,68 @@
         "Lineup not confirmed"
       ],
       "role_notes": []
+    },
+    {
+      "id": 805811,
+      "name": "Bryce Eldridge",
+      "team": "San Francisco Giants",
+      "bats": "L",
+      "opp": "Arizona Diamondbacks",
+      "opp_pitcher": "Kohl Drake",
+      "venue": "Oracle Park",
+      "gamePk": 823178,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 14,
+      "iso": 0.184,
+      "total": 51.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 41.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.0,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.5,
+        "hitter": 14.5,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1818,
+        "barrel_rate": 0.0799,
+        "hard_hit_rate": 0.4279,
+        "fb_rate": 0.5654,
+        "z_contact_rate": 0.7829,
+        "sweet_spot_rate": 0.3575,
+        "xwobacon": null,
+        "ev90": 106.6
+      },
+      "reasons": [
+        "vs Kohl Drake \u2014 cause A (19.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.67)",
+        "Pitcher: Hard contact allowed (.552 SLG)",
+        "Deep RF triples alley suppresses LHB HR",
+        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Pitcher park (92)",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 641343,
@@ -2757,7 +3079,7 @@
         "Pitcher: High HR allowed (HR/9 1.44)",
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (77\u00b0F)"
+        "Warm (78\u00b0F)"
       ],
       "warnings": [
         "Pitcher park (94)",
@@ -3132,6 +3454,67 @@
       "role_notes": []
     },
     {
+      "id": 681715,
+      "name": "Heriberto Hern\u00e1ndez",
+      "team": "Miami Marlins",
+      "bats": "R",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Jackson Kent",
+      "venue": "Nationals Park",
+      "gamePk": 822691,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 20,
+      "iso": 0.226,
+      "total": 48.8,
+      "tier": "Pass",
+      "role": "Pass",
+      "tb_score": 57.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)",
+        "Hot (3 barrels last 7d)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.72,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.6,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 24.8,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2011,
+        "barrel_rate": 0.0954,
+        "hard_hit_rate": 0.3826,
+        "fb_rate": 0.4754,
+        "z_contact_rate": 0.8496,
+        "sweet_spot_rate": 0.3014,
+        "xwobacon": null,
+        "ev90": 105.9
+      },
+      "reasons": [
+        "vs Jackson Kent \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.74)",
+        "Good air-pull (20%)",
+        "Above-avg barrels (10%)",
+        "Platoon edge (R vs LHP)",
+        "Pitch-mix fit: damages this arsenal (44% fastballs, rel 1.75 \u2192 mix-fit 1.72x)",
+        "Slightly + park (100)",
+        "Hot (87\u00b0F)"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
       "id": 608348,
       "name": "Carson Kelly",
       "team": "Chicago Cubs",
@@ -3483,67 +3866,6 @@
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
-    },
-    {
-      "id": 681715,
-      "name": "Heriberto Hern\u00e1ndez",
-      "team": "Miami Marlins",
-      "bats": "R",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Jackson Kent",
-      "venue": "Nationals Park",
-      "gamePk": 822691,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 20,
-      "iso": 0.226,
-      "total": 47.8,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 56.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)",
-        "Hot (3 barrels last 7d)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.72,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.6,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 5.0,
-        "hitter": 24.8,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2011,
-        "barrel_rate": 0.0954,
-        "hard_hit_rate": 0.3826,
-        "fb_rate": 0.4754,
-        "z_contact_rate": 0.8496,
-        "sweet_spot_rate": 0.3014,
-        "xwobacon": null,
-        "ev90": 105.9
-      },
-      "reasons": [
-        "vs Jackson Kent \u2014 cause Pass (5.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.74)",
-        "Good air-pull (20%)",
-        "Above-avg barrels (10%)",
-        "Platoon edge (R vs LHP)",
-        "Pitch-mix fit: damages this arsenal (44% fastballs, rel 1.75 \u2192 mix-fit 1.72x)",
-        "Slightly + park (100)",
-        "Warm (80\u00b0F)"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
     },
     {
       "id": 608324,
@@ -4795,6 +5117,71 @@
       ]
     },
     {
+      "id": 808982,
+      "name": "Jung Hoo Lee",
+      "team": "San Francisco Giants",
+      "bats": "L",
+      "opp": "Arizona Diamondbacks",
+      "opp_pitcher": "Kohl Drake",
+      "venue": "Oracle Park",
+      "gamePk": 823178,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 9,
+      "iso": 0.134,
+      "total": 45.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 51.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 90%, Z-contact 90%) \u2014 banks XBH",
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.3,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.5,
+        "hitter": 8.8,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1273,
+        "barrel_rate": 0.0592,
+        "hard_hit_rate": 0.3861,
+        "fb_rate": 0.4973,
+        "z_contact_rate": 0.9043,
+        "sweet_spot_rate": 0.3188,
+        "xwobacon": null,
+        "ev90": 98.6
+      },
+      "reasons": [
+        "vs Kohl Drake \u2014 cause A (19.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.67)",
+        "Pitcher: Hard contact allowed (.552 SLG)",
+        "Platoon shape fades vs LHP",
+        "Low air-pull (9%)",
+        "Deep RF triples alley suppresses LHB HR",
+        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Pitcher park (92)",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 800050,
       "name": "Chase DeLauter",
       "team": "Cleveland Guardians",
@@ -5322,6 +5709,65 @@
       ]
     },
     {
+      "id": 665052,
+      "name": "Griffin Conine",
+      "team": "Miami Marlins",
+      "bats": "L",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Jackson Kent",
+      "venue": "Nationals Park",
+      "gamePk": 822691,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 14,
+      "iso": 0.247,
+      "total": 44.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 53.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.92,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.7,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 20.2,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1863,
+        "barrel_rate": 0.1065,
+        "hard_hit_rate": 0.4419,
+        "fb_rate": 0.525,
+        "z_contact_rate": 0.8394,
+        "sweet_spot_rate": 0.3535,
+        "xwobacon": null,
+        "ev90": 109.4
+      },
+      "reasons": [
+        "vs Jackson Kent \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.74)",
+        "Above-avg barrels (11%)",
+        "Pitch-mix fit: damages this arsenal (44% fastballs, rel 2.20 \u2192 mix-fit 1.92x)",
+        "Slightly + park (102)",
+        "Hot (87\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 808959,
       "name": "Munetaka Murakami",
       "team": "Chicago White Sox",
@@ -5731,7 +6177,7 @@
         "Platoon shape: spikes vs RHP (barrel 11%, air-pull 14%)",
         "Above-avg barrels (11%)",
         "Pitch-mix fit: damages this arsenal (40% fastballs, rel 2.20 \u2192 mix-fit 1.27x)",
-        "Warm (77\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5854,55 +6300,57 @@
       ]
     },
     {
-      "id": 665052,
-      "name": "Griffin Conine",
-      "team": "Miami Marlins",
+      "id": 682928,
+      "name": "CJ Abrams",
+      "team": "Washington Nationals",
       "bats": "L",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Jackson Kent",
+      "opp": "Miami Marlins",
+      "opp_pitcher": "Eury P\u00e9rez",
       "venue": "Nationals Park",
       "gamePk": 822691,
       "slot": null,
       "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.247,
-      "total": 43.2,
+      "season_hr": 29,
+      "iso": 0.245,
+      "total": 43.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 52.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
+      "tb_score": 47.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 1.92,
+      "mix_fit": 1.25,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -0.7,
+      "due_hr": -0.3,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 5.0,
-        "hitter": 20.2,
-        "environment": 9.0,
+        "pitcher": 6.0,
+        "hitter": 19.0,
+        "environment": 10.0,
         "lineup": 6.0,
-        "confidence": 3.0
+        "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1863,
-        "barrel_rate": 0.1065,
-        "hard_hit_rate": 0.4419,
-        "fb_rate": 0.525,
-        "z_contact_rate": 0.8394,
-        "sweet_spot_rate": 0.3535,
+        "air_pull_rate": 0.1939,
+        "barrel_rate": 0.0558,
+        "hard_hit_rate": 0.3644,
+        "fb_rate": 0.4832,
+        "z_contact_rate": 0.8268,
+        "sweet_spot_rate": 0.3301,
         "xwobacon": null,
-        "ev90": 109.4
+        "ev90": 101.0
       },
       "reasons": [
-        "vs Jackson Kent \u2014 cause Pass (5.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.74)",
-        "Above-avg barrels (11%)",
-        "Pitch-mix fit: damages this arsenal (44% fastballs, rel 2.20 \u2192 mix-fit 1.92x)",
+        "vs Eury P\u00e9rez \u2014 cause Pass (6.0/25)",
+        "Good air-pull (20%)",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (61% fastballs, rel 1.79 \u2192 mix-fit 1.25x)",
         "Slightly + park (102)",
-        "Warm (80\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6020,7 +6468,7 @@
         "vs Drew Anderson \u2014 cause B (13.5/25)",
         "Pitcher: High HR allowed (HR/9 1.44)",
         "Good air-pull (19%)",
-        "Warm (77\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6503,7 +6951,7 @@
         "Pitcher: High HR allowed (HR/9 1.44)",
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (40% fastballs, rel 1.53 \u2192 mix-fit 1.21x)",
-        "Warm (77\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6757,67 +7205,6 @@
       ]
     },
     {
-      "id": 682928,
-      "name": "CJ Abrams",
-      "team": "Washington Nationals",
-      "bats": "L",
-      "opp": "Miami Marlins",
-      "opp_pitcher": "Eury P\u00e9rez",
-      "venue": "Nationals Park",
-      "gamePk": 822691,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 29,
-      "iso": 0.245,
-      "total": 42.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 46.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.25,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.0,
-        "hitter": 19.0,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1939,
-        "barrel_rate": 0.0558,
-        "hard_hit_rate": 0.3644,
-        "fb_rate": 0.4832,
-        "z_contact_rate": 0.8268,
-        "sweet_spot_rate": 0.3301,
-        "xwobacon": null,
-        "ev90": 101.0
-      },
-      "reasons": [
-        "vs Eury P\u00e9rez \u2014 cause Pass (6.0/25)",
-        "Good air-pull (20%)",
-        "Platoon edge (L vs RHP)",
-        "Pitch-mix fit: damages this arsenal (61% fastballs, rel 1.79 \u2192 mix-fit 1.25x)",
-        "Slightly + park (102)",
-        "Warm (80\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 624585,
       "name": "Jorge Soler",
       "team": "Los Angeles Angels",
@@ -6922,6 +7309,65 @@
         "DUE: 3 barrels, only 0 HR in window (+2.0 xHR) \u2014 positive regression",
         "Hitter-friendly park (105)",
         "Retractable roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 683357,
+      "name": "Owen Caissie",
+      "team": "Miami Marlins",
+      "bats": "L",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Jackson Kent",
+      "venue": "Nationals Park",
+      "gamePk": 822691,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 13,
+      "iso": 0.198,
+      "total": 41.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 51.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.52,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 18.6,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1957,
+        "barrel_rate": 0.0643,
+        "hard_hit_rate": 0.3645,
+        "fb_rate": 0.5367,
+        "z_contact_rate": 0.8725,
+        "sweet_spot_rate": 0.3725,
+        "xwobacon": null,
+        "ev90": 103.2
+      },
+      "reasons": [
+        "vs Jackson Kent \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.74)",
+        "Good air-pull (20%)",
+        "Pitch-mix fit: damages this arsenal (44% fastballs, rel 2.20 \u2192 mix-fit 1.52x)",
+        "Slightly + park (102)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7886,65 +8332,6 @@
       ]
     },
     {
-      "id": 683357,
-      "name": "Owen Caissie",
-      "team": "Miami Marlins",
-      "bats": "L",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Jackson Kent",
-      "venue": "Nationals Park",
-      "gamePk": 822691,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.198,
-      "total": 40.6,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 50.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.52,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 5.0,
-        "hitter": 18.6,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1957,
-        "barrel_rate": 0.0643,
-        "hard_hit_rate": 0.3645,
-        "fb_rate": 0.5367,
-        "z_contact_rate": 0.8725,
-        "sweet_spot_rate": 0.3725,
-        "xwobacon": null,
-        "ev90": 103.2
-      },
-      "reasons": [
-        "vs Jackson Kent \u2014 cause Pass (5.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.74)",
-        "Good air-pull (20%)",
-        "Pitch-mix fit: damages this arsenal (44% fastballs, rel 2.20 \u2192 mix-fit 1.52x)",
-        "Slightly + park (102)",
-        "Warm (80\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 670042,
       "name": "Luke Raley",
       "team": "Seattle Mariners",
@@ -8242,6 +8629,65 @@
       ]
     },
     {
+      "id": 665953,
+      "name": "Andr\u00e9s Chaparro",
+      "team": "Washington Nationals",
+      "bats": "R",
+      "opp": "Miami Marlins",
+      "opp_pitcher": "Eury P\u00e9rez",
+      "venue": "Nationals Park",
+      "gamePk": 822691,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 9,
+      "iso": 0.279,
+      "total": 40.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 58.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 82%, Z-contact 88%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.01,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.7,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.0,
+        "hitter": 16.1,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1935,
+        "barrel_rate": 0.0594,
+        "hard_hit_rate": 0.3613,
+        "fb_rate": 0.5188,
+        "z_contact_rate": 0.8807,
+        "sweet_spot_rate": 0.3543,
+        "xwobacon": null,
+        "ev90": 102.1
+      },
+      "reasons": [
+        "vs Eury P\u00e9rez \u2014 cause Pass (6.0/25)",
+        "Good air-pull (21%)",
+        "Slightly + park (100)",
+        "Hot (87\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 701538,
       "name": "Jackson Merrill",
       "team": "San Diego Padres",
@@ -8341,7 +8787,7 @@
         "Pitcher: High K rate (31%)",
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (77\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8409,62 +8855,6 @@
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
-    },
-    {
-      "id": 687551,
-      "name": "Drew Gilbert",
-      "team": "San Francisco Giants",
-      "bats": "L",
-      "opp": "Arizona Diamondbacks",
-      "opp_pitcher": null,
-      "venue": "Oracle Park",
-      "gamePk": 823178,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.15,
-      "total": 39.8,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 53.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 1.3,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 23.8,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2104,
-        "barrel_rate": 0.1003,
-        "hard_hit_rate": 0.4539,
-        "fb_rate": 0.5562,
-        "z_contact_rate": 0.8496,
-        "sweet_spot_rate": 0.396,
-        "xwobacon": null,
-        "ev90": 104.2
-      },
-      "reasons": [
-        "Good air-pull (21%)",
-        "Above-avg barrels (10%)",
-        "Zone-damage: hard-hit 45% + Z-contact 85%",
-        "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)"
-      ],
-      "warnings": [
-        "Pitcher park (92)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
     },
     {
       "id": 553993,
@@ -8983,7 +9373,7 @@
       "reasons": [
         "vs Drew Anderson \u2014 cause B (13.5/25)",
         "Pitcher: High HR allowed (HR/9 1.44)",
-        "Warm (77\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9235,55 +9625,54 @@
       ]
     },
     {
-      "id": 665953,
-      "name": "Andr\u00e9s Chaparro",
-      "team": "Washington Nationals",
-      "bats": "R",
-      "opp": "Miami Marlins",
-      "opp_pitcher": "Eury P\u00e9rez",
+      "id": 669065,
+      "name": "Kyle Stowers",
+      "team": "Miami Marlins",
+      "bats": "L",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Jackson Kent",
       "venue": "Nationals Park",
       "gamePk": 822691,
       "slot": null,
       "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.279,
-      "total": 39.1,
+      "season_hr": 16,
+      "iso": 0.216,
+      "total": 39.2,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 57.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 82%, Z-contact 88%) \u2014 banks XBH"
-      ],
+      "tb_score": 46.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
       "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.01,
+      "pull_fit": false,
+      "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.7,
+      "due_hr": 0.0,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 6.0,
-        "hitter": 16.1,
-        "environment": 9.0,
+        "pitcher": 5.0,
+        "hitter": 16.2,
+        "environment": 10.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1935,
-        "barrel_rate": 0.0594,
-        "hard_hit_rate": 0.3613,
-        "fb_rate": 0.5188,
-        "z_contact_rate": 0.8807,
-        "sweet_spot_rate": 0.3543,
+        "air_pull_rate": 0.1778,
+        "barrel_rate": 0.0534,
+        "hard_hit_rate": 0.4574,
+        "fb_rate": 0.5392,
+        "z_contact_rate": 0.83,
+        "sweet_spot_rate": 0.3465,
         "xwobacon": null,
-        "ev90": 102.1
+        "ev90": 105.3
       },
       "reasons": [
-        "vs Eury P\u00e9rez \u2014 cause Pass (6.0/25)",
-        "Good air-pull (21%)",
-        "Slightly + park (100)",
-        "Warm (80\u00b0F)",
+        "vs Jackson Kent \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.74)",
+        "Zone-damage: hard-hit 46% + Z-contact 83%",
+        "Slightly + park (102)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9341,6 +9730,67 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.21)",
         "Poor pitch-mix fit (60% fastballs, rel 0.30 \u2192 mix-fit 0.58x)",
         "Warm (76\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 660688,
+      "name": "Keibert Ruiz",
+      "team": "Washington Nationals",
+      "bats": "S",
+      "opp": "Miami Marlins",
+      "opp_pitcher": "Eury P\u00e9rez",
+      "venue": "Nationals Park",
+      "gamePk": 822691,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 9,
+      "iso": 0.172,
+      "total": 39.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 51.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 95%, Z-contact 91%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.3,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.0,
+        "hitter": 15.0,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2421,
+        "barrel_rate": 0.0437,
+        "hard_hit_rate": 0.3326,
+        "fb_rate": 0.5517,
+        "z_contact_rate": 0.9091,
+        "sweet_spot_rate": 0.3575,
+        "xwobacon": null,
+        "ev90": 100.1
+      },
+      "reasons": [
+        "vs Eury P\u00e9rez \u2014 cause Pass (6.0/25)",
+        "Platoon shape: spikes vs RHP (barrel 3%, air-pull 33%)",
+        "Elite air-pull (33%)",
+        "Poor pitch-mix fit (61% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
+        "Slightly + park (101)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9694,6 +10144,65 @@
       ]
     },
     {
+      "id": 696285,
+      "name": "Jacob Young",
+      "team": "Washington Nationals",
+      "bats": "R",
+      "opp": "Miami Marlins",
+      "opp_pitcher": "Eury P\u00e9rez",
+      "venue": "Nationals Park",
+      "gamePk": 822691,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 10,
+      "iso": 0.15,
+      "total": 38.4,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 48.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "High-contact bat (contact 83%, Z-contact 87%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.12,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.0,
+        "hitter": 14.4,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1808,
+        "barrel_rate": 0.0633,
+        "hard_hit_rate": 0.2602,
+        "fb_rate": 0.5351,
+        "z_contact_rate": 0.87,
+        "sweet_spot_rate": 0.3303,
+        "xwobacon": null,
+        "ev90": 94.4
+      },
+      "reasons": [
+        "vs Eury P\u00e9rez \u2014 cause Pass (6.0/25)",
+        "Good air-pull (22%)",
+        "Slightly + park (100)",
+        "Hot (87\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 678246,
       "name": "Miguel Vargas",
       "team": "Chicago White Sox",
@@ -9744,64 +10253,6 @@
         "Good air-pull (20%)",
         "Pitch-mix fit: damages this arsenal (57% fastballs, rel 1.88 \u2192 mix-fit 1.39x)",
         "Warm (83\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 669065,
-      "name": "Kyle Stowers",
-      "team": "Miami Marlins",
-      "bats": "L",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Jackson Kent",
-      "venue": "Nationals Park",
-      "gamePk": 822691,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.216,
-      "total": 38.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 45.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 5.0,
-        "hitter": 16.2,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1778,
-        "barrel_rate": 0.0534,
-        "hard_hit_rate": 0.4574,
-        "fb_rate": 0.5392,
-        "z_contact_rate": 0.83,
-        "sweet_spot_rate": 0.3465,
-        "xwobacon": null,
-        "ev90": 105.3
-      },
-      "reasons": [
-        "vs Jackson Kent \u2014 cause Pass (5.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.74)",
-        "Zone-damage: hard-hit 46% + Z-contact 83%",
-        "Slightly + park (102)",
-        "Warm (80\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9922,67 +10373,6 @@
       ]
     },
     {
-      "id": 660688,
-      "name": "Keibert Ruiz",
-      "team": "Washington Nationals",
-      "bats": "S",
-      "opp": "Miami Marlins",
-      "opp_pitcher": "Eury P\u00e9rez",
-      "venue": "Nationals Park",
-      "gamePk": 822691,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.172,
-      "total": 38.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 50.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 95%, Z-contact 91%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.3,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.0,
-        "hitter": 15.0,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2421,
-        "barrel_rate": 0.0437,
-        "hard_hit_rate": 0.3326,
-        "fb_rate": 0.5517,
-        "z_contact_rate": 0.9091,
-        "sweet_spot_rate": 0.3575,
-        "xwobacon": null,
-        "ev90": 100.1
-      },
-      "reasons": [
-        "vs Eury P\u00e9rez \u2014 cause Pass (6.0/25)",
-        "Platoon shape: spikes vs RHP (barrel 3%, air-pull 33%)",
-        "Elite air-pull (33%)",
-        "Poor pitch-mix fit (61% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Slightly + park (101)",
-        "Warm (80\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 672275,
       "name": "Patrick Bailey",
       "team": "Cleveland Guardians",
@@ -10092,7 +10482,7 @@
         "Pitcher: Suppresses HR (HR/9 0.75)",
         "Pitcher: High K rate (31%)",
         "Platoon edge (R vs LHP)",
-        "Warm (77\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -10152,7 +10542,7 @@
         "vs Drew Anderson \u2014 cause B (13.5/25)",
         "Pitcher: High HR allowed (HR/9 1.44)",
         "Platoon edge (L vs RHP)",
-        "Warm (77\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -10502,58 +10892,55 @@
       ]
     },
     {
-      "id": 696285,
-      "name": "Jacob Young",
-      "team": "Washington Nationals",
+      "id": 656305,
+      "name": "Matt Chapman",
+      "team": "San Francisco Giants",
       "bats": "R",
-      "opp": "Miami Marlins",
-      "opp_pitcher": "Eury P\u00e9rez",
-      "venue": "Nationals Park",
-      "gamePk": 822691,
+      "opp": "Arizona Diamondbacks",
+      "opp_pitcher": "Kohl Drake",
+      "venue": "Oracle Park",
+      "gamePk": 823178,
       "slot": null,
       "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.15,
-      "total": 37.4,
+      "season_hr": 7,
+      "iso": 0.133,
+      "total": 37.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 47.5,
+      "tb_score": 34.0,
       "tb_tier": "Pass",
       "tb_reasons": [
-        "High-contact bat (contact 83%, Z-contact 87%) \u2014 banks XBH"
+        "Platoon edge (R vs LHP)",
+        "Soft-tossing / hittable arm (TB tailwind)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.12,
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.3,
-      "pitcher_grade": "Pass",
+      "due_hr": null,
+      "pitcher_grade": "A",
       "breakdown": {
-        "pitcher": 6.0,
-        "hitter": 14.4,
-        "environment": 9.0,
+        "pitcher": 19.5,
+        "hitter": 2.0,
+        "environment": 6.0,
         "lineup": 6.0,
-        "confidence": 2.0
+        "confidence": 4.0
       },
-      "statcast": {
-        "air_pull_rate": 0.1808,
-        "barrel_rate": 0.0633,
-        "hard_hit_rate": 0.2602,
-        "fb_rate": 0.5351,
-        "z_contact_rate": 0.87,
-        "sweet_spot_rate": 0.3303,
-        "xwobacon": null,
-        "ev90": 94.4
-      },
+      "statcast": null,
       "reasons": [
-        "vs Eury P\u00e9rez \u2014 cause Pass (6.0/25)",
-        "Good air-pull (22%)",
-        "Slightly + park (100)",
-        "Warm (80\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
+        "vs Kohl Drake \u2014 cause A (19.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.67)",
+        "Pitcher: Hard contact allowed (.552 SLG)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Deep RF triples alley suppresses LHB HR",
+        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
       ],
       "warnings": [
+        "Strong pitcher park (89)",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -10618,57 +11005,6 @@
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 669477,
-      "name": "Casey Schmitt",
-      "team": "San Francisco Giants",
-      "bats": "R",
-      "opp": "Arizona Diamondbacks",
-      "opp_pitcher": null,
-      "venue": "Oracle Park",
-      "gamePk": 823178,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 21,
-      "iso": 0.212,
-      "total": 37.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 54.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 22.0,
-        "environment": 6.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": null,
-      "reasons": [
-        "Proxy: strong HR rate",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
-        "Suppressive park + no pull/barrel fit \u2192 Watchlist"
-      ],
-      "warnings": [
-        "Strong pitcher park (89)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Suppressive park + no pull/barrel fit \u2192 Watchlist"
       ]
     },
     {
@@ -11144,7 +11480,7 @@
         "Platoon shape: spikes vs LHP (barrel 10%, air-pull 14%)",
         "Above-avg barrels (10%)",
         "Pitch-mix fit: damages this arsenal (54% fastballs, rel 1.74 \u2192 mix-fit 1.22x)",
-        "Warm (77\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -11265,7 +11601,7 @@
         "Pitcher: High HR allowed (HR/9 1.44)",
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (40% fastballs, rel 0.30 \u2192 mix-fit 0.51x)",
-        "Warm (77\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -12164,6 +12500,123 @@
       ]
     },
     {
+      "id": 805300,
+      "name": "Jakob Marsee",
+      "team": "Miami Marlins",
+      "bats": "L",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Jackson Kent",
+      "venue": "Nationals Park",
+      "gamePk": 822691,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 8,
+      "iso": 0.115,
+      "total": 34.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 49.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "High-contact bat (contact 83%, Z-contact 89%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.47,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 11.2,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2011,
+        "barrel_rate": 0.0427,
+        "hard_hit_rate": 0.3686,
+        "fb_rate": 0.5503,
+        "z_contact_rate": 0.8948,
+        "sweet_spot_rate": 0.4013,
+        "xwobacon": null,
+        "ev90": 100.3
+      },
+      "reasons": [
+        "vs Jackson Kent \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.74)",
+        "Good air-pull (20%)",
+        "Poor pitch-mix fit (44% fastballs, rel 0.30 \u2192 mix-fit 0.47x)",
+        "Slightly + park (102)",
+        "Hot (87\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 686611,
+      "name": "Dylan Crews",
+      "team": "Washington Nationals",
+      "bats": "R",
+      "opp": "Miami Marlins",
+      "opp_pitcher": "Eury P\u00e9rez",
+      "venue": "Nationals Park",
+      "gamePk": 822691,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 10,
+      "iso": 0.146,
+      "total": 34.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 43.4,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.97,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.0,
+        "hitter": 10.1,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1344,
+        "barrel_rate": 0.0626,
+        "hard_hit_rate": 0.3851,
+        "fb_rate": 0.5034,
+        "z_contact_rate": 0.8446,
+        "sweet_spot_rate": 0.3762,
+        "xwobacon": null,
+        "ev90": 103.9
+      },
+      "reasons": [
+        "vs Eury P\u00e9rez \u2014 cause Pass (6.0/25)",
+        "Slightly + park (100)",
+        "Hot (87\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 683002,
       "name": "Gunnar Henderson",
       "team": "Baltimore Orioles",
@@ -12456,6 +12909,64 @@
       ]
     },
     {
+      "id": 691788,
+      "name": "Joe Mack",
+      "team": "Miami Marlins",
+      "bats": "L",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Jackson Kent",
+      "venue": "Nationals Park",
+      "gamePk": 822691,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 12,
+      "iso": 0.184,
+      "total": 33.4,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 37.3,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.69,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 10.4,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1585,
+        "barrel_rate": 0.0519,
+        "hard_hit_rate": 0.3591,
+        "fb_rate": 0.4546,
+        "z_contact_rate": 0.8342,
+        "sweet_spot_rate": 0.3182,
+        "xwobacon": null,
+        "ev90": 101.5
+      },
+      "reasons": [
+        "vs Jackson Kent \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.74)",
+        "Poor pitch-mix fit (44% fastballs, rel 0.30 \u2192 mix-fit 0.69x)",
+        "Slightly + park (102)",
+        "Hot (87\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 572233,
       "name": "Christian Walker",
       "team": "Houston Astros",
@@ -12574,57 +13085,55 @@
       ]
     },
     {
-      "id": 805300,
-      "name": "Jakob Marsee",
-      "team": "Miami Marlins",
-      "bats": "L",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Jackson Kent",
+      "id": 691781,
+      "name": "Brady House",
+      "team": "Washington Nationals",
+      "bats": "R",
+      "opp": "Miami Marlins",
+      "opp_pitcher": "Eury P\u00e9rez",
       "venue": "Nationals Park",
       "gamePk": 822691,
       "slot": null,
       "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.115,
+      "season_hr": 9,
+      "iso": 0.157,
       "total": 33.2,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 48.0,
-      "tb_tier": "Pass",
+      "tb_score": 51.1,
+      "tb_tier": "Dart",
       "tb_reasons": [
-        "High-contact bat (contact 83%, Z-contact 89%) \u2014 banks XBH"
+        "High-contact bat (contact 92%, Z-contact 91%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.47,
+      "pull_fit": false,
+      "mix_fit": 0.78,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.0,
+      "due_hr": 0.7,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 5.0,
-        "hitter": 11.2,
-        "environment": 9.0,
+        "pitcher": 6.0,
+        "hitter": 9.2,
+        "environment": 10.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.2011,
-        "barrel_rate": 0.0427,
-        "hard_hit_rate": 0.3686,
-        "fb_rate": 0.5503,
-        "z_contact_rate": 0.8948,
-        "sweet_spot_rate": 0.4013,
+        "air_pull_rate": 0.1577,
+        "barrel_rate": 0.0558,
+        "hard_hit_rate": 0.3961,
+        "fb_rate": 0.5106,
+        "z_contact_rate": 0.9063,
+        "sweet_spot_rate": 0.3301,
         "xwobacon": null,
-        "ev90": 100.3
+        "ev90": 101.7
       },
       "reasons": [
-        "vs Jackson Kent \u2014 cause Pass (5.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.74)",
-        "Good air-pull (20%)",
-        "Poor pitch-mix fit (44% fastballs, rel 0.30 \u2192 mix-fit 0.47x)",
-        "Slightly + park (102)",
-        "Warm (80\u00b0F)",
+        "vs Eury P\u00e9rez \u2014 cause Pass (6.0/25)",
+        "Poor pitch-mix fit (61% fastballs, rel 0.30 \u2192 mix-fit 0.78x)",
+        "Slightly + park (100)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -12635,52 +13144,58 @@
       ]
     },
     {
-      "id": 686611,
-      "name": "Dylan Crews",
-      "team": "Washington Nationals",
+      "id": 672640,
+      "name": "Otto Lopez",
+      "team": "Miami Marlins",
       "bats": "R",
-      "opp": "Miami Marlins",
-      "opp_pitcher": "Eury P\u00e9rez",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Jackson Kent",
       "venue": "Nationals Park",
       "gamePk": 822691,
       "slot": null,
       "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.146,
-      "total": 33.1,
+      "season_hr": 9,
+      "iso": 0.136,
+      "total": 33.2,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 42.4,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
+      "tb_score": 51.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 91%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
       "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": 0.97,
+      "mix_fit": 0.47,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.3,
+      "due_hr": 0.7,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 6.0,
-        "hitter": 10.1,
-        "environment": 9.0,
+        "pitcher": 5.0,
+        "hitter": 10.2,
+        "environment": 10.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1344,
-        "barrel_rate": 0.0626,
-        "hard_hit_rate": 0.3851,
-        "fb_rate": 0.5034,
-        "z_contact_rate": 0.8446,
-        "sweet_spot_rate": 0.3762,
+        "air_pull_rate": 0.1329,
+        "barrel_rate": 0.0509,
+        "hard_hit_rate": 0.3656,
+        "fb_rate": 0.4478,
+        "z_contact_rate": 0.9082,
+        "sweet_spot_rate": 0.2851,
         "xwobacon": null,
-        "ev90": 103.9
+        "ev90": 103.6
       },
       "reasons": [
-        "vs Eury P\u00e9rez \u2014 cause Pass (6.0/25)",
+        "vs Jackson Kent \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.74)",
+        "Platoon edge (R vs LHP)",
+        "Poor pitch-mix fit (44% fastballs, rel 0.30 \u2192 mix-fit 0.47x)",
         "Slightly + park (100)",
-        "Warm (80\u00b0F)",
+        "Hot (87\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -12731,7 +13246,7 @@
         "Pitcher: Suppresses HR (HR/9 0.75)",
         "Pitcher: High K rate (31%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (77\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -12787,63 +13302,6 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 646240,
-      "name": "Rafael Devers",
-      "team": "San Francisco Giants",
-      "bats": "L",
-      "opp": "Arizona Diamondbacks",
-      "opp_pitcher": null,
-      "venue": "Oracle Park",
-      "gamePk": 823178,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 29,
-      "iso": 0.238,
-      "total": 32.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 38.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.3,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 17.8,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1797,
-        "barrel_rate": 0.0551,
-        "hard_hit_rate": 0.4055,
-        "fb_rate": 0.5307,
-        "z_contact_rate": 0.8358,
-        "sweet_spot_rate": 0.2986,
-        "xwobacon": null,
-        "ev90": 107.8
-      },
-      "reasons": [
-        "Hot (2 HR / 1 barrels last 7d)",
-        "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (92)",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -13025,64 +13483,6 @@
       ]
     },
     {
-      "id": 691788,
-      "name": "Joe Mack",
-      "team": "Miami Marlins",
-      "bats": "L",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Jackson Kent",
-      "venue": "Nationals Park",
-      "gamePk": 822691,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.184,
-      "total": 32.4,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 36.3,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.69,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 5.0,
-        "hitter": 10.4,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1585,
-        "barrel_rate": 0.0519,
-        "hard_hit_rate": 0.3591,
-        "fb_rate": 0.4546,
-        "z_contact_rate": 0.8342,
-        "sweet_spot_rate": 0.3182,
-        "xwobacon": null,
-        "ev90": 101.5
-      },
-      "reasons": [
-        "vs Jackson Kent \u2014 cause Pass (5.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.74)",
-        "Poor pitch-mix fit (44% fastballs, rel 0.30 \u2192 mix-fit 0.69x)",
-        "Slightly + park (102)",
-        "Warm (80\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 543760,
       "name": "Marcus Semien",
       "team": "New York Mets",
@@ -13130,127 +13530,6 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.21)",
         "Poor pitch-mix fit (60% fastballs, rel 0.30 \u2192 mix-fit 0.39x)",
         "Warm (76\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 691781,
-      "name": "Brady House",
-      "team": "Washington Nationals",
-      "bats": "R",
-      "opp": "Miami Marlins",
-      "opp_pitcher": "Eury P\u00e9rez",
-      "venue": "Nationals Park",
-      "gamePk": 822691,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.157,
-      "total": 32.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 50.1,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 92%, Z-contact 91%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.78,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.0,
-        "hitter": 9.2,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1577,
-        "barrel_rate": 0.0558,
-        "hard_hit_rate": 0.3961,
-        "fb_rate": 0.5106,
-        "z_contact_rate": 0.9063,
-        "sweet_spot_rate": 0.3301,
-        "xwobacon": null,
-        "ev90": 101.7
-      },
-      "reasons": [
-        "vs Eury P\u00e9rez \u2014 cause Pass (6.0/25)",
-        "Poor pitch-mix fit (61% fastballs, rel 0.30 \u2192 mix-fit 0.78x)",
-        "Slightly + park (100)",
-        "Warm (80\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 672640,
-      "name": "Otto Lopez",
-      "team": "Miami Marlins",
-      "bats": "R",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Jackson Kent",
-      "venue": "Nationals Park",
-      "gamePk": 822691,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.136,
-      "total": 32.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 50.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 91%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.47,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 5.0,
-        "hitter": 10.2,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1329,
-        "barrel_rate": 0.0509,
-        "hard_hit_rate": 0.3656,
-        "fb_rate": 0.4478,
-        "z_contact_rate": 0.9082,
-        "sweet_spot_rate": 0.2851,
-        "xwobacon": null,
-        "ev90": 103.6
-      },
-      "reasons": [
-        "vs Jackson Kent \u2014 cause Pass (5.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.74)",
-        "Platoon edge (R vs LHP)",
-        "Poor pitch-mix fit (44% fastballs, rel 0.30 \u2192 mix-fit 0.47x)",
-        "Slightly + park (100)",
-        "Warm (80\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -13485,7 +13764,7 @@
         "Pitcher: High K rate (31%)",
         "Platoon edge (R vs LHP)",
         "Poor pitch-mix fit (54% fastballs, rel 0.30 \u2192 mix-fit 0.54x)",
-        "Warm (77\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -13606,7 +13885,7 @@
         "Pitcher: High K rate (31%)",
         "Platoon edge (R vs LHP)",
         "Poor pitch-mix fit (54% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Warm (77\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -13666,118 +13945,6 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 805811,
-      "name": "Bryce Eldridge",
-      "team": "San Francisco Giants",
-      "bats": "L",
-      "opp": "Arizona Diamondbacks",
-      "opp_pitcher": null,
-      "venue": "Oracle Park",
-      "gamePk": 823178,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.182,
-      "total": 30.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 39.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.0,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 15.5,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1818,
-        "barrel_rate": 0.0799,
-        "hard_hit_rate": 0.4279,
-        "fb_rate": 0.5654,
-        "z_contact_rate": 0.7829,
-        "sweet_spot_rate": 0.3575,
-        "xwobacon": null,
-        "ev90": 106.6
-      },
-      "reasons": [
-        "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (92)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 642715,
-      "name": "Willy Adames",
-      "team": "San Francisco Giants",
-      "bats": "R",
-      "opp": "Arizona Diamondbacks",
-      "opp_pitcher": null,
-      "venue": "Oracle Park",
-      "gamePk": 823178,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 21,
-      "iso": 0.194,
-      "total": 29.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 45.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.3,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 15.5,
-        "environment": 6.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1679,
-        "barrel_rate": 0.0722,
-        "hard_hit_rate": 0.3613,
-        "fb_rate": 0.504,
-        "z_contact_rate": 0.8561,
-        "sweet_spot_rate": 0.3396,
-        "xwobacon": null,
-        "ev90": 101.0
-      },
-      "reasons": [
-        "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Strong pitcher park (89)",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -14009,7 +14176,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 9,
-      "iso": 0.142,
+      "iso": 0.141,
       "total": 28.8,
       "tier": "Pass",
       "role": "Watchlist",
@@ -14227,7 +14394,7 @@
         "Pitcher: Suppresses HR (HR/9 0.75)",
         "Pitcher: High K rate (31%)",
         "Poor pitch-mix fit (54% fastballs, rel 0.30 \u2192 mix-fit 0.39x)",
-        "Warm (77\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -14403,7 +14570,7 @@
         "Platoon shape: spikes vs LHP (barrel 6%, air-pull 12%)",
         "Platoon edge (R vs LHP)",
         "Poor pitch-mix fit (54% fastballs, rel 0.30 \u2192 mix-fit 0.52x)",
-        "Warm (77\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -14692,64 +14859,6 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 808982,
-      "name": "Jung Hoo Lee",
-      "team": "San Francisco Giants",
-      "bats": "L",
-      "opp": "Arizona Diamondbacks",
-      "opp_pitcher": null,
-      "venue": "Oracle Park",
-      "gamePk": 823178,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.134,
-      "total": 26.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 48.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 90%, Z-contact 90%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.3,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 11.2,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1273,
-        "barrel_rate": 0.0592,
-        "hard_hit_rate": 0.3861,
-        "fb_rate": 0.4973,
-        "z_contact_rate": 0.9043,
-        "sweet_spot_rate": 0.3188,
-        "xwobacon": null,
-        "ev90": 98.6
-      },
-      "reasons": [
-        "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (92)",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -15098,60 +15207,32 @@
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
-    },
-    {
-      "id": 656305,
-      "name": "Matt Chapman",
-      "team": "San Francisco Giants",
-      "bats": "R",
-      "opp": "Arizona Diamondbacks",
-      "opp_pitcher": null,
-      "venue": "Oracle Park",
-      "gamePk": 823178,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.133,
-      "total": 16.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 28.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 2.0,
-        "environment": 6.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~15 mph toward CF (approx bearing)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Strong pitcher park (89)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
     }
   ],
   "structures": {},
   "tb_board": [
+    {
+      "id": 695734,
+      "name": "Daylen Lile",
+      "team": "Washington Nationals",
+      "opp": "Miami Marlins",
+      "opp_pitcher": "Eury P\u00e9rez",
+      "venue": "Nationals Park",
+      "gamePk": 822691,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 68.1,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 85%, Z-contact 91%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)",
+        "Hot (3 barrels last 7d)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 56.4,
+      "hr_role": "Pass"
+    },
     {
       "id": 670541,
       "name": "Yordan Alvarez",
@@ -15171,28 +15252,6 @@
       ],
       "shape_source": "statcast",
       "hr_total": 49.0,
-      "hr_role": "Pass"
-    },
-    {
-      "id": 695734,
-      "name": "Daylen Lile",
-      "team": "Washington Nationals",
-      "opp": "Miami Marlins",
-      "opp_pitcher": "Eury P\u00e9rez",
-      "venue": "Nationals Park",
-      "gamePk": 822691,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 67.1,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 85%, Z-contact 91%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)",
-        "Hot (3 barrels last 7d)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 55.4,
       "hr_role": "Pass"
     },
     {
@@ -15560,7 +15619,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 52.0,
+      "hr_total": 53.0,
       "hr_role": "Pass"
     },
     {
@@ -15681,6 +15740,28 @@
       ],
       "shape_source": "statcast",
       "hr_total": 52.8,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 669477,
+      "name": "Casey Schmitt",
+      "team": "San Francisco Giants",
+      "opp": "Arizona Diamondbacks",
+      "opp_pitcher": "Kohl Drake",
+      "venue": "Oracle Park",
+      "gamePk": 823178,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 60.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)",
+        "Soft-tossing / hittable arm (TB tailwind)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "hr_total": 57.5,
       "hr_role": "Watchlist"
     },
     {
@@ -15949,6 +16030,26 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 665953,
+      "name": "Andr\u00e9s Chaparro",
+      "team": "Washington Nationals",
+      "opp": "Miami Marlins",
+      "opp_pitcher": "Eury P\u00e9rez",
+      "venue": "Nationals Park",
+      "gamePk": 822691,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 58.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 82%, Z-contact 88%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 40.1,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 683002,
       "name": "Gunnar Henderson",
       "team": "Baltimore Orioles",
@@ -16066,6 +16167,27 @@
       "hr_role": "Pass"
     },
     {
+      "id": 681715,
+      "name": "Heriberto Hern\u00e1ndez",
+      "team": "Miami Marlins",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Jackson Kent",
+      "venue": "Nationals Park",
+      "gamePk": 822691,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 57.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)",
+        "Hot (3 barrels last 7d)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 48.8,
+      "hr_role": "Pass"
+    },
+    {
       "id": 686469,
       "name": "Vinnie Pasquantino",
       "team": "Kansas City Royals",
@@ -16084,26 +16206,6 @@
       ],
       "shape_source": "statcast",
       "hr_total": 42.8,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 665953,
-      "name": "Andr\u00e9s Chaparro",
-      "team": "Washington Nationals",
-      "opp": "Miami Marlins",
-      "opp_pitcher": "Eury P\u00e9rez",
-      "venue": "Nationals Park",
-      "gamePk": 822691,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 57.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 82%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 39.1,
       "hr_role": "Watchlist"
     },
     {
@@ -16326,27 +16428,6 @@
       "hr_role": "Pass"
     },
     {
-      "id": 681715,
-      "name": "Heriberto Hern\u00e1ndez",
-      "team": "Miami Marlins",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Jackson Kent",
-      "venue": "Nationals Park",
-      "gamePk": 822691,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 56.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)",
-        "Hot (3 barrels last 7d)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 47.8,
-      "hr_role": "Pass"
-    },
-    {
       "id": 592518,
       "name": "Manny Machado",
       "team": "San Diego Padres",
@@ -16406,6 +16487,26 @@
       "shape_source": "statcast",
       "hr_total": 39.3,
       "hr_role": "Watchlist"
+    },
+    {
+      "id": 687551,
+      "name": "Drew Gilbert",
+      "team": "San Francisco Giants",
+      "opp": "Arizona Diamondbacks",
+      "opp_pitcher": "Kohl Drake",
+      "venue": "Oracle Park",
+      "gamePk": 823178,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 56.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 59.3,
+      "hr_role": "Cause Satellite"
     },
     {
       "id": 663728,
@@ -16705,26 +16806,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 669477,
-      "name": "Casey Schmitt",
-      "team": "San Francisco Giants",
-      "opp": "Arizona Diamondbacks",
-      "opp_pitcher": null,
-      "venue": "Oracle Park",
-      "gamePk": 823178,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 54.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 37.0,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 681198,
       "name": "TJ Rumfield",
       "team": "Colorado Rockies",
@@ -16806,6 +16887,24 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 665052,
+      "name": "Griffin Conine",
+      "team": "Miami Marlins",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Jackson Kent",
+      "venue": "Nationals Park",
+      "gamePk": 822691,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 53.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 44.2,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 608070,
       "name": "Jos\u00e9 Ram\u00edrez",
       "team": "Cleveland Guardians",
@@ -16824,24 +16923,6 @@
       "shape_source": "statcast",
       "hr_total": 40.8,
       "hr_role": "Watchlist"
-    },
-    {
-      "id": 687551,
-      "name": "Drew Gilbert",
-      "team": "San Francisco Giants",
-      "opp": "Arizona Diamondbacks",
-      "opp_pitcher": null,
-      "venue": "Oracle Park",
-      "gamePk": 823178,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 53.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 39.8,
-      "hr_role": "Pass"
     },
     {
       "id": 691023,
@@ -16983,24 +17064,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 665052,
-      "name": "Griffin Conine",
-      "team": "Miami Marlins",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Jackson Kent",
-      "venue": "Nationals Park",
-      "gamePk": 822691,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 52.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 43.2,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 681624,
       "name": "Andy Pages",
       "team": "Los Angeles Dodgers",
@@ -17081,6 +17144,27 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 642715,
+      "name": "Willy Adames",
+      "team": "San Francisco Giants",
+      "opp": "Arizona Diamondbacks",
+      "opp_pitcher": "Kohl Drake",
+      "venue": "Oracle Park",
+      "gamePk": 823178,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 51.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)",
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 52.5,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 700250,
       "name": "Ben Rice",
       "team": "New York Yankees",
@@ -17096,6 +17180,24 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 47.4,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 683357,
+      "name": "Owen Caissie",
+      "team": "Miami Marlins",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Jackson Kent",
+      "venue": "Nationals Park",
+      "gamePk": 822691,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 51.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 41.6,
       "hr_role": "Watchlist"
     },
     {
@@ -17177,6 +17279,27 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 672640,
+      "name": "Otto Lopez",
+      "team": "Miami Marlins",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Jackson Kent",
+      "venue": "Nationals Park",
+      "gamePk": 822691,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 51.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 91%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 33.2,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 664770,
       "name": "Nathan Lukes",
       "team": "Toronto Blue Jays",
@@ -17238,6 +17361,47 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 691781,
+      "name": "Brady House",
+      "team": "Washington Nationals",
+      "opp": "Miami Marlins",
+      "opp_pitcher": "Eury P\u00e9rez",
+      "venue": "Nationals Park",
+      "gamePk": 822691,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 51.1,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 92%, Z-contact 91%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 33.2,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 808982,
+      "name": "Jung Hoo Lee",
+      "team": "San Francisco Giants",
+      "opp": "Arizona Diamondbacks",
+      "opp_pitcher": "Kohl Drake",
+      "venue": "Oracle Park",
+      "gamePk": 823178,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 51.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 90%, Z-contact 90%) \u2014 banks XBH",
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 45.3,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 683737,
       "name": "Michael Busch",
       "team": "Chicago Cubs",
@@ -17275,6 +17439,26 @@
       ],
       "shape_source": "statcast",
       "hr_total": 39.7,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 660688,
+      "name": "Keibert Ruiz",
+      "team": "Washington Nationals",
+      "opp": "Miami Marlins",
+      "opp_pitcher": "Eury P\u00e9rez",
+      "venue": "Nationals Park",
+      "gamePk": 822691,
+      "slot": null,
+      "confirmed": false,
+      "bats": "S",
+      "tb_score": 51.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 95%, Z-contact 91%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 39.0,
       "hr_role": "Watchlist"
     },
     {
@@ -17473,45 +17657,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 683357,
-      "name": "Owen Caissie",
-      "team": "Miami Marlins",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Jackson Kent",
-      "venue": "Nationals Park",
-      "gamePk": 822691,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 50.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 40.6,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 672640,
-      "name": "Otto Lopez",
-      "team": "Miami Marlins",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Jackson Kent",
-      "venue": "Nationals Park",
-      "gamePk": 822691,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 50.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 91%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 32.2,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 647304,
       "name": "Josh Naylor",
       "team": "Seattle Mariners",
@@ -17630,26 +17775,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 691781,
-      "name": "Brady House",
-      "team": "Washington Nationals",
-      "opp": "Miami Marlins",
-      "opp_pitcher": "Eury P\u00e9rez",
-      "venue": "Nationals Park",
-      "gamePk": 822691,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 50.1,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 92%, Z-contact 91%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 32.2,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 665833,
       "name": "Oneil Cruz",
       "team": "Pittsburgh Pirates",
@@ -17665,26 +17790,6 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 38.7,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 660688,
-      "name": "Keibert Ruiz",
-      "team": "Washington Nationals",
-      "opp": "Miami Marlins",
-      "opp_pitcher": "Eury P\u00e9rez",
-      "venue": "Nationals Park",
-      "gamePk": 822691,
-      "slot": null,
-      "confirmed": false,
-      "bats": "S",
-      "tb_score": 50.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 95%, Z-contact 91%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 38.0,
       "hr_role": "Watchlist"
     },
     {
@@ -17944,6 +18049,26 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 805300,
+      "name": "Jakob Marsee",
+      "team": "Miami Marlins",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Jackson Kent",
+      "venue": "Nationals Park",
+      "gamePk": 822691,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 49.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "High-contact bat (contact 83%, Z-contact 89%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 34.2,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 691777,
       "name": "Max Muncy",
       "team": "Athletics",
@@ -17982,23 +18107,23 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 808982,
-      "name": "Jung Hoo Lee",
-      "team": "San Francisco Giants",
-      "opp": "Arizona Diamondbacks",
-      "opp_pitcher": null,
-      "venue": "Oracle Park",
-      "gamePk": 823178,
+      "id": 696285,
+      "name": "Jacob Young",
+      "team": "Washington Nationals",
+      "opp": "Miami Marlins",
+      "opp_pitcher": "Eury P\u00e9rez",
+      "venue": "Nationals Park",
+      "gamePk": 822691,
       "slot": null,
       "confirmed": false,
-      "bats": "L",
+      "bats": "R",
       "tb_score": 48.5,
       "tb_tier": "Pass",
       "tb_reasons": [
-        "High-contact bat (contact 90%, Z-contact 90%) \u2014 banks XBH"
+        "High-contact bat (contact 83%, Z-contact 87%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 26.2,
+      "hr_total": 38.4,
       "hr_role": "Watchlist"
     },
     {
@@ -18079,26 +18204,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 805300,
-      "name": "Jakob Marsee",
-      "team": "Miami Marlins",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Jackson Kent",
-      "venue": "Nationals Park",
-      "gamePk": 822691,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 48.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 83%, Z-contact 89%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 33.2,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 666160,
       "name": "Mickey Moniak",
       "team": "Colorado Rockies",
@@ -18175,8 +18280,8 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 696285,
-      "name": "Jacob Young",
+      "id": 682928,
+      "name": "CJ Abrams",
       "team": "Washington Nationals",
       "opp": "Miami Marlins",
       "opp_pitcher": "Eury P\u00e9rez",
@@ -18184,14 +18289,14 @@
       "gamePk": 822691,
       "slot": null,
       "confirmed": false,
-      "bats": "R",
+      "bats": "L",
       "tb_score": 47.5,
       "tb_tier": "Pass",
       "tb_reasons": [
-        "High-contact bat (contact 83%, Z-contact 87%) \u2014 banks XBH"
+        "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 37.4,
+      "hr_total": 43.0,
       "hr_role": "Watchlist"
     },
     {
@@ -18509,11 +18614,11 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 682928,
-      "name": "CJ Abrams",
-      "team": "Washington Nationals",
-      "opp": "Miami Marlins",
-      "opp_pitcher": "Eury P\u00e9rez",
+      "id": 669065,
+      "name": "Kyle Stowers",
+      "team": "Miami Marlins",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Jackson Kent",
       "venue": "Nationals Park",
       "gamePk": 822691,
       "slot": null,
@@ -18521,11 +18626,9 @@
       "bats": "L",
       "tb_score": 46.5,
       "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
+      "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 42.0,
+      "hr_total": 39.2,
       "hr_role": "Watchlist"
     },
     {
@@ -18741,24 +18844,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 669065,
-      "name": "Kyle Stowers",
-      "team": "Miami Marlins",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Jackson Kent",
-      "venue": "Nationals Park",
-      "gamePk": 822691,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 45.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 38.2,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 656555,
       "name": "Rhys Hoskins",
       "team": "Cleveland Guardians",
@@ -18774,24 +18859,6 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 37.7,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 642715,
-      "name": "Willy Adames",
-      "team": "San Francisco Giants",
-      "opp": "Arizona Diamondbacks",
-      "opp_pitcher": null,
-      "venue": "Oracle Park",
-      "gamePk": 823178,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 45.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 29.5,
       "hr_role": "Watchlist"
     },
     {
@@ -19090,6 +19157,24 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 686611,
+      "name": "Dylan Crews",
+      "team": "Washington Nationals",
+      "opp": "Miami Marlins",
+      "opp_pitcher": "Eury P\u00e9rez",
+      "venue": "Nationals Park",
+      "gamePk": 822691,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 43.4,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 34.1,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 694374,
       "name": "Tim Tawa",
       "team": "Arizona Diamondbacks",
@@ -19225,24 +19310,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 686611,
-      "name": "Dylan Crews",
-      "team": "Washington Nationals",
-      "opp": "Miami Marlins",
-      "opp_pitcher": "Eury P\u00e9rez",
-      "venue": "Nationals Park",
-      "gamePk": 822691,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 42.4,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 33.1,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 676609,
       "name": "Jos\u00e9 Caballero",
       "team": "New York Yankees",
@@ -19321,6 +19388,26 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 805811,
+      "name": "Bryce Eldridge",
+      "team": "San Francisco Giants",
+      "opp": "Arizona Diamondbacks",
+      "opp_pitcher": "Kohl Drake",
+      "venue": "Oracle Park",
+      "gamePk": 823178,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 41.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 51.0,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 677951,
       "name": "Bobby Witt Jr.",
       "team": "Kansas City Royals",
@@ -19372,6 +19459,26 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 43.6,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 646240,
+      "name": "Rafael Devers",
+      "team": "San Francisco Giants",
+      "opp": "Arizona Diamondbacks",
+      "opp_pitcher": "Kohl Drake",
+      "venue": "Oracle Park",
+      "gamePk": 823178,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 41.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 53.3,
       "hr_role": "Watchlist"
     },
     {
@@ -19549,42 +19656,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 805811,
-      "name": "Bryce Eldridge",
-      "team": "San Francisco Giants",
-      "opp": "Arizona Diamondbacks",
-      "opp_pitcher": null,
-      "venue": "Oracle Park",
-      "gamePk": 823178,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 39.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 30.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 646240,
-      "name": "Rafael Devers",
-      "team": "San Francisco Giants",
-      "opp": "Arizona Diamondbacks",
-      "opp_pitcher": null,
-      "venue": "Oracle Park",
-      "gamePk": 823178,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 38.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 32.8,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 543760,
       "name": "Marcus Semien",
       "team": "New York Mets",
@@ -19658,6 +19729,24 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 29.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 691788,
+      "name": "Joe Mack",
+      "team": "Miami Marlins",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "Jackson Kent",
+      "venue": "Nationals Park",
+      "gamePk": 822691,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 37.3,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 33.4,
       "hr_role": "Watchlist"
     },
     {
@@ -19777,24 +19866,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 691788,
-      "name": "Joe Mack",
-      "team": "Miami Marlins",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "Jackson Kent",
-      "venue": "Nationals Park",
-      "gamePk": 822691,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 36.3,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 32.4,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 667670,
       "name": "Brent Rooker",
       "team": "Athletics",
@@ -19892,6 +19963,28 @@
       ],
       "shape_source": "proxy",
       "hr_total": 39.5,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 656305,
+      "name": "Matt Chapman",
+      "team": "San Francisco Giants",
+      "opp": "Arizona Diamondbacks",
+      "opp_pitcher": "Kohl Drake",
+      "venue": "Oracle Park",
+      "gamePk": 823178,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 34.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)",
+        "Soft-tossing / hittable arm (TB tailwind)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "hr_total": 37.5,
       "hr_role": "Watchlist"
     },
     {
@@ -20054,26 +20147,6 @@
       "shape_source": "proxy",
       "hr_total": 29.5,
       "hr_role": "Watchlist"
-    },
-    {
-      "id": 656305,
-      "name": "Matt Chapman",
-      "team": "San Francisco Giants",
-      "opp": "Arizona Diamondbacks",
-      "opp_pitcher": null,
-      "venue": "Oracle Park",
-      "gamePk": 823178,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 28.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 16.0,
-      "hr_role": "Watchlist"
     }
   ],
   "pitcher_board": [
@@ -20089,6 +20162,18 @@
       ],
       "hr9": 2.5,
       "barrel_allowed": 0.0725
+    },
+    {
+      "id": 684442,
+      "name": "Kohl Drake",
+      "score": 19.5,
+      "grade": "A",
+      "flags": [
+        "High HR allowed (HR/9 1.67)",
+        "Hard contact allowed (.552 SLG)"
+      ],
+      "hr9": 1.67,
+      "barrel_allowed": null
     },
     {
       "id": 608372,
@@ -20410,6 +20495,18 @@
         "role": "Cause Satellite",
         "total": 61.8,
         "cause_grade": "A+",
+        "result_hr": null,
+        "cause_fired": null,
+        "teammate_hr": null,
+        "outcome": null
+      },
+      {
+        "player": "Drew Gilbert",
+        "team": "San Francisco Giants",
+        "opp_pitcher": "Kohl Drake",
+        "role": "Cause Satellite",
+        "total": 59.3,
+        "cause_grade": "A",
         "result_hr": null,
         "cause_fired": null,
         "teammate_hr": null,
