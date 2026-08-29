@@ -1,6 +1,6 @@
 {
   "version": "2.8",
-  "generated_utc": "2026-08-29T02:20:05.390110+00:00",
+  "generated_utc": "2026-08-29T03:46:42.061702+00:00",
   "slate_date": "2026-08-29",
   "games": 17,
   "confirmed_lineups": 0,
@@ -120,23 +120,10 @@
       "pitcher_cause": 19.0,
       "park_hr": 99,
       "cause_score": 18.8,
-      "capture_method": "2-bat mini-stack (cause supports coverage)",
+      "capture_method": "Team-HR placeholder (cause strong, bat capture thin)",
       "public_heat": false,
-      "n_playable": 2,
-      "playable_bats": [
-        {
-          "name": "Tristan Peters",
-          "total": 63.4,
-          "role": "Cause Satellite",
-          "fit_tag": null
-        },
-        {
-          "name": "Colson Montgomery",
-          "total": 62.0,
-          "role": "Cause Satellite",
-          "fit_tag": null
-        }
-      ]
+      "n_playable": 0,
+      "playable_bats": []
     },
     {
       "team": "Minnesota Twins",
@@ -147,17 +134,10 @@
       "pitcher_cause": 17.5,
       "park_hr": 99,
       "cause_score": 17.2,
-      "capture_method": "Single best bat",
+      "capture_method": "Team-HR placeholder (cause strong, bat capture thin)",
       "public_heat": false,
-      "n_playable": 1,
-      "playable_bats": [
-        {
-          "name": "Kody Clemens",
-          "total": 62.9,
-          "role": "Cause Satellite",
-          "fit_tag": null
-        }
-      ]
+      "n_playable": 0,
+      "playable_bats": []
     },
     {
       "team": "Atlanta Braves",
@@ -363,6 +343,20 @@
       "playable_bats": []
     },
     {
+      "team": "Boston Red Sox",
+      "opp": "New York Yankees",
+      "pitcher": "Max Fried",
+      "venue": "Yankee Stadium",
+      "grade": "Pass",
+      "pitcher_cause": 5.0,
+      "park_hr": 108,
+      "cause_score": 7.0,
+      "capture_method": "Watchlist / pass (no clear cause)",
+      "public_heat": false,
+      "n_playable": 0,
+      "playable_bats": []
+    },
+    {
       "team": "Houston Astros",
       "opp": "New York Mets",
       "pitcher": "Nolan McLean",
@@ -460,7 +454,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 40,
-      "iso": 0.288,
+      "iso": 0.287,
       "total": 66.5,
       "tier": "Longshot",
       "role": "Cause Satellite",
@@ -564,7 +558,7 @@
         "Elite barrel rate (15%)",
         "Platoon edge (L vs RHP)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Model: one strong signal",
         "VALUE longshot: real shape + cause off the chalk"
       ],
@@ -638,193 +632,6 @@
       "role_notes": []
     },
     {
-      "id": 671976,
-      "name": "Tristan Peters",
-      "team": "Chicago White Sox",
-      "bats": "L",
-      "opp": "Minnesota Twins",
-      "opp_pitcher": "Bailey Ober",
-      "venue": "Target Field",
-      "gamePk": 823665,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.191,
-      "total": 63.4,
-      "tier": "Longshot",
-      "role": "Cause Satellite",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)",
-        "Soft-tossing / hittable arm (TB tailwind)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.99,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.7,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 19.0,
-        "hitter": 26.4,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2294,
-        "barrel_rate": 0.072,
-        "hard_hit_rate": 0.4088,
-        "fb_rate": 0.5537,
-        "z_contact_rate": 0.837,
-        "sweet_spot_rate": 0.3914,
-        "xwobacon": null,
-        "ev90": 103.3
-      },
-      "reasons": [
-        "vs Bailey Ober \u2014 cause A (19.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.50)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "Platoon shape: spikes vs RHP (barrel 9%, air-pull 30%)",
-        "Elite air-pull (30%)",
-        "Platoon edge (L vs RHP)",
-        "Hot (3 HR / 2 barrels last 7d)",
-        "Warm (76\u00b0F)",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 665019,
-      "name": "Kody Clemens",
-      "team": "Minnesota Twins",
-      "bats": "L",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Erick Fedde",
-      "venue": "Target Field",
-      "gamePk": 823665,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 22,
-      "iso": 0.227,
-      "total": 62.9,
-      "tier": "Longshot",
-      "role": "Cause Satellite",
-      "tb_score": 54.9,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.23,
-      "fit_tag": null,
-      "value_play": true,
-      "due_hr": 0.3,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 17.5,
-        "hitter": 27.4,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2314,
-        "barrel_rate": 0.0768,
-        "hard_hit_rate": 0.4096,
-        "fb_rate": 0.5345,
-        "z_contact_rate": 0.8454,
-        "sweet_spot_rate": 0.3595,
-        "xwobacon": null,
-        "ev90": 105.2
-      },
-      "reasons": [
-        "vs Erick Fedde \u2014 cause A (17.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.68)",
-        "Pitcher: Fly-ball prone (32% FB allowed)",
-        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 30%)",
-        "Elite air-pull (30%)",
-        "Above-avg barrels (11%)",
-        "Platoon edge (L vs RHP)",
-        "Warm (76\u00b0F)",
-        "Model: one strong signal",
-        "VALUE longshot: real shape + cause off the chalk"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 695657,
-      "name": "Colson Montgomery",
-      "team": "Chicago White Sox",
-      "bats": "L",
-      "opp": "Minnesota Twins",
-      "opp_pitcher": "Bailey Ober",
-      "venue": "Target Field",
-      "gamePk": 823665,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 28,
-      "iso": 0.219,
-      "total": 62.0,
-      "tier": "Longshot",
-      "role": "Cause Satellite",
-      "tb_score": 52.1,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)",
-        "Soft-tossing / hittable arm (TB tailwind)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.15,
-      "fit_tag": null,
-      "value_play": true,
-      "due_hr": 0.3,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 19.0,
-        "hitter": 25.0,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.199,
-        "barrel_rate": 0.0702,
-        "hard_hit_rate": 0.4282,
-        "fb_rate": 0.4958,
-        "z_contact_rate": 0.8546,
-        "sweet_spot_rate": 0.3381,
-        "xwobacon": null,
-        "ev90": 105.0
-      },
-      "reasons": [
-        "vs Bailey Ober \u2014 cause A (19.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.50)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "Platoon shape: spikes vs RHP (barrel 10%, air-pull 23%)",
-        "Strong air-pull (23%)",
-        "Above-avg barrels (10%)",
-        "Platoon edge (L vs RHP)",
-        "Warm (76\u00b0F)",
-        "Model: one strong signal",
-        "VALUE longshot: real shape + cause off the chalk"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 547180,
       "name": "Bryce Harper",
       "team": "Philadelphia Phillies",
@@ -836,7 +643,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 27,
-      "iso": 0.24,
+      "iso": 0.239,
       "total": 61.3,
       "tier": "Pass",
       "role": "Cause Satellite",
@@ -880,6 +687,191 @@
         "Model: one strong signal"
       ],
       "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 671976,
+      "name": "Tristan Peters",
+      "team": "Chicago White Sox",
+      "bats": "L",
+      "opp": "Minnesota Twins",
+      "opp_pitcher": "Bailey Ober",
+      "venue": "Target Field",
+      "gamePk": 823665,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 12,
+      "iso": 0.19,
+      "total": 60.9,
+      "tier": "Pass",
+      "role": "Cause Satellite",
+      "tb_score": 52.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)",
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.99,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.7,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.0,
+        "hitter": 26.4,
+        "environment": 5.5,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2294,
+        "barrel_rate": 0.072,
+        "hard_hit_rate": 0.4088,
+        "fb_rate": 0.5537,
+        "z_contact_rate": 0.837,
+        "sweet_spot_rate": 0.3914,
+        "xwobacon": null,
+        "ev90": 103.3
+      },
+      "reasons": [
+        "vs Bailey Ober \u2014 cause A (19.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.50)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Platoon shape: spikes vs RHP (barrel 9%, air-pull 30%)",
+        "Elite air-pull (30%)",
+        "Platoon edge (L vs RHP)",
+        "Hot (3 HR / 2 barrels last 7d)",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Wind in ~8 mph",
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 665019,
+      "name": "Kody Clemens",
+      "team": "Minnesota Twins",
+      "bats": "L",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Erick Fedde",
+      "venue": "Target Field",
+      "gamePk": 823665,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 22,
+      "iso": 0.227,
+      "total": 60.4,
+      "tier": "Pass",
+      "role": "Cause Satellite",
+      "tb_score": 54.9,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.23,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.3,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 17.5,
+        "hitter": 27.4,
+        "environment": 5.5,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2314,
+        "barrel_rate": 0.0768,
+        "hard_hit_rate": 0.4096,
+        "fb_rate": 0.5345,
+        "z_contact_rate": 0.8454,
+        "sweet_spot_rate": 0.3595,
+        "xwobacon": null,
+        "ev90": 105.2
+      },
+      "reasons": [
+        "vs Erick Fedde \u2014 cause A (17.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.68)",
+        "Pitcher: Fly-ball prone (32% FB allowed)",
+        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 30%)",
+        "Elite air-pull (30%)",
+        "Above-avg barrels (11%)",
+        "Platoon edge (L vs RHP)",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Wind in ~8 mph",
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 695657,
+      "name": "Colson Montgomery",
+      "team": "Chicago White Sox",
+      "bats": "L",
+      "opp": "Minnesota Twins",
+      "opp_pitcher": "Bailey Ober",
+      "venue": "Target Field",
+      "gamePk": 823665,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 28,
+      "iso": 0.218,
+      "total": 59.5,
+      "tier": "Pass",
+      "role": "Cause Satellite",
+      "tb_score": 52.1,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)",
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.15,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.3,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.0,
+        "hitter": 25.0,
+        "environment": 5.5,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.199,
+        "barrel_rate": 0.0702,
+        "hard_hit_rate": 0.4282,
+        "fb_rate": 0.4958,
+        "z_contact_rate": 0.8546,
+        "sweet_spot_rate": 0.3381,
+        "xwobacon": null,
+        "ev90": 105.0
+      },
+      "reasons": [
+        "vs Bailey Ober \u2014 cause A (19.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.50)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Platoon shape: spikes vs RHP (barrel 10%, air-pull 23%)",
+        "Strong air-pull (23%)",
+        "Above-avg barrels (10%)",
+        "Platoon edge (L vs RHP)",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": []
@@ -948,65 +940,6 @@
       "role_notes": []
     },
     {
-      "id": 605137,
-      "name": "Josh Bell",
-      "team": "Minnesota Twins",
-      "bats": "S",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Erick Fedde",
-      "venue": "Target Field",
-      "gamePk": 823665,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.169,
-      "total": 57.5,
-      "tier": "Pass",
-      "role": "Cause Satellite",
-      "tb_score": 65.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 80%, Z-contact 90%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.64,
-      "fit_tag": "PITCH-FIT",
-      "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 17.5,
-        "hitter": 22.0,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1701,
-        "barrel_rate": 0.0926,
-        "hard_hit_rate": 0.4146,
-        "fb_rate": 0.5096,
-        "z_contact_rate": 0.898,
-        "sweet_spot_rate": 0.3288,
-        "xwobacon": null,
-        "ev90": 103.1
-      },
-      "reasons": [
-        "vs Erick Fedde \u2014 cause A (17.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.68)",
-        "Pitcher: Fly-ball prone (32% FB allowed)",
-        "Above-avg barrels (11%)",
-        "Pitch-mix fit: damages this arsenal (51% fastballs, rel 2.16 \u2192 mix-fit 1.64x)",
-        "Warm (76\u00b0F)",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 669016,
       "name": "Brandon Marsh",
       "team": "Philadelphia Phillies",
@@ -1018,7 +951,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 17,
-      "iso": 0.158,
+      "iso": 0.157,
       "total": 57.4,
       "tier": "Pass",
       "role": "Watchlist",
@@ -1060,68 +993,6 @@
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (50% fastballs, rel 0.30 \u2192 mix-fit 1.23x)",
         "Hot (86\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 545341,
-      "name": "Randal Grichuk",
-      "team": "Chicago White Sox",
-      "bats": "R",
-      "opp": "Minnesota Twins",
-      "opp_pitcher": "Bailey Ober",
-      "venue": "Target Field",
-      "gamePk": 823665,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.278,
-      "total": 56.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 51.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Soft-tossing / hittable arm (TB tailwind)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 19.0,
-        "hitter": 19.5,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1989,
-        "barrel_rate": 0.066,
-        "hard_hit_rate": 0.3945,
-        "fb_rate": 0.5443,
-        "z_contact_rate": 0.8553,
-        "sweet_spot_rate": 0.3771,
-        "xwobacon": null,
-        "ev90": 104.9
-      },
-      "reasons": [
-        "vs Bailey Ober \u2014 cause A (19.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.50)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "Good air-pull (20%)",
-        "Cause-capture synergy (air-pull bat vs fly-ball/barrel-prone arm)",
-        "Warm (76\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -1257,6 +1128,65 @@
       "role_notes": []
     },
     {
+      "id": 605137,
+      "name": "Josh Bell",
+      "team": "Minnesota Twins",
+      "bats": "S",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Erick Fedde",
+      "venue": "Target Field",
+      "gamePk": 823665,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 17,
+      "iso": 0.168,
+      "total": 55.0,
+      "tier": "Pass",
+      "role": "Cause Satellite",
+      "tb_score": 65.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 80%, Z-contact 90%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.64,
+      "fit_tag": "PITCH-FIT",
+      "value_play": false,
+      "due_hr": 0.7,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 17.5,
+        "hitter": 22.0,
+        "environment": 5.5,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1701,
+        "barrel_rate": 0.0926,
+        "hard_hit_rate": 0.4146,
+        "fb_rate": 0.5096,
+        "z_contact_rate": 0.898,
+        "sweet_spot_rate": 0.3288,
+        "xwobacon": null,
+        "ev90": 103.1
+      },
+      "reasons": [
+        "vs Erick Fedde \u2014 cause A (17.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.68)",
+        "Pitcher: Fly-ball prone (32% FB allowed)",
+        "Above-avg barrels (11%)",
+        "Pitch-mix fit: damages this arsenal (51% fastballs, rel 2.16 \u2192 mix-fit 1.64x)",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Wind in ~8 mph",
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
       "id": 695578,
       "name": "James Wood",
       "team": "Washington Nationals",
@@ -1307,68 +1237,6 @@
         "Lineup not confirmed"
       ],
       "role_notes": []
-    },
-    {
-      "id": 808959,
-      "name": "Munetaka Murakami",
-      "team": "Chicago White Sox",
-      "bats": "L",
-      "opp": "Minnesota Twins",
-      "opp_pitcher": "Bailey Ober",
-      "venue": "Target Field",
-      "gamePk": 823665,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 29,
-      "iso": 0.284,
-      "total": 54.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.1,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)",
-        "Soft-tossing / hittable arm (TB tailwind)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.16,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.3,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 19.0,
-        "hitter": 17.3,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1574,
-        "barrel_rate": 0.0738,
-        "hard_hit_rate": 0.4407,
-        "fb_rate": 0.4807,
-        "z_contact_rate": 0.8,
-        "sweet_spot_rate": 0.3135,
-        "xwobacon": null,
-        "ev90": 108.4
-      },
-      "reasons": [
-        "vs Bailey Ober \u2014 cause A (19.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.50)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "Platoon edge (L vs RHP)",
-        "Warm (76\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
     },
     {
       "id": 673548,
@@ -1532,13 +1400,75 @@
         "Zone-damage: hard-hit 46% + Z-contact 86%",
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (50% fastballs, rel 1.47 \u2192 mix-fit 1.32x)",
-        "Warm (82\u00b0F)"
+        "Warm (81\u00b0F)"
       ],
       "warnings": [
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": []
+    },
+    {
+      "id": 545341,
+      "name": "Randal Grichuk",
+      "team": "Chicago White Sox",
+      "bats": "R",
+      "opp": "Minnesota Twins",
+      "opp_pitcher": "Bailey Ober",
+      "venue": "Target Field",
+      "gamePk": 823665,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 11,
+      "iso": 0.277,
+      "total": 54.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 51.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.7,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.0,
+        "hitter": 19.5,
+        "environment": 5.5,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1989,
+        "barrel_rate": 0.066,
+        "hard_hit_rate": 0.3945,
+        "fb_rate": 0.5443,
+        "z_contact_rate": 0.8553,
+        "sweet_spot_rate": 0.3771,
+        "xwobacon": null,
+        "ev90": 104.9
+      },
+      "reasons": [
+        "vs Bailey Ober \u2014 cause A (19.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.50)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Good air-pull (20%)",
+        "Cause-capture synergy (air-pull bat vs fly-ball/barrel-prone arm)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Wind in ~8 mph",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 663728,
@@ -1602,194 +1532,6 @@
       "role_notes": []
     },
     {
-      "id": 663616,
-      "name": "Trevor Larnach",
-      "team": "Minnesota Twins",
-      "bats": "L",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Erick Fedde",
-      "venue": "Target Field",
-      "gamePk": 823665,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.159,
-      "total": 53.4,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 48.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.12,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 17.5,
-        "hitter": 17.9,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1788,
-        "barrel_rate": 0.0593,
-        "hard_hit_rate": 0.4258,
-        "fb_rate": 0.5102,
-        "z_contact_rate": 0.8409,
-        "sweet_spot_rate": 0.3479,
-        "xwobacon": null,
-        "ev90": 102.6
-      },
-      "reasons": [
-        "vs Erick Fedde \u2014 cause A (17.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.68)",
-        "Pitcher: Fly-ball prone (32% FB allowed)",
-        "Good air-pull (19%)",
-        "Platoon edge (L vs RHP)",
-        "Warm (76\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 605170,
-      "name": "Victor Caratini",
-      "team": "Minnesota Twins",
-      "bats": "S",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Erick Fedde",
-      "venue": "Target Field",
-      "gamePk": 823665,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.103,
-      "total": 53.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 58.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.62,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 17.5,
-        "hitter": 17.8,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1636,
-        "barrel_rate": 0.0689,
-        "hard_hit_rate": 0.4192,
-        "fb_rate": 0.4863,
-        "z_contact_rate": 0.8831,
-        "sweet_spot_rate": 0.3277,
-        "xwobacon": null,
-        "ev90": 102.6
-      },
-      "reasons": [
-        "vs Erick Fedde \u2014 cause A (17.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.68)",
-        "Pitcher: Fly-ball prone (32% FB allowed)",
-        "Pitch-mix fit: damages this arsenal (51% fastballs, rel 2.20 \u2192 mix-fit 1.62x)",
-        "Warm (76\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 643217,
-      "name": "Andrew Benintendi",
-      "team": "Chicago White Sox",
-      "bats": "L",
-      "opp": "Minnesota Twins",
-      "opp_pitcher": "Bailey Ober",
-      "venue": "Target Field",
-      "gamePk": 823665,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.177,
-      "total": 53.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 49.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)",
-        "Soft-tossing / hittable arm (TB tailwind)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.74,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 19.0,
-        "hitter": 16.2,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.199,
-        "barrel_rate": 0.0485,
-        "hard_hit_rate": 0.3593,
-        "fb_rate": 0.5031,
-        "z_contact_rate": 0.8675,
-        "sweet_spot_rate": 0.3183,
-        "xwobacon": null,
-        "ev90": 100.7
-      },
-      "reasons": [
-        "vs Bailey Ober \u2014 cause A (19.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.50)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "Platoon shape: spikes vs RHP (barrel 3%, air-pull 25%)",
-        "Strong air-pull (25%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (40% breaking balls, rel 1.00 \u2192 mix-fit 0.74x)",
-        "Warm (76\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 573262,
       "name": "Mike Yastrzemski",
       "team": "Atlanta Braves",
@@ -1842,7 +1584,7 @@
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (48% fastballs, rel 0.30 \u2192 mix-fit 0.66x)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -1985,7 +1727,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 14,
-      "iso": 0.198,
+      "iso": 0.197,
       "total": 53.0,
       "tier": "Pass",
       "role": "Pass",
@@ -2082,10 +1824,72 @@
         "Strong barrels (14%)",
         "Pitch-mix fit: damages this arsenal (48% fastballs, rel 1.43 \u2192 mix-fit 1.21x)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 808959,
+      "name": "Munetaka Murakami",
+      "team": "Chicago White Sox",
+      "bats": "L",
+      "opp": "Minnesota Twins",
+      "opp_pitcher": "Bailey Ober",
+      "venue": "Target Field",
+      "gamePk": 823665,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 29,
+      "iso": 0.284,
+      "total": 51.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 52.1,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)",
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.16,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.3,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.0,
+        "hitter": 17.3,
+        "environment": 5.5,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1574,
+        "barrel_rate": 0.0738,
+        "hard_hit_rate": 0.4407,
+        "fb_rate": 0.4807,
+        "z_contact_rate": 0.8,
+        "sweet_spot_rate": 0.3135,
+        "xwobacon": null,
+        "ev90": 108.4
+      },
+      "reasons": [
+        "vs Bailey Ober \u2014 cause A (19.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.50)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Platoon edge (L vs RHP)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -2271,7 +2075,7 @@
         "Strong barrels (12%)",
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (51% fastballs, rel 2.20 \u2192 mix-fit 1.80x)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Model: one strong signal"
       ],
       "warnings": [
@@ -2281,62 +2085,122 @@
       "role_notes": []
     },
     {
-      "id": 680777,
-      "name": "Ryan Jeffers",
+      "id": 663616,
+      "name": "Trevor Larnach",
       "team": "Minnesota Twins",
-      "bats": "R",
+      "bats": "L",
       "opp": "Chicago White Sox",
       "opp_pitcher": "Erick Fedde",
       "venue": "Target Field",
       "gamePk": 823665,
       "slot": null,
       "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.194,
-      "total": 50.8,
+      "season_hr": 11,
+      "iso": 0.158,
+      "total": 50.9,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 53.9,
-      "tb_tier": "Dart",
+      "tb_score": 48.0,
+      "tb_tier": "Pass",
       "tb_reasons": [
-        "High-contact bat (contact 91%, Z-contact 89%) \u2014 banks XBH"
+        "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 1.36,
+      "mix_fit": 1.12,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 1.3,
+      "due_hr": 0.7,
       "pitcher_grade": "A",
       "breakdown": {
         "pitcher": 17.5,
-        "hitter": 15.3,
-        "environment": 8.0,
+        "hitter": 17.9,
+        "environment": 5.5,
         "lineup": 6.0,
         "confidence": 4.0
       },
       "statcast": {
-        "air_pull_rate": 0.1661,
-        "barrel_rate": 0.072,
-        "hard_hit_rate": 0.341,
-        "fb_rate": 0.4812,
-        "z_contact_rate": 0.8901,
-        "sweet_spot_rate": 0.3334,
+        "air_pull_rate": 0.1788,
+        "barrel_rate": 0.0593,
+        "hard_hit_rate": 0.4258,
+        "fb_rate": 0.5102,
+        "z_contact_rate": 0.8409,
+        "sweet_spot_rate": 0.3479,
         "xwobacon": null,
-        "ev90": 105.7
+        "ev90": 102.6
       },
       "reasons": [
         "vs Erick Fedde \u2014 cause A (17.5/25)",
         "Pitcher: High HR allowed (HR/9 1.68)",
         "Pitcher: Fly-ball prone (32% FB allowed)",
-        "Platoon shape: spikes vs RHP (barrel 10%, air-pull 15%)",
-        "Above-avg barrels (10%)",
-        "Pitch-mix fit: damages this arsenal (51% fastballs, rel 2.20 \u2192 mix-fit 1.36x)",
-        "Warm (76\u00b0F)",
+        "Good air-pull (19%)",
+        "Platoon edge (L vs RHP)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
       "warnings": [
+        "Wind in ~8 mph",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 605170,
+      "name": "Victor Caratini",
+      "team": "Minnesota Twins",
+      "bats": "S",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Erick Fedde",
+      "venue": "Target Field",
+      "gamePk": 823665,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.103,
+      "total": 50.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 58.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 88%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.62,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.7,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 17.5,
+        "hitter": 17.8,
+        "environment": 5.5,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1636,
+        "barrel_rate": 0.0689,
+        "hard_hit_rate": 0.4192,
+        "fb_rate": 0.4863,
+        "z_contact_rate": 0.8831,
+        "sweet_spot_rate": 0.3277,
+        "xwobacon": null,
+        "ev90": 102.6
+      },
+      "reasons": [
+        "vs Erick Fedde \u2014 cause A (17.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.68)",
+        "Pitcher: Fly-ball prone (32% FB allowed)",
+        "Pitch-mix fit: damages this arsenal (51% fastballs, rel 2.20 \u2192 mix-fit 1.62x)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -2394,10 +2258,75 @@
         "Platoon shape: spikes vs RHP (barrel 9%, air-pull 16%)",
         "Platoon edge (L vs RHP)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 643217,
+      "name": "Andrew Benintendi",
+      "team": "Chicago White Sox",
+      "bats": "L",
+      "opp": "Minnesota Twins",
+      "opp_pitcher": "Bailey Ober",
+      "venue": "Target Field",
+      "gamePk": 823665,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 13,
+      "iso": 0.177,
+      "total": 50.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 49.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)",
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.74,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.0,
+        "hitter": 16.2,
+        "environment": 5.5,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.199,
+        "barrel_rate": 0.0485,
+        "hard_hit_rate": 0.3593,
+        "fb_rate": 0.5031,
+        "z_contact_rate": 0.8675,
+        "sweet_spot_rate": 0.3183,
+        "xwobacon": null,
+        "ev90": 100.7
+      },
+      "reasons": [
+        "vs Bailey Ober \u2014 cause A (19.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.50)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Platoon shape: spikes vs RHP (barrel 3%, air-pull 25%)",
+        "Strong air-pull (25%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (40% breaking balls, rel 1.00 \u2192 mix-fit 0.74x)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -2590,67 +2519,6 @@
       ]
     },
     {
-      "id": 668904,
-      "name": "Royce Lewis",
-      "team": "Minnesota Twins",
-      "bats": "R",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Erick Fedde",
-      "venue": "Target Field",
-      "gamePk": 823665,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.167,
-      "total": 50.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 44.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.3,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 17.5,
-        "hitter": 15.0,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2396,
-        "barrel_rate": 0.0439,
-        "hard_hit_rate": 0.3612,
-        "fb_rate": 0.5298,
-        "z_contact_rate": 0.8572,
-        "sweet_spot_rate": 0.3784,
-        "xwobacon": null,
-        "ev90": 103.1
-      },
-      "reasons": [
-        "vs Erick Fedde \u2014 cause A (17.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.68)",
-        "Pitcher: Fly-ball prone (32% FB allowed)",
-        "Platoon shape: spikes vs RHP (barrel 3%, air-pull 32%)",
-        "Elite air-pull (32%)",
-        "Poor pitch-mix fit (51% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Warm (76\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 656537,
       "name": "Derek Hill",
       "team": "Philadelphia Phillies",
@@ -2662,7 +2530,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 9,
-      "iso": 0.185,
+      "iso": 0.183,
       "total": 50.5,
       "tier": "Pass",
       "role": "Watchlist",
@@ -2761,69 +2629,8 @@
         "Strong air-pull (23%)",
         "Poor pitch-mix fit (48% fastballs, rel 1.33 \u2192 mix-fit 0.79x)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 678246,
-      "name": "Miguel Vargas",
-      "team": "Chicago White Sox",
-      "bats": "R",
-      "opp": "Minnesota Twins",
-      "opp_pitcher": "Bailey Ober",
-      "venue": "Target Field",
-      "gamePk": 823665,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 29,
-      "iso": 0.245,
-      "total": 50.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 58.4,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 90%, Z-contact 90%) \u2014 banks XBH",
-        "Soft-tossing / hittable arm (TB tailwind)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.11,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.3,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 19.0,
-        "hitter": 13.3,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1738,
-        "barrel_rate": 0.0653,
-        "hard_hit_rate": 0.3749,
-        "fb_rate": 0.4962,
-        "z_contact_rate": 0.8982,
-        "sweet_spot_rate": 0.3247,
-        "xwobacon": null,
-        "ev90": 106.5
-      },
-      "reasons": [
-        "vs Bailey Ober \u2014 cause A (19.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.50)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "Warm (76\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -2943,7 +2750,7 @@
         "Zone-damage: hard-hit 47% + Z-contact 89%",
         "Platoon edge (L vs RHP)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3177,66 +2984,6 @@
         "Lineup not confirmed"
       ],
       "role_notes": []
-    },
-    {
-      "id": 621439,
-      "name": "Byron Buxton",
-      "team": "Minnesota Twins",
-      "bats": "R",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Erick Fedde",
-      "venue": "Target Field",
-      "gamePk": 823665,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 25,
-      "iso": 0.257,
-      "total": 49.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 58.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 87%, Z-contact 89%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 17.5,
-        "hitter": 13.5,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1732,
-        "barrel_rate": 0.0526,
-        "hard_hit_rate": 0.3824,
-        "fb_rate": 0.4701,
-        "z_contact_rate": 0.8919,
-        "sweet_spot_rate": 0.3167,
-        "xwobacon": null,
-        "ev90": 103.8
-      },
-      "reasons": [
-        "vs Erick Fedde \u2014 cause A (17.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.68)",
-        "Pitcher: Fly-ball prone (32% FB allowed)",
-        "Warm (76\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
     },
     {
       "id": 592450,
@@ -3645,6 +3392,69 @@
       ]
     },
     {
+      "id": 680777,
+      "name": "Ryan Jeffers",
+      "team": "Minnesota Twins",
+      "bats": "R",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Erick Fedde",
+      "venue": "Target Field",
+      "gamePk": 823665,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 10,
+      "iso": 0.193,
+      "total": 48.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 53.9,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 91%, Z-contact 89%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.36,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 1.3,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 17.5,
+        "hitter": 15.3,
+        "environment": 5.5,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1661,
+        "barrel_rate": 0.072,
+        "hard_hit_rate": 0.341,
+        "fb_rate": 0.4812,
+        "z_contact_rate": 0.8901,
+        "sweet_spot_rate": 0.3334,
+        "xwobacon": null,
+        "ev90": 105.7
+      },
+      "reasons": [
+        "vs Erick Fedde \u2014 cause A (17.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.68)",
+        "Pitcher: Fly-ball prone (32% FB allowed)",
+        "Platoon shape: spikes vs RHP (barrel 10%, air-pull 15%)",
+        "Above-avg barrels (10%)",
+        "Pitch-mix fit: damages this arsenal (51% fastballs, rel 2.20 \u2192 mix-fit 1.36x)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Wind in ~8 mph",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 681082,
       "name": "Bryson Stott",
       "team": "Philadelphia Phillies",
@@ -3656,7 +3466,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 9,
-      "iso": 0.146,
+      "iso": 0.145,
       "total": 48.3,
       "tier": "Pass",
       "role": "Watchlist",
@@ -3702,6 +3512,67 @@
         "Model: one strong signal"
       ],
       "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 668904,
+      "name": "Royce Lewis",
+      "team": "Minnesota Twins",
+      "bats": "R",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Erick Fedde",
+      "venue": "Target Field",
+      "gamePk": 823665,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 13,
+      "iso": 0.167,
+      "total": 48.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 44.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.3,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 17.5,
+        "hitter": 15.0,
+        "environment": 5.5,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2396,
+        "barrel_rate": 0.0439,
+        "hard_hit_rate": 0.3612,
+        "fb_rate": 0.5298,
+        "z_contact_rate": 0.8572,
+        "sweet_spot_rate": 0.3784,
+        "xwobacon": null,
+        "ev90": 103.1
+      },
+      "reasons": [
+        "vs Erick Fedde \u2014 cause A (17.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.68)",
+        "Pitcher: Fly-ball prone (32% FB allowed)",
+        "Platoon shape: spikes vs RHP (barrel 3%, air-pull 32%)",
+        "Elite air-pull (32%)",
+        "Poor pitch-mix fit (51% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -3820,6 +3691,67 @@
         "Lineup not confirmed"
       ],
       "role_notes": []
+    },
+    {
+      "id": 678246,
+      "name": "Miguel Vargas",
+      "team": "Chicago White Sox",
+      "bats": "R",
+      "opp": "Minnesota Twins",
+      "opp_pitcher": "Bailey Ober",
+      "venue": "Target Field",
+      "gamePk": 823665,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 29,
+      "iso": 0.244,
+      "total": 47.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 58.4,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 90%, Z-contact 90%) \u2014 banks XBH",
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.11,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.3,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.0,
+        "hitter": 13.3,
+        "environment": 5.5,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1738,
+        "barrel_rate": 0.0653,
+        "hard_hit_rate": 0.3749,
+        "fb_rate": 0.4962,
+        "z_contact_rate": 0.8982,
+        "sweet_spot_rate": 0.3247,
+        "xwobacon": null,
+        "ev90": 106.5
+      },
+      "reasons": [
+        "vs Bailey Ober \u2014 cause A (19.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.50)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Wind in ~8 mph",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 592885,
@@ -4002,67 +3934,6 @@
       ]
     },
     {
-      "id": 686797,
-      "name": "Brooks Lee",
-      "team": "Minnesota Twins",
-      "bats": "S",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Erick Fedde",
-      "venue": "Target Field",
-      "gamePk": 823665,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 22,
-      "iso": 0.195,
-      "total": 47.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 55.7,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 86%, Z-contact 91%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.81,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 17.5,
-        "hitter": 11.6,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1771,
-        "barrel_rate": 0.0515,
-        "hard_hit_rate": 0.3256,
-        "fb_rate": 0.5457,
-        "z_contact_rate": 0.9074,
-        "sweet_spot_rate": 0.3457,
-        "xwobacon": null,
-        "ev90": 97.2
-      },
-      "reasons": [
-        "vs Erick Fedde \u2014 cause A (17.5/25)",
-        "Pitcher: High HR allowed (HR/9 1.68)",
-        "Pitcher: Fly-ball prone (32% FB allowed)",
-        "Poor pitch-mix fit (51% fastballs, rel 1.29 \u2192 mix-fit 0.81x)",
-        "Warm (76\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 608324,
       "name": "Alex Bregman",
       "team": "Chicago Cubs",
@@ -4177,7 +4048,7 @@
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (58% fastballs, rel 2.20 \u2192 mix-fit 1.78x)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)"
+        "Warm (83\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -4300,6 +4171,66 @@
       ]
     },
     {
+      "id": 621439,
+      "name": "Byron Buxton",
+      "team": "Minnesota Twins",
+      "bats": "R",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Erick Fedde",
+      "venue": "Target Field",
+      "gamePk": 823665,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 25,
+      "iso": 0.257,
+      "total": 46.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 58.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 87%, Z-contact 89%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 17.5,
+        "hitter": 13.5,
+        "environment": 5.5,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1732,
+        "barrel_rate": 0.0526,
+        "hard_hit_rate": 0.3824,
+        "fb_rate": 0.4701,
+        "z_contact_rate": 0.8919,
+        "sweet_spot_rate": 0.3167,
+        "xwobacon": null,
+        "ev90": 103.8
+      },
+      "reasons": [
+        "vs Erick Fedde \u2014 cause A (17.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.68)",
+        "Pitcher: Fly-ball prone (32% FB allowed)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Wind in ~8 mph",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 683357,
       "name": "Owen Caissie",
       "team": "Miami Marlins",
@@ -4355,70 +4286,6 @@
         "Slightly + park (102)",
         "Hot (86\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 803011,
-      "name": "Sam Antonacci",
-      "team": "Chicago White Sox",
-      "bats": "L",
-      "opp": "Minnesota Twins",
-      "opp_pitcher": "Bailey Ober",
-      "venue": "Target Field",
-      "gamePk": 823665,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.125,
-      "total": 46.4,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 81%, Z-contact 88%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)",
-        "Soft-tossing / hittable arm (TB tailwind)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.74,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 19.0,
-        "hitter": 9.4,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1581,
-        "barrel_rate": 0.0444,
-        "hard_hit_rate": 0.3035,
-        "fb_rate": 0.5508,
-        "z_contact_rate": 0.8772,
-        "sweet_spot_rate": 0.3836,
-        "xwobacon": null,
-        "ev90": 97.8
-      },
-      "reasons": [
-        "vs Bailey Ober \u2014 cause A (19.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.50)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (40% breaking balls, rel 1.00 \u2192 mix-fit 0.74x)",
-        "Warm (76\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -4896,7 +4763,7 @@
         "vs Keider Montero \u2014 cause Pass (8.5/25)",
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (82\u00b0F)"
+        "Warm (81\u00b0F)"
       ],
       "warnings": [
         "Pitcher park (94)",
@@ -4966,6 +4833,56 @@
       ]
     },
     {
+      "id": 678554,
+      "name": "Curtis Mead",
+      "team": "Boston Red Sox",
+      "bats": "R",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Max Fried",
+      "venue": "Yankee Stadium",
+      "gamePk": 823501,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 17,
+      "iso": 0.245,
+      "total": 45.0,
+      "tier": "Pass",
+      "role": "Pass",
+      "tb_score": 60.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 22.0,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Max Fried \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.21)",
+        "Proxy: strong HR rate",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
       "id": 691777,
       "name": "Max Muncy",
       "team": "Athletics",
@@ -4977,7 +4894,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 7,
-      "iso": 0.162,
+      "iso": 0.16,
       "total": 45.0,
       "tier": "Pass",
       "role": "Watchlist",
@@ -5144,60 +5061,60 @@
       ]
     },
     {
-      "id": 807712,
-      "name": "Luke Keaschall",
+      "id": 686797,
+      "name": "Brooks Lee",
       "team": "Minnesota Twins",
-      "bats": "R",
+      "bats": "S",
       "opp": "Chicago White Sox",
       "opp_pitcher": "Erick Fedde",
       "venue": "Target Field",
       "gamePk": 823665,
       "slot": null,
       "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.11,
-      "total": 44.7,
+      "season_hr": 22,
+      "iso": 0.195,
+      "total": 44.6,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 51.2,
+      "tb_score": 55.7,
       "tb_tier": "Dart",
       "tb_reasons": [
-        "High-contact bat (contact 88%, Z-contact 91%) \u2014 banks XBH"
+        "High-contact bat (contact 86%, Z-contact 91%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": 0.8,
+      "mix_fit": 0.81,
       "fit_tag": null,
       "value_play": false,
       "due_hr": -0.3,
       "pitcher_grade": "A",
       "breakdown": {
         "pitcher": 17.5,
-        "hitter": 9.2,
-        "environment": 8.0,
+        "hitter": 11.6,
+        "environment": 5.5,
         "lineup": 6.0,
         "confidence": 4.0
       },
       "statcast": {
-        "air_pull_rate": 0.1822,
-        "barrel_rate": 0.0564,
-        "hard_hit_rate": 0.367,
-        "fb_rate": 0.5234,
-        "z_contact_rate": 0.9111,
-        "sweet_spot_rate": 0.3288,
+        "air_pull_rate": 0.1771,
+        "barrel_rate": 0.0515,
+        "hard_hit_rate": 0.3256,
+        "fb_rate": 0.5457,
+        "z_contact_rate": 0.9074,
+        "sweet_spot_rate": 0.3457,
         "xwobacon": null,
-        "ev90": 101.1
+        "ev90": 97.2
       },
       "reasons": [
         "vs Erick Fedde \u2014 cause A (17.5/25)",
         "Pitcher: High HR allowed (HR/9 1.68)",
         "Pitcher: Fly-ball prone (32% FB allowed)",
-        "Poor pitch-mix fit (51% fastballs, rel 1.11 \u2192 mix-fit 0.80x)",
-        "Warm (76\u00b0F)",
+        "Poor pitch-mix fit (51% fastballs, rel 1.29 \u2192 mix-fit 0.81x)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
       "warnings": [
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -5499,6 +5416,70 @@
       ]
     },
     {
+      "id": 803011,
+      "name": "Sam Antonacci",
+      "team": "Chicago White Sox",
+      "bats": "L",
+      "opp": "Minnesota Twins",
+      "opp_pitcher": "Bailey Ober",
+      "venue": "Target Field",
+      "gamePk": 823665,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 8,
+      "iso": 0.125,
+      "total": 43.9,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 52.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 81%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)",
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.74,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.0,
+        "hitter": 9.4,
+        "environment": 5.5,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1581,
+        "barrel_rate": 0.0444,
+        "hard_hit_rate": 0.3035,
+        "fb_rate": 0.5508,
+        "z_contact_rate": 0.8772,
+        "sweet_spot_rate": 0.3836,
+        "xwobacon": null,
+        "ev90": 97.8
+      },
+      "reasons": [
+        "vs Bailey Ober \u2014 cause A (19.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.50)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (40% breaking balls, rel 1.00 \u2192 mix-fit 0.74x)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Wind in ~8 mph",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 668723,
       "name": "Ryan Vilade",
       "team": "Tampa Bay Rays",
@@ -5666,11 +5647,11 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.32)",
         "Good air-pull (19%)",
         "Poor pitch-mix fit (57% fastballs, rel 0.30 \u2192 mix-fit 0.83x)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -5751,7 +5732,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 17,
-      "iso": 0.141,
+      "iso": 0.14,
       "total": 43.3,
       "tier": "Pass",
       "role": "Watchlist",
@@ -5911,11 +5892,11 @@
         "vs Daniel Lynch IV \u2014 cause B (15.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 0.62)",
         "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -6092,7 +6073,7 @@
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (58% fastballs, rel 2.20 \u2192 mix-fit 1.80x)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6202,7 +6183,7 @@
         "vs Mart\u00edn P\u00e9rez \u2014 cause Pass (7.0/25)",
         "Good air-pull (22%)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6323,11 +6304,11 @@
         "Pitcher: Fly-ball prone (30% FB allowed)",
         "Platoon edge (R vs LHP)",
         "Poor pitch-mix fit (50% fastballs, rel 0.30 \u2192 mix-fit 0.65x)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -6385,11 +6366,11 @@
         "Pitcher: Fly-ball prone (30% FB allowed)",
         "Good air-pull (21%)",
         "Poor pitch-mix fit (50% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -6408,7 +6389,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 32,
-      "iso": 0.238,
+      "iso": 0.236,
       "total": 42.7,
       "tier": "Pass",
       "role": "Pass",
@@ -6493,7 +6474,7 @@
         "Pitcher: Elevated HR allowed (HR/9 1.76)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6605,11 +6586,11 @@
         "Pitcher: Fly-ball prone (30% FB allowed)",
         "Good air-pull (20%)",
         "Poor pitch-mix fit (50% fastballs, rel 1.00 \u2192 mix-fit 0.84x)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -6730,11 +6711,11 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.32)",
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (57% fastballs, rel 2.19 \u2192 mix-fit 1.37x)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -6742,62 +6723,60 @@
       ]
     },
     {
-      "id": 805367,
-      "name": "Chase Meidroth",
-      "team": "Chicago White Sox",
+      "id": 807712,
+      "name": "Luke Keaschall",
+      "team": "Minnesota Twins",
       "bats": "R",
-      "opp": "Minnesota Twins",
-      "opp_pitcher": "Bailey Ober",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Erick Fedde",
       "venue": "Target Field",
       "gamePk": 823665,
       "slot": null,
       "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.128,
+      "season_hr": 8,
+      "iso": 0.11,
       "total": 42.2,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 48.5,
-      "tb_tier": "Pass",
+      "tb_score": 51.2,
+      "tb_tier": "Dart",
       "tb_reasons": [
-        "High-contact bat (contact 80%, Z-contact 88%) \u2014 banks XBH",
-        "Soft-tossing / hittable arm (TB tailwind)"
+        "High-contact bat (contact 88%, Z-contact 91%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": 0.46,
+      "mix_fit": 0.8,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -1.0,
+      "due_hr": -0.3,
       "pitcher_grade": "A",
       "breakdown": {
-        "pitcher": 19.0,
-        "hitter": 5.2,
-        "environment": 8.0,
+        "pitcher": 17.5,
+        "hitter": 9.2,
+        "environment": 5.5,
         "lineup": 6.0,
         "confidence": 4.0
       },
       "statcast": {
-        "air_pull_rate": 0.16,
-        "barrel_rate": 0.0449,
-        "hard_hit_rate": 0.389,
-        "fb_rate": 0.4334,
-        "z_contact_rate": 0.8817,
-        "sweet_spot_rate": 0.3195,
+        "air_pull_rate": 0.1822,
+        "barrel_rate": 0.0564,
+        "hard_hit_rate": 0.367,
+        "fb_rate": 0.5234,
+        "z_contact_rate": 0.9111,
+        "sweet_spot_rate": 0.3288,
         "xwobacon": null,
-        "ev90": 98.2
+        "ev90": 101.1
       },
       "reasons": [
-        "vs Bailey Ober \u2014 cause A (19.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.50)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "Platoon shape fades vs RHP",
-        "Poor pitch-mix fit (40% breaking balls, rel 0.30 \u2192 mix-fit 0.46x)",
-        "Warm (76\u00b0F)",
+        "vs Erick Fedde \u2014 cause A (17.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.68)",
+        "Pitcher: Fly-ball prone (32% FB allowed)",
+        "Poor pitch-mix fit (51% fastballs, rel 1.11 \u2192 mix-fit 0.80x)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
       "warnings": [
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -6903,11 +6882,11 @@
         "Pitcher: Avg+ HR allowed (HR/9 0.62)",
         "Pitcher: Fly-ball prone (30% FB allowed)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -6965,11 +6944,11 @@
         "Pitcher: Fly-ball prone (30% FB allowed)",
         "Good air-pull (20%)",
         "Poor pitch-mix fit (50% fastballs, rel 0.30 \u2192 mix-fit 0.49x)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -7026,11 +7005,11 @@
         "Pitcher: Avg+ HR allowed (HR/9 0.62)",
         "Pitcher: Fly-ball prone (30% FB allowed)",
         "Poor pitch-mix fit (50% fastballs, rel 0.30 \u2192 mix-fit 0.65x)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -7210,6 +7189,66 @@
       ]
     },
     {
+      "id": 668939,
+      "name": "Adley Rutschman",
+      "team": "Boston Red Sox",
+      "bats": "S",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Max Fried",
+      "venue": "Yankee Stadium",
+      "gamePk": 823501,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 9,
+      "iso": 0.168,
+      "total": 41.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 59.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 97%, Z-contact 90%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.74,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 17.5,
+        "environment": 11.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1798,
+        "barrel_rate": 0.0642,
+        "hard_hit_rate": 0.3608,
+        "fb_rate": 0.4636,
+        "z_contact_rate": 0.8975,
+        "sweet_spot_rate": 0.3334,
+        "xwobacon": null,
+        "ev90": 105.1
+      },
+      "reasons": [
+        "vs Max Fried \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.21)",
+        "Pitch-mix fit: damages this arsenal (66% fastballs, rel 2.20 \u2192 mix-fit 1.74x)",
+        "Hitter-friendly park (108)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 666126,
       "name": "Carlos Cortes",
       "team": "Athletics",
@@ -7221,7 +7260,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 8,
-      "iso": 0.148,
+      "iso": 0.146,
       "total": 41.3,
       "tier": "Pass",
       "role": "Watchlist",
@@ -7379,11 +7418,11 @@
       "reasons": [
         "vs Foster Griffin \u2014 cause C (11.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.32)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -7620,7 +7659,7 @@
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (58% fastballs, rel 2.20 \u2192 mix-fit 1.69x)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7677,11 +7716,11 @@
         "vs Daniel Lynch IV \u2014 cause B (15.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 0.62)",
         "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -7735,7 +7774,7 @@
         "vs Keider Montero \u2014 cause Pass (8.5/25)",
         "Hard-hit 45%",
         "Pitch-mix fit: damages this arsenal (51% fastballs, rel 2.20 \u2192 mix-fit 1.36x)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7916,11 +7955,11 @@
         "vs Daniel Lynch IV \u2014 cause B (15.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 0.62)",
         "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -7939,7 +7978,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 15,
-      "iso": 0.204,
+      "iso": 0.202,
       "total": 40.3,
       "tier": "Pass",
       "role": "Watchlist",
@@ -8053,109 +8092,6 @@
       ]
     },
     {
-      "id": 678554,
-      "name": "Curtis Mead",
-      "team": "Boston Red Sox",
-      "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": null,
-      "venue": "Yankee Stadium",
-      "gamePk": 823501,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.245,
-      "total": 40.0,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 58.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 22.0,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": null,
-      "reasons": [
-        "Proxy: strong HR rate",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 687952,
-      "name": "Christian Encarnacion-Strand",
-      "team": "Baltimore Orioles",
-      "bats": "R",
-      "opp": "Athletics",
-      "opp_pitcher": null,
-      "venue": "Sutter Health Park",
-      "gamePk": 824961,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 7,
-      "iso": 0.253,
-      "total": 40.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 55.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.0,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 20.5,
-        "environment": 10.5,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2063,
-        "barrel_rate": 0.0805,
-        "hard_hit_rate": 0.3987,
-        "fb_rate": 0.5371,
-        "z_contact_rate": 0.8674,
-        "sweet_spot_rate": 0.3562,
-        "xwobacon": null,
-        "ev90": 108.2
-      },
-      "reasons": [
-        "Good air-pull (21%)",
-        "Slightly + park (102)",
-        "Warm (79\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 665161,
       "name": "Jeremy Pe\u00f1a",
       "team": "Houston Astros",
@@ -8226,7 +8162,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 17,
-      "iso": 0.226,
+      "iso": 0.225,
       "total": 39.8,
       "tier": "Pass",
       "role": "Watchlist",
@@ -8285,7 +8221,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 18,
-      "iso": 0.228,
+      "iso": 0.226,
       "total": 39.7,
       "tier": "Pass",
       "role": "Watchlist",
@@ -8325,6 +8261,69 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 805367,
+      "name": "Chase Meidroth",
+      "team": "Chicago White Sox",
+      "bats": "R",
+      "opp": "Minnesota Twins",
+      "opp_pitcher": "Bailey Ober",
+      "venue": "Target Field",
+      "gamePk": 823665,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 12,
+      "iso": 0.129,
+      "total": 39.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 48.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "High-contact bat (contact 80%, Z-contact 88%) \u2014 banks XBH",
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.46,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.0,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.0,
+        "hitter": 5.2,
+        "environment": 5.5,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.16,
+        "barrel_rate": 0.0449,
+        "hard_hit_rate": 0.389,
+        "fb_rate": 0.4334,
+        "z_contact_rate": 0.8817,
+        "sweet_spot_rate": 0.3195,
+        "xwobacon": null,
+        "ev90": 98.2
+      },
+      "reasons": [
+        "vs Bailey Ober \u2014 cause A (19.0/25)",
+        "Pitcher: High HR allowed (HR/9 1.50)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "Platoon shape fades vs RHP",
+        "Poor pitch-mix fit (40% breaking balls, rel 0.30 \u2192 mix-fit 0.46x)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -8381,7 +8380,7 @@
         "Pitcher: Elevated HR allowed (HR/9 1.76)",
         "Poor pitch-mix fit (48% fastballs, rel 0.30 \u2192 mix-fit 0.45x)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8403,7 +8402,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 15,
-      "iso": 0.283,
+      "iso": 0.282,
       "total": 39.6,
       "tier": "Pass",
       "role": "Watchlist",
@@ -8558,7 +8557,7 @@
         "Low air-pull (7%)",
         "Poor pitch-mix fit (48% fastballs, rel 0.30 \u2192 mix-fit 0.45x)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8791,7 +8790,7 @@
       "reasons": [
         "vs Keider Montero \u2014 cause Pass (8.5/25)",
         "Good air-pull (20%)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8859,6 +8858,63 @@
       ]
     },
     {
+      "id": 677800,
+      "name": "Wilyer Abreu",
+      "team": "Boston Red Sox",
+      "bats": "L",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Max Fried",
+      "venue": "Yankee Stadium",
+      "gamePk": 823501,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 22,
+      "iso": 0.208,
+      "total": 39.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 49.4,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.85,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 13.0,
+        "environment": 13.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1779,
+        "barrel_rate": 0.0551,
+        "hard_hit_rate": 0.3865,
+        "fb_rate": 0.4961,
+        "z_contact_rate": 0.8396,
+        "sweet_spot_rate": 0.3467,
+        "xwobacon": null,
+        "ev90": 102.1
+      },
+      "reasons": [
+        "vs Max Fried \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.21)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 545361,
       "name": "Mike Trout",
       "team": "Los Angeles Angels",
@@ -8870,7 +8926,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 20,
-      "iso": 0.192,
+      "iso": 0.191,
       "total": 39.0,
       "tier": "Pass",
       "role": "Watchlist",
@@ -9146,11 +9202,69 @@
         "vs Keider Montero \u2014 cause Pass (8.5/25)",
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (51% fastballs, rel 1.50 \u2192 mix-fit 1.25x)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 680776,
+      "name": "Jarren Duran",
+      "team": "Boston Red Sox",
+      "bats": "L",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Max Fried",
+      "venue": "Yankee Stadium",
+      "gamePk": 823501,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 18,
+      "iso": 0.159,
+      "total": 38.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 51.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.75,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 12.5,
+        "environment": 13.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1875,
+        "barrel_rate": 0.0545,
+        "hard_hit_rate": 0.4412,
+        "fb_rate": 0.4895,
+        "z_contact_rate": 0.8911,
+        "sweet_spot_rate": 0.3553,
+        "xwobacon": null,
+        "ev90": 105.2
+      },
+      "reasons": [
+        "vs Max Fried \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.21)",
+        "Poor pitch-mix fit (66% fastballs, rel 0.30 \u2192 mix-fit 0.75x)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -9249,7 +9363,7 @@
         "Pitcher: High K rate (30%)",
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9379,6 +9493,62 @@
       ]
     },
     {
+      "id": 687952,
+      "name": "Christian Encarnacion-Strand",
+      "team": "Baltimore Orioles",
+      "bats": "R",
+      "opp": "Athletics",
+      "opp_pitcher": null,
+      "venue": "Sutter Health Park",
+      "gamePk": 824961,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 7,
+      "iso": 0.248,
+      "total": 38.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 53.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.0,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 19.8,
+        "environment": 10.5,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2063,
+        "barrel_rate": 0.0805,
+        "hard_hit_rate": 0.3987,
+        "fb_rate": 0.5371,
+        "z_contact_rate": 0.8674,
+        "sweet_spot_rate": 0.3562,
+        "xwobacon": null,
+        "ev90": 108.2
+      },
+      "reasons": [
+        "Good air-pull (21%)",
+        "Slightly + park (102)",
+        "Warm (79\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 664034,
       "name": "Ty France",
       "team": "San Diego Padres",
@@ -9450,7 +9620,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 9,
-      "iso": 0.141,
+      "iso": 0.14,
       "total": 38.2,
       "tier": "Pass",
       "role": "Watchlist",
@@ -9600,11 +9770,11 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.32)",
         "Platoon edge (R vs LHP)",
         "Poor pitch-mix fit (57% fastballs, rel 0.30 \u2192 mix-fit 0.43x)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -9776,11 +9946,11 @@
         "vs Foster Griffin \u2014 cause C (11.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.32)",
         "Poor pitch-mix fit (57% fastballs, rel 0.30 \u2192 mix-fit 0.60x)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -9951,7 +10121,7 @@
         "Pitcher: Elevated HR allowed (HR/9 1.76)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -10013,7 +10183,7 @@
         "Pitcher: High K rate (30%)",
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (54% fastballs, rel 0.97 \u2192 mix-fit 1.34x)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -10035,8 +10205,8 @@
       "gamePk": 824961,
       "slot": null,
       "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.17,
+      "season_hr": 12,
+      "iso": 0.178,
       "total": 37.2,
       "tier": "Pass",
       "role": "Watchlist",
@@ -10355,6 +10525,67 @@
       ]
     },
     {
+      "id": 575929,
+      "name": "Willson Contreras",
+      "team": "Boston Red Sox",
+      "bats": "R",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Max Fried",
+      "venue": "Yankee Stadium",
+      "gamePk": 823501,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 26,
+      "iso": 0.243,
+      "total": 36.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 47.9,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.61,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 14.8,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1853,
+        "barrel_rate": 0.0653,
+        "hard_hit_rate": 0.3749,
+        "fb_rate": 0.4572,
+        "z_contact_rate": 0.8713,
+        "sweet_spot_rate": 0.2858,
+        "xwobacon": null,
+        "ev90": 104.8
+      },
+      "reasons": [
+        "vs Max Fried \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.21)",
+        "Platoon edge (R vs LHP)",
+        "Poor pitch-mix fit (66% fastballs, rel 0.30 \u2192 mix-fit 0.61x)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 593428,
       "name": "Xander Bogaerts",
       "team": "San Diego Padres",
@@ -10652,7 +10883,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 27,
-      "iso": 0.215,
+      "iso": 0.214,
       "total": 35.8,
       "tier": "Pass",
       "role": "Watchlist",
@@ -10686,116 +10917,6 @@
       "reasons": [
         "Zone-damage: hard-hit 45% + Z-contact 85%",
         "Hot (88\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 677800,
-      "name": "Wilyer Abreu",
-      "team": "Boston Red Sox",
-      "bats": "L",
-      "opp": "New York Yankees",
-      "opp_pitcher": null,
-      "venue": "Yankee Stadium",
-      "gamePk": 823501,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 22,
-      "iso": 0.208,
-      "total": 35.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 51.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 14.8,
-        "environment": 13.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1779,
-        "barrel_rate": 0.0551,
-        "hard_hit_rate": 0.3865,
-        "fb_rate": 0.4961,
-        "z_contact_rate": 0.8396,
-        "sweet_spot_rate": 0.3467,
-        "xwobacon": null,
-        "ev90": 102.1
-      },
-      "reasons": [
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 680776,
-      "name": "Jarren Duran",
-      "team": "Boston Red Sox",
-      "bats": "L",
-      "opp": "New York Yankees",
-      "opp_pitcher": null,
-      "venue": "Yankee Stadium",
-      "gamePk": 823501,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.159,
-      "total": 35.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 54.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 14.8,
-        "environment": 13.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1875,
-        "barrel_rate": 0.0545,
-        "hard_hit_rate": 0.4412,
-        "fb_rate": 0.4895,
-        "z_contact_rate": 0.8911,
-        "sweet_spot_rate": 0.3553,
-        "xwobacon": null,
-        "ev90": 105.2
-      },
-      "reasons": [
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -11019,7 +11140,7 @@
       "reasons": [
         "vs Keider Montero \u2014 cause Pass (8.5/25)",
         "Pitch-mix fit: damages this arsenal (51% fastballs, rel 1.62 \u2192 mix-fit 1.31x)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -11083,11 +11204,73 @@
         "Platoon shape: spikes vs LHP (barrel 10%, air-pull 15%)",
         "Above-avg barrels (10%)",
         "Pitch-mix fit: damages this arsenal (54% fastballs, rel 1.79 \u2192 mix-fit 1.47x)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (94)",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 702332,
+      "name": "Caleb Durbin",
+      "team": "Boston Red Sox",
+      "bats": "R",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Max Fried",
+      "venue": "Yankee Stadium",
+      "gamePk": 823501,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 12,
+      "iso": 0.141,
+      "total": 35.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 47.7,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.67,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 13.6,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2038,
+        "barrel_rate": 0.0558,
+        "hard_hit_rate": 0.2831,
+        "fb_rate": 0.5433,
+        "z_contact_rate": 0.8364,
+        "sweet_spot_rate": 0.3379,
+        "xwobacon": null,
+        "ev90": 95.0
+      },
+      "reasons": [
+        "vs Max Fried \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.21)",
+        "Good air-pull (20%)",
+        "Platoon edge (R vs LHP)",
+        "Poor pitch-mix fit (66% fastballs, rel 0.30 \u2192 mix-fit 0.67x)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -11204,7 +11387,7 @@
         "Good air-pull (23%)",
         "Poor pitch-mix fit (58% fastballs, rel 0.30 \u2192 mix-fit 0.30x)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -11261,11 +11444,11 @@
         "vs Foster Griffin \u2014 cause C (11.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.32)",
         "Poor pitch-mix fit (57% fastballs, rel 0.30 \u2192 mix-fit 0.60x)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~7 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -11449,7 +11632,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 12,
-      "iso": 0.148,
+      "iso": 0.152,
       "total": 34.7,
       "tier": "Pass",
       "role": "Watchlist",
@@ -11540,7 +11723,7 @@
       "reasons": [
         "vs Mart\u00edn P\u00e9rez \u2014 cause Pass (7.0/25)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -12023,63 +12206,6 @@
       ]
     },
     {
-      "id": 668939,
-      "name": "Adley Rutschman",
-      "team": "Boston Red Sox",
-      "bats": "S",
-      "opp": "New York Yankees",
-      "opp_pitcher": null,
-      "venue": "Yankee Stadium",
-      "gamePk": 823501,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.168,
-      "total": 33.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 56.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 97%, Z-contact 90%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 14.5,
-        "environment": 11.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1798,
-        "barrel_rate": 0.0642,
-        "hard_hit_rate": 0.3608,
-        "fb_rate": 0.4636,
-        "z_contact_rate": 0.8975,
-        "sweet_spot_rate": 0.3334,
-        "xwobacon": null,
-        "ev90": 105.1
-      },
-      "reasons": [
-        "Hitter-friendly park (108)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 543309,
       "name": "Kyle Higashioka",
       "team": "Texas Rangers",
@@ -12526,7 +12652,7 @@
         "vs Mart\u00edn P\u00e9rez \u2014 cause Pass (7.0/25)",
         "Poor pitch-mix fit (58% fastballs, rel 0.30 \u2192 mix-fit 0.36x)",
         "Slightly + park (103)",
-        "Warm (84\u00b0F)",
+        "Warm (83\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -12813,61 +12939,6 @@
       ]
     },
     {
-      "id": 575929,
-      "name": "Willson Contreras",
-      "team": "Boston Red Sox",
-      "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": null,
-      "venue": "Yankee Stadium",
-      "gamePk": 823501,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 26,
-      "iso": 0.243,
-      "total": 32.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 47.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.3,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 15.2,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1853,
-        "barrel_rate": 0.0653,
-        "hard_hit_rate": 0.3749,
-        "fb_rate": 0.4572,
-        "z_contact_rate": 0.8713,
-        "sweet_spot_rate": 0.2858,
-        "xwobacon": null,
-        "ev90": 104.8
-      },
-      "reasons": [
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 646240,
       "name": "Rafael Devers",
       "team": "San Francisco Giants",
@@ -12879,7 +12950,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 29,
-      "iso": 0.238,
+      "iso": 0.237,
       "total": 31.8,
       "tier": "Pass",
       "role": "Watchlist",
@@ -13080,7 +13151,7 @@
         "Pitcher: Suppresses HR (HR/9 0.00)",
         "Pitcher: High K rate (30%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -13140,7 +13211,7 @@
         "vs Keider Montero \u2014 cause Pass (8.5/25)",
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (51% fastballs, rel 0.30 \u2192 mix-fit 0.65x)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -13221,8 +13292,8 @@
       "gamePk": 823176,
       "slot": null,
       "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.233,
+      "season_hr": 19,
+      "iso": 0.239,
       "total": 31.2,
       "tier": "Pass",
       "role": "Watchlist",
@@ -13317,7 +13388,7 @@
         "Pitcher: Suppresses HR (HR/9 0.00)",
         "Pitcher: High K rate (30%)",
         "Platoon edge (R vs LHP)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -13389,6 +13460,68 @@
       ]
     },
     {
+      "id": 678882,
+      "name": "Ceddanne Rafaela",
+      "team": "Boston Red Sox",
+      "bats": "R",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Max Fried",
+      "venue": "Yankee Stadium",
+      "gamePk": 823501,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 16,
+      "iso": 0.168,
+      "total": 31.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 49.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 90%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.48,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 9.0,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1353,
+        "barrel_rate": 0.0483,
+        "hard_hit_rate": 0.3132,
+        "fb_rate": 0.4506,
+        "z_contact_rate": 0.8991,
+        "sweet_spot_rate": 0.2759,
+        "xwobacon": null,
+        "ev90": 99.1
+      },
+      "reasons": [
+        "vs Max Fried \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.21)",
+        "Platoon edge (R vs LHP)",
+        "Poor pitch-mix fit (66% fastballs, rel 0.30 \u2192 mix-fit 0.48x)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 806068,
       "name": "Colt Emerson",
       "team": "Seattle Mariners",
@@ -13431,62 +13564,6 @@
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (102)",
         "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 702332,
-      "name": "Caleb Durbin",
-      "team": "Boston Red Sox",
-      "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": null,
-      "venue": "Yankee Stadium",
-      "gamePk": 823501,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.141,
-      "total": 30.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 47.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 13.8,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2038,
-        "barrel_rate": 0.0558,
-        "hard_hit_rate": 0.2831,
-        "fb_rate": 0.5433,
-        "z_contact_rate": 0.8364,
-        "sweet_spot_rate": 0.3379,
-        "xwobacon": null,
-        "ev90": 95.0
-      },
-      "reasons": [
-        "Good air-pull (20%)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -13568,8 +13645,8 @@
       "gamePk": 823176,
       "slot": null,
       "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.184,
+      "season_hr": 15,
+      "iso": 0.197,
       "total": 30.5,
       "tier": "Pass",
       "role": "Watchlist",
@@ -13625,7 +13702,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 10,
-      "iso": 0.147,
+      "iso": 0.145,
       "total": 30.3,
       "tier": "Pass",
       "role": "Watchlist",
@@ -13722,7 +13799,7 @@
         "Pitcher: High K rate (30%)",
         "Platoon edge (R vs LHP)",
         "Poor pitch-mix fit (54% fastballs, rel 0.30 \u2192 mix-fit 0.63x)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -13966,6 +14043,62 @@
       ]
     },
     {
+      "id": 694374,
+      "name": "Tim Tawa",
+      "team": "Arizona Diamondbacks",
+      "bats": "R",
+      "opp": "San Francisco Giants",
+      "opp_pitcher": null,
+      "venue": "Oracle Park",
+      "gamePk": 823176,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 9,
+      "iso": 0.165,
+      "total": 29.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 48.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.7,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 15.5,
+        "environment": 6.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1535,
+        "barrel_rate": 0.0593,
+        "hard_hit_rate": 0.4427,
+        "fb_rate": 0.4812,
+        "z_contact_rate": 0.8646,
+        "sweet_spot_rate": 0.3334,
+        "xwobacon": null,
+        "ev90": 105.4
+      },
+      "reasons": [
+        "Deep RF triples alley suppresses LHB HR",
+        "Wind blowing OUT ~16 mph toward CF (approx bearing)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Strong pitcher park (89)",
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 694728,
       "name": "Brice Matthews",
       "team": "Houston Astros",
@@ -14067,7 +14200,7 @@
         "Pitcher: High K rate (30%)",
         "Platoon edge (R vs LHP)",
         "Poor pitch-mix fit (54% fastballs, rel 0.30 \u2192 mix-fit 0.42x)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -14127,7 +14260,7 @@
         "vs Keider Montero \u2014 cause Pass (8.5/25)",
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (51% fastballs, rel 0.30 \u2192 mix-fit 0.40x)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -14317,7 +14450,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 9,
-      "iso": 0.122,
+      "iso": 0.121,
       "total": 29.2,
       "tier": "Pass",
       "role": "Watchlist",
@@ -14365,62 +14498,6 @@
       ]
     },
     {
-      "id": 694374,
-      "name": "Tim Tawa",
-      "team": "Arizona Diamondbacks",
-      "bats": "R",
-      "opp": "San Francisco Giants",
-      "opp_pitcher": null,
-      "venue": "Oracle Park",
-      "gamePk": 823176,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.153,
-      "total": 28.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 46.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 14.8,
-        "environment": 6.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1535,
-        "barrel_rate": 0.0593,
-        "hard_hit_rate": 0.4427,
-        "fb_rate": 0.4812,
-        "z_contact_rate": 0.8646,
-        "sweet_spot_rate": 0.3334,
-        "xwobacon": null,
-        "ev90": 105.4
-      },
-      "reasons": [
-        "Deep RF triples alley suppresses LHB HR",
-        "Wind blowing OUT ~16 mph toward CF (approx bearing)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Strong pitcher park (89)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 571448,
       "name": "Nolan Arenado",
       "team": "Arizona Diamondbacks",
@@ -14432,7 +14509,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 21,
-      "iso": 0.196,
+      "iso": 0.197,
       "total": 28.5,
       "tier": "Pass",
       "role": "Watchlist",
@@ -14527,7 +14604,7 @@
         "Pitcher: Suppresses HR (HR/9 0.00)",
         "Pitcher: High K rate (30%)",
         "Poor pitch-mix fit (54% fastballs, rel 0.30 \u2192 mix-fit 0.51x)",
-        "Warm (82\u00b0F)",
+        "Warm (81\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -14716,7 +14793,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 9,
-      "iso": 0.141,
+      "iso": 0.14,
       "total": 27.2,
       "tier": "Pass",
       "role": "Watchlist",
@@ -14763,63 +14840,6 @@
       ]
     },
     {
-      "id": 678882,
-      "name": "Ceddanne Rafaela",
-      "team": "Boston Red Sox",
-      "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": null,
-      "venue": "Yankee Stadium",
-      "gamePk": 823501,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.168,
-      "total": 27.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 49.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 90%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 10.0,
-        "environment": 9.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1353,
-        "barrel_rate": 0.0483,
-        "hard_hit_rate": 0.3132,
-        "fb_rate": 0.4506,
-        "z_contact_rate": 0.8991,
-        "sweet_spot_rate": 0.2759,
-        "xwobacon": null,
-        "ev90": 99.1
-      },
-      "reasons": [
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 669357,
       "name": "Nolan Gorman",
       "team": "St. Louis Cardinals",
@@ -14831,7 +14851,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 8,
-      "iso": 0.138,
+      "iso": 0.137,
       "total": 26.0,
       "tier": "Pass",
       "role": "Watchlist",
@@ -14929,7 +14949,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 11,
-      "iso": 0.167,
+      "iso": 0.166,
       "total": 25.0,
       "tier": "Pass",
       "role": "Watchlist",
@@ -15247,7 +15267,7 @@
         "High-contact bat (contact 80%, Z-contact 90%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 57.5,
+      "hr_total": 55.0,
       "hr_role": "Cause Satellite"
     },
     {
@@ -15576,6 +15596,27 @@
       "hr_role": "Pass"
     },
     {
+      "id": 678554,
+      "name": "Curtis Mead",
+      "team": "Boston Red Sox",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Max Fried",
+      "venue": "Yankee Stadium",
+      "gamePk": 823501,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 60.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "hr_total": 45.0,
+      "hr_role": "Pass"
+    },
+    {
       "id": 676475,
       "name": "Alec Burleson",
       "team": "St. Louis Cardinals",
@@ -15633,6 +15674,26 @@
       "shape_source": "statcast",
       "hr_total": 42.7,
       "hr_role": "Pass"
+    },
+    {
+      "id": 668939,
+      "name": "Adley Rutschman",
+      "team": "Boston Red Sox",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Max Fried",
+      "venue": "Yankee Stadium",
+      "gamePk": 823501,
+      "slot": null,
+      "confirmed": false,
+      "bats": "S",
+      "tb_score": 59.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 97%, Z-contact 90%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 41.5,
+      "hr_role": "Watchlist"
     },
     {
       "id": 691720,
@@ -15734,28 +15795,8 @@
         "High-contact bat (contact 87%, Z-contact 89%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 49.0,
+      "hr_total": 46.5,
       "hr_role": "Watchlist"
-    },
-    {
-      "id": 678554,
-      "name": "Curtis Mead",
-      "team": "Boston Red Sox",
-      "opp": "New York Yankees",
-      "opp_pitcher": null,
-      "venue": "Yankee Stadium",
-      "gamePk": 823501,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 58.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 40.0,
-      "hr_role": "Pass"
     },
     {
       "id": 678246,
@@ -15775,7 +15816,7 @@
         "Soft-tossing / hittable arm (TB tailwind)"
       ],
       "shape_source": "statcast",
-      "hr_total": 50.3,
+      "hr_total": 47.8,
       "hr_role": "Watchlist"
     },
     {
@@ -15815,7 +15856,7 @@
         "High-contact bat (contact 84%, Z-contact 88%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 53.3,
+      "hr_total": 50.8,
       "hr_role": "Watchlist"
     },
     {
@@ -16108,26 +16149,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 668939,
-      "name": "Adley Rutschman",
-      "team": "Boston Red Sox",
-      "opp": "New York Yankees",
-      "opp_pitcher": null,
-      "venue": "Yankee Stadium",
-      "gamePk": 823501,
-      "slot": null,
-      "confirmed": false,
-      "bats": "S",
-      "tb_score": 56.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 97%, Z-contact 90%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 33.5,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 805808,
       "name": "Kevin McGonigle",
       "team": "Detroit Tigers",
@@ -16246,7 +16267,7 @@
         "High-contact bat (contact 86%, Z-contact 91%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 47.1,
+      "hr_total": 44.6,
       "hr_role": "Watchlist"
     },
     {
@@ -16529,24 +16550,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 687952,
-      "name": "Christian Encarnacion-Strand",
-      "team": "Baltimore Orioles",
-      "opp": "Athletics",
-      "opp_pitcher": null,
-      "venue": "Sutter Health Park",
-      "gamePk": 824961,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 55.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 40.0,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 683002,
       "name": "Gunnar Henderson",
       "team": "Baltimore Orioles",
@@ -16583,7 +16586,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 62.9,
+      "hr_total": 60.4,
       "hr_role": "Cause Satellite"
     },
     {
@@ -16863,24 +16866,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 680776,
-      "name": "Jarren Duran",
-      "team": "Boston Red Sox",
-      "opp": "New York Yankees",
-      "opp_pitcher": null,
-      "venue": "Yankee Stadium",
-      "gamePk": 823501,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 54.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 35.8,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 680777,
       "name": "Ryan Jeffers",
       "team": "Minnesota Twins",
@@ -16897,7 +16882,7 @@
         "High-contact bat (contact 91%, Z-contact 89%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 50.8,
+      "hr_total": 48.3,
       "hr_role": "Watchlist"
     },
     {
@@ -17000,6 +16985,24 @@
       ],
       "shape_source": "statcast",
       "hr_total": 35.6,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 687952,
+      "name": "Christian Encarnacion-Strand",
+      "team": "Baltimore Orioles",
+      "opp": "Athletics",
+      "opp_pitcher": null,
+      "venue": "Sutter Health Park",
+      "gamePk": 824961,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 53.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 38.3,
       "hr_role": "Watchlist"
     },
     {
@@ -17176,7 +17179,7 @@
         "Soft-tossing / hittable arm (TB tailwind)"
       ],
       "shape_source": "statcast",
-      "hr_total": 46.4,
+      "hr_total": 43.9,
       "hr_role": "Watchlist"
     },
     {
@@ -17238,7 +17241,7 @@
         "Soft-tossing / hittable arm (TB tailwind)"
       ],
       "shape_source": "statcast",
-      "hr_total": 62.0,
+      "hr_total": 59.5,
       "hr_role": "Cause Satellite"
     },
     {
@@ -17259,7 +17262,7 @@
         "Soft-tossing / hittable arm (TB tailwind)"
       ],
       "shape_source": "statcast",
-      "hr_total": 54.3,
+      "hr_total": 51.8,
       "hr_role": "Watchlist"
     },
     {
@@ -17280,7 +17283,7 @@
         "Soft-tossing / hittable arm (TB tailwind)"
       ],
       "shape_source": "statcast",
-      "hr_total": 63.4,
+      "hr_total": 60.9,
       "hr_role": "Cause Satellite"
     },
     {
@@ -17343,7 +17346,7 @@
         "Soft-tossing / hittable arm (TB tailwind)"
       ],
       "shape_source": "statcast",
-      "hr_total": 56.5,
+      "hr_total": 54.0,
       "hr_role": "Watchlist"
     },
     {
@@ -17383,11 +17386,11 @@
       "hr_role": "Pass"
     },
     {
-      "id": 677800,
-      "name": "Wilyer Abreu",
+      "id": 680776,
+      "name": "Jarren Duran",
       "team": "Boston Red Sox",
       "opp": "New York Yankees",
-      "opp_pitcher": null,
+      "opp_pitcher": "Max Fried",
       "venue": "Yankee Stadium",
       "gamePk": 823501,
       "slot": null,
@@ -17397,7 +17400,7 @@
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 35.8,
+      "hr_total": 38.5,
       "hr_role": "Watchlist"
     },
     {
@@ -17473,7 +17476,7 @@
         "High-contact bat (contact 88%, Z-contact 91%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 44.7,
+      "hr_total": 42.2,
       "hr_role": "Watchlist"
     },
     {
@@ -17949,6 +17952,24 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 677800,
+      "name": "Wilyer Abreu",
+      "team": "Boston Red Sox",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Max Fried",
+      "venue": "Yankee Stadium",
+      "gamePk": 823501,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 49.4,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 39.0,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 701398,
       "name": "Sal Stewart",
       "team": "Cincinnati Reds",
@@ -17984,7 +18005,7 @@
         "Soft-tossing / hittable arm (TB tailwind)"
       ],
       "shape_source": "statcast",
-      "hr_total": 53.2,
+      "hr_total": 50.7,
       "hr_role": "Watchlist"
     },
     {
@@ -18008,6 +18029,27 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 678882,
+      "name": "Ceddanne Rafaela",
+      "team": "Boston Red Sox",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Max Fried",
+      "venue": "Yankee Stadium",
+      "gamePk": 823501,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 49.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 90%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 31.0,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 671056,
       "name": "Iv\u00e1n Herrera",
       "team": "St. Louis Cardinals",
@@ -18028,26 +18070,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 678882,
-      "name": "Ceddanne Rafaela",
-      "team": "Boston Red Sox",
-      "opp": "New York Yankees",
-      "opp_pitcher": null,
-      "venue": "Yankee Stadium",
-      "gamePk": 823501,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 49.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 90%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 27.0,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 805367,
       "name": "Chase Meidroth",
       "team": "Chicago White Sox",
@@ -18065,7 +18087,7 @@
         "Soft-tossing / hittable arm (TB tailwind)"
       ],
       "shape_source": "statcast",
-      "hr_total": 42.2,
+      "hr_total": 39.7,
       "hr_role": "Watchlist"
     },
     {
@@ -18126,7 +18148,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 53.4,
+      "hr_total": 50.9,
       "hr_role": "Watchlist"
     },
     {
@@ -18208,6 +18230,24 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 694374,
+      "name": "Tim Tawa",
+      "team": "Arizona Diamondbacks",
+      "opp": "San Francisco Giants",
+      "opp_pitcher": null,
+      "venue": "Oracle Park",
+      "gamePk": 823176,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 48.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 29.5,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 695600,
       "name": "Carter Jensen",
       "team": "Kansas City Royals",
@@ -18241,6 +18281,46 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 37.1,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 575929,
+      "name": "Willson Contreras",
+      "team": "Boston Red Sox",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Max Fried",
+      "venue": "Yankee Stadium",
+      "gamePk": 823501,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 47.9,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 36.8,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 702332,
+      "name": "Caleb Durbin",
+      "team": "Boston Red Sox",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Max Fried",
+      "venue": "Yankee Stadium",
+      "gamePk": 823501,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 47.7,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 35.6,
       "hr_role": "Watchlist"
     },
     {
@@ -18279,24 +18359,6 @@
       ],
       "shape_source": "statcast",
       "hr_total": 41.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 575929,
-      "name": "Willson Contreras",
-      "team": "Boston Red Sox",
-      "opp": "New York Yankees",
-      "opp_pitcher": null,
-      "venue": "Yankee Stadium",
-      "gamePk": 823501,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 47.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 32.2,
       "hr_role": "Watchlist"
     },
     {
@@ -18432,24 +18494,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 702332,
-      "name": "Caleb Durbin",
-      "team": "Boston Red Sox",
-      "opp": "New York Yankees",
-      "opp_pitcher": null,
-      "venue": "Yankee Stadium",
-      "gamePk": 823501,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 47.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 30.8,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 671732,
       "name": "Lawrence Butler",
       "team": "Athletics",
@@ -18559,24 +18603,6 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 30.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 694374,
-      "name": "Tim Tawa",
-      "team": "Arizona Diamondbacks",
-      "opp": "San Francisco Giants",
-      "opp_pitcher": null,
-      "venue": "Oracle Park",
-      "gamePk": 823176,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 46.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 28.8,
       "hr_role": "Watchlist"
     },
     {
@@ -18814,7 +18840,7 @@
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 50.5,
+      "hr_total": 48.0,
       "hr_role": "Watchlist"
     },
     {
@@ -20129,6 +20155,18 @@
       "barrel_allowed": 0.0414
     },
     {
+      "id": 607074,
+      "name": "Carlos Rod\u00f3n",
+      "score": 9.5,
+      "grade": "Pass",
+      "flags": [
+        "Suppresses HR (HR/9 0.67)",
+        "Fly-ball prone (30% FB allowed)"
+      ],
+      "hr9": 0.67,
+      "barrel_allowed": 0.0776
+    },
+    {
       "id": 621111,
       "name": "Walker Buehler",
       "score": 9.0,
@@ -20275,6 +20313,17 @@
       "barrel_allowed": 0.0409
     },
     {
+      "id": 608331,
+      "name": "Max Fried",
+      "score": 5.0,
+      "grade": "Pass",
+      "flags": [
+        "Suppresses HR (HR/9 0.21)"
+      ],
+      "hr9": 0.21,
+      "barrel_allowed": 0.0631
+    },
+    {
       "id": 650911,
       "name": "Cristopher S\u00e1nchez",
       "score": 3.5,
@@ -20333,42 +20382,6 @@
         "outcome": null
       },
       {
-        "player": "Tristan Peters",
-        "team": "Chicago White Sox",
-        "opp_pitcher": "Bailey Ober",
-        "role": "Cause Satellite",
-        "total": 63.4,
-        "cause_grade": "A",
-        "result_hr": null,
-        "cause_fired": null,
-        "teammate_hr": null,
-        "outcome": null
-      },
-      {
-        "player": "Kody Clemens",
-        "team": "Minnesota Twins",
-        "opp_pitcher": "Erick Fedde",
-        "role": "Cause Satellite",
-        "total": 62.9,
-        "cause_grade": "A",
-        "result_hr": null,
-        "cause_fired": null,
-        "teammate_hr": null,
-        "outcome": null
-      },
-      {
-        "player": "Colson Montgomery",
-        "team": "Chicago White Sox",
-        "opp_pitcher": "Bailey Ober",
-        "role": "Cause Satellite",
-        "total": 62.0,
-        "cause_grade": "A",
-        "result_hr": null,
-        "cause_fired": null,
-        "teammate_hr": null,
-        "outcome": null
-      },
-      {
         "player": "Bryce Harper",
         "team": "Philadelphia Phillies",
         "opp_pitcher": "Ryan Johnson",
@@ -20381,11 +20394,47 @@
         "outcome": null
       },
       {
+        "player": "Tristan Peters",
+        "team": "Chicago White Sox",
+        "opp_pitcher": "Bailey Ober",
+        "role": "Cause Satellite",
+        "total": 60.9,
+        "cause_grade": "A",
+        "result_hr": null,
+        "cause_fired": null,
+        "teammate_hr": null,
+        "outcome": null
+      },
+      {
+        "player": "Kody Clemens",
+        "team": "Minnesota Twins",
+        "opp_pitcher": "Erick Fedde",
+        "role": "Cause Satellite",
+        "total": 60.4,
+        "cause_grade": "A",
+        "result_hr": null,
+        "cause_fired": null,
+        "teammate_hr": null,
+        "outcome": null
+      },
+      {
+        "player": "Colson Montgomery",
+        "team": "Chicago White Sox",
+        "opp_pitcher": "Bailey Ober",
+        "role": "Cause Satellite",
+        "total": 59.5,
+        "cause_grade": "A",
+        "result_hr": null,
+        "cause_fired": null,
+        "teammate_hr": null,
+        "outcome": null
+      },
+      {
         "player": "Josh Bell",
         "team": "Minnesota Twins",
         "opp_pitcher": "Erick Fedde",
         "role": "Cause Satellite",
-        "total": 57.5,
+        "total": 55.0,
         "cause_grade": "A",
         "result_hr": null,
         "cause_fired": null,
