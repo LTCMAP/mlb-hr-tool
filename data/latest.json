@@ -1,9 +1,9 @@
 {
   "version": "2.8",
-  "generated_utc": "2026-09-14T00:18:36.563272+00:00",
+  "generated_utc": "2026-09-14T18:50:16.985853+00:00",
   "slate_date": "2026-09-14",
   "games": 10,
-  "confirmed_lineups": 0,
+  "confirmed_lineups": 3,
   "statcast": true,
   "statcast_meta": {
     "window_days": 21,
@@ -38,14 +38,14 @@
     "source": "mlbapi",
     "days_savant": 0,
     "days_mlbapi": 20,
-    "trustworthy": false,
+    "trustworthy": true,
     "statcast_batters": 338,
     "statcast_candidates": 145,
-    "confirmed_lineups": 0,
+    "confirmed_lineups": 3,
     "games": 10,
     "days_failed": 1,
     "warnings": [
-      "NO CONFIRMED LINEUPS \u2014 every bat is using a neutral slot default. Likely built before lineups posted; re-run closer to first pitch.",
+      "Only 3/20 lineups confirmed \u2014 unconfirmed bats use a neutral slot default.",
       "Statcast: 1 day(s) failed to fetch in the 21-day window (thinner sample).",
       "Shape built from the MLB Stats API fallback (20/21 days) because Baseball Savant was unreachable. All shape signals are live; xwOBAcon is unavailable (regressed to league prior, ISO backstops it) and barrels are recomputed from EV/LA."
     ]
@@ -84,7 +84,7 @@
       "playable_bats": [
         {
           "name": "Hunter Goodman",
-          "total": 67.7,
+          "total": 72.7,
           "role": "Cause Satellite",
           "fit_tag": "PITCH-FIT"
         }
@@ -204,6 +204,20 @@
       "pitcher_cause": 14.0,
       "park_hr": 97,
       "cause_score": 13.2,
+      "capture_method": "Team-HR placeholder (cause strong, bat capture thin)",
+      "public_heat": false,
+      "n_playable": 0,
+      "playable_bats": []
+    },
+    {
+      "team": "Chicago White Sox",
+      "opp": "Cleveland Guardians",
+      "pitcher": "Gavin Williams",
+      "venue": "Progressive Field",
+      "grade": "B",
+      "pitcher_cause": 13.5,
+      "park_hr": 98,
+      "cause_score": 13.0,
       "capture_method": "Team-HR placeholder (cause strong, bat capture thin)",
       "public_heat": false,
       "n_playable": 0,
@@ -360,15 +374,15 @@
       "opp_pitcher": "Casey Mize",
       "venue": "Coors Field",
       "gamePk": 824308,
-      "slot": null,
-      "confirmed": false,
+      "slot": 3,
+      "confirmed": true,
       "season_hr": 38,
       "iso": 0.28,
-      "total": 67.7,
-      "tier": "Longshot",
+      "total": 72.7,
+      "tier": "Satellite",
       "role": "Cause Satellite",
-      "tb_score": 57.3,
-      "tb_tier": "Dart",
+      "tb_score": 60.3,
+      "tb_tier": "Solid TB",
       "tb_reasons": [
         "Soft-tossing / hittable arm (TB tailwind)"
       ],
@@ -383,7 +397,7 @@
         "pitcher": 22.0,
         "hitter": 22.7,
         "environment": 13.0,
-        "lineup": 6.0,
+        "lineup": 11.0,
         "confidence": 4.0
       },
       "statcast": {
@@ -405,11 +419,10 @@
         "Hot (2 HR / 0 barrels last 7d)",
         "Elite HR park (117)",
         "Altitude; elite carry",
+        "Heart of order (#3)",
         "Model: one strong signal"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": []
     },
     {
@@ -421,15 +434,15 @@
       "opp_pitcher": "Casey Mize",
       "venue": "Coors Field",
       "gamePk": 824308,
-      "slot": null,
-      "confirmed": false,
+      "slot": 4,
+      "confirmed": true,
       "season_hr": 15,
       "iso": 0.158,
-      "total": 64.2,
+      "total": 69.2,
       "tier": "Longshot",
       "role": "Longshot",
-      "tb_score": 68.5,
-      "tb_tier": "Solid TB",
+      "tb_score": 71.5,
+      "tb_tier": "Strong TB",
       "tb_reasons": [
         "High-contact bat (contact 88%, Z-contact 89%) \u2014 banks XBH",
         "Platoon edge (L vs RHP)",
@@ -446,7 +459,7 @@
         "pitcher": 22.0,
         "hitter": 19.2,
         "environment": 13.0,
-        "lineup": 6.0,
+        "lineup": 11.0,
         "confidence": 4.0
       },
       "statcast": {
@@ -468,12 +481,11 @@
         "Pitch-mix fit: damages this arsenal (43% fastballs, rel 1.53 \u2192 mix-fit 1.63x)",
         "Elite HR park (115)",
         "Altitude; elite carry",
+        "Heart of order (#4)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -718,71 +730,6 @@
       ]
     },
     {
-      "id": 666160,
-      "name": "Mickey Moniak",
-      "team": "Colorado Rockies",
-      "bats": "L",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Casey Mize",
-      "venue": "Coors Field",
-      "gamePk": 824308,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 22,
-      "iso": 0.244,
-      "total": 61.6,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 49.1,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)",
-        "Soft-tossing / hittable arm (TB tailwind)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.77,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "A+",
-      "breakdown": {
-        "pitcher": 22.0,
-        "hitter": 16.6,
-        "environment": 13.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.206,
-        "barrel_rate": 0.0588,
-        "hard_hit_rate": 0.3955,
-        "fb_rate": 0.5069,
-        "z_contact_rate": 0.8329,
-        "sweet_spot_rate": 0.337,
-        "xwobacon": null,
-        "ev90": 105.8
-      },
-      "reasons": [
-        "vs Casey Mize \u2014 cause A+ (22.0/25)",
-        "Pitcher: Elevated HR allowed (HR/9 2.52)",
-        "Pitcher: Fly-ball prone (31% FB allowed)",
-        "Good air-pull (21%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (43% fastballs, rel 1.00 \u2192 mix-fit 0.77x)",
-        "Elite HR park (115)",
-        "Altitude; elite carry",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 665487,
       "name": "Fernando Tatis Jr.",
       "team": "San Diego Padres",
@@ -839,6 +786,195 @@
       ],
       "warnings": [
         "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 664983,
+      "name": "Jake McCarthy",
+      "team": "Colorado Rockies",
+      "bats": "L",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Casey Mize",
+      "venue": "Coors Field",
+      "gamePk": 824308,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 15,
+      "iso": 0.186,
+      "total": 61.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 62.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 86%, Z-contact 89%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)",
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.46,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "A+",
+      "breakdown": {
+        "pitcher": 22.0,
+        "hitter": 10.5,
+        "environment": 13.0,
+        "lineup": 12.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1777,
+        "barrel_rate": 0.0507,
+        "hard_hit_rate": 0.3897,
+        "fb_rate": 0.5273,
+        "z_contact_rate": 0.892,
+        "sweet_spot_rate": 0.2984,
+        "xwobacon": null,
+        "ev90": 101.3
+      },
+      "reasons": [
+        "vs Casey Mize \u2014 cause A+ (22.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 2.52)",
+        "Pitcher: Fly-ball prone (31% FB allowed)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (43% fastballs, rel 0.30 \u2192 mix-fit 0.46x)",
+        "Elite HR park (115)",
+        "Altitude; elite carry",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 643217,
+      "name": "Andrew Benintendi",
+      "team": "Chicago White Sox",
+      "bats": "L",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Gavin Williams",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 14,
+      "iso": 0.176,
+      "total": 61.0,
+      "tier": "Pass",
+      "role": "Core",
+      "tb_score": 59.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.59,
+      "fit_tag": "PITCH-FIT",
+      "value_play": false,
+      "due_hr": 0.4,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 30.5,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2284,
+        "barrel_rate": 0.0853,
+        "hard_hit_rate": 0.4584,
+        "fb_rate": 0.5395,
+        "z_contact_rate": 0.8241,
+        "sweet_spot_rate": 0.4243,
+        "xwobacon": null,
+        "ev90": 104.5
+      },
+      "reasons": [
+        "vs Gavin Williams \u2014 cause B (13.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.44)",
+        "Pitcher: High K rate (34%)",
+        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 29%)",
+        "Elite air-pull (29%)",
+        "Above-avg barrels (11%)",
+        "Zone-damage: hard-hit 46% + Z-contact 82%",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 666160,
+      "name": "Mickey Moniak",
+      "team": "Colorado Rockies",
+      "bats": "L",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Casey Mize",
+      "venue": "Coors Field",
+      "gamePk": 824308,
+      "slot": 7,
+      "confirmed": true,
+      "season_hr": 22,
+      "iso": 0.244,
+      "total": 60.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 49.1,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)",
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.77,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "A+",
+      "breakdown": {
+        "pitcher": 22.0,
+        "hitter": 16.6,
+        "environment": 13.0,
+        "lineup": 5.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.206,
+        "barrel_rate": 0.0588,
+        "hard_hit_rate": 0.3955,
+        "fb_rate": 0.5069,
+        "z_contact_rate": 0.8329,
+        "sweet_spot_rate": 0.337,
+        "xwobacon": null,
+        "ev90": 105.8
+      },
+      "reasons": [
+        "vs Casey Mize \u2014 cause A+ (22.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 2.52)",
+        "Pitcher: Fly-ball prone (31% FB allowed)",
+        "Good air-pull (21%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (43% fastballs, rel 1.00 \u2192 mix-fit 0.77x)",
+        "Elite HR park (115)",
+        "Altitude; elite carry",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Bottom of order (#7)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -903,6 +1039,67 @@
         "Lineup not confirmed"
       ],
       "role_notes": []
+    },
+    {
+      "id": 691720,
+      "name": "Kyle Karros",
+      "team": "Colorado Rockies",
+      "bats": "R",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Casey Mize",
+      "venue": "Coors Field",
+      "gamePk": 824308,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 11,
+      "iso": 0.161,
+      "total": 59.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 56.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 80%, Z-contact 87%) \u2014 banks XBH",
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "A+",
+      "breakdown": {
+        "pitcher": 22.0,
+        "hitter": 12.5,
+        "environment": 13.0,
+        "lineup": 8.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1725,
+        "barrel_rate": 0.0624,
+        "hard_hit_rate": 0.3418,
+        "fb_rate": 0.5256,
+        "z_contact_rate": 0.8661,
+        "sweet_spot_rate": 0.3797,
+        "xwobacon": null,
+        "ev90": 87.4
+      },
+      "reasons": [
+        "vs Casey Mize \u2014 cause A+ (22.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 2.52)",
+        "Pitcher: Fly-ball prone (31% FB allowed)",
+        "Elite HR park (117)",
+        "Altitude; elite carry",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 681715,
@@ -1019,6 +1216,62 @@
       "warnings": [
         "Lineup not confirmed"
       ],
+      "role_notes": []
+    },
+    {
+      "id": 682829,
+      "name": "Elly De La Cruz",
+      "team": "Cincinnati Reds",
+      "bats": "S",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Tarik Skubal",
+      "venue": "Great American Ball Park",
+      "gamePk": 824465,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 26,
+      "iso": 0.226,
+      "total": 58.7,
+      "tier": "Pass",
+      "role": "Pass",
+      "tb_score": 66.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.76,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.8,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 22.2,
+        "environment": 13.0,
+        "lineup": 12.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1508,
+        "barrel_rate": 0.0995,
+        "hard_hit_rate": 0.4488,
+        "fb_rate": 0.5199,
+        "z_contact_rate": 0.8312,
+        "sweet_spot_rate": 0.3646,
+        "xwobacon": null,
+        "ev90": 109.4
+      },
+      "reasons": [
+        "vs Tarik Skubal \u2014 cause Pass (8.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.63)",
+        "Pitcher: High K rate (28%)",
+        "Above-avg barrels (10%)",
+        "Pitch-mix fit: damages this arsenal (56% fastballs, rel 1.83 \u2192 mix-fit 1.76x)",
+        "Elite HR park (112)",
+        "Warm (78\u00b0F)",
+        "Top of order (#2)"
+      ],
+      "warnings": [],
       "role_notes": []
     },
     {
@@ -1331,66 +1584,54 @@
       ]
     },
     {
-      "id": 691720,
-      "name": "Kyle Karros",
-      "team": "Colorado Rockies",
+      "id": 545341,
+      "name": "Randal Grichuk",
+      "team": "Chicago White Sox",
       "bats": "R",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Casey Mize",
-      "venue": "Coors Field",
-      "gamePk": 824308,
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Gavin Williams",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
       "slot": null,
       "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.161,
+      "season_hr": 13,
+      "iso": 0.282,
       "total": 57.5,
       "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 56.5,
-      "tb_tier": "Dart",
+      "role": "Pass",
+      "tb_score": 62.0,
+      "tb_tier": "Solid TB",
       "tb_reasons": [
-        "High-contact bat (contact 80%, Z-contact 87%) \u2014 banks XBH",
-        "Soft-tossing / hittable arm (TB tailwind)"
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
-      "shape_source": "statcast",
+      "shape_source": "proxy",
       "pull_fit": false,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "A+",
+      "due_hr": null,
+      "pitcher_grade": "B",
       "breakdown": {
-        "pitcher": 22.0,
-        "hitter": 12.5,
-        "environment": 13.0,
+        "pitcher": 13.5,
+        "hitter": 27.0,
+        "environment": 7.0,
         "lineup": 6.0,
         "confidence": 4.0
       },
-      "statcast": {
-        "air_pull_rate": 0.1725,
-        "barrel_rate": 0.0624,
-        "hard_hit_rate": 0.3418,
-        "fb_rate": 0.5256,
-        "z_contact_rate": 0.8661,
-        "sweet_spot_rate": 0.3797,
-        "xwobacon": null,
-        "ev90": 87.4
-      },
+      "statcast": null,
       "reasons": [
-        "vs Casey Mize \u2014 cause A+ (22.0/25)",
-        "Pitcher: Elevated HR allowed (HR/9 2.52)",
-        "Pitcher: Fly-ball prone (31% FB allowed)",
-        "Elite HR park (117)",
-        "Altitude; elite carry",
-        "Hitter shape <22 \u2192 capped at Longshot",
+        "vs Gavin Williams \u2014 cause B (13.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.44)",
+        "Pitcher: High K rate (34%)",
+        "Proxy: strong HR rate",
+        "Proxy: elite ISO (0.282)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
         "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
       ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
+      "role_notes": []
     },
     {
       "id": 660271,
@@ -1696,6 +1937,68 @@
       ]
     },
     {
+      "id": 701398,
+      "name": "Sal Stewart",
+      "team": "Cincinnati Reds",
+      "bats": "R",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Tarik Skubal",
+      "venue": "Great American Ball Park",
+      "gamePk": 824465,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 31,
+      "iso": 0.206,
+      "total": 56.4,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 70.2,
+      "tb_tier": "Strong TB",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.04,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.2,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 20.9,
+        "environment": 13.0,
+        "lineup": 11.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1653,
+        "barrel_rate": 0.0937,
+        "hard_hit_rate": 0.43,
+        "fb_rate": 0.5383,
+        "z_contact_rate": 0.8591,
+        "sweet_spot_rate": 0.4064,
+        "xwobacon": null,
+        "ev90": 105.6
+      },
+      "reasons": [
+        "vs Tarik Skubal \u2014 cause Pass (8.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.63)",
+        "Pitcher: High K rate (28%)",
+        "Platoon shape: spikes vs LHP (barrel 12%, air-pull 17%)",
+        "Strong barrels (12%)",
+        "Platoon edge (R vs LHP)",
+        "Elite HR park (111)",
+        "Warm (78\u00b0F)",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 682998,
       "name": "Corbin Carroll",
       "team": "Arizona Diamondbacks",
@@ -1811,133 +2114,6 @@
         "Pitcher: Hard contact allowed (.449 SLG)",
         "Good air-pull (19%)",
         "Platoon edge (R vs LHP)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 678662,
-      "name": "Ezequiel Tovar",
-      "team": "Colorado Rockies",
-      "bats": "R",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Casey Mize",
-      "venue": "Coors Field",
-      "gamePk": 824308,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.126,
-      "total": 55.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 44.3,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Soft-tossing / hittable arm (TB tailwind)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.7,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "A+",
-      "breakdown": {
-        "pitcher": 22.0,
-        "hitter": 10.8,
-        "environment": 13.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1796,
-        "barrel_rate": 0.0744,
-        "hard_hit_rate": 0.3413,
-        "fb_rate": 0.4812,
-        "z_contact_rate": 0.8463,
-        "sweet_spot_rate": 0.3946,
-        "xwobacon": null,
-        "ev90": 98.1
-      },
-      "reasons": [
-        "vs Casey Mize \u2014 cause A+ (22.0/25)",
-        "Pitcher: Elevated HR allowed (HR/9 2.52)",
-        "Pitcher: Fly-ball prone (31% FB allowed)",
-        "Poor pitch-mix fit (43% fastballs, rel 0.30 \u2192 mix-fit 0.70x)",
-        "Elite HR park (117)",
-        "Altitude; elite carry",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 664983,
-      "name": "Jake McCarthy",
-      "team": "Colorado Rockies",
-      "bats": "L",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Casey Mize",
-      "venue": "Coors Field",
-      "gamePk": 824308,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 15,
-      "iso": 0.186,
-      "total": 55.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 58.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 86%, Z-contact 89%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)",
-        "Soft-tossing / hittable arm (TB tailwind)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.46,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "A+",
-      "breakdown": {
-        "pitcher": 22.0,
-        "hitter": 10.5,
-        "environment": 13.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1777,
-        "barrel_rate": 0.0507,
-        "hard_hit_rate": 0.3897,
-        "fb_rate": 0.5273,
-        "z_contact_rate": 0.892,
-        "sweet_spot_rate": 0.2984,
-        "xwobacon": null,
-        "ev90": 101.3
-      },
-      "reasons": [
-        "vs Casey Mize \u2014 cause A+ (22.0/25)",
-        "Pitcher: Elevated HR allowed (HR/9 2.52)",
-        "Pitcher: Fly-ball prone (31% FB allowed)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (43% fastballs, rel 0.30 \u2192 mix-fit 0.46x)",
-        "Elite HR park (115)",
-        "Altitude; elite carry",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -2068,6 +2244,68 @@
       ]
     },
     {
+      "id": 678662,
+      "name": "Ezequiel Tovar",
+      "team": "Colorado Rockies",
+      "bats": "R",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Casey Mize",
+      "venue": "Coors Field",
+      "gamePk": 824308,
+      "slot": 9,
+      "confirmed": true,
+      "season_hr": 11,
+      "iso": 0.126,
+      "total": 54.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 44.3,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.7,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "A+",
+      "breakdown": {
+        "pitcher": 22.0,
+        "hitter": 10.8,
+        "environment": 13.0,
+        "lineup": 5.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1796,
+        "barrel_rate": 0.0744,
+        "hard_hit_rate": 0.3413,
+        "fb_rate": 0.4812,
+        "z_contact_rate": 0.8463,
+        "sweet_spot_rate": 0.3946,
+        "xwobacon": null,
+        "ev90": 98.1
+      },
+      "reasons": [
+        "vs Casey Mize \u2014 cause A+ (22.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 2.52)",
+        "Pitcher: Fly-ball prone (31% FB allowed)",
+        "Poor pitch-mix fit (43% fastballs, rel 0.30 \u2192 mix-fit 0.70x)",
+        "Elite HR park (117)",
+        "Altitude; elite carry",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Bottom of order (#9)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 665742,
       "name": "Juan Soto",
       "team": "New York Mets",
@@ -2127,6 +2365,68 @@
         "Lineup not confirmed"
       ],
       "role_notes": []
+    },
+    {
+      "id": 663886,
+      "name": "Tyler Stephenson",
+      "team": "Cincinnati Reds",
+      "bats": "R",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Tarik Skubal",
+      "venue": "Great American Ball Park",
+      "gamePk": 824465,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 15,
+      "iso": 0.175,
+      "total": 54.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 58.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.26,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 19.8,
+        "environment": 13.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2056,
+        "barrel_rate": 0.0683,
+        "hard_hit_rate": 0.3959,
+        "fb_rate": 0.5298,
+        "z_contact_rate": 0.8684,
+        "sweet_spot_rate": 0.4044,
+        "xwobacon": null,
+        "ev90": 103.3
+      },
+      "reasons": [
+        "vs Tarik Skubal \u2014 cause Pass (8.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.63)",
+        "Pitcher: High K rate (28%)",
+        "Good air-pull (21%)",
+        "Platoon edge (R vs LHP)",
+        "Pitch-mix fit: damages this arsenal (56% fastballs, rel 1.46 \u2192 mix-fit 1.26x)",
+        "Elite HR park (111)",
+        "Warm (78\u00b0F)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 686527,
@@ -2358,7 +2658,7 @@
         "Model: one strong signal"
       ],
       "warnings": [
-        "Wind in ~11 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": []
@@ -2418,7 +2718,7 @@
         "Model: one strong signal"
       ],
       "warnings": [
-        "Wind in ~11 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": []
@@ -2719,63 +3019,6 @@
       ]
     },
     {
-      "id": 682829,
-      "name": "Elly De La Cruz",
-      "team": "Cincinnati Reds",
-      "bats": "S",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Tarik Skubal",
-      "venue": "Great American Ball Park",
-      "gamePk": 824465,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 26,
-      "iso": 0.226,
-      "total": 52.7,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 62.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.76,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.8,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 22.2,
-        "environment": 13.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1508,
-        "barrel_rate": 0.0995,
-        "hard_hit_rate": 0.4488,
-        "fb_rate": 0.5199,
-        "z_contact_rate": 0.8312,
-        "sweet_spot_rate": 0.3646,
-        "xwobacon": null,
-        "ev90": 109.4
-      },
-      "reasons": [
-        "vs Tarik Skubal \u2014 cause Pass (8.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.63)",
-        "Pitcher: High K rate (28%)",
-        "Above-avg barrels (10%)",
-        "Pitch-mix fit: damages this arsenal (56% fastballs, rel 1.83 \u2192 mix-fit 1.76x)",
-        "Elite HR park (112)",
-        "Warm (78\u00b0F)"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 621439,
       "name": "Byron Buxton",
       "team": "Minnesota Twins",
@@ -2820,7 +3063,7 @@
         "Model: one strong signal"
       ],
       "warnings": [
-        "Wind in ~11 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": []
@@ -2943,69 +3186,6 @@
         "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 701398,
-      "name": "Sal Stewart",
-      "team": "Cincinnati Reds",
-      "bats": "R",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Tarik Skubal",
-      "venue": "Great American Ball Park",
-      "gamePk": 824465,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 31,
-      "iso": 0.206,
-      "total": 51.4,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 67.2,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.04,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.2,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 20.9,
-        "environment": 13.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1653,
-        "barrel_rate": 0.0937,
-        "hard_hit_rate": 0.43,
-        "fb_rate": 0.5383,
-        "z_contact_rate": 0.8591,
-        "sweet_spot_rate": 0.4064,
-        "xwobacon": null,
-        "ev90": 105.6
-      },
-      "reasons": [
-        "vs Tarik Skubal \u2014 cause Pass (8.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.63)",
-        "Pitcher: High K rate (28%)",
-        "Platoon shape: spikes vs LHP (barrel 12%, air-pull 17%)",
-        "Strong barrels (12%)",
-        "Platoon edge (R vs LHP)",
-        "Elite HR park (111)",
-        "Warm (78\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -3312,6 +3492,66 @@
       ]
     },
     {
+      "id": 808959,
+      "name": "Munetaka Murakami",
+      "team": "Chicago White Sox",
+      "bats": "L",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Gavin Williams",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 31,
+      "iso": 0.262,
+      "total": 50.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 46.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 21.0,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2033,
+        "barrel_rate": 0.0624,
+        "hard_hit_rate": 0.4084,
+        "fb_rate": 0.5075,
+        "z_contact_rate": 0.7981,
+        "sweet_spot_rate": 0.3434,
+        "xwobacon": null,
+        "ev90": 105.4
+      },
+      "reasons": [
+        "vs Gavin Williams \u2014 cause B (13.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.44)",
+        "Pitcher: High K rate (34%)",
+        "Good air-pull (20%)",
+        "Platoon edge (L vs RHP)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 670042,
       "name": "Luke Raley",
       "team": "Seattle Mariners",
@@ -3353,6 +3593,67 @@
         "Pitcher: Fly-ball prone (34% FB allowed)",
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 671976,
+      "name": "Tristan Peters",
+      "team": "Chicago White Sox",
+      "bats": "L",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Gavin Williams",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 12,
+      "iso": 0.183,
+      "total": 50.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 55.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 83%, Z-contact 86%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 20.5,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2143,
+        "barrel_rate": 0.0712,
+        "hard_hit_rate": 0.3604,
+        "fb_rate": 0.5395,
+        "z_contact_rate": 0.8613,
+        "sweet_spot_rate": 0.3424,
+        "xwobacon": null,
+        "ev90": 103.0
+      },
+      "reasons": [
+        "vs Gavin Williams \u2014 cause B (13.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.44)",
+        "Pitcher: High K rate (34%)",
+        "Strong air-pull (25%)",
+        "Platoon edge (L vs RHP)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3424,6 +3725,67 @@
       ]
     },
     {
+      "id": 553993,
+      "name": "Eugenio Su\u00e1rez",
+      "team": "Cincinnati Reds",
+      "bats": "R",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Tarik Skubal",
+      "venue": "Great American Ball Park",
+      "gamePk": 824465,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 24,
+      "iso": 0.222,
+      "total": 49.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 54.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.68,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 18.2,
+        "environment": 13.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1796,
+        "barrel_rate": 0.0744,
+        "hard_hit_rate": 0.3621,
+        "fb_rate": 0.4984,
+        "z_contact_rate": 0.8408,
+        "sweet_spot_rate": 0.3428,
+        "xwobacon": null,
+        "ev90": 97.1
+      },
+      "reasons": [
+        "vs Tarik Skubal \u2014 cause Pass (8.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.63)",
+        "Pitcher: High K rate (28%)",
+        "Platoon edge (R vs LHP)",
+        "Pitch-mix fit: damages this arsenal (56% fastballs, rel 2.20 \u2192 mix-fit 1.68x)",
+        "Elite HR park (111)",
+        "Warm (78\u00b0F)",
+        "Mid order (#5)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 682985,
       "name": "Riley Greene",
       "team": "Detroit Tigers",
@@ -3477,69 +3839,6 @@
         "Platoon edge (L vs RHP)",
         "Slightly + park (102)",
         "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 663886,
-      "name": "Tyler Stephenson",
-      "team": "Cincinnati Reds",
-      "bats": "R",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Tarik Skubal",
-      "venue": "Great American Ball Park",
-      "gamePk": 824465,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 15,
-      "iso": 0.175,
-      "total": 49.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 55.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.26,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 19.8,
-        "environment": 13.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2056,
-        "barrel_rate": 0.0683,
-        "hard_hit_rate": 0.3959,
-        "fb_rate": 0.5298,
-        "z_contact_rate": 0.8684,
-        "sweet_spot_rate": 0.4044,
-        "xwobacon": null,
-        "ev90": 103.3
-      },
-      "reasons": [
-        "vs Tarik Skubal \u2014 cause Pass (8.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.63)",
-        "Pitcher: High K rate (28%)",
-        "Good air-pull (21%)",
-        "Platoon edge (R vs LHP)",
-        "Pitch-mix fit: damages this arsenal (56% fastballs, rel 1.46 \u2192 mix-fit 1.26x)",
-        "Elite HR park (111)",
-        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3791,6 +4090,64 @@
       ]
     },
     {
+      "id": 666176,
+      "name": "Jo Adell",
+      "team": "Cleveland Guardians",
+      "bats": "R",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Newcomb",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 21,
+      "iso": 0.161,
+      "total": 48.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 55.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 15.5,
+        "environment": 7.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1895,
+        "barrel_rate": 0.0541,
+        "hard_hit_rate": 0.4251,
+        "fb_rate": 0.5063,
+        "z_contact_rate": 0.8578,
+        "sweet_spot_rate": 0.3521,
+        "xwobacon": null,
+        "ev90": 102.1
+      },
+      "reasons": [
+        "vs Sean Newcomb \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.21)",
+        "Pitcher: Fly-ball prone (29% FB allowed)",
+        "Platoon edge (R vs LHP)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 663728,
       "name": "Cal Raleigh",
       "team": "Seattle Mariners",
@@ -3862,7 +4219,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 16,
-      "iso": 0.188,
+      "iso": 0.186,
       "total": 48.4,
       "tier": "Pass",
       "role": "Watchlist",
@@ -3971,6 +4328,64 @@
       "warnings": [
         "Lineup not confirmed"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 608070,
+      "name": "Jos\u00e9 Ram\u00edrez",
+      "team": "Cleveland Guardians",
+      "bats": "S",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Newcomb",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 11,
+      "iso": 0.133,
+      "total": 48.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 54.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 91%, Z-contact 88%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 14.2,
+        "environment": 7.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2106,
+        "barrel_rate": 0.0527,
+        "hard_hit_rate": 0.34,
+        "fb_rate": 0.536,
+        "z_contact_rate": 0.875,
+        "sweet_spot_rate": 0.3565,
+        "xwobacon": null,
+        "ev90": 100.3
+      },
+      "reasons": [
+        "vs Sean Newcomb \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.21)",
+        "Pitcher: Fly-ball prone (29% FB allowed)",
+        "Good air-pull (21%)",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -4098,6 +4513,63 @@
       ]
     },
     {
+      "id": 800050,
+      "name": "Chase DeLauter",
+      "team": "Cleveland Guardians",
+      "bats": "L",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Newcomb",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 14,
+      "iso": 0.165,
+      "total": 48.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 57.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 80%, Z-contact 88%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 15.0,
+        "environment": 7.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1879,
+        "barrel_rate": 0.0624,
+        "hard_hit_rate": 0.4084,
+        "fb_rate": 0.5075,
+        "z_contact_rate": 0.8783,
+        "sweet_spot_rate": 0.3434,
+        "xwobacon": null,
+        "ev90": 100.7
+      },
+      "reasons": [
+        "vs Sean Newcomb \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.21)",
+        "Pitcher: Fly-ball prone (29% FB allowed)",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 683146,
       "name": "Brett Baty",
       "team": "New York Mets",
@@ -4148,68 +4620,6 @@
         "Pitcher: Fly-ball prone (30% FB allowed)",
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (55% fastballs, rel 2.20 \u2192 mix-fit 1.66x)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 553993,
-      "name": "Eugenio Su\u00e1rez",
-      "team": "Cincinnati Reds",
-      "bats": "R",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Tarik Skubal",
-      "venue": "Great American Ball Park",
-      "gamePk": 824465,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 24,
-      "iso": 0.222,
-      "total": 47.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 51.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.68,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 18.2,
-        "environment": 13.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1796,
-        "barrel_rate": 0.0744,
-        "hard_hit_rate": 0.3621,
-        "fb_rate": 0.4984,
-        "z_contact_rate": 0.8408,
-        "sweet_spot_rate": 0.3428,
-        "xwobacon": null,
-        "ev90": 97.1
-      },
-      "reasons": [
-        "vs Tarik Skubal \u2014 cause Pass (8.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.63)",
-        "Pitcher: High K rate (28%)",
-        "Platoon edge (R vs LHP)",
-        "Pitch-mix fit: damages this arsenal (56% fastballs, rel 2.20 \u2192 mix-fit 1.68x)",
-        "Elite HR park (111)",
-        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4334,72 +4744,10 @@
         "Pitch-mix fit: damages this arsenal (55% fastballs, rel 2.20 \u2192 mix-fit 1.66x)"
       ],
       "warnings": [
-        "Wind in ~11 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": []
-    },
-    {
-      "id": 668709,
-      "name": "JJ Bleday",
-      "team": "Cincinnati Reds",
-      "bats": "L",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Tarik Skubal",
-      "venue": "Great American Ball Park",
-      "gamePk": 824465,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 22,
-      "iso": 0.202,
-      "total": 47.4,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 59.9,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 81%, Z-contact 87%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.23,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 1.1,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 17.9,
-        "environment": 13.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2287,
-        "barrel_rate": 0.084,
-        "hard_hit_rate": 0.3497,
-        "fb_rate": 0.5258,
-        "z_contact_rate": 0.8715,
-        "sweet_spot_rate": 0.3903,
-        "xwobacon": null,
-        "ev90": 104.7
-      },
-      "reasons": [
-        "vs Tarik Skubal \u2014 cause Pass (8.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.63)",
-        "Pitcher: High K rate (28%)",
-        "Good air-pull (21%)",
-        "Pitch-mix fit: damages this arsenal (56% fastballs, rel 1.40 \u2192 mix-fit 1.23x)",
-        "Elite HR park (113)",
-        "Warm (78\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
     },
     {
       "id": 545121,
@@ -4579,8 +4927,70 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~11 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 668709,
+      "name": "JJ Bleday",
+      "team": "Cincinnati Reds",
+      "bats": "L",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Tarik Skubal",
+      "venue": "Great American Ball Park",
+      "gamePk": 824465,
+      "slot": 7,
+      "confirmed": true,
+      "season_hr": 22,
+      "iso": 0.202,
+      "total": 46.4,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 59.9,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 81%, Z-contact 87%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.23,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 1.1,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 17.9,
+        "environment": 13.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2287,
+        "barrel_rate": 0.084,
+        "hard_hit_rate": 0.3497,
+        "fb_rate": 0.5258,
+        "z_contact_rate": 0.8715,
+        "sweet_spot_rate": 0.3903,
+        "xwobacon": null,
+        "ev90": 104.7
+      },
+      "reasons": [
+        "vs Tarik Skubal \u2014 cause Pass (8.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.63)",
+        "Pitcher: High K rate (28%)",
+        "Good air-pull (21%)",
+        "Pitch-mix fit: damages this arsenal (56% fastballs, rel 1.40 \u2192 mix-fit 1.23x)",
+        "Elite HR park (113)",
+        "Warm (78\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Bottom of order (#7)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -4638,6 +5048,64 @@
       "warnings": [
         "Lineup not confirmed"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 683953,
+      "name": "Travis Bazzana",
+      "team": "Cleveland Guardians",
+      "bats": "L",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Newcomb",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 12,
+      "iso": 0.146,
+      "total": 46.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 55.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 82%, Z-contact 89%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 16.2,
+        "environment": 7.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2162,
+        "barrel_rate": 0.0674,
+        "hard_hit_rate": 0.3524,
+        "fb_rate": 0.5525,
+        "z_contact_rate": 0.8884,
+        "sweet_spot_rate": 0.3521,
+        "xwobacon": null,
+        "ev90": 100.1
+      },
+      "reasons": [
+        "vs Sean Newcomb \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.21)",
+        "Pitcher: Fly-ball prone (29% FB allowed)",
+        "Good air-pull (22%)",
+        "Mid order (#5)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -4923,7 +5391,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~11 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -5158,7 +5626,7 @@
         "Pitch-mix fit: damages this arsenal (54% fastballs, rel 1.78 \u2192 mix-fit 1.42x)"
       ],
       "warnings": [
-        "Wind in ~11 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": []
@@ -5299,7 +5767,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 9,
-      "iso": 0.125,
+      "iso": 0.124,
       "total": 45.2,
       "tier": "Pass",
       "role": "Watchlist",
@@ -5395,6 +5863,67 @@
         "Pitcher: Avg+ HR allowed (HR/9 0.91)",
         "Pitcher: Fly-ball prone (34% FB allowed)",
         "Pitch-mix fit: damages this arsenal (49% fastballs, rel 2.20 \u2192 mix-fit 1.59x)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 695657,
+      "name": "Colson Montgomery",
+      "team": "Chicago White Sox",
+      "bats": "L",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Gavin Williams",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 31,
+      "iso": 0.219,
+      "total": 44.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 45.1,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.66,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 16.1,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1915,
+        "barrel_rate": 0.0588,
+        "hard_hit_rate": 0.3955,
+        "fb_rate": 0.49,
+        "z_contact_rate": 0.8613,
+        "sweet_spot_rate": 0.354,
+        "xwobacon": null,
+        "ev90": 105.1
+      },
+      "reasons": [
+        "vs Gavin Williams \u2014 cause B (13.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.44)",
+        "Pitcher: High K rate (34%)",
+        "Good air-pull (19%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (51% breaking balls, rel 1.00 \u2192 mix-fit 0.66x)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5515,122 +6044,6 @@
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (52% fastballs, rel 1.83 \u2192 mix-fit 1.43x)",
         "Hot (86\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 677587,
-      "name": "Brayan Rocchio",
-      "team": "Cleveland Guardians",
-      "bats": "S",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Newcomb",
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.128,
-      "total": 44.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 49.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -2.3,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 16.2,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2106,
-        "barrel_rate": 0.0657,
-        "hard_hit_rate": 0.3575,
-        "fb_rate": 0.5509,
-        "z_contact_rate": 0.8578,
-        "sweet_spot_rate": 0.3863,
-        "xwobacon": null,
-        "ev90": 99.7
-      },
-      "reasons": [
-        "vs Sean Newcomb \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.21)",
-        "Pitcher: Fly-ball prone (29% FB allowed)",
-        "Good air-pull (21%)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 683953,
-      "name": "Travis Bazzana",
-      "team": "Cleveland Guardians",
-      "bats": "L",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Newcomb",
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.146,
-      "total": 44.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 82%, Z-contact 89%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 16.2,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2162,
-        "barrel_rate": 0.0674,
-        "hard_hit_rate": 0.3524,
-        "fb_rate": 0.5525,
-        "z_contact_rate": 0.8884,
-        "sweet_spot_rate": 0.3521,
-        "xwobacon": null,
-        "ev90": 100.1
-      },
-      "reasons": [
-        "vs Sean Newcomb \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.21)",
-        "Pitcher: Fly-ball prone (29% FB allowed)",
-        "Good air-pull (22%)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -5816,53 +6229,6 @@
       ]
     },
     {
-      "id": 545341,
-      "name": "Randal Grichuk",
-      "team": "Chicago White Sox",
-      "bats": "R",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": null,
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.282,
-      "total": 44.0,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 62.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 27.0,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": null,
-      "reasons": [
-        "Proxy: strong HR rate",
-        "Proxy: elite ISO (0.282)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 645277,
       "name": "Ozzie Albies",
       "team": "Atlanta Braves",
@@ -6034,7 +6400,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~11 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -6162,65 +6528,6 @@
       ]
     },
     {
-      "id": 666176,
-      "name": "Jo Adell",
-      "team": "Cleveland Guardians",
-      "bats": "R",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Newcomb",
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 21,
-      "iso": 0.161,
-      "total": 43.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 15.5,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1895,
-        "barrel_rate": 0.0541,
-        "hard_hit_rate": 0.4251,
-        "fb_rate": 0.5063,
-        "z_contact_rate": 0.8578,
-        "sweet_spot_rate": 0.3521,
-        "xwobacon": null,
-        "ev90": 102.1
-      },
-      "reasons": [
-        "vs Sean Newcomb \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.21)",
-        "Pitcher: Fly-ball prone (29% FB allowed)",
-        "Platoon edge (R vs LHP)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 668715,
       "name": "Spencer Steer",
       "team": "Cincinnati Reds",
@@ -6325,6 +6632,63 @@
       "warnings": [
         "Lineup not confirmed"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 682657,
+      "name": "Angel Mart\u00ednez",
+      "team": "Cleveland Guardians",
+      "bats": "S",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Newcomb",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 15,
+      "iso": 0.197,
+      "total": 43.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 54.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 90%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.0,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 13.5,
+        "environment": 7.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1835,
+        "barrel_rate": 0.0563,
+        "hard_hit_rate": 0.3727,
+        "fb_rate": 0.4663,
+        "z_contact_rate": 0.8954,
+        "sweet_spot_rate": 0.3046,
+        "xwobacon": null,
+        "ev90": 98.9
+      },
+      "reasons": [
+        "vs Sean Newcomb \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.21)",
+        "Pitcher: Fly-ball prone (29% FB allowed)",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -6496,6 +6860,63 @@
       ]
     },
     {
+      "id": 677587,
+      "name": "Brayan Rocchio",
+      "team": "Cleveland Guardians",
+      "bats": "S",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Newcomb",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": 9,
+      "confirmed": true,
+      "season_hr": 13,
+      "iso": 0.128,
+      "total": 43.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 49.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -2.3,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 16.2,
+        "environment": 7.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2106,
+        "barrel_rate": 0.0657,
+        "hard_hit_rate": 0.3575,
+        "fb_rate": 0.5509,
+        "z_contact_rate": 0.8578,
+        "sweet_spot_rate": 0.3863,
+        "xwobacon": null,
+        "ev90": 99.7
+      },
+      "reasons": [
+        "vs Sean Newcomb \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.21)",
+        "Pitcher: Fly-ball prone (29% FB allowed)",
+        "Good air-pull (21%)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Bottom of order (#9)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 664770,
       "name": "Nathan Lukes",
       "team": "Toronto Blue Jays",
@@ -6604,64 +7025,6 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.30)",
         "Slightly + park (100)",
         "Highly wind-dependent",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 800050,
-      "name": "Chase DeLauter",
-      "team": "Cleveland Guardians",
-      "bats": "L",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Newcomb",
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.165,
-      "total": 43.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 54.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 80%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 15.0,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1879,
-        "barrel_rate": 0.0624,
-        "hard_hit_rate": 0.4084,
-        "fb_rate": 0.5075,
-        "z_contact_rate": 0.8783,
-        "sweet_spot_rate": 0.3434,
-        "xwobacon": null,
-        "ev90": 100.7
-      },
-      "reasons": [
-        "vs Sean Newcomb \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.21)",
-        "Pitcher: Fly-ball prone (29% FB allowed)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -6782,7 +7145,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~11 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -7142,55 +7505,114 @@
       ]
     },
     {
-      "id": 608070,
-      "name": "Jos\u00e9 Ram\u00edrez",
-      "team": "Cleveland Guardians",
-      "bats": "S",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Newcomb",
+      "id": 678246,
+      "name": "Miguel Vargas",
+      "team": "Chicago White Sox",
+      "bats": "R",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Gavin Williams",
       "venue": "Progressive Field",
       "gamePk": 824386,
       "slot": null,
       "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.133,
-      "total": 42.2,
+      "season_hr": 30,
+      "iso": 0.223,
+      "total": 42.1,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 50.0,
+      "tb_score": 54.1,
       "tb_tier": "Dart",
       "tb_reasons": [
-        "High-contact bat (contact 91%, Z-contact 88%) \u2014 banks XBH"
+        "High-contact bat (contact 93%, Z-contact 90%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": null,
+      "mix_fit": 0.66,
       "fit_tag": null,
       "value_play": false,
       "due_hr": 0.0,
-      "pitcher_grade": "C",
+      "pitcher_grade": "B",
       "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 14.2,
+        "pitcher": 13.5,
+        "hitter": 13.6,
         "environment": 7.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.2106,
-        "barrel_rate": 0.0527,
-        "hard_hit_rate": 0.34,
-        "fb_rate": 0.536,
-        "z_contact_rate": 0.875,
-        "sweet_spot_rate": 0.3565,
+        "air_pull_rate": 0.2002,
+        "barrel_rate": 0.0571,
+        "hard_hit_rate": 0.38,
+        "fb_rate": 0.5231,
+        "z_contact_rate": 0.8992,
+        "sweet_spot_rate": 0.3752,
         "xwobacon": null,
-        "ev90": 100.3
+        "ev90": 99.0
       },
       "reasons": [
-        "vs Sean Newcomb \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.21)",
-        "Pitcher: Fly-ball prone (29% FB allowed)",
-        "Good air-pull (21%)",
+        "vs Gavin Williams \u2014 cause B (13.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.44)",
+        "Pitcher: High K rate (34%)",
+        "Good air-pull (22%)",
+        "Poor pitch-mix fit (51% breaking balls, rel 1.00 \u2192 mix-fit 0.66x)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 805367,
+      "name": "Chase Meidroth",
+      "team": "Chicago White Sox",
+      "bats": "R",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Gavin Williams",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 14,
+      "iso": 0.131,
+      "total": 42.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 52.6,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.66,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 13.6,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2084,
+        "barrel_rate": 0.0556,
+        "hard_hit_rate": 0.4034,
+        "fb_rate": 0.5541,
+        "z_contact_rate": 0.8579,
+        "sweet_spot_rate": 0.395,
+        "xwobacon": null,
+        "ev90": 97.7
+      },
+      "reasons": [
+        "vs Gavin Williams \u2014 cause B (13.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.44)",
+        "Pitcher: High K rate (34%)",
+        "Strong air-pull (24%)",
+        "Poor pitch-mix fit (51% breaking balls, rel 1.00 \u2192 mix-fit 0.66x)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -7309,123 +7731,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~11 mph",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 672275,
-      "name": "Patrick Bailey",
-      "team": "Cleveland Guardians",
-      "bats": "S",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Newcomb",
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.121,
-      "total": 41.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 81%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 13.8,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1696,
-        "barrel_rate": 0.0702,
-        "hard_hit_rate": 0.3919,
-        "fb_rate": 0.5147,
-        "z_contact_rate": 0.8829,
-        "sweet_spot_rate": 0.3691,
-        "xwobacon": null,
-        "ev90": 101.7
-      },
-      "reasons": [
-        "vs Sean Newcomb \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.21)",
-        "Pitcher: Fly-ball prone (29% FB allowed)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 682657,
-      "name": "Angel Mart\u00ednez",
-      "team": "Cleveland Guardians",
-      "bats": "S",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Newcomb",
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 15,
-      "iso": 0.197,
-      "total": 41.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 54.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 90%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 13.5,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1835,
-        "barrel_rate": 0.0563,
-        "hard_hit_rate": 0.3727,
-        "fb_rate": 0.4663,
-        "z_contact_rate": 0.8954,
-        "sweet_spot_rate": 0.3046,
-        "xwobacon": null,
-        "ev90": 98.9
-      },
-      "reasons": [
-        "vs Sean Newcomb \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.21)",
-        "Pitcher: Fly-ball prone (29% FB allowed)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -7605,7 +7911,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~11 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -7670,47 +7976,49 @@
       ]
     },
     {
-      "id": 663993,
-      "name": "Nathaniel Lowe",
+      "id": 672275,
+      "name": "Patrick Bailey",
       "team": "Cleveland Guardians",
-      "bats": "L",
+      "bats": "S",
       "opp": "Chicago White Sox",
       "opp_pitcher": "Sean Newcomb",
       "venue": "Progressive Field",
       "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.204,
+      "slot": 8,
+      "confirmed": true,
+      "season_hr": 8,
+      "iso": 0.121,
       "total": 40.8,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 49.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
+      "tb_score": 52.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 81%, Z-contact 88%) \u2014 banks XBH"
+      ],
       "shape_source": "statcast",
       "pull_fit": false,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.0,
+      "due_hr": -0.3,
       "pitcher_grade": "C",
       "breakdown": {
         "pitcher": 13.0,
-        "hitter": 12.8,
+        "hitter": 13.8,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
         "air_pull_rate": 0.1696,
-        "barrel_rate": 0.0563,
-        "hard_hit_rate": 0.3727,
+        "barrel_rate": 0.0702,
+        "hard_hit_rate": 0.3919,
         "fb_rate": 0.5147,
-        "z_contact_rate": 0.8871,
-        "sweet_spot_rate": 0.3852,
+        "z_contact_rate": 0.8829,
+        "sweet_spot_rate": 0.3691,
         "xwobacon": null,
-        "ev90": 103.2
+        "ev90": 101.7
       },
       "reasons": [
         "vs Sean Newcomb \u2014 cause C (13.0/25)",
@@ -7719,7 +8027,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#8)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -7779,7 +8087,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~11 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -8102,7 +8410,7 @@
       "slot": null,
       "confirmed": false,
       "season_hr": 9,
-      "iso": 0.147,
+      "iso": 0.146,
       "total": 40.2,
       "tier": "Pass",
       "role": "Watchlist",
@@ -8138,6 +8446,67 @@
         "Pitcher: Avg+ HR allowed (HR/9 0.89)",
         "Pitcher: Fly-ball prone (30% FB allowed)",
         "Hot (86\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 803011,
+      "name": "Sam Antonacci",
+      "team": "Chicago White Sox",
+      "bats": "L",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Gavin Williams",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 8,
+      "iso": 0.124,
+      "total": 40.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 54.1,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 94%, Z-contact 89%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.66,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 11.6,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.177,
+        "barrel_rate": 0.0588,
+        "hard_hit_rate": 0.3547,
+        "fb_rate": 0.5747,
+        "z_contact_rate": 0.8898,
+        "sweet_spot_rate": 0.3879,
+        "xwobacon": null,
+        "ev90": 99.2
+      },
+      "reasons": [
+        "vs Gavin Williams \u2014 cause B (13.5/25)",
+        "Pitcher: High HR allowed (HR/9 1.44)",
+        "Pitcher: High K rate (34%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (51% breaking balls, rel 1.00 \u2192 mix-fit 0.66x)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -8361,6 +8730,62 @@
       ]
     },
     {
+      "id": 663993,
+      "name": "Nathaniel Lowe",
+      "team": "Cleveland Guardians",
+      "bats": "L",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Newcomb",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": 7,
+      "confirmed": true,
+      "season_hr": 17,
+      "iso": 0.204,
+      "total": 39.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 49.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 12.8,
+        "environment": 7.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1696,
+        "barrel_rate": 0.0563,
+        "hard_hit_rate": 0.3727,
+        "fb_rate": 0.5147,
+        "z_contact_rate": 0.8871,
+        "sweet_spot_rate": 0.3852,
+        "xwobacon": null,
+        "ev90": 103.2
+      },
+      "reasons": [
+        "vs Sean Newcomb \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.21)",
+        "Pitcher: Fly-ball prone (29% FB allowed)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Bottom of order (#7)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 641933,
       "name": "Tyler O'Neill",
       "team": "Baltimore Orioles",
@@ -8461,7 +8886,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~11 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -8518,7 +8943,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~11 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -8577,7 +9002,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~11 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -8637,7 +9062,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~11 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -9162,62 +9587,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~11 mph",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 643217,
-      "name": "Andrew Benintendi",
-      "team": "Chicago White Sox",
-      "bats": "L",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": null,
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.176,
-      "total": 37.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 54.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.4,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 21.5,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2284,
-        "barrel_rate": 0.0853,
-        "hard_hit_rate": 0.4584,
-        "fb_rate": 0.5395,
-        "z_contact_rate": 0.8241,
-        "sweet_spot_rate": 0.4243,
-        "xwobacon": null,
-        "ev90": 104.5
-      },
-      "reasons": [
-        "Good air-pull (23%)",
-        "Zone-damage: hard-hit 46% + Z-contact 82%",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -9273,7 +9643,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~11 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -9331,7 +9701,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~11 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -9453,7 +9823,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~11 mph",
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -9579,60 +9949,6 @@
       ]
     },
     {
-      "id": 808959,
-      "name": "Munetaka Murakami",
-      "team": "Chicago White Sox",
-      "bats": "L",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": null,
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 31,
-      "iso": 0.262,
-      "total": 34.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 43.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 19.5,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2033,
-        "barrel_rate": 0.0624,
-        "hard_hit_rate": 0.4084,
-        "fb_rate": 0.5075,
-        "z_contact_rate": 0.7981,
-        "sweet_spot_rate": 0.3434,
-        "xwobacon": null,
-        "ev90": 105.4
-      },
-      "reasons": [
-        "Good air-pull (20%)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 657041,
       "name": "Lane Thomas",
       "team": "Atlanta Braves",
@@ -9675,62 +9991,6 @@
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (100)",
         "Highly wind-dependent",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 671976,
-      "name": "Tristan Peters",
-      "team": "Chicago White Sox",
-      "bats": "L",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": null,
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.183,
-      "total": 32.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 83%, Z-contact 86%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 17.0,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2143,
-        "barrel_rate": 0.0712,
-        "hard_hit_rate": 0.3604,
-        "fb_rate": 0.5395,
-        "z_contact_rate": 0.8613,
-        "sweet_spot_rate": 0.3424,
-        "xwobacon": null,
-        "ev90": 103.0
-      },
-      "reasons": [
-        "Good air-pull (21%)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -9801,116 +10061,6 @@
       ]
     },
     {
-      "id": 695657,
-      "name": "Colson Montgomery",
-      "team": "Chicago White Sox",
-      "bats": "L",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": null,
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 31,
-      "iso": 0.219,
-      "total": 31.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 43.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 16.2,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1915,
-        "barrel_rate": 0.0588,
-        "hard_hit_rate": 0.3955,
-        "fb_rate": 0.49,
-        "z_contact_rate": 0.8613,
-        "sweet_spot_rate": 0.354,
-        "xwobacon": null,
-        "ev90": 105.1
-      },
-      "reasons": [
-        "Good air-pull (19%)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 678246,
-      "name": "Miguel Vargas",
-      "team": "Chicago White Sox",
-      "bats": "R",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": null,
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 30,
-      "iso": 0.223,
-      "total": 31.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 56.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 93%, Z-contact 90%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 16.2,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2002,
-        "barrel_rate": 0.0571,
-        "hard_hit_rate": 0.38,
-        "fb_rate": 0.5231,
-        "z_contact_rate": 0.8992,
-        "sweet_spot_rate": 0.3752,
-        "xwobacon": null,
-        "ev90": 99.0
-      },
-      "reasons": [
-        "Good air-pull (20%)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 642086,
       "name": "Dominic Smith",
       "team": "Atlanta Braves",
@@ -9952,60 +10102,6 @@
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (100)",
         "Highly wind-dependent",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 805367,
-      "name": "Chase Meidroth",
-      "team": "Chicago White Sox",
-      "bats": "R",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": null,
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.131,
-      "total": 30.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 54.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 15.8,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2084,
-        "barrel_rate": 0.0556,
-        "hard_hit_rate": 0.4034,
-        "fb_rate": 0.5541,
-        "z_contact_rate": 0.8579,
-        "sweet_spot_rate": 0.395,
-        "xwobacon": null,
-        "ev90": 97.7
-      },
-      "reasons": [
-        "Good air-pull (21%)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -10067,62 +10163,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~11 mph",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 803011,
-      "name": "Sam Antonacci",
-      "team": "Chicago White Sox",
-      "bats": "L",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": null,
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 8,
-      "iso": 0.124,
-      "total": 26.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 94%, Z-contact 89%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 11.8,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.177,
-        "barrel_rate": 0.0588,
-        "hard_hit_rate": 0.3547,
-        "fb_rate": 0.5747,
-        "z_contact_rate": 0.8898,
-        "sweet_spot_rate": 0.3879,
-        "xwobacon": null,
-        "ev90": 99.2
-      },
-      "reasons": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
+        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -10133,7 +10174,7 @@
   "structures": {
     "longshot_group": {
       "legs": [
-        "TJ Rumfield (Colorado Rockies, 64.2)",
+        "TJ Rumfield (Colorado Rockies, 69.2)",
         "Willi Castro (Colorado Rockies, 63.8)",
         "Jackson Merrill (San Diego Padres, 63.0)",
         "Ty France (San Diego Padres, 62.3)"
@@ -10172,19 +10213,39 @@
       "opp_pitcher": "Casey Mize",
       "venue": "Coors Field",
       "gamePk": 824308,
-      "slot": null,
-      "confirmed": false,
+      "slot": 4,
+      "confirmed": true,
       "bats": "L",
-      "tb_score": 68.5,
-      "tb_tier": "Solid TB",
+      "tb_score": 71.5,
+      "tb_tier": "Strong TB",
       "tb_reasons": [
         "High-contact bat (contact 88%, Z-contact 89%) \u2014 banks XBH",
         "Platoon edge (L vs RHP)",
         "Soft-tossing / hittable arm (TB tailwind)"
       ],
       "shape_source": "statcast",
-      "hr_total": 64.2,
+      "hr_total": 69.2,
       "hr_role": "Longshot"
+    },
+    {
+      "id": 701398,
+      "name": "Sal Stewart",
+      "team": "Cincinnati Reds",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Tarik Skubal",
+      "venue": "Great American Ball Park",
+      "gamePk": 824465,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 70.2,
+      "tb_tier": "Strong TB",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 56.4,
+      "hr_role": "Watchlist"
     },
     {
       "id": 687263,
@@ -10209,24 +10270,22 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 701398,
-      "name": "Sal Stewart",
+      "id": 682829,
+      "name": "Elly De La Cruz",
       "team": "Cincinnati Reds",
       "opp": "Los Angeles Dodgers",
       "opp_pitcher": "Tarik Skubal",
       "venue": "Great American Ball Park",
       "gamePk": 824465,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 67.2,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "S",
+      "tb_score": 66.0,
       "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
+      "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 51.4,
-      "hr_role": "Watchlist"
+      "hr_total": 58.7,
+      "hr_role": "Pass"
     },
     {
       "id": 686527,
@@ -10352,6 +10411,28 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 664983,
+      "name": "Jake McCarthy",
+      "team": "Colorado Rockies",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Casey Mize",
+      "venue": "Coors Field",
+      "gamePk": 824308,
+      "slot": 1,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 62.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 86%, Z-contact 89%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)",
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 61.5,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 676724,
       "name": "Jared Young",
       "team": "New York Mets",
@@ -10371,6 +10452,26 @@
       "shape_source": "statcast",
       "hr_total": 50.6,
       "hr_role": "Watchlist"
+    },
+    {
+      "id": 545341,
+      "name": "Randal Grichuk",
+      "team": "Chicago White Sox",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Gavin Williams",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 62.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "hr_total": 57.5,
+      "hr_role": "Pass"
     },
     {
       "id": 665052,
@@ -10413,44 +10514,6 @@
       "shape_source": "proxy",
       "hr_total": 55.0,
       "hr_role": "Watchlist"
-    },
-    {
-      "id": 682829,
-      "name": "Elly De La Cruz",
-      "team": "Cincinnati Reds",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Tarik Skubal",
-      "venue": "Great American Ball Park",
-      "gamePk": 824465,
-      "slot": null,
-      "confirmed": false,
-      "bats": "S",
-      "tb_score": 62.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 52.7,
-      "hr_role": "Pass"
-    },
-    {
-      "id": 545341,
-      "name": "Randal Grichuk",
-      "team": "Chicago White Sox",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": null,
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 62.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 44.0,
-      "hr_role": "Pass"
     },
     {
       "id": 805811,
@@ -10635,6 +10698,26 @@
       "hr_role": "Pass"
     },
     {
+      "id": 696100,
+      "name": "Hunter Goodman",
+      "team": "Colorado Rockies",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Casey Mize",
+      "venue": "Coors Field",
+      "gamePk": 824308,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 60.3,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 72.7,
+      "hr_role": "Cause Satellite"
+    },
+    {
       "id": 668709,
       "name": "JJ Bleday",
       "team": "Cincinnati Reds",
@@ -10642,8 +10725,8 @@
       "opp_pitcher": "Tarik Skubal",
       "venue": "Great American Ball Park",
       "gamePk": 824465,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 59.9,
       "tb_tier": "Dart",
@@ -10651,7 +10734,7 @@
         "High-contact bat (contact 81%, Z-contact 87%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 47.4,
+      "hr_total": 46.4,
       "hr_role": "Watchlist"
     },
     {
@@ -10673,6 +10756,26 @@
       "shape_source": "statcast",
       "hr_total": 45.6,
       "hr_role": "Pass"
+    },
+    {
+      "id": 643217,
+      "name": "Andrew Benintendi",
+      "team": "Chicago White Sox",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Gavin Williams",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 59.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 61.0,
+      "hr_role": "Core"
     },
     {
       "id": 650489,
@@ -10862,25 +10965,23 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 664983,
-      "name": "Jake McCarthy",
-      "team": "Colorado Rockies",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Casey Mize",
-      "venue": "Coors Field",
-      "gamePk": 824308,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
+      "id": 663886,
+      "name": "Tyler Stephenson",
+      "team": "Cincinnati Reds",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Tarik Skubal",
+      "venue": "Great American Ball Park",
+      "gamePk": 824465,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "R",
       "tb_score": 58.5,
       "tb_tier": "Dart",
       "tb_reasons": [
-        "High-contact bat (contact 86%, Z-contact 89%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)",
-        "Soft-tossing / hittable arm (TB tailwind)"
+        "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 55.5,
+      "hr_total": 54.3,
       "hr_role": "Watchlist"
     },
     {
@@ -10966,24 +11067,24 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 696100,
-      "name": "Hunter Goodman",
-      "team": "Colorado Rockies",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Casey Mize",
-      "venue": "Coors Field",
-      "gamePk": 824308,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 57.3,
+      "id": 800050,
+      "name": "Chase DeLauter",
+      "team": "Cleveland Guardians",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Newcomb",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 57.0,
       "tb_tier": "Dart",
       "tb_reasons": [
-        "Soft-tossing / hittable arm (TB tailwind)"
+        "High-contact bat (contact 80%, Z-contact 88%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 67.7,
-      "hr_role": "Cause Satellite"
+      "hr_total": 48.0,
+      "hr_role": "Watchlist"
     },
     {
       "id": 624424,
@@ -11034,8 +11135,8 @@
       "opp_pitcher": "Casey Mize",
       "venue": "Coors Field",
       "gamePk": 824308,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 56.5,
       "tb_tier": "Dart",
@@ -11044,7 +11145,7 @@
         "Soft-tossing / hittable arm (TB tailwind)"
       ],
       "shape_source": "statcast",
-      "hr_total": 57.5,
+      "hr_total": 59.5,
       "hr_role": "Watchlist"
     },
     {
@@ -11170,26 +11271,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 678246,
-      "name": "Miguel Vargas",
-      "team": "Chicago White Sox",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": null,
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 56.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 93%, Z-contact 90%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 31.2,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 676475,
       "name": "Alec Burleson",
       "team": "St. Louis Cardinals",
@@ -11251,26 +11332,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 663886,
-      "name": "Tyler Stephenson",
-      "team": "Cincinnati Reds",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Tarik Skubal",
-      "venue": "Great American Ball Park",
-      "gamePk": 824465,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 55.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 49.3,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 805808,
       "name": "Kevin McGonigle",
       "team": "Detroit Tigers",
@@ -11312,6 +11373,26 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 683953,
+      "name": "Travis Bazzana",
+      "team": "Cleveland Guardians",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Newcomb",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": 5,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 55.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 82%, Z-contact 89%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 46.2,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 691723,
       "name": "Coby Mayo",
       "team": "Baltimore Orioles",
@@ -11349,6 +11430,47 @@
       ],
       "shape_source": "statcast",
       "hr_total": 43.9,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 671976,
+      "name": "Tristan Peters",
+      "team": "Chicago White Sox",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Gavin Williams",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 55.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 83%, Z-contact 86%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 50.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 666176,
+      "name": "Jo Adell",
+      "team": "Cleveland Guardians",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Newcomb",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 55.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 48.5,
       "hr_role": "Watchlist"
     },
     {
@@ -11432,6 +11554,26 @@
       "hr_role": "Pass"
     },
     {
+      "id": 553993,
+      "name": "Eugenio Su\u00e1rez",
+      "team": "Cincinnati Reds",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Tarik Skubal",
+      "venue": "Great American Ball Park",
+      "gamePk": 824465,
+      "slot": 5,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 54.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 49.7,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 647304,
       "name": "Josh Naylor",
       "team": "Seattle Mariners",
@@ -11459,8 +11601,8 @@
       "opp_pitcher": "Sean Newcomb",
       "venue": "Progressive Field",
       "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "bats": "S",
       "tb_score": 54.5,
       "tb_tier": "Dart",
@@ -11468,43 +11610,48 @@
         "High-contact bat (contact 84%, Z-contact 90%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 41.5,
+      "hr_total": 43.5,
       "hr_role": "Watchlist"
     },
     {
-      "id": 643217,
-      "name": "Andrew Benintendi",
+      "id": 678246,
+      "name": "Miguel Vargas",
       "team": "Chicago White Sox",
       "opp": "Cleveland Guardians",
-      "opp_pitcher": null,
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 54.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 37.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 805367,
-      "name": "Chase Meidroth",
-      "team": "Chicago White Sox",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": null,
+      "opp_pitcher": "Gavin Williams",
       "venue": "Progressive Field",
       "gamePk": 824386,
       "slot": null,
       "confirmed": false,
       "bats": "R",
-      "tb_score": 54.5,
+      "tb_score": 54.1,
       "tb_tier": "Dart",
-      "tb_reasons": [],
+      "tb_reasons": [
+        "High-contact bat (contact 93%, Z-contact 90%) \u2014 banks XBH"
+      ],
       "shape_source": "statcast",
-      "hr_total": 30.8,
+      "hr_total": 42.1,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 803011,
+      "name": "Sam Antonacci",
+      "team": "Chicago White Sox",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Gavin Williams",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 54.1,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 94%, Z-contact 89%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 40.1,
       "hr_role": "Watchlist"
     },
     {
@@ -11528,6 +11675,26 @@
       "hr_role": "Pass"
     },
     {
+      "id": 608070,
+      "name": "Jos\u00e9 Ram\u00edrez",
+      "team": "Cleveland Guardians",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Newcomb",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "S",
+      "tb_score": 54.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 91%, Z-contact 88%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 48.2,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 702284,
       "name": "Cole Young",
       "team": "Seattle Mariners",
@@ -11543,26 +11710,6 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 44.7,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 800050,
-      "name": "Chase DeLauter",
-      "team": "Cleveland Guardians",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Newcomb",
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 54.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 80%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 43.0,
       "hr_role": "Watchlist"
     },
     {
@@ -11745,6 +11892,24 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 805367,
+      "name": "Chase Meidroth",
+      "team": "Chicago White Sox",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Gavin Williams",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 52.6,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 42.1,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 677594,
       "name": "Julio Rodr\u00edguez",
       "team": "Seattle Mariners",
@@ -11763,26 +11928,6 @@
       ],
       "shape_source": "statcast",
       "hr_total": 41.1,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 683953,
-      "name": "Travis Bazzana",
-      "team": "Cleveland Guardians",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Newcomb",
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 52.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 82%, Z-contact 89%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 44.2,
       "hr_role": "Watchlist"
     },
     {
@@ -11831,8 +11976,8 @@
       "opp_pitcher": "Sean Newcomb",
       "venue": "Progressive Field",
       "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
+      "slot": 8,
+      "confirmed": true,
       "bats": "S",
       "tb_score": 52.5,
       "tb_tier": "Dart",
@@ -11840,27 +11985,7 @@
         "High-contact bat (contact 81%, Z-contact 88%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 41.8,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 803011,
-      "name": "Sam Antonacci",
-      "team": "Chicago White Sox",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": null,
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 52.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 94%, Z-contact 89%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 26.8,
+      "hr_total": 40.8,
       "hr_role": "Watchlist"
     },
     {
@@ -11923,26 +12048,6 @@
       "hr_role": "Pass"
     },
     {
-      "id": 666176,
-      "name": "Jo Adell",
-      "team": "Cleveland Guardians",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Newcomb",
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 43.5,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 683002,
       "name": "Gunnar Henderson",
       "team": "Baltimore Orioles",
@@ -11961,26 +12066,6 @@
       ],
       "shape_source": "statcast",
       "hr_total": 39.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 671976,
-      "name": "Tristan Peters",
-      "team": "Chicago White Sox",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": null,
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 83%, Z-contact 86%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 32.0,
       "hr_role": "Watchlist"
     },
     {
@@ -12022,26 +12107,6 @@
       ],
       "shape_source": "statcast",
       "hr_total": 42.4,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 553993,
-      "name": "Eugenio Su\u00e1rez",
-      "team": "Cincinnati Reds",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Tarik Skubal",
-      "venue": "Great American Ball Park",
-      "gamePk": 824465,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 51.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 47.7,
       "hr_role": "Watchlist"
     },
     {
@@ -12237,26 +12302,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 608070,
-      "name": "Jos\u00e9 Ram\u00edrez",
-      "team": "Cleveland Guardians",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Newcomb",
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "bats": "S",
-      "tb_score": 50.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 91%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 42.2,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 660670,
       "name": "Ronald Acu\u00f1a Jr.",
       "team": "Atlanta Braves",
@@ -12284,14 +12329,14 @@
       "opp_pitcher": "Sean Newcomb",
       "venue": "Progressive Field",
       "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "bats": "S",
       "tb_score": 49.5,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 44.2,
+      "hr_total": 43.2,
       "hr_role": "Watchlist"
     },
     {
@@ -12302,14 +12347,14 @@
       "opp_pitcher": "Sean Newcomb",
       "venue": "Progressive Field",
       "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 49.5,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 40.8,
+      "hr_total": 39.8,
       "hr_role": "Watchlist"
     },
     {
@@ -12340,8 +12385,8 @@
       "opp_pitcher": "Casey Mize",
       "venue": "Coors Field",
       "gamePk": 824308,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 49.1,
       "tb_tier": "Pass",
@@ -12350,7 +12395,7 @@
         "Soft-tossing / hittable arm (TB tailwind)"
       ],
       "shape_source": "statcast",
-      "hr_total": 61.6,
+      "hr_total": 60.6,
       "hr_role": "Watchlist"
     },
     {
@@ -12609,6 +12654,26 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 808959,
+      "name": "Munetaka Murakami",
+      "team": "Chicago White Sox",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Gavin Williams",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 46.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 50.5,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 694212,
       "name": "Samuel Basallo",
       "team": "Baltimore Orioles",
@@ -12784,6 +12849,26 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 695657,
+      "name": "Colson Montgomery",
+      "team": "Chicago White Sox",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Gavin Williams",
+      "venue": "Progressive Field",
+      "gamePk": 824386,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 45.1,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 44.6,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 657757,
       "name": "Gavin Sheets",
       "team": "San Diego Padres",
@@ -12872,8 +12957,8 @@
       "opp_pitcher": "Casey Mize",
       "venue": "Coors Field",
       "gamePk": 824308,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 44.3,
       "tb_tier": "Pass",
@@ -12881,7 +12966,7 @@
         "Soft-tossing / hittable arm (TB tailwind)"
       ],
       "shape_source": "statcast",
-      "hr_total": 55.8,
+      "hr_total": 54.8,
       "hr_role": "Watchlist"
     },
     {
@@ -12940,42 +13025,6 @@
       ],
       "shape_source": "statcast",
       "hr_total": 36.8,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 808959,
-      "name": "Munetaka Murakami",
-      "team": "Chicago White Sox",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": null,
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 43.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 34.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 695657,
-      "name": "Colson Montgomery",
-      "team": "Chicago White Sox",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": null,
-      "venue": "Progressive Field",
-      "gamePk": 824386,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 43.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 31.2,
       "hr_role": "Watchlist"
     },
     {
@@ -13565,6 +13614,18 @@
       "barrel_allowed": 0.0724
     },
     {
+      "id": 668909,
+      "name": "Gavin Williams",
+      "score": 13.5,
+      "grade": "B",
+      "flags": [
+        "High HR allowed (HR/9 1.44)",
+        "High K rate (34%)"
+      ],
+      "hr9": 1.44,
+      "barrel_allowed": 0.0797
+    },
+    {
       "id": 656794,
       "name": "Sean Newcomb",
       "score": 13.0,
@@ -13692,7 +13753,7 @@
         "team": "Colorado Rockies",
         "opp_pitcher": "Casey Mize",
         "role": "Cause Satellite",
-        "total": 67.7,
+        "total": 72.7,
         "cause_grade": "A+",
         "result_hr": null,
         "cause_fired": null,
@@ -13706,6 +13767,18 @@
         "role": "Cause Satellite",
         "total": 63.0,
         "cause_grade": "A",
+        "result_hr": null,
+        "cause_fired": null,
+        "teammate_hr": null,
+        "outcome": null
+      },
+      {
+        "player": "Andrew Benintendi",
+        "team": "Chicago White Sox",
+        "opp_pitcher": "Gavin Williams",
+        "role": "Core",
+        "total": 61.0,
+        "cause_grade": "B",
         "result_hr": null,
         "cause_fired": null,
         "teammate_hr": null,
