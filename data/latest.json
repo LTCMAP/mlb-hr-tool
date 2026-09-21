@@ -1,9 +1,9 @@
 {
   "version": "2.8",
-  "generated_utc": "2026-09-21T18:52:55.594022+00:00",
+  "generated_utc": "2026-09-21T20:30:21.883302+00:00",
   "slate_date": "2026-09-21",
   "games": 3,
-  "confirmed_lineups": 0,
+  "confirmed_lineups": 4,
   "statcast": true,
   "statcast_meta": {
     "window_days": 21,
@@ -38,14 +38,14 @@
     "source": "mlbapi",
     "days_savant": 0,
     "days_mlbapi": 20,
-    "trustworthy": false,
+    "trustworthy": true,
     "statcast_batters": 364,
     "statcast_candidates": 38,
-    "confirmed_lineups": 0,
+    "confirmed_lineups": 4,
     "games": 3,
     "days_failed": 1,
     "warnings": [
-      "NO CONFIRMED LINEUPS \u2014 every bat is using a neutral slot default. Likely built before lineups posted; re-run closer to first pitch.",
+      "Only 4/6 lineups confirmed \u2014 unconfirmed bats use a neutral slot default.",
       "Statcast: 1 day(s) failed to fetch in the 21-day window (thinner sample).",
       "Shape built from the MLB Stats API fallback (20/21 days) because Baseball Savant was unreachable. All shape signals are live; xwOBAcon is unavailable (regressed to league prior, ISO backstops it) and barrels are recomputed from EV/LA."
     ]
@@ -143,7 +143,7 @@
       "total": 59.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 52.5,
+      "tb_score": 54.0,
       "tb_tier": "Dart",
       "tb_reasons": [
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
@@ -171,7 +171,7 @@
         "Proxy: elite ISO (0.257)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind out ~9 mph",
+        "Wind out ~10 mph",
         "Suppressive park + no pull/barrel fit \u2192 Watchlist",
         "Model: one strong signal"
       ],
@@ -199,8 +199,8 @@
       "total": 57.3,
       "tier": "Pass",
       "role": "Cause Satellite",
-      "tb_score": 59.5,
-      "tb_tier": "Dart",
+      "tb_score": 61.0,
+      "tb_tier": "Solid TB",
       "tb_reasons": [
         "Platoon edge (L vs RHP)"
       ],
@@ -237,7 +237,7 @@
         "Strong barrels (13%)",
         "Platoon edge (L vs RHP)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind out ~9 mph",
+        "Wind out ~10 mph",
         "Model: one strong signal"
       ],
       "warnings": [
@@ -262,7 +262,7 @@
       "total": 54.5,
       "tier": "Pass",
       "role": "Cause Satellite",
-      "tb_score": 63.0,
+      "tb_score": 64.5,
       "tb_tier": "Solid TB",
       "tb_reasons": [
         "High-contact bat (contact 86%, Z-contact 89%) \u2014 banks XBH"
@@ -299,7 +299,7 @@
         "Above-avg barrels (10%)",
         "Pitch-mix fit: damages this arsenal (61% fastballs, rel 1.81 \u2192 mix-fit 1.50x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind out ~9 mph",
+        "Wind out ~10 mph",
         "Model: one strong signal"
       ],
       "warnings": [
@@ -307,6 +307,123 @@
         "Lineup not confirmed"
       ],
       "role_notes": []
+    },
+    {
+      "id": 691723,
+      "name": "Coby Mayo",
+      "team": "Baltimore Orioles",
+      "bats": "R",
+      "opp": "Toronto Blue Jays",
+      "opp_pitcher": "Trey Yesavage",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824787,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 24,
+      "iso": 0.242,
+      "total": 53.2,
+      "tier": "Pass",
+      "role": "Pass",
+      "tb_score": 56.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.4,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.0,
+        "hitter": 24.2,
+        "environment": 5.0,
+        "lineup": 11.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2178,
+        "barrel_rate": 0.0797,
+        "hard_hit_rate": 0.4311,
+        "fb_rate": 0.4996,
+        "z_contact_rate": 0.8722,
+        "sweet_spot_rate": 0.3401,
+        "xwobacon": null,
+        "ev90": 106.7
+      },
+      "reasons": [
+        "vs Trey Yesavage \u2014 cause C (10.0/25)",
+        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 26%)",
+        "Strong air-pull (26%)",
+        "Above-avg barrels (11%)",
+        "Deep LF wall suppresses RHB HR",
+        "Heart of order (#4)"
+      ],
+      "warnings": [
+        "Pitcher park (92)"
+      ],
+      "role_notes": []
+    },
+    {
+      "id": 664770,
+      "name": "Nathan Lukes",
+      "team": "Toronto Blue Jays",
+      "bats": "L",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Shane Baz",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824787,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 10,
+      "iso": 0.113,
+      "total": 51.9,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 56.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 88%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.24,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 1.4,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 17.9,
+        "environment": 8.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1639,
+        "barrel_rate": 0.0731,
+        "hard_hit_rate": 0.3683,
+        "fb_rate": 0.4388,
+        "z_contact_rate": 0.875,
+        "sweet_spot_rate": 0.3484,
+        "xwobacon": null,
+        "ev90": 99.5
+      },
+      "reasons": [
+        "vs Shane Baz \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.78)",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (51% fastballs, rel 0.98 \u2192 mix-fit 1.24x)",
+        "Slightly + park (101)",
+        "Deep LF wall suppresses RHB HR",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 646240,
@@ -324,8 +441,8 @@
       "total": 51.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 49.5,
-      "tb_tier": "Pass",
+      "tb_score": 51.0,
+      "tb_tier": "Dart",
       "tb_reasons": [
         "Platoon edge (L vs RHP)"
       ],
@@ -361,7 +478,7 @@
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (46% fastballs, rel 2.20 \u2192 mix-fit 1.80x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind out ~9 mph",
+        "Wind out ~10 mph",
         "Suppressive park + no pull/barrel fit \u2192 Watchlist"
       ],
       "warnings": [
@@ -388,7 +505,7 @@
       "total": 51.4,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 52.1,
+      "tb_score": 53.6,
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
@@ -421,13 +538,72 @@
         "Pitcher: Above-avg barrels allowed (10%)",
         "Strong air-pull (24%)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind out ~9 mph",
+        "Wind out ~10 mph",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
       "warnings": [
         "Strong pitcher park (89)",
         "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 624413,
+      "name": "Pete Alonso",
+      "team": "Baltimore Orioles",
+      "bats": "R",
+      "opp": "Toronto Blue Jays",
+      "opp_pitcher": "Trey Yesavage",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824787,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 38,
+      "iso": 0.236,
+      "total": 51.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 50.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.9,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.0,
+        "hitter": 21.2,
+        "environment": 5.0,
+        "lineup": 12.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1703,
+        "barrel_rate": 0.0952,
+        "hard_hit_rate": 0.4468,
+        "fb_rate": 0.5149,
+        "z_contact_rate": 0.8066,
+        "sweet_spot_rate": 0.3659,
+        "xwobacon": null,
+        "ev90": 108.9
+      },
+      "reasons": [
+        "vs Trey Yesavage \u2014 cause C (10.0/25)",
+        "Platoon shape: spikes vs RHP (barrel 15%, air-pull 18%)",
+        "Strong barrels (15%)",
+        "Hot (2 HR / 2 barrels last 7d)",
+        "Deep LF wall suppresses RHB HR",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Pitcher park (92)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -449,7 +625,7 @@
       "total": 50.0,
       "tier": "Pass",
       "role": "Pass",
-      "tb_score": 50.1,
+      "tb_score": 51.6,
       "tb_tier": "Dart",
       "tb_reasons": [
         "Platoon edge (L vs RHP)"
@@ -485,7 +661,7 @@
         "Platoon edge (L vs RHP)",
         "Pitch-mix fit: damages this arsenal (46% fastballs, rel 1.41 \u2192 mix-fit 1.40x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind out ~9 mph"
+        "Wind out ~10 mph"
       ],
       "warnings": [
         "Pitcher park (92)",
@@ -509,7 +685,7 @@
       "total": 49.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 52.0,
+      "tb_score": 53.5,
       "tb_tier": "Dart",
       "tb_reasons": [
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
@@ -535,7 +711,7 @@
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind out ~9 mph",
+        "Wind out ~10 mph",
         "Suppressive park + no pull/barrel fit \u2192 Watchlist"
       ],
       "warnings": [
@@ -562,7 +738,7 @@
       "total": 49.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 42.0,
+      "tb_score": 43.5,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
@@ -595,7 +771,7 @@
         "Pitcher: Above-avg barrels allowed (10%)",
         "Pitch-mix fit: damages this arsenal (61% fastballs, rel 2.20 \u2192 mix-fit 1.73x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind out ~9 mph",
+        "Wind out ~10 mph",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -623,8 +799,8 @@
       "total": 48.9,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 48.8,
-      "tb_tier": "Pass",
+      "tb_score": 50.3,
+      "tb_tier": "Dart",
       "tb_reasons": [
         "High-contact bat (contact 82%, Z-contact 87%) \u2014 banks XBH",
         "Platoon edge (L vs RHP)"
@@ -661,7 +837,7 @@
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (61% fastballs, rel 0.30 \u2192 mix-fit 0.57x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind out ~9 mph",
+        "Wind out ~10 mph",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -689,7 +865,7 @@
       "total": 48.3,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 50.2,
+      "tb_score": 51.7,
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
@@ -721,7 +897,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.19)",
         "Pitcher: Above-avg barrels allowed (10%)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind out ~9 mph",
+        "Wind out ~10 mph",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -734,24 +910,86 @@
       ]
     },
     {
-      "id": 691723,
-      "name": "Coby Mayo",
-      "team": "Baltimore Orioles",
+      "id": 672960,
+      "name": "Kazuma Okamoto",
+      "team": "Toronto Blue Jays",
       "bats": "R",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Shane Baz",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824787,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 33,
+      "iso": 0.224,
+      "total": 47.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 41.6,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.28,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.6,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 19.1,
+        "environment": 5.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1779,
+        "barrel_rate": 0.074,
+        "hard_hit_rate": 0.4218,
+        "fb_rate": 0.527,
+        "z_contact_rate": 0.8254,
+        "sweet_spot_rate": 0.3532,
+        "xwobacon": null,
+        "ev90": 105.4
+      },
+      "reasons": [
+        "vs Shane Baz \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.78)",
+        "Good air-pull (19%)",
+        "Pitch-mix fit: damages this arsenal (51% fastballs, rel 2.20 \u2192 mix-fit 1.28x)",
+        "Deep LF wall suppresses RHB HR",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Pitcher park (92)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 683002,
+      "name": "Gunnar Henderson",
+      "team": "Baltimore Orioles",
+      "bats": "L",
       "opp": "Toronto Blue Jays",
       "opp_pitcher": "Trey Yesavage",
       "venue": "Oriole Park at Camden Yards",
       "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 24,
-      "iso": 0.242,
-      "total": 46.7,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 23,
+      "iso": 0.174,
+      "total": 47.0,
       "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 53.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
+      "role": "Watchlist",
+      "tb_score": 62.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 85%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
       "shape_source": "statcast",
       "pull_fit": true,
       "mix_fit": null,
@@ -761,34 +999,35 @@
       "pitcher_grade": "C",
       "breakdown": {
         "pitcher": 10.0,
-        "hitter": 24.2,
-        "environment": 3.5,
-        "lineup": 6.0,
-        "confidence": 3.0
+        "hitter": 16.0,
+        "environment": 8.0,
+        "lineup": 11.0,
+        "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.2178,
+        "air_pull_rate": 0.1658,
         "barrel_rate": 0.0797,
-        "hard_hit_rate": 0.4311,
-        "fb_rate": 0.4996,
-        "z_contact_rate": 0.8722,
-        "sweet_spot_rate": 0.3401,
+        "hard_hit_rate": 0.3784,
+        "fb_rate": 0.5145,
+        "z_contact_rate": 0.8777,
+        "sweet_spot_rate": 0.3849,
         "xwobacon": null,
-        "ev90": 106.7
+        "ev90": 100.5
       },
       "reasons": [
         "vs Trey Yesavage \u2014 cause C (10.0/25)",
-        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 26%)",
-        "Strong air-pull (26%)",
+        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 15%)",
         "Above-avg barrels (11%)",
-        "Deep LF wall suppresses RHB HR"
+        "Platoon edge (L vs RHP)",
+        "Slightly + park (101)",
+        "Deep LF wall suppresses RHB HR",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Pitcher park (92)",
-        "Wind in ~8 mph",
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 668904,
@@ -806,7 +1045,7 @@
       "total": 45.7,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 47.6,
+      "tb_score": 49.1,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
@@ -840,195 +1079,12 @@
         "Platoon shape: spikes vs RHP (barrel 10%, air-pull 14%)",
         "Above-avg barrels (10%)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind out ~9 mph",
+        "Wind out ~10 mph",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
       "warnings": [
         "Strong pitcher park (89)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 664770,
-      "name": "Nathan Lukes",
-      "team": "Toronto Blue Jays",
-      "bats": "L",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Shane Baz",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.113,
-      "total": 45.4,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 53.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 88%, Z-contact 88%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.24,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 1.4,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 17.9,
-        "environment": 6.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1639,
-        "barrel_rate": 0.0731,
-        "hard_hit_rate": 0.3683,
-        "fb_rate": 0.4388,
-        "z_contact_rate": 0.875,
-        "sweet_spot_rate": 0.3484,
-        "xwobacon": null,
-        "ev90": 99.5
-      },
-      "reasons": [
-        "vs Shane Baz \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.78)",
-        "Platoon edge (L vs RHP)",
-        "Pitch-mix fit: damages this arsenal (51% fastballs, rel 0.98 \u2192 mix-fit 1.24x)",
-        "Slightly + park (101)",
-        "Deep LF wall suppresses RHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Wind in ~8 mph",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 624413,
-      "name": "Pete Alonso",
-      "team": "Baltimore Orioles",
-      "bats": "R",
-      "opp": "Toronto Blue Jays",
-      "opp_pitcher": "Trey Yesavage",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 38,
-      "iso": 0.236,
-      "total": 43.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 46.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.9,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 21.2,
-        "environment": 3.5,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1703,
-        "barrel_rate": 0.0952,
-        "hard_hit_rate": 0.4468,
-        "fb_rate": 0.5149,
-        "z_contact_rate": 0.8066,
-        "sweet_spot_rate": 0.3659,
-        "xwobacon": null,
-        "ev90": 108.9
-      },
-      "reasons": [
-        "vs Trey Yesavage \u2014 cause C (10.0/25)",
-        "Platoon shape: spikes vs RHP (barrel 15%, air-pull 18%)",
-        "Strong barrels (15%)",
-        "Hot (2 HR / 2 barrels last 7d)",
-        "Deep LF wall suppresses RHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (92)",
-        "Wind in ~8 mph",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 672960,
-      "name": "Kazuma Okamoto",
-      "team": "Toronto Blue Jays",
-      "bats": "R",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Shane Baz",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 33,
-      "iso": 0.224,
-      "total": 43.6,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 41.6,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.28,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.6,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 19.1,
-        "environment": 3.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1779,
-        "barrel_rate": 0.074,
-        "hard_hit_rate": 0.4218,
-        "fb_rate": 0.527,
-        "z_contact_rate": 0.8254,
-        "sweet_spot_rate": 0.3532,
-        "xwobacon": null,
-        "ev90": 105.4
-      },
-      "reasons": [
-        "vs Shane Baz \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.78)",
-        "Good air-pull (19%)",
-        "Pitch-mix fit: damages this arsenal (51% fastballs, rel 2.20 \u2192 mix-fit 1.28x)",
-        "Deep LF wall suppresses RHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (92)",
-        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -1048,7 +1104,7 @@
       "confirmed": false,
       "season_hr": 9,
       "iso": 0.096,
-      "total": 43.3,
+      "total": 44.8,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 50.0,
@@ -1064,7 +1120,7 @@
       "breakdown": {
         "pitcher": 13.0,
         "hitter": 18.8,
-        "environment": 3.5,
+        "environment": 5.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
@@ -1090,8 +1146,123 @@
       ],
       "warnings": [
         "Pitcher park (92)",
-        "Wind in ~8 mph",
         "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 694212,
+      "name": "Samuel Basallo",
+      "team": "Baltimore Orioles",
+      "bats": "L",
+      "opp": "Toronto Blue Jays",
+      "opp_pitcher": "Trey Yesavage",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824787,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 18,
+      "iso": 0.185,
+      "total": 43.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 51.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 83%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.0,
+        "hitter": 15.0,
+        "environment": 8.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1731,
+        "barrel_rate": 0.0609,
+        "hard_hit_rate": 0.3453,
+        "fb_rate": 0.4909,
+        "z_contact_rate": 0.8782,
+        "sweet_spot_rate": 0.3239,
+        "xwobacon": null,
+        "ev90": 96.0
+      },
+      "reasons": [
+        "vs Trey Yesavage \u2014 cause C (10.0/25)",
+        "Platoon edge (L vs RHP)",
+        "Slightly + park (101)",
+        "Deep LF wall suppresses RHB HR",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 687952,
+      "name": "Christian Encarnacion-Strand",
+      "team": "Baltimore Orioles",
+      "bats": "R",
+      "opp": "Toronto Blue Jays",
+      "opp_pitcher": "Trey Yesavage",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824787,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 10,
+      "iso": 0.233,
+      "total": 42.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 43.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.4,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 10.0,
+        "hitter": 17.8,
+        "environment": 5.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2023,
+        "barrel_rate": 0.0841,
+        "hard_hit_rate": 0.4259,
+        "fb_rate": 0.5313,
+        "z_contact_rate": 0.7773,
+        "sweet_spot_rate": 0.3458,
+        "xwobacon": null,
+        "ev90": 107.4
+      },
+      "reasons": [
+        "vs Trey Yesavage \u2014 cause C (10.0/25)",
+        "Good air-pull (20%)",
+        "Deep LF wall suppresses RHB HR",
+        "Mid order (#5)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Pitcher park (92)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -1113,7 +1284,7 @@
       "total": 41.8,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 43.0,
+      "tb_score": 44.5,
       "tb_tier": "Pass",
       "tb_reasons": [
         "High-contact bat (contact 91%, Z-contact 90%) \u2014 banks XBH",
@@ -1151,7 +1322,7 @@
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (46% fastballs, rel 0.30 \u2192 mix-fit 0.42x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind out ~9 mph",
+        "Wind out ~10 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -1178,7 +1349,7 @@
       "total": 41.7,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 42.7,
+      "tb_score": 44.2,
       "tb_tier": "Pass",
       "tb_reasons": [
         "Platoon edge (L vs RHP)"
@@ -1213,7 +1384,7 @@
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (46% fastballs, rel 0.30 \u2192 mix-fit 0.68x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind out ~9 mph",
+        "Wind out ~10 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -1240,7 +1411,7 @@
       "total": 41.3,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 39.5,
+      "tb_score": 41.0,
       "tb_tier": "Pass",
       "tb_reasons": [
         "High-contact bat (contact 81%, Z-contact 87%) \u2014 banks XBH"
@@ -1276,7 +1447,7 @@
         "Good air-pull (21%)",
         "Poor pitch-mix fit (61% fastballs, rel 0.30 \u2192 mix-fit 0.31x)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind out ~9 mph",
+        "Wind out ~10 mph",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
@@ -1297,11 +1468,11 @@
       "opp_pitcher": "Trey Yesavage",
       "venue": "Oriole Park at Camden Yards",
       "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
+      "slot": 8,
+      "confirmed": true,
       "season_hr": 13,
       "iso": 0.143,
-      "total": 40.7,
+      "total": 41.2,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 47.5,
@@ -1319,8 +1490,8 @@
       "breakdown": {
         "pitcher": 10.0,
         "hitter": 16.2,
-        "environment": 6.5,
-        "lineup": 6.0,
+        "environment": 8.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -1342,71 +1513,65 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~8 mph",
-        "Lineup not confirmed"
+        "Bottom of order (#8)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
     },
     {
-      "id": 683002,
-      "name": "Gunnar Henderson",
-      "team": "Baltimore Orioles",
-      "bats": "L",
-      "opp": "Toronto Blue Jays",
-      "opp_pitcher": "Trey Yesavage",
+      "id": 543807,
+      "name": "George Springer",
+      "team": "Toronto Blue Jays",
+      "bats": "R",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Shane Baz",
       "venue": "Oriole Park at Camden Yards",
       "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 23,
-      "iso": 0.174,
-      "total": 40.5,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 15,
+      "iso": 0.159,
+      "total": 40.4,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 59.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 85%, Z-contact 88%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
+      "tb_score": 43.6,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
       "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
+      "pull_fit": false,
+      "mix_fit": 0.64,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.4,
+      "due_hr": 0.7,
       "pitcher_grade": "C",
       "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 16.0,
-        "environment": 6.5,
-        "lineup": 6.0,
+        "pitcher": 13.0,
+        "hitter": 9.4,
+        "environment": 5.0,
+        "lineup": 11.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1658,
-        "barrel_rate": 0.0797,
-        "hard_hit_rate": 0.3784,
-        "fb_rate": 0.5145,
-        "z_contact_rate": 0.8777,
-        "sweet_spot_rate": 0.3849,
+        "air_pull_rate": 0.1703,
+        "barrel_rate": 0.0685,
+        "hard_hit_rate": 0.3559,
+        "fb_rate": 0.4842,
+        "z_contact_rate": 0.8625,
+        "sweet_spot_rate": 0.3198,
         "xwobacon": null,
-        "ev90": 100.5
+        "ev90": 104.5
       },
       "reasons": [
-        "vs Trey Yesavage \u2014 cause C (10.0/25)",
-        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 15%)",
-        "Above-avg barrels (11%)",
-        "Platoon edge (L vs RHP)",
-        "Slightly + park (101)",
+        "vs Shane Baz \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.78)",
+        "Poor pitch-mix fit (51% fastballs, rel 0.30 \u2192 mix-fit 0.64x)",
         "Deep LF wall suppresses RHB HR",
+        "Heart of order (#4)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~8 mph",
-        "Lineup not confirmed"
+        "Pitcher park (92)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -1428,7 +1593,7 @@
       "total": 40.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 36.0,
+      "tb_score": 37.5,
       "tb_tier": "Pass",
       "tb_reasons": [
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
@@ -1453,7 +1618,7 @@
         "Pitcher: High HR allowed (HR/9 1.65)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Deep RF triples alley suppresses LHB HR",
-        "Wind out ~9 mph",
+        "Wind out ~10 mph",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -1465,69 +1630,8 @@
       ]
     },
     {
-      "id": 694212,
-      "name": "Samuel Basallo",
-      "team": "Baltimore Orioles",
-      "bats": "L",
-      "opp": "Toronto Blue Jays",
-      "opp_pitcher": "Trey Yesavage",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.185,
-      "total": 39.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 51.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 83%, Z-contact 88%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 15.0,
-        "environment": 6.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1731,
-        "barrel_rate": 0.0609,
-        "hard_hit_rate": 0.3453,
-        "fb_rate": 0.4909,
-        "z_contact_rate": 0.8782,
-        "sweet_spot_rate": 0.3239,
-        "xwobacon": null,
-        "ev90": 96.0
-      },
-      "reasons": [
-        "vs Trey Yesavage \u2014 cause C (10.0/25)",
-        "Platoon edge (L vs RHP)",
-        "Slightly + park (101)",
-        "Deep LF wall suppresses RHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Wind in ~8 mph",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 687952,
-      "name": "Christian Encarnacion-Strand",
+      "id": 673357,
+      "name": "Luis Robert Jr.",
       "team": "Baltimore Orioles",
       "bats": "R",
       "opp": "Toronto Blue Jays",
@@ -1536,48 +1640,281 @@
       "gamePk": 824787,
       "slot": null,
       "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.233,
-      "total": 39.3,
+      "season_hr": 11,
+      "iso": 0.186,
+      "total": 39.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 40.5,
+      "tb_score": 31.5,
       "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.4,
+      "due_hr": null,
       "pitcher_grade": "C",
       "breakdown": {
         "pitcher": 10.0,
-        "hitter": 17.8,
-        "environment": 3.5,
+        "hitter": 16.0,
+        "environment": 5.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
-      "statcast": {
-        "air_pull_rate": 0.2023,
-        "barrel_rate": 0.0841,
-        "hard_hit_rate": 0.4259,
-        "fb_rate": 0.5313,
-        "z_contact_rate": 0.7773,
-        "sweet_spot_rate": 0.3458,
-        "xwobacon": null,
-        "ev90": 107.4
-      },
+      "statcast": null,
       "reasons": [
         "vs Trey Yesavage \u2014 cause C (10.0/25)",
-        "Good air-pull (20%)",
+        "Proxy: strong HR rate",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
         "Deep LF wall suppresses RHB HR",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Pitcher park (92)",
-        "Wind in ~8 mph",
         "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 701678,
+      "name": "Hao-Yu Lee",
+      "team": "Detroit Tigers",
+      "bats": "R",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "DJ Herz",
+      "venue": "Comerica Park",
+      "gamePk": 824221,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 10,
+      "iso": 0.164,
+      "total": 39.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 56.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)",
+        "Hot (3 barrels last 7d)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.1,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 20.0,
+        "environment": 4.0,
+        "lineup": 12.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1714,
+        "barrel_rate": 0.0776,
+        "hard_hit_rate": 0.4246,
+        "fb_rate": 0.5301,
+        "z_contact_rate": 0.8318,
+        "sweet_spot_rate": 0.3754,
+        "xwobacon": null,
+        "ev90": 106.1
+      },
+      "reasons": [
+        "vs DJ Herz \u2014 cause ? (0/25)",
+        "Platoon edge (R vs LHP)",
+        "Hot (2 HR / 3 barrels last 7d)",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Pitcher park (94)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 682928,
+      "name": "CJ Abrams",
+      "team": "Washington Nationals",
+      "bats": "L",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "River Ryan",
+      "venue": "Comerica Park",
+      "gamePk": 824221,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 31,
+      "iso": 0.231,
+      "total": 38.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 46.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 20.2,
+        "environment": 4.0,
+        "lineup": 11.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2131,
+        "barrel_rate": 0.0695,
+        "hard_hit_rate": 0.381,
+        "fb_rate": 0.4917,
+        "z_contact_rate": 0.8292,
+        "sweet_spot_rate": 0.3404,
+        "xwobacon": null,
+        "ev90": 101.2
+      },
+      "reasons": [
+        "vs River Ryan \u2014 cause ? (0/25)",
+        "Good air-pull (21%)",
+        "Platoon edge (L vs RHP)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Pitcher park (94)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 672386,
+      "name": "Alejandro Kirk",
+      "team": "Toronto Blue Jays",
+      "bats": "R",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Shane Baz",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824787,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 10,
+      "iso": 0.142,
+      "total": 37.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 49.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "High-contact bat (contact 85%, Z-contact 90%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.42,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 13.0,
+        "hitter": 5.8,
+        "environment": 5.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1509,
+        "barrel_rate": 0.0531,
+        "hard_hit_rate": 0.3892,
+        "fb_rate": 0.4481,
+        "z_contact_rate": 0.897,
+        "sweet_spot_rate": 0.3204,
+        "xwobacon": null,
+        "ev90": 106.4
+      },
+      "reasons": [
+        "vs Shane Baz \u2014 cause C (13.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.78)",
+        "Platoon shape fades vs RHP",
+        "Poor pitch-mix fit (51% fastballs, rel 0.30 \u2192 mix-fit 0.42x)",
+        "Deep LF wall suppresses RHB HR",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Pitcher park (92)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 695734,
+      "name": "Daylen Lile",
+      "team": "Washington Nationals",
+      "bats": "L",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "River Ryan",
+      "venue": "Comerica Park",
+      "gamePk": 824221,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 22,
+      "iso": 0.189,
+      "total": 37.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 59.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 82%, Z-contact 89%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 19.5,
+        "environment": 4.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1969,
+        "barrel_rate": 0.0685,
+        "hard_hit_rate": 0.3922,
+        "fb_rate": 0.5457,
+        "z_contact_rate": 0.891,
+        "sweet_spot_rate": 0.3505,
+        "xwobacon": null,
+        "ev90": 102.2
+      },
+      "reasons": [
+        "vs River Ryan \u2014 cause ? (0/25)",
+        "Good air-pull (20%)",
+        "Platoon edge (L vs RHP)",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Pitcher park (94)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -1592,11 +1929,11 @@
       "opp_pitcher": "DJ Herz",
       "venue": "Comerica Park",
       "gamePk": 824221,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "season_hr": 24,
       "iso": 0.195,
-      "total": 38.0,
+      "total": 37.0,
       "tier": "Pass",
       "role": "Pass",
       "tb_score": 47.5,
@@ -1615,7 +1952,7 @@
         "pitcher": 0,
         "hitter": 25.0,
         "environment": 4.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 3.0
       },
       "statcast": {
@@ -1636,61 +1973,9 @@
       ],
       "warnings": [
         "Pitcher park (94)",
-        "Lineup not confirmed"
+        "Bottom of order (#7)"
       ],
       "role_notes": []
-    },
-    {
-      "id": 673357,
-      "name": "Luis Robert Jr.",
-      "team": "Baltimore Orioles",
-      "bats": "R",
-      "opp": "Toronto Blue Jays",
-      "opp_pitcher": "Trey Yesavage",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.186,
-      "total": 37.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 31.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 10.0,
-        "hitter": 16.0,
-        "environment": 3.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Trey Yesavage \u2014 cause C (10.0/25)",
-        "Proxy: strong HR rate",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Deep LF wall suppresses RHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (92)",
-        "Wind in ~8 mph",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
     },
     {
       "id": 665926,
@@ -1701,11 +1986,11 @@
       "opp_pitcher": "Shane Baz",
       "venue": "Oriole Park at Camden Yards",
       "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
+      "slot": 8,
+      "confirmed": true,
       "season_hr": 9,
       "iso": 0.114,
-      "total": 36.4,
+      "total": 36.9,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 37.6,
@@ -1723,8 +2008,8 @@
       "breakdown": {
         "pitcher": 13.0,
         "hitter": 8.9,
-        "environment": 6.5,
-        "lineup": 6.0,
+        "environment": 8.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -1747,8 +2032,66 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Wind in ~8 mph",
-        "Lineup not confirmed"
+        "Bottom of order (#8)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 695578,
+      "name": "James Wood",
+      "team": "Washington Nationals",
+      "bats": "L",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "River Ryan",
+      "venue": "Comerica Park",
+      "gamePk": 824221,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 30,
+      "iso": 0.248,
+      "total": 36.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 57.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 18.8,
+        "environment": 4.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1681,
+        "barrel_rate": 0.0591,
+        "hard_hit_rate": 0.4514,
+        "fb_rate": 0.4745,
+        "z_contact_rate": 0.8541,
+        "sweet_spot_rate": 0.3464,
+        "xwobacon": null,
+        "ev90": 106.6
+      },
+      "reasons": [
+        "vs River Ryan \u2014 cause ? (0/25)",
+        "Zone-damage: hard-hit 45% + Z-contact 85%",
+        "Platoon edge (L vs RHP)",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Pitcher park (94)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -1763,11 +2106,11 @@
       "opp_pitcher": "DJ Herz",
       "venue": "Comerica Park",
       "gamePk": 824221,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "season_hr": 27,
       "iso": 0.207,
-      "total": 34.2,
+      "total": 36.2,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 54.5,
@@ -1786,7 +2129,7 @@
         "pitcher": 0,
         "hitter": 21.2,
         "environment": 4.0,
-        "lineup": 6.0,
+        "lineup": 8.0,
         "confidence": 3.0
       },
       "statcast": {
@@ -1803,70 +2146,67 @@
         "vs DJ Herz \u2014 cause ? (0/25)",
         "Good air-pull (19%)",
         "Platoon edge (R vs LHP)",
+        "Mid order (#6)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Pitcher park (94)",
-        "Lineup not confirmed"
+        "Pitcher park (94)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
     },
     {
-      "id": 543807,
-      "name": "George Springer",
-      "team": "Toronto Blue Jays",
-      "bats": "R",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Shane Baz",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 15,
-      "iso": 0.159,
-      "total": 33.9,
+      "id": 682985,
+      "name": "Riley Greene",
+      "team": "Detroit Tigers",
+      "bats": "L",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "DJ Herz",
+      "venue": "Comerica Park",
+      "gamePk": 824221,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 21,
+      "iso": 0.199,
+      "total": 35.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 40.6,
+      "tb_score": 49.5,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.64,
+      "pull_fit": true,
+      "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "C",
+      "due_hr": 0.8,
+      "pitcher_grade": "?",
       "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 9.4,
-        "environment": 3.5,
-        "lineup": 6.0,
+        "pitcher": 0,
+        "hitter": 18.0,
+        "environment": 4.0,
+        "lineup": 11.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1703,
-        "barrel_rate": 0.0685,
-        "hard_hit_rate": 0.3559,
-        "fb_rate": 0.4842,
-        "z_contact_rate": 0.8625,
-        "sweet_spot_rate": 0.3198,
+        "air_pull_rate": 0.1911,
+        "barrel_rate": 0.0875,
+        "hard_hit_rate": 0.3777,
+        "fb_rate": 0.5478,
+        "z_contact_rate": 0.875,
+        "sweet_spot_rate": 0.3829,
         "xwobacon": null,
-        "ev90": 104.5
+        "ev90": 105.5
       },
       "reasons": [
-        "vs Shane Baz \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.78)",
-        "Poor pitch-mix fit (51% fastballs, rel 0.30 \u2192 mix-fit 0.64x)",
-        "Deep LF wall suppresses RHB HR",
+        "vs DJ Herz \u2014 cause ? (0/25)",
+        "Good air-pull (19%)",
+        "Heart of order (#3)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Pitcher park (92)",
-        "Wind in ~8 mph",
-        "Lineup not confirmed"
+        "Pitcher park (94)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -1885,7 +2225,7 @@
       "confirmed": false,
       "season_hr": 10,
       "iso": 0.165,
-      "total": 33.5,
+      "total": 35.0,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 27.5,
@@ -1903,7 +2243,7 @@
       "breakdown": {
         "pitcher": 10.0,
         "hitter": 12.0,
-        "environment": 3.5,
+        "environment": 5.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
@@ -1916,66 +2256,6 @@
       ],
       "warnings": [
         "Pitcher park (92)",
-        "Wind in ~8 mph",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 682928,
-      "name": "CJ Abrams",
-      "team": "Washington Nationals",
-      "bats": "L",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "River Ryan",
-      "venue": "Comerica Park",
-      "gamePk": 824221,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 31,
-      "iso": 0.231,
-      "total": 33.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 43.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 20.2,
-        "environment": 4.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2131,
-        "barrel_rate": 0.0695,
-        "hard_hit_rate": 0.381,
-        "fb_rate": 0.4917,
-        "z_contact_rate": 0.8292,
-        "sweet_spot_rate": 0.3404,
-        "xwobacon": null,
-        "ev90": 101.2
-      },
-      "reasons": [
-        "vs River Ryan \u2014 cause ? (0/25)",
-        "Good air-pull (21%)",
-        "Platoon edge (L vs RHP)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (94)",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -2089,66 +2369,6 @@
       ]
     },
     {
-      "id": 701678,
-      "name": "Hao-Yu Lee",
-      "team": "Detroit Tigers",
-      "bats": "R",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "DJ Herz",
-      "venue": "Comerica Park",
-      "gamePk": 824221,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.164,
-      "total": 33.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)",
-        "Hot (3 barrels last 7d)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.1,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 20.0,
-        "environment": 4.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1714,
-        "barrel_rate": 0.0776,
-        "hard_hit_rate": 0.4246,
-        "fb_rate": 0.5301,
-        "z_contact_rate": 0.8318,
-        "sweet_spot_rate": 0.3754,
-        "xwobacon": null,
-        "ev90": 106.1
-      },
-      "reasons": [
-        "vs DJ Herz \u2014 cause ? (0/25)",
-        "Platoon edge (R vs LHP)",
-        "Hot (2 HR / 3 barrels last 7d)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (94)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 676391,
       "name": "Ernie Clement",
       "team": "Toronto Blue Jays",
@@ -2157,11 +2377,11 @@
       "opp_pitcher": "Shane Baz",
       "venue": "Oriole Park at Camden Yards",
       "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "season_hr": 9,
       "iso": 0.107,
-      "total": 31.7,
+      "total": 32.2,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 39.5,
@@ -2179,8 +2399,8 @@
       "breakdown": {
         "pitcher": 13.0,
         "hitter": 7.2,
-        "environment": 3.5,
-        "lineup": 6.0,
+        "environment": 5.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -2202,127 +2422,7 @@
       ],
       "warnings": [
         "Pitcher park (92)",
-        "Wind in ~8 mph",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 695734,
-      "name": "Daylen Lile",
-      "team": "Washington Nationals",
-      "bats": "L",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "River Ryan",
-      "venue": "Comerica Park",
-      "gamePk": 824221,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 22,
-      "iso": 0.189,
-      "total": 31.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 55.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 82%, Z-contact 89%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 19.5,
-        "environment": 4.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1969,
-        "barrel_rate": 0.0685,
-        "hard_hit_rate": 0.3922,
-        "fb_rate": 0.5457,
-        "z_contact_rate": 0.891,
-        "sweet_spot_rate": 0.3505,
-        "xwobacon": null,
-        "ev90": 102.2
-      },
-      "reasons": [
-        "vs River Ryan \u2014 cause ? (0/25)",
-        "Good air-pull (20%)",
-        "Platoon edge (L vs RHP)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (94)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 695578,
-      "name": "James Wood",
-      "team": "Washington Nationals",
-      "bats": "L",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "River Ryan",
-      "venue": "Comerica Park",
-      "gamePk": 824221,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 30,
-      "iso": 0.248,
-      "total": 30.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 53.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 18.8,
-        "environment": 4.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1681,
-        "barrel_rate": 0.0591,
-        "hard_hit_rate": 0.4514,
-        "fb_rate": 0.4745,
-        "z_contact_rate": 0.8541,
-        "sweet_spot_rate": 0.3464,
-        "xwobacon": null,
-        "ev90": 106.6
-      },
-      "reasons": [
-        "vs River Ryan \u2014 cause ? (0/25)",
-        "Zone-damage: hard-hit 45% + Z-contact 85%",
-        "Platoon edge (L vs RHP)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (94)",
-        "Lineup not confirmed"
+        "Bottom of order (#9)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -2341,7 +2441,7 @@
       "confirmed": false,
       "season_hr": 9,
       "iso": 0.145,
-      "total": 30.5,
+      "total": 32.0,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 27.5,
@@ -2359,7 +2459,7 @@
       "breakdown": {
         "pitcher": 10.0,
         "hitter": 9.0,
-        "environment": 3.5,
+        "environment": 5.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
@@ -2372,7 +2472,6 @@
       ],
       "warnings": [
         "Pitcher park (92)",
-        "Wind in ~8 mph",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -2380,118 +2479,56 @@
       ]
     },
     {
-      "id": 672386,
-      "name": "Alejandro Kirk",
-      "team": "Toronto Blue Jays",
+      "id": 686611,
+      "name": "Dylan Crews",
+      "team": "Washington Nationals",
       "bats": "R",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Shane Baz",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.142,
-      "total": 30.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 45.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 85%, Z-contact 90%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.42,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 13.0,
-        "hitter": 5.8,
-        "environment": 3.5,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1509,
-        "barrel_rate": 0.0531,
-        "hard_hit_rate": 0.3892,
-        "fb_rate": 0.4481,
-        "z_contact_rate": 0.897,
-        "sweet_spot_rate": 0.3204,
-        "xwobacon": null,
-        "ev90": 106.4
-      },
-      "reasons": [
-        "vs Shane Baz \u2014 cause C (13.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.78)",
-        "Platoon shape fades vs RHP",
-        "Poor pitch-mix fit (51% fastballs, rel 0.30 \u2192 mix-fit 0.42x)",
-        "Deep LF wall suppresses RHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (92)",
-        "Wind in ~8 mph",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 682985,
-      "name": "Riley Greene",
-      "team": "Detroit Tigers",
-      "bats": "L",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "DJ Herz",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "River Ryan",
       "venue": "Comerica Park",
       "gamePk": 824221,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 21,
-      "iso": 0.199,
-      "total": 30.0,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 12,
+      "iso": 0.149,
+      "total": 30.2,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 46.5,
-      "tb_tier": "Pass",
+      "tb_score": 55.0,
+      "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "pull_fit": true,
+      "pull_fit": false,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.8,
+      "due_hr": 0.4,
       "pitcher_grade": "?",
       "breakdown": {
         "pitcher": 0,
-        "hitter": 18.0,
+        "hitter": 16.2,
         "environment": 4.0,
-        "lineup": 6.0,
+        "lineup": 8.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1911,
-        "barrel_rate": 0.0875,
-        "hard_hit_rate": 0.3777,
-        "fb_rate": 0.5478,
-        "z_contact_rate": 0.875,
-        "sweet_spot_rate": 0.3829,
+        "air_pull_rate": 0.149,
+        "barrel_rate": 0.0777,
+        "hard_hit_rate": 0.4673,
+        "fb_rate": 0.5141,
+        "z_contact_rate": 0.8462,
+        "sweet_spot_rate": 0.3447,
         "xwobacon": null,
-        "ev90": 105.5
+        "ev90": 105.8
       },
       "reasons": [
-        "vs DJ Herz \u2014 cause ? (0/25)",
-        "Good air-pull (19%)",
+        "vs River Ryan \u2014 cause ? (0/25)",
+        "Zone-damage: hard-hit 47% + Z-contact 85%",
+        "Mid order (#5)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Pitcher park (94)",
-        "Lineup not confirmed"
+        "Pitcher park (94)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -2545,118 +2582,6 @@
       "reasons": [
         "vs DJ Herz \u2014 cause ? (0/25)",
         "Good air-pull (23%)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (94)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 686611,
-      "name": "Dylan Crews",
-      "team": "Washington Nationals",
-      "bats": "R",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "River Ryan",
-      "venue": "Comerica Park",
-      "gamePk": 824221,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.149,
-      "total": 28.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.4,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 16.2,
-        "environment": 4.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.149,
-        "barrel_rate": 0.0777,
-        "hard_hit_rate": 0.4673,
-        "fb_rate": 0.5141,
-        "z_contact_rate": 0.8462,
-        "sweet_spot_rate": 0.3447,
-        "xwobacon": null,
-        "ev90": 105.8
-      },
-      "reasons": [
-        "vs River Ryan \u2014 cause ? (0/25)",
-        "Zone-damage: hard-hit 47% + Z-contact 85%",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Pitcher park (94)",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 691781,
-      "name": "Brady House",
-      "team": "Washington Nationals",
-      "bats": "R",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "River Ryan",
-      "venue": "Comerica Park",
-      "gamePk": 824221,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.155,
-      "total": 24.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 44.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 12.8,
-        "environment": 4.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1455,
-        "barrel_rate": 0.0559,
-        "hard_hit_rate": 0.455,
-        "fb_rate": 0.4605,
-        "z_contact_rate": 0.8578,
-        "sweet_spot_rate": 0.3248,
-        "xwobacon": null,
-        "ev90": 109.5
-      },
-      "reasons": [
-        "vs River Ryan \u2014 cause ? (0/25)",
-        "Zone-damage: hard-hit 46% + Z-contact 86%",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2725,6 +2650,62 @@
       ]
     },
     {
+      "id": 691781,
+      "name": "Brady House",
+      "team": "Washington Nationals",
+      "bats": "R",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "River Ryan",
+      "venue": "Comerica Park",
+      "gamePk": 824221,
+      "slot": 7,
+      "confirmed": true,
+      "season_hr": 10,
+      "iso": 0.155,
+      "total": 23.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 44.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 12.8,
+        "environment": 4.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1455,
+        "barrel_rate": 0.0559,
+        "hard_hit_rate": 0.455,
+        "fb_rate": 0.4605,
+        "z_contact_rate": 0.8578,
+        "sweet_spot_rate": 0.3248,
+        "xwobacon": null,
+        "ev90": 109.5
+      },
+      "reasons": [
+        "vs River Ryan \u2014 cause ? (0/25)",
+        "Zone-damage: hard-hit 46% + Z-contact 86%",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Pitcher park (94)",
+        "Bottom of order (#7)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 696285,
       "name": "Jacob Young",
       "team": "Washington Nationals",
@@ -2733,11 +2714,11 @@
       "opp_pitcher": "River Ryan",
       "venue": "Comerica Park",
       "gamePk": 824221,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "season_hr": 10,
       "iso": 0.14,
-      "total": 23.2,
+      "total": 22.2,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 44.0,
@@ -2754,7 +2735,7 @@
         "pitcher": 0,
         "hitter": 11.2,
         "environment": 4.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -2773,7 +2754,7 @@
       ],
       "warnings": [
         "Pitcher park (94)",
-        "Lineup not confirmed"
+        "Bottom of order (#9)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -2788,11 +2769,11 @@
       "opp_pitcher": "River Ryan",
       "venue": "Comerica Park",
       "gamePk": 824221,
-      "slot": null,
-      "confirmed": false,
+      "slot": 8,
+      "confirmed": true,
       "season_hr": 10,
       "iso": 0.17,
-      "total": 23.0,
+      "total": 22.0,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 51.5,
@@ -2811,7 +2792,7 @@
         "pitcher": 0,
         "hitter": 11.0,
         "environment": 4.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": null,
@@ -2822,7 +2803,7 @@
       ],
       "warnings": [
         "Pitcher park (94)",
-        "Lineup not confirmed"
+        "Bottom of order (#8)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -2842,7 +2823,7 @@
       "slot": null,
       "confirmed": false,
       "bats": "S",
-      "tb_score": 63.0,
+      "tb_score": 64.5,
       "tb_tier": "Solid TB",
       "tb_reasons": [
         "High-contact bat (contact 86%, Z-contact 89%) \u2014 banks XBH"
@@ -2850,6 +2831,27 @@
       "shape_source": "statcast",
       "hr_total": 54.5,
       "hr_role": "Cause Satellite"
+    },
+    {
+      "id": 683002,
+      "name": "Gunnar Henderson",
+      "team": "Baltimore Orioles",
+      "opp": "Toronto Blue Jays",
+      "opp_pitcher": "Trey Yesavage",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824787,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 62.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 85%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 47.0,
+      "hr_role": "Watchlist"
     },
     {
       "id": 665019,
@@ -2862,35 +2864,14 @@
       "slot": null,
       "confirmed": false,
       "bats": "L",
-      "tb_score": 59.5,
-      "tb_tier": "Dart",
+      "tb_score": 61.0,
+      "tb_tier": "Solid TB",
       "tb_reasons": [
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
       "hr_total": 57.3,
       "hr_role": "Cause Satellite"
-    },
-    {
-      "id": 683002,
-      "name": "Gunnar Henderson",
-      "team": "Baltimore Orioles",
-      "opp": "Toronto Blue Jays",
-      "opp_pitcher": "Trey Yesavage",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 59.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 85%, Z-contact 88%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 40.5,
-      "hr_role": "Watchlist"
     },
     {
       "id": 695734,
@@ -2900,17 +2881,115 @@
       "opp_pitcher": "River Ryan",
       "venue": "Comerica Park",
       "gamePk": 824221,
-      "slot": null,
-      "confirmed": false,
+      "slot": 2,
+      "confirmed": true,
       "bats": "L",
-      "tb_score": 55.5,
+      "tb_score": 59.5,
       "tb_tier": "Dart",
       "tb_reasons": [
         "High-contact bat (contact 82%, Z-contact 89%) \u2014 banks XBH",
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 31.5,
+      "hr_total": 37.5,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 695578,
+      "name": "James Wood",
+      "team": "Washington Nationals",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "River Ryan",
+      "venue": "Comerica Park",
+      "gamePk": 824221,
+      "slot": 1,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 57.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 36.8,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 691723,
+      "name": "Coby Mayo",
+      "team": "Baltimore Orioles",
+      "opp": "Toronto Blue Jays",
+      "opp_pitcher": "Trey Yesavage",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824787,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 56.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 53.2,
+      "hr_role": "Pass"
+    },
+    {
+      "id": 664770,
+      "name": "Nathan Lukes",
+      "team": "Toronto Blue Jays",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Shane Baz",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824787,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 56.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 88%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 51.9,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 701678,
+      "name": "Hao-Yu Lee",
+      "team": "Detroit Tigers",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "DJ Herz",
+      "venue": "Comerica Park",
+      "gamePk": 824221,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 56.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)",
+        "Hot (3 barrels last 7d)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 39.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 686611,
+      "name": "Dylan Crews",
+      "team": "Washington Nationals",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "River Ryan",
+      "venue": "Comerica Park",
+      "gamePk": 824221,
+      "slot": 5,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 55.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 30.2,
       "hr_role": "Watchlist"
     },
     {
@@ -2921,8 +3000,8 @@
       "opp_pitcher": "DJ Herz",
       "venue": "Comerica Park",
       "gamePk": 824221,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 54.5,
       "tb_tier": "Dart",
@@ -2930,7 +3009,7 @@
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 34.2,
+      "hr_total": 36.2,
       "hr_role": "Watchlist"
     },
     {
@@ -2954,65 +3033,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 691723,
-      "name": "Coby Mayo",
-      "team": "Baltimore Orioles",
-      "opp": "Toronto Blue Jays",
-      "opp_pitcher": "Trey Yesavage",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 53.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 46.7,
-      "hr_role": "Pass"
-    },
-    {
-      "id": 664770,
-      "name": "Nathan Lukes",
-      "team": "Toronto Blue Jays",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Shane Baz",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 53.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 88%, Z-contact 88%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 45.4,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 695578,
-      "name": "James Wood",
-      "team": "Washington Nationals",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "River Ryan",
-      "venue": "Comerica Park",
-      "gamePk": 824221,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 53.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 30.8,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 621439,
       "name": "Byron Buxton",
       "team": "Minnesota Twins",
@@ -3023,7 +3043,7 @@
       "slot": null,
       "confirmed": false,
       "bats": "R",
-      "tb_score": 52.5,
+      "tb_score": 54.0,
       "tb_tier": "Dart",
       "tb_reasons": [
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
@@ -3043,7 +3063,7 @@
       "slot": null,
       "confirmed": false,
       "bats": "R",
-      "tb_score": 52.1,
+      "tb_score": 53.6,
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
@@ -3061,93 +3081,13 @@
       "slot": null,
       "confirmed": false,
       "bats": "R",
-      "tb_score": 52.0,
+      "tb_score": 53.5,
       "tb_tier": "Dart",
       "tb_reasons": [
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
       "hr_total": 49.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 701678,
-      "name": "Hao-Yu Lee",
-      "team": "Detroit Tigers",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "DJ Herz",
-      "venue": "Comerica Park",
-      "gamePk": 824221,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)",
-        "Hot (3 barrels last 7d)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 33.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 686611,
-      "name": "Dylan Crews",
-      "team": "Washington Nationals",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "River Ryan",
-      "venue": "Comerica Park",
-      "gamePk": 824221,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 28.2,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 694212,
-      "name": "Samuel Basallo",
-      "team": "Baltimore Orioles",
-      "opp": "Toronto Blue Jays",
-      "opp_pitcher": "Trey Yesavage",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 51.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 83%, Z-contact 88%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 39.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 660688,
-      "name": "Keibert Ruiz",
-      "team": "Washington Nationals",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "River Ryan",
-      "venue": "Comerica Park",
-      "gamePk": 824221,
-      "slot": null,
-      "confirmed": false,
-      "bats": "S",
-      "tb_score": 51.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 23.0,
       "hr_role": "Watchlist"
     },
     {
@@ -3161,7 +3101,7 @@
       "slot": null,
       "confirmed": false,
       "bats": "S",
-      "tb_score": 50.2,
+      "tb_score": 51.7,
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
@@ -3179,7 +3119,7 @@
       "slot": null,
       "confirmed": false,
       "bats": "L",
-      "tb_score": 50.1,
+      "tb_score": 51.6,
       "tb_tier": "Dart",
       "tb_reasons": [
         "Platoon edge (L vs RHP)"
@@ -3187,6 +3127,106 @@
       "shape_source": "statcast",
       "hr_total": 50.0,
       "hr_role": "Pass"
+    },
+    {
+      "id": 694212,
+      "name": "Samuel Basallo",
+      "team": "Baltimore Orioles",
+      "opp": "Toronto Blue Jays",
+      "opp_pitcher": "Trey Yesavage",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824787,
+      "slot": 6,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 51.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 83%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 43.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 660688,
+      "name": "Keibert Ruiz",
+      "team": "Washington Nationals",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "River Ryan",
+      "venue": "Comerica Park",
+      "gamePk": 824221,
+      "slot": 8,
+      "confirmed": true,
+      "bats": "S",
+      "tb_score": 51.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "hr_total": 22.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 646240,
+      "name": "Rafael Devers",
+      "team": "San Francisco Giants",
+      "opp": "Minnesota Twins",
+      "opp_pitcher": "Zebby Matthews",
+      "venue": "Oracle Park",
+      "gamePk": 823169,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 51.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 51.5,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 624413,
+      "name": "Pete Alonso",
+      "team": "Baltimore Orioles",
+      "opp": "Toronto Blue Jays",
+      "opp_pitcher": "Trey Yesavage",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824787,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 50.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 51.2,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 663616,
+      "name": "Trevor Larnach",
+      "team": "Minnesota Twins",
+      "opp": "San Francisco Giants",
+      "opp_pitcher": "Blade Tidwell",
+      "venue": "Oracle Park",
+      "gamePk": 823169,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 50.3,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 82%, Z-contact 87%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 48.9,
+      "hr_role": "Watchlist"
     },
     {
       "id": 665489,
@@ -3203,27 +3243,25 @@
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 43.3,
+      "hr_total": 44.8,
       "hr_role": "Watchlist"
     },
     {
-      "id": 646240,
-      "name": "Rafael Devers",
-      "team": "San Francisco Giants",
-      "opp": "Minnesota Twins",
-      "opp_pitcher": "Zebby Matthews",
-      "venue": "Oracle Park",
-      "gamePk": 823169,
-      "slot": null,
-      "confirmed": false,
+      "id": 682985,
+      "name": "Riley Greene",
+      "team": "Detroit Tigers",
+      "opp": "Washington Nationals",
+      "opp_pitcher": "DJ Herz",
+      "venue": "Comerica Park",
+      "gamePk": 824221,
+      "slot": 3,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 49.5,
       "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
+      "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 51.5,
+      "hr_total": 35.0,
       "hr_role": "Watchlist"
     },
     {
@@ -3247,8 +3285,8 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 663616,
-      "name": "Trevor Larnach",
+      "id": 668904,
+      "name": "Royce Lewis",
       "team": "Minnesota Twins",
       "opp": "San Francisco Giants",
       "opp_pitcher": "Blade Tidwell",
@@ -3256,15 +3294,32 @@
       "gamePk": 823169,
       "slot": null,
       "confirmed": false,
-      "bats": "L",
-      "tb_score": 48.8,
+      "bats": "R",
+      "tb_score": 49.1,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 45.7,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 672386,
+      "name": "Alejandro Kirk",
+      "team": "Toronto Blue Jays",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Shane Baz",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824787,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 49.0,
       "tb_tier": "Pass",
       "tb_reasons": [
-        "High-contact bat (contact 82%, Z-contact 87%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
+        "High-contact bat (contact 85%, Z-contact 90%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 48.9,
+      "hr_total": 37.8,
       "hr_role": "Watchlist"
     },
     {
@@ -3286,24 +3341,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 668904,
-      "name": "Royce Lewis",
-      "team": "Minnesota Twins",
-      "opp": "San Francisco Giants",
-      "opp_pitcher": "Blade Tidwell",
-      "venue": "Oracle Park",
-      "gamePk": 823169,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 47.6,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 45.7,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 681297,
       "name": "Colton Cowser",
       "team": "Baltimore Orioles",
@@ -3311,8 +3348,8 @@
       "opp_pitcher": "Trey Yesavage",
       "venue": "Oriole Park at Camden Yards",
       "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
+      "slot": 8,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 47.5,
       "tb_tier": "Pass",
@@ -3320,7 +3357,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 40.7,
+      "hr_total": 41.2,
       "hr_role": "Watchlist"
     },
     {
@@ -3331,8 +3368,8 @@
       "opp_pitcher": "DJ Herz",
       "venue": "Comerica Park",
       "gamePk": 824221,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 47.5,
       "tb_tier": "Pass",
@@ -3340,99 +3377,27 @@
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 38.0,
+      "hr_total": 37.0,
       "hr_role": "Pass"
     },
     {
-      "id": 624413,
-      "name": "Pete Alonso",
-      "team": "Baltimore Orioles",
-      "opp": "Toronto Blue Jays",
-      "opp_pitcher": "Trey Yesavage",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 46.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 43.7,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 682985,
-      "name": "Riley Greene",
-      "team": "Detroit Tigers",
-      "opp": "Washington Nationals",
-      "opp_pitcher": "DJ Herz",
+      "id": 682928,
+      "name": "CJ Abrams",
+      "team": "Washington Nationals",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "River Ryan",
       "venue": "Comerica Park",
       "gamePk": 824221,
-      "slot": null,
-      "confirmed": false,
+      "slot": 4,
+      "confirmed": true,
       "bats": "L",
-      "tb_score": 46.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 30.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 672386,
-      "name": "Alejandro Kirk",
-      "team": "Toronto Blue Jays",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Shane Baz",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 45.0,
+      "tb_score": 46.0,
       "tb_tier": "Pass",
       "tb_reasons": [
-        "High-contact bat (contact 85%, Z-contact 90%) \u2014 banks XBH"
+        "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 30.3,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 691781,
-      "name": "Brady House",
-      "team": "Washington Nationals",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "River Ryan",
-      "venue": "Comerica Park",
-      "gamePk": 824221,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 44.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 24.8,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 696285,
-      "name": "Jacob Young",
-      "team": "Washington Nationals",
-      "opp": "Detroit Tigers",
-      "opp_pitcher": "River Ryan",
-      "venue": "Comerica Park",
-      "gamePk": 824221,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 44.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 23.2,
+      "hr_total": 38.2,
       "hr_role": "Watchlist"
     },
     {
@@ -3446,7 +3411,7 @@
       "slot": null,
       "confirmed": false,
       "bats": "L",
-      "tb_score": 43.0,
+      "tb_score": 44.5,
       "tb_tier": "Pass",
       "tb_reasons": [
         "High-contact bat (contact 91%, Z-contact 90%) \u2014 banks XBH",
@@ -3457,23 +3422,21 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 682928,
-      "name": "CJ Abrams",
+      "id": 691781,
+      "name": "Brady House",
       "team": "Washington Nationals",
       "opp": "Detroit Tigers",
       "opp_pitcher": "River Ryan",
       "venue": "Comerica Park",
       "gamePk": 824221,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 43.0,
+      "slot": 7,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 44.5,
       "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
+      "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 33.2,
+      "hr_total": 23.8,
       "hr_role": "Watchlist"
     },
     {
@@ -3487,13 +3450,49 @@
       "slot": null,
       "confirmed": false,
       "bats": "L",
-      "tb_score": 42.7,
+      "tb_score": 44.2,
       "tb_tier": "Pass",
       "tb_reasons": [
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
       "hr_total": 41.7,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 696285,
+      "name": "Jacob Young",
+      "team": "Washington Nationals",
+      "opp": "Detroit Tigers",
+      "opp_pitcher": "River Ryan",
+      "venue": "Comerica Park",
+      "gamePk": 824221,
+      "slot": 9,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 44.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 22.2,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 543807,
+      "name": "George Springer",
+      "team": "Toronto Blue Jays",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Shane Baz",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824787,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 43.6,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 40.4,
       "hr_role": "Watchlist"
     },
     {
@@ -3507,47 +3506,11 @@
       "slot": null,
       "confirmed": false,
       "bats": "R",
-      "tb_score": 42.0,
+      "tb_score": 43.5,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 49.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 672960,
-      "name": "Kazuma Okamoto",
-      "team": "Toronto Blue Jays",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Shane Baz",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 41.6,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 43.6,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 543807,
-      "name": "George Springer",
-      "team": "Toronto Blue Jays",
-      "opp": "Baltimore Orioles",
-      "opp_pitcher": "Shane Baz",
-      "venue": "Oriole Park at Camden Yards",
-      "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 40.6,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 33.9,
       "hr_role": "Watchlist"
     },
     {
@@ -3558,14 +3521,32 @@
       "opp_pitcher": "Trey Yesavage",
       "venue": "Oriole Park at Camden Yards",
       "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
+      "slot": 5,
+      "confirmed": true,
       "bats": "R",
-      "tb_score": 40.5,
+      "tb_score": 43.5,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 39.3,
+      "hr_total": 42.8,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 672960,
+      "name": "Kazuma Okamoto",
+      "team": "Toronto Blue Jays",
+      "opp": "Baltimore Orioles",
+      "opp_pitcher": "Shane Baz",
+      "venue": "Oriole Park at Camden Yards",
+      "gamePk": 824787,
+      "slot": 6,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 41.6,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 47.1,
       "hr_role": "Watchlist"
     },
     {
@@ -3579,7 +3560,7 @@
       "slot": null,
       "confirmed": false,
       "bats": "R",
-      "tb_score": 39.5,
+      "tb_score": 41.0,
       "tb_tier": "Pass",
       "tb_reasons": [
         "High-contact bat (contact 81%, Z-contact 87%) \u2014 banks XBH"
@@ -3596,8 +3577,8 @@
       "opp_pitcher": "Shane Baz",
       "venue": "Oriole Park at Camden Yards",
       "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 39.5,
       "tb_tier": "Pass",
@@ -3605,7 +3586,7 @@
         "High-contact bat (contact 93%, Z-contact 89%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 31.7,
+      "hr_total": 32.2,
       "hr_role": "Watchlist"
     },
     {
@@ -3636,8 +3617,8 @@
       "opp_pitcher": "Shane Baz",
       "venue": "Oriole Park at Camden Yards",
       "gamePk": 824787,
-      "slot": null,
-      "confirmed": false,
+      "slot": 8,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 37.6,
       "tb_tier": "Pass",
@@ -3645,7 +3626,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 36.4,
+      "hr_total": 36.9,
       "hr_role": "Watchlist"
     },
     {
@@ -3659,7 +3640,7 @@
       "slot": null,
       "confirmed": false,
       "bats": "R",
-      "tb_score": 36.0,
+      "tb_score": 37.5,
       "tb_tier": "Pass",
       "tb_reasons": [
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
@@ -3685,7 +3666,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 37.5,
+      "hr_total": 39.0,
       "hr_role": "Watchlist"
     },
     {
@@ -3705,7 +3686,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 33.5,
+      "hr_total": 35.0,
       "hr_role": "Watchlist"
     },
     {
@@ -3725,7 +3706,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 30.5,
+      "hr_total": 32.0,
       "hr_role": "Watchlist"
     }
   ],
