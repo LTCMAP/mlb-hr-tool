@@ -1,53 +1,52 @@
 {
   "version": "2.8",
-  "generated_utc": "2026-09-29T18:48:58.765095+00:00",
+  "generated_utc": "2026-09-29T20:57:41.914937+00:00",
   "slate_date": "2026-09-29",
   "games": 4,
-  "confirmed_lineups": 4,
+  "confirmed_lineups": 6,
   "statcast": true,
   "statcast_meta": {
     "window_days": 21,
     "recent_days": 7,
     "start": "2026-09-09",
     "end": "2026-09-29",
-    "days_fetched": 0,
+    "days_fetched": 1,
     "days_cached": 20,
-    "days_failed": 1,
+    "days_failed": 0,
     "source": "mlbapi",
     "days_savant": 0,
-    "days_mlbapi": 19,
+    "days_mlbapi": 20,
     "xwobacon_available": false,
-    "batters": 346,
-    "pitchers": 298,
+    "batters": 347,
+    "pitchers": 301,
     "league": {
       "barrel_rate": 0.0686,
-      "hard_hit_rate": 0.3762,
-      "fb_rate": 0.4982,
-      "air_pull_rate": 0.1706,
-      "fly_rate": 0.2672,
-      "hr_per_pa": 0.0319,
-      "z_contact": 0.8593,
-      "sweet_spot_rate": 0.3464,
+      "hard_hit_rate": 0.3755,
+      "fb_rate": 0.4985,
+      "air_pull_rate": 0.1701,
+      "fly_rate": 0.2682,
+      "hr_per_pa": 0.0317,
+      "z_contact": 0.8591,
+      "sweet_spot_rate": 0.3462,
       "air_ev": 92.4,
-      "hr_per_barrel": 0.6865,
-      "bbe_total": 4420
+      "hr_per_barrel": 0.683,
+      "bbe_total": 4463
     }
   },
   "data_quality": {
     "mode": "statcast",
     "source": "mlbapi",
     "days_savant": 0,
-    "days_mlbapi": 19,
+    "days_mlbapi": 20,
     "trustworthy": true,
-    "statcast_batters": 346,
+    "statcast_batters": 347,
     "statcast_candidates": 61,
-    "confirmed_lineups": 4,
+    "confirmed_lineups": 6,
     "games": 4,
-    "days_failed": 1,
+    "days_failed": 0,
     "warnings": [
-      "Only 4/8 lineups confirmed \u2014 unconfirmed bats use a neutral slot default.",
-      "Statcast: 1 day(s) failed to fetch in the 21-day window (thinner sample).",
-      "Shape built from the MLB Stats API fallback (19/21 days) because Baseball Savant was unreachable. All shape signals are live; xwOBAcon is unavailable (regressed to league prior, ISO backstops it) and barrels are recomputed from EV/LA."
+      "Only 6/8 lineups confirmed \u2014 unconfirmed bats use a neutral slot default.",
+      "Shape built from the MLB Stats API fallback (20/21 days) because Baseball Savant was unreachable. All shape signals are live; xwOBAcon is unavailable (regressed to league prior, ISO backstops it) and barrels are recomputed from EV/LA."
     ]
   },
   "method": "v2.6: rank causes \u2192 choose capture \u2192 lock confirmed shape that captures the cause. NEW: zone-damage slot (hard-hit% \u00d7 Z-Contact% \u2014 loud contact that actually meets hittable pitches), xwOBAcon contact quality, and HR-luck pairing (barrels-vs-HR xHR gap \u2192 DUE bats and HR-DUE arms). Also: hardened Savant fetch w/ cache validation, directional wind, EB shrinkage, platoon-split shape, pitch-mix fit + TRAP flags. Weights P25/Shape40(11 air-pull/8 barrel/7 zone-dmg/6 matchup/3 quality/3 recent/2 due)/Env15/Lineup12/Src8. v2.8: dual-source shape \u2014 Baseball Savant with an MLB Stats API play-by-play fallback, so a Savant outage no longer drops the board to proxy. Statcast shape layer active via the MLB Stats API fallback (Savant unreachable) \u2014 xwOBAcon regressed to league prior, barrels recomputed from EV/LA.",
@@ -154,28 +153,28 @@
       "playable_bats": []
     },
     {
-      "team": "Philadelphia Phillies",
-      "opp": "Atlanta Braves",
-      "pitcher": "Chris Sale",
+      "team": "Atlanta Braves",
+      "opp": "Philadelphia Phillies",
+      "pitcher": "Jes\u00fas Luzardo",
       "venue": "Truist Park",
       "grade": "Pass",
-      "pitcher_cause": 4.5,
+      "pitcher_cause": 5.0,
       "park_hr": 103,
-      "cause_score": 5.2,
+      "cause_score": 5.8,
       "capture_method": "Watchlist / pass (no clear cause)",
       "public_heat": false,
       "n_playable": 0,
       "playable_bats": []
     },
     {
-      "team": "Atlanta Braves",
-      "opp": "Philadelphia Phillies",
-      "pitcher": "Jes\u00fas Luzardo",
+      "team": "Philadelphia Phillies",
+      "opp": "Atlanta Braves",
+      "pitcher": "Chris Sale",
       "venue": "Truist Park",
       "grade": "Pass",
-      "pitcher_cause": 2.0,
+      "pitcher_cause": 5.0,
       "park_hr": 103,
-      "cause_score": 2.8,
+      "cause_score": 5.8,
       "capture_method": "Watchlist / pass (no clear cause)",
       "public_heat": false,
       "n_playable": 0,
@@ -207,7 +206,7 @@
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -0.9,
+      "due_hr": -1.0,
       "pitcher_grade": "C",
       "breakdown": {
         "pitcher": 13.0,
@@ -217,12 +216,12 @@
         "confidence": 3.0
       },
       "statcast": {
-        "air_pull_rate": 0.2239,
+        "air_pull_rate": 0.2235,
         "barrel_rate": 0.0924,
-        "hard_hit_rate": 0.3868,
-        "fb_rate": 0.536,
-        "z_contact_rate": 0.8424,
-        "sweet_spot_rate": 0.3331,
+        "hard_hit_rate": 0.3863,
+        "fb_rate": 0.5362,
+        "z_contact_rate": 0.8423,
+        "sweet_spot_rate": 0.333,
         "xwobacon": null,
         "ev90": 103.4
       },
@@ -275,12 +274,12 @@
         "confidence": 3.0
       },
       "statcast": {
-        "air_pull_rate": 0.2116,
+        "air_pull_rate": 0.2112,
         "barrel_rate": 0.0711,
-        "hard_hit_rate": 0.3663,
-        "fb_rate": 0.5308,
-        "z_contact_rate": 0.8553,
-        "sweet_spot_rate": 0.3761,
+        "hard_hit_rate": 0.3658,
+        "fb_rate": 0.5311,
+        "z_contact_rate": 0.8552,
+        "sweet_spot_rate": 0.376,
         "xwobacon": null,
         "ev90": 106.3
       },
@@ -337,12 +336,12 @@
         "confidence": 4.0
       },
       "statcast": {
-        "air_pull_rate": 0.2145,
+        "air_pull_rate": 0.2142,
         "barrel_rate": 0.0955,
-        "hard_hit_rate": 0.4161,
-        "fb_rate": 0.5055,
-        "z_contact_rate": 0.8844,
-        "sweet_spot_rate": 0.3909,
+        "hard_hit_rate": 0.4157,
+        "fb_rate": 0.5057,
+        "z_contact_rate": 0.8843,
+        "sweet_spot_rate": 0.3908,
         "xwobacon": null,
         "ev90": 102.5
       },
@@ -395,12 +394,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1652,
+        "air_pull_rate": 0.1648,
         "barrel_rate": 0.0752,
-        "hard_hit_rate": 0.3552,
-        "fb_rate": 0.4812,
-        "z_contact_rate": 0.7587,
-        "sweet_spot_rate": 0.3503,
+        "hard_hit_rate": 0.3546,
+        "fb_rate": 0.4815,
+        "z_contact_rate": 0.7586,
+        "sweet_spot_rate": 0.3502,
         "xwobacon": null,
         "ev90": 98.5
       },
@@ -410,6 +409,123 @@
         "Platoon edge (L vs RHP)",
         "Retractable roof (weather neutralized)",
         "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 641355,
+      "name": "Cody Bellinger",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 17,
+      "iso": 0.165,
+      "total": 50.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 61.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 90%, Z-contact 89%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.6,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 18.0,
+        "environment": 11.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2142,
+        "barrel_rate": 0.072,
+        "hard_hit_rate": 0.4003,
+        "fb_rate": 0.5457,
+        "z_contact_rate": 0.8851,
+        "sweet_spot_rate": 0.3775,
+        "xwobacon": null,
+        "ev90": 102.3
+      },
+      "reasons": [
+        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
+        "Pitcher: High K rate (28%)",
+        "Strong air-pull (26%)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 700250,
+      "name": "Ben Rice",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 41,
+      "iso": 0.27,
+      "total": 50.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 64.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 86%, Z-contact 87%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 16.5,
+        "environment": 11.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1894,
+        "barrel_rate": 0.0682,
+        "hard_hit_rate": 0.4367,
+        "fb_rate": 0.5373,
+        "z_contact_rate": 0.8742,
+        "sweet_spot_rate": 0.374,
+        "xwobacon": null,
+        "ev90": 105.9
+      },
+      "reasons": [
+        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
+        "Pitcher: High K rate (28%)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Top of order (#2)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
@@ -453,12 +569,12 @@
         "confidence": 3.0
       },
       "statcast": {
-        "air_pull_rate": 0.2381,
+        "air_pull_rate": 0.2377,
         "barrel_rate": 0.072,
-        "hard_hit_rate": 0.4161,
-        "fb_rate": 0.5188,
-        "z_contact_rate": 0.841,
-        "sweet_spot_rate": 0.3509,
+        "hard_hit_rate": 0.4157,
+        "fb_rate": 0.519,
+        "z_contact_rate": 0.8409,
+        "sweet_spot_rate": 0.3508,
         "xwobacon": null,
         "ev90": 106.5
       },
@@ -509,12 +625,12 @@
         "confidence": 3.0
       },
       "statcast": {
-        "air_pull_rate": 0.1858,
+        "air_pull_rate": 0.1854,
         "barrel_rate": 0.099,
-        "hard_hit_rate": 0.3717,
-        "fb_rate": 0.4987,
-        "z_contact_rate": 0.8511,
-        "sweet_spot_rate": 0.4072,
+        "hard_hit_rate": 0.3713,
+        "fb_rate": 0.499,
+        "z_contact_rate": 0.851,
+        "sweet_spot_rate": 0.4071,
         "xwobacon": null,
         "ev90": 100.9
       },
@@ -566,12 +682,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1825,
+        "air_pull_rate": 0.1821,
         "barrel_rate": 0.0784,
-        "hard_hit_rate": 0.4319,
-        "fb_rate": 0.5134,
-        "z_contact_rate": 0.8931,
-        "sweet_spot_rate": 0.3429,
+        "hard_hit_rate": 0.4314,
+        "fb_rate": 0.5136,
+        "z_contact_rate": 0.893,
+        "sweet_spot_rate": 0.3428,
         "xwobacon": null,
         "ev90": 108.0
       },
@@ -625,12 +741,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1605,
+        "air_pull_rate": 0.1601,
         "barrel_rate": 0.0731,
-        "hard_hit_rate": 0.401,
-        "fb_rate": 0.4652,
-        "z_contact_rate": 0.81,
-        "sweet_spot_rate": 0.3387,
+        "hard_hit_rate": 0.4004,
+        "fb_rate": 0.4654,
+        "z_contact_rate": 0.8098,
+        "sweet_spot_rate": 0.3385,
         "xwobacon": null,
         "ev90": 104.5
       },
@@ -686,12 +802,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1677,
+        "air_pull_rate": 0.1673,
         "barrel_rate": 0.0764,
-        "hard_hit_rate": 0.3415,
-        "fb_rate": 0.5072,
-        "z_contact_rate": 0.8626,
-        "sweet_spot_rate": 0.3389,
+        "hard_hit_rate": 0.3409,
+        "fb_rate": 0.5075,
+        "z_contact_rate": 0.8624,
+        "sweet_spot_rate": 0.3388,
         "xwobacon": null,
         "ev90": 97.2
       },
@@ -748,12 +864,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1977,
+        "air_pull_rate": 0.1973,
         "barrel_rate": 0.0572,
-        "hard_hit_rate": 0.3663,
-        "fb_rate": 0.4985,
-        "z_contact_rate": 0.8927,
-        "sweet_spot_rate": 0.36,
+        "hard_hit_rate": 0.3658,
+        "fb_rate": 0.4988,
+        "z_contact_rate": 0.8926,
+        "sweet_spot_rate": 0.3598,
         "xwobacon": null,
         "ev90": 96.9
       },
@@ -773,6 +889,55 @@
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
+    },
+    {
+      "id": 575929,
+      "name": "Willson Contreras",
+      "team": "Boston Red Sox",
+      "bats": "R",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Cam Schlittler",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 27,
+      "iso": 0.241,
+      "total": 47.5,
+      "tier": "Pass",
+      "role": "Pass",
+      "tb_score": 62.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 4.5,
+        "hitter": 22.0,
+        "environment": 7.0,
+        "lineup": 11.0,
+        "confidence": 3.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Cam Schlittler \u2014 cause Pass (4.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.75)",
+        "Pitcher: High K rate (32%)",
+        "Proxy: strong HR rate",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR",
+        "Heart of order (#3)"
+      ],
+      "warnings": [],
+      "role_notes": []
     },
     {
       "id": 643217,
@@ -810,12 +975,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1729,
+        "air_pull_rate": 0.1724,
         "barrel_rate": 0.0633,
-        "hard_hit_rate": 0.4011,
-        "fb_rate": 0.5075,
-        "z_contact_rate": 0.8777,
-        "sweet_spot_rate": 0.3695,
+        "hard_hit_rate": 0.4004,
+        "fb_rate": 0.5077,
+        "z_contact_rate": 0.8775,
+        "sweet_spot_rate": 0.3693,
         "xwobacon": null,
         "ev90": 100.7
       },
@@ -833,124 +998,6 @@
       ]
     },
     {
-      "id": 641355,
-      "name": "Cody Bellinger",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.165,
-      "total": 46.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 58.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 90%, Z-contact 89%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.6,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 18.0,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2145,
-        "barrel_rate": 0.072,
-        "hard_hit_rate": 0.4007,
-        "fb_rate": 0.5455,
-        "z_contact_rate": 0.8853,
-        "sweet_spot_rate": 0.3776,
-        "xwobacon": null,
-        "ev90": 102.3
-      },
-      "reasons": [
-        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
-        "Pitcher: High K rate (28%)",
-        "Strong air-pull (26%)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 682987,
-      "name": "Spencer Jones",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.184,
-      "total": 45.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 43.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.4,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 17.0,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2031,
-        "barrel_rate": 0.0815,
-        "hard_hit_rate": 0.4372,
-        "fb_rate": 0.5371,
-        "z_contact_rate": 0.7995,
-        "sweet_spot_rate": 0.3742,
-        "xwobacon": null,
-        "ev90": 107.9
-      },
-      "reasons": [
-        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
-        "Pitcher: High K rate (28%)",
-        "Good air-pull (20%)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 656941,
       "name": "Kyle Schwarber",
       "team": "Philadelphia Phillies",
@@ -963,44 +1010,45 @@
       "confirmed": true,
       "season_hr": 45,
       "iso": 0.271,
-      "total": 45.0,
+      "total": 46.8,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 67.5,
+      "tb_score": 66.0,
       "tb_tier": "Solid TB",
       "tb_reasons": [
-        "High-contact bat (contact 89%, Z-contact 89%) \u2014 banks XBH"
+        "High-contact bat (contact 88%, Z-contact 89%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": null,
+      "mix_fit": 1.25,
       "fit_tag": null,
       "value_play": false,
       "due_hr": -0.3,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 17.5,
+        "pitcher": 5.0,
+        "hitter": 18.8,
         "environment": 9.0,
         "lineup": 12.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1799,
-        "barrel_rate": 0.0752,
-        "hard_hit_rate": 0.4177,
-        "fb_rate": 0.5157,
-        "z_contact_rate": 0.8889,
-        "sweet_spot_rate": 0.3331,
+        "air_pull_rate": 0.1744,
+        "barrel_rate": 0.0731,
+        "hard_hit_rate": 0.4204,
+        "fb_rate": 0.4988,
+        "z_contact_rate": 0.8864,
+        "sweet_spot_rate": 0.3218,
         "xwobacon": null,
-        "ev90": 114.2
+        "ev90": 113.5
       },
       "reasons": [
-        "vs Chris Sale \u2014 cause Pass (4.5/25)",
+        "vs Chris Sale \u2014 cause Pass (5.0/25)",
         "Pitcher: Suppresses HR (HR/9 0.55)",
         "Pitcher: High K rate (31%)",
+        "Pitch-mix fit: damages this arsenal (53% breaking balls, rel 1.00 \u2192 mix-fit 1.25x)",
         "Slightly + park (103)",
-        "Warm (81\u00b0F)",
+        "Warm (82\u00b0F)",
         "Top of order (#2)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -1010,60 +1058,185 @@
       ]
     },
     {
-      "id": 700250,
-      "name": "Ben Rice",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 41,
-      "iso": 0.27,
-      "total": 45.0,
+      "id": 664761,
+      "name": "Alec Bohm",
+      "team": "Philadelphia Phillies",
+      "bats": "R",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Chris Sale",
+      "venue": "Truist Park",
+      "gamePk": 849845,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 15,
+      "iso": 0.134,
+      "total": 46.4,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 60.0,
+      "tb_score": 62.5,
       "tb_tier": "Solid TB",
       "tb_reasons": [
-        "High-contact bat (contact 86%, Z-contact 87%) \u2014 banks XBH"
+        "High-contact bat (contact 96%, Z-contact 89%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": null,
+      "mix_fit": 1.24,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -0.3,
+      "due_hr": 2.0,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 16.5,
-        "environment": 12.0,
-        "lineup": 6.0,
+        "pitcher": 5.0,
+        "hitter": 19.4,
+        "environment": 9.0,
+        "lineup": 11.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1898,
-        "barrel_rate": 0.0682,
-        "hard_hit_rate": 0.4372,
-        "fb_rate": 0.5371,
-        "z_contact_rate": 0.8743,
-        "sweet_spot_rate": 0.3742,
+        "air_pull_rate": 0.1437,
+        "barrel_rate": 0.0912,
+        "hard_hit_rate": 0.3969,
+        "fb_rate": 0.5136,
+        "z_contact_rate": 0.8873,
+        "sweet_spot_rate": 0.3281,
         "xwobacon": null,
-        "ev90": 105.9
+        "ev90": 103.2
       },
       "reasons": [
-        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
-        "Pitcher: High K rate (28%)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
+        "vs Chris Sale \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.55)",
+        "Pitcher: High K rate (31%)",
+        "Above-avg barrels (9%)",
+        "Platoon edge (R vs LHP)",
+        "Pitch-mix fit: damages this arsenal (53% breaking balls, rel 1.00 \u2192 mix-fit 1.24x)",
+        "DUE: 3 barrels, only 0 HR in window (+2.0 xHR) \u2014 positive regression",
+        "Slightly + park (103)",
+        "Warm (82\u00b0F)",
+        "Heart of order (#4)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 621566,
+      "name": "Matt Olson",
+      "team": "Atlanta Braves",
+      "bats": "L",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Jes\u00fas Luzardo",
+      "venue": "Truist Park",
+      "gamePk": 849845,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 41,
+      "iso": 0.251,
+      "total": 45.9,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 56.4,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.47,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.4,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 18.9,
+        "environment": 9.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1738,
+        "barrel_rate": 0.0805,
+        "hard_hit_rate": 0.4468,
+        "fb_rate": 0.514,
+        "z_contact_rate": 0.8632,
+        "sweet_spot_rate": 0.3532,
+        "xwobacon": null,
+        "ev90": 106.0
+      },
+      "reasons": [
+        "vs Jes\u00fas Luzardo \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.75)",
+        "Pitcher: High K rate (30%)",
+        "Pitch-mix fit: damages this arsenal (52% fastballs, rel 1.77 \u2192 mix-fit 1.47x)",
+        "Slightly + park (103)",
+        "Warm (82\u00b0F)",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
       ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 643289,
+      "name": "Mauricio Dub\u00f3n",
+      "team": "Atlanta Braves",
+      "bats": "R",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Jes\u00fas Luzardo",
+      "venue": "Truist Park",
+      "gamePk": 849845,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 12,
+      "iso": 0.123,
+      "total": 45.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 61.3,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 83%, Z-contact 86%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.45,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 1.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 18.2,
+        "environment": 9.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.163,
+        "barrel_rate": 0.0879,
+        "hard_hit_rate": 0.361,
+        "fb_rate": 0.4919,
+        "z_contact_rate": 0.8616,
+        "sweet_spot_rate": 0.3706,
+        "xwobacon": null,
+        "ev90": 100.9
+      },
+      "reasons": [
+        "vs Jes\u00fas Luzardo \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.75)",
+        "Pitcher: High K rate (30%)",
+        "Platoon edge (R vs LHP)",
+        "Pitch-mix fit: damages this arsenal (52% fastballs, rel 0.95 \u2192 mix-fit 1.45x)",
+        "Slightly + park (103)",
+        "Warm (82\u00b0F)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -1102,12 +1275,12 @@
         "confidence": 3.0
       },
       "statcast": {
-        "air_pull_rate": 0.1873,
+        "air_pull_rate": 0.1869,
         "barrel_rate": 0.0805,
-        "hard_hit_rate": 0.4116,
-        "fb_rate": 0.4835,
-        "z_contact_rate": 0.8496,
-        "sweet_spot_rate": 0.323,
+        "hard_hit_rate": 0.4111,
+        "fb_rate": 0.4837,
+        "z_contact_rate": 0.8494,
+        "sweet_spot_rate": 0.3229,
         "xwobacon": null,
         "ev90": 103.0
       },
@@ -1161,12 +1334,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1551,
+        "air_pull_rate": 0.1546,
         "barrel_rate": 0.0624,
-        "hard_hit_rate": 0.3489,
-        "fb_rate": 0.4805,
-        "z_contact_rate": 0.8695,
-        "sweet_spot_rate": 0.3093,
+        "hard_hit_rate": 0.3483,
+        "fb_rate": 0.4808,
+        "z_contact_rate": 0.8693,
+        "sweet_spot_rate": 0.3091,
         "xwobacon": null,
         "ev90": 91.5
       },
@@ -1184,25 +1357,24 @@
       ]
     },
     {
-      "id": 664761,
-      "name": "Alec Bohm",
-      "team": "Philadelphia Phillies",
+      "id": 502671,
+      "name": "Paul Goldschmidt",
+      "team": "New York Yankees",
       "bats": "R",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Chris Sale",
-      "venue": "Truist Park",
-      "gamePk": 849845,
-      "slot": 4,
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
+      "slot": 1,
       "confirmed": true,
-      "season_hr": 15,
-      "iso": 0.134,
-      "total": 44.3,
+      "season_hr": 18,
+      "iso": 0.2,
+      "total": 44.7,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 61.0,
+      "tb_score": 60.0,
       "tb_tier": "Solid TB",
       "tb_reasons": [
-        "High-contact bat (contact 94%, Z-contact 88%) \u2014 banks XBH",
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
@@ -1210,33 +1382,212 @@
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 1.4,
+      "due_hr": 0.0,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 17.8,
+        "pitcher": 8.5,
+        "hitter": 15.2,
+        "environment": 7.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1744,
+        "barrel_rate": 0.0588,
+        "hard_hit_rate": 0.3604,
+        "fb_rate": 0.5154,
+        "z_contact_rate": 0.8531,
+        "sweet_spot_rate": 0.3385,
+        "xwobacon": null,
+        "ev90": 99.6
+      },
+      "reasons": [
+        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
+        "Pitcher: High K rate (28%)",
+        "Platoon edge (R vs LHP)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 686948,
+      "name": "Drake Baldwin",
+      "team": "Atlanta Braves",
+      "bats": "L",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Jes\u00fas Luzardo",
+      "venue": "Truist Park",
+      "gamePk": 849845,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 25,
+      "iso": 0.175,
+      "total": 44.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 60.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.64,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.4,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 16.5,
         "environment": 9.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1715,
+        "barrel_rate": 0.0794,
+        "hard_hit_rate": 0.3863,
+        "fb_rate": 0.5362,
+        "z_contact_rate": 0.8423,
+        "sweet_spot_rate": 0.3927,
+        "xwobacon": null,
+        "ev90": 105.2
+      },
+      "reasons": [
+        "vs Jes\u00fas Luzardo \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.75)",
+        "Pitcher: High K rate (30%)",
+        "Pitch-mix fit: damages this arsenal (52% fastballs, rel 2.10 \u2192 mix-fit 1.64x)",
+        "Slightly + park (103)",
+        "Warm (82\u00b0F)",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 671218,
+      "name": "Heliot Ramos",
+      "team": "New York Yankees",
+      "bats": "R",
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 13,
+      "iso": 0.166,
+      "total": 44.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 47.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 16.0,
+        "environment": 7.0,
         "lineup": 11.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1518,
-        "barrel_rate": 0.0827,
-        "hard_hit_rate": 0.4083,
-        "fb_rate": 0.4986,
-        "z_contact_rate": 0.8759,
-        "sweet_spot_rate": 0.3331,
+        "air_pull_rate": 0.2001,
+        "barrel_rate": 0.058,
+        "hard_hit_rate": 0.3337,
+        "fb_rate": 0.5234,
+        "z_contact_rate": 0.8538,
+        "sweet_spot_rate": 0.3329,
         "xwobacon": null,
-        "ev90": 103.5
+        "ev90": 107.8
       },
       "reasons": [
-        "vs Chris Sale \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.55)",
-        "Pitcher: High K rate (31%)",
+        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
+        "Pitcher: High K rate (28%)",
+        "Good air-pull (20%)",
         "Platoon edge (R vs LHP)",
         "Slightly + park (103)",
-        "Warm (81\u00b0F)",
-        "Heart of order (#4)",
+        "Short RF porch boosts LHB HR",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 660670,
+      "name": "Ronald Acu\u00f1a Jr.",
+      "team": "Atlanta Braves",
+      "bats": "R",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Jes\u00fas Luzardo",
+      "venue": "Truist Park",
+      "gamePk": 849845,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 20,
+      "iso": 0.196,
+      "total": 44.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 60.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 87%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.24,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.6,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 16.2,
+        "environment": 9.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1776,
+        "barrel_rate": 0.0764,
+        "hard_hit_rate": 0.3337,
+        "fb_rate": 0.4561,
+        "z_contact_rate": 0.8661,
+        "sweet_spot_rate": 0.3044,
+        "xwobacon": null,
+        "ev90": 105.8
+      },
+      "reasons": [
+        "vs Jes\u00fas Luzardo \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.75)",
+        "Pitcher: High K rate (30%)",
+        "Platoon edge (R vs LHP)",
+        "Pitch-mix fit: damages this arsenal (52% fastballs, rel 1.45 \u2192 mix-fit 1.24x)",
+        "Slightly + park (103)",
+        "Warm (82\u00b0F)",
+        "Top of order (#2)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
@@ -1278,12 +1629,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1583,
+        "air_pull_rate": 0.1578,
         "barrel_rate": 0.0721,
-        "hard_hit_rate": 0.3931,
-        "fb_rate": 0.4903,
-        "z_contact_rate": 0.857,
-        "sweet_spot_rate": 0.3003,
+        "hard_hit_rate": 0.3925,
+        "fb_rate": 0.4906,
+        "z_contact_rate": 0.8568,
+        "sweet_spot_rate": 0.3002,
         "xwobacon": null,
         "ev90": 103.1
       },
@@ -1337,12 +1688,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1702,
+        "air_pull_rate": 0.1698,
         "barrel_rate": 0.0624,
-        "hard_hit_rate": 0.3706,
-        "fb_rate": 0.5163,
-        "z_contact_rate": 0.8239,
-        "sweet_spot_rate": 0.345,
+        "hard_hit_rate": 0.37,
+        "fb_rate": 0.5165,
+        "z_contact_rate": 0.8237,
+        "sweet_spot_rate": 0.3448,
         "xwobacon": null,
         "ev90": 100.6
       },
@@ -1361,104 +1712,121 @@
       ]
     },
     {
-      "id": 575929,
-      "name": "Willson Contreras",
+      "id": 668939,
+      "name": "Adley Rutschman",
       "team": "Boston Red Sox",
-      "bats": "R",
+      "bats": "S",
       "opp": "New York Yankees",
       "opp_pitcher": "Cam Schlittler",
       "venue": "Yankee Stadium",
       "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 27,
-      "iso": 0.241,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 13,
+      "iso": 0.184,
       "total": 43.5,
       "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 61.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 22.0,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Cam Schlittler \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.75)",
-        "Pitcher: High K rate (32%)",
-        "Proxy: strong HR rate",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 678554,
-      "name": "Curtis Mead",
-      "team": "Boston Red Sox",
-      "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Cam Schlittler",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.245,
-      "total": 43.5,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 56.0,
+      "role": "Watchlist",
+      "tb_score": 59.5,
       "tb_tier": "Dart",
       "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+        "High-contact bat (contact 90%, Z-contact 87%) \u2014 banks XBH"
       ],
-      "shape_source": "proxy",
+      "shape_source": "statcast",
       "pull_fit": false,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": null,
+      "due_hr": -0.3,
       "pitcher_grade": "Pass",
       "breakdown": {
         "pitcher": 4.5,
-        "hitter": 22.0,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 3.0
+        "hitter": 16.0,
+        "environment": 9.0,
+        "lineup": 12.0,
+        "confidence": 2.0
       },
-      "statcast": null,
+      "statcast": {
+        "air_pull_rate": 0.1535,
+        "barrel_rate": 0.0701,
+        "hard_hit_rate": 0.3777,
+        "fb_rate": 0.4591,
+        "z_contact_rate": 0.8705,
+        "sweet_spot_rate": 0.3383,
+        "xwobacon": null,
+        "ev90": 103.0
+      },
       "reasons": [
         "vs Cam Schlittler \u2014 cause Pass (4.5/25)",
         "Pitcher: Suppresses HR (HR/9 0.75)",
         "Pitcher: High K rate (32%)",
-        "Proxy: strong HR rate",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR"
+        "Hitter-friendly park (108)",
+        "Short RF porch boosts LHB HR",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 682987,
+      "name": "Spencer Jones",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
+      "slot": 8,
+      "confirmed": true,
+      "season_hr": 11,
+      "iso": 0.184,
+      "total": 43.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 43.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.4,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 17.0,
+        "environment": 11.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2027,
+        "barrel_rate": 0.0815,
+        "hard_hit_rate": 0.4367,
+        "fb_rate": 0.5373,
+        "z_contact_rate": 0.7994,
+        "sweet_spot_rate": 0.374,
+        "xwobacon": null,
+        "ev90": 107.9
+      },
+      "reasons": [
+        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
+        "Pitcher: High K rate (28%)",
+        "Good air-pull (20%)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#8)"
       ],
-      "role_notes": []
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 514888,
@@ -1497,12 +1865,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1654,
+        "air_pull_rate": 0.165,
         "barrel_rate": 0.0556,
-        "hard_hit_rate": 0.3157,
-        "fb_rate": 0.483,
-        "z_contact_rate": 0.8758,
-        "sweet_spot_rate": 0.3175,
+        "hard_hit_rate": 0.3152,
+        "fb_rate": 0.4832,
+        "z_contact_rate": 0.8756,
+        "sweet_spot_rate": 0.3173,
         "xwobacon": null,
         "ev90": 98.7
       },
@@ -1514,6 +1882,66 @@
         "Poor pitch-mix fit (70% fastballs, rel 0.30 \u2192 mix-fit 0.51x)",
         "Hitter-friendly park (106)",
         "Retractable roof (weather neutralized)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 677800,
+      "name": "Wilyer Abreu",
+      "team": "Boston Red Sox",
+      "bats": "L",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Cam Schlittler",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 24,
+      "iso": 0.198,
+      "total": 43.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 53.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 4.5,
+        "hitter": 14.5,
+        "environment": 11.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1624,
+        "barrel_rate": 0.0597,
+        "hard_hit_rate": 0.3677,
+        "fb_rate": 0.4564,
+        "z_contact_rate": 0.8568,
+        "sweet_spot_rate": 0.3103,
+        "xwobacon": null,
+        "ev90": 105.8
+      },
+      "reasons": [
+        "vs Cam Schlittler \u2014 cause Pass (4.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.75)",
+        "Pitcher: High K rate (32%)",
+        "Platoon edge (L vs RHP)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
         "Heart of order (#4)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -1558,12 +1986,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1677,
+        "air_pull_rate": 0.1673,
         "barrel_rate": 0.0614,
-        "hard_hit_rate": 0.3627,
-        "fb_rate": 0.4721,
-        "z_contact_rate": 0.8626,
-        "sweet_spot_rate": 0.3389,
+        "hard_hit_rate": 0.3621,
+        "fb_rate": 0.4724,
+        "z_contact_rate": 0.8624,
+        "sweet_spot_rate": 0.3388,
         "xwobacon": null,
         "ev90": 104.9
       },
@@ -1579,128 +2007,6 @@
       "warnings": [
         "Bottom of order (#8)"
       ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 592450,
-      "name": "Aaron Judge",
-      "team": "New York Yankees",
-      "bats": "R",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.27,
-      "total": 43.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 18.5,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1729,
-        "barrel_rate": 0.0787,
-        "hard_hit_rate": 0.4011,
-        "fb_rate": 0.5075,
-        "z_contact_rate": 0.8411,
-        "sweet_spot_rate": 0.3331,
-        "xwobacon": null,
-        "ev90": 103.3
-      },
-      "reasons": [
-        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
-        "Pitcher: High K rate (28%)",
-        "Platoon edge (R vs LHP)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 643289,
-      "name": "Mauricio Dub\u00f3n",
-      "team": "Atlanta Braves",
-      "bats": "R",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": "Jes\u00fas Luzardo",
-      "venue": "Truist Park",
-      "gamePk": 849845,
-      "slot": 4,
-      "confirmed": true,
-      "season_hr": 12,
-      "iso": 0.123,
-      "total": 42.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 59.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 87%, Z-contact 86%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 1.1,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 2.0,
-        "hitter": 18.8,
-        "environment": 9.0,
-        "lineup": 11.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1549,
-        "barrel_rate": 0.0901,
-        "hard_hit_rate": 0.3737,
-        "fb_rate": 0.477,
-        "z_contact_rate": 0.8618,
-        "sweet_spot_rate": 0.3525,
-        "xwobacon": null,
-        "ev90": 101.1
-      },
-      "reasons": [
-        "vs Jes\u00fas Luzardo \u2014 cause Pass (2.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.75)",
-        "Pitcher: High K rate (30%)",
-        "Above-avg barrels (9%)",
-        "Platoon edge (R vs LHP)",
-        "Slightly + park (103)",
-        "Warm (81\u00b0F)",
-        "Heart of order (#4)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -1741,12 +2047,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1676,
+        "air_pull_rate": 0.1672,
         "barrel_rate": 0.0838,
-        "hard_hit_rate": 0.416,
-        "fb_rate": 0.5224,
-        "z_contact_rate": 0.8602,
-        "sweet_spot_rate": 0.386,
+        "hard_hit_rate": 0.4155,
+        "fb_rate": 0.5226,
+        "z_contact_rate": 0.8601,
+        "sweet_spot_rate": 0.3859,
         "xwobacon": null,
         "ev90": 106.0
       },
@@ -1763,64 +2069,54 @@
       ]
     },
     {
-      "id": 607208,
-      "name": "Trea Turner",
-      "team": "Philadelphia Phillies",
+      "id": 678554,
+      "name": "Curtis Mead",
+      "team": "Boston Red Sox",
       "bats": "R",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Chris Sale",
-      "venue": "Truist Park",
-      "gamePk": 849845,
-      "slot": 1,
-      "confirmed": true,
-      "season_hr": 19,
-      "iso": 0.136,
-      "total": 42.3,
+      "opp": "New York Yankees",
+      "opp_pitcher": "Cam Schlittler",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 17,
+      "iso": 0.245,
+      "total": 42.5,
       "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 50.5,
+      "role": "Pass",
+      "tb_score": 56.0,
       "tb_tier": "Dart",
       "tb_reasons": [
-        "Platoon edge (R vs LHP)"
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
-      "shape_source": "statcast",
+      "shape_source": "proxy",
       "pull_fit": false,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.0,
+      "due_hr": null,
       "pitcher_grade": "Pass",
       "breakdown": {
         "pitcher": 4.5,
-        "hitter": 14.8,
-        "environment": 9.0,
-        "lineup": 12.0,
-        "confidence": 2.0
+        "hitter": 22.0,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 3.0
       },
-      "statcast": {
-        "air_pull_rate": 0.1699,
-        "barrel_rate": 0.0572,
-        "hard_hit_rate": 0.424,
-        "fb_rate": 0.5147,
-        "z_contact_rate": 0.8464,
-        "sweet_spot_rate": 0.36,
-        "xwobacon": null,
-        "ev90": 106.8
-      },
+      "statcast": null,
       "reasons": [
-        "vs Chris Sale \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.55)",
-        "Pitcher: High K rate (31%)",
-        "Platoon edge (R vs LHP)",
+        "vs Cam Schlittler \u2014 cause Pass (4.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.75)",
+        "Pitcher: High K rate (32%)",
+        "Proxy: strong HR rate",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (103)",
-        "Warm (81\u00b0F)",
-        "Top of order (#1)",
-        "Hitter shape <22 \u2192 capped at Longshot"
+        "Short RF porch boosts LHB HR"
       ],
-      "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": []
     },
     {
       "id": 665487,
@@ -1859,12 +2155,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1605,
+        "air_pull_rate": 0.1601,
         "barrel_rate": 0.0874,
-        "hard_hit_rate": 0.421,
-        "fb_rate": 0.5152,
-        "z_contact_rate": 0.8945,
-        "sweet_spot_rate": 0.3387,
+        "hard_hit_rate": 0.4204,
+        "fb_rate": 0.5154,
+        "z_contact_rate": 0.8943,
+        "sweet_spot_rate": 0.3385,
         "xwobacon": null,
         "ev90": 109.8
       },
@@ -1876,6 +2172,185 @@
       "warnings": [
         "Lineup not confirmed"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 592450,
+      "name": "Aaron Judge",
+      "team": "New York Yankees",
+      "bats": "R",
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 18,
+      "iso": 0.27,
+      "total": 42.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 52.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 18.5,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1724,
+        "barrel_rate": 0.0787,
+        "hard_hit_rate": 0.4004,
+        "fb_rate": 0.5077,
+        "z_contact_rate": 0.8409,
+        "sweet_spot_rate": 0.3329,
+        "xwobacon": null,
+        "ev90": 103.3
+      },
+      "reasons": [
+        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
+        "Pitcher: High K rate (28%)",
+        "Platoon edge (R vs LHP)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 645277,
+      "name": "Ozzie Albies",
+      "team": "Atlanta Braves",
+      "bats": "S",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Jes\u00fas Luzardo",
+      "venue": "Truist Park",
+      "gamePk": 849845,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 22,
+      "iso": 0.155,
+      "total": 41.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 47.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.52,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 17.8,
+        "environment": 9.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1738,
+        "barrel_rate": 0.0673,
+        "hard_hit_rate": 0.3754,
+        "fb_rate": 0.4837,
+        "z_contact_rate": 0.8552,
+        "sweet_spot_rate": 0.3077,
+        "xwobacon": null,
+        "ev90": 101.8
+      },
+      "reasons": [
+        "vs Jes\u00fas Luzardo \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.75)",
+        "Pitcher: High K rate (30%)",
+        "Pitch-mix fit: damages this arsenal (52% fastballs, rel 2.12 \u2192 mix-fit 1.52x)",
+        "Slightly + park (103)",
+        "Warm (82\u00b0F)",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 607208,
+      "name": "Trea Turner",
+      "team": "Philadelphia Phillies",
+      "bats": "R",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Chris Sale",
+      "venue": "Truist Park",
+      "gamePk": 849845,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 19,
+      "iso": 0.136,
+      "total": 41.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 49.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.76,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 13.6,
+        "environment": 9.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.165,
+        "barrel_rate": 0.0556,
+        "hard_hit_rate": 0.4078,
+        "fb_rate": 0.5144,
+        "z_contact_rate": 0.8436,
+        "sweet_spot_rate": 0.3486,
+        "xwobacon": null,
+        "ev90": 105.7
+      },
+      "reasons": [
+        "vs Chris Sale \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.55)",
+        "Pitcher: High K rate (31%)",
+        "Platoon edge (R vs LHP)",
+        "Poor pitch-mix fit (53% breaking balls, rel 1.00 \u2192 mix-fit 0.76x)",
+        "Slightly + park (103)",
+        "Warm (82\u00b0F)",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -1917,12 +2392,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.2005,
+        "air_pull_rate": 0.2001,
         "barrel_rate": 0.058,
-        "hard_hit_rate": 0.3539,
-        "fb_rate": 0.5231,
-        "z_contact_rate": 0.8626,
-        "sweet_spot_rate": 0.3331,
+        "hard_hit_rate": 0.3533,
+        "fb_rate": 0.5234,
+        "z_contact_rate": 0.8624,
+        "sweet_spot_rate": 0.3329,
         "xwobacon": null,
         "ev90": 107.0
       },
@@ -1973,132 +2448,18 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1891,
+        "air_pull_rate": 0.1887,
         "barrel_rate": 0.0731,
-        "hard_hit_rate": 0.461,
-        "fb_rate": 0.5485,
-        "z_contact_rate": 0.8874,
-        "sweet_spot_rate": 0.372,
+        "hard_hit_rate": 0.4604,
+        "fb_rate": 0.5487,
+        "z_contact_rate": 0.8873,
+        "sweet_spot_rate": 0.3718,
         "xwobacon": null,
         "ev90": 111.2
       },
       "reasons": [
         "vs Matthew Boyd \u2014 cause Pass (9.5/25)",
         "Zone-damage: hard-hit 46% + Z-contact 89%",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 669224,
-      "name": "Austin Wells",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.146,
-      "total": 41.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 44.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 12.8,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1652,
-        "barrel_rate": 0.0605,
-        "hard_hit_rate": 0.3968,
-        "fb_rate": 0.5502,
-        "z_contact_rate": 0.8533,
-        "sweet_spot_rate": 0.3159,
-        "xwobacon": null,
-        "ev90": 101.3
-      },
-      "reasons": [
-        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
-        "Pitcher: High K rate (28%)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 641857,
-      "name": "Ryan McMahon",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.144,
-      "total": 41.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 39.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 12.8,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1551,
-        "barrel_rate": 0.0624,
-        "hard_hit_rate": 0.3706,
-        "fb_rate": 0.4448,
-        "z_contact_rate": 0.8707,
-        "sweet_spot_rate": 0.3093,
-        "xwobacon": null,
-        "ev90": 98.5
-      },
-      "reasons": [
-        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
-        "Pitcher: High K rate (28%)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2144,12 +2505,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1742,
+        "air_pull_rate": 0.1738,
         "barrel_rate": 0.0542,
-        "hard_hit_rate": 0.3759,
-        "fb_rate": 0.4835,
-        "z_contact_rate": 0.8695,
-        "sweet_spot_rate": 0.3533,
+        "hard_hit_rate": 0.3754,
+        "fb_rate": 0.4837,
+        "z_contact_rate": 0.8693,
+        "sweet_spot_rate": 0.3532,
         "xwobacon": null,
         "ev90": 101.2
       },
@@ -2163,63 +2524,6 @@
       "warnings": [
         "Bottom of order (#8)"
       ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 547180,
-      "name": "Bryce Harper",
-      "team": "Philadelphia Phillies",
-      "bats": "L",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Chris Sale",
-      "venue": "Truist Park",
-      "gamePk": 849845,
-      "slot": 3,
-      "confirmed": true,
-      "season_hr": 29,
-      "iso": 0.216,
-      "total": 40.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 14.2,
-        "environment": 9.0,
-        "lineup": 11.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1539,
-        "barrel_rate": 0.0701,
-        "hard_hit_rate": 0.3405,
-        "fb_rate": 0.443,
-        "z_contact_rate": 0.8472,
-        "sweet_spot_rate": 0.3067,
-        "xwobacon": null,
-        "ev90": 96.7
-      },
-      "reasons": [
-        "vs Chris Sale \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.55)",
-        "Pitcher: High K rate (31%)",
-        "Slightly + park (103)",
-        "Warm (81\u00b0F)",
-        "Heart of order (#3)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -2261,12 +2565,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1634,
+        "air_pull_rate": 0.163,
         "barrel_rate": 0.0755,
-        "hard_hit_rate": 0.3779,
-        "fb_rate": 0.4917,
-        "z_contact_rate": 0.8804,
-        "sweet_spot_rate": 0.3284,
+        "hard_hit_rate": 0.3774,
+        "fb_rate": 0.4919,
+        "z_contact_rate": 0.8803,
+        "sweet_spot_rate": 0.3283,
         "xwobacon": null,
         "ev90": 103.3
       },
@@ -2285,273 +2589,61 @@
       ]
     },
     {
-      "id": 621566,
-      "name": "Matt Olson",
-      "team": "Atlanta Braves",
-      "bats": "L",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": "Jes\u00fas Luzardo",
-      "venue": "Truist Park",
-      "gamePk": 849845,
-      "slot": 3,
-      "confirmed": true,
-      "season_hr": 41,
-      "iso": 0.251,
-      "total": 40.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 57.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.4,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 2.0,
-        "hitter": 16.5,
-        "environment": 9.0,
-        "lineup": 11.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1789,
-        "barrel_rate": 0.0827,
-        "hard_hit_rate": 0.4453,
-        "fb_rate": 0.5142,
-        "z_contact_rate": 0.8618,
-        "sweet_spot_rate": 0.3644,
-        "xwobacon": null,
-        "ev90": 107.3
-      },
-      "reasons": [
-        "vs Jes\u00fas Luzardo \u2014 cause Pass (2.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.75)",
-        "Pitcher: High K rate (30%)",
-        "Slightly + park (103)",
-        "Warm (81\u00b0F)",
-        "Heart of order (#3)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 665862,
-      "name": "Jazz Chisholm Jr.",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 19,
-      "iso": 0.168,
-      "total": 40.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 32.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 12.0,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
-        "Pitcher: High K rate (28%)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 663757,
-      "name": "Trent Grisham",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.184,
-      "total": 40.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 36.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 12.0,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
-        "Pitcher: High K rate (28%)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 671218,
-      "name": "Heliot Ramos",
+      "id": 642708,
+      "name": "Amed Rosario",
       "team": "New York Yankees",
       "bats": "R",
       "opp": "Boston Red Sox",
       "opp_pitcher": "Payton Tolle",
       "venue": "Yankee Stadium",
       "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.166,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 10,
+      "iso": 0.167,
       "total": 40.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 44.0,
-      "tb_tier": "Pass",
+      "tb_score": 54.5,
+      "tb_tier": "Dart",
       "tb_reasons": [
+        "High-contact bat (contact 80%, Z-contact 88%) \u2014 banks XBH",
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 16.0,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2005,
-        "barrel_rate": 0.058,
-        "hard_hit_rate": 0.3343,
-        "fb_rate": 0.5231,
-        "z_contact_rate": 0.8539,
-        "sweet_spot_rate": 0.3331,
-        "xwobacon": null,
-        "ev90": 107.8
-      },
-      "reasons": [
-        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
-        "Pitcher: High K rate (28%)",
-        "Good air-pull (20%)",
-        "Platoon edge (R vs LHP)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 681508,
-      "name": "Mickey Gasper",
-      "team": "Boston Red Sox",
-      "bats": "S",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Cam Schlittler",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.215,
-      "total": 40.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 56.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
       "pull_fit": false,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": null,
+      "due_hr": 0.7,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 18.0,
-        "environment": 10.0,
-        "lineup": 6.0,
+        "pitcher": 8.5,
+        "hitter": 15.0,
+        "environment": 7.0,
+        "lineup": 8.0,
         "confidence": 2.0
       },
-      "statcast": null,
+      "statcast": {
+        "air_pull_rate": 0.1673,
+        "barrel_rate": 0.0764,
+        "hard_hit_rate": 0.3409,
+        "fb_rate": 0.525,
+        "z_contact_rate": 0.8757,
+        "sweet_spot_rate": 0.3388,
+        "xwobacon": null,
+        "ev90": 96.4
+      },
       "reasons": [
-        "vs Cam Schlittler \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.75)",
-        "Pitcher: High K rate (32%)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hitter-friendly park (108)",
+        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
+        "Pitcher: High K rate (28%)",
+        "Platoon edge (R vs LHP)",
+        "Slightly + park (103)",
         "Short RF porch boosts LHB HR",
+        "Mid order (#6)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -2592,18 +2684,404 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1799,
+        "air_pull_rate": 0.1795,
         "barrel_rate": 0.0605,
-        "hard_hit_rate": 0.4177,
-        "fb_rate": 0.4984,
-        "z_contact_rate": 0.8589,
-        "sweet_spot_rate": 0.3331,
+        "hard_hit_rate": 0.4171,
+        "fb_rate": 0.4987,
+        "z_contact_rate": 0.8587,
+        "sweet_spot_rate": 0.3329,
         "xwobacon": null,
         "ev90": 109.1
       },
       "reasons": [
         "vs Matthew Boyd \u2014 cause Pass (9.5/25)",
         "Platoon edge (R vs LHP)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 641857,
+      "name": "Ryan McMahon",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 11,
+      "iso": 0.144,
+      "total": 40.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 39.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 12.8,
+        "environment": 11.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1546,
+        "barrel_rate": 0.0624,
+        "hard_hit_rate": 0.37,
+        "fb_rate": 0.4451,
+        "z_contact_rate": 0.8705,
+        "sweet_spot_rate": 0.3091,
+        "xwobacon": null,
+        "ev90": 98.5
+      },
+      "reasons": [
+        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
+        "Pitcher: High K rate (28%)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 547180,
+      "name": "Bryce Harper",
+      "team": "Philadelphia Phillies",
+      "bats": "L",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Chris Sale",
+      "venue": "Truist Park",
+      "gamePk": 849845,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 29,
+      "iso": 0.216,
+      "total": 39.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 46.2,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.05,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 12.5,
+        "environment": 9.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1494,
+        "barrel_rate": 0.0682,
+        "hard_hit_rate": 0.3458,
+        "fb_rate": 0.445,
+        "z_contact_rate": 0.8304,
+        "sweet_spot_rate": 0.2971,
+        "xwobacon": null,
+        "ev90": 98.1
+      },
+      "reasons": [
+        "vs Chris Sale \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.55)",
+        "Pitcher: High K rate (31%)",
+        "Slightly + park (103)",
+        "Warm (82\u00b0F)",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 665862,
+      "name": "Jazz Chisholm Jr.",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 19,
+      "iso": 0.168,
+      "total": 39.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 32.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 12.0,
+        "environment": 11.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
+        "Pitcher: High K rate (28%)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 663757,
+      "name": "Trent Grisham",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 18,
+      "iso": 0.184,
+      "total": 39.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 36.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 12.0,
+        "environment": 11.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
+        "Pitcher: High K rate (28%)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 681508,
+      "name": "Mickey Gasper",
+      "team": "Boston Red Sox",
+      "bats": "S",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Cam Schlittler",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 10,
+      "iso": 0.215,
+      "total": 39.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 56.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 4.5,
+        "hitter": 18.0,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Cam Schlittler \u2014 cause Pass (4.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.75)",
+        "Pitcher: High K rate (32%)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Hitter-friendly park (108)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 669224,
+      "name": "Austin Wells",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
+      "slot": 9,
+      "confirmed": true,
+      "season_hr": 14,
+      "iso": 0.146,
+      "total": 39.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 44.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 12.8,
+        "environment": 11.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1648,
+        "barrel_rate": 0.0605,
+        "hard_hit_rate": 0.3962,
+        "fb_rate": 0.5504,
+        "z_contact_rate": 0.8531,
+        "sweet_spot_rate": 0.3157,
+        "xwobacon": null,
+        "ev90": 101.3
+      },
+      "reasons": [
+        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
+        "Pitcher: High K rate (28%)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Bottom of order (#9)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 624641,
+      "name": "Edmundo Sosa",
+      "team": "Philadelphia Phillies",
+      "bats": "R",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Chris Sale",
+      "venue": "Truist Park",
+      "gamePk": 849845,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 9,
+      "iso": 0.182,
+      "total": 39.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 53.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 17.0,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1673,
+        "barrel_rate": 0.0764,
+        "hard_hit_rate": 0.426,
+        "fb_rate": 0.525,
+        "z_contact_rate": 0.8568,
+        "sweet_spot_rate": 0.3739,
+        "xwobacon": null,
+        "ev90": 107.0
+      },
+      "reasons": [
+        "vs Chris Sale \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.55)",
+        "Pitcher: High K rate (31%)",
+        "Platoon edge (R vs LHP)",
+        "Slightly + park (103)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2622,15 +3100,15 @@
       "opp_pitcher": "Chris Sale",
       "venue": "Truist Park",
       "gamePk": 849845,
-      "slot": 5,
-      "confirmed": true,
+      "slot": null,
+      "confirmed": false,
       "season_hr": 11,
       "iso": 0.201,
-      "total": 40.3,
+      "total": 38.8,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 62.5,
-      "tb_tier": "Solid TB",
+      "tb_score": 56.5,
+      "tb_tier": "Dart",
       "tb_reasons": [
         "Platoon edge (R vs LHP)"
       ],
@@ -2642,271 +3120,29 @@
       "due_hr": -0.3,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 4.5,
+        "pitcher": 5.0,
         "hitter": 16.8,
         "environment": 9.0,
-        "lineup": 8.0,
+        "lineup": 6.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1729,
-        "barrel_rate": 0.0787,
-        "hard_hit_rate": 0.3788,
-        "fb_rate": 0.5256,
-        "z_contact_rate": 0.855,
-        "sweet_spot_rate": 0.3149,
+        "air_pull_rate": 0.1673,
+        "barrel_rate": 0.0764,
+        "hard_hit_rate": 0.3621,
+        "fb_rate": 0.525,
+        "z_contact_rate": 0.8568,
+        "sweet_spot_rate": 0.3212,
         "xwobacon": null,
-        "ev90": 101.7
+        "ev90": 99.8
       },
       "reasons": [
-        "vs Chris Sale \u2014 cause Pass (4.5/25)",
+        "vs Chris Sale \u2014 cause Pass (5.0/25)",
         "Pitcher: Suppresses HR (HR/9 0.55)",
         "Pitcher: High K rate (31%)",
         "Platoon edge (R vs LHP)",
         "Slightly + park (103)",
-        "Warm (81\u00b0F)",
-        "Mid order (#5)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 660670,
-      "name": "Ronald Acu\u00f1a Jr.",
-      "team": "Atlanta Braves",
-      "bats": "R",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": "Jes\u00fas Luzardo",
-      "venue": "Truist Park",
-      "gamePk": 849845,
-      "slot": 2,
-      "confirmed": true,
-      "season_hr": 20,
-      "iso": 0.196,
-      "total": 40.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 59.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 81%, Z-contact 86%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.6,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 2.0,
-        "hitter": 15.0,
-        "environment": 9.0,
-        "lineup": 12.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1719,
-        "barrel_rate": 0.0794,
-        "hard_hit_rate": 0.3342,
-        "fb_rate": 0.4464,
-        "z_contact_rate": 0.8618,
-        "sweet_spot_rate": 0.3033,
-        "xwobacon": null,
-        "ev90": 104.8
-      },
-      "reasons": [
-        "vs Jes\u00fas Luzardo \u2014 cause Pass (2.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.75)",
-        "Pitcher: High K rate (30%)",
-        "Platoon edge (R vs LHP)",
-        "Slightly + park (103)",
-        "Warm (81\u00b0F)",
-        "Top of order (#2)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 680776,
-      "name": "Jarren Duran",
-      "team": "Boston Red Sox",
-      "bats": "L",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Cam Schlittler",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 20,
-      "iso": 0.154,
-      "total": 39.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 43.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 15.2,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1528,
-        "barrel_rate": 0.0614,
-        "hard_hit_rate": 0.384,
-        "fb_rate": 0.4721,
-        "z_contact_rate": 0.8433,
-        "sweet_spot_rate": 0.3214,
-        "xwobacon": null,
-        "ev90": 103.0
-      },
-      "reasons": [
-        "vs Cam Schlittler \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.75)",
-        "Pitcher: High K rate (32%)",
-        "Platoon edge (L vs RHP)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 502671,
-      "name": "Paul Goldschmidt",
-      "team": "New York Yankees",
-      "bats": "R",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.2,
-      "total": 39.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 56.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 15.2,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1748,
-        "barrel_rate": 0.0588,
-        "hard_hit_rate": 0.361,
-        "fb_rate": 0.5152,
-        "z_contact_rate": 0.8533,
-        "sweet_spot_rate": 0.3387,
-        "xwobacon": null,
-        "ev90": 99.6
-      },
-      "reasons": [
-        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
-        "Pitcher: High K rate (28%)",
-        "Platoon edge (R vs LHP)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 642708,
-      "name": "Amed Rosario",
-      "team": "New York Yankees",
-      "bats": "R",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.167,
-      "total": 39.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 54.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 80%, Z-contact 88%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 15.0,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1677,
-        "barrel_rate": 0.0764,
-        "hard_hit_rate": 0.3415,
-        "fb_rate": 0.5247,
-        "z_contact_rate": 0.8759,
-        "sweet_spot_rate": 0.3389,
-        "xwobacon": null,
-        "ev90": 96.4
-      },
-      "reasons": [
-        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
-        "Pitcher: High K rate (28%)",
-        "Platoon edge (R vs LHP)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2929,7 +3165,7 @@
       "confirmed": false,
       "season_hr": 30,
       "iso": 0.244,
-      "total": 39.3,
+      "total": 38.3,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 51.0,
@@ -2945,17 +3181,17 @@
       "breakdown": {
         "pitcher": 8.5,
         "hitter": 10.8,
-        "environment": 12.0,
+        "environment": 11.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1462,
+        "air_pull_rate": 0.1458,
         "barrel_rate": 0.0588,
-        "hard_hit_rate": 0.381,
-        "fb_rate": 0.5152,
-        "z_contact_rate": 0.8678,
-        "sweet_spot_rate": 0.322,
+        "hard_hit_rate": 0.3804,
+        "fb_rate": 0.5154,
+        "z_contact_rate": 0.8677,
+        "sweet_spot_rate": 0.3218,
         "xwobacon": null,
         "ev90": 102.9
       },
@@ -2963,244 +3199,6 @@
         "vs Payton Tolle \u2014 cause Pass (8.5/25)",
         "Pitcher: High K rate (28%)",
         "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 677800,
-      "name": "Wilyer Abreu",
-      "team": "Boston Red Sox",
-      "bats": "L",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Cam Schlittler",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 24,
-      "iso": 0.198,
-      "total": 39.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 50.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 14.5,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1628,
-        "barrel_rate": 0.0597,
-        "hard_hit_rate": 0.3683,
-        "fb_rate": 0.4561,
-        "z_contact_rate": 0.857,
-        "sweet_spot_rate": 0.3105,
-        "xwobacon": null,
-        "ev90": 105.8
-      },
-      "reasons": [
-        "vs Cam Schlittler \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.75)",
-        "Pitcher: High K rate (32%)",
-        "Platoon edge (L vs RHP)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 676609,
-      "name": "Jos\u00e9 Caballero",
-      "team": "New York Yankees",
-      "bats": "R",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.134,
-      "total": 38.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 51.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 14.2,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1605,
-        "barrel_rate": 0.0731,
-        "hard_hit_rate": 0.341,
-        "fb_rate": 0.4818,
-        "z_contact_rate": 0.8487,
-        "sweet_spot_rate": 0.3553,
-        "xwobacon": null,
-        "ev90": 100.0
-      },
-      "reasons": [
-        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
-        "Pitcher: High K rate (28%)",
-        "Platoon edge (R vs LHP)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 686948,
-      "name": "Drake Baldwin",
-      "team": "Atlanta Braves",
-      "bats": "L",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": "Jes\u00fas Luzardo",
-      "venue": "Truist Park",
-      "gamePk": 849845,
-      "slot": 1,
-      "confirmed": true,
-      "season_hr": 25,
-      "iso": 0.175,
-      "total": 38.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 56.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.4,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 2.0,
-        "hitter": 13.5,
-        "environment": 9.0,
-        "lineup": 12.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1789,
-        "barrel_rate": 0.0827,
-        "hard_hit_rate": 0.3898,
-        "fb_rate": 0.5455,
-        "z_contact_rate": 0.8392,
-        "sweet_spot_rate": 0.38,
-        "xwobacon": null,
-        "ev90": 105.3
-      },
-      "reasons": [
-        "vs Jes\u00fas Luzardo \u2014 cause Pass (2.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.75)",
-        "Pitcher: High K rate (30%)",
-        "Slightly + park (103)",
-        "Warm (81\u00b0F)",
-        "Top of order (#1)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 668939,
-      "name": "Adley Rutschman",
-      "team": "Boston Red Sox",
-      "bats": "S",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Cam Schlittler",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.184,
-      "total": 38.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 55.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 90%, Z-contact 87%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 16.0,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1539,
-        "barrel_rate": 0.0701,
-        "hard_hit_rate": 0.3783,
-        "fb_rate": 0.4589,
-        "z_contact_rate": 0.8707,
-        "sweet_spot_rate": 0.3384,
-        "xwobacon": null,
-        "ev90": 103.0
-      },
-      "reasons": [
-        "vs Cam Schlittler \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.75)",
-        "Pitcher: High K rate (32%)",
-        "Hitter-friendly park (108)",
         "Short RF porch boosts LHB HR",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -3245,12 +3243,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1575,
+        "air_pull_rate": 0.157,
         "barrel_rate": 0.0633,
-        "hard_hit_rate": 0.3788,
-        "fb_rate": 0.4529,
-        "z_contact_rate": 0.8248,
-        "sweet_spot_rate": 0.3149,
+        "hard_hit_rate": 0.3782,
+        "fb_rate": 0.4532,
+        "z_contact_rate": 0.8246,
+        "sweet_spot_rate": 0.3147,
         "xwobacon": null,
         "ev90": 96.7
       },
@@ -3269,22 +3267,83 @@
       ]
     },
     {
-      "id": 624641,
-      "name": "Edmundo Sosa",
-      "team": "Philadelphia Phillies",
-      "bats": "R",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Chris Sale",
-      "venue": "Truist Park",
-      "gamePk": 849845,
-      "slot": 8,
+      "id": 680776,
+      "name": "Jarren Duran",
+      "team": "Boston Red Sox",
+      "bats": "L",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Cam Schlittler",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
+      "slot": 7,
       "confirmed": true,
-      "season_hr": 9,
-      "iso": 0.182,
-      "total": 37.5,
+      "season_hr": 20,
+      "iso": 0.154,
+      "total": 37.7,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 58.0,
+      "tb_score": 43.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 4.5,
+        "hitter": 15.2,
+        "environment": 11.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1523,
+        "barrel_rate": 0.0614,
+        "hard_hit_rate": 0.3834,
+        "fb_rate": 0.4724,
+        "z_contact_rate": 0.8431,
+        "sweet_spot_rate": 0.3212,
+        "xwobacon": null,
+        "ev90": 103.0
+      },
+      "reasons": [
+        "vs Cam Schlittler \u2014 cause Pass (4.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.75)",
+        "Pitcher: High K rate (32%)",
+        "Platoon edge (L vs RHP)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Bottom of order (#7)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 676609,
+      "name": "Jos\u00e9 Caballero",
+      "team": "New York Yankees",
+      "bats": "R",
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 14,
+      "iso": 0.134,
+      "total": 37.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 51.5,
       "tb_tier": "Dart",
       "tb_reasons": [
         "Platoon edge (R vs LHP)"
@@ -3294,36 +3353,96 @@
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -1.3,
+      "due_hr": -0.3,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 17.0,
+        "pitcher": 8.5,
+        "hitter": 14.2,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1601,
+        "barrel_rate": 0.0731,
+        "hard_hit_rate": 0.3404,
+        "fb_rate": 0.4821,
+        "z_contact_rate": 0.8485,
+        "sweet_spot_rate": 0.3552,
+        "xwobacon": null,
+        "ev90": 100.0
+      },
+      "reasons": [
+        "vs Payton Tolle \u2014 cause Pass (8.5/25)",
+        "Pitcher: High K rate (28%)",
+        "Platoon edge (R vs LHP)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 592663,
+      "name": "J.T. Realmuto",
+      "team": "Philadelphia Phillies",
+      "bats": "R",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Chris Sale",
+      "venue": "Truist Park",
+      "gamePk": 849845,
+      "slot": 9,
+      "confirmed": true,
+      "season_hr": 11,
+      "iso": 0.126,
+      "total": 37.4,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 46.6,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.14,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.7,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 16.4,
         "environment": 9.0,
         "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1702,
-        "barrel_rate": 0.0775,
-        "hard_hit_rate": 0.4141,
-        "fb_rate": 0.5341,
-        "z_contact_rate": 0.8569,
-        "sweet_spot_rate": 0.3807,
+        "air_pull_rate": 0.1834,
+        "barrel_rate": 0.0711,
+        "hard_hit_rate": 0.3658,
+        "fb_rate": 0.5149,
+        "z_contact_rate": 0.8473,
+        "sweet_spot_rate": 0.376,
         "xwobacon": null,
-        "ev90": 106.3
+        "ev90": 105.8
       },
       "reasons": [
-        "vs Chris Sale \u2014 cause Pass (4.5/25)",
+        "vs Chris Sale \u2014 cause Pass (5.0/25)",
         "Pitcher: Suppresses HR (HR/9 0.55)",
         "Pitcher: High K rate (31%)",
         "Platoon edge (R vs LHP)",
         "Slightly + park (103)",
-        "Warm (81\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Bottom of order (#8)"
+        "Bottom of order (#9)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -3411,12 +3530,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1312,
+        "air_pull_rate": 0.1308,
         "barrel_rate": 0.0784,
-        "hard_hit_rate": 0.3974,
-        "fb_rate": 0.484,
-        "z_contact_rate": 0.8628,
-        "sweet_spot_rate": 0.3429,
+        "hard_hit_rate": 0.3969,
+        "fb_rate": 0.4842,
+        "z_contact_rate": 0.8627,
+        "sweet_spot_rate": 0.3428,
         "xwobacon": null,
         "ev90": 106.8
       },
@@ -3429,67 +3548,6 @@
       ],
       "warnings": [
         "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 592663,
-      "name": "J.T. Realmuto",
-      "team": "Philadelphia Phillies",
-      "bats": "R",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Chris Sale",
-      "venue": "Truist Park",
-      "gamePk": 849845,
-      "slot": 9,
-      "confirmed": true,
-      "season_hr": 11,
-      "iso": 0.126,
-      "total": 36.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 48.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 15.8,
-        "environment": 9.0,
-        "lineup": 5.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1891,
-        "barrel_rate": 0.0731,
-        "hard_hit_rate": 0.361,
-        "fb_rate": 0.5152,
-        "z_contact_rate": 0.855,
-        "sweet_spot_rate": 0.372,
-        "xwobacon": null,
-        "ev90": 106.7
-      },
-      "reasons": [
-        "vs Chris Sale \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.55)",
-        "Pitcher: High K rate (31%)",
-        "Platoon edge (R vs LHP)",
-        "Slightly + park (103)",
-        "Warm (81\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Bottom of order (#9)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -3531,12 +3589,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1699,
+        "air_pull_rate": 0.1695,
         "barrel_rate": 0.0572,
-        "hard_hit_rate": 0.3663,
-        "fb_rate": 0.5469,
-        "z_contact_rate": 0.8774,
-        "sweet_spot_rate": 0.3761,
+        "hard_hit_rate": 0.3658,
+        "fb_rate": 0.5472,
+        "z_contact_rate": 0.8772,
+        "sweet_spot_rate": 0.376,
         "xwobacon": null,
         "ev90": 98.9
       },
@@ -3546,6 +3604,66 @@
       ],
       "warnings": [
         "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 681082,
+      "name": "Bryson Stott",
+      "team": "Philadelphia Phillies",
+      "bats": "L",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Chris Sale",
+      "venue": "Truist Park",
+      "gamePk": 849845,
+      "slot": 7,
+      "confirmed": true,
+      "season_hr": 10,
+      "iso": 0.145,
+      "total": 36.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 54.2,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 87%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.17,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.7,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 15.1,
+        "environment": 9.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1606,
+        "barrel_rate": 0.0673,
+        "hard_hit_rate": 0.4289,
+        "fb_rate": 0.5443,
+        "z_contact_rate": 0.8725,
+        "sweet_spot_rate": 0.3532,
+        "xwobacon": null,
+        "ev90": 102.2
+      },
+      "reasons": [
+        "vs Chris Sale \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.55)",
+        "Pitcher: High K rate (31%)",
+        "Slightly + park (103)",
+        "Warm (82\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Bottom of order (#7)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -3585,12 +3703,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1551,
+        "air_pull_rate": 0.1546,
         "barrel_rate": 0.0624,
-        "hard_hit_rate": 0.3271,
-        "fb_rate": 0.4627,
-        "z_contact_rate": 0.8695,
-        "sweet_spot_rate": 0.3093,
+        "hard_hit_rate": 0.3265,
+        "fb_rate": 0.463,
+        "z_contact_rate": 0.8693,
+        "sweet_spot_rate": 0.3091,
         "xwobacon": null,
         "ev90": 92.2
       },
@@ -3606,61 +3724,59 @@
       ]
     },
     {
-      "id": 681082,
-      "name": "Bryson Stott",
+      "id": 669016,
+      "name": "Brandon Marsh",
       "team": "Philadelphia Phillies",
       "bats": "L",
       "opp": "Atlanta Braves",
       "opp_pitcher": "Chris Sale",
       "venue": "Truist Park",
       "gamePk": 849845,
-      "slot": 7,
+      "slot": 5,
       "confirmed": true,
-      "season_hr": 10,
-      "iso": 0.145,
-      "total": 34.7,
+      "season_hr": 18,
+      "iso": 0.148,
+      "total": 35.6,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 53.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 95%, Z-contact 88%) \u2014 banks XBH"
-      ],
+      "tb_score": 48.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
       "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": null,
+      "mix_fit": 0.76,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.7,
+      "due_hr": 0.0,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 14.2,
+        "pitcher": 5.0,
+        "hitter": 11.6,
         "environment": 9.0,
-        "lineup": 5.0,
+        "lineup": 8.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1518,
-        "barrel_rate": 0.0691,
-        "hard_hit_rate": 0.4453,
-        "fb_rate": 0.5299,
-        "z_contact_rate": 0.8789,
-        "sweet_spot_rate": 0.3487,
+        "air_pull_rate": 0.1822,
+        "barrel_rate": 0.0614,
+        "hard_hit_rate": 0.3834,
+        "fb_rate": 0.525,
+        "z_contact_rate": 0.8705,
+        "sweet_spot_rate": 0.3388,
         "xwobacon": null,
-        "ev90": 102.5
+        "ev90": 105.2
       },
       "reasons": [
-        "vs Chris Sale \u2014 cause Pass (4.5/25)",
+        "vs Chris Sale \u2014 cause Pass (5.0/25)",
         "Pitcher: Suppresses HR (HR/9 0.55)",
         "Pitcher: High K rate (31%)",
+        "Poor pitch-mix fit (53% breaking balls, rel 1.00 \u2192 mix-fit 0.76x)",
         "Slightly + park (103)",
-        "Warm (81\u00b0F)",
+        "Warm (82\u00b0F)",
+        "Mid order (#5)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Bottom of order (#7)"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -3678,44 +3794,45 @@
       "confirmed": true,
       "season_hr": 26,
       "iso": 0.197,
-      "total": 34.5,
+      "total": 35.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 58.0,
+      "tb_score": 56.3,
       "tb_tier": "Dart",
       "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 88%) \u2014 banks XBH"
+        "High-contact bat (contact 84%, Z-contact 89%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": null,
+      "mix_fit": 0.58,
       "fit_tag": null,
       "value_play": false,
       "due_hr": -0.3,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 2.0,
-        "hitter": 13.5,
+        "pitcher": 5.0,
+        "hitter": 11.5,
         "environment": 9.0,
         "lineup": 8.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.161,
-        "barrel_rate": 0.0673,
-        "hard_hit_rate": 0.3759,
-        "fb_rate": 0.5138,
-        "z_contact_rate": 0.8813,
-        "sweet_spot_rate": 0.3685,
+        "air_pull_rate": 0.1526,
+        "barrel_rate": 0.0639,
+        "hard_hit_rate": 0.3503,
+        "fb_rate": 0.5132,
+        "z_contact_rate": 0.8864,
+        "sweet_spot_rate": 0.3616,
         "xwobacon": null,
-        "ev90": 106.6
+        "ev90": 105.6
       },
       "reasons": [
-        "vs Jes\u00fas Luzardo \u2014 cause Pass (2.0/25)",
+        "vs Jes\u00fas Luzardo \u2014 cause Pass (5.0/25)",
         "Pitcher: Suppresses HR (HR/9 0.75)",
         "Pitcher: High K rate (30%)",
+        "Poor pitch-mix fit (52% fastballs, rel 0.30 \u2192 mix-fit 0.58x)",
         "Slightly + park (103)",
-        "Warm (81\u00b0F)",
+        "Warm (82\u00b0F)",
         "Mid order (#5)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -3725,116 +3842,122 @@
       ]
     },
     {
-      "id": 669016,
-      "name": "Brandon Marsh",
-      "team": "Philadelphia Phillies",
-      "bats": "L",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Chris Sale",
+      "id": 663586,
+      "name": "Austin Riley",
+      "team": "Atlanta Braves",
+      "bats": "R",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Jes\u00fas Luzardo",
       "venue": "Truist Park",
       "gamePk": 849845,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.148,
-      "total": 34.3,
+      "slot": 7,
+      "confirmed": true,
+      "season_hr": 19,
+      "iso": 0.145,
+      "total": 35.3,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 44.0,
+      "tb_score": 47.3,
       "tb_tier": "Pass",
-      "tb_reasons": [],
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
       "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": null,
+      "mix_fit": 1.21,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.0,
+      "due_hr": -0.3,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 12.8,
+        "pitcher": 5.0,
+        "hitter": 14.3,
         "environment": 9.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1702,
-        "barrel_rate": 0.0624,
-        "hard_hit_rate": 0.3706,
-        "fb_rate": 0.5163,
-        "z_contact_rate": 0.8689,
-        "sweet_spot_rate": 0.3271,
+        "air_pull_rate": 0.1417,
+        "barrel_rate": 0.0711,
+        "hard_hit_rate": 0.3465,
+        "fb_rate": 0.4665,
+        "z_contact_rate": 0.8727,
+        "sweet_spot_rate": 0.3276,
         "xwobacon": null,
-        "ev90": 102.7
+        "ev90": 102.4
       },
       "reasons": [
-        "vs Chris Sale \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.55)",
-        "Pitcher: High K rate (31%)",
+        "vs Jes\u00fas Luzardo \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.75)",
+        "Pitcher: High K rate (30%)",
+        "Platoon edge (R vs LHP)",
+        "Pitch-mix fit: damages this arsenal (52% fastballs, rel 1.41 \u2192 mix-fit 1.21x)",
         "Slightly + park (103)",
-        "Warm (81\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#7)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
     },
     {
-      "id": 645277,
-      "name": "Ozzie Albies",
+      "id": 573262,
+      "name": "Mike Yastrzemski",
       "team": "Atlanta Braves",
-      "bats": "S",
+      "bats": "L",
       "opp": "Philadelphia Phillies",
       "opp_pitcher": "Jes\u00fas Luzardo",
       "venue": "Truist Park",
       "gamePk": 849845,
-      "slot": 6,
+      "slot": 8,
       "confirmed": true,
-      "season_hr": 22,
-      "iso": 0.155,
-      "total": 33.8,
+      "season_hr": 12,
+      "iso": 0.156,
+      "total": 35.2,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 41.5,
+      "tb_score": 47.7,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": null,
+      "mix_fit": 1.29,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -1.0,
+      "due_hr": -1.3,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 2.0,
-        "hitter": 12.8,
+        "pitcher": 5.0,
+        "hitter": 14.2,
         "environment": 9.0,
-        "lineup": 8.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1789,
-        "barrel_rate": 0.0556,
-        "hard_hit_rate": 0.3527,
-        "fb_rate": 0.483,
-        "z_contact_rate": 0.8501,
-        "sweet_spot_rate": 0.3019,
+        "air_pull_rate": 0.1585,
+        "barrel_rate": 0.0664,
+        "hard_hit_rate": 0.3863,
+        "fb_rate": 0.5063,
+        "z_contact_rate": 0.8462,
+        "sweet_spot_rate": 0.333,
         "xwobacon": null,
-        "ev90": 99.3
+        "ev90": 101.2
       },
       "reasons": [
-        "vs Jes\u00fas Luzardo \u2014 cause Pass (2.0/25)",
+        "vs Jes\u00fas Luzardo \u2014 cause Pass (5.0/25)",
         "Pitcher: Suppresses HR (HR/9 0.75)",
         "Pitcher: High K rate (30%)",
+        "Pitch-mix fit: damages this arsenal (52% fastballs, rel 1.67 \u2192 mix-fit 1.29x)",
         "Slightly + park (103)",
-        "Warm (81\u00b0F)",
-        "Mid order (#6)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [],
+      "warnings": [
+        "Bottom of order (#8)"
+      ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -3875,12 +3998,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1561,
+        "air_pull_rate": 0.1556,
         "barrel_rate": 0.0572,
-        "hard_hit_rate": 0.3663,
-        "fb_rate": 0.4824,
-        "z_contact_rate": 0.8608,
-        "sweet_spot_rate": 0.3923,
+        "hard_hit_rate": 0.3658,
+        "fb_rate": 0.4827,
+        "z_contact_rate": 0.8606,
+        "sweet_spot_rate": 0.3921,
         "xwobacon": null,
         "ev90": 100.4
       },
@@ -3896,59 +4019,52 @@
       ]
     },
     {
-      "id": 573262,
-      "name": "Mike Yastrzemski",
-      "team": "Atlanta Braves",
-      "bats": "L",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": "Jes\u00fas Luzardo",
-      "venue": "Truist Park",
-      "gamePk": 849845,
-      "slot": 8,
+      "id": 678882,
+      "name": "Ceddanne Rafaela",
+      "team": "Boston Red Sox",
+      "bats": "R",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Cam Schlittler",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
+      "slot": 5,
       "confirmed": true,
-      "season_hr": 12,
-      "iso": 0.156,
-      "total": 31.8,
+      "season_hr": 16,
+      "iso": 0.159,
+      "total": 29.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 47.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
+      "tb_score": 51.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
       "pull_fit": false,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -1.3,
+      "due_hr": null,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 2.0,
-        "hitter": 13.8,
-        "environment": 9.0,
-        "lineup": 5.0,
+        "pitcher": 4.5,
+        "hitter": 8.0,
+        "environment": 7.0,
+        "lineup": 8.0,
         "confidence": 2.0
       },
-      "statcast": {
-        "air_pull_rate": 0.1654,
-        "barrel_rate": 0.0691,
-        "hard_hit_rate": 0.4083,
-        "fb_rate": 0.5142,
-        "z_contact_rate": 0.8395,
-        "sweet_spot_rate": 0.3331,
-        "xwobacon": null,
-        "ev90": 101.3
-      },
+      "statcast": null,
       "reasons": [
-        "vs Jes\u00fas Luzardo \u2014 cause Pass (2.0/25)",
+        "vs Cam Schlittler \u2014 cause Pass (4.5/25)",
         "Pitcher: Suppresses HR (HR/9 0.75)",
-        "Pitcher: High K rate (30%)",
+        "Pitcher: High K rate (32%)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (103)",
-        "Warm (81\u00b0F)",
+        "Short RF porch boosts LHB HR",
+        "Mid order (#5)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Bottom of order (#8)"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -3962,11 +4078,11 @@
       "opp_pitcher": "Cam Schlittler",
       "venue": "Yankee Stadium",
       "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "season_hr": 13,
       "iso": 0.13,
-      "total": 30.7,
+      "total": 28.7,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 48.5,
@@ -3984,17 +4100,17 @@
       "breakdown": {
         "pitcher": 4.5,
         "hitter": 10.2,
-        "environment": 8.0,
-        "lineup": 6.0,
+        "environment": 7.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.161,
+        "air_pull_rate": 0.1606,
         "barrel_rate": 0.0542,
-        "hard_hit_rate": 0.3044,
-        "fb_rate": 0.4532,
-        "z_contact_rate": 0.8813,
-        "sweet_spot_rate": 0.3382,
+        "hard_hit_rate": 0.3039,
+        "fb_rate": 0.4534,
+        "z_contact_rate": 0.8812,
+        "sweet_spot_rate": 0.338,
         "xwobacon": null,
         "ev90": 93.8
       },
@@ -4007,120 +4123,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 663586,
-      "name": "Austin Riley",
-      "team": "Atlanta Braves",
-      "bats": "R",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": "Jes\u00fas Luzardo",
-      "venue": "Truist Park",
-      "gamePk": 849845,
-      "slot": 7,
-      "confirmed": true,
-      "season_hr": 19,
-      "iso": 0.145,
-      "total": 28.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 45.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 2.0,
-        "hitter": 10.8,
-        "environment": 9.0,
-        "lineup": 5.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1483,
-        "barrel_rate": 0.0597,
-        "hard_hit_rate": 0.3479,
-        "fb_rate": 0.473,
-        "z_contact_rate": 0.8685,
-        "sweet_spot_rate": 0.3275,
-        "xwobacon": null,
-        "ev90": 98.1
-      },
-      "reasons": [
-        "vs Jes\u00fas Luzardo \u2014 cause Pass (2.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.75)",
-        "Pitcher: High K rate (30%)",
-        "Platoon edge (R vs LHP)",
-        "Slightly + park (103)",
-        "Warm (81\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Bottom of order (#7)"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 678882,
-      "name": "Ceddanne Rafaela",
-      "team": "Boston Red Sox",
-      "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Cam Schlittler",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.159,
-      "total": 28.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 48.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 8.0,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Cam Schlittler \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.75)",
-        "Pitcher: High K rate (32%)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#9)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -4139,7 +4142,7 @@
       "confirmed": false,
       "season_hr": 11,
       "iso": 0.159,
-      "total": 25.0,
+      "total": 28.0,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 35.5,
@@ -4156,7 +4159,7 @@
       "due_hr": null,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 2.0,
+        "pitcher": 5.0,
         "hitter": 6.0,
         "environment": 9.0,
         "lineup": 6.0,
@@ -4164,12 +4167,12 @@
       },
       "statcast": null,
       "reasons": [
-        "vs Jes\u00fas Luzardo \u2014 cause Pass (2.0/25)",
+        "vs Jes\u00fas Luzardo \u2014 cause Pass (5.0/25)",
         "Pitcher: Suppresses HR (HR/9 0.75)",
         "Pitcher: High K rate (30%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (103)",
-        "Warm (81\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4192,7 +4195,7 @@
       "confirmed": false,
       "season_hr": 9,
       "iso": 0.13,
-      "total": 25.0,
+      "total": 28.0,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 38.0,
@@ -4208,7 +4211,7 @@
       "due_hr": null,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 2.0,
+        "pitcher": 5.0,
         "hitter": 6.0,
         "environment": 9.0,
         "lineup": 6.0,
@@ -4216,12 +4219,12 @@
       },
       "statcast": null,
       "reasons": [
-        "vs Jes\u00fas Luzardo \u2014 cause Pass (2.0/25)",
+        "vs Jes\u00fas Luzardo \u2014 cause Pass (5.0/25)",
         "Pitcher: Suppresses HR (HR/9 0.75)",
         "Pitcher: High K rate (30%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (103)",
-        "Warm (81\u00b0F)",
+        "Warm (82\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -4234,26 +4237,6 @@
   ],
   "structures": {},
   "tb_board": [
-    {
-      "id": 656941,
-      "name": "Kyle Schwarber",
-      "team": "Philadelphia Phillies",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Chris Sale",
-      "venue": "Truist Park",
-      "gamePk": 849845,
-      "slot": 2,
-      "confirmed": true,
-      "bats": "L",
-      "tb_score": 67.5,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 89%, Z-contact 89%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 45.0,
-      "hr_role": "Watchlist"
-    },
     {
       "id": 545341,
       "name": "Randal Grichuk",
@@ -4275,23 +4258,125 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 656537,
-      "name": "Derek Hill",
+      "id": 656941,
+      "name": "Kyle Schwarber",
       "team": "Philadelphia Phillies",
       "opp": "Atlanta Braves",
       "opp_pitcher": "Chris Sale",
       "venue": "Truist Park",
       "gamePk": 849845,
-      "slot": 5,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 66.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 88%, Z-contact 89%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 46.8,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 700250,
+      "name": "Ben Rice",
+      "team": "New York Yankees",
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 64.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 86%, Z-contact 87%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 50.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 664761,
+      "name": "Alec Bohm",
+      "team": "Philadelphia Phillies",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Chris Sale",
+      "venue": "Truist Park",
+      "gamePk": 849845,
+      "slot": 4,
       "confirmed": true,
       "bats": "R",
       "tb_score": 62.5,
       "tb_tier": "Solid TB",
       "tb_reasons": [
+        "High-contact bat (contact 96%, Z-contact 89%) \u2014 banks XBH",
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 40.3,
+      "hr_total": 46.4,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 575929,
+      "name": "Willson Contreras",
+      "team": "Boston Red Sox",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Cam Schlittler",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 62.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "hr_total": 47.5,
+      "hr_role": "Pass"
+    },
+    {
+      "id": 643289,
+      "name": "Mauricio Dub\u00f3n",
+      "team": "Atlanta Braves",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Jes\u00fas Luzardo",
+      "venue": "Truist Park",
+      "gamePk": 849845,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 61.3,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 83%, Z-contact 86%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 45.2,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 641355,
+      "name": "Cody Bellinger",
+      "team": "New York Yankees",
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 61.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 90%, Z-contact 89%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 50.5,
       "hr_role": "Watchlist"
     },
     {
@@ -4315,47 +4400,6 @@
       "hr_role": "Pass"
     },
     {
-      "id": 664761,
-      "name": "Alec Bohm",
-      "team": "Philadelphia Phillies",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Chris Sale",
-      "venue": "Truist Park",
-      "gamePk": 849845,
-      "slot": 4,
-      "confirmed": true,
-      "bats": "R",
-      "tb_score": 61.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 94%, Z-contact 88%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 44.3,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 575929,
-      "name": "Willson Contreras",
-      "team": "Boston Red Sox",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Cam Schlittler",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 61.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 43.5,
-      "hr_role": "Pass"
-    },
-    {
       "id": 670623,
       "name": "Isaac Paredes",
       "team": "Houston Astros",
@@ -4374,6 +4418,45 @@
       ],
       "shape_source": "statcast",
       "hr_total": 47.6,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 686948,
+      "name": "Drake Baldwin",
+      "team": "Atlanta Braves",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Jes\u00fas Luzardo",
+      "venue": "Truist Park",
+      "gamePk": 849845,
+      "slot": 1,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 60.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 44.5,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 660670,
+      "name": "Ronald Acu\u00f1a Jr.",
+      "team": "Atlanta Braves",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Jes\u00fas Luzardo",
+      "venue": "Truist Park",
+      "gamePk": 849845,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 60.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 87%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 44.2,
       "hr_role": "Watchlist"
     },
     {
@@ -4417,65 +4500,43 @@
       "hr_role": "Pass"
     },
     {
-      "id": 700250,
-      "name": "Ben Rice",
+      "id": 502671,
+      "name": "Paul Goldschmidt",
       "team": "New York Yankees",
       "opp": "Boston Red Sox",
       "opp_pitcher": "Payton Tolle",
       "venue": "Yankee Stadium",
       "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
+      "slot": 1,
+      "confirmed": true,
+      "bats": "R",
       "tb_score": 60.0,
       "tb_tier": "Solid TB",
       "tb_reasons": [
-        "High-contact bat (contact 86%, Z-contact 87%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 45.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 643289,
-      "name": "Mauricio Dub\u00f3n",
-      "team": "Atlanta Braves",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": "Jes\u00fas Luzardo",
-      "venue": "Truist Park",
-      "gamePk": 849845,
-      "slot": 4,
-      "confirmed": true,
-      "bats": "R",
-      "tb_score": 59.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 87%, Z-contact 86%) \u2014 banks XBH",
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 42.8,
+      "hr_total": 44.7,
       "hr_role": "Watchlist"
     },
     {
-      "id": 660670,
-      "name": "Ronald Acu\u00f1a Jr.",
-      "team": "Atlanta Braves",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": "Jes\u00fas Luzardo",
-      "venue": "Truist Park",
-      "gamePk": 849845,
+      "id": 668939,
+      "name": "Adley Rutschman",
+      "team": "Boston Red Sox",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Cam Schlittler",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
       "slot": 2,
       "confirmed": true,
-      "bats": "R",
+      "bats": "S",
       "tb_score": 59.5,
       "tb_tier": "Dart",
       "tb_reasons": [
-        "High-contact bat (contact 81%, Z-contact 86%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
+        "High-contact bat (contact 90%, Z-contact 87%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 40.0,
+      "hr_total": 43.5,
       "hr_role": "Watchlist"
     },
     {
@@ -4520,66 +4581,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 641355,
-      "name": "Cody Bellinger",
-      "team": "New York Yankees",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 58.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 90%, Z-contact 89%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 46.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 624641,
-      "name": "Edmundo Sosa",
-      "team": "Philadelphia Phillies",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Chris Sale",
-      "venue": "Truist Park",
-      "gamePk": 849845,
-      "slot": 8,
-      "confirmed": true,
-      "bats": "R",
-      "tb_score": 58.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 37.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 671739,
-      "name": "Michael Harris II",
-      "team": "Atlanta Braves",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": "Jes\u00fas Luzardo",
-      "venue": "Truist Park",
-      "gamePk": 849845,
-      "slot": 5,
-      "confirmed": true,
-      "bats": "L",
-      "tb_score": 58.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 34.5,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 664034,
       "name": "Ty France",
       "team": "San Diego Padres",
@@ -4600,6 +4601,26 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 656537,
+      "name": "Derek Hill",
+      "team": "Philadelphia Phillies",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Chris Sale",
+      "venue": "Truist Park",
+      "gamePk": 849845,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 56.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 38.8,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 621566,
       "name": "Matt Olson",
       "team": "Atlanta Braves",
@@ -4610,29 +4631,31 @@
       "slot": 3,
       "confirmed": true,
       "bats": "L",
-      "tb_score": 57.0,
+      "tb_score": 56.4,
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 40.5,
+      "hr_total": 45.9,
       "hr_role": "Watchlist"
     },
     {
-      "id": 686948,
-      "name": "Drake Baldwin",
+      "id": 671739,
+      "name": "Michael Harris II",
       "team": "Atlanta Braves",
       "opp": "Philadelphia Phillies",
       "opp_pitcher": "Jes\u00fas Luzardo",
       "venue": "Truist Park",
       "gamePk": 849845,
-      "slot": 1,
+      "slot": 5,
       "confirmed": true,
       "bats": "L",
-      "tb_score": 56.5,
+      "tb_score": 56.3,
       "tb_tier": "Dart",
-      "tb_reasons": [],
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 89%) \u2014 banks XBH"
+      ],
       "shape_source": "statcast",
-      "hr_total": 38.5,
+      "hr_total": 35.5,
       "hr_role": "Watchlist"
     },
     {
@@ -4672,7 +4695,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 43.5,
+      "hr_total": 42.5,
       "hr_role": "Pass"
     },
     {
@@ -4692,27 +4715,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 40.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 502671,
-      "name": "Paul Goldschmidt",
-      "team": "New York Yankees",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 56.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 39.7,
+      "hr_total": 39.5,
       "hr_role": "Watchlist"
     },
     {
@@ -4731,26 +4734,6 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 44.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 668939,
-      "name": "Adley Rutschman",
-      "team": "Boston Red Sox",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Cam Schlittler",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "bats": "S",
-      "tb_score": 55.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 90%, Z-contact 87%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 38.5,
       "hr_role": "Watchlist"
     },
     {
@@ -4820,8 +4803,8 @@
       "opp_pitcher": "Payton Tolle",
       "venue": "Yankee Stadium",
       "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 54.5,
       "tb_tier": "Dart",
@@ -4830,7 +4813,7 @@
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 39.5,
+      "hr_total": 40.5,
       "hr_role": "Watchlist"
     },
     {
@@ -4844,13 +4827,33 @@
       "slot": 7,
       "confirmed": true,
       "bats": "L",
+      "tb_score": 54.2,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 87%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 36.1,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 624641,
+      "name": "Edmundo Sosa",
+      "team": "Philadelphia Phillies",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Chris Sale",
+      "venue": "Truist Park",
+      "gamePk": 849845,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
       "tb_score": 53.5,
       "tb_tier": "Dart",
       "tb_reasons": [
-        "High-contact bat (contact 95%, Z-contact 88%) \u2014 banks XBH"
+        "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 34.7,
+      "hr_total": 39.0,
       "hr_role": "Watchlist"
     },
     {
@@ -4872,6 +4875,26 @@
       ],
       "shape_source": "statcast",
       "hr_total": 43.3,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 677800,
+      "name": "Wilyer Abreu",
+      "team": "Boston Red Sox",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Cam Schlittler",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 53.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 43.0,
       "hr_role": "Watchlist"
     },
     {
@@ -4911,25 +4934,7 @@
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 43.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 547180,
-      "name": "Bryce Harper",
-      "team": "Philadelphia Phillies",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Chris Sale",
-      "venue": "Truist Park",
-      "gamePk": 849845,
-      "slot": 3,
-      "confirmed": true,
-      "bats": "L",
-      "tb_score": 52.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 40.7,
+      "hr_total": 42.0,
       "hr_role": "Watchlist"
     },
     {
@@ -5010,7 +5015,7 @@
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 38.7,
+      "hr_total": 37.7,
       "hr_role": "Watchlist"
     },
     {
@@ -5105,7 +5110,27 @@
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 39.3,
+      "hr_total": 38.3,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 678882,
+      "name": "Ceddanne Rafaela",
+      "team": "Boston Red Sox",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Cam Schlittler",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
+      "slot": 5,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 51.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "hr_total": 29.5,
       "hr_role": "Watchlist"
     },
     {
@@ -5124,26 +5149,6 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 45.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 607208,
-      "name": "Trea Turner",
-      "team": "Philadelphia Phillies",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Chris Sale",
-      "venue": "Truist Park",
-      "gamePk": 849845,
-      "slot": 1,
-      "confirmed": true,
-      "bats": "R",
-      "tb_score": 50.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 42.3,
       "hr_role": "Watchlist"
     },
     {
@@ -5167,43 +5172,41 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 677800,
-      "name": "Wilyer Abreu",
-      "team": "Boston Red Sox",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Cam Schlittler",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 50.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 39.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 592663,
-      "name": "J.T. Realmuto",
+      "id": 607208,
+      "name": "Trea Turner",
       "team": "Philadelphia Phillies",
       "opp": "Atlanta Braves",
       "opp_pitcher": "Chris Sale",
       "venue": "Truist Park",
       "gamePk": 849845,
-      "slot": 9,
+      "slot": 1,
       "confirmed": true,
       "bats": "R",
-      "tb_score": 48.5,
+      "tb_score": 49.5,
       "tb_tier": "Pass",
       "tb_reasons": [
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 36.3,
+      "hr_total": 41.6,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 669016,
+      "name": "Brandon Marsh",
+      "team": "Philadelphia Phillies",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Chris Sale",
+      "venue": "Truist Park",
+      "gamePk": 849845,
+      "slot": 5,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 48.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 35.6,
       "hr_role": "Watchlist"
     },
     {
@@ -5234,8 +5237,8 @@
       "opp_pitcher": "Cam Schlittler",
       "venue": "Yankee Stadium",
       "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 48.5,
       "tb_tier": "Pass",
@@ -5243,7 +5246,7 @@
         "High-contact bat (contact 92%, Z-contact 88%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 30.7,
+      "hr_total": 28.7,
       "hr_role": "Watchlist"
     },
     {
@@ -5267,26 +5270,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 678882,
-      "name": "Ceddanne Rafaela",
-      "team": "Boston Red Sox",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Cam Schlittler",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 48.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 28.5,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 573262,
       "name": "Mike Yastrzemski",
       "team": "Atlanta Braves",
@@ -5297,11 +5280,11 @@
       "slot": 8,
       "confirmed": true,
       "bats": "L",
-      "tb_score": 47.0,
+      "tb_score": 47.7,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 31.8,
+      "hr_total": 35.2,
       "hr_role": "Watchlist"
     },
     {
@@ -5315,13 +5298,89 @@
       "slot": 7,
       "confirmed": true,
       "bats": "R",
-      "tb_score": 45.5,
+      "tb_score": 47.3,
       "tb_tier": "Pass",
       "tb_reasons": [
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 28.8,
+      "hr_total": 35.3,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 671218,
+      "name": "Heliot Ramos",
+      "team": "New York Yankees",
+      "opp": "Boston Red Sox",
+      "opp_pitcher": "Payton Tolle",
+      "venue": "Yankee Stadium",
+      "gamePk": 849851,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 47.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 44.5,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 645277,
+      "name": "Ozzie Albies",
+      "team": "Atlanta Braves",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Jes\u00fas Luzardo",
+      "venue": "Truist Park",
+      "gamePk": 849845,
+      "slot": 6,
+      "confirmed": true,
+      "bats": "S",
+      "tb_score": 47.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 41.8,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 592663,
+      "name": "J.T. Realmuto",
+      "team": "Philadelphia Phillies",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Chris Sale",
+      "venue": "Truist Park",
+      "gamePk": 849845,
+      "slot": 9,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 46.6,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 37.4,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 547180,
+      "name": "Bryce Harper",
+      "team": "Philadelphia Phillies",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Chris Sale",
+      "venue": "Truist Park",
+      "gamePk": 849845,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 46.2,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 39.5,
       "hr_role": "Watchlist"
     },
     {
@@ -5332,14 +5391,14 @@
       "opp_pitcher": "Payton Tolle",
       "venue": "Yankee Stadium",
       "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 44.5,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 41.3,
+      "hr_total": 39.3,
       "hr_role": "Watchlist"
     },
     {
@@ -5363,44 +5422,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 671218,
-      "name": "Heliot Ramos",
-      "team": "New York Yankees",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Payton Tolle",
-      "venue": "Yankee Stadium",
-      "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 44.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 40.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 669016,
-      "name": "Brandon Marsh",
-      "team": "Philadelphia Phillies",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Chris Sale",
-      "venue": "Truist Park",
-      "gamePk": 849845,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 44.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 34.3,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 682987,
       "name": "Spencer Jones",
       "team": "New York Yankees",
@@ -5408,14 +5429,14 @@
       "opp_pitcher": "Payton Tolle",
       "venue": "Yankee Stadium",
       "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
+      "slot": 8,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 43.5,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 45.5,
+      "hr_total": 43.5,
       "hr_role": "Watchlist"
     },
     {
@@ -5444,8 +5465,8 @@
       "opp_pitcher": "Cam Schlittler",
       "venue": "Yankee Stadium",
       "gamePk": 849851,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 43.0,
       "tb_tier": "Pass",
@@ -5453,25 +5474,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 39.7,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 645277,
-      "name": "Ozzie Albies",
-      "team": "Atlanta Braves",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": "Jes\u00fas Luzardo",
-      "venue": "Truist Park",
-      "gamePk": 849845,
-      "slot": 6,
-      "confirmed": true,
-      "bats": "S",
-      "tb_score": 41.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 33.8,
+      "hr_total": 37.7,
       "hr_role": "Watchlist"
     },
     {
@@ -5489,7 +5492,7 @@
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 41.3,
+      "hr_total": 40.3,
       "hr_role": "Watchlist"
     },
     {
@@ -5509,7 +5512,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 25.0,
+      "hr_total": 28.0,
       "hr_role": "Watchlist"
     },
     {
@@ -5529,7 +5532,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 40.5,
+      "hr_total": 39.5,
       "hr_role": "Watchlist"
     },
     {
@@ -5550,7 +5553,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 25.0,
+      "hr_total": 28.0,
       "hr_role": "Watchlist"
     },
     {
@@ -5608,7 +5611,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 40.5,
+      "hr_total": 39.5,
       "hr_role": "Watchlist"
     }
   ],
@@ -5668,14 +5671,26 @@
     {
       "id": 519242,
       "name": "Chris Sale",
-      "score": 4.5,
+      "score": 5.0,
       "grade": "Pass",
       "flags": [
         "Suppresses HR (HR/9 0.55)",
         "High K rate (31%)"
       ],
       "hr9": 0.55,
-      "barrel_allowed": null
+      "barrel_allowed": 0.0699
+    },
+    {
+      "id": 666200,
+      "name": "Jes\u00fas Luzardo",
+      "score": 5.0,
+      "grade": "Pass",
+      "flags": [
+        "Suppresses HR (HR/9 0.75)",
+        "High K rate (30%)"
+      ],
+      "hr9": 0.75,
+      "barrel_allowed": 0.0565
     },
     {
       "id": 693645,
@@ -5685,18 +5700,6 @@
       "flags": [
         "Suppresses HR (HR/9 0.75)",
         "High K rate (32%)"
-      ],
-      "hr9": 0.75,
-      "barrel_allowed": null
-    },
-    {
-      "id": 666200,
-      "name": "Jes\u00fas Luzardo",
-      "score": 2.0,
-      "grade": "Pass",
-      "flags": [
-        "Suppresses HR (HR/9 0.75)",
-        "High K rate (30%)"
       ],
       "hr9": 0.75,
       "barrel_allowed": null
