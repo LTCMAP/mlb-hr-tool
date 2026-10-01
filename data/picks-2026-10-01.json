@@ -1,8 +1,8 @@
 {
   "version": "2.8",
-  "generated_utc": "2026-10-01T01:23:17.709216+00:00",
+  "generated_utc": "2026-10-01T18:59:30.930197+00:00",
   "slate_date": "2026-10-01",
-  "games": 3,
+  "games": 1,
   "confirmed_lineups": 0,
   "statcast": true,
   "statcast_meta": {
@@ -40,9 +40,9 @@
     "days_mlbapi": 19,
     "trustworthy": false,
     "statcast_batters": 341,
-    "statcast_candidates": 46,
+    "statcast_candidates": 17,
     "confirmed_lineups": 0,
-    "games": 3,
+    "games": 1,
     "days_failed": 1,
     "warnings": [
       "NO CONFIRMED LINEUPS \u2014 every bat is using a neutral slot default. Likely built before lineups posted; re-run closer to first pitch.",
@@ -70,28 +70,28 @@
   ],
   "causes": [
     {
-      "team": "Boston Red Sox",
-      "opp": "New York Yankees",
-      "pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "grade": "B",
-      "pitcher_cause": 15.0,
-      "park_hr": 108,
-      "cause_score": 17.0,
+      "team": "Atlanta Braves",
+      "opp": "Philadelphia Phillies",
+      "pitcher": "Aaron Nola",
+      "venue": "Truist Park",
+      "grade": "A",
+      "pitcher_cause": 19.0,
+      "park_hr": 103,
+      "cause_score": 19.8,
       "capture_method": "Team-HR placeholder (cause strong, bat capture thin)",
       "public_heat": false,
       "n_playable": 0,
       "playable_bats": []
     },
     {
-      "team": "New York Yankees",
-      "opp": "Boston Red Sox",
-      "pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
+      "team": "Philadelphia Phillies",
+      "opp": "Atlanta Braves",
+      "pitcher": "Ray Kerr",
+      "venue": "Truist Park",
       "grade": "Pass",
-      "pitcher_cause": 6.5,
-      "park_hr": 108,
-      "cause_score": 8.5,
+      "pitcher_cause": 9.5,
+      "park_hr": 103,
+      "cause_score": 10.2,
       "capture_method": "Watchlist / pass (no clear cause)",
       "public_heat": false,
       "n_playable": 0,
@@ -100,566 +100,63 @@
   ],
   "candidates": [
     {
-      "id": 575929,
-      "name": "Willson Contreras",
-      "team": "Boston Red Sox",
-      "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
+      "id": 686948,
+      "name": "Drake Baldwin",
+      "team": "Atlanta Braves",
+      "bats": "L",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Aaron Nola",
+      "venue": "Truist Park",
+      "gamePk": 849844,
       "slot": null,
       "confirmed": false,
-      "season_hr": 27,
-      "iso": 0.241,
-      "total": 54.0,
+      "season_hr": 25,
+      "iso": 0.175,
+      "total": 59.5,
       "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 62.0,
+      "role": "Watchlist",
+      "tb_score": 60.0,
       "tb_tier": "Solid TB",
       "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 15.0,
-        "hitter": 22.0,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Gerrit Cole \u2014 cause B (15.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.56)",
-        "Proxy: strong HR rate",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 678554,
-      "name": "Curtis Mead",
-      "team": "Boston Red Sox",
-      "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.245,
-      "total": 54.0,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 58.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 15.0,
-        "hitter": 22.0,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Gerrit Cole \u2014 cause B (15.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.56)",
-        "Proxy: strong HR rate",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 681508,
-      "name": "Mickey Gasper",
-      "team": "Boston Red Sox",
-      "bats": "S",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.215,
-      "total": 51.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 58.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 15.0,
-        "hitter": 18.0,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Gerrit Cole \u2014 cause B (15.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.56)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hitter-friendly park (108)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 668939,
-      "name": "Adley Rutschman",
-      "team": "Boston Red Sox",
-      "bats": "S",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.184,
-      "total": 50.9,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 59.6,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 90%, Z-contact 87%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.39,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 15.0,
-        "hitter": 17.9,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1524,
-        "barrel_rate": 0.0711,
-        "hard_hit_rate": 0.3808,
-        "fb_rate": 0.4581,
-        "z_contact_rate": 0.8695,
-        "sweet_spot_rate": 0.3385,
-        "xwobacon": null,
-        "ev90": 103.0
-      },
-      "reasons": [
-        "vs Gerrit Cole \u2014 cause B (15.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.56)",
-        "Pitch-mix fit: damages this arsenal (51% fastballs, rel 1.76 \u2192 mix-fit 1.39x)",
-        "Hitter-friendly park (108)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 680776,
-      "name": "Jarren Duran",
-      "team": "Boston Red Sox",
-      "bats": "L",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 20,
-      "iso": 0.154,
-      "total": 50.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 45.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 15.0,
-        "hitter": 15.2,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1511,
-        "barrel_rate": 0.0625,
-        "hard_hit_rate": 0.3868,
-        "fb_rate": 0.4712,
-        "z_contact_rate": 0.8421,
-        "sweet_spot_rate": 0.3215,
-        "xwobacon": null,
-        "ev90": 103.0
-      },
-      "reasons": [
-        "vs Gerrit Cole \u2014 cause B (15.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.56)",
         "Platoon edge (L vs RHP)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
+        "Soft-tossing / hittable arm (TB tailwind)"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 677800,
-      "name": "Wilyer Abreu",
-      "team": "Boston Red Sox",
-      "bats": "L",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 24,
-      "iso": 0.198,
-      "total": 49.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 51.1,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.64,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 15.0,
-        "hitter": 14.2,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1612,
-        "barrel_rate": 0.0607,
-        "hard_hit_rate": 0.371,
-        "fb_rate": 0.4553,
-        "z_contact_rate": 0.8559,
-        "sweet_spot_rate": 0.3106,
-        "xwobacon": null,
-        "ev90": 105.8
-      },
-      "reasons": [
-        "vs Gerrit Cole \u2014 cause B (15.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.56)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (51% fastballs, rel 0.30 \u2192 mix-fit 0.64x)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 682987,
-      "name": "Spencer Jones",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.184,
-      "total": 47.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 45.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 2.12,
+      "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
       "due_hr": 0.4,
-      "pitcher_grade": "Pass",
+      "pitcher_grade": "A",
       "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 20.0,
-        "environment": 12.0,
+        "pitcher": 19.0,
+        "hitter": 21.5,
+        "environment": 9.0,
         "lineup": 6.0,
-        "confidence": 3.0
+        "confidence": 4.0
       },
       "statcast": {
-        "air_pull_rate": 0.2016,
-        "barrel_rate": 0.0825,
-        "hard_hit_rate": 0.4396,
-        "fb_rate": 0.5363,
-        "z_contact_rate": 0.7986,
-        "sweet_spot_rate": 0.3742,
+        "air_pull_rate": 0.1834,
+        "barrel_rate": 0.0804,
+        "hard_hit_rate": 0.4067,
+        "fb_rate": 0.5203,
+        "z_contact_rate": 0.8166,
+        "sweet_spot_rate": 0.3929,
         "xwobacon": null,
-        "ev90": 107.9
+        "ev90": 105.2
       },
       "reasons": [
-        "vs Ranger Suarez \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.61)",
-        "Good air-pull (20%)",
-        "Pitch-mix fit: damages this arsenal (69% fastballs, rel 2.20 \u2192 mix-fit 2.12x)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 641355,
-      "name": "Cody Bellinger",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.165,
-      "total": 46.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 59.2,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 90%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.31,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.6,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 19.6,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2132,
-        "barrel_rate": 0.0728,
-        "hard_hit_rate": 0.4028,
-        "fb_rate": 0.5448,
-        "z_contact_rate": 0.8843,
-        "sweet_spot_rate": 0.3777,
-        "xwobacon": null,
-        "ev90": 102.3
-      },
-      "reasons": [
-        "vs Ranger Suarez \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.61)",
-        "Strong air-pull (26%)",
-        "Pitch-mix fit: damages this arsenal (69% fastballs, rel 1.72 \u2192 mix-fit 1.31x)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 700250,
-      "name": "Ben Rice",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 41,
-      "iso": 0.27,
-      "total": 43.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 60.6,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 86%, Z-contact 87%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.14,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 17.2,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1883,
-        "barrel_rate": 0.0692,
-        "hard_hit_rate": 0.4396,
-        "fb_rate": 0.5363,
-        "z_contact_rate": 0.8735,
-        "sweet_spot_rate": 0.3742,
-        "xwobacon": null,
-        "ev90": 105.9
-      },
-      "reasons": [
-        "vs Ranger Suarez \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.61)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 592450,
-      "name": "Aaron Judge",
-      "team": "New York Yankees",
-      "bats": "R",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.27,
-      "total": 41.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 50.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 18.5,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1711,
-        "barrel_rate": 0.0798,
-        "hard_hit_rate": 0.404,
-        "fb_rate": 0.5065,
-        "z_contact_rate": 0.8399,
-        "sweet_spot_rate": 0.3332,
-        "xwobacon": null,
-        "ev90": 103.3
-      },
-      "reasons": [
-        "vs Ranger Suarez \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.61)",
-        "Platoon edge (R vs LHP)",
+        "vs Aaron Nola \u2014 cause A (19.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.90)",
+        "Pitcher: Hard contact allowed (.482 SLG)",
+        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 21%)",
+        "Good air-pull (21%)",
+        "Above-avg barrels (11%)",
+        "Platoon edge (L vs RHP)",
         "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
+        "Warm (78\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -674,32 +171,35 @@
       "team": "Atlanta Braves",
       "bats": "L",
       "opp": "Philadelphia Phillies",
-      "opp_pitcher": null,
+      "opp_pitcher": "Aaron Nola",
       "venue": "Truist Park",
       "gamePk": 849844,
       "slot": null,
       "confirmed": false,
       "season_hr": 41,
       "iso": 0.251,
-      "total": 40.5,
+      "total": 59.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 57.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
+      "tb_score": 62.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)",
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
       "shape_source": "statcast",
-      "pull_fit": false,
+      "pull_fit": true,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
       "due_hr": 1.0,
-      "pitcher_grade": "?",
+      "pitcher_grade": "A",
       "breakdown": {
-        "pitcher": 0,
-        "hitter": 21.5,
-        "environment": 10.0,
+        "pitcher": 19.0,
+        "hitter": 21.0,
+        "environment": 9.0,
         "lineup": 6.0,
-        "confidence": 3.0
+        "confidence": 4.0
       },
       "statcast": {
         "air_pull_rate": 0.1595,
@@ -712,10 +212,16 @@
         "ev90": 108.6
       },
       "reasons": [
-        "Above-avg barrels (9%)",
+        "vs Aaron Nola \u2014 cause A (19.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.90)",
+        "Pitcher: Hard contact allowed (.482 SLG)",
+        "Platoon shape: spikes vs RHP (barrel 12%, air-pull 14%)",
+        "Above-avg barrels (12%)",
+        "Platoon edge (L vs RHP)",
         "Slightly + park (103)",
-        "Hot (85\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
+        "Warm (78\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -725,25 +231,89 @@
       ]
     },
     {
-      "id": 608324,
-      "name": "Alex Bregman",
-      "team": "Chicago Cubs",
+      "id": 643289,
+      "name": "Mauricio Dub\u00f3n",
+      "team": "Atlanta Braves",
       "bats": "R",
-      "opp": "San Diego Padres",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Aaron Nola",
+      "venue": "Truist Park",
+      "gamePk": 849844,
       "slot": null,
       "confirmed": false,
-      "season_hr": 28,
-      "iso": 0.199,
-      "total": 39.5,
+      "season_hr": 12,
+      "iso": 0.123,
+      "total": 56.8,
       "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 60.5,
-      "tb_tier": "Solid TB",
+      "role": "Watchlist",
+      "tb_score": 59.5,
+      "tb_tier": "Dart",
       "tb_reasons": [
-        "High-contact bat (contact 90%, Z-contact 88%) \u2014 banks XBH"
+        "High-contact bat (contact 85%, Z-contact 87%) \u2014 banks XBH",
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 1.0,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.0,
+        "hitter": 18.8,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1701,
+        "barrel_rate": 0.0866,
+        "hard_hit_rate": 0.4156,
+        "fb_rate": 0.5049,
+        "z_contact_rate": 0.8668,
+        "sweet_spot_rate": 0.3606,
+        "xwobacon": null,
+        "ev90": 101.6
+      },
+      "reasons": [
+        "vs Aaron Nola \u2014 cause A (19.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.90)",
+        "Pitcher: Hard contact allowed (.482 SLG)",
+        "Platoon shape: spikes vs RHP (barrel 12%, air-pull 15%)",
+        "Strong barrels (12%)",
+        "Slightly + park (103)",
+        "Warm (78\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 645277,
+      "name": "Ozzie Albies",
+      "team": "Atlanta Braves",
+      "bats": "S",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Aaron Nola",
+      "venue": "Truist Park",
+      "gamePk": 849844,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 22,
+      "iso": 0.155,
+      "total": 55.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 47.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Soft-tossing / hittable arm (TB tailwind)"
       ],
       "shape_source": "statcast",
       "pull_fit": true,
@@ -751,143 +321,33 @@
       "fit_tag": null,
       "value_play": false,
       "due_hr": -0.3,
-      "pitcher_grade": "?",
+      "pitcher_grade": "A",
       "breakdown": {
-        "pitcher": 0,
-        "hitter": 23.5,
-        "environment": 7.0,
+        "pitcher": 19.0,
+        "hitter": 17.8,
+        "environment": 9.0,
         "lineup": 6.0,
-        "confidence": 3.0
+        "confidence": 4.0
       },
       "statcast": {
-        "air_pull_rate": 0.2132,
-        "barrel_rate": 0.0963,
-        "hard_hit_rate": 0.4182,
-        "fb_rate": 0.5048,
-        "z_contact_rate": 0.8836,
-        "sweet_spot_rate": 0.391,
+        "air_pull_rate": 0.1661,
+        "barrel_rate": 0.0657,
+        "hard_hit_rate": 0.359,
+        "fb_rate": 0.4617,
+        "z_contact_rate": 0.848,
+        "sweet_spot_rate": 0.2801,
         "xwobacon": null,
-        "ev90": 102.5
+        "ev90": 101.6
       },
       "reasons": [
-        "Good air-pull (21%)",
-        "Above-avg barrels (10%)",
-        "Hot (2 HR / 2 barrels last 7d)"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 669224,
-      "name": "Austin Wells",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.146,
-      "total": 39.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 44.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 12.8,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1636,
-        "barrel_rate": 0.0616,
-        "hard_hit_rate": 0.3996,
-        "fb_rate": 0.5493,
-        "z_contact_rate": 0.8522,
-        "sweet_spot_rate": 0.3159,
-        "xwobacon": null,
-        "ev90": 101.3
-      },
-      "reasons": [
-        "vs Ranger Suarez \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.61)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 702332,
-      "name": "Caleb Durbin",
-      "team": "Boston Red Sox",
-      "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.13,
-      "total": 39.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 49.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 92%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.38,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 15.0,
-        "hitter": 8.2,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1595,
-        "barrel_rate": 0.0551,
-        "hard_hit_rate": 0.3068,
-        "fb_rate": 0.4524,
-        "z_contact_rate": 0.8804,
-        "sweet_spot_rate": 0.3383,
-        "xwobacon": null,
-        "ev90": 93.8
-      },
-      "reasons": [
-        "vs Gerrit Cole \u2014 cause B (15.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.56)",
-        "Poor pitch-mix fit (51% fastballs, rel 0.30 \u2192 mix-fit 0.38x)",
+        "vs Aaron Nola \u2014 cause A (19.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.90)",
+        "Pitcher: Hard contact allowed (.482 SLG)",
+        "Good air-pull (20%)",
         "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
+        "Warm (78\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -897,266 +357,60 @@
       ]
     },
     {
-      "id": 678882,
-      "name": "Ceddanne Rafaela",
-      "team": "Boston Red Sox",
+      "id": 660670,
+      "name": "Ronald Acu\u00f1a Jr.",
+      "team": "Atlanta Braves",
       "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Aaron Nola",
+      "venue": "Truist Park",
+      "gamePk": 849844,
       "slot": null,
       "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.159,
-      "total": 39.0,
+      "season_hr": 20,
+      "iso": 0.196,
+      "total": 53.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 50.5,
+      "tb_score": 55.0,
       "tb_tier": "Dart",
       "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+        "Soft-tossing / hittable arm (TB tailwind)"
       ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 15.0,
-        "hitter": 8.0,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Gerrit Cole \u2014 cause B (15.0/25)",
-        "Pitcher: High HR allowed (HR/9 1.56)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 642708,
-      "name": "Amed Rosario",
-      "team": "New York Yankees",
-      "bats": "R",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.167,
-      "total": 39.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 56.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 80%, Z-contact 87%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.83,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 16.5,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.166,
-        "barrel_rate": 0.0774,
-        "hard_hit_rate": 0.3443,
-        "fb_rate": 0.5239,
-        "z_contact_rate": 0.8746,
-        "sweet_spot_rate": 0.339,
-        "xwobacon": null,
-        "ev90": 96.4
-      },
-      "reasons": [
-        "vs Ranger Suarez \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.61)",
-        "Platoon edge (R vs LHP)",
-        "Pitch-mix fit: damages this arsenal (69% fastballs, rel 2.20 \u2192 mix-fit 1.83x)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 665862,
-      "name": "Jazz Chisholm Jr.",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 19,
-      "iso": 0.168,
-      "total": 38.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 32.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 12.0,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Ranger Suarez \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.61)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 663757,
-      "name": "Trent Grisham",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.184,
-      "total": 38.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 36.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 12.0,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Ranger Suarez \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.61)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 691718,
-      "name": "Pete Crow-Armstrong",
-      "team": "Chicago Cubs",
-      "bats": "L",
-      "opp": "San Diego Padres",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 45,
-      "iso": 0.29,
-      "total": 37.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 57.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
       "shape_source": "statcast",
       "pull_fit": true,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
       "due_hr": -0.6,
-      "pitcher_grade": "?",
+      "pitcher_grade": "A",
       "breakdown": {
-        "pitcher": 0,
-        "hitter": 21.5,
-        "environment": 7.0,
+        "pitcher": 19.0,
+        "hitter": 15.5,
+        "environment": 9.0,
         "lineup": 6.0,
-        "confidence": 3.0
+        "confidence": 4.0
       },
       "statcast": {
-        "air_pull_rate": 0.2367,
-        "barrel_rate": 0.0728,
-        "hard_hit_rate": 0.4182,
-        "fb_rate": 0.5181,
-        "z_contact_rate": 0.8403,
-        "sweet_spot_rate": 0.351,
+        "air_pull_rate": 0.1834,
+        "barrel_rate": 0.0804,
+        "hard_hit_rate": 0.3716,
+        "fb_rate": 0.4755,
+        "z_contact_rate": 0.8546,
+        "sweet_spot_rate": 0.3183,
         "xwobacon": null,
-        "ev90": 106.5
+        "ev90": 105.9
       },
       "reasons": [
-        "Strong air-pull (24%)",
-        "Hitter shape <22 \u2192 capped at Longshot"
+        "vs Aaron Nola \u2014 cause A (19.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.90)",
+        "Pitcher: Hard contact allowed (.482 SLG)",
+        "Platoon shape: spikes vs RHP (barrel 10%, air-pull 17%)",
+        "Above-avg barrels (10%)",
+        "Slightly + park (103)",
+        "Warm (78\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -1166,52 +420,58 @@
       ]
     },
     {
-      "id": 656941,
-      "name": "Kyle Schwarber",
-      "team": "Philadelphia Phillies",
-      "bats": "L",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
+      "id": 663586,
+      "name": "Austin Riley",
+      "team": "Atlanta Braves",
+      "bats": "R",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Aaron Nola",
       "venue": "Truist Park",
       "gamePk": 849844,
       "slot": null,
       "confirmed": false,
-      "season_hr": 45,
-      "iso": 0.271,
-      "total": 37.5,
+      "season_hr": 19,
+      "iso": 0.145,
+      "total": 51.8,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 61.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [],
+      "tb_score": 46.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
       "shape_source": "statcast",
       "pull_fit": false,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -0.6,
-      "pitcher_grade": "?",
+      "due_hr": -0.3,
+      "pitcher_grade": "A",
       "breakdown": {
-        "pitcher": 0,
-        "hitter": 19.5,
-        "environment": 10.0,
+        "pitcher": 19.0,
+        "hitter": 13.8,
+        "environment": 9.0,
         "lineup": 6.0,
-        "confidence": 2.0
+        "confidence": 4.0
       },
       "statcast": {
-        "air_pull_rate": 0.1822,
-        "barrel_rate": 0.0859,
-        "hard_hit_rate": 0.4265,
-        "fb_rate": 0.4977,
-        "z_contact_rate": 0.8634,
-        "sweet_spot_rate": 0.3278,
+        "air_pull_rate": 0.1524,
+        "barrel_rate": 0.0711,
+        "hard_hit_rate": 0.3619,
+        "fb_rate": 0.474,
+        "z_contact_rate": 0.8624,
+        "sweet_spot_rate": 0.3385,
         "xwobacon": null,
-        "ev90": 113.0
+        "ev90": 102.1
       },
       "reasons": [
+        "vs Aaron Nola \u2014 cause A (19.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.90)",
+        "Pitcher: Hard contact allowed (.482 SLG)",
         "Slightly + park (103)",
-        "Hot (85\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
+        "Warm (78\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -1221,111 +481,125 @@
       ]
     },
     {
-      "id": 641857,
-      "name": "Ryan McMahon",
-      "team": "New York Yankees",
+      "id": 671739,
+      "name": "Michael Harris II",
+      "team": "Atlanta Braves",
       "bats": "L",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.144,
-      "total": 37.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 37.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.51,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 10.8,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1534,
-        "barrel_rate": 0.0635,
-        "hard_hit_rate": 0.3735,
-        "fb_rate": 0.4439,
-        "z_contact_rate": 0.8695,
-        "sweet_spot_rate": 0.3094,
-        "xwobacon": null,
-        "ev90": 98.5
-      },
-      "reasons": [
-        "vs Ranger Suarez \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.61)",
-        "Poor pitch-mix fit (69% fastballs, rel 0.30 \u2192 mix-fit 0.51x)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 547180,
-      "name": "Bryce Harper",
-      "team": "Philadelphia Phillies",
-      "bats": "L",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Aaron Nola",
       "venue": "Truist Park",
       "gamePk": 849844,
       "slot": null,
       "confirmed": false,
-      "season_hr": 29,
-      "iso": 0.216,
-      "total": 36.2,
+      "season_hr": 26,
+      "iso": 0.197,
+      "total": 51.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 49.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
+      "tb_score": 59.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 82%, Z-contact 89%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)",
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
       "shape_source": "statcast",
       "pull_fit": false,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -0.6,
-      "pitcher_grade": "?",
+      "due_hr": -0.3,
+      "pitcher_grade": "A",
       "breakdown": {
-        "pitcher": 0,
-        "hitter": 18.2,
-        "environment": 10.0,
+        "pitcher": 19.0,
+        "hitter": 13.0,
+        "environment": 9.0,
         "lineup": 6.0,
-        "confidence": 2.0
+        "confidence": 4.0
       },
       "statcast": {
-        "air_pull_rate": 0.1535,
-        "barrel_rate": 0.0783,
-        "hard_hit_rate": 0.359,
-        "fb_rate": 0.4328,
-        "z_contact_rate": 0.8282,
-        "sweet_spot_rate": 0.3091,
+        "air_pull_rate": 0.1373,
+        "barrel_rate": 0.064,
+        "hard_hit_rate": 0.3472,
+        "fb_rate": 0.4769,
+        "z_contact_rate": 0.8868,
+        "sweet_spot_rate": 0.3285,
         "xwobacon": null,
-        "ev90": 100.5
+        "ev90": 105.3
       },
       "reasons": [
-        "Hot (2 HR / 2 barrels last 7d)",
+        "vs Aaron Nola \u2014 cause A (19.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.90)",
+        "Pitcher: Hard contact allowed (.482 SLG)",
+        "Platoon edge (L vs RHP)",
         "Slightly + park (103)",
-        "Hot (85\u00b0F)",
+        "Warm (78\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 573262,
+      "name": "Mike Yastrzemski",
+      "team": "Atlanta Braves",
+      "bats": "L",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Aaron Nola",
+      "venue": "Truist Park",
+      "gamePk": 849844,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 12,
+      "iso": 0.156,
+      "total": 49.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 51.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)",
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.3,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.0,
+        "hitter": 11.8,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1444,
+        "barrel_rate": 0.0674,
+        "hard_hit_rate": 0.3891,
+        "fb_rate": 0.5054,
+        "z_contact_rate": 0.8455,
+        "sweet_spot_rate": 0.3183,
+        "xwobacon": null,
+        "ev90": 101.2
+      },
+      "reasons": [
+        "vs Aaron Nola \u2014 cause A (19.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.90)",
+        "Pitcher: Hard contact allowed (.482 SLG)",
+        "Low air-pull (10%)",
+        "Platoon edge (L vs RHP)",
+        "Slightly + park (103)",
+        "Warm (78\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -1340,20 +614,21 @@
       "team": "Philadelphia Phillies",
       "bats": "R",
       "opp": "Atlanta Braves",
-      "opp_pitcher": null,
+      "opp_pitcher": "Ray Kerr",
       "venue": "Truist Park",
       "gamePk": 849844,
       "slot": null,
       "confirmed": false,
       "season_hr": 15,
       "iso": 0.134,
-      "total": 36.2,
+      "total": 46.3,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 60.0,
+      "tb_score": 61.0,
       "tb_tier": "Solid TB",
       "tb_reasons": [
-        "High-contact bat (contact 97%, Z-contact 89%) \u2014 banks XBH"
+        "High-contact bat (contact 97%, Z-contact 89%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
       "pull_fit": false,
@@ -1361,11 +636,11 @@
       "fit_tag": null,
       "value_play": false,
       "due_hr": 1.7,
-      "pitcher_grade": "?",
+      "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 0,
-        "hitter": 18.2,
-        "environment": 10.0,
+        "pitcher": 9.5,
+        "hitter": 19.8,
+        "environment": 9.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
@@ -1380,71 +655,11 @@
         "ev90": 104.0
       },
       "reasons": [
+        "vs Ray Kerr \u2014 cause Pass (9.5/25)",
         "Above-avg barrels (10%)",
-        "Slightly + park (103)",
-        "Hot (85\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 671218,
-      "name": "Heliot Ramos",
-      "team": "New York Yankees",
-      "bats": "R",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.166,
-      "total": 36.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 42.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.51,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 13.6,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1989,
-        "barrel_rate": 0.059,
-        "hard_hit_rate": 0.3369,
-        "fb_rate": 0.5223,
-        "z_contact_rate": 0.853,
-        "sweet_spot_rate": 0.3332,
-        "xwobacon": null,
-        "ev90": 107.8
-      },
-      "reasons": [
-        "vs Ranger Suarez \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.61)",
-        "Good air-pull (20%)",
         "Platoon edge (R vs LHP)",
-        "Poor pitch-mix fit (69% fastballs, rel 0.30 \u2192 mix-fit 0.51x)",
         "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -1455,259 +670,22 @@
       ]
     },
     {
-      "id": 671277,
-      "name": "Luis Garc\u00eda Jr.",
-      "team": "New York Yankees",
+      "id": 656941,
+      "name": "Kyle Schwarber",
+      "team": "Philadelphia Phillies",
       "bats": "L",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 30,
-      "iso": 0.244,
-      "total": 35.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 49.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.51,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 8.8,
-        "environment": 12.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1446,
-        "barrel_rate": 0.0598,
-        "hard_hit_rate": 0.3836,
-        "fb_rate": 0.5143,
-        "z_contact_rate": 0.8668,
-        "sweet_spot_rate": 0.3221,
-        "xwobacon": null,
-        "ev90": 102.9
-      },
-      "reasons": [
-        "vs Ranger Suarez \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.61)",
-        "Poor pitch-mix fit (69% fastballs, rel 0.30 \u2192 mix-fit 0.51x)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 502671,
-      "name": "Paul Goldschmidt",
-      "team": "New York Yankees",
-      "bats": "R",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.2,
-      "total": 35.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 54.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.51,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 12.8,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1732,
-        "barrel_rate": 0.0598,
-        "hard_hit_rate": 0.3636,
-        "fb_rate": 0.5143,
-        "z_contact_rate": 0.8522,
-        "sweet_spot_rate": 0.3387,
-        "xwobacon": null,
-        "ev90": 99.6
-      },
-      "reasons": [
-        "vs Ranger Suarez \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.61)",
-        "Platoon edge (R vs LHP)",
-        "Poor pitch-mix fit (69% fastballs, rel 0.30 \u2192 mix-fit 0.51x)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 643289,
-      "name": "Mauricio Dub\u00f3n",
-      "team": "Atlanta Braves",
-      "bats": "R",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": null,
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Ray Kerr",
       "venue": "Truist Park",
       "gamePk": 849844,
       "slot": null,
       "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.123,
-      "total": 34.8,
+      "season_hr": 45,
+      "iso": 0.271,
+      "total": 45.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 58.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 85%, Z-contact 87%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 1.0,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 16.8,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1701,
-        "barrel_rate": 0.0866,
-        "hard_hit_rate": 0.4156,
-        "fb_rate": 0.5049,
-        "z_contact_rate": 0.8668,
-        "sweet_spot_rate": 0.3606,
-        "xwobacon": null,
-        "ev90": 101.6
-      },
-      "reasons": [
-        "Slightly + park (103)",
-        "Hot (85\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 676609,
-      "name": "Jos\u00e9 Caballero",
-      "team": "New York Yankees",
-      "bats": "R",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.134,
-      "total": 34.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 49.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.51,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 11.8,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1589,
-        "barrel_rate": 0.0741,
-        "hard_hit_rate": 0.3436,
-        "fb_rate": 0.481,
-        "z_contact_rate": 0.8475,
-        "sweet_spot_rate": 0.3554,
-        "xwobacon": null,
-        "ev90": 100.0
-      },
-      "reasons": [
-        "vs Ranger Suarez \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.61)",
-        "Platoon edge (R vs LHP)",
-        "Poor pitch-mix fit (69% fastballs, rel 0.30 \u2192 mix-fit 0.51x)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 624424,
-      "name": "Michael Conforto",
-      "team": "Chicago Cubs",
-      "bats": "L",
-      "opp": "San Diego Padres",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 15,
-      "iso": 0.229,
-      "total": 34.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 58.0,
+      "tb_score": 58.5,
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
@@ -1715,27 +693,29 @@
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 1.7,
-      "pitcher_grade": "?",
+      "due_hr": -0.6,
+      "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 0,
-        "hitter": 19.2,
-        "environment": 7.0,
+        "pitcher": 9.5,
+        "hitter": 18.5,
+        "environment": 9.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1844,
-        "barrel_rate": 0.0998,
-        "hard_hit_rate": 0.3739,
-        "fb_rate": 0.4981,
-        "z_contact_rate": 0.8502,
-        "sweet_spot_rate": 0.4073,
+        "air_pull_rate": 0.1822,
+        "barrel_rate": 0.0859,
+        "hard_hit_rate": 0.4265,
+        "fb_rate": 0.4977,
+        "z_contact_rate": 0.8634,
+        "sweet_spot_rate": 0.3278,
         "xwobacon": null,
-        "ev90": 100.9
+        "ev90": 113.0
       },
       "reasons": [
-        "Above-avg barrels (10%)",
+        "vs Ray Kerr \u2014 cause Pass (9.5/25)",
+        "Slightly + park (103)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -1746,51 +726,162 @@
       ]
     },
     {
-      "id": 686948,
-      "name": "Drake Baldwin",
+      "id": 657041,
+      "name": "Lane Thomas",
       "team": "Atlanta Braves",
-      "bats": "L",
+      "bats": "R",
       "opp": "Philadelphia Phillies",
-      "opp_pitcher": null,
+      "opp_pitcher": "Aaron Nola",
       "venue": "Truist Park",
       "gamePk": 849844,
       "slot": null,
       "confirmed": false,
-      "season_hr": 25,
-      "iso": 0.175,
-      "total": 33.5,
+      "season_hr": 11,
+      "iso": 0.159,
+      "total": 44.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 55.0,
-      "tb_tier": "Dart",
+      "tb_score": 36.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Soft-tossing / hittable arm (TB tailwind)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.0,
+        "hitter": 6.0,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Aaron Nola \u2014 cause A (19.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.90)",
+        "Pitcher: Hard contact allowed (.482 SLG)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Slightly + park (103)",
+        "Warm (78\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 642086,
+      "name": "Dominic Smith",
+      "team": "Atlanta Braves",
+      "bats": "L",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Aaron Nola",
+      "venue": "Truist Park",
+      "gamePk": 849844,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 9,
+      "iso": 0.13,
+      "total": 44.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 45.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)",
+        "Soft-tossing / hittable arm (TB tailwind)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 19.0,
+        "hitter": 6.0,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 4.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Aaron Nola \u2014 cause A (19.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.90)",
+        "Pitcher: Hard contact allowed (.482 SLG)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Slightly + park (103)",
+        "Warm (78\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 547180,
+      "name": "Bryce Harper",
+      "team": "Philadelphia Phillies",
+      "bats": "L",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Ray Kerr",
+      "venue": "Truist Park",
+      "gamePk": 849844,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 29,
+      "iso": 0.216,
+      "total": 43.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 47.0,
+      "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
       "pull_fit": false,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.4,
-      "pitcher_grade": "?",
+      "due_hr": -0.6,
+      "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 0,
-        "hitter": 15.5,
-        "environment": 10.0,
+        "pitcher": 9.5,
+        "hitter": 17.2,
+        "environment": 9.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1834,
-        "barrel_rate": 0.0804,
-        "hard_hit_rate": 0.4067,
-        "fb_rate": 0.5203,
-        "z_contact_rate": 0.8166,
-        "sweet_spot_rate": 0.3929,
+        "air_pull_rate": 0.1535,
+        "barrel_rate": 0.0783,
+        "hard_hit_rate": 0.359,
+        "fb_rate": 0.4328,
+        "z_contact_rate": 0.8282,
+        "sweet_spot_rate": 0.3091,
         "xwobacon": null,
-        "ev90": 105.2
+        "ev90": 100.5
       },
       "reasons": [
+        "vs Ray Kerr \u2014 cause Pass (9.5/25)",
+        "Hot (2 HR / 2 barrels last 7d)",
         "Slightly + park (103)",
-        "Hot (85\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -1806,30 +897,32 @@
       "team": "Philadelphia Phillies",
       "bats": "R",
       "opp": "Atlanta Braves",
-      "opp_pitcher": null,
+      "opp_pitcher": "Ray Kerr",
       "venue": "Truist Park",
       "gamePk": 849844,
       "slot": null,
       "confirmed": false,
       "season_hr": 11,
       "iso": 0.201,
-      "total": 33.2,
+      "total": 43.3,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 53.0,
+      "tb_score": 54.0,
       "tb_tier": "Dart",
-      "tb_reasons": [],
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
       "shape_source": "statcast",
       "pull_fit": false,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
       "due_hr": -0.3,
-      "pitcher_grade": "?",
+      "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 0,
-        "hitter": 15.2,
-        "environment": 10.0,
+        "pitcher": 9.5,
+        "hitter": 16.8,
+        "environment": 9.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
@@ -1844,282 +937,10 @@
         "ev90": 99.8
       },
       "reasons": [
+        "vs Ray Kerr \u2014 cause Pass (9.5/25)",
+        "Platoon edge (R vs LHP)",
         "Slightly + park (103)",
-        "Hot (85\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 701538,
-      "name": "Jackson Merrill",
-      "team": "San Diego Padres",
-      "bats": "L",
-      "opp": "Chicago Cubs",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 26,
-      "iso": 0.186,
-      "total": 33.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 51.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 18.0,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1875,
-        "barrel_rate": 0.0741,
-        "hard_hit_rate": 0.4636,
-        "fb_rate": 0.5477,
-        "z_contact_rate": 0.8863,
-        "sweet_spot_rate": 0.3721,
-        "xwobacon": null,
-        "ev90": 111.2
-      },
-      "reasons": [
-        "Zone-damage: hard-hit 46% + Z-contact 89%",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 645277,
-      "name": "Ozzie Albies",
-      "team": "Atlanta Braves",
-      "bats": "S",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": null,
-      "venue": "Truist Park",
-      "gamePk": 849844,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 22,
-      "iso": 0.155,
-      "total": 32.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 43.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 14.8,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1661,
-        "barrel_rate": 0.0657,
-        "hard_hit_rate": 0.359,
-        "fb_rate": 0.4617,
-        "z_contact_rate": 0.848,
-        "sweet_spot_rate": 0.2801,
-        "xwobacon": null,
-        "ev90": 101.6
-      },
-      "reasons": [
-        "Slightly + park (103)",
-        "Hot (85\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 663586,
-      "name": "Austin Riley",
-      "team": "Atlanta Braves",
-      "bats": "R",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": null,
-      "venue": "Truist Park",
-      "gamePk": 849844,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 19,
-      "iso": 0.145,
-      "total": 32.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 45.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 14.8,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1524,
-        "barrel_rate": 0.0711,
-        "hard_hit_rate": 0.3619,
-        "fb_rate": 0.474,
-        "z_contact_rate": 0.8624,
-        "sweet_spot_rate": 0.3385,
-        "xwobacon": null,
-        "ev90": 102.1
-      },
-      "reasons": [
-        "Slightly + park (103)",
-        "Hot (85\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 681082,
-      "name": "Bryson Stott",
-      "team": "Philadelphia Phillies",
-      "bats": "L",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
-      "venue": "Truist Park",
-      "gamePk": 849844,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.145,
-      "total": 32.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 56.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 14.8,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1515,
-        "barrel_rate": 0.0648,
-        "hard_hit_rate": 0.403,
-        "fb_rate": 0.5409,
-        "z_contact_rate": 0.8593,
-        "sweet_spot_rate": 0.3618,
-        "xwobacon": null,
-        "ev90": 101.5
-      },
-      "reasons": [
-        "Slightly + park (103)",
-        "Hot (85\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 660670,
-      "name": "Ronald Acu\u00f1a Jr.",
-      "team": "Atlanta Braves",
-      "bats": "R",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": null,
-      "venue": "Truist Park",
-      "gamePk": 849844,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 20,
-      "iso": 0.196,
-      "total": 32.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 53.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.6,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 14.5,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1834,
-        "barrel_rate": 0.0804,
-        "hard_hit_rate": 0.3716,
-        "fb_rate": 0.4755,
-        "z_contact_rate": 0.8546,
-        "sweet_spot_rate": 0.3183,
-        "xwobacon": null,
-        "ev90": 105.9
-      },
-      "reasons": [
-        "Slightly + park (103)",
-        "Hot (85\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2135,30 +956,32 @@
       "team": "Philadelphia Phillies",
       "bats": "R",
       "opp": "Atlanta Braves",
-      "opp_pitcher": null,
+      "opp_pitcher": "Ray Kerr",
       "venue": "Truist Park",
       "gamePk": 849844,
       "slot": null,
       "confirmed": false,
       "season_hr": 9,
       "iso": 0.182,
-      "total": 32.5,
+      "total": 42.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 52.5,
+      "tb_score": 53.5,
       "tb_tier": "Dart",
-      "tb_reasons": [],
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
       "shape_source": "statcast",
       "pull_fit": false,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
       "due_hr": -1.3,
-      "pitcher_grade": "?",
+      "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 0,
-        "hitter": 14.5,
-        "environment": 10.0,
+        "pitcher": 9.5,
+        "hitter": 16.0,
+        "environment": 9.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
@@ -2173,8 +996,10 @@
         "ev90": 106.9
       },
       "reasons": [
+        "vs Ray Kerr \u2014 cause Pass (9.5/25)",
+        "Platoon edge (R vs LHP)",
         "Slightly + park (103)",
-        "Hot (85\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2190,30 +1015,32 @@
       "team": "Philadelphia Phillies",
       "bats": "R",
       "opp": "Atlanta Braves",
-      "opp_pitcher": null,
+      "opp_pitcher": "Ray Kerr",
       "venue": "Truist Park",
       "gamePk": 849844,
       "slot": null,
       "confirmed": false,
       "season_hr": 11,
       "iso": 0.126,
-      "total": 32.2,
+      "total": 42.3,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 49.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
+      "tb_score": 50.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
       "shape_source": "statcast",
       "pull_fit": false,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
       "due_hr": 0.7,
-      "pitcher_grade": "?",
+      "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 0,
-        "hitter": 14.2,
-        "environment": 10.0,
+        "pitcher": 9.5,
+        "hitter": 15.8,
+        "environment": 9.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
@@ -2228,116 +1055,10 @@
         "ev90": 104.2
       },
       "reasons": [
+        "vs Ray Kerr \u2014 cause Pass (9.5/25)",
+        "Platoon edge (R vs LHP)",
         "Slightly + park (103)",
-        "Hot (85\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 669016,
-      "name": "Brandon Marsh",
-      "team": "Philadelphia Phillies",
-      "bats": "L",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
-      "venue": "Truist Park",
-      "gamePk": 849844,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.148,
-      "total": 31.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 41.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 13.8,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1757,
-        "barrel_rate": 0.0607,
-        "hard_hit_rate": 0.3914,
-        "fb_rate": 0.5061,
-        "z_contact_rate": 0.8597,
-        "sweet_spot_rate": 0.3275,
-        "xwobacon": null,
-        "ev90": 105.0
-      },
-      "reasons": [
-        "Slightly + park (103)",
-        "Hot (85\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 664034,
-      "name": "Ty France",
-      "team": "San Diego Padres",
-      "bats": "R",
-      "opp": "Chicago Cubs",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 21,
-      "iso": 0.207,
-      "total": 31.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 54.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.4,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 16.2,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.166,
-        "barrel_rate": 0.0848,
-        "hard_hit_rate": 0.4185,
-        "fb_rate": 0.5216,
-        "z_contact_rate": 0.8593,
-        "sweet_spot_rate": 0.3861,
-        "xwobacon": null,
-        "ev90": 106.0
-      },
-      "reasons": [
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2353,30 +1074,32 @@
       "team": "Philadelphia Phillies",
       "bats": "R",
       "opp": "Atlanta Braves",
-      "opp_pitcher": null,
+      "opp_pitcher": "Ray Kerr",
       "venue": "Truist Park",
       "gamePk": 849844,
       "slot": null,
       "confirmed": false,
       "season_hr": 19,
       "iso": 0.136,
-      "total": 31.2,
+      "total": 41.3,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 46.0,
+      "tb_score": 47.0,
       "tb_tier": "Pass",
-      "tb_reasons": [],
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
       "shape_source": "statcast",
       "pull_fit": false,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
       "due_hr": 0.0,
-      "pitcher_grade": "?",
+      "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 0,
-        "hitter": 13.2,
-        "environment": 10.0,
+        "pitcher": 9.5,
+        "hitter": 14.8,
+        "environment": 9.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
@@ -2391,8 +1114,10 @@
         "ev90": 103.6
       },
       "reasons": [
+        "vs Ray Kerr \u2014 cause Pass (9.5/25)",
+        "Platoon edge (R vs LHP)",
         "Slightly + park (103)",
-        "Hot (85\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2403,614 +1128,78 @@
       ]
     },
     {
-      "id": 665487,
-      "name": "Fernando Tatis Jr.",
-      "team": "San Diego Padres",
-      "bats": "R",
-      "opp": "Chicago Cubs",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 25,
-      "iso": 0.181,
-      "total": 31.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 56.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 85%, Z-contact 89%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.6,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 16.0,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1589,
-        "barrel_rate": 0.0884,
-        "hard_hit_rate": 0.4236,
-        "fb_rate": 0.5143,
-        "z_contact_rate": 0.8934,
-        "sweet_spot_rate": 0.3387,
-        "xwobacon": null,
-        "ev90": 109.8
-      },
-      "reasons": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 592518,
-      "name": "Manny Machado",
-      "team": "San Diego Padres",
-      "bats": "R",
-      "opp": "Chicago Cubs",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 30,
-      "iso": 0.19,
-      "total": 30.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 49.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 81%, Z-contact 86%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.0,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 15.5,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1989,
-        "barrel_rate": 0.059,
-        "hard_hit_rate": 0.3565,
-        "fb_rate": 0.5223,
-        "z_contact_rate": 0.8615,
-        "sweet_spot_rate": 0.3332,
-        "xwobacon": null,
-        "ev90": 107.0
-      },
-      "reasons": [
-        "Good air-pull (20%)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 664023,
-      "name": "Ian Happ",
-      "team": "Chicago Cubs",
-      "bats": "S",
-      "opp": "San Diego Padres",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 24,
-      "iso": 0.194,
-      "total": 30.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 48.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.4,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 15.5,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1858,
-        "barrel_rate": 0.0814,
-        "hard_hit_rate": 0.4139,
-        "fb_rate": 0.4827,
-        "z_contact_rate": 0.8487,
-        "sweet_spot_rate": 0.3231,
-        "xwobacon": null,
-        "ev90": 103.0
-      },
-      "reasons": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 573262,
-      "name": "Mike Yastrzemski",
-      "team": "Atlanta Braves",
+      "id": 681082,
+      "name": "Bryson Stott",
+      "team": "Philadelphia Phillies",
       "bats": "L",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": null,
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Ray Kerr",
       "venue": "Truist Park",
       "gamePk": 849844,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.156,
-      "total": 29.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 46.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.3,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 11.8,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1444,
-        "barrel_rate": 0.0674,
-        "hard_hit_rate": 0.3891,
-        "fb_rate": 0.5054,
-        "z_contact_rate": 0.8455,
-        "sweet_spot_rate": 0.3183,
-        "xwobacon": null,
-        "ev90": 101.2
-      },
-      "reasons": [
-        "Slightly + park (103)",
-        "Hot (85\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 671739,
-      "name": "Michael Harris II",
-      "team": "Atlanta Braves",
-      "bats": "L",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": null,
-      "venue": "Truist Park",
-      "gamePk": 849844,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 26,
-      "iso": 0.197,
-      "total": 29.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 54.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 82%, Z-contact 89%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 11.5,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1373,
-        "barrel_rate": 0.064,
-        "hard_hit_rate": 0.3472,
-        "fb_rate": 0.4769,
-        "z_contact_rate": 0.8868,
-        "sweet_spot_rate": 0.3285,
-        "xwobacon": null,
-        "ev90": 105.3
-      },
-      "reasons": [
-        "Slightly + park (103)",
-        "Hot (85\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 593428,
-      "name": "Xander Bogaerts",
-      "team": "San Diego Padres",
-      "bats": "R",
-      "opp": "Chicago Cubs",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.113,
-      "total": 29.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 45.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 14.2,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1783,
-        "barrel_rate": 0.0616,
-        "hard_hit_rate": 0.4204,
-        "fb_rate": 0.4976,
-        "z_contact_rate": 0.8577,
-        "sweet_spot_rate": 0.3332,
-        "xwobacon": null,
-        "ev90": 109.1
-      },
-      "reasons": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 683737,
-      "name": "Michael Busch",
-      "team": "Chicago Cubs",
-      "bats": "L",
-      "opp": "San Diego Padres",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 20,
-      "iso": 0.151,
-      "total": 28.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 49.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 85%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.4,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 13.8,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.162,
-        "barrel_rate": 0.0764,
-        "hard_hit_rate": 0.38,
-        "fb_rate": 0.491,
-        "z_contact_rate": 0.8796,
-        "sweet_spot_rate": 0.3285,
-        "xwobacon": null,
-        "ev90": 103.3
-      },
-      "reasons": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 621438,
-      "name": "Tyrone Taylor",
-      "team": "Chicago Cubs",
-      "bats": "R",
-      "opp": "San Diego Padres",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.223,
-      "total": 28.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 88%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 13.8,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1684,
-        "barrel_rate": 0.0582,
-        "hard_hit_rate": 0.3688,
-        "fb_rate": 0.5461,
-        "z_contact_rate": 0.8763,
-        "sweet_spot_rate": 0.3762,
-        "xwobacon": null,
-        "ev90": 98.9
-      },
-      "reasons": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 621020,
-      "name": "Dansby Swanson",
-      "team": "Chicago Cubs",
-      "bats": "R",
-      "opp": "San Diego Padres",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 19,
-      "iso": 0.184,
-      "total": 28.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 44.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 13.5,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1534,
-        "barrel_rate": 0.0635,
-        "hard_hit_rate": 0.33,
-        "fb_rate": 0.4618,
-        "z_contact_rate": 0.8684,
-        "sweet_spot_rate": 0.3094,
-        "xwobacon": null,
-        "ev90": 92.2
-      },
-      "reasons": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 673548,
-      "name": "Seiya Suzuki",
-      "team": "Chicago Cubs",
-      "bats": "R",
-      "opp": "San Diego Padres",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 26,
-      "iso": 0.203,
-      "total": 28.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.4,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 13.2,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1298,
-        "barrel_rate": 0.0793,
-        "hard_hit_rate": 0.3996,
-        "fb_rate": 0.4832,
-        "z_contact_rate": 0.862,
-        "sweet_spot_rate": 0.343,
-        "xwobacon": null,
-        "ev90": 106.8
-      },
-      "reasons": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 657757,
-      "name": "Gavin Sheets",
-      "team": "San Diego Padres",
-      "bats": "L",
-      "opp": "Chicago Cubs",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.185,
-      "total": 27.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 33.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 12.0,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 608348,
-      "name": "Carson Kelly",
-      "team": "Chicago Cubs",
-      "bats": "R",
-      "opp": "San Diego Padres",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
       "slot": null,
       "confirmed": false,
       "season_hr": 10,
-      "iso": 0.118,
-      "total": 26.8,
+      "iso": 0.145,
+      "total": 40.3,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 49.0,
+      "tb_score": 53.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.7,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 9.5,
+        "hitter": 13.8,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1515,
+        "barrel_rate": 0.0648,
+        "hard_hit_rate": 0.403,
+        "fb_rate": 0.5409,
+        "z_contact_rate": 0.8593,
+        "sweet_spot_rate": 0.3618,
+        "xwobacon": null,
+        "ev90": 101.5
+      },
+      "reasons": [
+        "vs Ray Kerr \u2014 cause Pass (9.5/25)",
+        "Slightly + park (103)",
+        "Warm (78\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 669016,
+      "name": "Brandon Marsh",
+      "team": "Philadelphia Phillies",
+      "bats": "L",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Ray Kerr",
+      "venue": "Truist Park",
+      "gamePk": 849844,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 18,
+      "iso": 0.148,
+      "total": 39.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 39.0,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
@@ -3019,123 +1208,28 @@
       "fit_tag": null,
       "value_play": false,
       "due_hr": 0.0,
-      "pitcher_grade": "?",
+      "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 0,
-        "hitter": 11.8,
-        "environment": 7.0,
+        "pitcher": 9.5,
+        "hitter": 12.8,
+        "environment": 9.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1545,
-        "barrel_rate": 0.0582,
-        "hard_hit_rate": 0.3688,
-        "fb_rate": 0.4816,
+        "air_pull_rate": 0.1757,
+        "barrel_rate": 0.0607,
+        "hard_hit_rate": 0.3914,
+        "fb_rate": 0.5061,
         "z_contact_rate": 0.8597,
-        "sweet_spot_rate": 0.3923,
+        "sweet_spot_rate": 0.3275,
         "xwobacon": null,
-        "ev90": 100.4
+        "ev90": 105.0
       },
       "reasons": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 657041,
-      "name": "Lane Thomas",
-      "team": "Atlanta Braves",
-      "bats": "R",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": null,
-      "venue": "Truist Park",
-      "gamePk": 849844,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.159,
-      "total": 24.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 34.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 6.0,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "vs Ray Kerr \u2014 cause Pass (9.5/25)",
         "Slightly + park (103)",
-        "Hot (85\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 642086,
-      "name": "Dominic Smith",
-      "team": "Atlanta Braves",
-      "bats": "L",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": null,
-      "venue": "Truist Park",
-      "gamePk": 849844,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.13,
-      "total": 24.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 40.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 6.0,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Slightly + park (103)",
-        "Hot (85\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3149,314 +1243,45 @@
   "structures": {},
   "tb_board": [
     {
-      "id": 575929,
-      "name": "Willson Contreras",
-      "team": "Boston Red Sox",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 62.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 54.0,
-      "hr_role": "Pass"
-    },
-    {
-      "id": 656941,
-      "name": "Kyle Schwarber",
-      "team": "Philadelphia Phillies",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
+      "id": 621566,
+      "name": "Matt Olson",
+      "team": "Atlanta Braves",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Aaron Nola",
       "venue": "Truist Park",
       "gamePk": 849844,
       "slot": null,
       "confirmed": false,
       "bats": "L",
-      "tb_score": 61.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 37.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 700250,
-      "name": "Ben Rice",
-      "team": "New York Yankees",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 60.6,
+      "tb_score": 62.5,
       "tb_tier": "Solid TB",
       "tb_reasons": [
-        "High-contact bat (contact 86%, Z-contact 87%) \u2014 banks XBH"
+        "Platoon edge (L vs RHP)",
+        "Soft-tossing / hittable arm (TB tailwind)"
       ],
       "shape_source": "statcast",
-      "hr_total": 43.7,
+      "hr_total": 59.0,
       "hr_role": "Watchlist"
-    },
-    {
-      "id": 608324,
-      "name": "Alex Bregman",
-      "team": "Chicago Cubs",
-      "opp": "San Diego Padres",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 60.5,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 90%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 39.5,
-      "hr_role": "Pass"
     },
     {
       "id": 664761,
       "name": "Alec Bohm",
       "team": "Philadelphia Phillies",
       "opp": "Atlanta Braves",
-      "opp_pitcher": null,
+      "opp_pitcher": "Ray Kerr",
       "venue": "Truist Park",
       "gamePk": 849844,
       "slot": null,
       "confirmed": false,
       "bats": "R",
-      "tb_score": 60.0,
+      "tb_score": 61.0,
       "tb_tier": "Solid TB",
       "tb_reasons": [
-        "High-contact bat (contact 97%, Z-contact 89%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 36.2,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 668939,
-      "name": "Adley Rutschman",
-      "team": "Boston Red Sox",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "bats": "S",
-      "tb_score": 59.6,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 90%, Z-contact 87%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 50.9,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 641355,
-      "name": "Cody Bellinger",
-      "team": "New York Yankees",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 59.2,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 90%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 46.1,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 678554,
-      "name": "Curtis Mead",
-      "team": "Boston Red Sox",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 58.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 54.0,
-      "hr_role": "Pass"
-    },
-    {
-      "id": 681508,
-      "name": "Mickey Gasper",
-      "team": "Boston Red Sox",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "bats": "S",
-      "tb_score": 58.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 51.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 643289,
-      "name": "Mauricio Dub\u00f3n",
-      "team": "Atlanta Braves",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": null,
-      "venue": "Truist Park",
-      "gamePk": 849844,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 58.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 85%, Z-contact 87%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 34.8,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 624424,
-      "name": "Michael Conforto",
-      "team": "Chicago Cubs",
-      "opp": "San Diego Padres",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 58.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 34.2,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 621566,
-      "name": "Matt Olson",
-      "team": "Atlanta Braves",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": null,
-      "venue": "Truist Park",
-      "gamePk": 849844,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 57.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 40.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 691718,
-      "name": "Pete Crow-Armstrong",
-      "team": "Chicago Cubs",
-      "opp": "San Diego Padres",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 57.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 37.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 642708,
-      "name": "Amed Rosario",
-      "team": "New York Yankees",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 56.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 80%, Z-contact 87%) \u2014 banks XBH",
+        "High-contact bat (contact 97%, Z-contact 89%) \u2014 banks XBH",
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 39.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 681082,
-      "name": "Bryson Stott",
-      "team": "Philadelphia Phillies",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
-      "venue": "Truist Park",
-      "gamePk": 849844,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 56.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 32.8,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 665487,
-      "name": "Fernando Tatis Jr.",
-      "team": "San Diego Padres",
-      "opp": "Chicago Cubs",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 56.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 85%, Z-contact 89%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 31.0,
+      "hr_total": 46.3,
       "hr_role": "Watchlist"
     },
     {
@@ -3464,55 +1289,41 @@
       "name": "Drake Baldwin",
       "team": "Atlanta Braves",
       "opp": "Philadelphia Phillies",
-      "opp_pitcher": null,
+      "opp_pitcher": "Aaron Nola",
       "venue": "Truist Park",
       "gamePk": 849844,
       "slot": null,
       "confirmed": false,
       "bats": "L",
-      "tb_score": 55.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 33.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 502671,
-      "name": "Paul Goldschmidt",
-      "team": "New York Yankees",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 54.0,
-      "tb_tier": "Dart",
+      "tb_score": 60.0,
+      "tb_tier": "Solid TB",
       "tb_reasons": [
-        "Platoon edge (R vs LHP)"
+        "Platoon edge (L vs RHP)",
+        "Soft-tossing / hittable arm (TB tailwind)"
       ],
       "shape_source": "statcast",
-      "hr_total": 35.3,
+      "hr_total": 59.5,
       "hr_role": "Watchlist"
     },
     {
-      "id": 664034,
-      "name": "Ty France",
-      "team": "San Diego Padres",
-      "opp": "Chicago Cubs",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
+      "id": 643289,
+      "name": "Mauricio Dub\u00f3n",
+      "team": "Atlanta Braves",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Aaron Nola",
+      "venue": "Truist Park",
+      "gamePk": 849844,
       "slot": null,
       "confirmed": false,
       "bats": "R",
-      "tb_score": 54.0,
+      "tb_score": 59.5,
       "tb_tier": "Dart",
-      "tb_reasons": [],
+      "tb_reasons": [
+        "High-contact bat (contact 85%, Z-contact 87%) \u2014 banks XBH",
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
       "shape_source": "statcast",
-      "hr_total": 31.2,
+      "hr_total": 56.8,
       "hr_role": "Watchlist"
     },
     {
@@ -3520,19 +1331,39 @@
       "name": "Michael Harris II",
       "team": "Atlanta Braves",
       "opp": "Philadelphia Phillies",
-      "opp_pitcher": null,
+      "opp_pitcher": "Aaron Nola",
       "venue": "Truist Park",
       "gamePk": 849844,
       "slot": null,
       "confirmed": false,
       "bats": "L",
-      "tb_score": 54.0,
+      "tb_score": 59.0,
       "tb_tier": "Dart",
       "tb_reasons": [
-        "High-contact bat (contact 82%, Z-contact 89%) \u2014 banks XBH"
+        "High-contact bat (contact 82%, Z-contact 89%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)",
+        "Soft-tossing / hittable arm (TB tailwind)"
       ],
       "shape_source": "statcast",
-      "hr_total": 29.5,
+      "hr_total": 51.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 656941,
+      "name": "Kyle Schwarber",
+      "team": "Philadelphia Phillies",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Ray Kerr",
+      "venue": "Truist Park",
+      "gamePk": 849844,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 58.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 45.0,
       "hr_role": "Watchlist"
     },
     {
@@ -3540,17 +1371,19 @@
       "name": "Ronald Acu\u00f1a Jr.",
       "team": "Atlanta Braves",
       "opp": "Philadelphia Phillies",
-      "opp_pitcher": null,
+      "opp_pitcher": "Aaron Nola",
       "venue": "Truist Park",
       "gamePk": 849844,
       "slot": null,
       "confirmed": false,
       "bats": "R",
-      "tb_score": 53.5,
+      "tb_score": 55.0,
       "tb_tier": "Dart",
-      "tb_reasons": [],
+      "tb_reasons": [
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
       "shape_source": "statcast",
-      "hr_total": 32.5,
+      "hr_total": 53.5,
       "hr_role": "Watchlist"
     },
     {
@@ -3558,17 +1391,19 @@
       "name": "Derek Hill",
       "team": "Philadelphia Phillies",
       "opp": "Atlanta Braves",
-      "opp_pitcher": null,
+      "opp_pitcher": "Ray Kerr",
       "venue": "Truist Park",
       "gamePk": 849844,
       "slot": null,
       "confirmed": false,
       "bats": "R",
-      "tb_score": 53.0,
+      "tb_score": 54.0,
       "tb_tier": "Dart",
-      "tb_reasons": [],
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
       "shape_source": "statcast",
-      "hr_total": 33.2,
+      "hr_total": 43.3,
       "hr_role": "Watchlist"
     },
     {
@@ -3576,303 +1411,37 @@
       "name": "Edmundo Sosa",
       "team": "Philadelphia Phillies",
       "opp": "Atlanta Braves",
-      "opp_pitcher": null,
+      "opp_pitcher": "Ray Kerr",
       "venue": "Truist Park",
       "gamePk": 849844,
       "slot": null,
       "confirmed": false,
       "bats": "R",
-      "tb_score": 52.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 32.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 621438,
-      "name": "Tyrone Taylor",
-      "team": "Chicago Cubs",
-      "opp": "San Diego Padres",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 52.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 88%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 28.8,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 673548,
-      "name": "Seiya Suzuki",
-      "team": "Chicago Cubs",
-      "opp": "San Diego Padres",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 28.2,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 701538,
-      "name": "Jackson Merrill",
-      "team": "San Diego Padres",
-      "opp": "Chicago Cubs",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 51.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 33.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 677800,
-      "name": "Wilyer Abreu",
-      "team": "Boston Red Sox",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 51.1,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 49.2,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 592450,
-      "name": "Aaron Judge",
-      "team": "New York Yankees",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 50.5,
+      "tb_score": 53.5,
       "tb_tier": "Dart",
       "tb_reasons": [
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 41.0,
+      "hr_total": 42.5,
       "hr_role": "Watchlist"
     },
     {
-      "id": 678882,
-      "name": "Ceddanne Rafaela",
-      "team": "Boston Red Sox",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
+      "id": 681082,
+      "name": "Bryson Stott",
+      "team": "Philadelphia Phillies",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Ray Kerr",
+      "venue": "Truist Park",
+      "gamePk": 849844,
       "slot": null,
       "confirmed": false,
-      "bats": "R",
-      "tb_score": 50.5,
+      "bats": "L",
+      "tb_score": 53.5,
       "tb_tier": "Dart",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 39.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 547180,
-      "name": "Bryce Harper",
-      "team": "Philadelphia Phillies",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
-      "venue": "Truist Park",
-      "gamePk": 849844,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 49.5,
-      "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 36.2,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 676609,
-      "name": "Jos\u00e9 Caballero",
-      "team": "New York Yankees",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 49.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 34.3,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 592663,
-      "name": "J.T. Realmuto",
-      "team": "Philadelphia Phillies",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
-      "venue": "Truist Park",
-      "gamePk": 849844,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 49.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 32.2,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 683737,
-      "name": "Michael Busch",
-      "team": "Chicago Cubs",
-      "opp": "San Diego Padres",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 49.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 85%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 28.8,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 702332,
-      "name": "Caleb Durbin",
-      "team": "Boston Red Sox",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 49.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 92%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 39.2,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 671277,
-      "name": "Luis Garc\u00eda Jr.",
-      "team": "New York Yankees",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 49.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 35.3,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 592518,
-      "name": "Manny Machado",
-      "team": "San Diego Padres",
-      "opp": "Chicago Cubs",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 49.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 81%, Z-contact 86%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 30.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 608348,
-      "name": "Carson Kelly",
-      "team": "Chicago Cubs",
-      "opp": "San Diego Padres",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 49.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 26.8,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 664023,
-      "name": "Ian Happ",
-      "team": "Chicago Cubs",
-      "opp": "San Diego Padres",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "bats": "S",
-      "tb_score": 48.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 30.5,
+      "hr_total": 40.3,
       "hr_role": "Watchlist"
     },
     {
@@ -3880,145 +1449,40 @@
       "name": "Mike Yastrzemski",
       "team": "Atlanta Braves",
       "opp": "Philadelphia Phillies",
-      "opp_pitcher": null,
+      "opp_pitcher": "Aaron Nola",
       "venue": "Truist Park",
       "gamePk": 849844,
       "slot": null,
       "confirmed": false,
       "bats": "L",
-      "tb_score": 46.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 29.8,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 607208,
-      "name": "Trea Turner",
-      "team": "Philadelphia Phillies",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
-      "venue": "Truist Park",
-      "gamePk": 849844,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 46.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 31.2,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 680776,
-      "name": "Jarren Duran",
-      "team": "Boston Red Sox",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Gerrit Cole",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 45.5,
-      "tb_tier": "Pass",
+      "tb_score": 51.5,
+      "tb_tier": "Dart",
       "tb_reasons": [
-        "Platoon edge (L vs RHP)"
+        "Platoon edge (L vs RHP)",
+        "Soft-tossing / hittable arm (TB tailwind)"
       ],
       "shape_source": "statcast",
-      "hr_total": 50.2,
+      "hr_total": 49.8,
       "hr_role": "Watchlist"
     },
     {
-      "id": 682987,
-      "name": "Spencer Jones",
-      "team": "New York Yankees",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 45.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 47.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 663586,
-      "name": "Austin Riley",
-      "team": "Atlanta Braves",
-      "opp": "Philadelphia Phillies",
-      "opp_pitcher": null,
+      "id": 592663,
+      "name": "J.T. Realmuto",
+      "team": "Philadelphia Phillies",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Ray Kerr",
       "venue": "Truist Park",
       "gamePk": 849844,
       "slot": null,
       "confirmed": false,
       "bats": "R",
-      "tb_score": 45.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
+      "tb_score": 50.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
       "shape_source": "statcast",
-      "hr_total": 32.8,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 593428,
-      "name": "Xander Bogaerts",
-      "team": "San Diego Padres",
-      "opp": "Chicago Cubs",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 45.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 29.2,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 669224,
-      "name": "Austin Wells",
-      "team": "New York Yankees",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 44.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 39.3,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 621020,
-      "name": "Dansby Swanson",
-      "team": "Chicago Cubs",
-      "opp": "San Diego Padres",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 44.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 28.5,
+      "hr_total": 42.3,
       "hr_role": "Watchlist"
     },
     {
@@ -4026,55 +1490,77 @@
       "name": "Ozzie Albies",
       "team": "Atlanta Braves",
       "opp": "Philadelphia Phillies",
-      "opp_pitcher": null,
+      "opp_pitcher": "Aaron Nola",
       "venue": "Truist Park",
       "gamePk": 849844,
       "slot": null,
       "confirmed": false,
       "bats": "S",
-      "tb_score": 43.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 32.8,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 671218,
-      "name": "Heliot Ramos",
-      "team": "New York Yankees",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 42.0,
+      "tb_score": 47.0,
       "tb_tier": "Pass",
       "tb_reasons": [
-        "Platoon edge (R vs LHP)"
+        "Soft-tossing / hittable arm (TB tailwind)"
       ],
       "shape_source": "statcast",
-      "hr_total": 36.1,
+      "hr_total": 55.8,
       "hr_role": "Watchlist"
     },
     {
-      "id": 669016,
-      "name": "Brandon Marsh",
+      "id": 547180,
+      "name": "Bryce Harper",
       "team": "Philadelphia Phillies",
       "opp": "Atlanta Braves",
-      "opp_pitcher": null,
+      "opp_pitcher": "Ray Kerr",
       "venue": "Truist Park",
       "gamePk": 849844,
       "slot": null,
       "confirmed": false,
       "bats": "L",
-      "tb_score": 41.5,
+      "tb_score": 47.0,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 31.8,
+      "hr_total": 43.7,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 607208,
+      "name": "Trea Turner",
+      "team": "Philadelphia Phillies",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Ray Kerr",
+      "venue": "Truist Park",
+      "gamePk": 849844,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 47.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 41.3,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 663586,
+      "name": "Austin Riley",
+      "team": "Atlanta Braves",
+      "opp": "Philadelphia Phillies",
+      "opp_pitcher": "Aaron Nola",
+      "venue": "Truist Park",
+      "gamePk": 849844,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 46.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Soft-tossing / hittable arm (TB tailwind)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 51.8,
       "hr_role": "Watchlist"
     },
     {
@@ -4082,57 +1568,39 @@
       "name": "Dominic Smith",
       "team": "Atlanta Braves",
       "opp": "Philadelphia Phillies",
-      "opp_pitcher": null,
+      "opp_pitcher": "Aaron Nola",
       "venue": "Truist Park",
       "gamePk": 849844,
       "slot": null,
       "confirmed": false,
       "bats": "L",
-      "tb_score": 40.5,
+      "tb_score": 45.5,
       "tb_tier": "Pass",
       "tb_reasons": [
+        "Platoon edge (L vs RHP)",
+        "Soft-tossing / hittable arm (TB tailwind)",
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 24.0,
+      "hr_total": 44.0,
       "hr_role": "Watchlist"
     },
     {
-      "id": 641857,
-      "name": "Ryan McMahon",
-      "team": "New York Yankees",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
+      "id": 669016,
+      "name": "Brandon Marsh",
+      "team": "Philadelphia Phillies",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Ray Kerr",
+      "venue": "Truist Park",
+      "gamePk": 849844,
       "slot": null,
       "confirmed": false,
       "bats": "L",
-      "tb_score": 37.5,
+      "tb_score": 39.0,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 37.3,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 663757,
-      "name": "Trent Grisham",
-      "team": "New York Yankees",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 36.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 38.5,
+      "hr_total": 39.3,
       "hr_role": "Watchlist"
     },
     {
@@ -4140,84 +1608,44 @@
       "name": "Lane Thomas",
       "team": "Atlanta Braves",
       "opp": "Philadelphia Phillies",
-      "opp_pitcher": null,
+      "opp_pitcher": "Aaron Nola",
       "venue": "Truist Park",
       "gamePk": 849844,
       "slot": null,
       "confirmed": false,
       "bats": "R",
-      "tb_score": 34.5,
+      "tb_score": 36.0,
       "tb_tier": "Pass",
       "tb_reasons": [
+        "Soft-tossing / hittable arm (TB tailwind)",
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 24.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 657757,
-      "name": "Gavin Sheets",
-      "team": "San Diego Padres",
-      "opp": "Chicago Cubs",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849840,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 33.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 27.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 665862,
-      "name": "Jazz Chisholm Jr.",
-      "team": "New York Yankees",
-      "opp": "Boston Red Sox",
-      "opp_pitcher": "Ranger Suarez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849847,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 32.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 38.5,
+      "hr_total": 44.0,
       "hr_role": "Watchlist"
     }
   ],
   "pitcher_board": [
     {
-      "id": 543037,
-      "name": "Gerrit Cole",
-      "score": 15.0,
-      "grade": "B",
+      "id": 605400,
+      "name": "Aaron Nola",
+      "score": 19.0,
+      "grade": "A",
       "flags": [
-        "High HR allowed (HR/9 1.56)"
+        "Elevated HR allowed (HR/9 1.90)",
+        "Hard contact allowed (.482 SLG)"
       ],
-      "hr9": 1.56,
-      "barrel_allowed": 0.0758
+      "hr9": 1.9,
+      "barrel_allowed": null
     },
     {
-      "id": 624133,
-      "name": "Ranger Suarez",
-      "score": 6.5,
+      "id": 678061,
+      "name": "Ray Kerr",
+      "score": 9.5,
       "grade": "Pass",
-      "flags": [
-        "Suppresses HR (HR/9 0.61)"
-      ],
-      "hr9": 0.61,
-      "barrel_allowed": 0.0582
+      "flags": [],
+      "hr9": 0.99,
+      "barrel_allowed": null
     }
   ],
   "audit_template": {
