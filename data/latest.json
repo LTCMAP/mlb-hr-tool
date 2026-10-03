@@ -1,9 +1,9 @@
 {
   "version": "2.8",
-  "generated_utc": "2026-10-03T01:16:14.179660+00:00",
+  "generated_utc": "2026-10-03T17:32:22.715014+00:00",
   "slate_date": "2026-10-03",
   "games": 4,
-  "confirmed_lineups": 0,
+  "confirmed_lineups": 3,
   "statcast": true,
   "statcast_meta": {
     "window_days": 21,
@@ -38,14 +38,14 @@
     "source": "mlbapi",
     "days_savant": 0,
     "days_mlbapi": 18,
-    "trustworthy": false,
+    "trustworthy": true,
     "statcast_batters": 338,
     "statcast_candidates": 59,
-    "confirmed_lineups": 0,
+    "confirmed_lineups": 3,
     "games": 4,
     "days_failed": 1,
     "warnings": [
-      "NO CONFIRMED LINEUPS \u2014 every bat is using a neutral slot default. Likely built before lineups posted; re-run closer to first pitch.",
+      "Only 3/8 lineups confirmed \u2014 unconfirmed bats use a neutral slot default.",
       "Statcast: 1 day(s) failed to fetch in the 21-day window (thinner sample).",
       "Shape built from the MLB Stats API fallback (18/21 days) because Baseball Savant was unreachable. All shape signals are live; xwOBAcon is unavailable (regressed to league prior, ISO backstops it) and barrels are recomputed from EV/LA."
     ]
@@ -106,6 +106,20 @@
       "pitcher_cause": 12.5,
       "park_hr": 98,
       "cause_score": 12.0,
+      "capture_method": "Watchlist / pass (no clear cause)",
+      "public_heat": false,
+      "n_playable": 0,
+      "playable_bats": []
+    },
+    {
+      "team": "Los Angeles Dodgers",
+      "opp": "Atlanta Braves",
+      "pitcher": "Dylan Dodd",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "grade": "C",
+      "pitcher_cause": 11.0,
+      "park_hr": 100,
+      "cause_score": 11.0,
       "capture_method": "Watchlist / pass (no clear cause)",
       "public_heat": false,
       "n_playable": 0,
@@ -178,15 +192,15 @@
       "opp_pitcher": "Parker Messick",
       "venue": "Progressive Field",
       "gamePk": 849829,
-      "slot": null,
-      "confirmed": false,
+      "slot": 2,
+      "confirmed": true,
       "season_hr": 15,
       "iso": 0.279,
-      "total": 54.5,
+      "total": 60.5,
       "tier": "Pass",
       "role": "Pass",
-      "tb_score": 68.6,
-      "tb_tier": "Solid TB",
+      "tb_score": 72.6,
+      "tb_tier": "Strong TB",
       "tb_reasons": [
         "High-contact bat (contact 88%, Z-contact 89%) \u2014 banks XBH",
         "Platoon edge (R vs LHP)"
@@ -202,7 +216,7 @@
         "pitcher": 12.5,
         "hitter": 26.0,
         "environment": 6.0,
-        "lineup": 6.0,
+        "lineup": 12.0,
         "confidence": 4.0
       },
       "statcast": {
@@ -223,10 +237,117 @@
         "Good air-pull (20%)",
         "Above-avg barrels (11%)",
         "Platoon edge (R vs LHP)",
+        "Top of order (#2)",
         "Model: one strong signal"
       ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
+      "id": 678246,
+      "name": "Miguel Vargas",
+      "team": "Chicago White Sox",
+      "bats": "R",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Parker Messick",
+      "venue": "Progressive Field",
+      "gamePk": 849829,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 33,
+      "iso": 0.224,
+      "total": 55.3,
+      "tier": "Pass",
+      "role": "Pass",
+      "tb_score": 57.3,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.45,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.0,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 12.5,
+        "hitter": 22.8,
+        "environment": 6.0,
+        "lineup": 11.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2204,
+        "barrel_rate": 0.0935,
+        "hard_hit_rate": 0.3869,
+        "fb_rate": 0.533,
+        "z_contact_rate": 0.8407,
+        "sweet_spot_rate": 0.3325,
+        "xwobacon": null,
+        "ev90": 103.4
+      },
+      "reasons": [
+        "vs Parker Messick \u2014 cause C (12.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.82)",
+        "Pitcher: Loud contact allowed (hard-hit 46%)",
+        "Good air-pull (22%)",
+        "Above-avg barrels (9%)",
+        "Platoon edge (R vs LHP)",
+        "Pitch-mix fit: damages this arsenal (58% fastballs, rel 1.78 \u2192 mix-fit 1.45x)",
+        "Heart of order (#3)"
+      ],
+      "warnings": [],
+      "role_notes": []
+    },
+    {
+      "id": 660271,
+      "name": "Shohei Ohtani",
+      "team": "Los Angeles Dodgers",
+      "bats": "L",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Dylan Dodd",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849828,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 30,
+      "iso": 0.237,
+      "total": 55.0,
+      "tier": "Pass",
+      "role": "Pass",
+      "tb_score": 62.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 22.0,
+        "environment": 7.0,
+        "lineup": 12.0,
+        "confidence": 3.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Dylan Dodd \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
+        "Pitcher: High K rate (27%)",
+        "Proxy: strong HR rate",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Top of order (#2)"
+      ],
       "warnings": [
-        "Lineup not confirmed"
+        "Park factor unknown",
+        "Weather unavailable"
       ],
       "role_notes": []
     },
@@ -281,60 +402,114 @@
       "role_notes": []
     },
     {
-      "id": 678246,
-      "name": "Miguel Vargas",
-      "team": "Chicago White Sox",
+      "id": 605141,
+      "name": "Mookie Betts",
+      "team": "Los Angeles Dodgers",
       "bats": "R",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": "Parker Messick",
-      "venue": "Progressive Field",
-      "gamePk": 849829,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 33,
-      "iso": 0.224,
-      "total": 50.3,
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Dylan Dodd",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849828,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 23,
+      "iso": 0.197,
+      "total": 50.5,
       "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 54.3,
-      "tb_tier": "Dart",
+      "role": "Watchlist",
+      "tb_score": 61.5,
+      "tb_tier": "Solid TB",
       "tb_reasons": [
+        "High-contact bat (contact 86%, Z-contact 88%) \u2014 banks XBH",
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
       "pull_fit": true,
-      "mix_fit": 1.45,
+      "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -1.0,
+      "due_hr": -0.7,
       "pitcher_grade": "C",
       "breakdown": {
-        "pitcher": 12.5,
-        "hitter": 22.8,
-        "environment": 6.0,
+        "pitcher": 11.0,
+        "hitter": 18.5,
+        "environment": 7.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2109,
+        "barrel_rate": 0.0873,
+        "hard_hit_rate": 0.3736,
+        "fb_rate": 0.5198,
+        "z_contact_rate": 0.8784,
+        "sweet_spot_rate": 0.3652,
+        "xwobacon": null,
+        "ev90": 101.3
+      },
+      "reasons": [
+        "vs Dylan Dodd \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
+        "Pitcher: High K rate (27%)",
+        "Good air-pull (21%)",
+        "Platoon edge (R vs LHP)",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Park factor unknown",
+        "Weather unavailable"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 687221,
+      "name": "Dalton Rushing",
+      "team": "Los Angeles Dodgers",
+      "bats": "L",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Dylan Dodd",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849828,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 12,
+      "iso": 0.214,
+      "total": 49.0,
+      "tier": "Pass",
+      "role": "Pass",
+      "tb_score": 51.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 22.0,
+        "environment": 7.0,
         "lineup": 6.0,
         "confidence": 3.0
       },
-      "statcast": {
-        "air_pull_rate": 0.2204,
-        "barrel_rate": 0.0935,
-        "hard_hit_rate": 0.3869,
-        "fb_rate": 0.533,
-        "z_contact_rate": 0.8407,
-        "sweet_spot_rate": 0.3325,
-        "xwobacon": null,
-        "ev90": 103.4
-      },
+      "statcast": null,
       "reasons": [
-        "vs Parker Messick \u2014 cause C (12.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.82)",
-        "Pitcher: Loud contact allowed (hard-hit 46%)",
-        "Good air-pull (22%)",
-        "Above-avg barrels (9%)",
-        "Platoon edge (R vs LHP)",
-        "Pitch-mix fit: damages this arsenal (58% fastballs, rel 1.78 \u2192 mix-fit 1.45x)"
+        "vs Dylan Dodd \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
+        "Pitcher: High K rate (27%)",
+        "Proxy: strong HR rate",
+        "No Statcast shape \u2014 score capped (season-power proxy)"
       ],
       "warnings": [
+        "Park factor unknown",
+        "Weather unavailable",
         "Lineup not confirmed"
       ],
       "role_notes": []
@@ -395,6 +570,61 @@
       "warnings": [
         "Lineup not confirmed"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 808959,
+      "name": "Munetaka Murakami",
+      "team": "Chicago White Sox",
+      "bats": "L",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Parker Messick",
+      "venue": "Progressive Field",
+      "gamePk": 849829,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 35,
+      "iso": 0.271,
+      "total": 47.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 47.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.7,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 12.5,
+        "hitter": 16.0,
+        "environment": 6.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1614,
+        "barrel_rate": 0.0765,
+        "hard_hit_rate": 0.3553,
+        "fb_rate": 0.4778,
+        "z_contact_rate": 0.7569,
+        "sweet_spot_rate": 0.3497,
+        "xwobacon": null,
+        "ev90": 98.5
+      },
+      "reasons": [
+        "vs Parker Messick \u2014 cause C (12.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.82)",
+        "Pitcher: Loud contact allowed (hard-hit 46%)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -571,6 +801,129 @@
       ],
       "warnings": [
         "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 669257,
+      "name": "Will Smith",
+      "team": "Los Angeles Dodgers",
+      "bats": "R",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Dylan Dodd",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849828,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 10,
+      "iso": 0.166,
+      "total": 45.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 59.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 92%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 14.0,
+        "environment": 7.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1488,
+        "barrel_rate": 0.0776,
+        "hard_hit_rate": 0.3628,
+        "fb_rate": 0.4861,
+        "z_contact_rate": 0.877,
+        "sweet_spot_rate": 0.3382,
+        "xwobacon": null,
+        "ev90": 98.7
+      },
+      "reasons": [
+        "vs Dylan Dodd \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
+        "Pitcher: High K rate (27%)",
+        "Platoon edge (R vs LHP)",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Park factor unknown",
+        "Weather unavailable"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 663656,
+      "name": "Kyle Tucker",
+      "team": "Los Angeles Dodgers",
+      "bats": "L",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Dylan Dodd",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849828,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 17,
+      "iso": 0.152,
+      "total": 44.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 58.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 91%, Z-contact 89%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.7,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 16.8,
+        "environment": 7.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2233,
+        "barrel_rate": 0.0816,
+        "hard_hit_rate": 0.4116,
+        "fb_rate": 0.5411,
+        "z_contact_rate": 0.8896,
+        "sweet_spot_rate": 0.3982,
+        "xwobacon": null,
+        "ev90": 102.5
+      },
+      "reasons": [
+        "vs Dylan Dodd \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
+        "Pitcher: High K rate (27%)",
+        "Good air-pull (22%)",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Park factor unknown",
+        "Weather unavailable"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -812,6 +1165,125 @@
       ]
     },
     {
+      "id": 666176,
+      "name": "Jo Adell",
+      "team": "Cleveland Guardians",
+      "bats": "R",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Hagen Smith",
+      "venue": "Progressive Field",
+      "gamePk": 849829,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 23,
+      "iso": 0.161,
+      "total": 44.1,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 55.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 0.51,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.7,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 3.5,
+        "hitter": 20.6,
+        "environment": 6.0,
+        "lineup": 11.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1914,
+        "barrel_rate": 0.0849,
+        "hard_hit_rate": 0.4538,
+        "fb_rate": 0.4875,
+        "z_contact_rate": 0.8549,
+        "sweet_spot_rate": 0.3536,
+        "xwobacon": null,
+        "ev90": 109.6
+      },
+      "reasons": [
+        "vs Hagen Smith \u2014 cause Pass (3.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.32)",
+        "Pitcher: High K rate (37%)",
+        "Good air-pull (19%)",
+        "Zone-damage: hard-hit 45% + Z-contact 85%",
+        "Platoon edge (R vs LHP)",
+        "Poor pitch-mix fit (70% fastballs, rel 0.30 \u2192 mix-fit 0.51x)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 518692,
+      "name": "Freddie Freeman",
+      "team": "Los Angeles Dodgers",
+      "bats": "L",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Dylan Dodd",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849828,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 16,
+      "iso": 0.142,
+      "total": 43.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 42.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.7,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 12.8,
+        "environment": 7.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.164,
+        "barrel_rate": 0.0712,
+        "hard_hit_rate": 0.3972,
+        "fb_rate": 0.5192,
+        "z_contact_rate": 0.8436,
+        "sweet_spot_rate": 0.3695,
+        "xwobacon": null,
+        "ev90": 99.4
+      },
+      "reasons": [
+        "vs Dylan Dodd \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
+        "Pitcher: High K rate (27%)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Park factor unknown",
+        "Weather unavailable"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 666018,
       "name": "Jonathan Aranda",
       "team": "Tampa Bay Rays",
@@ -866,6 +1338,66 @@
       "warnings": [
         "Lineup not confirmed"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 805367,
+      "name": "Chase Meidroth",
+      "team": "Chicago White Sox",
+      "bats": "R",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Parker Messick",
+      "venue": "Progressive Field",
+      "gamePk": 849829,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 16,
+      "iso": 0.139,
+      "total": 43.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 55.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 85%, Z-contact 87%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.5,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 12.5,
+        "hitter": 11.2,
+        "environment": 6.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1707,
+        "barrel_rate": 0.0553,
+        "hard_hit_rate": 0.3759,
+        "fb_rate": 0.4805,
+        "z_contact_rate": 0.8674,
+        "sweet_spot_rate": 0.3527,
+        "xwobacon": null,
+        "ev90": 101.2
+      },
+      "reasons": [
+        "vs Parker Messick \u2014 cause C (12.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.82)",
+        "Pitcher: Loud contact allowed (hard-hit 46%)",
+        "Platoon edge (R vs LHP)",
+        "Poor pitch-mix fit (58% fastballs, rel 0.30 \u2192 mix-fit 0.50x)",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -1047,57 +1579,119 @@
       ]
     },
     {
-      "id": 808959,
-      "name": "Munetaka Murakami",
-      "team": "Chicago White Sox",
+      "id": 571970,
+      "name": "Max Muncy",
+      "team": "Los Angeles Dodgers",
       "bats": "L",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": "Parker Messick",
-      "venue": "Progressive Field",
-      "gamePk": 849829,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 35,
-      "iso": 0.271,
-      "total": 42.5,
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Dylan Dodd",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849828,
+      "slot": 8,
+      "confirmed": true,
+      "season_hr": 29,
+      "iso": 0.238,
+      "total": 42.8,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 44.0,
-      "tb_tier": "Pass",
+      "tb_score": 56.0,
+      "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "pull_fit": false,
+      "pull_fit": true,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.7,
+      "due_hr": 0.3,
       "pitcher_grade": "C",
       "breakdown": {
-        "pitcher": 12.5,
-        "hitter": 16.0,
-        "environment": 6.0,
-        "lineup": 6.0,
+        "pitcher": 11.0,
+        "hitter": 17.8,
+        "environment": 7.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1614,
-        "barrel_rate": 0.0765,
-        "hard_hit_rate": 0.3553,
-        "fb_rate": 0.4778,
-        "z_contact_rate": 0.7569,
-        "sweet_spot_rate": 0.3497,
+        "air_pull_rate": 0.2218,
+        "barrel_rate": 0.0861,
+        "hard_hit_rate": 0.3664,
+        "fb_rate": 0.5276,
+        "z_contact_rate": 0.869,
+        "sweet_spot_rate": 0.4077,
         "xwobacon": null,
-        "ev90": 98.5
+        "ev90": 105.9
       },
       "reasons": [
-        "vs Parker Messick \u2014 cause C (12.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.82)",
-        "Pitcher: Loud contact allowed (hard-hit 46%)",
+        "vs Dylan Dodd \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
+        "Pitcher: High K rate (27%)",
+        "Good air-pull (22%)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
+        "Park factor unknown",
+        "Weather unavailable",
+        "Bottom of order (#8)"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 608070,
+      "name": "Jos\u00e9 Ram\u00edrez",
+      "team": "Cleveland Guardians",
+      "bats": "S",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Hagen Smith",
+      "venue": "Progressive Field",
+      "gamePk": 849829,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 12,
+      "iso": 0.133,
+      "total": 42.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 59.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 88%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.73,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 3.5,
+        "hitter": 19.2,
+        "environment": 6.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1996,
+        "barrel_rate": 0.0827,
+        "hard_hit_rate": 0.3828,
+        "fb_rate": 0.5032,
+        "z_contact_rate": 0.8752,
+        "sweet_spot_rate": 0.3428,
+        "xwobacon": null,
+        "ev90": 105.7
+      },
+      "reasons": [
+        "vs Hagen Smith \u2014 cause Pass (3.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.32)",
+        "Pitcher: High K rate (37%)",
+        "Good air-pull (20%)",
+        "Pitch-mix fit: damages this arsenal (70% fastballs, rel 1.73 \u2192 mix-fit 1.73x)",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -1464,6 +2058,120 @@
       ]
     },
     {
+      "id": 606192,
+      "name": "Teoscar Hern\u00e1ndez",
+      "team": "Los Angeles Dodgers",
+      "bats": "R",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Dylan Dodd",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849828,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 16,
+      "iso": 0.158,
+      "total": 41.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 46.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.7,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 13.2,
+        "environment": 7.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1483,
+        "barrel_rate": 0.0838,
+        "hard_hit_rate": 0.3899,
+        "fb_rate": 0.5111,
+        "z_contact_rate": 0.8049,
+        "sweet_spot_rate": 0.3638,
+        "xwobacon": null,
+        "ev90": 106.5
+      },
+      "reasons": [
+        "vs Dylan Dodd \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
+        "Pitcher: High K rate (27%)",
+        "Platoon edge (R vs LHP)",
+        "Mid order (#5)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Park factor unknown",
+        "Weather unavailable"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 681624,
+      "name": "Andy Pages",
+      "team": "Los Angeles Dodgers",
+      "bats": "R",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Dylan Dodd",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849828,
+      "slot": 7,
+      "confirmed": true,
+      "season_hr": 23,
+      "iso": 0.194,
+      "total": 41.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 60.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 16.0,
+        "environment": 7.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Dylan Dodd \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
+        "Pitcher: High K rate (27%)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Park factor unknown",
+        "Weather unavailable",
+        "Bottom of order (#7)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 668723,
       "name": "Ryan Vilade",
       "team": "Tampa Bay Rays",
@@ -1589,11 +2297,11 @@
       "opp_pitcher": "Parker Messick",
       "venue": "Progressive Field",
       "gamePk": 849829,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "season_hr": 31,
       "iso": 0.206,
-      "total": 40.7,
+      "total": 39.7,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 41.0,
@@ -1610,7 +2318,7 @@
         "pitcher": 12.5,
         "hitter": 14.2,
         "environment": 6.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -1630,69 +2338,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 666176,
-      "name": "Jo Adell",
-      "team": "Cleveland Guardians",
-      "bats": "R",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Hagen Smith",
-      "venue": "Progressive Field",
-      "gamePk": 849829,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 23,
-      "iso": 0.161,
-      "total": 39.1,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 0.51,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.7,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 3.5,
-        "hitter": 20.6,
-        "environment": 6.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1914,
-        "barrel_rate": 0.0849,
-        "hard_hit_rate": 0.4538,
-        "fb_rate": 0.4875,
-        "z_contact_rate": 0.8549,
-        "sweet_spot_rate": 0.3536,
-        "xwobacon": null,
-        "ev90": 109.6
-      },
-      "reasons": [
-        "vs Hagen Smith \u2014 cause Pass (3.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.32)",
-        "Pitcher: High K rate (37%)",
-        "Good air-pull (19%)",
-        "Zone-damage: hard-hit 45% + Z-contact 85%",
-        "Platoon edge (R vs LHP)",
-        "Poor pitch-mix fit (70% fastballs, rel 0.30 \u2192 mix-fit 0.51x)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#9)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -1878,53 +2524,6 @@
       ]
     },
     {
-      "id": 660271,
-      "name": "Shohei Ohtani",
-      "team": "Los Angeles Dodgers",
-      "bats": "L",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849828,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 30,
-      "iso": 0.237,
-      "total": 38.0,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 61.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 22.0,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": null,
-      "reasons": [
-        "Proxy: strong HR rate",
-        "No Statcast shape \u2014 score capped (season-power proxy)"
-      ],
-      "warnings": [
-        "Park factor unknown",
-        "Weather unavailable",
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 665487,
       "name": "Fernando Tatis Jr.",
       "team": "San Diego Padres",
@@ -1986,53 +2585,6 @@
       ]
     },
     {
-      "id": 687221,
-      "name": "Dalton Rushing",
-      "team": "Los Angeles Dodgers",
-      "bats": "L",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849828,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.214,
-      "total": 38.0,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 22.0,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": null,
-      "reasons": [
-        "Proxy: strong HR rate",
-        "No Statcast shape \u2014 score capped (season-power proxy)"
-      ],
-      "warnings": [
-        "Park factor unknown",
-        "Weather unavailable",
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
       "id": 682987,
       "name": "Spencer Jones",
       "team": "New York Yankees",
@@ -2082,67 +2634,6 @@
         "Pitcher: Suppresses HR (HR/9 0.73)",
         "Platoon edge (L vs RHP)",
         "Dome roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 805367,
-      "name": "Chase Meidroth",
-      "team": "Chicago White Sox",
-      "bats": "R",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": "Parker Messick",
-      "venue": "Progressive Field",
-      "gamePk": 849829,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.139,
-      "total": 37.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 51.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 85%, Z-contact 87%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.5,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 12.5,
-        "hitter": 11.2,
-        "environment": 6.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1707,
-        "barrel_rate": 0.0553,
-        "hard_hit_rate": 0.3759,
-        "fb_rate": 0.4805,
-        "z_contact_rate": 0.8674,
-        "sweet_spot_rate": 0.3527,
-        "xwobacon": null,
-        "ev90": 101.2
-      },
-      "reasons": [
-        "vs Parker Messick \u2014 cause C (12.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.82)",
-        "Pitcher: Loud contact allowed (hard-hit 46%)",
-        "Platoon edge (R vs LHP)",
-        "Poor pitch-mix fit (58% fastballs, rel 0.30 \u2192 mix-fit 0.50x)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2336,66 +2827,6 @@
       ]
     },
     {
-      "id": 608070,
-      "name": "Jos\u00e9 Ram\u00edrez",
-      "team": "Cleveland Guardians",
-      "bats": "S",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Hagen Smith",
-      "venue": "Progressive Field",
-      "gamePk": 849829,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.133,
-      "total": 36.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 55.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.73,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 3.5,
-        "hitter": 19.2,
-        "environment": 6.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1996,
-        "barrel_rate": 0.0827,
-        "hard_hit_rate": 0.3828,
-        "fb_rate": 0.5032,
-        "z_contact_rate": 0.8752,
-        "sweet_spot_rate": 0.3428,
-        "xwobacon": null,
-        "ev90": 105.7
-      },
-      "reasons": [
-        "vs Hagen Smith \u2014 cause Pass (3.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.32)",
-        "Pitcher: High K rate (37%)",
-        "Good air-pull (20%)",
-        "Pitch-mix fit: damages this arsenal (70% fastballs, rel 1.73 \u2192 mix-fit 1.73x)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 686948,
       "name": "Drake Baldwin",
       "team": "Atlanta Braves",
@@ -2573,6 +3004,63 @@
       ]
     },
     {
+      "id": 800050,
+      "name": "Chase DeLauter",
+      "team": "Cleveland Guardians",
+      "bats": "L",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Hagen Smith",
+      "venue": "Progressive Field",
+      "gamePk": 849829,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 16,
+      "iso": 0.17,
+      "total": 36.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 52.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 100%, Z-contact 87%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 3.5,
+        "hitter": 13.5,
+        "environment": 6.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1662,
+        "barrel_rate": 0.0636,
+        "hard_hit_rate": 0.3924,
+        "fb_rate": 0.4591,
+        "z_contact_rate": 0.8734,
+        "sweet_spot_rate": 0.3264,
+        "xwobacon": null,
+        "ev90": 99.8
+      },
+      "reasons": [
+        "vs Hagen Smith \u2014 cause Pass (3.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.32)",
+        "Pitcher: High K rate (37%)",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 664034,
       "name": "Ty France",
       "team": "San Diego Padres",
@@ -2744,6 +3232,61 @@
       ]
     },
     {
+      "id": 682657,
+      "name": "Angel Mart\u00ednez",
+      "team": "Cleveland Guardians",
+      "bats": "S",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Hagen Smith",
+      "venue": "Progressive Field",
+      "gamePk": 849829,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 18,
+      "iso": 0.211,
+      "total": 34.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 42.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 3.5,
+        "hitter": 14.8,
+        "environment": 6.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1534,
+        "barrel_rate": 0.0646,
+        "hard_hit_rate": 0.3345,
+        "fb_rate": 0.522,
+        "z_contact_rate": 0.8368,
+        "sweet_spot_rate": 0.3324,
+        "xwobacon": null,
+        "ev90": 90.0
+      },
+      "reasons": [
+        "vs Hagen Smith \u2014 cause Pass (3.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.32)",
+        "Pitcher: High K rate (37%)",
+        "Mid order (#5)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 502671,
       "name": "Paul Goldschmidt",
       "team": "New York Yankees",
@@ -2793,62 +3336,6 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 571970,
-      "name": "Max Muncy",
-      "team": "Los Angeles Dodgers",
-      "bats": "L",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849828,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 29,
-      "iso": 0.238,
-      "total": 33.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 56.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.3,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 18.8,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2218,
-        "barrel_rate": 0.0861,
-        "hard_hit_rate": 0.3664,
-        "fb_rate": 0.5276,
-        "z_contact_rate": 0.869,
-        "sweet_spot_rate": 0.4077,
-        "xwobacon": null,
-        "ev90": 105.9
-      },
-      "reasons": [
-        "Good air-pull (22%)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Park factor unknown",
-        "Weather unavailable",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -3076,65 +3563,6 @@
       ]
     },
     {
-      "id": 683953,
-      "name": "Travis Bazzana",
-      "team": "Cleveland Guardians",
-      "bats": "L",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Hagen Smith",
-      "venue": "Progressive Field",
-      "gamePk": 849829,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 15,
-      "iso": 0.163,
-      "total": 33.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 51.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 88%, Z-contact 86%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.63,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.7,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 3.5,
-        "hitter": 15.5,
-        "environment": 6.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1535,
-        "barrel_rate": 0.0795,
-        "hard_hit_rate": 0.3285,
-        "fb_rate": 0.4516,
-        "z_contact_rate": 0.8614,
-        "sweet_spot_rate": 0.3129,
-        "xwobacon": null,
-        "ev90": 100.6
-      },
-      "reasons": [
-        "vs Hagen Smith \u2014 cause Pass (3.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.32)",
-        "Pitcher: High K rate (37%)",
-        "Pitch-mix fit: damages this arsenal (70% fastballs, rel 2.20 \u2192 mix-fit 1.63x)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 642708,
       "name": "Amed Rosario",
       "team": "New York Yankees",
@@ -3178,64 +3606,6 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 663656,
-      "name": "Kyle Tucker",
-      "team": "Los Angeles Dodgers",
-      "bats": "L",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849828,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.152,
-      "total": 32.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 59.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 91%, Z-contact 89%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.7,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 17.8,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2233,
-        "barrel_rate": 0.0816,
-        "hard_hit_rate": 0.4116,
-        "fb_rate": 0.5411,
-        "z_contact_rate": 0.8896,
-        "sweet_spot_rate": 0.3982,
-        "xwobacon": null,
-        "ev90": 102.5
-      },
-      "reasons": [
-        "Good air-pull (22%)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Park factor unknown",
-        "Weather unavailable",
         "Lineup not confirmed"
       ],
       "role_notes": [
@@ -3289,62 +3659,6 @@
         "vs Drew Rasmussen \u2014 cause Pass (6.0/25)",
         "Pitcher: Suppresses HR (HR/9 0.73)",
         "Dome roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 682657,
-      "name": "Angel Mart\u00ednez",
-      "team": "Cleveland Guardians",
-      "bats": "S",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Hagen Smith",
-      "venue": "Progressive Field",
-      "gamePk": 849829,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.211,
-      "total": 32.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 39.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 3.5,
-        "hitter": 14.8,
-        "environment": 6.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1534,
-        "barrel_rate": 0.0646,
-        "hard_hit_rate": 0.3345,
-        "fb_rate": 0.522,
-        "z_contact_rate": 0.8368,
-        "sweet_spot_rate": 0.3324,
-        "xwobacon": null,
-        "ev90": 90.0
-      },
-      "reasons": [
-        "vs Hagen Smith \u2014 cause Pass (3.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.32)",
-        "Pitcher: High K rate (37%)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3413,64 +3727,6 @@
       ]
     },
     {
-      "id": 605141,
-      "name": "Mookie Betts",
-      "team": "Los Angeles Dodgers",
-      "bats": "R",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849828,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 23,
-      "iso": 0.197,
-      "total": 32.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 54.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 86%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.7,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 17.0,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2109,
-        "barrel_rate": 0.0873,
-        "hard_hit_rate": 0.3736,
-        "fb_rate": 0.5198,
-        "z_contact_rate": 0.8784,
-        "sweet_spot_rate": 0.3652,
-        "xwobacon": null,
-        "ev90": 101.3
-      },
-      "reasons": [
-        "Good air-pull (21%)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Park factor unknown",
-        "Weather unavailable",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 657757,
       "name": "Gavin Sheets",
       "team": "San Diego Padres",
@@ -3518,6 +3774,65 @@
       ],
       "warnings": [
         "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 683953,
+      "name": "Travis Bazzana",
+      "team": "Cleveland Guardians",
+      "bats": "L",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Hagen Smith",
+      "venue": "Progressive Field",
+      "gamePk": 849829,
+      "slot": 7,
+      "confirmed": true,
+      "season_hr": 15,
+      "iso": 0.163,
+      "total": 32.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 51.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 88%, Z-contact 86%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.63,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.7,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 3.5,
+        "hitter": 15.5,
+        "environment": 6.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1535,
+        "barrel_rate": 0.0795,
+        "hard_hit_rate": 0.3285,
+        "fb_rate": 0.4516,
+        "z_contact_rate": 0.8614,
+        "sweet_spot_rate": 0.3129,
+        "xwobacon": null,
+        "ev90": 100.6
+      },
+      "reasons": [
+        "vs Hagen Smith \u2014 cause Pass (3.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.32)",
+        "Pitcher: High K rate (37%)",
+        "Pitch-mix fit: damages this arsenal (70% fastballs, rel 2.20 \u2192 mix-fit 1.63x)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Bottom of order (#7)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -3697,113 +4012,6 @@
       ]
     },
     {
-      "id": 681624,
-      "name": "Andy Pages",
-      "team": "Los Angeles Dodgers",
-      "bats": "R",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849828,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 23,
-      "iso": 0.194,
-      "total": 31.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 57.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 16.0,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Park factor unknown",
-        "Weather unavailable",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 800050,
-      "name": "Chase DeLauter",
-      "team": "Cleveland Guardians",
-      "bats": "L",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Hagen Smith",
-      "venue": "Progressive Field",
-      "gamePk": 849829,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.17,
-      "total": 31.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 49.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 100%, Z-contact 87%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 3.5,
-        "hitter": 13.5,
-        "environment": 6.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1662,
-        "barrel_rate": 0.0636,
-        "hard_hit_rate": 0.3924,
-        "fb_rate": 0.4591,
-        "z_contact_rate": 0.8734,
-        "sweet_spot_rate": 0.3264,
-        "xwobacon": null,
-        "ev90": 99.8
-      },
-      "reasons": [
-        "vs Hagen Smith \u2014 cause Pass (3.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.32)",
-        "Pitcher: High K rate (37%)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 656555,
       "name": "Rhys Hoskins",
       "team": "Cleveland Guardians",
@@ -3905,61 +4113,6 @@
       ]
     },
     {
-      "id": 518692,
-      "name": "Freddie Freeman",
-      "team": "Los Angeles Dodgers",
-      "bats": "L",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849828,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.142,
-      "total": 28.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 39.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 13.8,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.164,
-        "barrel_rate": 0.0712,
-        "hard_hit_rate": 0.3972,
-        "fb_rate": 0.5192,
-        "z_contact_rate": 0.8436,
-        "sweet_spot_rate": 0.3695,
-        "xwobacon": null,
-        "ev90": 99.4
-      },
-      "reasons": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Park factor unknown",
-        "Weather unavailable",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 663993,
       "name": "Nathaniel Lowe",
       "team": "Cleveland Guardians",
@@ -4001,175 +4154,6 @@
         "sweet_spot_rate": 0.3652,
         "xwobacon": null,
         "ev90": 106.9
-      },
-      "reasons": [
-        "vs Hagen Smith \u2014 cause Pass (3.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.32)",
-        "Pitcher: High K rate (37%)",
-        "Poor pitch-mix fit (70% fastballs, rel 0.30 \u2192 mix-fit 0.51x)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 669257,
-      "name": "Will Smith",
-      "team": "Los Angeles Dodgers",
-      "bats": "R",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849828,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.166,
-      "total": 27.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 53.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 92%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 12.5,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1488,
-        "barrel_rate": 0.0776,
-        "hard_hit_rate": 0.3628,
-        "fb_rate": 0.4861,
-        "z_contact_rate": 0.877,
-        "sweet_spot_rate": 0.3382,
-        "xwobacon": null,
-        "ev90": 98.7
-      },
-      "reasons": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Park factor unknown",
-        "Weather unavailable",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 606192,
-      "name": "Teoscar Hern\u00e1ndez",
-      "team": "Los Angeles Dodgers",
-      "bats": "R",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849828,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.158,
-      "total": 26.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 40.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.7,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 11.8,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1483,
-        "barrel_rate": 0.0838,
-        "hard_hit_rate": 0.3899,
-        "fb_rate": 0.5111,
-        "z_contact_rate": 0.8049,
-        "sweet_spot_rate": 0.3638,
-        "xwobacon": null,
-        "ev90": 106.5
-      },
-      "reasons": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Park factor unknown",
-        "Weather unavailable",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 677587,
-      "name": "Brayan Rocchio",
-      "team": "Cleveland Guardians",
-      "bats": "S",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Hagen Smith",
-      "venue": "Progressive Field",
-      "gamePk": 849829,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 15,
-      "iso": 0.138,
-      "total": 26.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 49.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.51,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 3.5,
-        "hitter": 9.3,
-        "environment": 6.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1827,
-        "barrel_rate": 0.0592,
-        "hard_hit_rate": 0.3147,
-        "fb_rate": 0.487,
-        "z_contact_rate": 0.8492,
-        "sweet_spot_rate": 0.3816,
-        "xwobacon": null,
-        "ev90": 91.7
       },
       "reasons": [
         "vs Hagen Smith \u2014 cause Pass (3.5/25)",
@@ -4289,6 +4273,63 @@
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
+    },
+    {
+      "id": 677587,
+      "name": "Brayan Rocchio",
+      "team": "Cleveland Guardians",
+      "bats": "S",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Hagen Smith",
+      "venue": "Progressive Field",
+      "gamePk": 849829,
+      "slot": 9,
+      "confirmed": true,
+      "season_hr": 15,
+      "iso": 0.138,
+      "total": 25.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 49.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.51,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 3.5,
+        "hitter": 9.3,
+        "environment": 6.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1827,
+        "barrel_rate": 0.0592,
+        "hard_hit_rate": 0.3147,
+        "fb_rate": 0.487,
+        "z_contact_rate": 0.8492,
+        "sweet_spot_rate": 0.3816,
+        "xwobacon": null,
+        "ev90": 91.7
+      },
+      "reasons": [
+        "vs Hagen Smith \u2014 cause Pass (3.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.32)",
+        "Pitcher: High K rate (37%)",
+        "Poor pitch-mix fit (70% fastballs, rel 0.30 \u2192 mix-fit 0.51x)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Bottom of order (#9)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     }
   ],
   "structures": {},
@@ -4301,18 +4342,59 @@
       "opp_pitcher": "Parker Messick",
       "venue": "Progressive Field",
       "gamePk": 849829,
-      "slot": null,
-      "confirmed": false,
+      "slot": 2,
+      "confirmed": true,
       "bats": "R",
-      "tb_score": 68.6,
-      "tb_tier": "Solid TB",
+      "tb_score": 72.6,
+      "tb_tier": "Strong TB",
       "tb_reasons": [
         "High-contact bat (contact 88%, Z-contact 89%) \u2014 banks XBH",
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 54.5,
+      "hr_total": 60.5,
       "hr_role": "Pass"
+    },
+    {
+      "id": 660271,
+      "name": "Shohei Ohtani",
+      "team": "Los Angeles Dodgers",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Dylan Dodd",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849828,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 62.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "hr_total": 55.0,
+      "hr_role": "Pass"
+    },
+    {
+      "id": 605141,
+      "name": "Mookie Betts",
+      "team": "Los Angeles Dodgers",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Dylan Dodd",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849828,
+      "slot": 1,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 61.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 86%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 50.5,
+      "hr_role": "Watchlist"
     },
     {
       "id": 700250,
@@ -4336,43 +4418,65 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 660271,
-      "name": "Shohei Ohtani",
+      "id": 681624,
+      "name": "Andy Pages",
       "team": "Los Angeles Dodgers",
       "opp": "Atlanta Braves",
-      "opp_pitcher": null,
+      "opp_pitcher": "Dylan Dodd",
       "venue": "UNIQLO Field at Dodger Stadium",
       "gamePk": 849828,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 61.0,
+      "slot": 7,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 60.0,
       "tb_tier": "Solid TB",
       "tb_reasons": [
+        "Platoon edge (R vs LHP)",
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 38.0,
-      "hr_role": "Pass"
+      "hr_total": 41.0,
+      "hr_role": "Watchlist"
     },
     {
-      "id": 663656,
-      "name": "Kyle Tucker",
+      "id": 608070,
+      "name": "Jos\u00e9 Ram\u00edrez",
+      "team": "Cleveland Guardians",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Hagen Smith",
+      "venue": "Progressive Field",
+      "gamePk": 849829,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "S",
+      "tb_score": 59.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 88%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 42.7,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 669257,
+      "name": "Will Smith",
       "team": "Los Angeles Dodgers",
       "opp": "Atlanta Braves",
-      "opp_pitcher": null,
+      "opp_pitcher": "Dylan Dodd",
       "venue": "UNIQLO Field at Dodger Stadium",
       "gamePk": 849828,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
+      "slot": 3,
+      "confirmed": true,
+      "bats": "R",
       "tb_score": 59.0,
       "tb_tier": "Dart",
       "tb_reasons": [
-        "High-contact bat (contact 91%, Z-contact 89%) \u2014 banks XBH"
+        "High-contact bat (contact 92%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 32.8,
+      "hr_total": 45.0,
       "hr_role": "Watchlist"
     },
     {
@@ -4396,6 +4500,26 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 663656,
+      "name": "Kyle Tucker",
+      "team": "Los Angeles Dodgers",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Dylan Dodd",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849828,
+      "slot": 6,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 58.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 91%, Z-contact 89%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 44.8,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 665487,
       "name": "Fernando Tatis Jr.",
       "team": "San Diego Padres",
@@ -4414,6 +4538,26 @@
       "shape_source": "statcast",
       "hr_total": 38.0,
       "hr_role": "Watchlist"
+    },
+    {
+      "id": 678246,
+      "name": "Miguel Vargas",
+      "team": "Chicago White Sox",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Parker Messick",
+      "venue": "Progressive Field",
+      "gamePk": 849829,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 57.3,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 55.3,
+      "hr_role": "Pass"
     },
     {
       "id": 641355,
@@ -4457,26 +4601,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 681624,
-      "name": "Andy Pages",
-      "team": "Los Angeles Dodgers",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849828,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 57.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 31.0,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 621566,
       "name": "Matt Olson",
       "team": "Atlanta Braves",
@@ -4499,37 +4623,17 @@
       "name": "Max Muncy",
       "team": "Los Angeles Dodgers",
       "opp": "Atlanta Braves",
-      "opp_pitcher": null,
+      "opp_pitcher": "Dylan Dodd",
       "venue": "UNIQLO Field at Dodger Stadium",
       "gamePk": 849828,
-      "slot": null,
-      "confirmed": false,
+      "slot": 8,
+      "confirmed": true,
       "bats": "L",
-      "tb_score": 56.5,
+      "tb_score": 56.0,
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 33.8,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 608070,
-      "name": "Jos\u00e9 Ram\u00edrez",
-      "team": "Cleveland Guardians",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Hagen Smith",
-      "venue": "Progressive Field",
-      "gamePk": 849829,
-      "slot": null,
-      "confirmed": false,
-      "bats": "S",
-      "tb_score": 55.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 36.7,
+      "hr_total": 42.8,
       "hr_role": "Watchlist"
     },
     {
@@ -4553,6 +4657,47 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 666176,
+      "name": "Jo Adell",
+      "team": "Cleveland Guardians",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Hagen Smith",
+      "venue": "Progressive Field",
+      "gamePk": 849829,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 55.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 44.1,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 805367,
+      "name": "Chase Meidroth",
+      "team": "Chicago White Sox",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Parker Messick",
+      "venue": "Progressive Field",
+      "gamePk": 849829,
+      "slot": 1,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 55.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 85%, Z-contact 87%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 43.7,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 669003,
       "name": "Garrett Mitchell",
       "team": "Milwaukee Brewers",
@@ -4571,46 +4716,6 @@
       "shape_source": "statcast",
       "hr_total": 43.3,
       "hr_role": "Watchlist"
-    },
-    {
-      "id": 605141,
-      "name": "Mookie Betts",
-      "team": "Los Angeles Dodgers",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849828,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 54.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 86%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 32.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 678246,
-      "name": "Miguel Vargas",
-      "team": "Chicago White Sox",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": "Parker Messick",
-      "venue": "Progressive Field",
-      "gamePk": 849829,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 54.3,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 50.3,
-      "hr_role": "Pass"
     },
     {
       "id": 660670,
@@ -4648,26 +4753,6 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 35.9,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 669257,
-      "name": "Will Smith",
-      "team": "Los Angeles Dodgers",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849828,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 53.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 92%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 27.5,
       "hr_role": "Watchlist"
     },
     {
@@ -4712,44 +4797,24 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 666176,
-      "name": "Jo Adell",
+      "id": 800050,
+      "name": "Chase DeLauter",
       "team": "Cleveland Guardians",
       "opp": "Chicago White Sox",
       "opp_pitcher": "Hagen Smith",
       "venue": "Progressive Field",
       "gamePk": 849829,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 39.1,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 687221,
-      "name": "Dalton Rushing",
-      "team": "Los Angeles Dodgers",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849828,
-      "slot": null,
-      "confirmed": false,
+      "slot": 3,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 52.0,
       "tb_tier": "Dart",
       "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+        "High-contact bat (contact 100%, Z-contact 87%) \u2014 banks XBH"
       ],
-      "shape_source": "proxy",
-      "hr_total": 38.0,
-      "hr_role": "Pass"
+      "shape_source": "statcast",
+      "hr_total": 36.0,
+      "hr_role": "Watchlist"
     },
     {
       "id": 671277,
@@ -4770,6 +4835,26 @@
       "shape_source": "statcast",
       "hr_total": 35.8,
       "hr_role": "Watchlist"
+    },
+    {
+      "id": 687221,
+      "name": "Dalton Rushing",
+      "team": "Los Angeles Dodgers",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Dylan Dodd",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849828,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 51.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "hr_total": 49.0,
+      "hr_role": "Pass"
     },
     {
       "id": 687401,
@@ -4800,8 +4885,8 @@
       "opp_pitcher": "Hagen Smith",
       "venue": "Progressive Field",
       "gamePk": 849829,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 51.5,
       "tb_tier": "Dart",
@@ -4809,28 +4894,7 @@
         "High-contact bat (contact 88%, Z-contact 86%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 33.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 805367,
-      "name": "Chase Meidroth",
-      "team": "Chicago White Sox",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": "Parker Messick",
-      "venue": "Progressive Field",
-      "gamePk": 849829,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 51.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 85%, Z-contact 87%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 37.7,
+      "hr_total": 32.0,
       "hr_role": "Watchlist"
     },
     {
@@ -4987,26 +5051,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 800050,
-      "name": "Chase DeLauter",
-      "team": "Cleveland Guardians",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Hagen Smith",
-      "venue": "Progressive Field",
-      "gamePk": 849829,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 49.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 100%, Z-contact 87%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 31.0,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 677587,
       "name": "Brayan Rocchio",
       "team": "Cleveland Guardians",
@@ -5014,14 +5058,14 @@
       "opp_pitcher": "Hagen Smith",
       "venue": "Progressive Field",
       "gamePk": 849829,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "bats": "S",
       "tb_score": 49.0,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 26.8,
+      "hr_total": 25.8,
       "hr_role": "Watchlist"
     },
     {
@@ -5141,6 +5185,24 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 808959,
+      "name": "Munetaka Murakami",
+      "team": "Chicago White Sox",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Parker Messick",
+      "venue": "Progressive Field",
+      "gamePk": 849829,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 47.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 47.5,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 676609,
       "name": "Jos\u00e9 Caballero",
       "team": "New York Yankees",
@@ -5212,6 +5274,26 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 42.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 606192,
+      "name": "Teoscar Hern\u00e1ndez",
+      "team": "Los Angeles Dodgers",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Dylan Dodd",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849828,
+      "slot": 5,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 46.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 41.2,
       "hr_role": "Watchlist"
     },
     {
@@ -5291,24 +5373,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 808959,
-      "name": "Munetaka Murakami",
-      "team": "Chicago White Sox",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": "Parker Messick",
-      "venue": "Progressive Field",
-      "gamePk": 849829,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 44.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 42.5,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 593428,
       "name": "Xander Bogaerts",
       "team": "San Diego Padres",
@@ -5365,6 +5429,42 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 518692,
+      "name": "Freddie Freeman",
+      "team": "Los Angeles Dodgers",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Dylan Dodd",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849828,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 42.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 43.8,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 682657,
+      "name": "Angel Mart\u00ednez",
+      "team": "Cleveland Guardians",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Hagen Smith",
+      "venue": "Progressive Field",
+      "gamePk": 849829,
+      "slot": 5,
+      "confirmed": true,
+      "bats": "S",
+      "tb_score": 42.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 34.3,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 671218,
       "name": "Heliot Ramos",
       "team": "New York Yankees",
@@ -5408,14 +5508,14 @@
       "opp_pitcher": "Parker Messick",
       "venue": "Progressive Field",
       "gamePk": 849829,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 41.0,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 40.7,
+      "hr_total": 39.7,
       "hr_role": "Watchlist"
     },
     {
@@ -5436,60 +5536,6 @@
       ],
       "shape_source": "statcast",
       "hr_total": 36.2,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 606192,
-      "name": "Teoscar Hern\u00e1ndez",
-      "team": "Los Angeles Dodgers",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849828,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 40.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 26.8,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 518692,
-      "name": "Freddie Freeman",
-      "team": "Los Angeles Dodgers",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": null,
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849828,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 39.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 28.8,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 682657,
-      "name": "Angel Mart\u00ednez",
-      "team": "Cleveland Guardians",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Hagen Smith",
-      "venue": "Progressive Field",
-      "gamePk": 849829,
-      "slot": null,
-      "confirmed": false,
-      "bats": "S",
-      "tb_score": 39.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 32.3,
       "hr_role": "Watchlist"
     },
     {
@@ -5730,6 +5776,18 @@
         "Avg+ HR allowed (HR/9 1.10)"
       ],
       "hr9": 1.1,
+      "barrel_allowed": null
+    },
+    {
+      "id": 689266,
+      "name": "Dylan Dodd",
+      "score": 11.0,
+      "grade": "C",
+      "flags": [
+        "Avg+ HR allowed (HR/9 1.28)",
+        "High K rate (27%)"
+      ],
+      "hr9": 1.28,
       "barrel_allowed": null
     },
     {
