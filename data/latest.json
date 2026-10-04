@@ -1,9 +1,9 @@
 {
   "version": "2.8",
-  "generated_utc": "2026-10-04T19:45:16.663723+00:00",
+  "generated_utc": "2026-10-04T22:24:02.383111+00:00",
   "slate_date": "2026-10-04",
   "games": 2,
-  "confirmed_lineups": 2,
+  "confirmed_lineups": 4,
   "statcast": true,
   "statcast_meta": {
     "window_days": 21,
@@ -41,11 +41,10 @@
     "trustworthy": true,
     "statcast_batters": 336,
     "statcast_candidates": 27,
-    "confirmed_lineups": 2,
+    "confirmed_lineups": 4,
     "games": 2,
     "days_failed": 1,
     "warnings": [
-      "Only 2/4 lineups confirmed \u2014 unconfirmed bats use a neutral slot default.",
       "Statcast: 1 day(s) failed to fetch in the 21-day window (thinner sample).",
       "Shape built from the MLB Stats API fallback (18/21 days) because Baseball Savant was unreachable. All shape signals are live; xwOBAcon is unavailable (regressed to league prior, ISO backstops it) and barrels are recomputed from EV/LA."
     ]
@@ -136,11 +135,11 @@
       "opp_pitcher": "Ray Kerr",
       "venue": "UNIQLO Field at Dodger Stadium",
       "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
+      "slot": 2,
+      "confirmed": true,
       "season_hr": 30,
       "iso": 0.237,
-      "total": 52.0,
+      "total": 58.0,
       "tier": "Pass",
       "role": "Pass",
       "tb_score": 62.0,
@@ -159,7 +158,7 @@
         "pitcher": 14.0,
         "hitter": 22.0,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 12.0,
         "confidence": 3.0
       },
       "statcast": null,
@@ -167,14 +166,77 @@
         "vs Ray Kerr \u2014 cause B (14.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 0.99)",
         "Proxy: strong HR rate",
-        "No Statcast shape \u2014 score capped (season-power proxy)"
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Top of order (#2)"
       ],
       "warnings": [
         "Park factor unknown",
-        "Weather unavailable",
-        "Lineup not confirmed"
+        "Weather unavailable"
       ],
       "role_notes": []
+    },
+    {
+      "id": 605141,
+      "name": "Mookie Betts",
+      "team": "Los Angeles Dodgers",
+      "bats": "R",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Ray Kerr",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849823,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 23,
+      "iso": 0.197,
+      "total": 56.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 65.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 86%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.75,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.7,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 14.0,
+        "hitter": 20.0,
+        "environment": 7.0,
+        "lineup": 12.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2111,
+        "barrel_rate": 0.0874,
+        "hard_hit_rate": 0.3743,
+        "fb_rate": 0.519,
+        "z_contact_rate": 0.8773,
+        "sweet_spot_rate": 0.365,
+        "xwobacon": null,
+        "ev90": 101.3
+      },
+      "reasons": [
+        "vs Ray Kerr \u2014 cause B (14.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
+        "Good air-pull (21%)",
+        "Platoon edge (R vs LHP)",
+        "Pitch-mix fit: damages this arsenal (62% fastballs, rel 2.20 \u2192 mix-fit 1.75x)",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Park factor unknown",
+        "Weather unavailable"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 687221,
@@ -346,6 +408,67 @@
       ]
     },
     {
+      "id": 663656,
+      "name": "Kyle Tucker",
+      "team": "Los Angeles Dodgers",
+      "bats": "L",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Ray Kerr",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849823,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 17,
+      "iso": 0.152,
+      "total": 50.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 62.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 91%, Z-contact 89%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.49,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.7,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 14.0,
+        "hitter": 19.2,
+        "environment": 7.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2236,
+        "barrel_rate": 0.0817,
+        "hard_hit_rate": 0.4124,
+        "fb_rate": 0.5403,
+        "z_contact_rate": 0.8886,
+        "sweet_spot_rate": 0.398,
+        "xwobacon": null,
+        "ev90": 102.5
+      },
+      "reasons": [
+        "vs Ray Kerr \u2014 cause B (14.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
+        "Good air-pull (22%)",
+        "Pitch-mix fit: damages this arsenal (62% fastballs, rel 2.20 \u2192 mix-fit 1.49x)",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Park factor unknown",
+        "Weather unavailable"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 665487,
       "name": "Fernando Tatis Jr.",
       "team": "San Diego Padres",
@@ -400,69 +523,6 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 605141,
-      "name": "Mookie Betts",
-      "team": "Los Angeles Dodgers",
-      "bats": "R",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Ray Kerr",
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 23,
-      "iso": 0.197,
-      "total": 50.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 61.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 86%, Z-contact 88%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.75,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.7,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 14.0,
-        "hitter": 20.0,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.2111,
-        "barrel_rate": 0.0874,
-        "hard_hit_rate": 0.3743,
-        "fb_rate": 0.519,
-        "z_contact_rate": 0.8773,
-        "sweet_spot_rate": 0.365,
-        "xwobacon": null,
-        "ev90": 101.3
-      },
-      "reasons": [
-        "vs Ray Kerr \u2014 cause B (14.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "Good air-pull (21%)",
-        "Platoon edge (R vs LHP)",
-        "Pitch-mix fit: damages this arsenal (62% fastballs, rel 2.20 \u2192 mix-fit 1.75x)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Park factor unknown",
-        "Weather unavailable",
-        "Lineup not confirmed"
-      ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -526,61 +586,61 @@
       ]
     },
     {
-      "id": 663656,
-      "name": "Kyle Tucker",
+      "id": 669257,
+      "name": "Will Smith",
       "team": "Los Angeles Dodgers",
-      "bats": "L",
+      "bats": "R",
       "opp": "Atlanta Braves",
       "opp_pitcher": "Ray Kerr",
       "venue": "UNIQLO Field at Dodger Stadium",
       "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.152,
-      "total": 48.2,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 10,
+      "iso": 0.166,
+      "total": 48.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 62.0,
+      "tb_score": 60.5,
       "tb_tier": "Solid TB",
       "tb_reasons": [
-        "High-contact bat (contact 91%, Z-contact 89%) \u2014 banks XBH"
+        "High-contact bat (contact 92%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.49,
+      "pull_fit": false,
+      "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -1.7,
+      "due_hr": -0.3,
       "pitcher_grade": "B",
       "breakdown": {
         "pitcher": 14.0,
-        "hitter": 19.2,
+        "hitter": 14.0,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 11.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.2236,
-        "barrel_rate": 0.0817,
-        "hard_hit_rate": 0.4124,
-        "fb_rate": 0.5403,
-        "z_contact_rate": 0.8886,
-        "sweet_spot_rate": 0.398,
+        "air_pull_rate": 0.1491,
+        "barrel_rate": 0.0777,
+        "hard_hit_rate": 0.3637,
+        "fb_rate": 0.4853,
+        "z_contact_rate": 0.8758,
+        "sweet_spot_rate": 0.338,
         "xwobacon": null,
-        "ev90": 102.5
+        "ev90": 98.7
       },
       "reasons": [
         "vs Ray Kerr \u2014 cause B (14.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "Good air-pull (22%)",
-        "Pitch-mix fit: damages this arsenal (62% fastballs, rel 2.20 \u2192 mix-fit 1.49x)",
+        "Platoon edge (R vs LHP)",
+        "Heart of order (#3)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Park factor unknown",
-        "Weather unavailable",
-        "Lineup not confirmed"
+        "Weather unavailable"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -704,6 +764,63 @@
       ]
     },
     {
+      "id": 518692,
+      "name": "Freddie Freeman",
+      "team": "Los Angeles Dodgers",
+      "bats": "L",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Ray Kerr",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849823,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 16,
+      "iso": 0.142,
+      "total": 46.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 43.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.01,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.7,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 14.0,
+        "hitter": 12.8,
+        "environment": 7.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1642,
+        "barrel_rate": 0.0713,
+        "hard_hit_rate": 0.398,
+        "fb_rate": 0.5184,
+        "z_contact_rate": 0.8426,
+        "sweet_spot_rate": 0.3693,
+        "xwobacon": null,
+        "ev90": 99.4
+      },
+      "reasons": [
+        "vs Ray Kerr \u2014 cause B (14.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Park factor unknown",
+        "Weather unavailable"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 668930,
       "name": "Brice Turang",
       "team": "Milwaukee Brewers",
@@ -762,52 +879,120 @@
       ]
     },
     {
-      "id": 681624,
-      "name": "Andy Pages",
+      "id": 621566,
+      "name": "Matt Olson",
+      "team": "Atlanta Braves",
+      "bats": "L",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Blake Snell",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849823,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 41,
+      "iso": 0.251,
+      "total": 46.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 57.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.6,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 4.5,
+        "hitter": 20.5,
+        "environment": 7.0,
+        "lineup": 11.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1518,
+        "barrel_rate": 0.1039,
+        "hard_hit_rate": 0.4253,
+        "fb_rate": 0.4878,
+        "z_contact_rate": 0.8705,
+        "sweet_spot_rate": 0.3517,
+        "xwobacon": null,
+        "ev90": 108.2
+      },
+      "reasons": [
+        "vs Blake Snell \u2014 cause Pass (4.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.00)",
+        "Pitcher: High K rate (32%)",
+        "Above-avg barrels (10%)",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Park factor unknown",
+        "Weather unavailable"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 606192,
+      "name": "Teoscar Hern\u00e1ndez",
       "team": "Los Angeles Dodgers",
       "bats": "R",
       "opp": "Atlanta Braves",
       "opp_pitcher": "Ray Kerr",
       "venue": "UNIQLO Field at Dodger Stadium",
       "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 23,
-      "iso": 0.194,
-      "total": 45.0,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 16,
+      "iso": 0.158,
+      "total": 45.8,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 61.5,
-      "tb_tier": "Solid TB",
+      "tb_score": 49.5,
+      "tb_tier": "Pass",
       "tb_reasons": [
-        "Platoon edge (R vs LHP)",
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+        "Platoon edge (R vs LHP)"
       ],
-      "shape_source": "proxy",
+      "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": null,
+      "mix_fit": 1.89,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": null,
+      "due_hr": -0.7,
       "pitcher_grade": "B",
       "breakdown": {
         "pitcher": 14.0,
-        "hitter": 16.0,
+        "hitter": 14.8,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 8.0,
         "confidence": 2.0
       },
-      "statcast": null,
+      "statcast": {
+        "air_pull_rate": 0.1485,
+        "barrel_rate": 0.0839,
+        "hard_hit_rate": 0.3906,
+        "fb_rate": 0.5103,
+        "z_contact_rate": 0.8038,
+        "sweet_spot_rate": 0.3635,
+        "xwobacon": null,
+        "ev90": 106.5
+      },
       "reasons": [
         "vs Ray Kerr \u2014 cause B (14.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Platoon edge (R vs LHP)",
+        "Pitch-mix fit: damages this arsenal (62% fastballs, rel 1.70 \u2192 mix-fit 1.89x)",
+        "Mid order (#5)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Park factor unknown",
-        "Weather unavailable",
-        "Lineup not confirmed"
+        "Weather unavailable"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -869,61 +1054,52 @@
       ]
     },
     {
-      "id": 606192,
-      "name": "Teoscar Hern\u00e1ndez",
+      "id": 681624,
+      "name": "Andy Pages",
       "team": "Los Angeles Dodgers",
       "bats": "R",
       "opp": "Atlanta Braves",
       "opp_pitcher": "Ray Kerr",
       "venue": "UNIQLO Field at Dodger Stadium",
       "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.158,
-      "total": 43.8,
+      "slot": 7,
+      "confirmed": true,
+      "season_hr": 23,
+      "iso": 0.194,
+      "total": 44.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 46.5,
-      "tb_tier": "Pass",
+      "tb_score": 61.5,
+      "tb_tier": "Solid TB",
       "tb_reasons": [
-        "Platoon edge (R vs LHP)"
+        "Platoon edge (R vs LHP)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
-      "shape_source": "statcast",
+      "shape_source": "proxy",
       "pull_fit": false,
-      "mix_fit": 1.89,
+      "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -0.7,
+      "due_hr": null,
       "pitcher_grade": "B",
       "breakdown": {
         "pitcher": 14.0,
-        "hitter": 14.8,
+        "hitter": 16.0,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
-      "statcast": {
-        "air_pull_rate": 0.1485,
-        "barrel_rate": 0.0839,
-        "hard_hit_rate": 0.3906,
-        "fb_rate": 0.5103,
-        "z_contact_rate": 0.8038,
-        "sweet_spot_rate": 0.3635,
-        "xwobacon": null,
-        "ev90": 106.5
-      },
+      "statcast": null,
       "reasons": [
         "vs Ray Kerr \u2014 cause B (14.0/25)",
         "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "Platoon edge (R vs LHP)",
-        "Pitch-mix fit: damages this arsenal (62% fastballs, rel 1.70 \u2192 mix-fit 1.89x)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Park factor unknown",
         "Weather unavailable",
-        "Lineup not confirmed"
+        "Bottom of order (#7)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -984,119 +1160,6 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 657757,
-      "name": "Gavin Sheets",
-      "team": "San Diego Padres",
-      "bats": "L",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Logan Henderson",
-      "venue": "American Family Field",
-      "gamePk": 849825,
-      "slot": 6,
-      "confirmed": true,
-      "season_hr": 17,
-      "iso": 0.185,
-      "total": 43.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 39.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)",
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.0,
-        "hitter": 12.0,
-        "environment": 10.0,
-        "lineup": 8.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Logan Henderson \u2014 cause C (11.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
-        "Pitcher: High K rate (30%)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hitter-friendly park (107)",
-        "Retractable roof (weather neutralized)",
-        "Mid order (#6)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 669257,
-      "name": "Will Smith",
-      "team": "Los Angeles Dodgers",
-      "bats": "R",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Ray Kerr",
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.166,
-      "total": 43.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 57.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 92%, Z-contact 88%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "B",
-      "breakdown": {
-        "pitcher": 14.0,
-        "hitter": 14.0,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1491,
-        "barrel_rate": 0.0777,
-        "hard_hit_rate": 0.3637,
-        "fb_rate": 0.4853,
-        "z_contact_rate": 0.8758,
-        "sweet_spot_rate": 0.338,
-        "xwobacon": null,
-        "ev90": 98.7
-      },
-      "reasons": [
-        "vs Ray Kerr \u2014 cause B (14.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
-        "Platoon edge (R vs LHP)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Park factor unknown",
-        "Weather unavailable",
-        "Lineup not confirmed"
-      ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -1216,57 +1279,61 @@
       ]
     },
     {
-      "id": 518692,
-      "name": "Freddie Freeman",
-      "team": "Los Angeles Dodgers",
-      "bats": "L",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Ray Kerr",
+      "id": 660670,
+      "name": "Ronald Acu\u00f1a Jr.",
+      "team": "Atlanta Braves",
+      "bats": "R",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Blake Snell",
       "venue": "UNIQLO Field at Dodger Stadium",
       "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.142,
-      "total": 41.8,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 20,
+      "iso": 0.196,
+      "total": 41.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 40.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
+      "tb_score": 56.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
       "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": 1.01,
+      "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.7,
-      "pitcher_grade": "B",
+      "due_hr": -0.7,
+      "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 14.0,
-        "hitter": 12.8,
+        "pitcher": 4.5,
+        "hitter": 16.0,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 12.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1642,
-        "barrel_rate": 0.0713,
-        "hard_hit_rate": 0.398,
-        "fb_rate": 0.5184,
-        "z_contact_rate": 0.8426,
-        "sweet_spot_rate": 0.3693,
+        "air_pull_rate": 0.1749,
+        "barrel_rate": 0.0776,
+        "hard_hit_rate": 0.3682,
+        "fb_rate": 0.4523,
+        "z_contact_rate": 0.8485,
+        "sweet_spot_rate": 0.3038,
         "xwobacon": null,
-        "ev90": 99.4
+        "ev90": 105.8
       },
       "reasons": [
-        "vs Ray Kerr \u2014 cause B (14.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 0.99)",
+        "vs Blake Snell \u2014 cause Pass (4.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.00)",
+        "Pitcher: High K rate (32%)",
+        "Platoon edge (R vs LHP)",
+        "Top of order (#2)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Park factor unknown",
-        "Weather unavailable",
-        "Lineup not confirmed"
+        "Weather unavailable"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -1331,59 +1398,111 @@
       ]
     },
     {
-      "id": 621566,
-      "name": "Matt Olson",
-      "team": "Atlanta Braves",
+      "id": 657757,
+      "name": "Gavin Sheets",
+      "team": "San Diego Padres",
       "bats": "L",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Logan Henderson",
+      "venue": "American Family Field",
+      "gamePk": 849825,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 17,
+      "iso": 0.185,
+      "total": 41.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 39.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 12.0,
+        "environment": 10.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Logan Henderson \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
+        "Pitcher: High K rate (30%)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Hitter-friendly park (107)",
+        "Retractable roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 645277,
+      "name": "Ozzie Albies",
+      "team": "Atlanta Braves",
+      "bats": "S",
       "opp": "Los Angeles Dodgers",
       "opp_pitcher": "Blake Snell",
       "venue": "UNIQLO Field at Dodger Stadium",
       "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 41,
-      "iso": 0.251,
-      "total": 41.0,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 22,
+      "iso": 0.155,
+      "total": 40.7,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 54.5,
-      "tb_tier": "Dart",
+      "tb_score": 46.0,
+      "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "pull_fit": true,
+      "pull_fit": false,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.6,
+      "due_hr": -0.7,
       "pitcher_grade": "Pass",
       "breakdown": {
         "pitcher": 4.5,
-        "hitter": 20.5,
+        "hitter": 16.2,
         "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 3.0
+        "lineup": 11.0,
+        "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1518,
-        "barrel_rate": 0.1039,
-        "hard_hit_rate": 0.4253,
-        "fb_rate": 0.4878,
-        "z_contact_rate": 0.8705,
-        "sweet_spot_rate": 0.3517,
+        "air_pull_rate": 0.1851,
+        "barrel_rate": 0.0766,
+        "hard_hit_rate": 0.3786,
+        "fb_rate": 0.4741,
+        "z_contact_rate": 0.8495,
+        "sweet_spot_rate": 0.2995,
         "xwobacon": null,
-        "ev90": 108.2
+        "ev90": 102.1
       },
       "reasons": [
         "vs Blake Snell \u2014 cause Pass (4.5/25)",
         "Pitcher: Suppresses HR (HR/9 0.00)",
         "Pitcher: High K rate (32%)",
-        "Above-avg barrels (10%)",
+        "Heart of order (#4)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Park factor unknown",
-        "Weather unavailable",
-        "Lineup not confirmed"
+        "Weather unavailable"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -1440,6 +1559,64 @@
       ],
       "warnings": [
         "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 686948,
+      "name": "Drake Baldwin",
+      "team": "Atlanta Braves",
+      "bats": "L",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Blake Snell",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849823,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 25,
+      "iso": 0.175,
+      "total": 40.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 52.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 4.5,
+        "hitter": 14.5,
+        "environment": 7.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1851,
+        "barrel_rate": 0.0766,
+        "hard_hit_rate": 0.4113,
+        "fb_rate": 0.5023,
+        "z_contact_rate": 0.8185,
+        "sweet_spot_rate": 0.3699,
+        "xwobacon": null,
+        "ev90": 104.8
+      },
+      "reasons": [
+        "vs Blake Snell \u2014 cause Pass (4.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.00)",
+        "Pitcher: High K rate (32%)",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Park factor unknown",
+        "Weather unavailable"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -1504,58 +1681,61 @@
       ]
     },
     {
-      "id": 645277,
-      "name": "Ozzie Albies",
+      "id": 643289,
+      "name": "Mauricio Dub\u00f3n",
       "team": "Atlanta Braves",
-      "bats": "S",
+      "bats": "R",
       "opp": "Los Angeles Dodgers",
       "opp_pitcher": "Blake Snell",
       "venue": "UNIQLO Field at Dodger Stadium",
       "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 22,
-      "iso": 0.155,
-      "total": 35.7,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 12,
+      "iso": 0.123,
+      "total": 37.3,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 43.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
+      "tb_score": 53.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
       "shape_source": "statcast",
       "pull_fit": false,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -0.7,
+      "due_hr": 1.0,
       "pitcher_grade": "Pass",
       "breakdown": {
         "pitcher": 4.5,
-        "hitter": 16.2,
+        "hitter": 15.8,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 8.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1851,
-        "barrel_rate": 0.0766,
-        "hard_hit_rate": 0.3786,
-        "fb_rate": 0.4741,
-        "z_contact_rate": 0.8495,
-        "sweet_spot_rate": 0.2995,
+        "air_pull_rate": 0.1743,
+        "barrel_rate": 0.0838,
+        "hard_hit_rate": 0.3953,
+        "fb_rate": 0.5087,
+        "z_contact_rate": 0.8516,
+        "sweet_spot_rate": 0.3719,
         "xwobacon": null,
-        "ev90": 102.1
+        "ev90": 101.3
       },
       "reasons": [
         "vs Blake Snell \u2014 cause Pass (4.5/25)",
         "Pitcher: Suppresses HR (HR/9 0.00)",
         "Pitcher: High K rate (32%)",
+        "Platoon edge (R vs LHP)",
+        "Mid order (#6)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Park factor unknown",
-        "Weather unavailable",
-        "Lineup not confirmed"
+        "Weather unavailable"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -1570,11 +1750,11 @@
       "opp_pitcher": "Blake Snell",
       "venue": "UNIQLO Field at Dodger Stadium",
       "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
+      "slot": 8,
+      "confirmed": true,
       "season_hr": 19,
       "iso": 0.145,
-      "total": 35.7,
+      "total": 34.7,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 45.0,
@@ -1593,7 +1773,7 @@
         "pitcher": 4.5,
         "hitter": 16.2,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -1616,187 +1796,7 @@
       "warnings": [
         "Park factor unknown",
         "Weather unavailable",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 660670,
-      "name": "Ronald Acu\u00f1a Jr.",
-      "team": "Atlanta Braves",
-      "bats": "R",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Blake Snell",
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 20,
-      "iso": 0.196,
-      "total": 35.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.7,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 16.0,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1749,
-        "barrel_rate": 0.0776,
-        "hard_hit_rate": 0.3682,
-        "fb_rate": 0.4523,
-        "z_contact_rate": 0.8485,
-        "sweet_spot_rate": 0.3038,
-        "xwobacon": null,
-        "ev90": 105.8
-      },
-      "reasons": [
-        "vs Blake Snell \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.00)",
-        "Pitcher: High K rate (32%)",
-        "Platoon edge (R vs LHP)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Park factor unknown",
-        "Weather unavailable",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 643289,
-      "name": "Mauricio Dub\u00f3n",
-      "team": "Atlanta Braves",
-      "bats": "R",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Blake Snell",
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.123,
-      "total": 35.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 53.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 1.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 15.8,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1743,
-        "barrel_rate": 0.0838,
-        "hard_hit_rate": 0.3953,
-        "fb_rate": 0.5087,
-        "z_contact_rate": 0.8516,
-        "sweet_spot_rate": 0.3719,
-        "xwobacon": null,
-        "ev90": 101.3
-      },
-      "reasons": [
-        "vs Blake Snell \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.00)",
-        "Pitcher: High K rate (32%)",
-        "Platoon edge (R vs LHP)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Park factor unknown",
-        "Weather unavailable",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 686948,
-      "name": "Drake Baldwin",
-      "team": "Atlanta Braves",
-      "bats": "L",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Blake Snell",
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 25,
-      "iso": 0.175,
-      "total": 34.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 48.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 14.5,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1851,
-        "barrel_rate": 0.0766,
-        "hard_hit_rate": 0.4113,
-        "fb_rate": 0.5023,
-        "z_contact_rate": 0.8185,
-        "sweet_spot_rate": 0.3699,
-        "xwobacon": null,
-        "ev90": 104.8
-      },
-      "reasons": [
-        "vs Blake Snell \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.00)",
-        "Pitcher: High K rate (32%)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Park factor unknown",
-        "Weather unavailable",
-        "Lineup not confirmed"
+        "Bottom of order (#8)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -1811,15 +1811,15 @@
       "opp_pitcher": "Blake Snell",
       "venue": "UNIQLO Field at Dodger Stadium",
       "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
+      "slot": 5,
+      "confirmed": true,
       "season_hr": 26,
       "iso": 0.197,
-      "total": 32.0,
+      "total": 34.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 47.0,
-      "tb_tier": "Pass",
+      "tb_score": 50.0,
+      "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
       "pull_fit": false,
@@ -1832,7 +1832,7 @@
         "pitcher": 4.5,
         "hitter": 12.5,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 8.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -1849,12 +1849,12 @@
         "vs Blake Snell \u2014 cause Pass (4.5/25)",
         "Pitcher: Suppresses HR (HR/9 0.00)",
         "Pitcher: High K rate (32%)",
+        "Mid order (#5)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Park factor unknown",
-        "Weather unavailable",
-        "Lineup not confirmed"
+        "Weather unavailable"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -1919,59 +1919,6 @@
       ]
     },
     {
-      "id": 657041,
-      "name": "Lane Thomas",
-      "team": "Atlanta Braves",
-      "bats": "R",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Blake Snell",
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.159,
-      "total": 25.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 33.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)",
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 6.0,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Blake Snell \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.00)",
-        "Pitcher: High K rate (32%)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Park factor unknown",
-        "Weather unavailable",
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 642086,
       "name": "Dominic Smith",
       "team": "Atlanta Braves",
@@ -2022,10 +1969,84 @@
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
+    },
+    {
+      "id": 657041,
+      "name": "Lane Thomas",
+      "team": "Atlanta Braves",
+      "bats": "R",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Blake Snell",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849823,
+      "slot": 9,
+      "confirmed": true,
+      "season_hr": 11,
+      "iso": 0.159,
+      "total": 24.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 33.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 4.5,
+        "hitter": 6.0,
+        "environment": 7.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Blake Snell \u2014 cause Pass (4.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.00)",
+        "Pitcher: High K rate (32%)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Park factor unknown",
+        "Weather unavailable",
+        "Bottom of order (#9)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     }
   ],
   "structures": {},
   "tb_board": [
+    {
+      "id": 605141,
+      "name": "Mookie Betts",
+      "team": "Los Angeles Dodgers",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Ray Kerr",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849823,
+      "slot": 1,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 65.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 86%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 56.0,
+      "hr_role": "Watchlist"
+    },
     {
       "id": 665487,
       "name": "Fernando Tatis Jr.",
@@ -2054,8 +2075,8 @@
       "opp_pitcher": "Ray Kerr",
       "venue": "UNIQLO Field at Dodger Stadium",
       "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
+      "slot": 2,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 62.0,
       "tb_tier": "Solid TB",
@@ -2063,7 +2084,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 52.0,
+      "hr_total": 58.0,
       "hr_role": "Pass"
     },
     {
@@ -2074,8 +2095,8 @@
       "opp_pitcher": "Ray Kerr",
       "venue": "UNIQLO Field at Dodger Stadium",
       "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 62.0,
       "tb_tier": "Solid TB",
@@ -2083,7 +2104,7 @@
         "High-contact bat (contact 91%, Z-contact 89%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 48.2,
+      "hr_total": 50.2,
       "hr_role": "Watchlist"
     },
     {
@@ -2094,8 +2115,8 @@
       "opp_pitcher": "Ray Kerr",
       "venue": "UNIQLO Field at Dodger Stadium",
       "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 61.5,
       "tb_tier": "Solid TB",
@@ -2104,28 +2125,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 45.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 605141,
-      "name": "Mookie Betts",
-      "team": "Los Angeles Dodgers",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Ray Kerr",
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 61.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 86%, Z-contact 88%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 50.0,
+      "hr_total": 44.0,
       "hr_role": "Watchlist"
     },
     {
@@ -2170,6 +2170,27 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 669257,
+      "name": "Will Smith",
+      "team": "Los Angeles Dodgers",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Ray Kerr",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849823,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 60.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 92%, Z-contact 88%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 48.0,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 664034,
       "name": "Ty France",
       "team": "San Diego Padres",
@@ -2206,24 +2227,41 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 669257,
-      "name": "Will Smith",
-      "team": "Los Angeles Dodgers",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Ray Kerr",
+      "id": 621566,
+      "name": "Matt Olson",
+      "team": "Atlanta Braves",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Blake Snell",
       "venue": "UNIQLO Field at Dodger Stadium",
       "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
+      "slot": 3,
+      "confirmed": true,
+      "bats": "L",
       "tb_score": 57.5,
       "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 46.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 660670,
+      "name": "Ronald Acu\u00f1a Jr.",
+      "team": "Atlanta Braves",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Blake Snell",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849823,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 56.0,
+      "tb_tier": "Dart",
       "tb_reasons": [
-        "High-contact bat (contact 92%, Z-contact 88%) \u2014 banks XBH",
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 43.0,
+      "hr_total": 41.5,
       "hr_role": "Watchlist"
     },
     {
@@ -2242,24 +2280,6 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 48.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 621566,
-      "name": "Matt Olson",
-      "team": "Atlanta Braves",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Blake Snell",
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 54.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 41.0,
       "hr_role": "Watchlist"
     },
     {
@@ -2369,8 +2389,8 @@
       "opp_pitcher": "Blake Snell",
       "venue": "UNIQLO Field at Dodger Stadium",
       "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 53.0,
       "tb_tier": "Dart",
@@ -2378,27 +2398,63 @@
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 35.3,
+      "hr_total": 37.3,
       "hr_role": "Watchlist"
     },
     {
-      "id": 660670,
-      "name": "Ronald Acu\u00f1a Jr.",
+      "id": 686948,
+      "name": "Drake Baldwin",
       "team": "Atlanta Braves",
       "opp": "Los Angeles Dodgers",
       "opp_pitcher": "Blake Snell",
       "venue": "UNIQLO Field at Dodger Stadium",
       "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
+      "slot": 1,
+      "confirmed": true,
+      "bats": "L",
       "tb_score": 52.0,
       "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 40.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 671739,
+      "name": "Michael Harris II",
+      "team": "Atlanta Braves",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Blake Snell",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849823,
+      "slot": 5,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 50.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 34.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 606192,
+      "name": "Teoscar Hern\u00e1ndez",
+      "team": "Los Angeles Dodgers",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Ray Kerr",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849823,
+      "slot": 5,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 49.5,
+      "tb_tier": "Pass",
       "tb_reasons": [
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 35.5,
+      "hr_total": 45.8,
       "hr_role": "Watchlist"
     },
     {
@@ -2422,24 +2478,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 686948,
-      "name": "Drake Baldwin",
-      "team": "Atlanta Braves",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Blake Snell",
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 48.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 34.0,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 593428,
       "name": "Xander Bogaerts",
       "team": "San Diego Padres",
@@ -2458,41 +2496,21 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 671739,
-      "name": "Michael Harris II",
+      "id": 645277,
+      "name": "Ozzie Albies",
       "team": "Atlanta Braves",
       "opp": "Los Angeles Dodgers",
       "opp_pitcher": "Blake Snell",
       "venue": "UNIQLO Field at Dodger Stadium",
       "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 47.0,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "S",
+      "tb_score": 46.0,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 32.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 606192,
-      "name": "Teoscar Hern\u00e1ndez",
-      "team": "Los Angeles Dodgers",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Ray Kerr",
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 46.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 43.8,
+      "hr_total": 40.7,
       "hr_role": "Watchlist"
     },
     {
@@ -2521,8 +2539,8 @@
       "opp_pitcher": "Blake Snell",
       "venue": "UNIQLO Field at Dodger Stadium",
       "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
+      "slot": 8,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 45.0,
       "tb_tier": "Pass",
@@ -2530,25 +2548,25 @@
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 35.7,
+      "hr_total": 34.7,
       "hr_role": "Watchlist"
     },
     {
-      "id": 645277,
-      "name": "Ozzie Albies",
-      "team": "Atlanta Braves",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Blake Snell",
+      "id": 518692,
+      "name": "Freddie Freeman",
+      "team": "Los Angeles Dodgers",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Ray Kerr",
       "venue": "UNIQLO Field at Dodger Stadium",
       "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
-      "bats": "S",
-      "tb_score": 43.0,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 43.5,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 35.7,
+      "hr_total": 46.8,
       "hr_role": "Watchlist"
     },
     {
@@ -2570,24 +2588,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 518692,
-      "name": "Freddie Freeman",
-      "team": "Los Angeles Dodgers",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Ray Kerr",
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 40.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 41.8,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 657757,
       "name": "Gavin Sheets",
       "team": "San Diego Padres",
@@ -2595,8 +2595,8 @@
       "opp_pitcher": "Logan Henderson",
       "venue": "American Family Field",
       "gamePk": 849825,
-      "slot": 6,
-      "confirmed": true,
+      "slot": null,
+      "confirmed": false,
       "bats": "L",
       "tb_score": 39.5,
       "tb_tier": "Pass",
@@ -2605,7 +2605,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 43.0,
+      "hr_total": 41.0,
       "hr_role": "Watchlist"
     },
     {
@@ -2654,8 +2654,8 @@
       "opp_pitcher": "Blake Snell",
       "venue": "UNIQLO Field at Dodger Stadium",
       "gamePk": 849823,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 33.0,
       "tb_tier": "Pass",
@@ -2664,7 +2664,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 25.5,
+      "hr_total": 24.5,
       "hr_role": "Watchlist"
     }
   ],
