@@ -1,9 +1,9 @@
 {
   "version": "2.8",
-  "generated_utc": "2026-10-04T01:45:41.014529+00:00",
+  "generated_utc": "2026-10-04T17:47:08.147607+00:00",
   "slate_date": "2026-10-04",
   "games": 2,
-  "confirmed_lineups": 0,
+  "confirmed_lineups": 2,
   "statcast": true,
   "statcast_meta": {
     "window_days": 21,
@@ -38,14 +38,14 @@
     "source": "mlbapi",
     "days_savant": 0,
     "days_mlbapi": 18,
-    "trustworthy": false,
+    "trustworthy": true,
     "statcast_batters": 336,
     "statcast_candidates": 27,
-    "confirmed_lineups": 0,
+    "confirmed_lineups": 2,
     "games": 2,
     "days_failed": 1,
     "warnings": [
-      "NO CONFIRMED LINEUPS \u2014 every bat is using a neutral slot default. Likely built before lineups posted; re-run closer to first pitch.",
+      "Only 2/4 lineups confirmed \u2014 unconfirmed bats use a neutral slot default.",
       "Statcast: 1 day(s) failed to fetch in the 21-day window (thinner sample).",
       "Shape built from the MLB Stats API fallback (18/21 days) because Baseball Savant was unreachable. All shape signals are live; xwOBAcon is unavailable (regressed to league prior, ISO backstops it) and barrels are recomputed from EV/LA."
     ]
@@ -114,68 +114,6 @@
   ],
   "candidates": [
     {
-      "id": 701538,
-      "name": "Jackson Merrill",
-      "team": "San Diego Padres",
-      "bats": "L",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Logan Henderson",
-      "venue": "American Family Field",
-      "gamePk": 849825,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 26,
-      "iso": 0.186,
-      "total": 48.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 57.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.0,
-        "hitter": 19.5,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1856,
-        "barrel_rate": 0.0744,
-        "hard_hit_rate": 0.4618,
-        "fb_rate": 0.5443,
-        "z_contact_rate": 0.8841,
-        "sweet_spot_rate": 0.3711,
-        "xwobacon": null,
-        "ev90": 111.2
-      },
-      "reasons": [
-        "vs Logan Henderson \u2014 cause C (11.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
-        "Pitcher: High K rate (30%)",
-        "Zone-damage: hard-hit 46% + Z-contact 88%",
-        "Platoon edge (L vs RHP)",
-        "Hitter-friendly park (107)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 664034,
       "name": "Ty France",
       "team": "San Diego Padres",
@@ -184,14 +122,14 @@
       "opp_pitcher": "Logan Henderson",
       "venue": "American Family Field",
       "gamePk": 849825,
-      "slot": null,
-      "confirmed": false,
+      "slot": 4,
+      "confirmed": true,
       "season_hr": 21,
       "iso": 0.207,
-      "total": 46.2,
+      "total": 51.2,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 56.5,
+      "tb_score": 59.5,
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
@@ -205,7 +143,7 @@
         "pitcher": 11.0,
         "hitter": 17.2,
         "environment": 10.0,
-        "lineup": 6.0,
+        "lineup": 11.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -226,11 +164,71 @@
         "Above-avg barrels (11%)",
         "Hitter-friendly park (105)",
         "Retractable roof (weather neutralized)",
+        "Heart of order (#4)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 701538,
+      "name": "Jackson Merrill",
+      "team": "San Diego Padres",
+      "bats": "L",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Logan Henderson",
+      "venue": "American Family Field",
+      "gamePk": 849825,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 26,
+      "iso": 0.186,
+      "total": 50.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 60.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
       ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 19.5,
+        "environment": 10.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1856,
+        "barrel_rate": 0.0744,
+        "hard_hit_rate": 0.4618,
+        "fb_rate": 0.5443,
+        "z_contact_rate": 0.8841,
+        "sweet_spot_rate": 0.3711,
+        "xwobacon": null,
+        "ev90": 111.2
+      },
+      "reasons": [
+        "vs Logan Henderson \u2014 cause C (11.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
+        "Pitcher: High K rate (30%)",
+        "Zone-damage: hard-hit 46% + Z-contact 88%",
+        "Platoon edge (L vs RHP)",
+        "Hitter-friendly park (107)",
+        "Retractable roof (weather neutralized)",
+        "Mid order (#5)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -244,15 +242,15 @@
       "opp_pitcher": "Logan Henderson",
       "venue": "American Family Field",
       "gamePk": 849825,
-      "slot": null,
-      "confirmed": false,
+      "slot": 1,
+      "confirmed": true,
       "season_hr": 25,
       "iso": 0.181,
-      "total": 44.0,
+      "total": 50.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 58.5,
-      "tb_tier": "Dart",
+      "tb_score": 62.5,
+      "tb_tier": "Solid TB",
       "tb_reasons": [
         "High-contact bat (contact 85%, Z-contact 89%) \u2014 banks XBH"
       ],
@@ -267,7 +265,7 @@
         "pitcher": 11.0,
         "hitter": 15.0,
         "environment": 10.0,
-        "lineup": 6.0,
+        "lineup": 12.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -286,11 +284,10 @@
         "Pitcher: High K rate (30%)",
         "Hitter-friendly park (105)",
         "Retractable roof (weather neutralized)",
+        "Top of order (#1)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -304,14 +301,14 @@
       "opp_pitcher": "Logan Henderson",
       "venue": "American Family Field",
       "gamePk": 849825,
-      "slot": null,
-      "confirmed": false,
+      "slot": 3,
+      "confirmed": true,
       "season_hr": 30,
       "iso": 0.19,
-      "total": 43.5,
+      "total": 48.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 51.5,
+      "tb_score": 54.5,
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
@@ -325,7 +322,7 @@
         "pitcher": 11.0,
         "hitter": 14.5,
         "environment": 10.0,
-        "lineup": 6.0,
+        "lineup": 11.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -345,11 +342,10 @@
         "Good air-pull (20%)",
         "Hitter-friendly park (105)",
         "Retractable roof (weather neutralized)",
+        "Heart of order (#3)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -363,14 +359,14 @@
       "opp_pitcher": "Michael King",
       "venue": "American Family Field",
       "gamePk": 849825,
-      "slot": null,
-      "confirmed": false,
+      "slot": 3,
+      "confirmed": true,
       "season_hr": 26,
       "iso": 0.218,
-      "total": 42.3,
+      "total": 47.3,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 50.0,
+      "tb_score": 53.0,
       "tb_tier": "Dart",
       "tb_reasons": [
         "Platoon edge (L vs RHP)"
@@ -386,7 +382,7 @@
         "pitcher": 8.5,
         "hitter": 15.8,
         "environment": 10.0,
-        "lineup": 6.0,
+        "lineup": 11.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -404,11 +400,296 @@
         "Platoon edge (L vs RHP)",
         "Hitter-friendly park (107)",
         "Retractable roof (weather neutralized)",
+        "Heart of order (#3)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 668930,
+      "name": "Brice Turang",
+      "team": "Milwaukee Brewers",
+      "bats": "L",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Michael King",
+      "venue": "American Family Field",
+      "gamePk": 849825,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 21,
+      "iso": 0.182,
+      "total": 46.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 54.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
       ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 14.0,
+        "environment": 10.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1469,
+        "barrel_rate": 0.0619,
+        "hard_hit_rate": 0.3977,
+        "fb_rate": 0.5114,
+        "z_contact_rate": 0.8538,
+        "sweet_spot_rate": 0.3666,
+        "xwobacon": null,
+        "ev90": 105.9
+      },
+      "reasons": [
+        "vs Michael King \u2014 cause Pass (8.5/25)",
+        "Platoon edge (L vs RHP)",
+        "Hitter-friendly park (107)",
+        "Retractable roof (weather neutralized)",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 661388,
+      "name": "William Contreras",
+      "team": "Milwaukee Brewers",
+      "bats": "R",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Michael King",
+      "venue": "American Family Field",
+      "gamePk": 849825,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 18,
+      "iso": 0.147,
+      "total": 44.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 42.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 12.8,
+        "environment": 10.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1616,
+        "barrel_rate": 0.0619,
+        "hard_hit_rate": 0.3977,
+        "fb_rate": 0.5114,
+        "z_contact_rate": 0.8635,
+        "sweet_spot_rate": 0.3666,
+        "xwobacon": null,
+        "ev90": 105.4
+      },
+      "reasons": [
+        "vs Michael King \u2014 cause Pass (8.5/25)",
+        "Hitter-friendly park (105)",
+        "Retractable roof (weather neutralized)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 592885,
+      "name": "Christian Yelich",
+      "team": "Milwaukee Brewers",
+      "bats": "L",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Michael King",
+      "venue": "American Family Field",
+      "gamePk": 849825,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 12,
+      "iso": 0.143,
+      "total": 43.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 53.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 87%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 15.2,
+        "environment": 10.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1593,
+        "barrel_rate": 0.061,
+        "hard_hit_rate": 0.3692,
+        "fb_rate": 0.5027,
+        "z_contact_rate": 0.868,
+        "sweet_spot_rate": 0.3435,
+        "xwobacon": null,
+        "ev90": 97.5
+      },
+      "reasons": [
+        "vs Michael King \u2014 cause Pass (8.5/25)",
+        "Platoon edge (L vs RHP)",
+        "Hitter-friendly park (107)",
+        "Retractable roof (weather neutralized)",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 669003,
+      "name": "Garrett Mitchell",
+      "team": "Milwaukee Brewers",
+      "bats": "L",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Michael King",
+      "venue": "American Family Field",
+      "gamePk": 849825,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 11,
+      "iso": 0.154,
+      "total": 42.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 61.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 87%, Z-contact 89%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 1.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 14.2,
+        "environment": 10.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1448,
+        "barrel_rate": 0.0899,
+        "hard_hit_rate": 0.3896,
+        "fb_rate": 0.4858,
+        "z_contact_rate": 0.8871,
+        "sweet_spot_rate": 0.3604,
+        "xwobacon": null,
+        "ev90": 107.0
+      },
+      "reasons": [
+        "vs Michael King \u2014 cause Pass (8.5/25)",
+        "Platoon edge (L vs RHP)",
+        "Hitter-friendly park (107)",
+        "Retractable roof (weather neutralized)",
+        "Mid order (#5)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 694192,
+      "name": "Jackson Chourio",
+      "team": "Milwaukee Brewers",
+      "bats": "R",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Michael King",
+      "venue": "American Family Field",
+      "gamePk": 849825,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 25,
+      "iso": 0.196,
+      "total": 42.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 53.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 10.0,
+        "environment": 10.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1485,
+        "barrel_rate": 0.0703,
+        "hard_hit_rate": 0.3721,
+        "fb_rate": 0.4791,
+        "z_contact_rate": 0.868,
+        "sweet_spot_rate": 0.3479,
+        "xwobacon": null,
+        "ev90": 107.1
+      },
+      "reasons": [
+        "vs Michael King \u2014 cause Pass (8.5/25)",
+        "Hitter-friendly park (105)",
+        "Retractable roof (weather neutralized)",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -422,11 +703,11 @@
       "opp_pitcher": "Logan Henderson",
       "venue": "American Family Field",
       "gamePk": 849825,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "season_hr": 13,
       "iso": 0.113,
-      "total": 42.2,
+      "total": 41.2,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 47.5,
@@ -443,7 +724,7 @@
         "pitcher": 11.0,
         "hitter": 13.2,
         "environment": 10.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -465,67 +746,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 592885,
-      "name": "Christian Yelich",
-      "team": "Milwaukee Brewers",
-      "bats": "L",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Michael King",
-      "venue": "American Family Field",
-      "gamePk": 849825,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.143,
-      "total": 41.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 53.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 87%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 15.2,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1593,
-        "barrel_rate": 0.061,
-        "hard_hit_rate": 0.3692,
-        "fb_rate": 0.5027,
-        "z_contact_rate": 0.868,
-        "sweet_spot_rate": 0.3435,
-        "xwobacon": null,
-        "ev90": 97.5
-      },
-      "reasons": [
-        "vs Michael King \u2014 cause Pass (8.5/25)",
-        "Platoon edge (L vs RHP)",
-        "Hitter-friendly park (107)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#7)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -700,181 +921,6 @@
       ]
     },
     {
-      "id": 669003,
-      "name": "Garrett Mitchell",
-      "team": "Milwaukee Brewers",
-      "bats": "L",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Michael King",
-      "venue": "American Family Field",
-      "gamePk": 849825,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.154,
-      "total": 40.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 58.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 87%, Z-contact 89%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 1.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 14.2,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1448,
-        "barrel_rate": 0.0899,
-        "hard_hit_rate": 0.3896,
-        "fb_rate": 0.4858,
-        "z_contact_rate": 0.8871,
-        "sweet_spot_rate": 0.3604,
-        "xwobacon": null,
-        "ev90": 107.0
-      },
-      "reasons": [
-        "vs Michael King \u2014 cause Pass (8.5/25)",
-        "Platoon edge (L vs RHP)",
-        "Hitter-friendly park (107)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 668930,
-      "name": "Brice Turang",
-      "team": "Milwaukee Brewers",
-      "bats": "L",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Michael King",
-      "venue": "American Family Field",
-      "gamePk": 849825,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 21,
-      "iso": 0.182,
-      "total": 40.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 50.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 14.0,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1469,
-        "barrel_rate": 0.0619,
-        "hard_hit_rate": 0.3977,
-        "fb_rate": 0.5114,
-        "z_contact_rate": 0.8538,
-        "sweet_spot_rate": 0.3666,
-        "xwobacon": null,
-        "ev90": 105.9
-      },
-      "reasons": [
-        "vs Michael King \u2014 cause Pass (8.5/25)",
-        "Platoon edge (L vs RHP)",
-        "Hitter-friendly park (107)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 661388,
-      "name": "William Contreras",
-      "team": "Milwaukee Brewers",
-      "bats": "R",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Michael King",
-      "venue": "American Family Field",
-      "gamePk": 849825,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.147,
-      "total": 39.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 39.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 12.8,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1616,
-        "barrel_rate": 0.0619,
-        "hard_hit_rate": 0.3977,
-        "fb_rate": 0.5114,
-        "z_contact_rate": 0.8635,
-        "sweet_spot_rate": 0.3666,
-        "xwobacon": null,
-        "ev90": 105.4
-      },
-      "reasons": [
-        "vs Michael King \u2014 cause Pass (8.5/25)",
-        "Hitter-friendly park (105)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 660271,
       "name": "Shohei Ohtani",
       "team": "Los Angeles Dodgers",
@@ -1012,62 +1058,6 @@
         "sweet_spot_rate": 0.3269,
         "xwobacon": null,
         "ev90": 107.3
-      },
-      "reasons": [
-        "vs Michael King \u2014 cause Pass (8.5/25)",
-        "Hitter-friendly park (105)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 694192,
-      "name": "Jackson Chourio",
-      "team": "Milwaukee Brewers",
-      "bats": "R",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Michael King",
-      "venue": "American Family Field",
-      "gamePk": 849825,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 25,
-      "iso": 0.196,
-      "total": 36.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 49.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 10.0,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1485,
-        "barrel_rate": 0.0703,
-        "hard_hit_rate": 0.3721,
-        "fb_rate": 0.4791,
-        "z_contact_rate": 0.868,
-        "sweet_spot_rate": 0.3479,
-        "xwobacon": null,
-        "ev90": 107.1
       },
       "reasons": [
         "vs Michael King \u2014 cause Pass (8.5/25)",
@@ -1994,6 +1984,47 @@
   "structures": {},
   "tb_board": [
     {
+      "id": 665487,
+      "name": "Fernando Tatis Jr.",
+      "team": "San Diego Padres",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Logan Henderson",
+      "venue": "American Family Field",
+      "gamePk": 849825,
+      "slot": 1,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 62.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 85%, Z-contact 89%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 50.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 669003,
+      "name": "Garrett Mitchell",
+      "team": "Milwaukee Brewers",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Michael King",
+      "venue": "American Family Field",
+      "gamePk": 849825,
+      "slot": 5,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 61.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 87%, Z-contact 89%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 42.7,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 660271,
       "name": "Shohei Ohtani",
       "team": "Los Angeles Dodgers",
@@ -2014,6 +2045,44 @@
       "hr_role": "Pass"
     },
     {
+      "id": 701538,
+      "name": "Jackson Merrill",
+      "team": "San Diego Padres",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Logan Henderson",
+      "venue": "American Family Field",
+      "gamePk": 849825,
+      "slot": 5,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 60.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 50.5,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 664034,
+      "name": "Ty France",
+      "team": "San Diego Padres",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Logan Henderson",
+      "venue": "American Family Field",
+      "gamePk": 849825,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 59.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 51.2,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 663656,
       "name": "Kyle Tucker",
       "team": "Los Angeles Dodgers",
@@ -2031,67 +2100,6 @@
       ],
       "shape_source": "statcast",
       "hr_total": 32.8,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 665487,
-      "name": "Fernando Tatis Jr.",
-      "team": "San Diego Padres",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Logan Henderson",
-      "venue": "American Family Field",
-      "gamePk": 849825,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 58.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 85%, Z-contact 89%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 44.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 669003,
-      "name": "Garrett Mitchell",
-      "team": "Milwaukee Brewers",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Michael King",
-      "venue": "American Family Field",
-      "gamePk": 849825,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 58.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 87%, Z-contact 89%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 40.7,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 701538,
-      "name": "Jackson Merrill",
-      "team": "San Diego Padres",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Logan Henderson",
-      "venue": "American Family Field",
-      "gamePk": 849825,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 57.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 48.5,
       "hr_role": "Watchlist"
     },
     {
@@ -2115,24 +2123,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 664034,
-      "name": "Ty France",
-      "team": "San Diego Padres",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Logan Henderson",
-      "venue": "American Family Field",
-      "gamePk": 849825,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 56.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 46.2,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 571970,
       "name": "Max Muncy",
       "team": "Los Angeles Dodgers",
@@ -2148,6 +2138,24 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 32.8,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 592518,
+      "name": "Manny Machado",
+      "team": "San Diego Padres",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Logan Henderson",
+      "venue": "American Family Field",
+      "gamePk": 849825,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 54.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 48.5,
       "hr_role": "Watchlist"
     },
     {
@@ -2189,6 +2197,26 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 668930,
+      "name": "Brice Turang",
+      "team": "Milwaukee Brewers",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Michael King",
+      "venue": "American Family Field",
+      "gamePk": 849825,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 54.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 46.5,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 592885,
       "name": "Christian Yelich",
       "team": "Milwaukee Brewers",
@@ -2196,8 +2224,8 @@
       "opp_pitcher": "Michael King",
       "venue": "American Family Field",
       "gamePk": 849825,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 53.5,
       "tb_tier": "Dart",
@@ -2206,7 +2234,45 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 41.7,
+      "hr_total": 43.7,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 641343,
+      "name": "Jake Bauers",
+      "team": "Milwaukee Brewers",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Michael King",
+      "venue": "American Family Field",
+      "gamePk": 849825,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 53.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 47.3,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 694192,
+      "name": "Jackson Chourio",
+      "team": "Milwaukee Brewers",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Michael King",
+      "venue": "American Family Field",
+      "gamePk": 849825,
+      "slot": 1,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 53.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 42.5,
       "hr_role": "Watchlist"
     },
     {
@@ -2290,82 +2356,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 592518,
-      "name": "Manny Machado",
-      "team": "San Diego Padres",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Logan Henderson",
-      "venue": "American Family Field",
-      "gamePk": 849825,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 51.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 43.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 641343,
-      "name": "Jake Bauers",
-      "team": "Milwaukee Brewers",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Michael King",
-      "venue": "American Family Field",
-      "gamePk": 849825,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 50.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 42.3,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 668930,
-      "name": "Brice Turang",
-      "team": "Milwaukee Brewers",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Michael King",
-      "venue": "American Family Field",
-      "gamePk": 849825,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 50.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 40.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 694192,
-      "name": "Jackson Chourio",
-      "team": "Milwaukee Brewers",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Michael King",
-      "venue": "American Family Field",
-      "gamePk": 849825,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 49.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 36.5,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 687401,
       "name": "Joey Ortiz",
       "team": "Milwaukee Brewers",
@@ -2411,14 +2401,14 @@
       "opp_pitcher": "Logan Henderson",
       "venue": "American Family Field",
       "gamePk": 849825,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 47.5,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 42.2,
+      "hr_total": 41.2,
       "hr_role": "Watchlist"
     },
     {
@@ -2496,6 +2486,24 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 661388,
+      "name": "William Contreras",
+      "team": "Milwaukee Brewers",
+      "opp": "San Diego Padres",
+      "opp_pitcher": "Michael King",
+      "venue": "American Family Field",
+      "gamePk": 849825,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 42.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 44.3,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 606192,
       "name": "Teoscar Hern\u00e1ndez",
       "team": "Los Angeles Dodgers",
@@ -2532,24 +2540,6 @@
       ],
       "shape_source": "proxy",
       "hr_total": 41.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 661388,
-      "name": "William Contreras",
-      "team": "Milwaukee Brewers",
-      "opp": "San Diego Padres",
-      "opp_pitcher": "Michael King",
-      "venue": "American Family Field",
-      "gamePk": 849825,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 39.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 39.3,
       "hr_role": "Watchlist"
     },
     {
