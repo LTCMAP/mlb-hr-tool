@@ -1,9 +1,9 @@
 {
   "version": "2.8",
-  "generated_utc": "2026-10-06T19:00:49.118509+00:00",
+  "generated_utc": "2026-10-06T21:07:14.108930+00:00",
   "slate_date": "2026-10-06",
   "games": 2,
-  "confirmed_lineups": 2,
+  "confirmed_lineups": 3,
   "statcast": true,
   "statcast_meta": {
     "window_days": 21,
@@ -41,11 +41,11 @@
     "trustworthy": true,
     "statcast_batters": 273,
     "statcast_candidates": 24,
-    "confirmed_lineups": 2,
+    "confirmed_lineups": 3,
     "games": 2,
     "days_failed": 1,
     "warnings": [
-      "Only 2/4 lineups confirmed \u2014 unconfirmed bats use a neutral slot default.",
+      "Only 3/4 lineups confirmed \u2014 unconfirmed bats use a neutral slot default.",
       "Statcast: 1 day(s) failed to fetch in the 21-day window (thinner sample).",
       "Shape built from the MLB Stats API fallback (18/21 days) because Baseball Savant was unreachable. All shape signals are live; xwOBAcon is unavailable (regressed to league prior, ISO backstops it) and barrels are recomputed from EV/LA."
     ]
@@ -136,14 +136,14 @@
       "opp_pitcher": "Dustin May",
       "venue": "Petco Park",
       "gamePk": 849826,
-      "slot": null,
-      "confirmed": false,
+      "slot": 2,
+      "confirmed": true,
       "season_hr": 26,
       "iso": 0.186,
-      "total": 52.5,
+      "total": 58.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 61.0,
+      "tb_score": 65.0,
       "tb_tier": "Solid TB",
       "tb_reasons": [
         "High-contact bat (contact 81%, Z-contact 86%) \u2014 banks XBH",
@@ -160,7 +160,7 @@
         "pitcher": 17.0,
         "hitter": 17.5,
         "environment": 8.0,
-        "lineup": 6.0,
+        "lineup": 12.0,
         "confidence": 4.0
       },
       "statcast": {
@@ -179,12 +179,11 @@
         "Pitcher: Above-avg barrels allowed (9%)",
         "Platoon edge (L vs RHP)",
         "Warm (82\u00b0F)",
+        "Top of order (#2)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -198,14 +197,14 @@
       "opp_pitcher": "Dustin May",
       "venue": "Petco Park",
       "gamePk": 849826,
-      "slot": null,
-      "confirmed": false,
+      "slot": 3,
+      "confirmed": true,
       "season_hr": 30,
       "iso": 0.19,
-      "total": 49.5,
+      "total": 54.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 52.0,
+      "tb_score": 55.0,
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
@@ -219,7 +218,7 @@
         "pitcher": 17.0,
         "hitter": 14.5,
         "environment": 8.0,
-        "lineup": 6.0,
+        "lineup": 11.0,
         "confidence": 4.0
       },
       "statcast": {
@@ -237,12 +236,11 @@
         "Pitcher: Elevated HR allowed (HR/9 1.74)",
         "Pitcher: Above-avg barrels allowed (9%)",
         "Warm (82\u00b0F)",
+        "Heart of order (#3)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -256,14 +254,14 @@
       "opp_pitcher": "Dustin May",
       "venue": "Petco Park",
       "gamePk": 849826,
-      "slot": null,
-      "confirmed": false,
+      "slot": 1,
+      "confirmed": true,
       "season_hr": 25,
       "iso": 0.181,
-      "total": 48.5,
+      "total": 54.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 42.0,
+      "tb_score": 46.0,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
@@ -277,7 +275,7 @@
         "pitcher": 17.0,
         "hitter": 13.5,
         "environment": 8.0,
-        "lineup": 6.0,
+        "lineup": 12.0,
         "confidence": 4.0
       },
       "statcast": {
@@ -295,12 +293,11 @@
         "Pitcher: Elevated HR allowed (HR/9 1.74)",
         "Pitcher: Above-avg barrels allowed (9%)",
         "Warm (82\u00b0F)",
+        "Top of order (#1)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -314,15 +311,15 @@
       "opp_pitcher": "Dustin May",
       "venue": "Petco Park",
       "gamePk": 849826,
-      "slot": null,
-      "confirmed": false,
+      "slot": 4,
+      "confirmed": true,
       "season_hr": 21,
       "iso": 0.207,
-      "total": 48.2,
+      "total": 53.2,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 48.0,
-      "tb_tier": "Pass",
+      "tb_score": 51.0,
+      "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
       "pull_fit": false,
@@ -335,7 +332,7 @@
         "pitcher": 17.0,
         "hitter": 13.2,
         "environment": 8.0,
-        "lineup": 6.0,
+        "lineup": 11.0,
         "confidence": 4.0
       },
       "statcast": {
@@ -354,12 +351,63 @@
         "Pitcher: Above-avg barrels allowed (9%)",
         "Poor pitch-mix fit (81% fastballs, rel 0.30 \u2192 mix-fit 0.43x)",
         "Warm (82\u00b0F)",
+        "Heart of order (#4)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
-      "warnings": [
-        "Lineup not confirmed"
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 657757,
+      "name": "Gavin Sheets",
+      "team": "San Diego Padres",
+      "bats": "L",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Dustin May",
+      "venue": "Petco Park",
+      "gamePk": 849826,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 17,
+      "iso": 0.185,
+      "total": 49.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 39.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 17.0,
+        "hitter": 12.0,
+        "environment": 8.0,
+        "lineup": 8.0,
+        "confidence": 4.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Dustin May \u2014 cause A (17.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.74)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Warm (82\u00b0F)",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -377,7 +425,7 @@
       "confirmed": true,
       "season_hr": 41,
       "iso": 0.251,
-      "total": 47.5,
+      "total": 48.5,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 64.0,
@@ -395,7 +443,7 @@
       "breakdown": {
         "pitcher": 7.0,
         "hitter": 19.5,
-        "environment": 8.0,
+        "environment": 9.0,
         "lineup": 11.0,
         "confidence": 2.0
       },
@@ -416,6 +464,7 @@
         "Above-avg barrels (12%)",
         "Platoon edge (L vs RHP)",
         "Slightly + park (103)",
+        "Warm (75\u00b0F)",
         "Heart of order (#3)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -437,7 +486,7 @@
       "confirmed": true,
       "season_hr": 25,
       "iso": 0.175,
-      "total": 47.5,
+      "total": 48.5,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 50.5,
@@ -455,7 +504,7 @@
       "breakdown": {
         "pitcher": 7.0,
         "hitter": 18.5,
-        "environment": 8.0,
+        "environment": 9.0,
         "lineup": 12.0,
         "confidence": 2.0
       },
@@ -474,63 +523,11 @@
         "Good air-pull (21%)",
         "Platoon edge (L vs RHP)",
         "Slightly + park (103)",
+        "Warm (75\u00b0F)",
         "Top of order (#1)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 657757,
-      "name": "Gavin Sheets",
-      "team": "San Diego Padres",
-      "bats": "L",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Dustin May",
-      "venue": "Petco Park",
-      "gamePk": 849826,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.185,
-      "total": 47.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 39.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)",
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 17.0,
-        "hitter": 12.0,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Dustin May \u2014 cause A (17.0/25)",
-        "Pitcher: Elevated HR allowed (HR/9 1.74)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (82\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -548,7 +545,7 @@
       "confirmed": true,
       "season_hr": 30,
       "iso": 0.237,
-      "total": 46.0,
+      "total": 47.0,
       "tier": "Pass",
       "role": "Pass",
       "tb_score": 62.0,
@@ -566,7 +563,7 @@
       "breakdown": {
         "pitcher": 5.0,
         "hitter": 22.0,
-        "environment": 8.0,
+        "environment": 9.0,
         "lineup": 8.0,
         "confidence": 3.0
       },
@@ -578,6 +575,7 @@
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (103)",
+        "Warm (75\u00b0F)",
         "Mid order (#5)"
       ],
       "warnings": [],
@@ -718,7 +716,7 @@
       "confirmed": false,
       "season_hr": 12,
       "iso": 0.214,
-      "total": 44.0,
+      "total": 45.0,
       "tier": "Pass",
       "role": "Pass",
       "tb_score": 53.0,
@@ -736,7 +734,7 @@
       "breakdown": {
         "pitcher": 5.0,
         "hitter": 22.0,
-        "environment": 8.0,
+        "environment": 9.0,
         "lineup": 6.0,
         "confidence": 3.0
       },
@@ -747,7 +745,8 @@
         "Pitcher: High K rate (31%)",
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Slightly + park (103)"
+        "Slightly + park (103)",
+        "Warm (75\u00b0F)"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -767,7 +766,7 @@
       "confirmed": true,
       "season_hr": 12,
       "iso": 0.123,
-      "total": 43.8,
+      "total": 44.8,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 53.5,
@@ -783,7 +782,7 @@
       "breakdown": {
         "pitcher": 7.0,
         "hitter": 18.8,
-        "environment": 8.0,
+        "environment": 9.0,
         "lineup": 8.0,
         "confidence": 2.0
       },
@@ -803,7 +802,123 @@
         "Good air-pull (19%)",
         "Strong barrels (13%)",
         "Slightly + park (103)",
+        "Warm (75\u00b0F)",
         "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 645277,
+      "name": "Ozzie Albies",
+      "team": "Atlanta Braves",
+      "bats": "S",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Yoshinobu Yamamoto",
+      "venue": "Truist Park",
+      "gamePk": 849819,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 22,
+      "iso": 0.155,
+      "total": 44.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 53.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.0,
+        "hitter": 15.2,
+        "environment": 9.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1729,
+        "barrel_rate": 0.0831,
+        "hard_hit_rate": 0.3706,
+        "fb_rate": 0.4805,
+        "z_contact_rate": 0.8487,
+        "sweet_spot_rate": 0.3159,
+        "xwobacon": null,
+        "ev90": 101.9
+      },
+      "reasons": [
+        "vs Yoshinobu Yamamoto \u2014 cause Pass (7.0/25)",
+        "Slightly + park (103)",
+        "Warm (75\u00b0F)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 671739,
+      "name": "Michael Harris II",
+      "team": "Atlanta Braves",
+      "bats": "L",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Yoshinobu Yamamoto",
+      "venue": "Truist Park",
+      "gamePk": 849819,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 26,
+      "iso": 0.197,
+      "total": 44.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 54.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.7,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.0,
+        "hitter": 18.0,
+        "environment": 9.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1552,
+        "barrel_rate": 0.0809,
+        "hard_hit_rate": 0.3395,
+        "fb_rate": 0.4811,
+        "z_contact_rate": 0.8505,
+        "sweet_spot_rate": 0.3215,
+        "xwobacon": null,
+        "ev90": 104.8
+      },
+      "reasons": [
+        "vs Yoshinobu Yamamoto \u2014 cause Pass (7.0/25)",
+        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 16%)",
+        "Above-avg barrels (11%)",
+        "Platoon edge (L vs RHP)",
+        "Slightly + park (103)",
+        "Warm (75\u00b0F)",
+        "Mid order (#5)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
@@ -873,52 +988,50 @@
       ]
     },
     {
-      "id": 645277,
-      "name": "Ozzie Albies",
-      "team": "Atlanta Braves",
-      "bats": "S",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Yoshinobu Yamamoto",
+      "id": 605141,
+      "name": "Mookie Betts",
+      "team": "Los Angeles Dodgers",
+      "bats": "R",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Chris Sale",
       "venue": "Truist Park",
       "gamePk": 849819,
-      "slot": 4,
+      "slot": 1,
       "confirmed": true,
-      "season_hr": 22,
-      "iso": 0.155,
-      "total": 43.2,
+      "season_hr": 23,
+      "iso": 0.197,
+      "total": 42.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 53.0,
+      "tb_score": 55.5,
       "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
       "pull_fit": false,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.3,
+      "due_hr": null,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 7.0,
-        "hitter": 15.2,
-        "environment": 8.0,
-        "lineup": 11.0,
+        "pitcher": 5.0,
+        "hitter": 14.0,
+        "environment": 9.0,
+        "lineup": 12.0,
         "confidence": 2.0
       },
-      "statcast": {
-        "air_pull_rate": 0.1729,
-        "barrel_rate": 0.0831,
-        "hard_hit_rate": 0.3706,
-        "fb_rate": 0.4805,
-        "z_contact_rate": 0.8487,
-        "sweet_spot_rate": 0.3159,
-        "xwobacon": null,
-        "ev90": 101.9
-      },
+      "statcast": null,
       "reasons": [
-        "vs Yoshinobu Yamamoto \u2014 cause Pass (7.0/25)",
+        "vs Chris Sale \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.55)",
+        "Pitcher: High K rate (31%)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (103)",
-        "Heart of order (#4)",
+        "Warm (75\u00b0F)",
+        "Top of order (#1)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
@@ -927,57 +1040,55 @@
       ]
     },
     {
-      "id": 671739,
-      "name": "Michael Harris II",
-      "team": "Atlanta Braves",
+      "id": 518692,
+      "name": "Freddie Freeman",
+      "team": "Los Angeles Dodgers",
       "bats": "L",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Yoshinobu Yamamoto",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Chris Sale",
       "venue": "Truist Park",
       "gamePk": 849819,
-      "slot": 5,
+      "slot": 2,
       "confirmed": true,
-      "season_hr": 26,
-      "iso": 0.197,
-      "total": 43.0,
+      "season_hr": 16,
+      "iso": 0.142,
+      "total": 41.8,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 54.0,
+      "tb_score": 52.0,
       "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
+      "tb_reasons": [],
       "shape_source": "statcast",
-      "pull_fit": true,
+      "pull_fit": false,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -0.7,
+      "due_hr": 0.6,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 7.0,
-        "hitter": 18.0,
-        "environment": 8.0,
-        "lineup": 8.0,
+        "pitcher": 5.0,
+        "hitter": 13.8,
+        "environment": 9.0,
+        "lineup": 12.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1552,
-        "barrel_rate": 0.0809,
-        "hard_hit_rate": 0.3395,
-        "fb_rate": 0.4811,
-        "z_contact_rate": 0.8505,
-        "sweet_spot_rate": 0.3215,
+        "air_pull_rate": 0.1587,
+        "barrel_rate": 0.0757,
+        "hard_hit_rate": 0.4169,
+        "fb_rate": 0.5302,
+        "z_contact_rate": 0.8479,
+        "sweet_spot_rate": 0.3486,
         "xwobacon": null,
-        "ev90": 104.8
+        "ev90": 100.5
       },
       "reasons": [
-        "vs Yoshinobu Yamamoto \u2014 cause Pass (7.0/25)",
-        "Platoon shape: spikes vs RHP (barrel 11%, air-pull 16%)",
-        "Above-avg barrels (11%)",
-        "Platoon edge (L vs RHP)",
+        "vs Chris Sale \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.55)",
+        "Pitcher: High K rate (31%)",
         "Slightly + park (103)",
-        "Mid order (#5)",
+        "Warm (75\u00b0F)",
+        "Top of order (#2)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
@@ -1043,113 +1154,6 @@
       ]
     },
     {
-      "id": 605141,
-      "name": "Mookie Betts",
-      "team": "Los Angeles Dodgers",
-      "bats": "R",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Chris Sale",
-      "venue": "Truist Park",
-      "gamePk": 849819,
-      "slot": 1,
-      "confirmed": true,
-      "season_hr": 23,
-      "iso": 0.197,
-      "total": 41.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 55.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)",
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 5.0,
-        "hitter": 14.0,
-        "environment": 8.0,
-        "lineup": 12.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Chris Sale \u2014 cause Pass (5.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.55)",
-        "Pitcher: High K rate (31%)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Slightly + park (103)",
-        "Top of order (#1)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 518692,
-      "name": "Freddie Freeman",
-      "team": "Los Angeles Dodgers",
-      "bats": "L",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Chris Sale",
-      "venue": "Truist Park",
-      "gamePk": 849819,
-      "slot": 2,
-      "confirmed": true,
-      "season_hr": 16,
-      "iso": 0.142,
-      "total": 40.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.6,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 5.0,
-        "hitter": 13.8,
-        "environment": 8.0,
-        "lineup": 12.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1587,
-        "barrel_rate": 0.0757,
-        "hard_hit_rate": 0.4169,
-        "fb_rate": 0.5302,
-        "z_contact_rate": 0.8479,
-        "sweet_spot_rate": 0.3486,
-        "xwobacon": null,
-        "ev90": 100.5
-      },
-      "reasons": [
-        "vs Chris Sale \u2014 cause Pass (5.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.55)",
-        "Pitcher: High K rate (31%)",
-        "Slightly + park (103)",
-        "Top of order (#2)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 660670,
       "name": "Ronald Acu\u00f1a Jr.",
       "team": "Atlanta Braves",
@@ -1162,7 +1166,7 @@
       "confirmed": true,
       "season_hr": 20,
       "iso": 0.196,
-      "total": 40.5,
+      "total": 41.5,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 53.5,
@@ -1178,7 +1182,7 @@
       "breakdown": {
         "pitcher": 7.0,
         "hitter": 11.5,
-        "environment": 8.0,
+        "environment": 9.0,
         "lineup": 12.0,
         "confidence": 2.0
       },
@@ -1195,6 +1199,7 @@
       "reasons": [
         "vs Yoshinobu Yamamoto \u2014 cause Pass (7.0/25)",
         "Slightly + park (103)",
+        "Warm (75\u00b0F)",
         "Top of order (#2)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -1216,7 +1221,7 @@
       "confirmed": true,
       "season_hr": 10,
       "iso": 0.166,
-      "total": 40.0,
+      "total": 41.0,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 50.5,
@@ -1235,7 +1240,7 @@
       "breakdown": {
         "pitcher": 5.0,
         "hitter": 14.0,
-        "environment": 8.0,
+        "environment": 9.0,
         "lineup": 11.0,
         "confidence": 2.0
       },
@@ -1246,6 +1251,7 @@
         "Pitcher: High K rate (31%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (103)",
+        "Warm (75\u00b0F)",
         "Heart of order (#4)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -1267,7 +1273,7 @@
       "confirmed": false,
       "season_hr": 29,
       "iso": 0.238,
-      "total": 39.9,
+      "total": 40.9,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 61.2,
@@ -1285,7 +1291,7 @@
       "breakdown": {
         "pitcher": 5.0,
         "hitter": 18.9,
-        "environment": 8.0,
+        "environment": 9.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
@@ -1306,6 +1312,7 @@
         "Good air-pull (23%)",
         "Pitch-mix fit: damages this arsenal (53% breaking balls, rel 1.00 \u2192 mix-fit 1.42x)",
         "Slightly + park (103)",
+        "Warm (75\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -1435,6 +1442,120 @@
       ]
     },
     {
+      "id": 606192,
+      "name": "Teoscar Hern\u00e1ndez",
+      "team": "Los Angeles Dodgers",
+      "bats": "R",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Chris Sale",
+      "venue": "Truist Park",
+      "gamePk": 849819,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 16,
+      "iso": 0.158,
+      "total": 37.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 45.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.75,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 10.5,
+        "environment": 9.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1399,
+        "barrel_rate": 0.0592,
+        "hard_hit_rate": 0.3602,
+        "fb_rate": 0.4958,
+        "z_contact_rate": 0.8329,
+        "sweet_spot_rate": 0.337,
+        "xwobacon": null,
+        "ev90": 98.0
+      },
+      "reasons": [
+        "vs Chris Sale \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.55)",
+        "Pitcher: High K rate (31%)",
+        "Platoon edge (R vs LHP)",
+        "Poor pitch-mix fit (53% breaking balls, rel 1.00 \u2192 mix-fit 0.75x)",
+        "Slightly + park (103)",
+        "Warm (75\u00b0F)",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 681624,
+      "name": "Andy Pages",
+      "team": "Los Angeles Dodgers",
+      "bats": "R",
+      "opp": "Atlanta Braves",
+      "opp_pitcher": "Chris Sale",
+      "venue": "Truist Park",
+      "gamePk": 849819,
+      "slot": 7,
+      "confirmed": true,
+      "season_hr": 23,
+      "iso": 0.194,
+      "total": 37.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 61.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 16.0,
+        "environment": 9.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Chris Sale \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.55)",
+        "Pitcher: High K rate (31%)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Slightly + park (103)",
+        "Warm (75\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Bottom of order (#7)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 694192,
       "name": "Jackson Chourio",
       "team": "Milwaukee Brewers",
@@ -1488,66 +1609,6 @@
       "warnings": [
         "Lineup not confirmed"
       ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 606192,
-      "name": "Teoscar Hern\u00e1ndez",
-      "team": "Los Angeles Dodgers",
-      "bats": "R",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Chris Sale",
-      "venue": "Truist Park",
-      "gamePk": 849819,
-      "slot": 3,
-      "confirmed": true,
-      "season_hr": 16,
-      "iso": 0.158,
-      "total": 36.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 45.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.75,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 5.0,
-        "hitter": 10.5,
-        "environment": 8.0,
-        "lineup": 11.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1399,
-        "barrel_rate": 0.0592,
-        "hard_hit_rate": 0.3602,
-        "fb_rate": 0.4958,
-        "z_contact_rate": 0.8329,
-        "sweet_spot_rate": 0.337,
-        "xwobacon": null,
-        "ev90": 98.0
-      },
-      "reasons": [
-        "vs Chris Sale \u2014 cause Pass (5.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.55)",
-        "Pitcher: High K rate (31%)",
-        "Platoon edge (R vs LHP)",
-        "Poor pitch-mix fit (53% breaking balls, rel 1.00 \u2192 mix-fit 0.75x)",
-        "Slightly + park (103)",
-        "Heart of order (#3)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -1613,110 +1674,6 @@
       ]
     },
     {
-      "id": 681624,
-      "name": "Andy Pages",
-      "team": "Los Angeles Dodgers",
-      "bats": "R",
-      "opp": "Atlanta Braves",
-      "opp_pitcher": "Chris Sale",
-      "venue": "Truist Park",
-      "gamePk": 849819,
-      "slot": 7,
-      "confirmed": true,
-      "season_hr": 23,
-      "iso": 0.194,
-      "total": 36.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 61.5,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)",
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 5.0,
-        "hitter": 16.0,
-        "environment": 8.0,
-        "lineup": 5.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Chris Sale \u2014 cause Pass (5.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.55)",
-        "Pitcher: High K rate (31%)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Slightly + park (103)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Bottom of order (#7)"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 593428,
-      "name": "Xander Bogaerts",
-      "team": "San Diego Padres",
-      "bats": "R",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Dustin May",
-      "venue": "Petco Park",
-      "gamePk": 849826,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.113,
-      "total": 35.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 28.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 17.0,
-        "hitter": 0.0,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Dustin May \u2014 cause A (17.0/25)",
-        "Pitcher: Elevated HR allowed (HR/9 1.74)",
-        "Pitcher: Above-avg barrels allowed (9%)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (82\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 663586,
       "name": "Austin Riley",
       "team": "Atlanta Braves",
@@ -1729,7 +1686,7 @@
       "confirmed": true,
       "season_hr": 19,
       "iso": 0.145,
-      "total": 34.8,
+      "total": 35.8,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 43.0,
@@ -1745,7 +1702,7 @@
       "breakdown": {
         "pitcher": 7.0,
         "hitter": 12.8,
-        "environment": 8.0,
+        "environment": 9.0,
         "lineup": 5.0,
         "confidence": 2.0
       },
@@ -1762,6 +1719,7 @@
       "reasons": [
         "vs Yoshinobu Yamamoto \u2014 cause Pass (7.0/25)",
         "Slightly + park (103)",
+        "Warm (75\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -1784,7 +1742,7 @@
       "confirmed": true,
       "season_hr": 17,
       "iso": 0.152,
-      "total": 34.8,
+      "total": 35.8,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 52.6,
@@ -1802,7 +1760,7 @@
       "breakdown": {
         "pitcher": 5.0,
         "hitter": 14.8,
-        "environment": 8.0,
+        "environment": 9.0,
         "lineup": 5.0,
         "confidence": 2.0
       },
@@ -1822,6 +1780,7 @@
         "Pitcher: High K rate (31%)",
         "Good air-pull (22%)",
         "Slightly + park (103)",
+        "Warm (75\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -1844,7 +1803,7 @@
       "confirmed": false,
       "season_hr": 12,
       "iso": 0.156,
-      "total": 33.2,
+      "total": 34.2,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 43.0,
@@ -1862,7 +1821,7 @@
       "breakdown": {
         "pitcher": 7.0,
         "hitter": 10.2,
-        "environment": 8.0,
+        "environment": 9.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
@@ -1882,6 +1841,110 @@
         "Low air-pull (11%)",
         "Platoon edge (L vs RHP)",
         "Slightly + park (103)",
+        "Warm (75\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 593428,
+      "name": "Xander Bogaerts",
+      "team": "San Diego Padres",
+      "bats": "R",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Dustin May",
+      "venue": "Petco Park",
+      "gamePk": 849826,
+      "slot": 7,
+      "confirmed": true,
+      "season_hr": 13,
+      "iso": 0.113,
+      "total": 34.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 28.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 17.0,
+        "hitter": 0.0,
+        "environment": 8.0,
+        "lineup": 5.0,
+        "confidence": 4.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Dustin May \u2014 cause A (17.0/25)",
+        "Pitcher: Elevated HR allowed (HR/9 1.74)",
+        "Pitcher: Above-avg barrels allowed (9%)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Warm (82\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Bottom of order (#7)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 642086,
+      "name": "Dominic Smith",
+      "team": "Atlanta Braves",
+      "bats": "L",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Yoshinobu Yamamoto",
+      "venue": "Truist Park",
+      "gamePk": 849819,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 9,
+      "iso": 0.13,
+      "total": 30.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 41.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 7.0,
+        "hitter": 6.0,
+        "environment": 9.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Yoshinobu Yamamoto \u2014 cause Pass (7.0/25)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Slightly + park (103)",
+        "Warm (75\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -1900,8 +1963,8 @@
       "opp_pitcher": "Yoshinobu Yamamoto",
       "venue": "Truist Park",
       "gamePk": 849819,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "season_hr": 11,
       "iso": 0.159,
       "total": 29.0,
@@ -1922,8 +1985,8 @@
       "breakdown": {
         "pitcher": 7.0,
         "hitter": 6.0,
-        "environment": 8.0,
-        "lineup": 6.0,
+        "environment": 9.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": null,
@@ -1931,60 +1994,11 @@
         "vs Yoshinobu Yamamoto \u2014 cause Pass (7.0/25)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Slightly + park (103)",
+        "Warm (75\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 642086,
-      "name": "Dominic Smith",
-      "team": "Atlanta Braves",
-      "bats": "L",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Yoshinobu Yamamoto",
-      "venue": "Truist Park",
-      "gamePk": 849819,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 9,
-      "iso": 0.13,
-      "total": 29.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 41.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)",
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.0,
-        "hitter": 6.0,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Yoshinobu Yamamoto \u2014 cause Pass (7.0/25)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Slightly + park (103)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#7)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -1993,6 +2007,27 @@
   ],
   "structures": {},
   "tb_board": [
+    {
+      "id": 701538,
+      "name": "Jackson Merrill",
+      "team": "San Diego Padres",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Dustin May",
+      "venue": "Petco Park",
+      "gamePk": 849826,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 65.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 81%, Z-contact 86%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 58.5,
+      "hr_role": "Watchlist"
+    },
     {
       "id": 621566,
       "name": "Matt Olson",
@@ -2010,7 +2045,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 47.5,
+      "hr_total": 48.5,
       "hr_role": "Watchlist"
     },
     {
@@ -2030,7 +2065,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 46.0,
+      "hr_total": 47.0,
       "hr_role": "Pass"
     },
     {
@@ -2051,7 +2086,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 36.0,
+      "hr_total": 37.0,
       "hr_role": "Watchlist"
     },
     {
@@ -2071,28 +2106,7 @@
         "High-contact bat (contact 92%, Z-contact 87%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 39.9,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 701538,
-      "name": "Jackson Merrill",
-      "team": "San Diego Padres",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Dustin May",
-      "venue": "Petco Park",
-      "gamePk": 849826,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 61.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 81%, Z-contact 86%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 52.5,
+      "hr_total": 40.9,
       "hr_role": "Watchlist"
     },
     {
@@ -2134,7 +2148,25 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 41.0,
+      "hr_total": 42.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 592518,
+      "name": "Manny Machado",
+      "team": "San Diego Padres",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Dustin May",
+      "venue": "Petco Park",
+      "gamePk": 849826,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 55.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 54.5,
       "hr_role": "Watchlist"
     },
     {
@@ -2154,7 +2186,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 43.0,
+      "hr_total": 44.0,
       "hr_role": "Watchlist"
     },
     {
@@ -2172,7 +2204,7 @@
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 43.8,
+      "hr_total": 44.8,
       "hr_role": "Watchlist"
     },
     {
@@ -2190,7 +2222,7 @@
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 40.5,
+      "hr_total": 41.5,
       "hr_role": "Watchlist"
     },
     {
@@ -2210,7 +2242,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 44.0,
+      "hr_total": 45.0,
       "hr_role": "Pass"
     },
     {
@@ -2228,7 +2260,7 @@
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 43.2,
+      "hr_total": 44.2,
       "hr_role": "Watchlist"
     },
     {
@@ -2269,7 +2301,7 @@
         "High-contact bat (contact 95%, Z-contact 88%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 34.8,
+      "hr_total": 35.8,
       "hr_role": "Watchlist"
     },
     {
@@ -2293,24 +2325,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 592518,
-      "name": "Manny Machado",
-      "team": "San Diego Padres",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Dustin May",
-      "venue": "Petco Park",
-      "gamePk": 849826,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 49.5,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 518692,
       "name": "Freddie Freeman",
       "team": "Los Angeles Dodgers",
@@ -2325,7 +2339,25 @@
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 40.8,
+      "hr_total": 41.8,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 664034,
+      "name": "Ty France",
+      "team": "San Diego Padres",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Dustin May",
+      "venue": "Petco Park",
+      "gamePk": 849826,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 51.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 53.2,
       "hr_role": "Watchlist"
     },
     {
@@ -2345,7 +2377,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 47.5,
+      "hr_total": 48.5,
       "hr_role": "Watchlist"
     },
     {
@@ -2386,7 +2418,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 40.0,
+      "hr_total": 41.0,
       "hr_role": "Watchlist"
     },
     {
@@ -2408,21 +2440,21 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 664034,
-      "name": "Ty France",
+      "id": 665487,
+      "name": "Fernando Tatis Jr.",
       "team": "San Diego Padres",
       "opp": "Milwaukee Brewers",
       "opp_pitcher": "Dustin May",
       "venue": "Petco Park",
       "gamePk": 849826,
-      "slot": null,
-      "confirmed": false,
+      "slot": 1,
+      "confirmed": true,
       "bats": "R",
-      "tb_score": 48.0,
+      "tb_score": 46.0,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 48.2,
+      "hr_total": 54.5,
       "hr_role": "Watchlist"
     },
     {
@@ -2480,7 +2512,7 @@
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 36.5,
+      "hr_total": 37.5,
       "hr_role": "Watchlist"
     },
     {
@@ -2498,7 +2530,7 @@
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 34.8,
+      "hr_total": 35.8,
       "hr_role": "Watchlist"
     },
     {
@@ -2518,25 +2550,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 33.2,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 665487,
-      "name": "Fernando Tatis Jr.",
-      "team": "San Diego Padres",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Dustin May",
-      "venue": "Petco Park",
-      "gamePk": 849826,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 42.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 48.5,
+      "hr_total": 34.2,
       "hr_role": "Watchlist"
     },
     {
@@ -2557,7 +2571,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 29.0,
+      "hr_total": 30.0,
       "hr_role": "Watchlist"
     },
     {
@@ -2586,8 +2600,8 @@
       "opp_pitcher": "Dustin May",
       "venue": "Petco Park",
       "gamePk": 849826,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 39.0,
       "tb_tier": "Pass",
@@ -2596,7 +2610,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 47.0,
+      "hr_total": 49.0,
       "hr_role": "Watchlist"
     },
     {
@@ -2607,8 +2621,8 @@
       "opp_pitcher": "Yoshinobu Yamamoto",
       "venue": "Truist Park",
       "gamePk": 849819,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 32.0,
       "tb_tier": "Pass",
@@ -2627,8 +2641,8 @@
       "opp_pitcher": "Dustin May",
       "venue": "Petco Park",
       "gamePk": 849826,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 28.5,
       "tb_tier": "Pass",
@@ -2636,7 +2650,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 35.0,
+      "hr_total": 34.0,
       "hr_role": "Watchlist"
     }
   ],
