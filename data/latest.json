@@ -1,9 +1,9 @@
 {
   "version": "2.8",
-  "generated_utc": "2026-10-07T19:28:23.500231+00:00",
+  "generated_utc": "2026-10-07T21:28:35.409730+00:00",
   "slate_date": "2026-10-07",
   "games": 4,
-  "confirmed_lineups": 4,
+  "confirmed_lineups": 7,
   "statcast": true,
   "statcast_meta": {
     "window_days": 21,
@@ -41,11 +41,11 @@
     "trustworthy": true,
     "statcast_batters": 260,
     "statcast_candidates": 51,
-    "confirmed_lineups": 4,
+    "confirmed_lineups": 7,
     "games": 4,
     "days_failed": 1,
     "warnings": [
-      "Only 4/8 lineups confirmed \u2014 unconfirmed bats use a neutral slot default.",
+      "Only 7/8 lineups confirmed \u2014 unconfirmed bats use a neutral slot default.",
       "Statcast: 1 day(s) failed to fetch in the 21-day window (thinner sample).",
       "Shape built from the MLB Stats API fallback (18/21 days) because Baseball Savant was unreachable. All shape signals are live; xwOBAcon is unavailable (regressed to league prior, ISO backstops it) and barrels are recomputed from EV/LA."
     ]
@@ -84,7 +84,7 @@
       "playable_bats": [
         {
           "name": "Luis Garc\u00eda Jr.",
-          "total": 62.0,
+          "total": 67.0,
           "role": "Cause Satellite",
           "fit_tag": null
         },
@@ -120,6 +120,20 @@
       "park_hr": 101,
       "cause_score": 13.2,
       "capture_method": "Watchlist / pass (no clear cause)",
+      "public_heat": false,
+      "n_playable": 0,
+      "playable_bats": []
+    },
+    {
+      "team": "San Diego Padres",
+      "opp": "Milwaukee Brewers",
+      "pitcher": "Robert Gasser",
+      "venue": "Petco Park",
+      "grade": "B",
+      "pitcher_cause": 13.5,
+      "park_hr": 96,
+      "cause_score": 12.5,
+      "capture_method": "Team-HR placeholder (cause strong, bat capture thin)",
       "public_heat": false,
       "n_playable": 0,
       "playable_bats": []
@@ -191,11 +205,11 @@
       "opp_pitcher": "Nick Martinez",
       "venue": "Yankee Stadium",
       "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
+      "slot": 3,
+      "confirmed": true,
       "season_hr": 30,
       "iso": 0.244,
-      "total": 62.0,
+      "total": 67.0,
       "tier": "Longshot",
       "role": "Cause Satellite",
       "tb_score": 62.0,
@@ -215,7 +229,7 @@
         "pitcher": 17.0,
         "hitter": 24.0,
         "environment": 11.0,
-        "lineup": 6.0,
+        "lineup": 11.0,
         "confidence": 4.0
       },
       "statcast": null,
@@ -227,12 +241,74 @@
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Elite HR park (113)",
         "Short RF porch boosts LHB HR",
+        "Heart of order (#3)",
         "Model: one strong signal"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": []
+    },
+    {
+      "id": 700250,
+      "name": "Ben Rice",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Nick Martinez",
+      "venue": "Yankee Stadium",
+      "gamePk": 849838,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 41,
+      "iso": 0.27,
+      "total": 64.5,
+      "tier": "Longshot",
+      "role": "Longshot",
+      "tb_score": 71.0,
+      "tb_tier": "Strong TB",
+      "tb_reasons": [
+        "High-contact bat (contact 88%, Z-contact 86%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.4,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 17.0,
+        "hitter": 20.5,
+        "environment": 11.0,
+        "lineup": 12.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1826,
+        "barrel_rate": 0.0804,
+        "hard_hit_rate": 0.4004,
+        "fb_rate": 0.5225,
+        "z_contact_rate": 0.8644,
+        "sweet_spot_rate": 0.3455,
+        "xwobacon": null,
+        "ev90": 102.0
+      },
+      "reasons": [
+        "vs Nick Martinez \u2014 cause A (17.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.10)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "Platoon edge (L vs RHP)",
+        "Cause-capture synergy (air-pull bat vs fly-ball/barrel-prone arm)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 592450,
@@ -344,6 +420,69 @@
       ],
       "warnings": [],
       "role_notes": []
+    },
+    {
+      "id": 641355,
+      "name": "Cody Bellinger",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Nick Martinez",
+      "venue": "Yankee Stadium",
+      "gamePk": 849838,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 17,
+      "iso": 0.165,
+      "total": 59.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 63.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 93%, Z-contact 87%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.9,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.4,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 17.0,
+        "hitter": 16.5,
+        "environment": 11.0,
+        "lineup": 11.0,
+        "confidence": 4.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1865,
+        "barrel_rate": 0.0757,
+        "hard_hit_rate": 0.3473,
+        "fb_rate": 0.5209,
+        "z_contact_rate": 0.8711,
+        "sweet_spot_rate": 0.356,
+        "xwobacon": null,
+        "ev90": 97.1
+      },
+      "reasons": [
+        "vs Nick Martinez \u2014 cause A (17.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.10)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (75% fastballs, rel 2.20 \u2192 mix-fit 1.90x)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
     },
     {
       "id": 808959,
@@ -460,70 +599,6 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 700250,
-      "name": "Ben Rice",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Nick Martinez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 41,
-      "iso": 0.27,
-      "total": 58.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 67.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 88%, Z-contact 86%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.4,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 17.0,
-        "hitter": 20.5,
-        "environment": 11.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1826,
-        "barrel_rate": 0.0804,
-        "hard_hit_rate": 0.4004,
-        "fb_rate": 0.5225,
-        "z_contact_rate": 0.8644,
-        "sweet_spot_rate": 0.3455,
-        "xwobacon": null,
-        "ev90": 102.0
-      },
-      "reasons": [
-        "vs Nick Martinez \u2014 cause A (17.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.10)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Platoon edge (L vs RHP)",
-        "Cause-capture synergy (air-pull bat vs fly-ball/barrel-prone arm)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -648,6 +723,59 @@
       ]
     },
     {
+      "id": 663757,
+      "name": "Trent Grisham",
+      "team": "New York Yankees",
+      "bats": "L",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Nick Martinez",
+      "venue": "Yankee Stadium",
+      "gamePk": 849838,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 18,
+      "iso": 0.184,
+      "total": 56.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 45.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 17.0,
+        "hitter": 12.0,
+        "environment": 11.0,
+        "lineup": 12.0,
+        "confidence": 4.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Nick Martinez \u2014 cause A (17.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.10)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 682987,
       "name": "Spencer Jones",
       "team": "New York Yankees",
@@ -656,11 +784,11 @@
       "opp_pitcher": "Nick Martinez",
       "venue": "Yankee Stadium",
       "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
+      "slot": 8,
+      "confirmed": true,
       "season_hr": 11,
       "iso": 0.184,
-      "total": 56.5,
+      "total": 55.5,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 51.0,
@@ -679,7 +807,7 @@
         "pitcher": 17.0,
         "hitter": 18.5,
         "environment": 11.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 4.0
       },
       "statcast": {
@@ -704,71 +832,7 @@
         "Model: one strong signal"
       ],
       "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 641355,
-      "name": "Cody Bellinger",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Nick Martinez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.165,
-      "total": 54.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 60.5,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 93%, Z-contact 87%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.9,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.4,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 17.0,
-        "hitter": 16.5,
-        "environment": 11.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1865,
-        "barrel_rate": 0.0757,
-        "hard_hit_rate": 0.3473,
-        "fb_rate": 0.5209,
-        "z_contact_rate": 0.8711,
-        "sweet_spot_rate": 0.356,
-        "xwobacon": null,
-        "ev90": 97.1
-      },
-      "reasons": [
-        "vs Nick Martinez \u2014 cause A (17.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.10)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "Platoon edge (L vs RHP)",
-        "Pitch-mix fit: damages this arsenal (75% fastballs, rel 2.20 \u2192 mix-fit 1.90x)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#8)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -998,6 +1062,180 @@
       "role_notes": []
     },
     {
+      "id": 664034,
+      "name": "Ty France",
+      "team": "San Diego Padres",
+      "bats": "R",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Robert Gasser",
+      "venue": "Petco Park",
+      "gamePk": 849827,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 21,
+      "iso": 0.207,
+      "total": 52.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 57.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.4,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 17.8,
+        "environment": 8.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1575,
+        "barrel_rate": 0.0757,
+        "hard_hit_rate": 0.4085,
+        "fb_rate": 0.487,
+        "z_contact_rate": 0.8505,
+        "sweet_spot_rate": 0.3221,
+        "xwobacon": null,
+        "ev90": 104.7
+      },
+      "reasons": [
+        "vs Robert Gasser \u2014 cause B (13.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.24)",
+        "Platoon edge (R vs LHP)",
+        "Warm (78\u00b0F)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 592518,
+      "name": "Manny Machado",
+      "team": "San Diego Padres",
+      "bats": "R",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Robert Gasser",
+      "venue": "Petco Park",
+      "gamePk": 849827,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 30,
+      "iso": 0.19,
+      "total": 51.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 57.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 17.0,
+        "environment": 8.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1672,
+        "barrel_rate": 0.065,
+        "hard_hit_rate": 0.4004,
+        "fb_rate": 0.4861,
+        "z_contact_rate": 0.8505,
+        "sweet_spot_rate": 0.3455,
+        "xwobacon": null,
+        "ev90": 106.8
+      },
+      "reasons": [
+        "vs Robert Gasser \u2014 cause B (13.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.24)",
+        "Platoon edge (R vs LHP)",
+        "Warm (78\u00b0F)",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 665487,
+      "name": "Fernando Tatis Jr.",
+      "team": "San Diego Padres",
+      "bats": "R",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Robert Gasser",
+      "venue": "Petco Park",
+      "gamePk": 849827,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 25,
+      "iso": 0.181,
+      "total": 51.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 48.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 16.0,
+        "environment": 8.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1798,
+        "barrel_rate": 0.064,
+        "hard_hit_rate": 0.3917,
+        "fb_rate": 0.4953,
+        "z_contact_rate": 0.8605,
+        "sweet_spot_rate": 0.3572,
+        "xwobacon": null,
+        "ev90": 104.2
+      },
+      "reasons": [
+        "vs Robert Gasser \u2014 cause B (13.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.24)",
+        "Platoon edge (R vs LHP)",
+        "Warm (78\u00b0F)",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 671739,
       "name": "Michael Harris II",
       "team": "Atlanta Braves",
@@ -1052,6 +1290,63 @@
         "Slightly + park (103)",
         "Warm (77\u00b0F)",
         "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 701538,
+      "name": "Jackson Merrill",
+      "team": "San Diego Padres",
+      "bats": "L",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Robert Gasser",
+      "venue": "Petco Park",
+      "gamePk": 849827,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 26,
+      "iso": 0.186,
+      "total": 50.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 60.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 81%, Z-contact 86%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.4,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 15.0,
+        "environment": 8.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1672,
+        "barrel_rate": 0.0804,
+        "hard_hit_rate": 0.4004,
+        "fb_rate": 0.5225,
+        "z_contact_rate": 0.8644,
+        "sweet_spot_rate": 0.3637,
+        "xwobacon": null,
+        "ev90": 107.3
+      },
+      "reasons": [
+        "vs Robert Gasser \u2014 cause B (13.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.24)",
+        "Warm (78\u00b0F)",
+        "Top of order (#2)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [],
@@ -1173,22 +1468,22 @@
       ]
     },
     {
-      "id": 663757,
-      "name": "Trent Grisham",
+      "id": 669224,
+      "name": "Austin Wells",
       "team": "New York Yankees",
       "bats": "L",
       "opp": "Tampa Bay Rays",
       "opp_pitcher": "Nick Martinez",
       "venue": "Yankee Stadium",
       "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.184,
-      "total": 50.0,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 14,
+      "iso": 0.146,
+      "total": 49.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 41.0,
+      "tb_score": 37.0,
       "tb_tier": "Pass",
       "tb_reasons": [
         "Platoon edge (L vs RHP)",
@@ -1203,9 +1498,9 @@
       "pitcher_grade": "A",
       "breakdown": {
         "pitcher": 17.0,
-        "hitter": 12.0,
+        "hitter": 9.0,
         "environment": 11.0,
-        "lineup": 6.0,
+        "lineup": 8.0,
         "confidence": 4.0
       },
       "statcast": null,
@@ -1216,12 +1511,11 @@
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Elite HR park (113)",
         "Short RF porch boosts LHB HR",
+        "Mid order (#6)",
         "Hitter shape <22 \u2192 capped at Longshot",
         "Model: one strong signal"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -1447,60 +1741,6 @@
       ],
       "warnings": [
         "Bottom of order (#8)"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 669224,
-      "name": "Austin Wells",
-      "team": "New York Yankees",
-      "bats": "L",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Nick Martinez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.146,
-      "total": 47.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 37.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)",
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 17.0,
-        "hitter": 9.0,
-        "environment": 11.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Nick Martinez \u2014 cause A (17.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.10)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -1996,7 +2236,7 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.29)",
         "Above-avg barrels (9%)",
         "Platoon edge (L vs RHP)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2178,6 +2418,62 @@
       ]
     },
     {
+      "id": 683748,
+      "name": "Victor Mesa Jr.",
+      "team": "Tampa Bay Rays",
+      "bats": "L",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Max Fried",
+      "venue": "Yankee Stadium",
+      "gamePk": 849838,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 14,
+      "iso": 0.238,
+      "total": 43.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 57.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.4,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 4.5,
+        "hitter": 15.2,
+        "environment": 11.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1865,
+        "barrel_rate": 0.0757,
+        "hard_hit_rate": 0.4085,
+        "fb_rate": 0.4701,
+        "z_contact_rate": 0.8583,
+        "sweet_spot_rate": 0.3391,
+        "xwobacon": null,
+        "ev90": 104.1
+      },
+      "reasons": [
+        "vs Max Fried \u2014 cause Pass (4.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.32)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 663993,
       "name": "Nathaniel Lowe",
       "team": "Cleveland Guardians",
@@ -2282,7 +2578,7 @@
         "vs Walker Buehler \u2014 cause C (10.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.29)",
         "Platoon edge (L vs RHP)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2513,7 +2809,7 @@
         "vs Walker Buehler \u2014 cause C (10.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.29)",
         "Platoon edge (L vs RHP)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2583,6 +2879,62 @@
       ]
     },
     {
+      "id": 666018,
+      "name": "Jonathan Aranda",
+      "team": "Tampa Bay Rays",
+      "bats": "L",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Max Fried",
+      "venue": "Yankee Stadium",
+      "gamePk": 849838,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 22,
+      "iso": 0.16,
+      "total": 42.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 54.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.6,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 4.5,
+        "hitter": 12.8,
+        "environment": 11.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1599,
+        "barrel_rate": 0.0768,
+        "hard_hit_rate": 0.3962,
+        "fb_rate": 0.4954,
+        "z_contact_rate": 0.8366,
+        "sweet_spot_rate": 0.3449,
+        "xwobacon": null,
+        "ev90": 104.0
+      },
+      "reasons": [
+        "vs Max Fried \u2014 cause Pass (4.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.32)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 663656,
       "name": "Kyle Tucker",
       "team": "Los Angeles Dodgers",
@@ -2638,6 +2990,115 @@
       "warnings": [
         "Bottom of order (#8)"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 657757,
+      "name": "Gavin Sheets",
+      "team": "San Diego Padres",
+      "bats": "L",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Robert Gasser",
+      "venue": "Petco Park",
+      "gamePk": 849827,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 17,
+      "iso": 0.185,
+      "total": 41.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 34.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "B",
+      "breakdown": {
+        "pitcher": 13.5,
+        "hitter": 12.0,
+        "environment": 8.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Robert Gasser \u2014 cause B (13.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.24)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Warm (78\u00b0F)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 691406,
+      "name": "Junior Caminero",
+      "team": "Tampa Bay Rays",
+      "bats": "R",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Max Fried",
+      "venue": "Yankee Stadium",
+      "gamePk": 849838,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 42,
+      "iso": 0.248,
+      "total": 41.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 46.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 4.5,
+        "hitter": 16.8,
+        "environment": 7.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1599,
+        "barrel_rate": 0.0621,
+        "hard_hit_rate": 0.3753,
+        "fb_rate": 0.4954,
+        "z_contact_rate": 0.8107,
+        "sweet_spot_rate": 0.3449,
+        "xwobacon": null,
+        "ev90": 104.0
+      },
+      "reasons": [
+        "vs Max Fried \u2014 cause Pass (4.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.32)",
+        "Platoon edge (R vs LHP)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -2789,61 +3250,8 @@
       "reasons": [
         "vs Walker Buehler \u2014 cause C (10.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.29)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 676609,
-      "name": "Jos\u00e9 Caballero",
-      "team": "New York Yankees",
-      "bats": "R",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Nick Martinez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.134,
-      "total": 40.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 32.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "A",
-      "breakdown": {
-        "pitcher": 17.0,
-        "hitter": 6.0,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 4.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Nick Martinez \u2014 cause A (17.0/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.10)",
-        "Pitcher: Fly-ball prone (30% FB allowed)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot",
-        "Model: one strong signal"
       ],
       "warnings": [
         "Lineup not confirmed"
@@ -2959,7 +3367,7 @@
         "vs Walker Buehler \u2014 cause C (10.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.29)",
         "Platoon edge (L vs RHP)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -2970,58 +3378,114 @@
       ]
     },
     {
-      "id": 683748,
-      "name": "Victor Mesa Jr.",
+      "id": 676609,
+      "name": "Jos\u00e9 Caballero",
+      "team": "New York Yankees",
+      "bats": "R",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Nick Martinez",
+      "venue": "Yankee Stadium",
+      "gamePk": 849838,
+      "slot": 9,
+      "confirmed": true,
+      "season_hr": 14,
+      "iso": 0.134,
+      "total": 39.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 32.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "A",
+      "breakdown": {
+        "pitcher": 17.0,
+        "hitter": 6.0,
+        "environment": 7.0,
+        "lineup": 5.0,
+        "confidence": 4.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Nick Martinez \u2014 cause A (17.0/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.10)",
+        "Pitcher: Fly-ball prone (30% FB allowed)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR",
+        "Hitter shape <22 \u2192 capped at Longshot",
+        "Model: one strong signal"
+      ],
+      "warnings": [
+        "Bottom of order (#9)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 650490,
+      "name": "Yandy D\u00edaz",
       "team": "Tampa Bay Rays",
-      "bats": "L",
+      "bats": "R",
       "opp": "New York Yankees",
       "opp_pitcher": "Max Fried",
       "venue": "Yankee Stadium",
       "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.238,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 22,
+      "iso": 0.153,
       "total": 38.7,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 54.5,
       "tb_tier": "Dart",
-      "tb_reasons": [],
+      "tb_reasons": [
+        "High-contact bat (contact 90%, Z-contact 87%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
       "shape_source": "statcast",
       "pull_fit": false,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -0.4,
+      "due_hr": 0.0,
       "pitcher_grade": "Pass",
       "breakdown": {
         "pitcher": 4.5,
-        "hitter": 15.2,
-        "environment": 11.0,
-        "lineup": 6.0,
+        "hitter": 13.2,
+        "environment": 7.0,
+        "lineup": 12.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1865,
-        "barrel_rate": 0.0757,
-        "hard_hit_rate": 0.4085,
-        "fb_rate": 0.4701,
-        "z_contact_rate": 0.8583,
-        "sweet_spot_rate": 0.3391,
+        "air_pull_rate": 0.1473,
+        "barrel_rate": 0.063,
+        "hard_hit_rate": 0.362,
+        "fb_rate": 0.4866,
+        "z_contact_rate": 0.8662,
+        "sweet_spot_rate": 0.3159,
         "xwobacon": null,
-        "ev90": 104.1
+        "ev90": 97.8
       },
       "reasons": [
         "vs Max Fried \u2014 cause Pass (4.5/25)",
         "Pitcher: Suppresses HR (HR/9 0.32)",
-        "Elite HR park (113)",
+        "Platoon edge (R vs LHP)",
+        "Slightly + park (103)",
         "Short RF porch boosts LHB HR",
+        "Top of order (#1)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -3135,7 +3599,7 @@
       "reasons": [
         "vs Walker Buehler \u2014 cause C (10.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.29)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3191,12 +3655,70 @@
       "reasons": [
         "vs Walker Buehler \u2014 cause C (10.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.29)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
         "Lineup not confirmed"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 689414,
+      "name": "Liam Hicks",
+      "team": "Tampa Bay Rays",
+      "bats": "L",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Max Fried",
+      "venue": "Yankee Stadium",
+      "gamePk": 849838,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 18,
+      "iso": 0.15,
+      "total": 37.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 48.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "High-contact bat (contact 92%, Z-contact 88%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 4.5,
+        "hitter": 11.8,
+        "environment": 11.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1772,
+        "barrel_rate": 0.063,
+        "hard_hit_rate": 0.3408,
+        "fb_rate": 0.5041,
+        "z_contact_rate": 0.8765,
+        "sweet_spot_rate": 0.351,
+        "xwobacon": null,
+        "ev90": 94.6
+      },
+      "reasons": [
+        "vs Max Fried \u2014 cause Pass (4.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.32)",
+        "Elite HR park (113)",
+        "Short RF porch boosts LHB HR",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -3249,7 +3771,7 @@
       "reasons": [
         "vs Walker Buehler \u2014 cause C (10.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.29)",
-        "Warm (79\u00b0F)",
+        "Warm (78\u00b0F)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -3372,123 +3894,6 @@
       ]
     },
     {
-      "id": 691406,
-      "name": "Junior Caminero",
-      "team": "Tampa Bay Rays",
-      "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Max Fried",
-      "venue": "Yankee Stadium",
-      "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 42,
-      "iso": 0.248,
-      "total": 36.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 43.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 16.8,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1599,
-        "barrel_rate": 0.0621,
-        "hard_hit_rate": 0.3753,
-        "fb_rate": 0.4954,
-        "z_contact_rate": 0.8107,
-        "sweet_spot_rate": 0.3449,
-        "xwobacon": null,
-        "ev90": 104.0
-      },
-      "reasons": [
-        "vs Max Fried \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.32)",
-        "Platoon edge (R vs LHP)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 666018,
-      "name": "Jonathan Aranda",
-      "team": "Tampa Bay Rays",
-      "bats": "L",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Max Fried",
-      "venue": "Yankee Stadium",
-      "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 22,
-      "iso": 0.16,
-      "total": 36.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 50.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.6,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 12.8,
-        "environment": 11.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1599,
-        "barrel_rate": 0.0768,
-        "hard_hit_rate": 0.3962,
-        "fb_rate": 0.4954,
-        "z_contact_rate": 0.8366,
-        "sweet_spot_rate": 0.3449,
-        "xwobacon": null,
-        "ev90": 104.0
-      },
-      "reasons": [
-        "vs Max Fried \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.32)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 676356,
       "name": "Jonny DeLuca",
       "team": "Tampa Bay Rays",
@@ -3497,11 +3902,11 @@
       "opp_pitcher": "Max Fried",
       "venue": "Yankee Stadium",
       "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "season_hr": 11,
       "iso": 0.163,
-      "total": 35.5,
+      "total": 34.5,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 51.5,
@@ -3520,7 +3925,7 @@
         "pitcher": 4.5,
         "hitter": 16.0,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -3542,125 +3947,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 689414,
-      "name": "Liam Hicks",
-      "team": "Tampa Bay Rays",
-      "bats": "L",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Max Fried",
-      "venue": "Yankee Stadium",
-      "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.15,
-      "total": 35.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 48.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 92%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 11.8,
-        "environment": 11.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1772,
-        "barrel_rate": 0.063,
-        "hard_hit_rate": 0.3408,
-        "fb_rate": 0.5041,
-        "z_contact_rate": 0.8765,
-        "sweet_spot_rate": 0.351,
-        "xwobacon": null,
-        "ev90": 94.6
-      },
-      "reasons": [
-        "vs Max Fried \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.32)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 680700,
-      "name": "Richie Palacios",
-      "team": "Tampa Bay Rays",
-      "bats": "L",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Max Fried",
-      "venue": "Yankee Stadium",
-      "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.139,
-      "total": 35.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 46.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 93%, Z-contact 87%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 11.8,
-        "environment": 11.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1647,
-        "barrel_rate": 0.064,
-        "hard_hit_rate": 0.3264,
-        "fb_rate": 0.4774,
-        "z_contact_rate": 0.8692,
-        "sweet_spot_rate": 0.3215,
-        "xwobacon": null,
-        "ev90": 92.2
-      },
-      "reasons": [
-        "vs Max Fried \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.32)",
-        "Elite HR park (113)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#7)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -3719,6 +4006,65 @@
       ]
     },
     {
+      "id": 668723,
+      "name": "Ryan Vilade",
+      "team": "Tampa Bay Rays",
+      "bats": "R",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Max Fried",
+      "venue": "Yankee Stadium",
+      "gamePk": 849838,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 11,
+      "iso": 0.184,
+      "total": 34.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 49.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 4.5,
+        "hitter": 13.0,
+        "environment": 7.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1495,
+        "barrel_rate": 0.064,
+        "hard_hit_rate": 0.3264,
+        "fb_rate": 0.5131,
+        "z_contact_rate": 0.8462,
+        "sweet_spot_rate": 0.3572,
+        "xwobacon": null,
+        "ev90": 81.9
+      },
+      "reasons": [
+        "vs Max Fried \u2014 cause Pass (4.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.32)",
+        "Platoon edge (R vs LHP)",
+        "Slightly + park (103)",
+        "Short RF porch boosts LHB HR",
+        "Mid order (#5)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 642086,
       "name": "Dominic Smith",
       "team": "Atlanta Braves",
@@ -3772,86 +4118,25 @@
       ]
     },
     {
-      "id": 650490,
-      "name": "Yandy D\u00edaz",
+      "id": 680700,
+      "name": "Richie Palacios",
       "team": "Tampa Bay Rays",
-      "bats": "R",
+      "bats": "L",
       "opp": "New York Yankees",
       "opp_pitcher": "Max Fried",
       "venue": "Yankee Stadium",
       "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 22,
-      "iso": 0.153,
-      "total": 32.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 50.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 90%, Z-contact 87%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 4.5,
-        "hitter": 13.2,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1473,
-        "barrel_rate": 0.063,
-        "hard_hit_rate": 0.362,
-        "fb_rate": 0.4866,
-        "z_contact_rate": 0.8662,
-        "sweet_spot_rate": 0.3159,
-        "xwobacon": null,
-        "ev90": 97.8
-      },
-      "reasons": [
-        "vs Max Fried \u2014 cause Pass (4.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.32)",
-        "Platoon edge (R vs LHP)",
-        "Slightly + park (103)",
-        "Short RF porch boosts LHB HR",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 668723,
-      "name": "Ryan Vilade",
-      "team": "Tampa Bay Rays",
-      "bats": "R",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Max Fried",
-      "venue": "Yankee Stadium",
-      "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.184,
-      "total": 32.5,
+      "slot": 8,
+      "confirmed": true,
+      "season_hr": 10,
+      "iso": 0.139,
+      "total": 34.3,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 46.5,
       "tb_tier": "Pass",
       "tb_reasons": [
-        "Platoon edge (R vs LHP)"
+        "High-contact bat (contact 93%, Z-contact 87%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
       "pull_fit": false,
@@ -3862,250 +4147,81 @@
       "pitcher_grade": "Pass",
       "breakdown": {
         "pitcher": 4.5,
-        "hitter": 13.0,
-        "environment": 7.0,
-        "lineup": 6.0,
+        "hitter": 11.8,
+        "environment": 11.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1495,
+        "air_pull_rate": 0.1647,
         "barrel_rate": 0.064,
         "hard_hit_rate": 0.3264,
-        "fb_rate": 0.5131,
-        "z_contact_rate": 0.8462,
-        "sweet_spot_rate": 0.3572,
+        "fb_rate": 0.4774,
+        "z_contact_rate": 0.8692,
+        "sweet_spot_rate": 0.3215,
         "xwobacon": null,
-        "ev90": 81.9
+        "ev90": 92.2
       },
       "reasons": [
         "vs Max Fried \u2014 cause Pass (4.5/25)",
         "Pitcher: Suppresses HR (HR/9 0.32)",
-        "Platoon edge (R vs LHP)",
-        "Slightly + park (103)",
+        "Elite HR park (113)",
         "Short RF porch boosts LHB HR",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#8)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
     },
     {
-      "id": 664034,
-      "name": "Ty France",
+      "id": 593428,
+      "name": "Xander Bogaerts",
       "team": "San Diego Padres",
       "bats": "R",
       "opp": "Milwaukee Brewers",
-      "opp_pitcher": null,
+      "opp_pitcher": "Robert Gasser",
       "venue": "Petco Park",
       "gamePk": 849827,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 21,
-      "iso": 0.207,
-      "total": 32.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 51.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.4,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 16.2,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1575,
-        "barrel_rate": 0.0757,
-        "hard_hit_rate": 0.4085,
-        "fb_rate": 0.487,
-        "z_contact_rate": 0.8505,
-        "sweet_spot_rate": 0.3221,
-        "xwobacon": null,
-        "ev90": 104.7
-      },
-      "reasons": [
-        "Warm (79\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 701538,
-      "name": "Jackson Merrill",
-      "team": "San Diego Padres",
-      "bats": "L",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849827,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 26,
-      "iso": 0.186,
-      "total": 32.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 56.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 81%, Z-contact 86%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.4,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 16.0,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1672,
-        "barrel_rate": 0.0804,
-        "hard_hit_rate": 0.4004,
-        "fb_rate": 0.5225,
-        "z_contact_rate": 0.8644,
-        "sweet_spot_rate": 0.3637,
-        "xwobacon": null,
-        "ev90": 107.3
-      },
-      "reasons": [
-        "Warm (79\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 592518,
-      "name": "Manny Machado",
-      "team": "San Diego Padres",
-      "bats": "R",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849827,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 30,
-      "iso": 0.19,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 13,
+      "iso": 0.113,
       "total": 31.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 51.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 15.5,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1672,
-        "barrel_rate": 0.065,
-        "hard_hit_rate": 0.4004,
-        "fb_rate": 0.4861,
-        "z_contact_rate": 0.8505,
-        "sweet_spot_rate": 0.3455,
-        "xwobacon": null,
-        "ev90": 106.8
-      },
-      "reasons": [
-        "Warm (79\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 665487,
-      "name": "Fernando Tatis Jr.",
-      "team": "San Diego Padres",
-      "bats": "R",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849827,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 25,
-      "iso": 0.181,
-      "total": 30.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 41.0,
+      "tb_score": 30.5,
       "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
       "pull_fit": false,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "?",
+      "due_hr": null,
+      "pitcher_grade": "B",
       "breakdown": {
-        "pitcher": 0,
-        "hitter": 14.5,
+        "pitcher": 13.5,
+        "hitter": 0.0,
         "environment": 8.0,
-        "lineup": 6.0,
+        "lineup": 8.0,
         "confidence": 2.0
       },
-      "statcast": {
-        "air_pull_rate": 0.1798,
-        "barrel_rate": 0.064,
-        "hard_hit_rate": 0.3917,
-        "fb_rate": 0.4953,
-        "z_contact_rate": 0.8605,
-        "sweet_spot_rate": 0.3572,
-        "xwobacon": null,
-        "ev90": 104.2
-      },
+      "statcast": null,
       "reasons": [
-        "Warm (79\u00b0F)",
+        "vs Robert Gasser \u2014 cause B (13.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.24)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Warm (78\u00b0F)",
+        "Mid order (#6)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -4160,106 +4276,38 @@
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
-    },
-    {
-      "id": 657757,
-      "name": "Gavin Sheets",
-      "team": "San Diego Padres",
-      "bats": "L",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849827,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.185,
-      "total": 28.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 34.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 12.0,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (79\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 593428,
-      "name": "Xander Bogaerts",
-      "team": "San Diego Padres",
-      "bats": "R",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849827,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 13,
-      "iso": 0.113,
-      "total": 16.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 27.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "?",
-      "breakdown": {
-        "pitcher": 0,
-        "hitter": 0.0,
-        "environment": 8.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Warm (79\u00b0F)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
     }
   ],
-  "structures": {},
+  "structures": {
+    "longshot_group": {
+      "legs": [
+        "Ben Rice (New York Yankees, 64.5)"
+      ],
+      "why": "Deeper bats with a real pitcher/park cause \u2014 bonus-only convergence."
+    }
+  },
   "tb_board": [
+    {
+      "id": 700250,
+      "name": "Ben Rice",
+      "team": "New York Yankees",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Nick Martinez",
+      "venue": "Yankee Stadium",
+      "gamePk": 849838,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 71.0,
+      "tb_tier": "Strong TB",
+      "tb_reasons": [
+        "High-contact bat (contact 88%, Z-contact 86%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 64.5,
+      "hr_role": "Longshot"
+    },
     {
       "id": 621566,
       "name": "Matt Olson",
@@ -4278,27 +4326,6 @@
       ],
       "shape_source": "statcast",
       "hr_total": 52.3,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 700250,
-      "name": "Ben Rice",
-      "team": "New York Yankees",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Nick Martinez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 67.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 88%, Z-contact 86%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 58.5,
       "hr_role": "Watchlist"
     },
     {
@@ -4363,6 +4390,27 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 641355,
+      "name": "Cody Bellinger",
+      "team": "New York Yankees",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Nick Martinez",
+      "venue": "Yankee Stadium",
+      "gamePk": 849838,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 63.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 93%, Z-contact 87%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 59.5,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 518692,
       "name": "Freddie Freeman",
       "team": "Los Angeles Dodgers",
@@ -4391,8 +4439,8 @@
       "opp_pitcher": "Nick Martinez",
       "venue": "Yankee Stadium",
       "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
+      "slot": 3,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 62.0,
       "tb_tier": "Solid TB",
@@ -4401,7 +4449,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 62.0,
+      "hr_total": 67.0,
       "hr_role": "Cause Satellite"
     },
     {
@@ -4426,27 +4474,6 @@
       "hr_role": "Pass"
     },
     {
-      "id": 641355,
-      "name": "Cody Bellinger",
-      "team": "New York Yankees",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Nick Martinez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 60.5,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 93%, Z-contact 87%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 54.5,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 545341,
       "name": "Randal Grichuk",
       "team": "Chicago White Sox",
@@ -4464,6 +4491,26 @@
       ],
       "shape_source": "statcast",
       "hr_total": 47.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 701538,
+      "name": "Jackson Merrill",
+      "team": "San Diego Padres",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Robert Gasser",
+      "venue": "Petco Park",
+      "gamePk": 849827,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 60.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 81%, Z-contact 86%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 50.5,
       "hr_role": "Watchlist"
     },
     {
@@ -4508,6 +4555,44 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 664034,
+      "name": "Ty France",
+      "team": "San Diego Padres",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Robert Gasser",
+      "venue": "Petco Park",
+      "gamePk": 849827,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 57.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 52.3,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 683748,
+      "name": "Victor Mesa Jr.",
+      "team": "Tampa Bay Rays",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Max Fried",
+      "venue": "Yankee Stadium",
+      "gamePk": 849838,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 57.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 43.7,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 663656,
       "name": "Kyle Tucker",
       "team": "Los Angeles Dodgers",
@@ -4525,6 +4610,26 @@
       ],
       "shape_source": "statcast",
       "hr_total": 41.9,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 592518,
+      "name": "Manny Machado",
+      "team": "San Diego Padres",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Robert Gasser",
+      "venue": "Petco Park",
+      "gamePk": 849827,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 57.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 51.5,
       "hr_role": "Watchlist"
     },
     {
@@ -4588,26 +4693,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 701538,
-      "name": "Jackson Merrill",
-      "team": "San Diego Padres",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849827,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 56.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 81%, Z-contact 86%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 32.0,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 671739,
       "name": "Michael Harris II",
       "team": "Atlanta Braves",
@@ -4625,6 +4710,24 @@
       ],
       "shape_source": "statcast",
       "hr_total": 50.7,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 666018,
+      "name": "Jonathan Aranda",
+      "team": "Tampa Bay Rays",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Max Fried",
+      "venue": "Yankee Stadium",
+      "gamePk": 849838,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 54.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 42.3,
       "hr_role": "Watchlist"
     },
     {
@@ -4649,19 +4752,22 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 683748,
-      "name": "Victor Mesa Jr.",
+      "id": 650490,
+      "name": "Yandy D\u00edaz",
       "team": "Tampa Bay Rays",
       "opp": "New York Yankees",
       "opp_pitcher": "Max Fried",
       "venue": "Yankee Stadium",
       "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
+      "slot": 1,
+      "confirmed": true,
+      "bats": "R",
       "tb_score": 54.5,
       "tb_tier": "Dart",
-      "tb_reasons": [],
+      "tb_reasons": [
+        "High-contact bat (contact 90%, Z-contact 87%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
       "shape_source": "statcast",
       "hr_total": 38.7,
       "hr_role": "Watchlist"
@@ -4770,8 +4876,8 @@
       "opp_pitcher": "Max Fried",
       "venue": "Yankee Stadium",
       "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 51.5,
       "tb_tier": "Dart",
@@ -4779,25 +4885,7 @@
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 35.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 664034,
-      "name": "Ty France",
-      "team": "San Diego Padres",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849827,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 51.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 32.2,
+      "hr_total": 34.5,
       "hr_role": "Watchlist"
     },
     {
@@ -4828,8 +4916,8 @@
       "opp_pitcher": "Nick Martinez",
       "venue": "Yankee Stadium",
       "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
+      "slot": 8,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 51.0,
       "tb_tier": "Dart",
@@ -4837,25 +4925,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 56.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 592518,
-      "name": "Manny Machado",
-      "team": "San Diego Padres",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849827,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 51.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 31.5,
+      "hr_total": 55.5,
       "hr_role": "Watchlist"
     },
     {
@@ -4877,45 +4947,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 666018,
-      "name": "Jonathan Aranda",
-      "team": "Tampa Bay Rays",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Max Fried",
-      "venue": "Yankee Stadium",
-      "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 50.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 36.3,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 650490,
-      "name": "Yandy D\u00edaz",
-      "team": "Tampa Bay Rays",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Max Fried",
-      "venue": "Yankee Stadium",
-      "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 50.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 90%, Z-contact 87%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 32.7,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 666176,
       "name": "Jo Adell",
       "team": "Cleveland Guardians",
@@ -4933,6 +4964,26 @@
       ],
       "shape_source": "statcast",
       "hr_total": 56.5,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 668723,
+      "name": "Ryan Vilade",
+      "team": "Tampa Bay Rays",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Max Fried",
+      "venue": "Yankee Stadium",
+      "gamePk": 849838,
+      "slot": 5,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 49.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 34.5,
       "hr_role": "Watchlist"
     },
     {
@@ -5032,6 +5083,26 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 665487,
+      "name": "Fernando Tatis Jr.",
+      "team": "San Diego Padres",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Robert Gasser",
+      "venue": "Petco Park",
+      "gamePk": 849827,
+      "slot": 1,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 48.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 51.5,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 689414,
       "name": "Liam Hicks",
       "team": "Tampa Bay Rays",
@@ -5039,8 +5110,8 @@
       "opp_pitcher": "Max Fried",
       "venue": "Yankee Stadium",
       "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 48.0,
       "tb_tier": "Pass",
@@ -5048,7 +5119,7 @@
         "High-contact bat (contact 92%, Z-contact 88%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 35.3,
+      "hr_total": 37.3,
       "hr_role": "Watchlist"
     },
     {
@@ -5108,35 +5179,15 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 680700,
-      "name": "Richie Palacios",
+      "id": 691406,
+      "name": "Junior Caminero",
       "team": "Tampa Bay Rays",
       "opp": "New York Yankees",
       "opp_pitcher": "Max Fried",
       "venue": "Yankee Stadium",
       "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 46.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 93%, Z-contact 87%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 35.3,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 668723,
-      "name": "Ryan Vilade",
-      "team": "Tampa Bay Rays",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Max Fried",
-      "venue": "Yankee Stadium",
-      "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
+      "slot": 3,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 46.5,
       "tb_tier": "Pass",
@@ -5144,7 +5195,27 @@
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 32.5,
+      "hr_total": 41.3,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 680700,
+      "name": "Richie Palacios",
+      "team": "Tampa Bay Rays",
+      "opp": "New York Yankees",
+      "opp_pitcher": "Max Fried",
+      "venue": "Yankee Stadium",
+      "gamePk": 849838,
+      "slot": 8,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 46.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "High-contact bat (contact 93%, Z-contact 87%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 34.3,
       "hr_role": "Watchlist"
     },
     {
@@ -5204,6 +5275,27 @@
       ],
       "shape_source": "proxy",
       "hr_total": 45.5,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 663757,
+      "name": "Trent Grisham",
+      "team": "New York Yankees",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Nick Martinez",
+      "venue": "Yankee Stadium",
+      "gamePk": 849838,
+      "slot": 1,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 45.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "hr_total": 56.0,
       "hr_role": "Watchlist"
     },
     {
@@ -5337,26 +5429,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 691406,
-      "name": "Junior Caminero",
-      "team": "Tampa Bay Rays",
-      "opp": "New York Yankees",
-      "opp_pitcher": "Max Fried",
-      "venue": "Yankee Stadium",
-      "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 43.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 36.3,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 642086,
       "name": "Dominic Smith",
       "team": "Atlanta Braves",
@@ -5395,45 +5467,6 @@
       ],
       "shape_source": "statcast",
       "hr_total": 38.6,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 663757,
-      "name": "Trent Grisham",
-      "team": "New York Yankees",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Nick Martinez",
-      "venue": "Yankee Stadium",
-      "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 41.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)",
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 50.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 665487,
-      "name": "Fernando Tatis Jr.",
-      "team": "San Diego Padres",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": null,
-      "venue": "Petco Park",
-      "gamePk": 849827,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 41.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 30.5,
       "hr_role": "Watchlist"
     },
     {
@@ -5504,8 +5537,8 @@
       "opp_pitcher": "Nick Martinez",
       "venue": "Yankee Stadium",
       "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 37.0,
       "tb_tier": "Pass",
@@ -5514,7 +5547,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 47.0,
+      "hr_total": 49.0,
       "hr_role": "Watchlist"
     },
     {
@@ -5543,19 +5576,19 @@
       "name": "Gavin Sheets",
       "team": "San Diego Padres",
       "opp": "Milwaukee Brewers",
-      "opp_pitcher": null,
+      "opp_pitcher": "Robert Gasser",
       "venue": "Petco Park",
       "gamePk": 849827,
       "slot": null,
       "confirmed": false,
       "bats": "L",
-      "tb_score": 34.5,
+      "tb_score": 34.0,
       "tb_tier": "Pass",
       "tb_reasons": [
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 28.0,
+      "hr_total": 41.5,
       "hr_role": "Watchlist"
     },
     {
@@ -5606,8 +5639,8 @@
       "opp_pitcher": "Nick Martinez",
       "venue": "Yankee Stadium",
       "gamePk": 849838,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 32.0,
       "tb_tier": "Pass",
@@ -5615,7 +5648,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 40.0,
+      "hr_total": 39.0,
       "hr_role": "Watchlist"
     },
     {
@@ -5663,19 +5696,20 @@
       "name": "Xander Bogaerts",
       "team": "San Diego Padres",
       "opp": "Milwaukee Brewers",
-      "opp_pitcher": null,
+      "opp_pitcher": "Robert Gasser",
       "venue": "Petco Park",
       "gamePk": 849827,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "bats": "R",
-      "tb_score": 27.5,
+      "tb_score": 30.5,
       "tb_tier": "Pass",
       "tb_reasons": [
+        "Platoon edge (R vs LHP)",
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 16.0,
+      "hr_total": 31.5,
       "hr_role": "Watchlist"
     }
   ],
@@ -5704,6 +5738,17 @@
       ],
       "hr9": 1.79,
       "barrel_allowed": 0.079
+    },
+    {
+      "id": 688107,
+      "name": "Robert Gasser",
+      "score": 13.5,
+      "grade": "B",
+      "flags": [
+        "Avg+ HR allowed (HR/9 1.24)"
+      ],
+      "hr9": 1.24,
+      "barrel_allowed": null
     },
     {
       "id": 656794,
@@ -5775,7 +5820,7 @@
         "team": "New York Yankees",
         "opp_pitcher": "Nick Martinez",
         "role": "Cause Satellite",
-        "total": 62.0,
+        "total": 67.0,
         "cause_grade": "A",
         "result_hr": null,
         "cause_fired": null,
