@@ -1,9 +1,9 @@
 {
   "version": "2.8",
-  "generated_utc": "2026-10-08T19:22:40.434717+00:00",
+  "generated_utc": "2026-10-08T21:26:29.803151+00:00",
   "slate_date": "2026-10-08",
   "games": 1,
-  "confirmed_lineups": 0,
+  "confirmed_lineups": 2,
   "statcast": true,
   "statcast_meta": {
     "window_days": 21,
@@ -38,14 +38,13 @@
     "source": "mlbapi",
     "days_savant": 0,
     "days_mlbapi": 18,
-    "trustworthy": false,
+    "trustworthy": true,
     "statcast_batters": 253,
     "statcast_candidates": 14,
-    "confirmed_lineups": 0,
+    "confirmed_lineups": 2,
     "games": 1,
     "days_failed": 1,
     "warnings": [
-      "NO CONFIRMED LINEUPS \u2014 every bat is using a neutral slot default. Likely built before lineups posted; re-run closer to first pitch.",
       "Statcast: 1 day(s) failed to fetch in the 21-day window (thinner sample).",
       "Shape built from the MLB Stats API fallback (18/21 days) because Baseball Savant was unreachable. All shape signals are live; xwOBAcon is unavailable (regressed to league prior, ISO backstops it) and barrels are recomputed from EV/LA."
     ]
@@ -108,14 +107,14 @@
       "opp_pitcher": "Parker Messick",
       "venue": "Rate Field",
       "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
+      "slot": 3,
+      "confirmed": true,
       "season_hr": 33,
       "iso": 0.224,
-      "total": 48.2,
+      "total": 53.2,
       "tier": "Pass",
       "role": "Pass",
-      "tb_score": 60.7,
+      "tb_score": 63.7,
       "tb_tier": "Solid TB",
       "tb_reasons": [
         "High-contact bat (contact 88%, Z-contact 87%) \u2014 banks XBH",
@@ -132,7 +131,7 @@
         "pitcher": 8.0,
         "hitter": 24.2,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 11.0,
         "confidence": 3.0
       },
       "statcast": {
@@ -151,66 +150,10 @@
         "Strong air-pull (26%)",
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (63% fastballs, rel 1.46 \u2192 mix-fit 1.29x)",
-        "Slightly + park (101)"
+        "Slightly + park (101)",
+        "Heart of order (#3)"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 808959,
-      "name": "Munetaka Murakami",
-      "team": "Chicago White Sox",
-      "bats": "L",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": "Parker Messick",
-      "venue": "Rate Field",
-      "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 35,
-      "iso": 0.271,
-      "total": 46.0,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 43.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.8,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.9,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.0,
-        "hitter": 22.0,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1625,
-        "barrel_rate": 0.098,
-        "hard_hit_rate": 0.3783,
-        "fb_rate": 0.469,
-        "z_contact_rate": 0.7548,
-        "sweet_spot_rate": 0.3471,
-        "xwobacon": null,
-        "ev90": 110.5
-      },
-      "reasons": [
-        "vs Parker Messick \u2014 cause Pass (8.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.82)",
-        "Above-avg barrels (10%)",
-        "Pitch-mix fit: damages this arsenal (63% fastballs, rel 2.20 \u2192 mix-fit 1.80x)",
-        "Slightly + park (101)"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": []
     },
     {
@@ -222,15 +165,15 @@
       "opp_pitcher": "Parker Messick",
       "venue": "Rate Field",
       "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
+      "slot": 2,
+      "confirmed": true,
       "season_hr": 15,
       "iso": 0.279,
-      "total": 46.0,
+      "total": 52.0,
       "tier": "Pass",
       "role": "Pass",
-      "tb_score": 59.9,
-      "tb_tier": "Dart",
+      "tb_score": 63.9,
+      "tb_tier": "Solid TB",
       "tb_reasons": [
         "High-contact bat (contact 85%, Z-contact 88%) \u2014 banks XBH",
         "Platoon edge (R vs LHP)"
@@ -246,7 +189,7 @@
         "pitcher": 8.0,
         "hitter": 22.0,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 12.0,
         "confidence": 3.0
       },
       "statcast": {
@@ -264,11 +207,64 @@
         "Pitcher: Suppresses HR (HR/9 0.82)",
         "Good air-pull (21%)",
         "Platoon edge (R vs LHP)",
-        "Slightly + park (101)"
+        "Slightly + park (101)",
+        "Top of order (#2)"
       ],
-      "warnings": [
-        "Lineup not confirmed"
+      "warnings": [],
+      "role_notes": []
+    },
+    {
+      "id": 808959,
+      "name": "Munetaka Murakami",
+      "team": "Chicago White Sox",
+      "bats": "L",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Parker Messick",
+      "venue": "Rate Field",
+      "gamePk": 849832,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 35,
+      "iso": 0.271,
+      "total": 51.0,
+      "tier": "Pass",
+      "role": "Pass",
+      "tb_score": 46.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.8,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.9,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.0,
+        "hitter": 22.0,
+        "environment": 7.0,
+        "lineup": 11.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1625,
+        "barrel_rate": 0.098,
+        "hard_hit_rate": 0.3783,
+        "fb_rate": 0.469,
+        "z_contact_rate": 0.7548,
+        "sweet_spot_rate": 0.3471,
+        "xwobacon": null,
+        "ev90": 110.5
+      },
+      "reasons": [
+        "vs Parker Messick \u2014 cause Pass (8.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.82)",
+        "Above-avg barrels (10%)",
+        "Pitch-mix fit: damages this arsenal (63% fastballs, rel 2.20 \u2192 mix-fit 1.80x)",
+        "Slightly + park (101)",
+        "Heart of order (#4)"
       ],
+      "warnings": [],
       "role_notes": []
     },
     {
@@ -280,14 +276,14 @@
       "opp_pitcher": "Hagen Smith",
       "venue": "Rate Field",
       "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
+      "slot": 4,
+      "confirmed": true,
       "season_hr": 23,
       "iso": 0.161,
-      "total": 42.0,
+      "total": 47.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 45.8,
+      "tb_score": 48.8,
       "tb_tier": "Pass",
       "tb_reasons": [
         "Platoon edge (R vs LHP)"
@@ -303,7 +299,7 @@
         "pitcher": 5.0,
         "hitter": 21.0,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 11.0,
         "confidence": 3.0
       },
       "statcast": {
@@ -324,11 +320,184 @@
         "Platoon edge (R vs LHP)",
         "Pitch-mix fit: damages this arsenal (74% fastballs, rel 1.60 \u2192 mix-fit 1.44x)",
         "Slightly + park (101)",
+        "Heart of order (#4)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 805367,
+      "name": "Chase Meidroth",
+      "team": "Chicago White Sox",
+      "bats": "R",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Parker Messick",
+      "venue": "Rate Field",
+      "gamePk": 849832,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 16,
+      "iso": 0.139,
+      "total": 39.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 43.7,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
       ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.56,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.0,
+        "hitter": 10.6,
+        "environment": 7.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1552,
+        "barrel_rate": 0.0593,
+        "hard_hit_rate": 0.321,
+        "fb_rate": 0.4758,
+        "z_contact_rate": 0.8508,
+        "sweet_spot_rate": 0.3312,
+        "xwobacon": null,
+        "ev90": 93.2
+      },
+      "reasons": [
+        "vs Parker Messick \u2014 cause Pass (8.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.82)",
+        "Platoon edge (R vs LHP)",
+        "Poor pitch-mix fit (63% fastballs, rel 0.30 \u2192 mix-fit 0.56x)",
+        "Slightly + park (101)",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 608070,
+      "name": "Jos\u00e9 Ram\u00edrez",
+      "team": "Cleveland Guardians",
+      "bats": "S",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Hagen Smith",
+      "venue": "Rate Field",
+      "gamePk": 849832,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 12,
+      "iso": 0.133,
+      "total": 39.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 54.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 89%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.48,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.4,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 13.2,
+        "environment": 7.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1671,
+        "barrel_rate": 0.0726,
+        "hard_hit_rate": 0.4127,
+        "fb_rate": 0.4843,
+        "z_contact_rate": 0.8902,
+        "sweet_spot_rate": 0.3257,
+        "xwobacon": null,
+        "ev90": 106.6
+      },
+      "reasons": [
+        "vs Hagen Smith \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.32)",
+        "Pitcher: High K rate (37%)",
+        "Poor pitch-mix fit (74% fastballs, rel 0.30 \u2192 mix-fit 0.48x)",
+        "Slightly + park (101)",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 682657,
+      "name": "Angel Mart\u00ednez",
+      "team": "Cleveland Guardians",
+      "bats": "S",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Hagen Smith",
+      "venue": "Rate Field",
+      "gamePk": 849832,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 18,
+      "iso": 0.211,
+      "total": 37.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 46.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 15.8,
+        "environment": 7.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1745,
+        "barrel_rate": 0.0611,
+        "hard_hit_rate": 0.3552,
+        "fb_rate": 0.5094,
+        "z_contact_rate": 0.8489,
+        "sweet_spot_rate": 0.3253,
+        "xwobacon": null,
+        "ev90": 96.3
+      },
+      "reasons": [
+        "vs Hagen Smith \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.32)",
+        "Pitcher: High K rate (37%)",
+        "Slightly + park (101)",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -498,63 +667,6 @@
       ]
     },
     {
-      "id": 682657,
-      "name": "Angel Mart\u00ednez",
-      "team": "Cleveland Guardians",
-      "bats": "S",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Hagen Smith",
-      "venue": "Rate Field",
-      "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.211,
-      "total": 35.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 46.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 5.0,
-        "hitter": 15.8,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1745,
-        "barrel_rate": 0.0611,
-        "hard_hit_rate": 0.3552,
-        "fb_rate": 0.5094,
-        "z_contact_rate": 0.8489,
-        "sweet_spot_rate": 0.3253,
-        "xwobacon": null,
-        "ev90": 96.3
-      },
-      "reasons": [
-        "vs Hagen Smith \u2014 cause Pass (5.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.32)",
-        "Pitcher: High K rate (37%)",
-        "Slightly + park (101)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 695657,
       "name": "Colson Montgomery",
       "team": "Chicago White Sox",
@@ -563,11 +675,11 @@
       "opp_pitcher": "Parker Messick",
       "venue": "Rate Field",
       "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "season_hr": 31,
       "iso": 0.206,
-      "total": 35.2,
+      "total": 34.2,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 35.2,
@@ -584,7 +696,7 @@
         "pitcher": 8.0,
         "hitter": 12.2,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -605,7 +717,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#9)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -620,11 +732,11 @@
       "opp_pitcher": "Hagen Smith",
       "venue": "Rate Field",
       "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "season_hr": 15,
       "iso": 0.163,
-      "total": 34.7,
+      "total": 33.7,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 50.4,
@@ -643,7 +755,7 @@
         "pitcher": 5.0,
         "hitter": 14.7,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -665,116 +777,54 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#7)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
     },
     {
-      "id": 805367,
-      "name": "Chase Meidroth",
-      "team": "Chicago White Sox",
-      "bats": "R",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": "Parker Messick",
-      "venue": "Rate Field",
-      "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.139,
-      "total": 33.6,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 39.7,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.56,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.0,
-        "hitter": 10.6,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1552,
-        "barrel_rate": 0.0593,
-        "hard_hit_rate": 0.321,
-        "fb_rate": 0.4758,
-        "z_contact_rate": 0.8508,
-        "sweet_spot_rate": 0.3312,
-        "xwobacon": null,
-        "ev90": 93.2
-      },
-      "reasons": [
-        "vs Parker Messick \u2014 cause Pass (8.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.82)",
-        "Platoon edge (R vs LHP)",
-        "Poor pitch-mix fit (63% fastballs, rel 0.30 \u2192 mix-fit 0.56x)",
-        "Slightly + park (101)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 608070,
-      "name": "Jos\u00e9 Ram\u00edrez",
+      "id": 663993,
+      "name": "Nathaniel Lowe",
       "team": "Cleveland Guardians",
-      "bats": "S",
+      "bats": "L",
       "opp": "Chicago White Sox",
       "opp_pitcher": "Hagen Smith",
       "venue": "Rate Field",
       "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.133,
-      "total": 33.2,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 17,
+      "iso": 0.192,
+      "total": 33.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 50.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 89%) \u2014 banks XBH"
-      ],
+      "tb_score": 47.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
       "shape_source": "statcast",
       "pull_fit": false,
       "mix_fit": 0.48,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": -0.4,
+      "due_hr": 0.0,
       "pitcher_grade": "Pass",
       "breakdown": {
         "pitcher": 5.0,
-        "hitter": 13.2,
+        "hitter": 11.5,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 8.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1671,
-        "barrel_rate": 0.0726,
-        "hard_hit_rate": 0.4127,
-        "fb_rate": 0.4843,
-        "z_contact_rate": 0.8902,
-        "sweet_spot_rate": 0.3257,
+        "air_pull_rate": 0.1648,
+        "barrel_rate": 0.0577,
+        "hard_hit_rate": 0.4048,
+        "fb_rate": 0.5249,
+        "z_contact_rate": 0.8669,
+        "sweet_spot_rate": 0.3689,
         "xwobacon": null,
-        "ev90": 106.6
+        "ev90": 103.1
       },
       "reasons": [
         "vs Hagen Smith \u2014 cause Pass (5.0/25)",
@@ -782,11 +832,69 @@
         "Pitcher: High K rate (37%)",
         "Poor pitch-mix fit (74% fastballs, rel 0.30 \u2192 mix-fit 0.48x)",
         "Slightly + park (101)",
+        "Mid order (#5)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 800050,
+      "name": "Chase DeLauter",
+      "team": "Cleveland Guardians",
+      "bats": "L",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Hagen Smith",
+      "venue": "Rate Field",
+      "gamePk": 849832,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 16,
+      "iso": 0.17,
+      "total": 33.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 50.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 93%, Z-contact 88%) \u2014 banks XBH"
       ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.48,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 5.0,
+        "hitter": 8.0,
+        "environment": 7.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1449,
+        "barrel_rate": 0.0554,
+        "hard_hit_rate": 0.3827,
+        "fb_rate": 0.4392,
+        "z_contact_rate": 0.8821,
+        "sweet_spot_rate": 0.3057,
+        "xwobacon": null,
+        "ev90": 105.3
+      },
+      "reasons": [
+        "vs Hagen Smith \u2014 cause Pass (5.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.32)",
+        "Pitcher: High K rate (37%)",
+        "Poor pitch-mix fit (74% fastballs, rel 0.30 \u2192 mix-fit 0.48x)",
+        "Slightly + park (101)",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -895,64 +1003,6 @@
       ]
     },
     {
-      "id": 663993,
-      "name": "Nathaniel Lowe",
-      "team": "Cleveland Guardians",
-      "bats": "L",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Hagen Smith",
-      "venue": "Rate Field",
-      "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.192,
-      "total": 31.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 44.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.48,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 5.0,
-        "hitter": 11.5,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1648,
-        "barrel_rate": 0.0577,
-        "hard_hit_rate": 0.4048,
-        "fb_rate": 0.5249,
-        "z_contact_rate": 0.8669,
-        "sweet_spot_rate": 0.3689,
-        "xwobacon": null,
-        "ev90": 103.1
-      },
-      "reasons": [
-        "vs Hagen Smith \u2014 cause Pass (5.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.32)",
-        "Pitcher: High K rate (37%)",
-        "Poor pitch-mix fit (74% fastballs, rel 0.30 \u2192 mix-fit 0.48x)",
-        "Slightly + park (101)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 677587,
       "name": "Brayan Rocchio",
       "team": "Cleveland Guardians",
@@ -961,11 +1011,11 @@
       "opp_pitcher": "Hagen Smith",
       "venue": "Rate Field",
       "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "season_hr": 15,
       "iso": 0.138,
-      "total": 29.2,
+      "total": 28.2,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 45.5,
@@ -984,7 +1034,7 @@
         "pitcher": 5.0,
         "hitter": 9.2,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -1006,67 +1056,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 800050,
-      "name": "Chase DeLauter",
-      "team": "Cleveland Guardians",
-      "bats": "L",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Hagen Smith",
-      "venue": "Rate Field",
-      "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.17,
-      "total": 28.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 47.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 93%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.48,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 5.0,
-        "hitter": 8.0,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1449,
-        "barrel_rate": 0.0554,
-        "hard_hit_rate": 0.3827,
-        "fb_rate": 0.4392,
-        "z_contact_rate": 0.8821,
-        "sweet_spot_rate": 0.3057,
-        "xwobacon": null,
-        "ev90": 105.3
-      },
-      "reasons": [
-        "vs Hagen Smith \u2014 cause Pass (5.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.32)",
-        "Pitcher: High K rate (37%)",
-        "Poor pitch-mix fit (74% fastballs, rel 0.30 \u2192 mix-fit 0.48x)",
-        "Slightly + park (101)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#9)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -1076,27 +1066,6 @@
   "structures": {},
   "tb_board": [
     {
-      "id": 678246,
-      "name": "Miguel Vargas",
-      "team": "Chicago White Sox",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": "Parker Messick",
-      "venue": "Rate Field",
-      "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 60.7,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "High-contact bat (contact 88%, Z-contact 87%) \u2014 banks XBH",
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 48.2,
-      "hr_role": "Pass"
-    },
-    {
       "id": 545341,
       "name": "Randal Grichuk",
       "team": "Chicago White Sox",
@@ -1104,17 +1073,38 @@
       "opp_pitcher": "Parker Messick",
       "venue": "Rate Field",
       "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
+      "slot": 2,
+      "confirmed": true,
       "bats": "R",
-      "tb_score": 59.9,
-      "tb_tier": "Dart",
+      "tb_score": 63.9,
+      "tb_tier": "Solid TB",
       "tb_reasons": [
         "High-contact bat (contact 85%, Z-contact 88%) \u2014 banks XBH",
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 46.0,
+      "hr_total": 52.0,
+      "hr_role": "Pass"
+    },
+    {
+      "id": 678246,
+      "name": "Miguel Vargas",
+      "team": "Chicago White Sox",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Parker Messick",
+      "venue": "Rate Field",
+      "gamePk": 849832,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 63.7,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 88%, Z-contact 87%) \u2014 banks XBH",
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 53.2,
       "hr_role": "Pass"
     },
     {
@@ -1125,36 +1115,16 @@
       "opp_pitcher": "Hagen Smith",
       "venue": "Rate Field",
       "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
+      "slot": 2,
+      "confirmed": true,
       "bats": "S",
-      "tb_score": 50.5,
+      "tb_score": 54.5,
       "tb_tier": "Dart",
       "tb_reasons": [
         "High-contact bat (contact 84%, Z-contact 89%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 33.2,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 683953,
-      "name": "Travis Bazzana",
-      "team": "Cleveland Guardians",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Hagen Smith",
-      "venue": "Rate Field",
-      "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 50.4,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 91%, Z-contact 89%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 34.7,
+      "hr_total": 39.2,
       "hr_role": "Watchlist"
     },
     {
@@ -1165,34 +1135,36 @@
       "opp_pitcher": "Hagen Smith",
       "venue": "Rate Field",
       "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
+      "slot": 3,
+      "confirmed": true,
       "bats": "L",
-      "tb_score": 47.5,
-      "tb_tier": "Pass",
+      "tb_score": 50.5,
+      "tb_tier": "Dart",
       "tb_reasons": [
         "High-contact bat (contact 93%, Z-contact 88%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 28.0,
+      "hr_total": 33.0,
       "hr_role": "Watchlist"
     },
     {
-      "id": 682657,
-      "name": "Angel Mart\u00ednez",
+      "id": 683953,
+      "name": "Travis Bazzana",
       "team": "Cleveland Guardians",
       "opp": "Chicago White Sox",
       "opp_pitcher": "Hagen Smith",
       "venue": "Rate Field",
       "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
-      "bats": "S",
-      "tb_score": 46.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
+      "slot": 7,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 50.4,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 91%, Z-contact 89%) \u2014 banks XBH"
+      ],
       "shape_source": "statcast",
-      "hr_total": 35.8,
+      "hr_total": 33.7,
       "hr_role": "Watchlist"
     },
     {
@@ -1203,36 +1175,16 @@
       "opp_pitcher": "Hagen Smith",
       "venue": "Rate Field",
       "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
+      "slot": 4,
+      "confirmed": true,
       "bats": "R",
-      "tb_score": 45.8,
+      "tb_score": 48.8,
       "tb_tier": "Pass",
       "tb_reasons": [
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 42.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 677587,
-      "name": "Brayan Rocchio",
-      "team": "Cleveland Guardians",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Hagen Smith",
-      "venue": "Rate Field",
-      "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
-      "bats": "S",
-      "tb_score": 45.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 86%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 29.2,
+      "hr_total": 47.0,
       "hr_role": "Watchlist"
     },
     {
@@ -1243,14 +1195,14 @@
       "opp_pitcher": "Hagen Smith",
       "venue": "Rate Field",
       "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
+      "slot": 5,
+      "confirmed": true,
       "bats": "L",
-      "tb_score": 44.0,
+      "tb_score": 47.0,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 31.5,
+      "hr_total": 33.5,
       "hr_role": "Watchlist"
     },
     {
@@ -1261,15 +1213,73 @@
       "opp_pitcher": "Parker Messick",
       "venue": "Rate Field",
       "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
+      "slot": 4,
+      "confirmed": true,
       "bats": "L",
-      "tb_score": 43.5,
+      "tb_score": 46.5,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 46.0,
+      "hr_total": 51.0,
       "hr_role": "Pass"
+    },
+    {
+      "id": 682657,
+      "name": "Angel Mart\u00ednez",
+      "team": "Cleveland Guardians",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Hagen Smith",
+      "venue": "Rate Field",
+      "gamePk": 849832,
+      "slot": 6,
+      "confirmed": true,
+      "bats": "S",
+      "tb_score": 46.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 37.8,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 677587,
+      "name": "Brayan Rocchio",
+      "team": "Cleveland Guardians",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Hagen Smith",
+      "venue": "Rate Field",
+      "gamePk": 849832,
+      "slot": 9,
+      "confirmed": true,
+      "bats": "S",
+      "tb_score": 45.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "High-contact bat (contact 86%, Z-contact 88%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 28.2,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 805367,
+      "name": "Chase Meidroth",
+      "team": "Chicago White Sox",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Parker Messick",
+      "venue": "Rate Field",
+      "gamePk": 849832,
+      "slot": 1,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 43.7,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 39.6,
+      "hr_role": "Watchlist"
     },
     {
       "id": 672275,
@@ -1287,26 +1297,6 @@
       "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 37.3,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 805367,
-      "name": "Chase Meidroth",
-      "team": "Chicago White Sox",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": "Parker Messick",
-      "venue": "Rate Field",
-      "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 39.7,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 33.6,
       "hr_role": "Watchlist"
     },
     {
@@ -1376,14 +1366,14 @@
       "opp_pitcher": "Parker Messick",
       "venue": "Rate Field",
       "gamePk": 849832,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 35.2,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 35.2,
+      "hr_total": 34.2,
       "hr_role": "Watchlist"
     },
     {
