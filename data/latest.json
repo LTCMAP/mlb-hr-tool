@@ -1,9 +1,9 @@
 {
   "version": "2.8",
-  "generated_utc": "2026-10-10T17:57:29.722986+00:00",
+  "generated_utc": "2026-10-10T20:14:04.493650+00:00",
   "slate_date": "2026-10-10",
   "games": 1,
-  "confirmed_lineups": 0,
+  "confirmed_lineups": 2,
   "statcast": true,
   "statcast_meta": {
     "window_days": 21,
@@ -38,14 +38,13 @@
     "source": "mlbapi",
     "days_savant": 0,
     "days_mlbapi": 17,
-    "trustworthy": false,
+    "trustworthy": true,
     "statcast_batters": 175,
     "statcast_candidates": 14,
-    "confirmed_lineups": 0,
+    "confirmed_lineups": 2,
     "games": 1,
     "days_failed": 1,
     "warnings": [
-      "NO CONFIRMED LINEUPS \u2014 every bat is using a neutral slot default. Likely built before lineups posted; re-run closer to first pitch.",
       "Statcast: 1 day(s) failed to fetch in the 21-day window (thinner sample).",
       "Shape built from the MLB Stats API fallback (17/21 days) because Baseball Savant was unreachable. All shape signals are live; xwOBAcon is unavailable (regressed to league prior, ISO backstops it) and barrels are recomputed from EV/LA."
     ]
@@ -108,14 +107,14 @@
       "opp_pitcher": "Gavin Williams",
       "venue": "Progressive Field",
       "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
+      "slot": 3,
+      "confirmed": true,
       "season_hr": 33,
       "iso": 0.224,
-      "total": 50.4,
+      "total": 55.4,
       "tier": "Pass",
       "role": "Pass",
-      "tb_score": 63.0,
+      "tb_score": 66.0,
       "tb_tier": "Solid TB",
       "tb_reasons": [
         "High-contact bat (contact 96%, Z-contact 89%) \u2014 banks XBH"
@@ -131,7 +130,7 @@
         "pitcher": 8.5,
         "hitter": 25.9,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 11.0,
         "confidence": 3.0
       },
       "statcast": {
@@ -150,11 +149,10 @@
         "Pitcher: High K rate (33%)",
         "Strong air-pull (24%)",
         "Zone-damage: hard-hit 46% + Z-contact 89%",
-        "Pitch-mix fit: damages this arsenal (58% fastballs, rel 1.89 \u2192 mix-fit 1.52x)"
+        "Pitch-mix fit: damages this arsenal (58% fastballs, rel 1.89 \u2192 mix-fit 1.52x)",
+        "Heart of order (#3)"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": []
     },
     {
@@ -166,14 +164,14 @@
       "opp_pitcher": "Gavin Williams",
       "venue": "Progressive Field",
       "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
+      "slot": 4,
+      "confirmed": true,
       "season_hr": 35,
       "iso": 0.271,
-      "total": 47.5,
+      "total": 52.5,
       "tier": "Pass",
       "role": "Pass",
-      "tb_score": 52.0,
+      "tb_score": 55.0,
       "tb_tier": "Dart",
       "tb_reasons": [
         "Platoon edge (L vs RHP)"
@@ -189,7 +187,7 @@
         "pitcher": 8.5,
         "hitter": 23.0,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 11.0,
         "confidence": 3.0
       },
       "statcast": {
@@ -208,11 +206,10 @@
         "Pitcher: High K rate (33%)",
         "Above-avg barrels (10%)",
         "Platoon edge (L vs RHP)",
-        "Pitch-mix fit: damages this arsenal (58% fastballs, rel 2.20 \u2192 mix-fit 2.11x)"
+        "Pitch-mix fit: damages this arsenal (58% fastballs, rel 2.20 \u2192 mix-fit 2.11x)",
+        "Heart of order (#4)"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": []
     },
     {
@@ -224,14 +221,14 @@
       "opp_pitcher": "Sean Burke",
       "venue": "Progressive Field",
       "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
+      "slot": 4,
+      "confirmed": true,
       "season_hr": 23,
       "iso": 0.161,
-      "total": 45.9,
+      "total": 50.9,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 44.6,
+      "tb_score": 47.6,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
@@ -245,7 +242,7 @@
         "pitcher": 9.0,
         "hitter": 20.9,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 11.0,
         "confidence": 3.0
       },
       "statcast": {
@@ -262,11 +259,66 @@
         "vs Sean Burke \u2014 cause Pass (9.0/25)",
         "Above-avg barrels (10%)",
         "Pitch-mix fit: damages this arsenal (66% fastballs, rel 1.40 \u2192 mix-fit 1.27x)",
+        "Heart of order (#4)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 608070,
+      "name": "Jos\u00e9 Ram\u00edrez",
+      "team": "Cleveland Guardians",
+      "bats": "S",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Burke",
+      "venue": "Progressive Field",
+      "gamePk": 849831,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 12,
+      "iso": 0.133,
+      "total": 48.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 60.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 85%, Z-contact 88%) \u2014 banks XBH"
       ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.37,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 9.0,
+        "hitter": 18.6,
+        "environment": 7.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1676,
+        "barrel_rate": 0.0713,
+        "hard_hit_rate": 0.4235,
+        "fb_rate": 0.4972,
+        "z_contact_rate": 0.8796,
+        "sweet_spot_rate": 0.3482,
+        "xwobacon": null,
+        "ev90": 106.6
+      },
+      "reasons": [
+        "vs Sean Burke \u2014 cause Pass (9.0/25)",
+        "Pitch-mix fit: damages this arsenal (66% fastballs, rel 1.56 \u2192 mix-fit 1.37x)",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -330,118 +382,6 @@
       ]
     },
     {
-      "id": 608070,
-      "name": "Jos\u00e9 Ram\u00edrez",
-      "team": "Cleveland Guardians",
-      "bats": "S",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Burke",
-      "venue": "Progressive Field",
-      "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 12,
-      "iso": 0.133,
-      "total": 42.6,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 56.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 85%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.37,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 9.0,
-        "hitter": 18.6,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1676,
-        "barrel_rate": 0.0713,
-        "hard_hit_rate": 0.4235,
-        "fb_rate": 0.4972,
-        "z_contact_rate": 0.8796,
-        "sweet_spot_rate": 0.3482,
-        "xwobacon": null,
-        "ev90": 106.6
-      },
-      "reasons": [
-        "vs Sean Burke \u2014 cause Pass (9.0/25)",
-        "Pitch-mix fit: damages this arsenal (66% fastballs, rel 1.56 \u2192 mix-fit 1.37x)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 672275,
-      "name": "Patrick Bailey",
-      "team": "Cleveland Guardians",
-      "bats": "S",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Burke",
-      "venue": "Progressive Field",
-      "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.129,
-      "total": 42.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 53.7,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.3,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.3,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 9.0,
-        "hitter": 18.2,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1724,
-        "barrel_rate": 0.0876,
-        "hard_hit_rate": 0.4205,
-        "fb_rate": 0.5138,
-        "z_contact_rate": 0.8422,
-        "sweet_spot_rate": 0.3598,
-        "xwobacon": null,
-        "ev90": 104.1
-      },
-      "reasons": [
-        "vs Sean Burke \u2014 cause Pass (9.0/25)",
-        "Pitch-mix fit: damages this arsenal (66% fastballs, rel 1.00 \u2192 mix-fit 1.30x)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 671976,
       "name": "Tristan Peters",
       "team": "Chicago White Sox",
@@ -450,11 +390,11 @@
       "opp_pitcher": "Gavin Williams",
       "venue": "Progressive Field",
       "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "season_hr": 12,
       "iso": 0.172,
-      "total": 39.5,
+      "total": 41.5,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 42.0,
@@ -473,7 +413,7 @@
         "pitcher": 8.5,
         "hitter": 16.0,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 8.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -491,10 +431,64 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.37)",
         "Pitcher: High K rate (33%)",
         "Platoon edge (L vs RHP)",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 672275,
+      "name": "Patrick Bailey",
+      "team": "Cleveland Guardians",
+      "bats": "S",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Burke",
+      "venue": "Progressive Field",
+      "gamePk": 849831,
+      "slot": 7,
+      "confirmed": true,
+      "season_hr": 10,
+      "iso": 0.129,
+      "total": 41.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 53.7,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.3,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.3,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 9.0,
+        "hitter": 18.2,
+        "environment": 7.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1724,
+        "barrel_rate": 0.0876,
+        "hard_hit_rate": 0.4205,
+        "fb_rate": 0.5138,
+        "z_contact_rate": 0.8422,
+        "sweet_spot_rate": 0.3598,
+        "xwobacon": null,
+        "ev90": 104.1
+      },
+      "reasons": [
+        "vs Sean Burke \u2014 cause Pass (9.0/25)",
+        "Pitch-mix fit: damages this arsenal (66% fastballs, rel 1.00 \u2192 mix-fit 1.30x)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#7)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -509,11 +503,11 @@
       "opp_pitcher": "Sean Burke",
       "venue": "Progressive Field",
       "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "season_hr": 15,
       "iso": 0.163,
-      "total": 38.7,
+      "total": 40.7,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 55.2,
@@ -533,7 +527,7 @@
         "pitcher": 9.0,
         "hitter": 14.7,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 8.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -550,11 +544,10 @@
         "vs Sean Burke \u2014 cause Pass (9.0/25)",
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (66% fastballs, rel 0.30 \u2192 mix-fit 0.54x)",
+        "Mid order (#6)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -568,14 +561,14 @@
       "opp_pitcher": "Gavin Williams",
       "venue": "Progressive Field",
       "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
+      "slot": 5,
+      "confirmed": true,
       "season_hr": 15,
       "iso": 0.173,
-      "total": 37.5,
+      "total": 39.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 43.0,
+      "tb_score": 46.0,
       "tb_tier": "Pass",
       "tb_reasons": [
         "Platoon edge (L vs RHP)",
@@ -592,7 +585,7 @@
         "pitcher": 8.5,
         "hitter": 14.0,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 8.0,
         "confidence": 2.0
       },
       "statcast": null,
@@ -601,11 +594,10 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.37)",
         "Pitcher: High K rate (33%)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Mid order (#5)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -619,14 +611,14 @@
       "opp_pitcher": "Sean Burke",
       "venue": "Progressive Field",
       "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
+      "slot": 5,
+      "confirmed": true,
       "season_hr": 17,
       "iso": 0.192,
-      "total": 37.2,
+      "total": 39.2,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 51.7,
+      "tb_score": 54.7,
       "tb_tier": "Dart",
       "tb_reasons": [
         "Platoon edge (L vs RHP)"
@@ -642,7 +634,7 @@
         "pitcher": 9.0,
         "hitter": 13.2,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 8.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -659,11 +651,68 @@
         "vs Sean Burke \u2014 cause Pass (9.0/25)",
         "Platoon edge (L vs RHP)",
         "Poor pitch-mix fit (66% fastballs, rel 0.30 \u2192 mix-fit 0.54x)",
+        "Mid order (#5)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 800050,
+      "name": "Chase DeLauter",
+      "team": "Cleveland Guardians",
+      "bats": "L",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Burke",
+      "venue": "Progressive Field",
+      "gamePk": 849831,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 16,
+      "iso": 0.17,
+      "total": 39.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 53.7,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 85%, Z-contact 86%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
       ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.54,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 9.0,
+        "hitter": 10.2,
+        "environment": 7.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1456,
+        "barrel_rate": 0.0544,
+        "hard_hit_rate": 0.3933,
+        "fb_rate": 0.4367,
+        "z_contact_rate": 0.8603,
+        "sweet_spot_rate": 0.3119,
+        "xwobacon": null,
+        "ev90": 105.5
+      },
+      "reasons": [
+        "vs Sean Burke \u2014 cause Pass (9.0/25)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (66% fastballs, rel 0.30 \u2192 mix-fit 0.54x)",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -829,11 +878,11 @@
       "opp_pitcher": "Gavin Williams",
       "venue": "Progressive Field",
       "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
+      "slot": 8,
+      "confirmed": true,
       "season_hr": 31,
       "iso": 0.206,
-      "total": 34.7,
+      "total": 33.7,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 38.4,
@@ -852,7 +901,7 @@
         "pitcher": 8.5,
         "hitter": 11.2,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -874,66 +923,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 800050,
-      "name": "Chase DeLauter",
-      "team": "Cleveland Guardians",
-      "bats": "L",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Burke",
-      "venue": "Progressive Field",
-      "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.17,
-      "total": 34.2,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 50.7,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 85%, Z-contact 86%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.54,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 9.0,
-        "hitter": 10.2,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1456,
-        "barrel_rate": 0.0544,
-        "hard_hit_rate": 0.3933,
-        "fb_rate": 0.4367,
-        "z_contact_rate": 0.8603,
-        "sweet_spot_rate": 0.3119,
-        "xwobacon": null,
-        "ev90": 105.5
-      },
-      "reasons": [
-        "vs Sean Burke \u2014 cause Pass (9.0/25)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (66% fastballs, rel 0.30 \u2192 mix-fit 0.54x)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#8)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -948,11 +938,11 @@
       "opp_pitcher": "Gavin Williams",
       "venue": "Progressive Field",
       "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "season_hr": 16,
       "iso": 0.139,
-      "total": 31.7,
+      "total": 30.7,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 40.4,
@@ -969,7 +959,7 @@
         "pitcher": 8.5,
         "hitter": 8.2,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -990,7 +980,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#7)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -1005,11 +995,11 @@
       "opp_pitcher": "Sean Burke",
       "venue": "Progressive Field",
       "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "season_hr": 15,
       "iso": 0.138,
-      "total": 31.5,
+      "total": 30.5,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 45.7,
@@ -1028,7 +1018,7 @@
         "pitcher": 9.0,
         "hitter": 7.5,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -1047,7 +1037,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#9)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -1064,16 +1054,16 @@
       "opp_pitcher": "Gavin Williams",
       "venue": "Progressive Field",
       "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
+      "slot": 3,
+      "confirmed": true,
       "bats": "R",
-      "tb_score": 63.0,
+      "tb_score": 66.0,
       "tb_tier": "Solid TB",
       "tb_reasons": [
         "High-contact bat (contact 96%, Z-contact 89%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 50.4,
+      "hr_total": 55.4,
       "hr_role": "Pass"
     },
     {
@@ -1084,16 +1074,16 @@
       "opp_pitcher": "Sean Burke",
       "venue": "Progressive Field",
       "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
+      "slot": 2,
+      "confirmed": true,
       "bats": "S",
-      "tb_score": 56.0,
-      "tb_tier": "Dart",
+      "tb_score": 60.0,
+      "tb_tier": "Solid TB",
       "tb_reasons": [
         "High-contact bat (contact 85%, Z-contact 88%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 42.6,
+      "hr_total": 48.6,
       "hr_role": "Watchlist"
     },
     {
@@ -1104,8 +1094,8 @@
       "opp_pitcher": "Sean Burke",
       "venue": "Progressive Field",
       "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 55.2,
       "tb_tier": "Dart",
@@ -1114,25 +1104,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 38.7,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 672275,
-      "name": "Patrick Bailey",
-      "team": "Cleveland Guardians",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Burke",
-      "venue": "Progressive Field",
-      "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
-      "bats": "S",
-      "tb_score": 53.7,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 42.2,
+      "hr_total": 40.7,
       "hr_role": "Watchlist"
     },
     {
@@ -1143,16 +1115,16 @@
       "opp_pitcher": "Gavin Williams",
       "venue": "Progressive Field",
       "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
+      "slot": 4,
+      "confirmed": true,
       "bats": "L",
-      "tb_score": 52.0,
+      "tb_score": 55.0,
       "tb_tier": "Dart",
       "tb_reasons": [
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 47.5,
+      "hr_total": 52.5,
       "hr_role": "Pass"
     },
     {
@@ -1163,16 +1135,55 @@
       "opp_pitcher": "Sean Burke",
       "venue": "Progressive Field",
       "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
+      "slot": 5,
+      "confirmed": true,
       "bats": "L",
-      "tb_score": 51.7,
+      "tb_score": 54.7,
       "tb_tier": "Dart",
       "tb_reasons": [
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 37.2,
+      "hr_total": 39.2,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 672275,
+      "name": "Patrick Bailey",
+      "team": "Cleveland Guardians",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Burke",
+      "venue": "Progressive Field",
+      "gamePk": 849831,
+      "slot": 7,
+      "confirmed": true,
+      "bats": "S",
+      "tb_score": 53.7,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 41.2,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 800050,
+      "name": "Chase DeLauter",
+      "team": "Cleveland Guardians",
+      "opp": "Chicago White Sox",
+      "opp_pitcher": "Sean Burke",
+      "venue": "Progressive Field",
+      "gamePk": 849831,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 53.7,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 85%, Z-contact 86%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 39.2,
       "hr_role": "Watchlist"
     },
     {
@@ -1194,24 +1205,42 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 800050,
-      "name": "Chase DeLauter",
+      "id": 666176,
+      "name": "Jo Adell",
       "team": "Cleveland Guardians",
       "opp": "Chicago White Sox",
       "opp_pitcher": "Sean Burke",
       "venue": "Progressive Field",
       "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 50.7,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 85%, Z-contact 86%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
+      "slot": 4,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 47.6,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 34.2,
+      "hr_total": 50.9,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 643217,
+      "name": "Andrew Benintendi",
+      "team": "Chicago White Sox",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Gavin Williams",
+      "venue": "Progressive Field",
+      "gamePk": 849831,
+      "slot": 5,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 46.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "hr_total": 39.5,
       "hr_role": "Watchlist"
     },
     {
@@ -1222,8 +1251,8 @@
       "opp_pitcher": "Sean Burke",
       "venue": "Progressive Field",
       "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "bats": "S",
       "tb_score": 45.7,
       "tb_tier": "Pass",
@@ -1231,25 +1260,7 @@
         "High-contact bat (contact 88%, Z-contact 87%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 31.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 666176,
-      "name": "Jo Adell",
-      "team": "Cleveland Guardians",
-      "opp": "Chicago White Sox",
-      "opp_pitcher": "Sean Burke",
-      "venue": "Progressive Field",
-      "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 44.6,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 45.9,
+      "hr_total": 30.5,
       "hr_role": "Watchlist"
     },
     {
@@ -1271,27 +1282,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 643217,
-      "name": "Andrew Benintendi",
-      "team": "Chicago White Sox",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": "Gavin Williams",
-      "venue": "Progressive Field",
-      "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 43.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)",
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 37.5,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 671976,
       "name": "Tristan Peters",
       "team": "Chicago White Sox",
@@ -1299,8 +1289,8 @@
       "opp_pitcher": "Gavin Williams",
       "venue": "Progressive Field",
       "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 42.0,
       "tb_tier": "Pass",
@@ -1308,7 +1298,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 39.5,
+      "hr_total": 41.5,
       "hr_role": "Watchlist"
     },
     {
@@ -1319,14 +1309,14 @@
       "opp_pitcher": "Gavin Williams",
       "venue": "Progressive Field",
       "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 40.4,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 31.7,
+      "hr_total": 30.7,
       "hr_role": "Watchlist"
     },
     {
@@ -1337,8 +1327,8 @@
       "opp_pitcher": "Gavin Williams",
       "venue": "Progressive Field",
       "gamePk": 849831,
-      "slot": null,
-      "confirmed": false,
+      "slot": 8,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 38.4,
       "tb_tier": "Pass",
@@ -1346,7 +1336,7 @@
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 34.7,
+      "hr_total": 33.7,
       "hr_role": "Watchlist"
     },
     {
