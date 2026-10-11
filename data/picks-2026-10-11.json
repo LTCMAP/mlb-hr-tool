@@ -1,6 +1,6 @@
 {
   "version": "2.8",
-  "generated_utc": "2026-10-11T01:05:55.220596+00:00",
+  "generated_utc": "2026-10-11T18:21:37.679694+00:00",
   "slate_date": "2026-10-11",
   "games": 1,
   "confirmed_lineups": 0,
@@ -10,44 +10,44 @@
     "recent_days": 7,
     "start": "2026-09-21",
     "end": "2026-10-11",
-    "days_fetched": 0,
+    "days_fetched": 1,
     "days_cached": 19,
-    "days_failed": 2,
+    "days_failed": 1,
     "source": "mlbapi",
     "days_savant": 0,
-    "days_mlbapi": 16,
+    "days_mlbapi": 17,
     "xwobacon_available": false,
-    "batters": 128,
+    "batters": 129,
     "pitchers": 124,
     "league": {
-      "barrel_rate": 0.0703,
-      "hard_hit_rate": 0.3717,
-      "fb_rate": 0.4845,
-      "air_pull_rate": 0.1722,
-      "fly_rate": 0.2602,
-      "hr_per_pa": 0.029,
-      "z_contact": 0.847,
-      "sweet_spot_rate": 0.3396,
-      "air_ev": 92.4,
-      "hr_per_barrel": 0.6207,
-      "bbe_total": 1649
+      "barrel_rate": 0.069,
+      "hard_hit_rate": 0.3696,
+      "fb_rate": 0.4833,
+      "air_pull_rate": 0.1738,
+      "fly_rate": 0.2589,
+      "hr_per_pa": 0.0287,
+      "z_contact": 0.8456,
+      "sweet_spot_rate": 0.3399,
+      "air_ev": 92.3,
+      "hr_per_barrel": 0.6293,
+      "bbe_total": 1680
     }
   },
   "data_quality": {
     "mode": "statcast",
     "source": "mlbapi",
     "days_savant": 0,
-    "days_mlbapi": 16,
+    "days_mlbapi": 17,
     "trustworthy": false,
-    "statcast_batters": 128,
+    "statcast_batters": 129,
     "statcast_candidates": 8,
     "confirmed_lineups": 0,
     "games": 1,
-    "days_failed": 2,
+    "days_failed": 1,
     "warnings": [
       "NO CONFIRMED LINEUPS \u2014 every bat is using a neutral slot default. Likely built before lineups posted; re-run closer to first pitch.",
-      "Statcast: 2 day(s) failed to fetch in the 21-day window (thinner sample).",
-      "Shape built from the MLB Stats API fallback (16/21 days) because Baseball Savant was unreachable. All shape signals are live; xwOBAcon is unavailable (regressed to league prior, ISO backstops it) and barrels are recomputed from EV/LA."
+      "Statcast: 1 day(s) failed to fetch in the 21-day window (thinner sample).",
+      "Shape built from the MLB Stats API fallback (17/21 days) because Baseball Savant was unreachable. All shape signals are live; xwOBAcon is unavailable (regressed to league prior, ISO backstops it) and barrels are recomputed from EV/LA."
     ]
   },
   "method": "v2.6: rank causes \u2192 choose capture \u2192 lock confirmed shape that captures the cause. NEW: zone-damage slot (hard-hit% \u00d7 Z-Contact% \u2014 loud contact that actually meets hittable pitches), xwOBAcon contact quality, and HR-luck pairing (barrels-vs-HR xHR gap \u2192 DUE bats and HR-DUE arms). Also: hardened Savant fetch w/ cache validation, directional wind, EB shrinkage, platoon-split shape, pitch-mix fit + TRAP flags. Weights P25/Shape40(11 air-pull/8 barrel/7 zone-dmg/6 matchup/3 quality/3 recent/2 due)/Env15/Lineup12/Src8. v2.8: dual-source shape \u2014 Baseball Savant with an MLB Stats API play-by-play fallback, so a Savant outage no longer drops the board to proxy. Statcast shape layer active via the MLB Stats API fallback (Savant unreachable) \u2014 xwOBAcon regressed to league prior, barrels recomputed from EV/LA.",
@@ -289,12 +289,12 @@
         "confidence": 3.0
       },
       "statcast": {
-        "air_pull_rate": 0.1743,
-        "barrel_rate": 0.111,
-        "hard_hit_rate": 0.4193,
-        "fb_rate": 0.5132,
-        "z_contact_rate": 0.8425,
-        "sweet_spot_rate": 0.3451,
+        "air_pull_rate": 0.1758,
+        "barrel_rate": 0.1098,
+        "hard_hit_rate": 0.4174,
+        "fb_rate": 0.5121,
+        "z_contact_rate": 0.8414,
+        "sweet_spot_rate": 0.3454,
         "xwobacon": null,
         "ev90": 102.6
       },
@@ -352,12 +352,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1666,
-        "barrel_rate": 0.062,
-        "hard_hit_rate": 0.3931,
-        "fb_rate": 0.4694,
-        "z_contact_rate": 0.8469,
-        "sweet_spot_rate": 0.3445,
+        "air_pull_rate": 0.1681,
+        "barrel_rate": 0.0609,
+        "hard_hit_rate": 0.3913,
+        "fb_rate": 0.4684,
+        "z_contact_rate": 0.8457,
+        "sweet_spot_rate": 0.3447,
         "xwobacon": null,
         "ev90": 107.1
       },
@@ -568,12 +568,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1743,
-        "barrel_rate": 0.0803,
-        "hard_hit_rate": 0.3748,
-        "fb_rate": 0.495,
-        "z_contact_rate": 0.8546,
-        "sweet_spot_rate": 0.3633,
+        "air_pull_rate": 0.1758,
+        "barrel_rate": 0.0791,
+        "hard_hit_rate": 0.373,
+        "fb_rate": 0.4939,
+        "z_contact_rate": 0.8534,
+        "sweet_spot_rate": 0.3635,
         "xwobacon": null,
         "ev90": 106.0
       },
@@ -626,12 +626,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.159,
-        "barrel_rate": 0.0803,
-        "hard_hit_rate": 0.4193,
-        "fb_rate": 0.4768,
-        "z_contact_rate": 0.865,
-        "sweet_spot_rate": 0.3451,
+        "air_pull_rate": 0.1604,
+        "barrel_rate": 0.0791,
+        "hard_hit_rate": 0.4174,
+        "fb_rate": 0.4757,
+        "z_contact_rate": 0.8638,
+        "sweet_spot_rate": 0.3454,
         "xwobacon": null,
         "ev90": 108.6
       },
@@ -684,12 +684,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1717,
-        "barrel_rate": 0.0791,
-        "hard_hit_rate": 0.3884,
-        "fb_rate": 0.4862,
-        "z_contact_rate": 0.8356,
-        "sweet_spot_rate": 0.3568,
+        "air_pull_rate": 0.1732,
+        "barrel_rate": 0.0779,
+        "hard_hit_rate": 0.3866,
+        "fb_rate": 0.4851,
+        "z_contact_rate": 0.8344,
+        "sweet_spot_rate": 0.3571,
         "xwobacon": null,
         "ev90": 102.8
       },
@@ -744,12 +744,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1542,
-        "barrel_rate": 0.063,
-        "hard_hit_rate": 0.3589,
-        "fb_rate": 0.4601,
-        "z_contact_rate": 0.8707,
-        "sweet_spot_rate": 0.3154,
+        "air_pull_rate": 0.1556,
+        "barrel_rate": 0.0618,
+        "hard_hit_rate": 0.3571,
+        "fb_rate": 0.459,
+        "z_contact_rate": 0.8695,
+        "sweet_spot_rate": 0.3157,
         "xwobacon": null,
         "ev90": 102.5
       },
@@ -804,12 +804,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1814,
-        "barrel_rate": 0.062,
-        "hard_hit_rate": 0.3306,
-        "fb_rate": 0.5039,
-        "z_contact_rate": 0.8425,
-        "sweet_spot_rate": 0.3617,
+        "air_pull_rate": 0.1828,
+        "barrel_rate": 0.0609,
+        "hard_hit_rate": 0.3288,
+        "fb_rate": 0.5028,
+        "z_contact_rate": 0.8414,
+        "sweet_spot_rate": 0.362,
         "xwobacon": null,
         "ev90": 94.1
       },
@@ -848,9 +848,7 @@
       "role": "Watchlist",
       "tb_score": 50.1,
       "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 100%, Z-contact 86%) \u2014 banks XBH"
-      ],
+      "tb_reasons": [],
       "shape_source": "statcast",
       "pull_fit": false,
       "mix_fit": 0.53,
@@ -866,12 +864,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1691,
-        "barrel_rate": 0.0779,
-        "hard_hit_rate": 0.3802,
-        "fb_rate": 0.4952,
-        "z_contact_rate": 0.8609,
-        "sweet_spot_rate": 0.333,
+        "air_pull_rate": 0.1706,
+        "barrel_rate": 0.0767,
+        "hard_hit_rate": 0.3784,
+        "fb_rate": 0.4941,
+        "z_contact_rate": 0.8596,
+        "sweet_spot_rate": 0.3332,
         "xwobacon": null,
         "ev90": 105.3
       },
@@ -1228,9 +1226,7 @@
       "bats": "R",
       "tb_score": 50.1,
       "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 100%, Z-contact 86%) \u2014 banks XBH"
-      ],
+      "tb_reasons": [],
       "shape_source": "statcast",
       "hr_total": 34.8,
       "hr_role": "Watchlist"
@@ -1405,7 +1401,7 @@
         "High K rate (38%)"
       ],
       "hr9": 0.72,
-      "barrel_allowed": 0.06
+      "barrel_allowed": 0.0589
     },
     {
       "id": 669373,
