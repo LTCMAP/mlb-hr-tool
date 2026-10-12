@@ -1,53 +1,52 @@
 {
   "version": "2.8",
-  "generated_utc": "2026-10-12T01:27:00.600551+00:00",
+  "generated_utc": "2026-10-12T21:49:48.017089+00:00",
   "slate_date": "2026-10-12",
   "games": 2,
-  "confirmed_lineups": 0,
+  "confirmed_lineups": 4,
   "statcast": true,
   "statcast_meta": {
     "window_days": 21,
     "recent_days": 7,
     "start": "2026-09-22",
     "end": "2026-10-12",
-    "days_fetched": 0,
+    "days_fetched": 1,
     "days_cached": 19,
-    "days_failed": 2,
+    "days_failed": 1,
     "source": "mlbapi",
     "days_savant": 0,
-    "days_mlbapi": 16,
+    "days_mlbapi": 17,
     "xwobacon_available": false,
-    "batters": 116,
-    "pitchers": 112,
+    "batters": 120,
+    "pitchers": 116,
     "league": {
-      "barrel_rate": 0.0674,
-      "hard_hit_rate": 0.3701,
-      "fb_rate": 0.4783,
-      "air_pull_rate": 0.1724,
-      "fly_rate": 0.2547,
-      "hr_per_pa": 0.0269,
-      "z_contact": 0.845,
-      "sweet_spot_rate": 0.3377,
+      "barrel_rate": 0.0664,
+      "hard_hit_rate": 0.3732,
+      "fb_rate": 0.4775,
+      "air_pull_rate": 0.1701,
+      "fly_rate": 0.2549,
+      "hr_per_pa": 0.0266,
+      "z_contact": 0.8435,
+      "sweet_spot_rate": 0.3365,
       "air_ev": 92.4,
-      "hr_per_barrel": 0.6058,
-      "bbe_total": 1543
+      "hr_per_barrel": 0.6095,
+      "bbe_total": 1581
     }
   },
   "data_quality": {
     "mode": "statcast",
     "source": "mlbapi",
     "days_savant": 0,
-    "days_mlbapi": 16,
-    "trustworthy": false,
-    "statcast_batters": 116,
-    "statcast_candidates": 20,
-    "confirmed_lineups": 0,
+    "days_mlbapi": 17,
+    "trustworthy": true,
+    "statcast_batters": 120,
+    "statcast_candidates": 23,
+    "confirmed_lineups": 4,
     "games": 2,
-    "days_failed": 2,
+    "days_failed": 1,
     "warnings": [
-      "NO CONFIRMED LINEUPS \u2014 every bat is using a neutral slot default. Likely built before lineups posted; re-run closer to first pitch.",
-      "Statcast: 2 day(s) failed to fetch in the 21-day window (thinner sample).",
-      "Shape built from the MLB Stats API fallback (16/21 days) because Baseball Savant was unreachable. All shape signals are live; xwOBAcon is unavailable (regressed to league prior, ISO backstops it) and barrels are recomputed from EV/LA."
+      "Statcast: 1 day(s) failed to fetch in the 21-day window (thinner sample).",
+      "Shape built from the MLB Stats API fallback (17/21 days) because Baseball Savant was unreachable. All shape signals are live; xwOBAcon is unavailable (regressed to league prior, ISO backstops it) and barrels are recomputed from EV/LA."
     ]
   },
   "method": "v2.6: rank causes \u2192 choose capture \u2192 lock confirmed shape that captures the cause. NEW: zone-damage slot (hard-hit% \u00d7 Z-Contact% \u2014 loud contact that actually meets hittable pitches), xwOBAcon contact quality, and HR-luck pairing (barrels-vs-HR xHR gap \u2192 DUE bats and HR-DUE arms). Also: hardened Savant fetch w/ cache validation, directional wind, EB shrinkage, platoon-split shape, pitch-mix fit + TRAP flags. Weights P25/Shape40(11 air-pull/8 barrel/7 zone-dmg/6 matchup/3 quality/3 recent/2 due)/Env15/Lineup12/Src8. v2.8: dual-source shape \u2014 Baseball Savant with an MLB Stats API play-by-play fallback, so a Savant outage no longer drops the board to proxy. Statcast shape layer active via the MLB Stats API fallback (Savant unreachable) \u2014 xwOBAcon regressed to league prior, barrels recomputed from EV/LA.",
@@ -84,20 +83,6 @@
       "playable_bats": []
     },
     {
-      "team": "Milwaukee Brewers",
-      "opp": "Los Angeles Dodgers",
-      "pitcher": "Yoshinobu Yamamoto",
-      "venue": "American Family Field",
-      "grade": "Pass",
-      "pitcher_cause": 7.5,
-      "park_hr": 106,
-      "cause_score": 9.0,
-      "capture_method": "Watchlist / pass (no clear cause)",
-      "public_heat": false,
-      "n_playable": 0,
-      "playable_bats": []
-    },
-    {
       "team": "Tampa Bay Rays",
       "opp": "Cleveland Guardians",
       "pitcher": "Foster Griffin",
@@ -106,6 +91,20 @@
       "pitcher_cause": 9.5,
       "park_hr": 97,
       "cause_score": 8.8,
+      "capture_method": "Watchlist / pass (no clear cause)",
+      "public_heat": false,
+      "n_playable": 0,
+      "playable_bats": []
+    },
+    {
+      "team": "Milwaukee Brewers",
+      "opp": "Los Angeles Dodgers",
+      "pitcher": "Yoshinobu Yamamoto",
+      "venue": "American Family Field",
+      "grade": "Pass",
+      "pitcher_cause": 6.0,
+      "park_hr": 106,
+      "cause_score": 7.5,
       "capture_method": "Watchlist / pass (no clear cause)",
       "public_heat": false,
       "n_playable": 0,
@@ -128,6 +127,69 @@
   ],
   "candidates": [
     {
+      "id": 518692,
+      "name": "Freddie Freeman",
+      "team": "Los Angeles Dodgers",
+      "bats": "L",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Logan Henderson",
+      "venue": "American Family Field",
+      "gamePk": 849812,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 16,
+      "iso": 0.142,
+      "total": 55.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 62.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)",
+        "Hot (3 barrels last 7d)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": 1.67,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.8,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 21.8,
+        "environment": 10.0,
+        "lineup": 12.0,
+        "confidence": 3.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1648,
+        "barrel_rate": 0.1027,
+        "hard_hit_rate": 0.4152,
+        "fb_rate": 0.4978,
+        "z_contact_rate": 0.8411,
+        "sweet_spot_rate": 0.3418,
+        "xwobacon": null,
+        "ev90": 102.1
+      },
+      "reasons": [
+        "vs Logan Henderson \u2014 cause Pass (8.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
+        "Pitcher: High K rate (30%)",
+        "Above-avg barrels (10%)",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (56% fastballs, rel 2.20 \u2192 mix-fit 1.67x)",
+        "Hitter-friendly park (107)",
+        "Retractable roof (weather neutralized)",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 691406,
       "name": "Junior Caminero",
       "team": "Tampa Bay Rays",
@@ -136,11 +198,11 @@
       "opp_pitcher": "Foster Griffin",
       "venue": "Tropicana Field",
       "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
+      "slot": 3,
+      "confirmed": true,
       "season_hr": 42,
       "iso": 0.248,
-      "total": 49.5,
+      "total": 54.5,
       "tier": "Pass",
       "role": "Pass",
       "tb_score": 62.0,
@@ -160,7 +222,7 @@
         "pitcher": 9.5,
         "hitter": 24.0,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 11.0,
         "confidence": 3.0
       },
       "statcast": null,
@@ -169,113 +231,10 @@
         "Pitcher: Avg+ HR allowed (HR/9 1.32)",
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Dome roof (weather neutralized)"
+        "Dome roof (weather neutralized)",
+        "Heart of order (#3)"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 660271,
-      "name": "Shohei Ohtani",
-      "team": "Los Angeles Dodgers",
-      "bats": "L",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Logan Henderson",
-      "venue": "American Family Field",
-      "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 30,
-      "iso": 0.237,
-      "total": 49.5,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 62.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)",
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 22.0,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Logan Henderson \u2014 cause Pass (8.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
-        "Pitcher: High K rate (30%)",
-        "Proxy: strong HR rate",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hitter-friendly park (107)",
-        "Retractable roof (weather neutralized)"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": []
-    },
-    {
-      "id": 571970,
-      "name": "Max Muncy",
-      "team": "Los Angeles Dodgers",
-      "bats": "L",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Logan Henderson",
-      "venue": "American Family Field",
-      "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 29,
-      "iso": 0.238,
-      "total": 49.5,
-      "tier": "Pass",
-      "role": "Pass",
-      "tb_score": 59.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)",
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 22.0,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Logan Henderson \u2014 cause Pass (8.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
-        "Pitcher: High K rate (30%)",
-        "Proxy: strong HR rate",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hitter-friendly park (107)",
-        "Retractable roof (weather neutralized)"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": []
     },
     {
@@ -294,7 +253,7 @@
       "total": 49.5,
       "tier": "Pass",
       "role": "Pass",
-      "tb_score": 55.5,
+      "tb_score": 57.5,
       "tb_tier": "Dart",
       "tb_reasons": [
         "Platoon edge (L vs RHP)",
@@ -330,130 +289,6 @@
       "role_notes": []
     },
     {
-      "id": 518692,
-      "name": "Freddie Freeman",
-      "team": "Los Angeles Dodgers",
-      "bats": "L",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Logan Henderson",
-      "venue": "American Family Field",
-      "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.142,
-      "total": 49.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 54.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)",
-        "Hot (3 barrels last 7d)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": true,
-      "mix_fit": 1.67,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.8,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 21.8,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 3.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1745,
-        "barrel_rate": 0.1084,
-        "hard_hit_rate": 0.4179,
-        "fb_rate": 0.5075,
-        "z_contact_rate": 0.8408,
-        "sweet_spot_rate": 0.3434,
-        "xwobacon": null,
-        "ev90": 102.6
-      },
-      "reasons": [
-        "vs Logan Henderson \u2014 cause Pass (8.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
-        "Pitcher: High K rate (30%)",
-        "Above-avg barrels (11%)",
-        "Platoon edge (L vs RHP)",
-        "Pitch-mix fit: damages this arsenal (56% fastballs, rel 2.20 \u2192 mix-fit 1.67x)",
-        "Hitter-friendly park (107)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 641343,
-      "name": "Jake Bauers",
-      "team": "Milwaukee Brewers",
-      "bats": "L",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Yoshinobu Yamamoto",
-      "venue": "American Family Field",
-      "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 26,
-      "iso": 0.218,
-      "total": 43.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 54.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 1.62,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.6,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 18.2,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1745,
-        "barrel_rate": 0.0776,
-        "hard_hit_rate": 0.3734,
-        "fb_rate": 0.4894,
-        "z_contact_rate": 0.8529,
-        "sweet_spot_rate": 0.3615,
-        "xwobacon": null,
-        "ev90": 106.0
-      },
-      "reasons": [
-        "vs Yoshinobu Yamamoto \u2014 cause Pass (7.5/25)",
-        "Platoon edge (L vs RHP)",
-        "Pitch-mix fit: damages this arsenal (52% fastballs, rel 2.20 \u2192 mix-fit 1.62x)",
-        "Hitter-friendly park (107)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 608070,
       "name": "Jos\u00e9 Ram\u00edrez",
       "team": "Cleveland Guardians",
@@ -462,14 +297,14 @@
       "opp_pitcher": "Drew Rasmussen",
       "venue": "Tropicana Field",
       "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
+      "slot": 2,
+      "confirmed": true,
       "season_hr": 12,
       "iso": 0.133,
-      "total": 43.2,
+      "total": 49.2,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 53.0,
+      "tb_score": 58.0,
       "tb_tier": "Dart",
       "tb_reasons": [
         "High-contact bat (contact 86%, Z-contact 88%) \u2014 banks XBH"
@@ -485,16 +320,16 @@
         "pitcher": 6.0,
         "hitter": 21.2,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 12.0,
         "confidence": 3.0
       },
       "statcast": {
-        "air_pull_rate": 0.1938,
-        "barrel_rate": 0.0682,
-        "hard_hit_rate": 0.4223,
-        "fb_rate": 0.5143,
-        "z_contact_rate": 0.8776,
-        "sweet_spot_rate": 0.3576,
+        "air_pull_rate": 0.192,
+        "barrel_rate": 0.0673,
+        "hard_hit_rate": 0.4246,
+        "fb_rate": 0.5137,
+        "z_contact_rate": 0.8764,
+        "sweet_spot_rate": 0.3566,
         "xwobacon": null,
         "ev90": 106.6
       },
@@ -504,11 +339,583 @@
         "Good air-pull (19%)",
         "Hot (2 HR / 1 barrels last 7d)",
         "Dome roof (weather neutralized)",
+        "Top of order (#2)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 660271,
+      "name": "Shohei Ohtani",
+      "team": "Los Angeles Dodgers",
+      "bats": "L",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Logan Henderson",
+      "venue": "American Family Field",
+      "gamePk": 849812,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 30,
+      "iso": 0.237,
+      "total": 48.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 48.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
       ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 16.8,
+        "environment": 10.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1546,
+        "barrel_rate": 0.0604,
+        "hard_hit_rate": 0.3897,
+        "fb_rate": 0.4621,
+        "z_contact_rate": 0.8348,
+        "sweet_spot_rate": 0.3183,
+        "xwobacon": null,
+        "ev90": 104.1
+      },
+      "reasons": [
+        "vs Logan Henderson \u2014 cause Pass (8.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
+        "Pitcher: High K rate (30%)",
+        "Platoon edge (L vs RHP)",
+        "Hitter-friendly park (107)",
+        "Retractable roof (weather neutralized)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 571970,
+      "name": "Max Muncy",
+      "team": "Los Angeles Dodgers",
+      "bats": "L",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Logan Henderson",
+      "venue": "American Family Field",
+      "gamePk": 849812,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 29,
+      "iso": 0.238,
+      "total": 47.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 52.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": true,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.6,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 19.2,
+        "environment": 10.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.2032,
+        "barrel_rate": 0.0767,
+        "hard_hit_rate": 0.3984,
+        "fb_rate": 0.4886,
+        "z_contact_rate": 0.823,
+        "sweet_spot_rate": 0.3423,
+        "xwobacon": null,
+        "ev90": 106.2
+      },
+      "reasons": [
+        "vs Logan Henderson \u2014 cause Pass (8.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
+        "Pitcher: High K rate (30%)",
+        "Good air-pull (20%)",
+        "Platoon edge (L vs RHP)",
+        "Hitter-friendly park (107)",
+        "Retractable roof (weather neutralized)",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 641343,
+      "name": "Jake Bauers",
+      "team": "Milwaukee Brewers",
+      "bats": "L",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Yoshinobu Yamamoto",
+      "venue": "American Family Field",
+      "gamePk": 849812,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 26,
+      "iso": 0.218,
+      "total": 47.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 59.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.62,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.6,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.0,
+        "hitter": 18.2,
+        "environment": 10.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1849,
+        "barrel_rate": 0.0755,
+        "hard_hit_rate": 0.3897,
+        "fb_rate": 0.4978,
+        "z_contact_rate": 0.8481,
+        "sweet_spot_rate": 0.3719,
+        "xwobacon": null,
+        "ev90": 105.8
+      },
+      "reasons": [
+        "vs Yoshinobu Yamamoto \u2014 cause Pass (6.0/25)",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (52% fastballs, rel 2.20 \u2192 mix-fit 1.62x)",
+        "Hitter-friendly park (107)",
+        "Retractable roof (weather neutralized)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 668930,
+      "name": "Brice Turang",
+      "team": "Milwaukee Brewers",
+      "bats": "L",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Yoshinobu Yamamoto",
+      "venue": "American Family Field",
+      "gamePk": 849812,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 21,
+      "iso": 0.182,
+      "total": 46.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 63.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 95%, Z-contact 86%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 1.52,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.4,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.0,
+        "hitter": 16.5,
+        "environment": 10.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1458,
+        "barrel_rate": 0.0712,
+        "hard_hit_rate": 0.3786,
+        "fb_rate": 0.4479,
+        "z_contact_rate": 0.8615,
+        "sweet_spot_rate": 0.3138,
+        "xwobacon": null,
+        "ev90": 102.8
+      },
+      "reasons": [
+        "vs Yoshinobu Yamamoto \u2014 cause Pass (6.0/25)",
+        "Platoon edge (L vs RHP)",
+        "Pitch-mix fit: damages this arsenal (52% fastballs, rel 2.01 \u2192 mix-fit 1.52x)",
+        "Hitter-friendly park (107)",
+        "Retractable roof (weather neutralized)",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 666176,
+      "name": "Jo Adell",
+      "team": "Cleveland Guardians",
+      "bats": "R",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Drew Rasmussen",
+      "venue": "Tropicana Field",
+      "gamePk": 849820,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 23,
+      "iso": 0.161,
+      "total": 43.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 42.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.8,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.0,
+        "hitter": 17.5,
+        "environment": 7.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1535,
+        "barrel_rate": 0.0957,
+        "hard_hit_rate": 0.4137,
+        "fb_rate": 0.4742,
+        "z_contact_rate": 0.7886,
+        "sweet_spot_rate": 0.3306,
+        "xwobacon": null,
+        "ev90": 108.3
+      },
+      "reasons": [
+        "vs Drew Rasmussen \u2014 cause Pass (6.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.73)",
+        "Above-avg barrels (10%)",
+        "Dome roof (weather neutralized)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 668723,
+      "name": "Ryan Vilade",
+      "team": "Tampa Bay Rays",
+      "bats": "R",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Foster Griffin",
+      "venue": "Tropicana Field",
+      "gamePk": 849820,
+      "slot": 4,
+      "confirmed": true,
+      "season_hr": 11,
+      "iso": 0.184,
+      "total": 43.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 51.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 9.5,
+        "hitter": 14.0,
+        "environment": 7.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Foster Griffin \u2014 cause Pass (9.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.32)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Dome roof (weather neutralized)",
+        "Heart of order (#4)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 606192,
+      "name": "Teoscar Hern\u00e1ndez",
+      "team": "Los Angeles Dodgers",
+      "bats": "R",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Logan Henderson",
+      "venue": "American Family Field",
+      "gamePk": 849812,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 16,
+      "iso": 0.158,
+      "total": 43.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 54.4,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.61,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.6,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 11.8,
+        "environment": 10.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1601,
+        "barrel_rate": 0.0712,
+        "hard_hit_rate": 0.3786,
+        "fb_rate": 0.4979,
+        "z_contact_rate": 0.8516,
+        "sweet_spot_rate": 0.3471,
+        "xwobacon": null,
+        "ev90": 103.7
+      },
+      "reasons": [
+        "vs Logan Henderson \u2014 cause Pass (8.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
+        "Pitcher: High K rate (30%)",
+        "Poor pitch-mix fit (56% fastballs, rel 0.30 \u2192 mix-fit 0.61x)",
+        "Hitter-friendly park (105)",
+        "Retractable roof (weather neutralized)",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 605141,
+      "name": "Mookie Betts",
+      "team": "Los Angeles Dodgers",
+      "bats": "R",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Logan Henderson",
+      "venue": "American Family Field",
+      "gamePk": 849812,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 23,
+      "iso": 0.197,
+      "total": 42.6,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 54.9,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 88%, Z-contact 88%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.61,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 10.1,
+        "environment": 10.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1501,
+        "barrel_rate": 0.0586,
+        "hard_hit_rate": 0.3943,
+        "fb_rate": 0.4634,
+        "z_contact_rate": 0.8763,
+        "sweet_spot_rate": 0.3073,
+        "xwobacon": null,
+        "ev90": 98.0
+      },
+      "reasons": [
+        "vs Logan Henderson \u2014 cause Pass (8.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
+        "Pitcher: High K rate (30%)",
+        "Poor pitch-mix fit (56% fastballs, rel 0.30 \u2192 mix-fit 0.61x)",
+        "Hitter-friendly park (105)",
+        "Retractable roof (weather neutralized)",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 676356,
+      "name": "Jonny DeLuca",
+      "team": "Tampa Bay Rays",
+      "bats": "R",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Foster Griffin",
+      "venue": "Tropicana Field",
+      "gamePk": 849820,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 11,
+      "iso": 0.163,
+      "total": 42.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 46.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -1.4,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 9.5,
+        "hitter": 16.0,
+        "environment": 7.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1698,
+        "barrel_rate": 0.0755,
+        "hard_hit_rate": 0.368,
+        "fb_rate": 0.4621,
+        "z_contact_rate": 0.8677,
+        "sweet_spot_rate": 0.3362,
+        "xwobacon": null,
+        "ev90": 100.1
+      },
+      "reasons": [
+        "vs Foster Griffin \u2014 cause Pass (9.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.32)",
+        "Platoon edge (R vs LHP)",
+        "Dome roof (weather neutralized)",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 669257,
+      "name": "Will Smith",
+      "team": "Los Angeles Dodgers",
+      "bats": "R",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Logan Henderson",
+      "venue": "American Family Field",
+      "gamePk": 849812,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 10,
+      "iso": 0.166,
+      "total": 42.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 48.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 14.0,
+        "environment": 10.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Logan Henderson \u2014 cause Pass (8.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
+        "Pitcher: High K rate (30%)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Hitter-friendly park (105)",
+        "Retractable roof (weather neutralized)",
+        "Mid order (#5)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -522,15 +929,15 @@
       "opp_pitcher": "Yoshinobu Yamamoto",
       "venue": "American Family Field",
       "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "season_hr": 11,
       "iso": 0.154,
-      "total": 42.3,
+      "total": 42.2,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 55.5,
-      "tb_tier": "Dart",
+      "tb_score": 46.5,
+      "tb_tier": "Pass",
       "tb_reasons": [
         "Platoon edge (L vs RHP)"
       ],
@@ -542,32 +949,300 @@
       "due_hr": 0.6,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 16.8,
+        "pitcher": 6.0,
+        "hitter": 16.2,
         "environment": 10.0,
-        "lineup": 6.0,
+        "lineup": 8.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1591,
-        "barrel_rate": 0.0776,
-        "hard_hit_rate": 0.4179,
-        "fb_rate": 0.4712,
-        "z_contact_rate": 0.8632,
-        "sweet_spot_rate": 0.3434,
+        "air_pull_rate": 0.1523,
+        "barrel_rate": 0.0744,
+        "hard_hit_rate": 0.424,
+        "fb_rate": 0.4539,
+        "z_contact_rate": 0.8396,
+        "sweet_spot_rate": 0.3303,
         "xwobacon": null,
-        "ev90": 108.6
+        "ev90": 107.9
       },
       "reasons": [
-        "vs Yoshinobu Yamamoto \u2014 cause Pass (7.5/25)",
+        "vs Yoshinobu Yamamoto \u2014 cause Pass (6.0/25)",
         "Platoon edge (L vs RHP)",
         "Hitter-friendly park (107)",
         "Retractable roof (weather neutralized)",
+        "Mid order (#6)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 666018,
+      "name": "Jonathan Aranda",
+      "team": "Tampa Bay Rays",
+      "bats": "L",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Foster Griffin",
+      "venue": "Tropicana Field",
+      "gamePk": 849820,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 22,
+      "iso": 0.16,
+      "total": 41.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 50.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 9.5,
+        "hitter": 11.0,
+        "environment": 7.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Foster Griffin \u2014 cause Pass (9.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.32)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Dome roof (weather neutralized)",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 650490,
+      "name": "Yandy D\u00edaz",
+      "team": "Tampa Bay Rays",
+      "bats": "R",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Foster Griffin",
+      "venue": "Tropicana Field",
+      "gamePk": 849820,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 22,
+      "iso": 0.153,
+      "total": 41.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 58.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 9.5,
+        "hitter": 11.0,
+        "environment": 7.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Foster Griffin \u2014 cause Pass (9.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.32)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Dome roof (weather neutralized)",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 694192,
+      "name": "Jackson Chourio",
+      "team": "Milwaukee Brewers",
+      "bats": "R",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Yoshinobu Yamamoto",
+      "venue": "American Family Field",
+      "gamePk": 849812,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 25,
+      "iso": 0.196,
+      "total": 41.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 55.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.5,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.0,
+        "hitter": 11.0,
+        "environment": 10.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1578,
+        "barrel_rate": 0.0561,
+        "hard_hit_rate": 0.4104,
+        "fb_rate": 0.457,
+        "z_contact_rate": 0.8481,
+        "sweet_spot_rate": 0.3414,
+        "xwobacon": null,
+        "ev90": 106.1
+      },
+      "reasons": [
+        "vs Yoshinobu Yamamoto \u2014 cause Pass (6.0/25)",
+        "Poor pitch-mix fit (52% fastballs, rel 0.30 \u2192 mix-fit 0.50x)",
+        "Hitter-friendly park (105)",
+        "Retractable roof (weather neutralized)",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 683748,
+      "name": "Victor Mesa Jr.",
+      "team": "Tampa Bay Rays",
+      "bats": "L",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Foster Griffin",
+      "venue": "Tropicana Field",
+      "gamePk": 849820,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 14,
+      "iso": 0.238,
+      "total": 40.7,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 53.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 9.5,
+        "hitter": 14.2,
+        "environment": 7.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1724,
+        "barrel_rate": 0.0613,
+        "hard_hit_rate": 0.3984,
+        "fb_rate": 0.4523,
+        "z_contact_rate": 0.8557,
+        "sweet_spot_rate": 0.3241,
+        "xwobacon": null,
+        "ev90": 102.6
+      },
+      "reasons": [
+        "vs Foster Griffin \u2014 cause Pass (9.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.32)",
+        "Dome roof (weather neutralized)",
+        "Mid order (#5)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 683953,
+      "name": "Travis Bazzana",
+      "team": "Cleveland Guardians",
+      "bats": "L",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Drew Rasmussen",
+      "venue": "Tropicana Field",
+      "gamePk": 849820,
+      "slot": 6,
+      "confirmed": true,
+      "season_hr": 15,
+      "iso": 0.163,
+      "total": 40.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 56.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 90%, Z-contact 89%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.6,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.0,
+        "hitter": 17.0,
+        "environment": 7.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1738,
+        "barrel_rate": 0.0656,
+        "hard_hit_rate": 0.3559,
+        "fb_rate": 0.4981,
+        "z_contact_rate": 0.8871,
+        "sweet_spot_rate": 0.361,
+        "xwobacon": null,
+        "ev90": 101.6
+      },
+      "reasons": [
+        "vs Drew Rasmussen \u2014 cause Pass (6.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.73)",
+        "Platoon edge (L vs RHP)",
+        "Dome roof (weather neutralized)",
+        "Mid order (#6)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -585,168 +1260,7 @@
       "confirmed": false,
       "season_hr": 12,
       "iso": 0.213,
-      "total": 41.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 41.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 16.0,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Yoshinobu Yamamoto \u2014 cause Pass (7.5/25)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hitter-friendly park (105)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 605141,
-      "name": "Mookie Betts",
-      "team": "Los Angeles Dodgers",
-      "bats": "R",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Logan Henderson",
-      "venue": "American Family Field",
-      "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 23,
-      "iso": 0.197,
-      "total": 40.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 47.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 14.0,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Logan Henderson \u2014 cause Pass (8.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
-        "Pitcher: High K rate (30%)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hitter-friendly park (105)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 676356,
-      "name": "Jonny DeLuca",
-      "team": "Tampa Bay Rays",
-      "bats": "R",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": "Foster Griffin",
-      "venue": "Tropicana Field",
-      "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.163,
-      "total": 40.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 45.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": -1.4,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 9.5,
-        "hitter": 16.0,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1719,
-        "barrel_rate": 0.0764,
-        "hard_hit_rate": 0.3653,
-        "fb_rate": 0.4628,
-        "z_contact_rate": 0.869,
-        "sweet_spot_rate": 0.3372,
-        "xwobacon": null,
-        "ev90": 100.1
-      },
-      "reasons": [
-        "vs Foster Griffin \u2014 cause Pass (9.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.32)",
-        "Platoon edge (R vs LHP)",
-        "Dome roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 669257,
-      "name": "Will Smith",
-      "team": "Los Angeles Dodgers",
-      "bats": "R",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Logan Henderson",
-      "venue": "American Family Field",
-      "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 10,
-      "iso": 0.166,
-      "total": 40.5,
+      "total": 40.0,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 43.0,
@@ -762,17 +1276,15 @@
       "due_hr": null,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 14.0,
+        "pitcher": 6.0,
+        "hitter": 16.0,
         "environment": 10.0,
         "lineup": 6.0,
         "confidence": 2.0
       },
       "statcast": null,
       "reasons": [
-        "vs Logan Henderson \u2014 cause Pass (8.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
-        "Pitcher: High K rate (30%)",
+        "vs Yoshinobu Yamamoto \u2014 cause Pass (6.0/25)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Hitter-friendly park (105)",
         "Retractable roof (weather neutralized)",
@@ -781,6 +1293,64 @@
       "warnings": [
         "Lineup not confirmed"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 663993,
+      "name": "Nathaniel Lowe",
+      "team": "Cleveland Guardians",
+      "bats": "L",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Drew Rasmussen",
+      "venue": "Tropicana Field",
+      "gamePk": 849820,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 17,
+      "iso": 0.192,
+      "total": 37.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 56.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.0,
+        "hitter": 14.5,
+        "environment": 7.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1585,
+        "barrel_rate": 0.0517,
+        "hard_hit_rate": 0.3847,
+        "fb_rate": 0.4757,
+        "z_contact_rate": 0.8478,
+        "sweet_spot_rate": 0.3407,
+        "xwobacon": null,
+        "ev90": 104.0
+      },
+      "reasons": [
+        "vs Drew Rasmussen \u2014 cause Pass (6.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.73)",
+        "Platoon edge (L vs RHP)",
+        "Dome roof (weather neutralized)",
+        "Mid order (#5)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -794,37 +1364,37 @@
       "opp_pitcher": "Logan Henderson",
       "venue": "American Family Field",
       "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "season_hr": 23,
       "iso": 0.194,
-      "total": 40.0,
+      "total": 37.1,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 42.0,
+      "tb_score": 39.9,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
       "pull_fit": false,
-      "mix_fit": null,
+      "mix_fit": 0.61,
       "fit_tag": null,
       "value_play": false,
       "due_hr": -0.4,
       "pitcher_grade": "Pass",
       "breakdown": {
         "pitcher": 8.5,
-        "hitter": 13.5,
+        "hitter": 11.6,
         "environment": 10.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1719,
-        "barrel_rate": 0.0764,
-        "hard_hit_rate": 0.387,
-        "fb_rate": 0.4806,
-        "z_contact_rate": 0.8338,
-        "sweet_spot_rate": 0.3551,
+        "air_pull_rate": 0.1769,
+        "barrel_rate": 0.0722,
+        "hard_hit_rate": 0.3863,
+        "fb_rate": 0.4894,
+        "z_contact_rate": 0.8166,
+        "sweet_spot_rate": 0.353,
         "xwobacon": null,
         "ev90": 102.8
       },
@@ -832,211 +1402,37 @@
         "vs Logan Henderson \u2014 cause Pass (8.5/25)",
         "Pitcher: Avg+ HR allowed (HR/9 1.28)",
         "Pitcher: High K rate (30%)",
+        "Poor pitch-mix fit (56% fastballs, rel 0.30 \u2192 mix-fit 0.61x)",
         "Hitter-friendly park (105)",
         "Retractable roof (weather neutralized)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#7)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
     },
     {
-      "id": 668930,
-      "name": "Brice Turang",
+      "id": 661388,
+      "name": "William Contreras",
       "team": "Milwaukee Brewers",
-      "bats": "L",
+      "bats": "R",
       "opp": "Los Angeles Dodgers",
       "opp_pitcher": "Yoshinobu Yamamoto",
       "venue": "American Family Field",
       "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 21,
-      "iso": 0.182,
-      "total": 39.7,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 18,
+      "iso": 0.147,
+      "total": 37.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 52.6,
+      "tb_score": 53.0,
       "tb_tier": "Dart",
       "tb_reasons": [
-        "High-contact bat (contact 100%, Z-contact 87%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.64,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 14.2,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1544,
-        "barrel_rate": 0.0604,
-        "hard_hit_rate": 0.3575,
-        "fb_rate": 0.4546,
-        "z_contact_rate": 0.869,
-        "sweet_spot_rate": 0.3138,
-        "xwobacon": null,
-        "ev90": 102.5
-      },
-      "reasons": [
-        "vs Yoshinobu Yamamoto \u2014 cause Pass (7.5/25)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (52% fastballs, rel 0.30 \u2192 mix-fit 0.64x)",
-        "Hitter-friendly park (107)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 683748,
-      "name": "Victor Mesa Jr.",
-      "team": "Tampa Bay Rays",
-      "bats": "L",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": "Foster Griffin",
-      "venue": "Tropicana Field",
-      "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 14,
-      "iso": 0.238,
-      "total": 38.7,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 49.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 9.5,
-        "hitter": 14.2,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1745,
-        "barrel_rate": 0.0622,
-        "hard_hit_rate": 0.3956,
-        "fb_rate": 0.453,
-        "z_contact_rate": 0.8569,
-        "sweet_spot_rate": 0.3252,
-        "xwobacon": null,
-        "ev90": 102.6
-      },
-      "reasons": [
-        "vs Foster Griffin \u2014 cause Pass (9.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.32)",
-        "Dome roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 666176,
-      "name": "Jo Adell",
-      "team": "Cleveland Guardians",
-      "bats": "R",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Drew Rasmussen",
-      "venue": "Tropicana Field",
-      "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 23,
-      "iso": 0.161,
-      "total": 38.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 38.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.8,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.0,
-        "hitter": 17.5,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1554,
-        "barrel_rate": 0.0965,
-        "hard_hit_rate": 0.4114,
-        "fb_rate": 0.4748,
-        "z_contact_rate": 0.7897,
-        "sweet_spot_rate": 0.3315,
-        "xwobacon": null,
-        "ev90": 108.3
-      },
-      "reasons": [
-        "vs Drew Rasmussen \u2014 cause Pass (6.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.73)",
-        "Above-avg barrels (10%)",
-        "Dome roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 668723,
-      "name": "Ryan Vilade",
-      "team": "Tampa Bay Rays",
-      "bats": "R",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": "Foster Griffin",
-      "venue": "Tropicana Field",
-      "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.184,
-      "total": 38.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 47.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)",
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
@@ -1047,106 +1443,46 @@
       "due_hr": null,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 9.5,
-        "hitter": 14.0,
-        "environment": 7.0,
-        "lineup": 6.0,
+        "pitcher": 6.0,
+        "hitter": 8.0,
+        "environment": 10.0,
+        "lineup": 11.0,
         "confidence": 2.0
       },
       "statcast": null,
       "reasons": [
-        "vs Foster Griffin \u2014 cause Pass (9.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.32)",
+        "vs Yoshinobu Yamamoto \u2014 cause Pass (6.0/25)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Dome roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 606192,
-      "name": "Teoscar Hern\u00e1ndez",
-      "team": "Los Angeles Dodgers",
-      "bats": "R",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Logan Henderson",
-      "venue": "American Family Field",
-      "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.158,
-      "total": 38.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 50.4,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.61,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.6,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 11.8,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1693,
-        "barrel_rate": 0.0753,
-        "hard_hit_rate": 0.3788,
-        "fb_rate": 0.4897,
-        "z_contact_rate": 0.8591,
-        "sweet_spot_rate": 0.3313,
-        "xwobacon": null,
-        "ev90": 105.3
-      },
-      "reasons": [
-        "vs Logan Henderson \u2014 cause Pass (8.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
-        "Pitcher: High K rate (30%)",
-        "Poor pitch-mix fit (56% fastballs, rel 0.30 \u2192 mix-fit 0.61x)",
         "Hitter-friendly park (105)",
         "Retractable roof (weather neutralized)",
+        "Heart of order (#3)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
     },
     {
-      "id": 683953,
-      "name": "Travis Bazzana",
+      "id": 800050,
+      "name": "Chase DeLauter",
       "team": "Cleveland Guardians",
       "bats": "L",
       "opp": "Tampa Bay Rays",
       "opp_pitcher": "Drew Rasmussen",
       "venue": "Tropicana Field",
       "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 15,
-      "iso": 0.163,
-      "total": 38.0,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 16,
+      "iso": 0.17,
+      "total": 37.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 55.5,
+      "tb_score": 53.0,
       "tb_tier": "Dart",
       "tb_reasons": [
-        "High-contact bat (contact 90%, Z-contact 89%) \u2014 banks XBH",
+        "High-contact bat (contact 88%, Z-contact 87%) \u2014 banks XBH",
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
@@ -1154,153 +1490,34 @@
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 0.6,
+      "due_hr": 0.0,
       "pitcher_grade": "Pass",
       "breakdown": {
         "pitcher": 6.0,
-        "hitter": 17.0,
+        "hitter": 11.0,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 11.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1756,
-        "barrel_rate": 0.0664,
-        "hard_hit_rate": 0.3536,
-        "fb_rate": 0.4987,
-        "z_contact_rate": 0.8881,
-        "sweet_spot_rate": 0.3619,
+        "air_pull_rate": 0.1401,
+        "barrel_rate": 0.0498,
+        "hard_hit_rate": 0.3988,
+        "fb_rate": 0.4411,
+        "z_contact_rate": 0.8653,
+        "sweet_spot_rate": 0.3118,
         "xwobacon": null,
-        "ev90": 101.6
+        "ev90": 109.2
       },
       "reasons": [
         "vs Drew Rasmussen \u2014 cause Pass (6.0/25)",
         "Pitcher: Suppresses HR (HR/9 0.73)",
         "Platoon edge (L vs RHP)",
         "Dome roof (weather neutralized)",
+        "Heart of order (#3)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 694192,
-      "name": "Jackson Chourio",
-      "team": "Milwaukee Brewers",
-      "bats": "R",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Yoshinobu Yamamoto",
-      "venue": "American Family Field",
-      "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 25,
-      "iso": 0.196,
-      "total": 37.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 12.0,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1668,
-        "barrel_rate": 0.0595,
-        "hard_hit_rate": 0.3917,
-        "fb_rate": 0.4641,
-        "z_contact_rate": 0.8452,
-        "sweet_spot_rate": 0.3428,
-        "xwobacon": null,
-        "ev90": 107.1
-      },
-      "reasons": [
-        "vs Yoshinobu Yamamoto \u2014 cause Pass (7.5/25)",
-        "Hitter-friendly park (105)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 663656,
-      "name": "Kyle Tucker",
-      "team": "Los Angeles Dodgers",
-      "bats": "L",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Logan Henderson",
-      "venue": "American Family Field",
-      "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.152,
-      "total": 37.3,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 46.9,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": 0.61,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 8.5,
-        "hitter": 10.8,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1815,
-        "barrel_rate": 0.0595,
-        "hard_hit_rate": 0.3292,
-        "fb_rate": 0.4985,
-        "z_contact_rate": 0.8408,
-        "sweet_spot_rate": 0.3601,
-        "xwobacon": null,
-        "ev90": 94.1
-      },
-      "reasons": [
-        "vs Logan Henderson \u2014 cause Pass (8.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
-        "Pitcher: High K rate (30%)",
-        "Platoon edge (L vs RHP)",
-        "Poor pitch-mix fit (56% fastballs, rel 0.30 \u2192 mix-fit 0.61x)",
-        "Hitter-friendly park (107)",
-        "Retractable roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -1321,7 +1538,7 @@
       "total": 36.3,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 45.0,
+      "tb_score": 46.0,
       "tb_tier": "Pass",
       "tb_reasons": [
         "High-contact bat (contact 90%, Z-contact 86%) \u2014 banks XBH"
@@ -1341,12 +1558,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.187,
-        "barrel_rate": 0.0613,
-        "hard_hit_rate": 0.3436,
-        "fb_rate": 0.4985,
-        "z_contact_rate": 0.8632,
-        "sweet_spot_rate": 0.3551,
+        "air_pull_rate": 0.1849,
+        "barrel_rate": 0.0604,
+        "hard_hit_rate": 0.3463,
+        "fb_rate": 0.4978,
+        "z_contact_rate": 0.8619,
+        "sweet_spot_rate": 0.354,
         "xwobacon": null,
         "ev90": 95.4
       },
@@ -1358,6 +1575,68 @@
       ],
       "warnings": [
         "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 663656,
+      "name": "Kyle Tucker",
+      "team": "Los Angeles Dodgers",
+      "bats": "L",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Logan Henderson",
+      "venue": "American Family Field",
+      "gamePk": 849812,
+      "slot": 8,
+      "confirmed": true,
+      "season_hr": 17,
+      "iso": 0.152,
+      "total": 36.3,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 46.9,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": 0.61,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 8.5,
+        "hitter": 10.8,
+        "environment": 10.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1795,
+        "barrel_rate": 0.0586,
+        "hard_hit_rate": 0.3318,
+        "fb_rate": 0.4978,
+        "z_contact_rate": 0.8305,
+        "sweet_spot_rate": 0.3591,
+        "xwobacon": null,
+        "ev90": 94.1
+      },
+      "reasons": [
+        "vs Logan Henderson \u2014 cause Pass (8.5/25)",
+        "Pitcher: Avg+ HR allowed (HR/9 1.28)",
+        "Pitcher: High K rate (30%)",
+        "Platoon edge (L vs RHP)",
+        "Poor pitch-mix fit (56% fastballs, rel 0.30 \u2192 mix-fit 0.61x)",
+        "Hitter-friendly park (107)",
+        "Retractable roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Bottom of order (#8)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -1379,11 +1658,9 @@
       "total": 36.3,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 43.5,
+      "tb_score": 44.5,
       "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 93%, Z-contact 86%) \u2014 banks XBH"
-      ],
+      "tb_reasons": [],
       "shape_source": "statcast",
       "pull_fit": false,
       "mix_fit": null,
@@ -1399,12 +1676,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1719,
-        "barrel_rate": 0.0613,
-        "hard_hit_rate": 0.3218,
-        "fb_rate": 0.4628,
-        "z_contact_rate": 0.8612,
-        "sweet_spot_rate": 0.3194,
+        "air_pull_rate": 0.1698,
+        "barrel_rate": 0.0604,
+        "hard_hit_rate": 0.3245,
+        "fb_rate": 0.4621,
+        "z_contact_rate": 0.8599,
+        "sweet_spot_rate": 0.3183,
         "xwobacon": null,
         "ev90": 92.2
       },
@@ -1430,14 +1707,14 @@
       "opp_pitcher": "Drew Rasmussen",
       "venue": "Tropicana Field",
       "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
+      "slot": 7,
+      "confirmed": true,
       "season_hr": 10,
       "iso": 0.129,
-      "total": 35.8,
+      "total": 34.8,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 48.5,
+      "tb_score": 49.5,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
@@ -1451,16 +1728,16 @@
         "pitcher": 6.0,
         "hitter": 14.8,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1691,
-        "barrel_rate": 0.0828,
-        "hard_hit_rate": 0.3925,
-        "fb_rate": 0.4907,
-        "z_contact_rate": 0.8481,
-        "sweet_spot_rate": 0.3474,
+        "air_pull_rate": 0.1672,
+        "barrel_rate": 0.082,
+        "hard_hit_rate": 0.3949,
+        "fb_rate": 0.4901,
+        "z_contact_rate": 0.847,
+        "sweet_spot_rate": 0.3464,
         "xwobacon": null,
         "ev90": 103.4
       },
@@ -1471,167 +1748,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 666018,
-      "name": "Jonathan Aranda",
-      "team": "Tampa Bay Rays",
-      "bats": "L",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": "Foster Griffin",
-      "venue": "Tropicana Field",
-      "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 22,
-      "iso": 0.16,
-      "total": 35.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 45.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 9.5,
-        "hitter": 11.0,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Foster Griffin \u2014 cause Pass (9.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.32)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Dome roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 650490,
-      "name": "Yandy D\u00edaz",
-      "team": "Tampa Bay Rays",
-      "bats": "R",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": "Foster Griffin",
-      "venue": "Tropicana Field",
-      "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 22,
-      "iso": 0.153,
-      "total": 35.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 53.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)",
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 9.5,
-        "hitter": 11.0,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Foster Griffin \u2014 cause Pass (9.5/25)",
-        "Pitcher: Avg+ HR allowed (HR/9 1.32)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Dome roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 663993,
-      "name": "Nathaniel Lowe",
-      "team": "Cleveland Guardians",
-      "bats": "L",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Drew Rasmussen",
-      "venue": "Tropicana Field",
-      "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.192,
-      "total": 35.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 52.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.0,
-        "hitter": 14.5,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1603,
-        "barrel_rate": 0.0525,
-        "hard_hit_rate": 0.3825,
-        "fb_rate": 0.4763,
-        "z_contact_rate": 0.8488,
-        "sweet_spot_rate": 0.3416,
-        "xwobacon": null,
-        "ev90": 104.0
-      },
-      "reasons": [
-        "vs Drew Rasmussen \u2014 cause Pass (6.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.73)",
-        "Platoon edge (L vs RHP)",
-        "Dome roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#7)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -1653,7 +1770,7 @@
       "total": 34.2,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 44.5,
+      "tb_score": 45.5,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
@@ -1671,12 +1788,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1763,
-        "barrel_rate": 0.0578,
-        "hard_hit_rate": 0.3361,
-        "fb_rate": 0.4819,
-        "z_contact_rate": 0.8481,
-        "sweet_spot_rate": 0.3148,
+        "air_pull_rate": 0.1744,
+        "barrel_rate": 0.0569,
+        "hard_hit_rate": 0.3386,
+        "fb_rate": 0.4813,
+        "z_contact_rate": 0.847,
+        "sweet_spot_rate": 0.3138,
         "xwobacon": null,
         "ev90": 96.0
       },
@@ -1684,56 +1801,6 @@
         "vs Drew Rasmussen \u2014 cause Pass (6.0/25)",
         "Pitcher: Suppresses HR (HR/9 0.73)",
         "Dome roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 661388,
-      "name": "William Contreras",
-      "team": "Milwaukee Brewers",
-      "bats": "R",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Yoshinobu Yamamoto",
-      "venue": "American Family Field",
-      "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 18,
-      "iso": 0.147,
-      "total": 33.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 48.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 7.5,
-        "hitter": 8.0,
-        "environment": 10.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Yoshinobu Yamamoto \u2014 cause Pass (7.5/25)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Hitter-friendly park (105)",
-        "Retractable roof (weather neutralized)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
@@ -1759,7 +1826,7 @@
       "total": 33.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 32.0,
+      "tb_score": 33.0,
       "tb_tier": "Pass",
       "tb_reasons": [
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
@@ -1809,7 +1876,7 @@
       "total": 33.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 31.5,
+      "tb_score": 32.5,
       "tb_tier": "Pass",
       "tb_reasons": [
         "Platoon edge (L vs RHP)",
@@ -1845,66 +1912,6 @@
       ]
     },
     {
-      "id": 800050,
-      "name": "Chase DeLauter",
-      "team": "Cleveland Guardians",
-      "bats": "L",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Drew Rasmussen",
-      "venue": "Tropicana Field",
-      "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.17,
-      "total": 32.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 51.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 88%, Z-contact 87%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.0,
-        "hitter": 11.0,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1418,
-        "barrel_rate": 0.0506,
-        "hard_hit_rate": 0.3967,
-        "fb_rate": 0.4416,
-        "z_contact_rate": 0.8663,
-        "sweet_spot_rate": 0.3126,
-        "xwobacon": null,
-        "ev90": 109.2
-      },
-      "reasons": [
-        "vs Drew Rasmussen \u2014 cause Pass (6.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.73)",
-        "Platoon edge (L vs RHP)",
-        "Dome roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 592885,
       "name": "Christian Yelich",
       "team": "Milwaukee Brewers",
@@ -1913,14 +1920,14 @@
       "opp_pitcher": "Yoshinobu Yamamoto",
       "venue": "American Family Field",
       "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
+      "slot": 5,
+      "confirmed": true,
       "season_hr": 12,
       "iso": 0.143,
-      "total": 31.5,
+      "total": 32.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 34.5,
+      "tb_score": 39.5,
       "tb_tier": "Pass",
       "tb_reasons": [
         "Platoon edge (L vs RHP)",
@@ -1934,81 +1941,22 @@
       "due_hr": null,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 7.5,
+        "pitcher": 6.0,
         "hitter": 6.0,
         "environment": 10.0,
-        "lineup": 6.0,
+        "lineup": 8.0,
         "confidence": 2.0
       },
       "statcast": null,
       "reasons": [
-        "vs Yoshinobu Yamamoto \u2014 cause Pass (7.5/25)",
+        "vs Yoshinobu Yamamoto \u2014 cause Pass (6.0/25)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Hitter-friendly park (107)",
         "Retractable roof (weather neutralized)",
+        "Mid order (#5)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 677587,
-      "name": "Brayan Rocchio",
-      "team": "Cleveland Guardians",
-      "bats": "S",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Drew Rasmussen",
-      "venue": "Tropicana Field",
-      "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 15,
-      "iso": 0.138,
-      "total": 30.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 46.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.0,
-        "hitter": 9.8,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1437,
-        "barrel_rate": 0.0562,
-        "hard_hit_rate": 0.3232,
-        "fb_rate": 0.4825,
-        "z_contact_rate": 0.8759,
-        "sweet_spot_rate": 0.3207,
-        "xwobacon": null,
-        "ev90": 96.2
-      },
-      "reasons": [
-        "vs Drew Rasmussen \u2014 cause Pass (6.0/25)",
-        "Pitcher: Suppresses HR (HR/9 0.73)",
-        "Dome roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -2029,7 +1977,7 @@
       "total": 30.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 28.0,
+      "tb_score": 29.0,
       "tb_tier": "Pass",
       "tb_reasons": [
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
@@ -2064,6 +2012,64 @@
       ]
     },
     {
+      "id": 677587,
+      "name": "Brayan Rocchio",
+      "team": "Cleveland Guardians",
+      "bats": "S",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Drew Rasmussen",
+      "venue": "Tropicana Field",
+      "gamePk": 849820,
+      "slot": 9,
+      "confirmed": true,
+      "season_hr": 15,
+      "iso": 0.138,
+      "total": 29.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 47.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 87%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.0,
+        "hitter": 9.8,
+        "environment": 7.0,
+        "lineup": 5.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1417,
+        "barrel_rate": 0.0553,
+        "hard_hit_rate": 0.3255,
+        "fb_rate": 0.4819,
+        "z_contact_rate": 0.8748,
+        "sweet_spot_rate": 0.3198,
+        "xwobacon": null,
+        "ev90": 96.2
+      },
+      "reasons": [
+        "vs Drew Rasmussen \u2014 cause Pass (6.0/25)",
+        "Pitcher: Suppresses HR (HR/9 0.73)",
+        "Dome roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Bottom of order (#9)"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
       "id": 687401,
       "name": "Joey Ortiz",
       "team": "Milwaukee Brewers",
@@ -2076,10 +2082,10 @@
       "confirmed": false,
       "season_hr": 9,
       "iso": 0.132,
-      "total": 27.5,
+      "total": 26.0,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 42.0,
+      "tb_score": 44.0,
       "tb_tier": "Pass",
       "tb_reasons": [
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
@@ -2092,7 +2098,7 @@
       "due_hr": null,
       "pitcher_grade": "Pass",
       "breakdown": {
-        "pitcher": 7.5,
+        "pitcher": 6.0,
         "hitter": 2.0,
         "environment": 10.0,
         "lineup": 6.0,
@@ -2100,7 +2106,7 @@
       },
       "statcast": null,
       "reasons": [
-        "vs Yoshinobu Yamamoto \u2014 cause Pass (7.5/25)",
+        "vs Yoshinobu Yamamoto \u2014 cause Pass (6.0/25)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Hitter-friendly park (105)",
         "Retractable roof (weather neutralized)",
@@ -2117,6 +2123,48 @@
   "structures": {},
   "tb_board": [
     {
+      "id": 668930,
+      "name": "Brice Turang",
+      "team": "Milwaukee Brewers",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Yoshinobu Yamamoto",
+      "venue": "American Family Field",
+      "gamePk": 849812,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 63.0,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "High-contact bat (contact 95%, Z-contact 86%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 46.5,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 518692,
+      "name": "Freddie Freeman",
+      "team": "Los Angeles Dodgers",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Logan Henderson",
+      "venue": "American Family Field",
+      "gamePk": 849812,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 62.5,
+      "tb_tier": "Solid TB",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)",
+        "Hot (3 barrels last 7d)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 55.3,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 691406,
       "name": "Junior Caminero",
       "team": "Tampa Bay Rays",
@@ -2124,8 +2172,8 @@
       "opp_pitcher": "Foster Griffin",
       "venue": "Tropicana Field",
       "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
+      "slot": 3,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 62.0,
       "tb_tier": "Solid TB",
@@ -2134,50 +2182,69 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 49.5,
+      "hr_total": 54.5,
       "hr_role": "Pass"
     },
     {
-      "id": 660271,
-      "name": "Shohei Ohtani",
-      "team": "Los Angeles Dodgers",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Logan Henderson",
+      "id": 641343,
+      "name": "Jake Bauers",
+      "team": "Milwaukee Brewers",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Yoshinobu Yamamoto",
       "venue": "American Family Field",
       "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
+      "slot": 4,
+      "confirmed": true,
       "bats": "L",
-      "tb_score": 62.0,
-      "tb_tier": "Solid TB",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)",
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 49.5,
-      "hr_role": "Pass"
-    },
-    {
-      "id": 571970,
-      "name": "Max Muncy",
-      "team": "Los Angeles Dodgers",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Logan Henderson",
-      "venue": "American Family Field",
-      "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 59.5,
+      "tb_score": 59.0,
       "tb_tier": "Dart",
       "tb_reasons": [
-        "Platoon edge (L vs RHP)",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 47.2,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 650490,
+      "name": "Yandy D\u00edaz",
+      "team": "Tampa Bay Rays",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Foster Griffin",
+      "venue": "Tropicana Field",
+      "gamePk": 849820,
+      "slot": 1,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 58.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)",
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 49.5,
-      "hr_role": "Pass"
+      "hr_total": 41.5,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 608070,
+      "name": "Jos\u00e9 Ram\u00edrez",
+      "team": "Cleveland Guardians",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Drew Rasmussen",
+      "venue": "Tropicana Field",
+      "gamePk": 849820,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "S",
+      "tb_score": 58.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 86%, Z-contact 88%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 49.2,
+      "hr_role": "Watchlist"
     },
     {
       "id": 687221,
@@ -2190,7 +2257,7 @@
       "slot": null,
       "confirmed": false,
       "bats": "L",
-      "tb_score": 55.5,
+      "tb_score": 57.5,
       "tb_tier": "Dart",
       "tb_reasons": [
         "Platoon edge (L vs RHP)",
@@ -2201,26 +2268,6 @@
       "hr_role": "Pass"
     },
     {
-      "id": 669003,
-      "name": "Garrett Mitchell",
-      "team": "Milwaukee Brewers",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Yoshinobu Yamamoto",
-      "venue": "American Family Field",
-      "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 55.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 42.3,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 683953,
       "name": "Travis Bazzana",
       "team": "Cleveland Guardians",
@@ -2228,120 +2275,17 @@
       "opp_pitcher": "Drew Rasmussen",
       "venue": "Tropicana Field",
       "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "bats": "L",
-      "tb_score": 55.5,
+      "tb_score": 56.5,
       "tb_tier": "Dart",
       "tb_reasons": [
         "High-contact bat (contact 90%, Z-contact 89%) \u2014 banks XBH",
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 38.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 518692,
-      "name": "Freddie Freeman",
-      "team": "Los Angeles Dodgers",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Logan Henderson",
-      "venue": "American Family Field",
-      "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 54.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)",
-        "Hot (3 barrels last 7d)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 49.3,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 641343,
-      "name": "Jake Bauers",
-      "team": "Milwaukee Brewers",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Yoshinobu Yamamoto",
-      "venue": "American Family Field",
-      "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 54.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 43.7,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 650490,
-      "name": "Yandy D\u00edaz",
-      "team": "Tampa Bay Rays",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": "Foster Griffin",
-      "venue": "Tropicana Field",
-      "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 53.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)",
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 35.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 608070,
-      "name": "Jos\u00e9 Ram\u00edrez",
-      "team": "Cleveland Guardians",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Drew Rasmussen",
-      "venue": "Tropicana Field",
-      "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
-      "bats": "S",
-      "tb_score": 53.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 86%, Z-contact 88%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 43.2,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 668930,
-      "name": "Brice Turang",
-      "team": "Milwaukee Brewers",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Yoshinobu Yamamoto",
-      "venue": "American Family Field",
-      "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 52.6,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 100%, Z-contact 87%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 39.7,
+      "hr_total": 40.0,
       "hr_role": "Watchlist"
     },
     {
@@ -2352,16 +2296,16 @@
       "opp_pitcher": "Drew Rasmussen",
       "venue": "Tropicana Field",
       "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
+      "slot": 5,
+      "confirmed": true,
       "bats": "L",
-      "tb_score": 52.5,
+      "tb_score": 56.5,
       "tb_tier": "Dart",
       "tb_reasons": [
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 35.5,
+      "hr_total": 37.5,
       "hr_role": "Watchlist"
     },
     {
@@ -2372,130 +2316,14 @@
       "opp_pitcher": "Yoshinobu Yamamoto",
       "venue": "American Family Field",
       "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
+      "slot": 1,
+      "confirmed": true,
       "bats": "R",
-      "tb_score": 52.0,
+      "tb_score": 55.5,
       "tb_tier": "Dart",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 37.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 800050,
-      "name": "Chase DeLauter",
-      "team": "Cleveland Guardians",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Drew Rasmussen",
-      "venue": "Tropicana Field",
-      "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 51.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 88%, Z-contact 87%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 32.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 606192,
-      "name": "Teoscar Hern\u00e1ndez",
-      "team": "Los Angeles Dodgers",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Logan Henderson",
-      "venue": "American Family Field",
-      "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 50.4,
-      "tb_tier": "Dart",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 38.3,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 683748,
-      "name": "Victor Mesa Jr.",
-      "team": "Tampa Bay Rays",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": "Foster Griffin",
-      "venue": "Tropicana Field",
-      "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 49.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 38.7,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 672275,
-      "name": "Patrick Bailey",
-      "team": "Cleveland Guardians",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Drew Rasmussen",
-      "venue": "Tropicana Field",
-      "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
-      "bats": "S",
-      "tb_score": 48.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 35.8,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 661388,
-      "name": "William Contreras",
-      "team": "Milwaukee Brewers",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Yoshinobu Yamamoto",
-      "venue": "American Family Field",
-      "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 48.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 33.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 668723,
-      "name": "Ryan Vilade",
-      "team": "Tampa Bay Rays",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": "Foster Griffin",
-      "venue": "Tropicana Field",
-      "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 47.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)",
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 38.5,
+      "hr_total": 41.0,
       "hr_role": "Watchlist"
     },
     {
@@ -2506,36 +2334,212 @@
       "opp_pitcher": "Logan Henderson",
       "venue": "American Family Field",
       "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
+      "slot": 1,
+      "confirmed": true,
       "bats": "R",
-      "tb_score": 47.0,
-      "tb_tier": "Pass",
+      "tb_score": 54.9,
+      "tb_tier": "Dart",
       "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+        "High-contact bat (contact 88%, Z-contact 88%) \u2014 banks XBH"
       ],
-      "shape_source": "proxy",
-      "hr_total": 40.5,
+      "shape_source": "statcast",
+      "hr_total": 42.6,
       "hr_role": "Watchlist"
     },
     {
-      "id": 663656,
-      "name": "Kyle Tucker",
+      "id": 606192,
+      "name": "Teoscar Hern\u00e1ndez",
       "team": "Los Angeles Dodgers",
       "opp": "Milwaukee Brewers",
       "opp_pitcher": "Logan Henderson",
       "venue": "American Family Field",
       "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 54.4,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 43.3,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 683748,
+      "name": "Victor Mesa Jr.",
+      "team": "Tampa Bay Rays",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Foster Griffin",
+      "venue": "Tropicana Field",
+      "gamePk": 849820,
+      "slot": 5,
+      "confirmed": true,
       "bats": "L",
-      "tb_score": 46.9,
+      "tb_score": 53.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 40.7,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 661388,
+      "name": "William Contreras",
+      "team": "Milwaukee Brewers",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Yoshinobu Yamamoto",
+      "venue": "American Family Field",
+      "gamePk": 849812,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 53.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "hr_total": 37.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 800050,
+      "name": "Chase DeLauter",
+      "team": "Cleveland Guardians",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Drew Rasmussen",
+      "venue": "Tropicana Field",
+      "gamePk": 849820,
+      "slot": 3,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 53.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 88%, Z-contact 87%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 37.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 571970,
+      "name": "Max Muncy",
+      "team": "Los Angeles Dodgers",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Logan Henderson",
+      "venue": "American Family Field",
+      "gamePk": 849812,
+      "slot": 6,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 52.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 47.7,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 668723,
+      "name": "Ryan Vilade",
+      "team": "Tampa Bay Rays",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Foster Griffin",
+      "venue": "Tropicana Field",
+      "gamePk": 849820,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 51.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "hr_total": 43.5,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 666018,
+      "name": "Jonathan Aranda",
+      "team": "Tampa Bay Rays",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Foster Griffin",
+      "venue": "Tropicana Field",
+      "gamePk": 849820,
+      "slot": 2,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 50.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "hr_total": 41.5,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 672275,
+      "name": "Patrick Bailey",
+      "team": "Cleveland Guardians",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Drew Rasmussen",
+      "venue": "Tropicana Field",
+      "gamePk": 849820,
+      "slot": 7,
+      "confirmed": true,
+      "bats": "S",
+      "tb_score": 49.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 34.8,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 660271,
+      "name": "Shohei Ohtani",
+      "team": "Los Angeles Dodgers",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Logan Henderson",
+      "venue": "American Family Field",
+      "gamePk": 849812,
+      "slot": 4,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 48.5,
       "tb_tier": "Pass",
       "tb_reasons": [
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 37.3,
+      "hr_total": 48.3,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 669257,
+      "name": "Will Smith",
+      "team": "Los Angeles Dodgers",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Logan Henderson",
+      "venue": "American Family Field",
+      "gamePk": 849812,
+      "slot": 5,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 48.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "hr_total": 42.5,
       "hr_role": "Watchlist"
     },
     {
@@ -2546,16 +2550,36 @@
       "opp_pitcher": "Drew Rasmussen",
       "venue": "Tropicana Field",
       "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "bats": "S",
-      "tb_score": 46.0,
+      "tb_score": 47.0,
       "tb_tier": "Pass",
       "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 88%) \u2014 banks XBH"
+        "High-contact bat (contact 84%, Z-contact 87%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 30.8,
+      "hr_total": 29.8,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 663656,
+      "name": "Kyle Tucker",
+      "team": "Los Angeles Dodgers",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Logan Henderson",
+      "venue": "American Family Field",
+      "gamePk": 849812,
+      "slot": 8,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 46.9,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 36.3,
       "hr_role": "Watchlist"
     },
     {
@@ -2566,16 +2590,36 @@
       "opp_pitcher": "Foster Griffin",
       "venue": "Tropicana Field",
       "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "bats": "R",
-      "tb_score": 45.5,
+      "tb_score": 46.5,
       "tb_tier": "Pass",
       "tb_reasons": [
         "Platoon edge (R vs LHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 40.5,
+      "hr_total": 42.5,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 669003,
+      "name": "Garrett Mitchell",
+      "team": "Milwaukee Brewers",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Yoshinobu Yamamoto",
+      "venue": "American Family Field",
+      "gamePk": 849812,
+      "slot": 6,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 46.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 42.2,
       "hr_role": "Watchlist"
     },
     {
@@ -2589,33 +2633,13 @@
       "slot": null,
       "confirmed": false,
       "bats": "L",
-      "tb_score": 45.0,
+      "tb_score": 46.0,
       "tb_tier": "Pass",
       "tb_reasons": [
         "High-contact bat (contact 90%, Z-contact 86%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
       "hr_total": 36.3,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 666018,
-      "name": "Jonathan Aranda",
-      "team": "Tampa Bay Rays",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": "Foster Griffin",
-      "venue": "Tropicana Field",
-      "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 45.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 35.5,
       "hr_role": "Watchlist"
     },
     {
@@ -2629,7 +2653,7 @@
       "slot": null,
       "confirmed": false,
       "bats": "S",
-      "tb_score": 44.5,
+      "tb_score": 45.5,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
@@ -2647,51 +2671,11 @@
       "slot": null,
       "confirmed": false,
       "bats": "L",
-      "tb_score": 43.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 93%, Z-contact 86%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 36.3,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 669257,
-      "name": "Will Smith",
-      "team": "Los Angeles Dodgers",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Logan Henderson",
-      "venue": "American Family Field",
-      "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 43.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 40.5,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 681624,
-      "name": "Andy Pages",
-      "team": "Los Angeles Dodgers",
-      "opp": "Milwaukee Brewers",
-      "opp_pitcher": "Logan Henderson",
-      "venue": "American Family Field",
-      "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 42.0,
+      "tb_score": 44.5,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 40.0,
+      "hr_total": 36.3,
       "hr_role": "Watchlist"
     },
     {
@@ -2705,13 +2689,13 @@
       "slot": null,
       "confirmed": false,
       "bats": "R",
-      "tb_score": 42.0,
+      "tb_score": 44.0,
       "tb_tier": "Pass",
       "tb_reasons": [
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 27.5,
+      "hr_total": 26.0,
       "hr_role": "Watchlist"
     },
     {
@@ -2725,13 +2709,13 @@
       "slot": null,
       "confirmed": false,
       "bats": "R",
-      "tb_score": 41.0,
+      "tb_score": 43.0,
       "tb_tier": "Pass",
       "tb_reasons": [
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 41.5,
+      "hr_total": 40.0,
       "hr_role": "Watchlist"
     },
     {
@@ -2742,14 +2726,32 @@
       "opp_pitcher": "Drew Rasmussen",
       "venue": "Tropicana Field",
       "gamePk": 849820,
-      "slot": null,
-      "confirmed": false,
+      "slot": 4,
+      "confirmed": true,
       "bats": "R",
-      "tb_score": 38.5,
+      "tb_score": 42.5,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 38.5,
+      "hr_total": 43.5,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 681624,
+      "name": "Andy Pages",
+      "team": "Los Angeles Dodgers",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": "Logan Henderson",
+      "venue": "American Family Field",
+      "gamePk": 849812,
+      "slot": 7,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 39.9,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 37.1,
       "hr_role": "Watchlist"
     },
     {
@@ -2760,17 +2762,17 @@
       "opp_pitcher": "Yoshinobu Yamamoto",
       "venue": "American Family Field",
       "gamePk": 849812,
-      "slot": null,
-      "confirmed": false,
+      "slot": 5,
+      "confirmed": true,
       "bats": "L",
-      "tb_score": 34.5,
+      "tb_score": 39.5,
       "tb_tier": "Pass",
       "tb_reasons": [
         "Platoon edge (L vs RHP)",
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 31.5,
+      "hr_total": 32.0,
       "hr_role": "Watchlist"
     },
     {
@@ -2784,7 +2786,7 @@
       "slot": null,
       "confirmed": false,
       "bats": "R",
-      "tb_score": 32.0,
+      "tb_score": 33.0,
       "tb_tier": "Pass",
       "tb_reasons": [
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
@@ -2804,7 +2806,7 @@
       "slot": null,
       "confirmed": false,
       "bats": "L",
-      "tb_score": 31.5,
+      "tb_score": 32.5,
       "tb_tier": "Pass",
       "tb_reasons": [
         "Platoon edge (L vs RHP)",
@@ -2825,7 +2827,7 @@
       "slot": null,
       "confirmed": false,
       "bats": "L",
-      "tb_score": 28.0,
+      "tb_score": 29.0,
       "tb_tier": "Pass",
       "tb_reasons": [
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
@@ -2857,16 +2859,7 @@
         "High K rate (30%)"
       ],
       "hr9": 1.28,
-      "barrel_allowed": 0.0562
-    },
-    {
-      "id": 808967,
-      "name": "Yoshinobu Yamamoto",
-      "score": 7.5,
-      "grade": "Pass",
-      "flags": [],
-      "hr9": 0.97,
-      "barrel_allowed": 0.0555
+      "barrel_allowed": 0.0553
     },
     {
       "id": 656876,
@@ -2878,6 +2871,15 @@
       ],
       "hr9": 0.73,
       "barrel_allowed": null
+    },
+    {
+      "id": 808967,
+      "name": "Yoshinobu Yamamoto",
+      "score": 6.0,
+      "grade": "Pass",
+      "flags": [],
+      "hr9": 0.97,
+      "barrel_allowed": 0.0547
     }
   ],
   "audit_template": {
