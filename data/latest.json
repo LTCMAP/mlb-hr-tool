@@ -1,9 +1,9 @@
 {
   "version": "2.8",
-  "generated_utc": "2026-10-13T19:56:42.774248+00:00",
+  "generated_utc": "2026-10-13T21:25:27.952709+00:00",
   "slate_date": "2026-10-13",
   "games": 1,
-  "confirmed_lineups": 0,
+  "confirmed_lineups": 2,
   "statcast": true,
   "statcast_meta": {
     "window_days": 21,
@@ -38,14 +38,13 @@
     "source": "mlbapi",
     "days_savant": 0,
     "days_mlbapi": 17,
-    "trustworthy": false,
+    "trustworthy": true,
     "statcast_batters": 120,
     "statcast_candidates": 8,
-    "confirmed_lineups": 0,
+    "confirmed_lineups": 2,
     "games": 1,
     "days_failed": 1,
     "warnings": [
-      "NO CONFIRMED LINEUPS \u2014 every bat is using a neutral slot default. Likely built before lineups posted; re-run closer to first pitch.",
       "Statcast: 1 day(s) failed to fetch in the 21-day window (thinner sample).",
       "Shape built from the MLB Stats API fallback (17/21 days) because Baseball Savant was unreachable. All shape signals are live; xwOBAcon is unavailable (regressed to league prior, ISO backstops it) and barrels are recomputed from EV/LA."
     ]
@@ -108,14 +107,14 @@
       "opp_pitcher": "Freddy Peralta",
       "venue": "Tropicana Field",
       "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
+      "slot": 2,
+      "confirmed": true,
       "season_hr": 12,
       "iso": 0.133,
-      "total": 48.2,
+      "total": 54.2,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 55.0,
+      "tb_score": 59.0,
       "tb_tier": "Dart",
       "tb_reasons": [
         "High-contact bat (contact 86%, Z-contact 88%) \u2014 banks XBH"
@@ -131,7 +130,7 @@
         "pitcher": 11.0,
         "hitter": 21.2,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 12.0,
         "confidence": 3.0
       },
       "statcast": {
@@ -149,11 +148,10 @@
         "Good air-pull (19%)",
         "Hot (2 HR / 1 barrels last 7d)",
         "Dome roof (weather neutralized)",
+        "Top of order (#2)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -167,11 +165,11 @@
       "opp_pitcher": "Parker Messick",
       "venue": "Tropicana Field",
       "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
+      "slot": 3,
+      "confirmed": true,
       "season_hr": 42,
       "iso": 0.248,
-      "total": 46.5,
+      "total": 51.5,
       "tier": "Pass",
       "role": "Pass",
       "tb_score": 62.0,
@@ -191,7 +189,7 @@
         "pitcher": 6.5,
         "hitter": 24.0,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 11.0,
         "confidence": 3.0
       },
       "statcast": null,
@@ -200,11 +198,10 @@
         "Pitcher: Suppresses HR (HR/9 0.82)",
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Dome roof (weather neutralized)"
+        "Dome roof (weather neutralized)",
+        "Heart of order (#3)"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": []
     },
     {
@@ -216,14 +213,14 @@
       "opp_pitcher": "Parker Messick",
       "venue": "Tropicana Field",
       "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
+      "slot": 4,
+      "confirmed": true,
       "season_hr": 14,
       "iso": 0.238,
-      "total": 44.5,
+      "total": 49.5,
       "tier": "Pass",
       "role": "Pass",
-      "tb_score": 54.0,
+      "tb_score": 57.0,
       "tb_tier": "Dart",
       "tb_reasons": [
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
@@ -239,7 +236,7 @@
         "pitcher": 6.5,
         "hitter": 22.0,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 11.0,
         "confidence": 3.0
       },
       "statcast": null,
@@ -248,11 +245,10 @@
         "Pitcher: Suppresses HR (HR/9 0.82)",
         "Proxy: strong HR rate",
         "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Dome roof (weather neutralized)"
+        "Dome roof (weather neutralized)",
+        "Heart of order (#4)"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": []
     },
     {
@@ -264,14 +260,14 @@
       "opp_pitcher": "Freddy Peralta",
       "venue": "Tropicana Field",
       "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
+      "slot": 4,
+      "confirmed": true,
       "season_hr": 23,
       "iso": 0.161,
-      "total": 43.5,
+      "total": 48.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 40.5,
+      "tb_score": 43.5,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
@@ -285,7 +281,7 @@
         "pitcher": 11.0,
         "hitter": 17.5,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 11.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -302,11 +298,10 @@
         "vs Freddy Peralta \u2014 cause C (11.0/25)",
         "Above-avg barrels (10%)",
         "Dome roof (weather neutralized)",
+        "Heart of order (#4)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -320,11 +315,11 @@
       "opp_pitcher": "Freddy Peralta",
       "venue": "Tropicana Field",
       "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
+      "slot": 6,
+      "confirmed": true,
       "season_hr": 15,
       "iso": 0.163,
-      "total": 43.0,
+      "total": 45.0,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 57.5,
@@ -344,7 +339,7 @@
         "pitcher": 11.0,
         "hitter": 17.0,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 8.0,
         "confidence": 2.0
       },
       "statcast": {
@@ -361,11 +356,125 @@
         "vs Freddy Peralta \u2014 cause C (11.0/25)",
         "Platoon edge (L vs RHP)",
         "Dome roof (weather neutralized)",
+        "Mid order (#6)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 663993,
+      "name": "Nathaniel Lowe",
+      "team": "Cleveland Guardians",
+      "bats": "L",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Freddy Peralta",
+      "venue": "Tropicana Field",
+      "gamePk": 849813,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 17,
+      "iso": 0.192,
+      "total": 42.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 57.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
       ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 14.5,
+        "environment": 7.0,
+        "lineup": 8.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1583,
+        "barrel_rate": 0.0514,
+        "hard_hit_rate": 0.385,
+        "fb_rate": 0.4761,
+        "z_contact_rate": 0.8467,
+        "sweet_spot_rate": 0.3439,
+        "xwobacon": null,
+        "ev90": 104.0
+      },
+      "reasons": [
+        "vs Freddy Peralta \u2014 cause C (11.0/25)",
+        "Platoon edge (L vs RHP)",
+        "Dome roof (weather neutralized)",
+        "Mid order (#5)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 800050,
+      "name": "Chase DeLauter",
+      "team": "Cleveland Guardians",
+      "bats": "L",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Freddy Peralta",
+      "venue": "Tropicana Field",
+      "gamePk": 849813,
+      "slot": 3,
+      "confirmed": true,
+      "season_hr": 16,
+      "iso": 0.17,
+      "total": 42.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 54.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 88%, Z-contact 86%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "C",
+      "breakdown": {
+        "pitcher": 11.0,
+        "hitter": 11.0,
+        "environment": 7.0,
+        "lineup": 11.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1399,
+        "barrel_rate": 0.0495,
+        "hard_hit_rate": 0.3991,
+        "fb_rate": 0.4414,
+        "z_contact_rate": 0.8643,
+        "sweet_spot_rate": 0.3149,
+        "xwobacon": null,
+        "ev90": 109.2
+      },
+      "reasons": [
+        "vs Freddy Peralta \u2014 cause C (11.0/25)",
+        "Platoon edge (L vs RHP)",
+        "Dome roof (weather neutralized)",
+        "Heart of order (#3)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -415,64 +524,6 @@
       },
       "reasons": [
         "vs Freddy Peralta \u2014 cause C (11.0/25)",
-        "Dome roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 663993,
-      "name": "Nathaniel Lowe",
-      "team": "Cleveland Guardians",
-      "bats": "L",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Freddy Peralta",
-      "venue": "Tropicana Field",
-      "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 17,
-      "iso": 0.192,
-      "total": 40.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 54.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.0,
-        "hitter": 14.5,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1583,
-        "barrel_rate": 0.0514,
-        "hard_hit_rate": 0.385,
-        "fb_rate": 0.4761,
-        "z_contact_rate": 0.8467,
-        "sweet_spot_rate": 0.3439,
-        "xwobacon": null,
-        "ev90": 104.0
-      },
-      "reasons": [
-        "vs Freddy Peralta \u2014 cause C (11.0/25)",
-        "Platoon edge (L vs RHP)",
         "Dome roof (weather neutralized)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
@@ -534,6 +585,105 @@
       "warnings": [
         "Lineup not confirmed"
       ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 666018,
+      "name": "Jonathan Aranda",
+      "team": "Tampa Bay Rays",
+      "bats": "L",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Parker Messick",
+      "venue": "Tropicana Field",
+      "gamePk": 849813,
+      "slot": 2,
+      "confirmed": true,
+      "season_hr": 22,
+      "iso": 0.16,
+      "total": 38.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 50.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.5,
+        "hitter": 11.0,
+        "environment": 7.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Parker Messick \u2014 cause Pass (6.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.82)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Dome roof (weather neutralized)",
+        "Top of order (#2)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 650490,
+      "name": "Yandy D\u00edaz",
+      "team": "Tampa Bay Rays",
+      "bats": "R",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Parker Messick",
+      "venue": "Tropicana Field",
+      "gamePk": 849813,
+      "slot": 1,
+      "confirmed": true,
+      "season_hr": 22,
+      "iso": 0.153,
+      "total": 38.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 58.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "Pass",
+      "breakdown": {
+        "pitcher": 6.5,
+        "hitter": 11.0,
+        "environment": 7.0,
+        "lineup": 12.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "vs Parker Messick \u2014 cause Pass (6.5/25)",
+        "Pitcher: Suppresses HR (HR/9 0.82)",
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Dome roof (weather neutralized)",
+        "Top of order (#1)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -638,122 +788,6 @@
       ]
     },
     {
-      "id": 800050,
-      "name": "Chase DeLauter",
-      "team": "Cleveland Guardians",
-      "bats": "L",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Freddy Peralta",
-      "venue": "Tropicana Field",
-      "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 16,
-      "iso": 0.17,
-      "total": 37.0,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 51.0,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 88%, Z-contact 86%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.0,
-        "hitter": 11.0,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1399,
-        "barrel_rate": 0.0495,
-        "hard_hit_rate": 0.3991,
-        "fb_rate": 0.4414,
-        "z_contact_rate": 0.8643,
-        "sweet_spot_rate": 0.3149,
-        "xwobacon": null,
-        "ev90": 109.2
-      },
-      "reasons": [
-        "vs Freddy Peralta \u2014 cause C (11.0/25)",
-        "Platoon edge (L vs RHP)",
-        "Dome roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 677587,
-      "name": "Brayan Rocchio",
-      "team": "Cleveland Guardians",
-      "bats": "S",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Freddy Peralta",
-      "venue": "Tropicana Field",
-      "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 15,
-      "iso": 0.138,
-      "total": 35.8,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 48.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "High-contact bat (contact 84%, Z-contact 87%) \u2014 banks XBH"
-      ],
-      "shape_source": "statcast",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": 0.0,
-      "pitcher_grade": "C",
-      "breakdown": {
-        "pitcher": 11.0,
-        "hitter": 9.8,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": {
-        "air_pull_rate": 0.1415,
-        "barrel_rate": 0.055,
-        "hard_hit_rate": 0.3259,
-        "fb_rate": 0.4823,
-        "z_contact_rate": 0.8737,
-        "sweet_spot_rate": 0.3233,
-        "xwobacon": null,
-        "ev90": 96.2
-      },
-      "reasons": [
-        "vs Freddy Peralta \u2014 cause C (11.0/25)",
-        "Dome roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
       "id": 668723,
       "name": "Ryan Vilade",
       "team": "Tampa Bay Rays",
@@ -805,72 +839,79 @@
       ]
     },
     {
-      "id": 666018,
-      "name": "Jonathan Aranda",
-      "team": "Tampa Bay Rays",
-      "bats": "L",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": "Parker Messick",
+      "id": 677587,
+      "name": "Brayan Rocchio",
+      "team": "Cleveland Guardians",
+      "bats": "S",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Freddy Peralta",
       "venue": "Tropicana Field",
       "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 22,
-      "iso": 0.16,
-      "total": 32.5,
+      "slot": 9,
+      "confirmed": true,
+      "season_hr": 15,
+      "iso": 0.138,
+      "total": 34.8,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 46.0,
+      "tb_score": 48.0,
       "tb_tier": "Pass",
       "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+        "High-contact bat (contact 84%, Z-contact 87%) \u2014 banks XBH"
       ],
-      "shape_source": "proxy",
+      "shape_source": "statcast",
       "pull_fit": false,
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "Pass",
+      "due_hr": 0.0,
+      "pitcher_grade": "C",
       "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 11.0,
+        "pitcher": 11.0,
+        "hitter": 9.8,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
-      "statcast": null,
+      "statcast": {
+        "air_pull_rate": 0.1415,
+        "barrel_rate": 0.055,
+        "hard_hit_rate": 0.3259,
+        "fb_rate": 0.4823,
+        "z_contact_rate": 0.8737,
+        "sweet_spot_rate": 0.3233,
+        "xwobacon": null,
+        "ev90": 96.2
+      },
       "reasons": [
-        "vs Parker Messick \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.82)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "vs Freddy Peralta \u2014 cause C (11.0/25)",
         "Dome roof (weather neutralized)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#9)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
     },
     {
-      "id": 650490,
-      "name": "Yandy D\u00edaz",
+      "id": 676356,
+      "name": "Jonny DeLuca",
       "team": "Tampa Bay Rays",
       "bats": "R",
       "opp": "Cleveland Guardians",
       "opp_pitcher": "Parker Messick",
       "venue": "Tropicana Field",
       "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 22,
-      "iso": 0.153,
-      "total": 32.5,
+      "slot": 5,
+      "confirmed": true,
+      "season_hr": 11,
+      "iso": 0.163,
+      "total": 34.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 54.5,
+      "tb_score": 52.5,
       "tb_tier": "Dart",
       "tb_reasons": [
         "Platoon edge (R vs LHP)",
@@ -887,7 +928,7 @@
         "pitcher": 6.5,
         "hitter": 11.0,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 8.0,
         "confidence": 2.0
       },
       "statcast": null,
@@ -896,11 +937,10 @@
         "Pitcher: Suppresses HR (HR/9 0.82)",
         "No Statcast shape \u2014 score capped (season-power proxy)",
         "Dome roof (weather neutralized)",
+        "Mid order (#5)",
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
-      "warnings": [
-        "Lineup not confirmed"
-      ],
+      "warnings": [],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
       ]
@@ -914,11 +954,11 @@
       "opp_pitcher": "Parker Messick",
       "venue": "Tropicana Field",
       "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
+      "slot": 8,
+      "confirmed": true,
       "season_hr": 18,
       "iso": 0.15,
-      "total": 32.5,
+      "total": 31.5,
       "tier": "Pass",
       "role": "Watchlist",
       "tb_score": 46.0,
@@ -937,7 +977,7 @@
         "pitcher": 6.5,
         "hitter": 11.0,
         "environment": 7.0,
-        "lineup": 6.0,
+        "lineup": 5.0,
         "confidence": 2.0
       },
       "statcast": null,
@@ -949,58 +989,7 @@
         "Hitter shape <22 \u2192 capped at Longshot"
       ],
       "warnings": [
-        "Lineup not confirmed"
-      ],
-      "role_notes": [
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ]
-    },
-    {
-      "id": 676356,
-      "name": "Jonny DeLuca",
-      "team": "Tampa Bay Rays",
-      "bats": "R",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": "Parker Messick",
-      "venue": "Tropicana Field",
-      "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
-      "season_hr": 11,
-      "iso": 0.163,
-      "total": 32.5,
-      "tier": "Pass",
-      "role": "Watchlist",
-      "tb_score": 49.5,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "Platoon edge (R vs LHP)",
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "pull_fit": false,
-      "mix_fit": null,
-      "fit_tag": null,
-      "value_play": false,
-      "due_hr": null,
-      "pitcher_grade": "Pass",
-      "breakdown": {
-        "pitcher": 6.5,
-        "hitter": 11.0,
-        "environment": 7.0,
-        "lineup": 6.0,
-        "confidence": 2.0
-      },
-      "statcast": null,
-      "reasons": [
-        "vs Parker Messick \u2014 cause Pass (6.5/25)",
-        "Pitcher: Suppresses HR (HR/9 0.82)",
-        "No Statcast shape \u2014 score capped (season-power proxy)",
-        "Dome roof (weather neutralized)",
-        "Hitter shape <22 \u2192 capped at Longshot"
-      ],
-      "warnings": [
-        "Lineup not confirmed"
+        "Bottom of order (#8)"
       ],
       "role_notes": [
         "Hitter shape <22 \u2192 capped at Longshot"
@@ -1117,8 +1106,8 @@
       "opp_pitcher": "Parker Messick",
       "venue": "Tropicana Field",
       "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
+      "slot": 3,
+      "confirmed": true,
       "bats": "R",
       "tb_score": 62.0,
       "tb_tier": "Solid TB",
@@ -1127,29 +1116,8 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 46.5,
+      "hr_total": 51.5,
       "hr_role": "Pass"
-    },
-    {
-      "id": 683953,
-      "name": "Travis Bazzana",
-      "team": "Cleveland Guardians",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Freddy Peralta",
-      "venue": "Tropicana Field",
-      "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 57.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "High-contact bat (contact 90%, Z-contact 89%) \u2014 banks XBH",
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 43.0,
-      "hr_role": "Watchlist"
     },
     {
       "id": 608070,
@@ -1159,36 +1127,16 @@
       "opp_pitcher": "Freddy Peralta",
       "venue": "Tropicana Field",
       "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
+      "slot": 2,
+      "confirmed": true,
       "bats": "S",
-      "tb_score": 55.0,
+      "tb_score": 59.0,
       "tb_tier": "Dart",
       "tb_reasons": [
         "High-contact bat (contact 86%, Z-contact 88%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 48.2,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 663993,
-      "name": "Nathaniel Lowe",
-      "team": "Cleveland Guardians",
-      "opp": "Tampa Bay Rays",
-      "opp_pitcher": "Freddy Peralta",
-      "venue": "Tropicana Field",
-      "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 54.5,
-      "tb_tier": "Dart",
-      "tb_reasons": [
-        "Platoon edge (L vs RHP)"
-      ],
-      "shape_source": "statcast",
-      "hr_total": 40.5,
+      "hr_total": 54.2,
       "hr_role": "Watchlist"
     },
     {
@@ -1199,17 +1147,58 @@
       "opp_pitcher": "Parker Messick",
       "venue": "Tropicana Field",
       "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
+      "slot": 1,
+      "confirmed": true,
       "bats": "R",
-      "tb_score": 54.5,
+      "tb_score": 58.5,
       "tb_tier": "Dart",
       "tb_reasons": [
         "Platoon edge (R vs LHP)",
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 32.5,
+      "hr_total": 38.5,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 683953,
+      "name": "Travis Bazzana",
+      "team": "Cleveland Guardians",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Freddy Peralta",
+      "venue": "Tropicana Field",
+      "gamePk": 849813,
+      "slot": 6,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 57.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 90%, Z-contact 89%) \u2014 banks XBH",
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 45.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 663993,
+      "name": "Nathaniel Lowe",
+      "team": "Cleveland Guardians",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": "Freddy Peralta",
+      "venue": "Tropicana Field",
+      "gamePk": 849813,
+      "slot": 5,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 57.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (L vs RHP)"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 42.5,
       "hr_role": "Watchlist"
     },
     {
@@ -1220,16 +1209,16 @@
       "opp_pitcher": "Parker Messick",
       "venue": "Tropicana Field",
       "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
+      "slot": 4,
+      "confirmed": true,
       "bats": "L",
-      "tb_score": 54.0,
+      "tb_score": 57.0,
       "tb_tier": "Dart",
       "tb_reasons": [
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 44.5,
+      "hr_total": 49.5,
       "hr_role": "Pass"
     },
     {
@@ -1240,17 +1229,38 @@
       "opp_pitcher": "Freddy Peralta",
       "venue": "Tropicana Field",
       "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
+      "slot": 3,
+      "confirmed": true,
       "bats": "L",
-      "tb_score": 51.0,
+      "tb_score": 54.0,
       "tb_tier": "Dart",
       "tb_reasons": [
         "High-contact bat (contact 88%, Z-contact 86%) \u2014 banks XBH",
         "Platoon edge (L vs RHP)"
       ],
       "shape_source": "statcast",
-      "hr_total": 37.0,
+      "hr_total": 42.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 676356,
+      "name": "Jonny DeLuca",
+      "team": "Tampa Bay Rays",
+      "opp": "Cleveland Guardians",
+      "opp_pitcher": "Parker Messick",
+      "venue": "Tropicana Field",
+      "gamePk": 849813,
+      "slot": 5,
+      "confirmed": true,
+      "bats": "R",
+      "tb_score": 52.5,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "Platoon edge (R vs LHP)",
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "hr_total": 34.5,
       "hr_role": "Watchlist"
     },
     {
@@ -1272,24 +1282,23 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 676356,
-      "name": "Jonny DeLuca",
+      "id": 666018,
+      "name": "Jonathan Aranda",
       "team": "Tampa Bay Rays",
       "opp": "Cleveland Guardians",
       "opp_pitcher": "Parker Messick",
       "venue": "Tropicana Field",
       "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
-      "bats": "R",
-      "tb_score": 49.5,
-      "tb_tier": "Pass",
+      "slot": 2,
+      "confirmed": true,
+      "bats": "L",
+      "tb_score": 50.0,
+      "tb_tier": "Dart",
       "tb_reasons": [
-        "Platoon edge (R vs LHP)",
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 32.5,
+      "hr_total": 38.5,
       "hr_role": "Watchlist"
     },
     {
@@ -1321,8 +1330,8 @@
       "opp_pitcher": "Freddy Peralta",
       "venue": "Tropicana Field",
       "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
+      "slot": 9,
+      "confirmed": true,
       "bats": "S",
       "tb_score": 48.0,
       "tb_tier": "Pass",
@@ -1330,7 +1339,7 @@
         "High-contact bat (contact 84%, Z-contact 87%) \u2014 banks XBH"
       ],
       "shape_source": "statcast",
-      "hr_total": 35.8,
+      "hr_total": 34.8,
       "hr_role": "Watchlist"
     },
     {
@@ -1352,26 +1361,6 @@
       "hr_role": "Watchlist"
     },
     {
-      "id": 666018,
-      "name": "Jonathan Aranda",
-      "team": "Tampa Bay Rays",
-      "opp": "Cleveland Guardians",
-      "opp_pitcher": "Parker Messick",
-      "venue": "Tropicana Field",
-      "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 46.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [
-        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
-      ],
-      "shape_source": "proxy",
-      "hr_total": 32.5,
-      "hr_role": "Watchlist"
-    },
-    {
       "id": 689414,
       "name": "Liam Hicks",
       "team": "Tampa Bay Rays",
@@ -1379,8 +1368,8 @@
       "opp_pitcher": "Parker Messick",
       "venue": "Tropicana Field",
       "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
+      "slot": 8,
+      "confirmed": true,
       "bats": "L",
       "tb_score": 46.0,
       "tb_tier": "Pass",
@@ -1388,7 +1377,7 @@
         "No Statcast shape \u2014 TB score capped (season-rate proxy)"
       ],
       "shape_source": "proxy",
-      "hr_total": 32.5,
+      "hr_total": 31.5,
       "hr_role": "Watchlist"
     },
     {
@@ -1399,14 +1388,14 @@
       "opp_pitcher": "Freddy Peralta",
       "venue": "Tropicana Field",
       "gamePk": 849813,
-      "slot": null,
-      "confirmed": false,
+      "slot": 4,
+      "confirmed": true,
       "bats": "R",
-      "tb_score": 40.5,
+      "tb_score": 43.5,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
-      "hr_total": 43.5,
+      "hr_total": 48.5,
       "hr_role": "Watchlist"
     },
     {
