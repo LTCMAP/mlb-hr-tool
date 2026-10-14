@@ -1,6 +1,6 @@
 {
   "version": "2.8",
-  "generated_utc": "2026-10-14T01:17:56.787404+00:00",
+  "generated_utc": "2026-10-14T18:08:15.386369+00:00",
   "slate_date": "2026-10-14",
   "games": 1,
   "confirmed_lineups": 0,
@@ -10,44 +10,44 @@
     "recent_days": 7,
     "start": "2026-09-24",
     "end": "2026-10-14",
-    "days_fetched": 0,
+    "days_fetched": 1,
     "days_cached": 19,
-    "days_failed": 2,
+    "days_failed": 1,
     "source": "mlbapi",
     "days_savant": 0,
-    "days_mlbapi": 16,
+    "days_mlbapi": 17,
     "xwobacon_available": false,
-    "batters": 106,
-    "pitchers": 107,
+    "batters": 109,
+    "pitchers": 109,
     "league": {
-      "barrel_rate": 0.0664,
-      "hard_hit_rate": 0.3763,
-      "fb_rate": 0.4789,
-      "air_pull_rate": 0.169,
-      "fly_rate": 0.2495,
-      "hr_per_pa": 0.0268,
-      "z_contact": 0.8402,
-      "sweet_spot_rate": 0.3394,
+      "barrel_rate": 0.065,
+      "hard_hit_rate": 0.3765,
+      "fb_rate": 0.4805,
+      "air_pull_rate": 0.1684,
+      "fly_rate": 0.2484,
+      "hr_per_pa": 0.026,
+      "z_contact": 0.8426,
+      "sweet_spot_rate": 0.3414,
       "air_ev": 92.4,
-      "hr_per_barrel": 0.6162,
-      "bbe_total": 1491
+      "hr_per_barrel": 0.61,
+      "bbe_total": 1538
     }
   },
   "data_quality": {
     "mode": "statcast",
     "source": "mlbapi",
     "days_savant": 0,
-    "days_mlbapi": 16,
+    "days_mlbapi": 17,
     "trustworthy": false,
-    "statcast_batters": 106,
+    "statcast_batters": 109,
     "statcast_candidates": 14,
     "confirmed_lineups": 0,
     "games": 1,
-    "days_failed": 2,
+    "days_failed": 1,
     "warnings": [
       "NO CONFIRMED LINEUPS \u2014 every bat is using a neutral slot default. Likely built before lineups posted; re-run closer to first pitch.",
-      "Statcast: 2 day(s) failed to fetch in the 21-day window (thinner sample).",
-      "Shape built from the MLB Stats API fallback (16/21 days) because Baseball Savant was unreachable. All shape signals are live; xwOBAcon is unavailable (regressed to league prior, ISO backstops it) and barrels are recomputed from EV/LA."
+      "Statcast: 1 day(s) failed to fetch in the 21-day window (thinner sample).",
+      "Shape built from the MLB Stats API fallback (17/21 days) because Baseball Savant was unreachable. All shape signals are live; xwOBAcon is unavailable (regressed to league prior, ISO backstops it) and barrels are recomputed from EV/LA."
     ]
   },
   "method": "v2.6: rank causes \u2192 choose capture \u2192 lock confirmed shape that captures the cause. NEW: zone-damage slot (hard-hit% \u00d7 Z-Contact% \u2014 loud contact that actually meets hittable pitches), xwOBAcon contact quality, and HR-luck pairing (barrels-vs-HR xHR gap \u2192 DUE bats and HR-DUE arms). Also: hardened Savant fetch w/ cache validation, directional wind, EB shrinkage, platoon-split shape, pitch-mix fit + TRAP flags. Weights P25/Shape40(11 air-pull/8 barrel/7 zone-dmg/6 matchup/3 quality/3 recent/2 due)/Env15/Lineup12/Src8. v2.8: dual-source shape \u2014 Baseball Savant with an MLB Stats API play-by-play fallback, so a Savant outage no longer drops the board to proxy. Statcast shape layer active via the MLB Stats API fallback (Savant unreachable) \u2014 xwOBAcon regressed to league prior, barrels recomputed from EV/LA.",
@@ -172,7 +172,7 @@
       "mix_fit": null,
       "fit_tag": null,
       "value_play": false,
-      "due_hr": 1.5,
+      "due_hr": 1.4,
       "pitcher_grade": "B",
       "breakdown": {
         "pitcher": 13.5,
@@ -182,12 +182,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.171,
-        "barrel_rate": 0.1124,
-        "hard_hit_rate": 0.4128,
-        "fb_rate": 0.5073,
-        "z_contact_rate": 0.8465,
-        "sweet_spot_rate": 0.3438,
+        "air_pull_rate": 0.1705,
+        "barrel_rate": 0.1113,
+        "hard_hit_rate": 0.413,
+        "fb_rate": 0.5086,
+        "z_contact_rate": 0.8482,
+        "sweet_spot_rate": 0.3454,
         "xwobacon": null,
         "ev90": 103.2
       },
@@ -240,12 +240,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1961,
-        "barrel_rate": 0.0744,
-        "hard_hit_rate": 0.3841,
-        "fb_rate": 0.4727,
-        "z_contact_rate": 0.8139,
-        "sweet_spot_rate": 0.3328,
+        "air_pull_rate": 0.1956,
+        "barrel_rate": 0.0731,
+        "hard_hit_rate": 0.3843,
+        "fb_rate": 0.4741,
+        "z_contact_rate": 0.8158,
+        "sweet_spot_rate": 0.3346,
         "xwobacon": null,
         "ev90": 105.9
       },
@@ -300,12 +300,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1734,
-        "barrel_rate": 0.0712,
-        "hard_hit_rate": 0.381,
-        "fb_rate": 0.4991,
-        "z_contact_rate": 0.7774,
-        "sweet_spot_rate": 0.3495,
+        "air_pull_rate": 0.1729,
+        "barrel_rate": 0.07,
+        "hard_hit_rate": 0.3812,
+        "fb_rate": 0.5004,
+        "z_contact_rate": 0.7792,
+        "sweet_spot_rate": 0.3512,
         "xwobacon": null,
         "ev90": 102.8
       },
@@ -360,12 +360,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1812,
-        "barrel_rate": 0.0595,
-        "hard_hit_rate": 0.4054,
-        "fb_rate": 0.5253,
-        "z_contact_rate": 0.8276,
-        "sweet_spot_rate": 0.3679,
+        "air_pull_rate": 0.1807,
+        "barrel_rate": 0.0582,
+        "hard_hit_rate": 0.4055,
+        "fb_rate": 0.5267,
+        "z_contact_rate": 0.8295,
+        "sweet_spot_rate": 0.3696,
         "xwobacon": null,
         "ev90": 101.1
       },
@@ -420,12 +420,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1526,
-        "barrel_rate": 0.0683,
-        "hard_hit_rate": 0.3783,
-        "fb_rate": 0.4912,
-        "z_contact_rate": 0.828,
-        "sweet_spot_rate": 0.3487,
+        "air_pull_rate": 0.1521,
+        "barrel_rate": 0.0671,
+        "hard_hit_rate": 0.3785,
+        "fb_rate": 0.4925,
+        "z_contact_rate": 0.8298,
+        "sweet_spot_rate": 0.3503,
         "xwobacon": null,
         "ev90": 103.0
       },
@@ -460,7 +460,7 @@
       "total": 42.5,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 56.0,
+      "tb_score": 58.0,
       "tb_tier": "Dart",
       "tb_reasons": [
         "High-contact bat (contact 90%, Z-contact 88%) \u2014 banks XBH",
@@ -481,12 +481,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1449,
-        "barrel_rate": 0.0569,
-        "hard_hit_rate": 0.421,
-        "fb_rate": 0.4491,
-        "z_contact_rate": 0.8824,
-        "sweet_spot_rate": 0.2995,
+        "air_pull_rate": 0.1443,
+        "barrel_rate": 0.0557,
+        "hard_hit_rate": 0.4212,
+        "fb_rate": 0.4504,
+        "z_contact_rate": 0.884,
+        "sweet_spot_rate": 0.3012,
         "xwobacon": null,
         "ev90": 98.7
       },
@@ -539,12 +539,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1851,
-        "barrel_rate": 0.0561,
-        "hard_hit_rate": 0.354,
-        "fb_rate": 0.5073,
-        "z_contact_rate": 0.8401,
-        "sweet_spot_rate": 0.3766,
+        "air_pull_rate": 0.1846,
+        "barrel_rate": 0.0549,
+        "hard_hit_rate": 0.3541,
+        "fb_rate": 0.5086,
+        "z_contact_rate": 0.8418,
+        "sweet_spot_rate": 0.3782,
         "xwobacon": null,
         "ev90": 97.7
       },
@@ -596,12 +596,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1491,
-        "barrel_rate": 0.0586,
-        "hard_hit_rate": 0.3761,
-        "fb_rate": 0.4646,
-        "z_contact_rate": 0.8076,
-        "sweet_spot_rate": 0.3271,
+        "air_pull_rate": 0.1486,
+        "barrel_rate": 0.0574,
+        "hard_hit_rate": 0.3763,
+        "fb_rate": 0.4659,
+        "z_contact_rate": 0.8093,
+        "sweet_spot_rate": 0.3288,
         "xwobacon": null,
         "ev90": 103.2
       },
@@ -655,12 +655,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1785,
-        "barrel_rate": 0.0733,
-        "hard_hit_rate": 0.3761,
-        "fb_rate": 0.5163,
-        "z_contact_rate": 0.8413,
-        "sweet_spot_rate": 0.3443,
+        "air_pull_rate": 0.178,
+        "barrel_rate": 0.0721,
+        "hard_hit_rate": 0.3763,
+        "fb_rate": 0.5177,
+        "z_contact_rate": 0.8432,
+        "sweet_spot_rate": 0.346,
         "xwobacon": null,
         "ev90": 104.6
       },
@@ -769,12 +769,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1505,
-        "barrel_rate": 0.0538,
-        "hard_hit_rate": 0.4454,
-        "fb_rate": 0.4523,
-        "z_contact_rate": 0.8552,
-        "sweet_spot_rate": 0.3433,
+        "air_pull_rate": 0.15,
+        "barrel_rate": 0.0527,
+        "hard_hit_rate": 0.4456,
+        "fb_rate": 0.4535,
+        "z_contact_rate": 0.8569,
+        "sweet_spot_rate": 0.3448,
         "xwobacon": null,
         "ev90": 106.5
       },
@@ -810,7 +810,7 @@
       "total": 33.7,
       "tier": "Pass",
       "role": "Watchlist",
-      "tb_score": 47.0,
+      "tb_score": 49.0,
       "tb_tier": "Pass",
       "tb_reasons": [],
       "shape_source": "statcast",
@@ -828,12 +828,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1785,
-        "barrel_rate": 0.0733,
-        "hard_hit_rate": 0.3761,
-        "fb_rate": 0.4991,
-        "z_contact_rate": 0.8501,
-        "sweet_spot_rate": 0.3788,
+        "air_pull_rate": 0.178,
+        "barrel_rate": 0.0721,
+        "hard_hit_rate": 0.3763,
+        "fb_rate": 0.5004,
+        "z_contact_rate": 0.8519,
+        "sweet_spot_rate": 0.3805,
         "xwobacon": null,
         "ev90": 105.5
       },
@@ -886,12 +886,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1408,
-        "barrel_rate": 0.0692,
-        "hard_hit_rate": 0.3856,
-        "fb_rate": 0.4669,
-        "z_contact_rate": 0.8446,
-        "sweet_spot_rate": 0.3382,
+        "air_pull_rate": 0.1403,
+        "barrel_rate": 0.068,
+        "hard_hit_rate": 0.3858,
+        "fb_rate": 0.4682,
+        "z_contact_rate": 0.8464,
+        "sweet_spot_rate": 0.3398,
         "xwobacon": null,
         "ev90": 102.4
       },
@@ -944,12 +944,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1638,
-        "barrel_rate": 0.0733,
-        "hard_hit_rate": 0.3344,
-        "fb_rate": 0.5163,
-        "z_contact_rate": 0.8407,
-        "sweet_spot_rate": 0.396,
+        "air_pull_rate": 0.1633,
+        "barrel_rate": 0.0721,
+        "hard_hit_rate": 0.3346,
+        "fb_rate": 0.5177,
+        "z_contact_rate": 0.8425,
+        "sweet_spot_rate": 0.3978,
         "xwobacon": null,
         "ev90": 96.6
       },
@@ -1002,12 +1002,12 @@
         "confidence": 2.0
       },
       "statcast": {
-        "air_pull_rate": 0.1491,
-        "barrel_rate": 0.0733,
-        "hard_hit_rate": 0.4178,
-        "fb_rate": 0.4473,
-        "z_contact_rate": 0.8299,
-        "sweet_spot_rate": 0.3271,
+        "air_pull_rate": 0.1486,
+        "barrel_rate": 0.0721,
+        "hard_hit_rate": 0.4179,
+        "fb_rate": 0.4487,
+        "z_contact_rate": 0.8318,
+        "sweet_spot_rate": 0.3288,
         "xwobacon": null,
         "ev90": 107.5
       },
@@ -1093,7 +1093,7 @@
       "slot": null,
       "confirmed": false,
       "bats": "R",
-      "tb_score": 56.0,
+      "tb_score": 58.0,
       "tb_tier": "Dart",
       "tb_reasons": [
         "High-contact bat (contact 90%, Z-contact 88%) \u2014 banks XBH",
@@ -1238,6 +1238,24 @@
       "hr_role": "Watchlist"
     },
     {
+      "id": 641343,
+      "name": "Jake Bauers",
+      "team": "Milwaukee Brewers",
+      "opp": "Los Angeles Dodgers",
+      "opp_pitcher": "Blake Snell",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "gamePk": 849811,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 49.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 33.7,
+      "hr_role": "Watchlist"
+    },
+    {
       "id": 669257,
       "name": "Will Smith",
       "team": "Los Angeles Dodgers",
@@ -1255,24 +1273,6 @@
       ],
       "shape_source": "statcast",
       "hr_total": 44.0,
-      "hr_role": "Watchlist"
-    },
-    {
-      "id": 641343,
-      "name": "Jake Bauers",
-      "team": "Milwaukee Brewers",
-      "opp": "Los Angeles Dodgers",
-      "opp_pitcher": "Blake Snell",
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "gamePk": 849811,
-      "slot": null,
-      "confirmed": false,
-      "bats": "L",
-      "tb_score": 47.0,
-      "tb_tier": "Pass",
-      "tb_reasons": [],
-      "shape_source": "statcast",
-      "hr_total": 33.7,
       "hr_role": "Watchlist"
     },
     {
