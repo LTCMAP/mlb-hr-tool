@@ -1,0 +1,1309 @@
+{
+  "version": "2.8",
+  "generated_utc": "2026-10-27T01:32:45.021019+00:00",
+  "slate_date": "2026-10-27",
+  "games": 1,
+  "confirmed_lineups": 0,
+  "statcast": true,
+  "statcast_meta": {
+    "window_days": 21,
+    "recent_days": 7,
+    "start": "2026-10-07",
+    "end": "2026-10-27",
+    "days_fetched": 0,
+    "days_cached": 19,
+    "days_failed": 2,
+    "source": "mlbapi",
+    "days_savant": 0,
+    "days_mlbapi": 14,
+    "xwobacon_available": false,
+    "batters": 43,
+    "pitchers": 42,
+    "league": {
+      "barrel_rate": 0.0548,
+      "hard_hit_rate": 0.3446,
+      "fb_rate": 0.4734,
+      "air_pull_rate": 0.1449,
+      "fly_rate": 0.2271,
+      "hr_per_pa": 0.0165,
+      "z_contact": 0.8498,
+      "sweet_spot_rate": 0.3366,
+      "air_ev": 91.8,
+      "hr_per_barrel": 0.4706,
+      "bbe_total": 621
+    }
+  },
+  "data_quality": {
+    "mode": "statcast",
+    "source": "mlbapi",
+    "days_savant": 0,
+    "days_mlbapi": 14,
+    "trustworthy": false,
+    "statcast_batters": 43,
+    "statcast_candidates": 13,
+    "confirmed_lineups": 0,
+    "games": 1,
+    "days_failed": 2,
+    "warnings": [
+      "NO CONFIRMED LINEUPS \u2014 every bat is using a neutral slot default. Likely built before lineups posted; re-run closer to first pitch.",
+      "Statcast: 2 day(s) failed to fetch in the 21-day window (thinner sample).",
+      "Shape built from the MLB Stats API fallback (14/21 days) because Baseball Savant was unreachable. All shape signals are live; xwOBAcon is unavailable (regressed to league prior, ISO backstops it) and barrels are recomputed from EV/LA."
+    ]
+  },
+  "method": "v2.6: rank causes \u2192 choose capture \u2192 lock confirmed shape that captures the cause. NEW: zone-damage slot (hard-hit% \u00d7 Z-Contact% \u2014 loud contact that actually meets hittable pitches), xwOBAcon contact quality, and HR-luck pairing (barrels-vs-HR xHR gap \u2192 DUE bats and HR-DUE arms). Also: hardened Savant fetch w/ cache validation, directional wind, EB shrinkage, platoon-split shape, pitch-mix fit + TRAP flags. Weights P25/Shape40(11 air-pull/8 barrel/7 zone-dmg/6 matchup/3 quality/3 recent/2 due)/Env15/Lineup12/Src8. v2.8: dual-source shape \u2014 Baseball Savant with an MLB Stats API play-by-play fallback, so a Savant outage no longer drops the board to proxy. Statcast shape layer active via the MLB Stats API fallback (Savant unreachable) \u2014 xwOBAcon regressed to league prior, barrels recomputed from EV/LA.",
+  "tiers": {
+    "Elite Core": "85+",
+    "Core": "78-84",
+    "Satellite": "70-77",
+    "Longshot": "62-69",
+    "Pass": "<62"
+  },
+  "roles": [
+    "Locked Core",
+    "Mini-Stack Bat",
+    "Power Satellite",
+    "Cause Satellite",
+    "Core",
+    "Longshot",
+    "Watchlist",
+    "Pass"
+  ],
+  "causes": [],
+  "candidates": [
+    {
+      "id": 691406,
+      "name": "Junior Caminero",
+      "team": "Tampa Bay Rays",
+      "bats": "R",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 42,
+      "iso": 0.248,
+      "total": 31.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 43.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.1,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 16.2,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1802,
+        "barrel_rate": 0.0696,
+        "hard_hit_rate": 0.3533,
+        "fb_rate": 0.5102,
+        "z_contact_rate": 0.8487,
+        "sweet_spot_rate": 0.3611,
+        "xwobacon": null,
+        "ev90": 110.5
+      },
+      "reasons": [
+        "Dome roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 596142,
+      "name": "Gary S\u00e1nchez",
+      "team": "Milwaukee Brewers",
+      "bats": "R",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 12,
+      "iso": 0.213,
+      "total": 31.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 39.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 16.0,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Dome roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 641343,
+      "name": "Jake Bauers",
+      "team": "Milwaukee Brewers",
+      "bats": "L",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 26,
+      "iso": 0.218,
+      "total": 30.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 48.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.5,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 15.2,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1671,
+        "barrel_rate": 0.0613,
+        "hard_hit_rate": 0.3557,
+        "fb_rate": 0.5112,
+        "z_contact_rate": 0.8509,
+        "sweet_spot_rate": 0.3305,
+        "xwobacon": null,
+        "ev90": 105.4
+      },
+      "reasons": [
+        "Dome roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 650490,
+      "name": "Yandy D\u00edaz",
+      "team": "Tampa Bay Rays",
+      "bats": "R",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 22,
+      "iso": 0.153,
+      "total": 29.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 52.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 87%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.4,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 14.8,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1258,
+        "barrel_rate": 0.0975,
+        "hard_hit_rate": 0.3659,
+        "fb_rate": 0.4889,
+        "z_contact_rate": 0.8666,
+        "sweet_spot_rate": 0.3711,
+        "xwobacon": null,
+        "ev90": 109.2
+      },
+      "reasons": [
+        "Above-avg barrels (10%)",
+        "Dome roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 668930,
+      "name": "Brice Turang",
+      "team": "Milwaukee Brewers",
+      "bats": "L",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 21,
+      "iso": 0.182,
+      "total": 29.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 48.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.4,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 14.5,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1346,
+        "barrel_rate": 0.0873,
+        "hard_hit_rate": 0.3997,
+        "fb_rate": 0.4947,
+        "z_contact_rate": 0.818,
+        "sweet_spot_rate": 0.3843,
+        "xwobacon": null,
+        "ev90": 104.3
+      },
+      "reasons": [
+        "Dome roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 668723,
+      "name": "Ryan Vilade",
+      "team": "Tampa Bay Rays",
+      "bats": "R",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 11,
+      "iso": 0.184,
+      "total": 29.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 45.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 14.0,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Dome roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 669003,
+      "name": "Garrett Mitchell",
+      "team": "Milwaukee Brewers",
+      "bats": "L",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 11,
+      "iso": 0.154,
+      "total": 28.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 36.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.5,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 13.8,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1506,
+        "barrel_rate": 0.0604,
+        "hard_hit_rate": 0.3683,
+        "fb_rate": 0.4536,
+        "z_contact_rate": 0.81,
+        "sweet_spot_rate": 0.3415,
+        "xwobacon": null,
+        "ev90": 111.5
+      },
+      "reasons": [
+        "Dome roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 694192,
+      "name": "Jackson Chourio",
+      "team": "Milwaukee Brewers",
+      "bats": "R",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 25,
+      "iso": 0.196,
+      "total": 27.5,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 46.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.5,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 12.5,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1115,
+        "barrel_rate": 0.055,
+        "hard_hit_rate": 0.4101,
+        "fb_rate": 0.4216,
+        "z_contact_rate": 0.8689,
+        "sweet_spot_rate": 0.3357,
+        "xwobacon": null,
+        "ev90": 105.6
+      },
+      "reasons": [
+        "Dome roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 689414,
+      "name": "Liam Hicks",
+      "team": "Tampa Bay Rays",
+      "bats": "L",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 18,
+      "iso": 0.15,
+      "total": 27.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 48.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "High-contact bat (contact 86%, Z-contact 88%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.5,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 12.2,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1627,
+        "barrel_rate": 0.055,
+        "hard_hit_rate": 0.3411,
+        "fb_rate": 0.4657,
+        "z_contact_rate": 0.8808,
+        "sweet_spot_rate": 0.3063,
+        "xwobacon": null,
+        "ev90": 105.9
+      },
+      "reasons": [
+        "Dome roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 683748,
+      "name": "Victor Mesa Jr.",
+      "team": "Tampa Bay Rays",
+      "bats": "L",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 14,
+      "iso": 0.238,
+      "total": 26.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 34.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 11.8,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.131,
+        "barrel_rate": 0.0444,
+        "hard_hit_rate": 0.3849,
+        "fb_rate": 0.4792,
+        "z_contact_rate": 0.818,
+        "sweet_spot_rate": 0.2942,
+        "xwobacon": null,
+        "ev90": 101.1
+      },
+      "reasons": [
+        "Dome roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 592885,
+      "name": "Christian Yelich",
+      "team": "Milwaukee Brewers",
+      "bats": "L",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 12,
+      "iso": 0.143,
+      "total": 26.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 42.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.5,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 11.8,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.126,
+        "barrel_rate": 0.0621,
+        "hard_hit_rate": 0.3425,
+        "fb_rate": 0.4859,
+        "z_contact_rate": 0.8451,
+        "sweet_spot_rate": 0.353,
+        "xwobacon": null,
+        "ev90": 104.0
+      },
+      "reasons": [
+        "Dome roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 661388,
+      "name": "William Contreras",
+      "team": "Milwaukee Brewers",
+      "bats": "R",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 18,
+      "iso": 0.147,
+      "total": 26.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 39.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": -0.5,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 11.2,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1693,
+        "barrel_rate": 0.0572,
+        "hard_hit_rate": 0.3415,
+        "fb_rate": 0.518,
+        "z_contact_rate": 0.857,
+        "sweet_spot_rate": 0.3358,
+        "xwobacon": null,
+        "ev90": 106.3
+      },
+      "reasons": [
+        "Dome roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 680700,
+      "name": "Richie Palacios",
+      "team": "Tampa Bay Rays",
+      "bats": "L",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 10,
+      "iso": 0.139,
+      "total": 26.2,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 43.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "High-contact bat (contact 87%, Z-contact 88%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 11.2,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1739,
+        "barrel_rate": 0.045,
+        "hard_hit_rate": 0.2978,
+        "fb_rate": 0.4709,
+        "z_contact_rate": 0.8779,
+        "sweet_spot_rate": 0.3306,
+        "xwobacon": null,
+        "ev90": 97.3
+      },
+      "reasons": [
+        "Dome roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 676356,
+      "name": "Jonny DeLuca",
+      "team": "Tampa Bay Rays",
+      "bats": "R",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 11,
+      "iso": 0.163,
+      "total": 25.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 42.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 10.0,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1462,
+        "barrel_rate": 0.0411,
+        "hard_hit_rate": 0.3131,
+        "fb_rate": 0.4524,
+        "z_contact_rate": 0.8554,
+        "sweet_spot_rate": 0.3119,
+        "xwobacon": null,
+        "ev90": 100.0
+      },
+      "reasons": [
+        "Dome roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 666018,
+      "name": "Jonathan Aranda",
+      "team": "Tampa Bay Rays",
+      "bats": "L",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 22,
+      "iso": 0.16,
+      "total": 22.8,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 41.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": 0.0,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 7.8,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": {
+        "air_pull_rate": 0.1409,
+        "barrel_rate": 0.0396,
+        "hard_hit_rate": 0.3458,
+        "fb_rate": 0.516,
+        "z_contact_rate": 0.8489,
+        "sweet_spot_rate": 0.3675,
+        "xwobacon": null,
+        "ev90": 100.7
+      },
+      "reasons": [
+        "Dome roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 656775,
+      "name": "Cedric Mullins",
+      "team": "Tampa Bay Rays",
+      "bats": "L",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 15,
+      "iso": 0.139,
+      "total": 21.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 29.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 6.0,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Dome roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    },
+    {
+      "id": 687401,
+      "name": "Joey Ortiz",
+      "team": "Milwaukee Brewers",
+      "bats": "R",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "season_hr": 9,
+      "iso": 0.132,
+      "total": 17.0,
+      "tier": "Pass",
+      "role": "Watchlist",
+      "tb_score": 40.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "pull_fit": false,
+      "mix_fit": null,
+      "fit_tag": null,
+      "value_play": false,
+      "due_hr": null,
+      "pitcher_grade": "?",
+      "breakdown": {
+        "pitcher": 0,
+        "hitter": 2.0,
+        "environment": 7.0,
+        "lineup": 6.0,
+        "confidence": 2.0
+      },
+      "statcast": null,
+      "reasons": [
+        "No Statcast shape \u2014 score capped (season-power proxy)",
+        "Dome roof (weather neutralized)",
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ],
+      "warnings": [
+        "Lineup not confirmed"
+      ],
+      "role_notes": [
+        "Hitter shape <22 \u2192 capped at Longshot"
+      ]
+    }
+  ],
+  "structures": {},
+  "tb_board": [
+    {
+      "id": 650490,
+      "name": "Yandy D\u00edaz",
+      "team": "Tampa Bay Rays",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 52.0,
+      "tb_tier": "Dart",
+      "tb_reasons": [
+        "High-contact bat (contact 84%, Z-contact 87%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 29.8,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 668930,
+      "name": "Brice Turang",
+      "team": "Milwaukee Brewers",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 48.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 29.5,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 641343,
+      "name": "Jake Bauers",
+      "team": "Milwaukee Brewers",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 48.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 30.2,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 689414,
+      "name": "Liam Hicks",
+      "team": "Tampa Bay Rays",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 48.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "High-contact bat (contact 86%, Z-contact 88%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 27.2,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 694192,
+      "name": "Jackson Chourio",
+      "team": "Milwaukee Brewers",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 46.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 27.5,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 668723,
+      "name": "Ryan Vilade",
+      "team": "Tampa Bay Rays",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 45.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "hr_total": 29.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 691406,
+      "name": "Junior Caminero",
+      "team": "Tampa Bay Rays",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 43.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 31.2,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 680700,
+      "name": "Richie Palacios",
+      "team": "Tampa Bay Rays",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 43.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "High-contact bat (contact 87%, Z-contact 88%) \u2014 banks XBH"
+      ],
+      "shape_source": "statcast",
+      "hr_total": 26.2,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 592885,
+      "name": "Christian Yelich",
+      "team": "Milwaukee Brewers",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 42.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 26.8,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 676356,
+      "name": "Jonny DeLuca",
+      "team": "Tampa Bay Rays",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 42.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 25.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 666018,
+      "name": "Jonathan Aranda",
+      "team": "Tampa Bay Rays",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 41.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 22.8,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 687401,
+      "name": "Joey Ortiz",
+      "team": "Milwaukee Brewers",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 40.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "hr_total": 17.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 596142,
+      "name": "Gary S\u00e1nchez",
+      "team": "Milwaukee Brewers",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 39.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "hr_total": 31.0,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 661388,
+      "name": "William Contreras",
+      "team": "Milwaukee Brewers",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "bats": "R",
+      "tb_score": 39.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 26.2,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 669003,
+      "name": "Garrett Mitchell",
+      "team": "Milwaukee Brewers",
+      "opp": "Tampa Bay Rays",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 36.0,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 28.8,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 683748,
+      "name": "Victor Mesa Jr.",
+      "team": "Tampa Bay Rays",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 34.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [],
+      "shape_source": "statcast",
+      "hr_total": 26.8,
+      "hr_role": "Watchlist"
+    },
+    {
+      "id": 656775,
+      "name": "Cedric Mullins",
+      "team": "Tampa Bay Rays",
+      "opp": "Milwaukee Brewers",
+      "opp_pitcher": null,
+      "venue": "Tropicana Field",
+      "gamePk": 849803,
+      "slot": null,
+      "confirmed": false,
+      "bats": "L",
+      "tb_score": 29.5,
+      "tb_tier": "Pass",
+      "tb_reasons": [
+        "No Statcast shape \u2014 TB score capped (season-rate proxy)"
+      ],
+      "shape_source": "proxy",
+      "hr_total": 21.0,
+      "hr_role": "Watchlist"
+    }
+  ],
+  "pitcher_board": [],
+  "audit_template": {
+    "legend": {
+      "A": "cause fired + our bat hit (perfect)",
+      "B": "cause fired + teammate hit (right cause, wrong capture)",
+      "C": "cause did not fire + bat missed (true miss)",
+      "D": "cause did not fire + bat hit (override/lucky)"
+    },
+    "instructions": "After games, set result_hr / cause_fired (did target pitcher or team produce HRs/barrels) / teammate_hr, then classify outcome A-D.",
+    "rows": []
+  }
+}
