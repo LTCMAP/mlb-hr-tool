@@ -1,0 +1,84 @@
+{
+  "version": "2.8",
+  "generated_utc": "2026-11-19T01:19:01.898182+00:00",
+  "slate_date": "2026-11-19",
+  "games": 0,
+  "confirmed_lineups": 0,
+  "statcast": false,
+  "statcast_meta": {
+    "window_days": 21,
+    "recent_days": 7,
+    "start": "2026-10-30",
+    "end": "2026-11-19",
+    "days_fetched": 1,
+    "days_cached": 20,
+    "days_failed": 0,
+    "source": "none",
+    "days_savant": 0,
+    "days_mlbapi": 0,
+    "xwobacon_available": false,
+    "batters": 0,
+    "pitchers": 0,
+    "league": {
+      "barrel_rate": 0.0,
+      "hard_hit_rate": 0.0,
+      "fb_rate": 0.0,
+      "air_pull_rate": 0.0,
+      "fly_rate": 0.0,
+      "hr_per_pa": 0.0,
+      "z_contact": 0.0,
+      "sweet_spot_rate": 0.0,
+      "air_ev": 0.0,
+      "hr_per_barrel": 0.0,
+      "bbe_total": 0
+    }
+  },
+  "data_quality": {
+    "mode": "proxy",
+    "source": "none",
+    "days_savant": 0,
+    "days_mlbapi": 0,
+    "trustworthy": false,
+    "statcast_batters": 0,
+    "statcast_candidates": 0,
+    "confirmed_lineups": 0,
+    "games": 0,
+    "days_failed": 0,
+    "warnings": [
+      "PROXY MODE \u2014 no Statcast shape (season-power only, scores capped, no Locked Core / pitch-mix fit / DUE). Do not trust shape-based picks."
+    ]
+  },
+  "method": "v2.6: rank causes \u2192 choose capture \u2192 lock confirmed shape that captures the cause. NEW: zone-damage slot (hard-hit% \u00d7 Z-Contact% \u2014 loud contact that actually meets hittable pitches), xwOBAcon contact quality, and HR-luck pairing (barrels-vs-HR xHR gap \u2192 DUE bats and HR-DUE arms). Also: hardened Savant fetch w/ cache validation, directional wind, EB shrinkage, platoon-split shape, pitch-mix fit + TRAP flags. Weights P25/Shape40(11 air-pull/8 barrel/7 zone-dmg/6 matchup/3 quality/3 recent/2 due)/Env15/Lineup12/Src8. v2.8: dual-source shape \u2014 Baseball Savant with an MLB Stats API play-by-play fallback, so a Savant outage no longer drops the board to proxy. PROXY shape mode (no Statcast) \u2014 scores capped, no pitch-mix fit.",
+  "tiers": {
+    "Elite Core": "85+",
+    "Core": "78-84",
+    "Satellite": "70-77",
+    "Longshot": "62-69",
+    "Pass": "<62"
+  },
+  "roles": [
+    "Locked Core",
+    "Mini-Stack Bat",
+    "Power Satellite",
+    "Cause Satellite",
+    "Core",
+    "Longshot",
+    "Watchlist",
+    "Pass"
+  ],
+  "causes": [],
+  "candidates": [],
+  "structures": {},
+  "tb_board": [],
+  "pitcher_board": [],
+  "audit_template": {
+    "legend": {
+      "A": "cause fired + our bat hit (perfect)",
+      "B": "cause fired + teammate hit (right cause, wrong capture)",
+      "C": "cause did not fire + bat missed (true miss)",
+      "D": "cause did not fire + bat hit (override/lucky)"
+    },
+    "instructions": "After games, set result_hr / cause_fired (did target pitcher or team produce HRs/barrels) / teammate_hr, then classify outcome A-D.",
+    "rows": []
+  }
+}
